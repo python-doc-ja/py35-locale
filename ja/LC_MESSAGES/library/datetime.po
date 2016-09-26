@@ -4,15 +4,16 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # INADA Naoki <songofacandy@gmail.com>, 2015
 # Shun Sakurai, 2016
+# tomo <cocoatomo77@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-28 05:23+0000\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>\n"
+"PO-Revision-Date: 2016-09-26 14:32+0000\n"
+"Last-Translator: tomo <cocoatomo77@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +77,7 @@ msgid ""
 "up to the application.  The rules for time adjustment across the world are "
 "more political than rational, change frequently, and there is no standard "
 "suitable for every application aside from UTC."
-msgstr ""
+msgstr "aware オブジェクトを必要とするアプリケーションのために、 :class:`.datetime` と :class:`.time` オブジェクトは追加のタイムゾーン情報の属性 :attr:`tzinfo` を持ちます。\n:attr:`tzinfo` には抽象クラス :class:`tzinfo` のサブクラスのインスタンスを設定することができます。\nこれらの :class:`tzinfo` オブジェクトは UTC 時間からのオフセットやタイムゾーンの名前、夏時間が実施されるかの情報を保持しています。\nただ一つの具象 :class:`tzinfo` クラスである :class:`timezone` クラスが :mod:`datetime` モジュールで提供されています。\n:class:`timezone` クラスは単純な UTC からの固定オフセットだけを表わすUTC 自身や北アメリカの EST や EDT タイムゾーンのようなものも表現できます。\nより深く詳細までタイムゾーンをサポートするかはアプリケーションに依存します。\n世界中の時刻の調整を決めるルールは合理的というよりかは政治的なもので、頻繁に変わり、UTC を除くと都合のよい基準というものはありません。"
 
 #: ../../library/datetime.rst:51
 msgid "The :mod:`datetime` module exports the following constants:"
@@ -918,7 +919,7 @@ msgid ""
 "In this case the result is equivalent to "
 "``tz.fromutc(datetime.utcnow().replace(tzinfo=tz))``. See also "
 ":meth:`today`, :meth:`utcnow`."
-msgstr ""
+msgstr "*tz* が ``None`` でない場合、 *tz* は :class:`tzinfo` のサブクラスのインスタンスでなければならず、現在の日付および時刻は *tz* のタイムゾーンに変換されます。\nこの場合、結果は ``tz.fromutc(datetime.utcnow().replace(tzinfo=tz))`` と等価になります。\n:meth:`today`, :meth:`utcnow` も参照してください。"
 
 #: ../../library/datetime.rst:726
 msgid ""
@@ -926,7 +927,7 @@ msgid ""
 " like :meth:`now`, but returns the current UTC date and time, as a naive "
 ":class:`.datetime` object.  An aware current UTC datetime can be obtained by"
 " calling ``datetime.now(timezone.utc)``.  See also :meth:`now`."
-msgstr ""
+msgstr ":attr:`tzinfo` が ``None`` である現在の UTC の日付および時刻を返します。\nこれは :meth:`now` と似ていますが、 naive な :class:`.datetime` オブジェクトとして現在の UTC 日付および時刻を返します。\naware な現在の UTC datetime は ``datetime.now(timezone.utc)`` を呼び出すことで取得できます。\n:meth:`now` も参照してください。"
 
 #: ../../library/datetime.rst:733
 msgid ""
@@ -942,7 +943,7 @@ msgid ""
 "subclass, and the timestamp is converted to *tz*’s time zone.  In this case "
 "the result is equivalent to "
 "``tz.fromutc(datetime.utcfromtimestamp(timestamp).replace(tzinfo=tz))``."
-msgstr ""
+msgstr "*tz* が ``None`` でない場合、 *tz* は :class:`tzinfo` のサブクラスのインスタンスでなければならず、現在の日付および時刻は *tz* のタイムゾーンに変換されます。\nこの場合、結果は ``tz.fromutc(datetime.utcfromtimestamp(timestamp).replace(tzinfo=tz))`` と等価になります。"
 
 #: ../../library/datetime.rst:743
 msgid ""
@@ -972,7 +973,7 @@ msgid ""
 "timestamp is out of the range of values supported by the platform C "
 ":c:func:`gmtime` function, and :exc:`OSError` on :c:func:`gmtime` failure. "
 "It's common for this to be restricted to years in 1970 through 2038."
-msgstr ""
+msgstr "与えられた POSIX タイムスタンプに対応する UTC の :class:`.datetime` で、 :attr:`.tzinfo` が ``None`` に設定されたものを返します。\nタイムスタンプがプラットフォームの C 関数 :c:func:`gmtime` でサポートされている範囲を超えている場合には :exc:`OverflowError` を、 :c:func:`gmtime` が失敗した場合には :exc:`OSError` を送出します。\nサポートされている範囲は 1970 年から 2038 年に制限されていることが多いです。"
 
 #: ../../library/datetime.rst:769
 msgid ""

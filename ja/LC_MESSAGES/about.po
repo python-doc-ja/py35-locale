@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-24 11:31+0000\n"
-"Last-Translator: DaYeah Kim <lucy777110@gmail.com>\n"
+"PO-Revision-Date: 2016-09-26 12:40+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr "このドキュメントについて"
 msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_,"
 " a document processor specifically written for the Python documentation."
-msgstr "이 문서는 Python 문서를 주요 목적으로 만들어진 문서 프로세서 의 ` Sphinx` 를 이용하여 ` reStructuredText` 형식의 소스에서 생성 되었습니다 ."
+msgstr "このドキュメントは、 Python のドキュメントを主要な目的として作られた ドキュメントプロセッサの `Sphinx`_ を利用して、 `reStructuredText`_ 形式のソースから生成されました。"
 
 #: ../../about.rst:15
 msgid ""
