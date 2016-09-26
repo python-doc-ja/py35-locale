@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-26 14:32+0000\n"
+"PO-Revision-Date: 2016-09-26 18:03+0000\n"
 "Last-Translator: tomo <cocoatomo77@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1007,7 +1007,7 @@ msgid ""
 "raised unless ``1 <= ordinal <= datetime.max.toordinal()``.  The hour, "
 "minute, second and microsecond of the result are all 0, and :attr:`.tzinfo` "
 "is ``None``."
-msgstr ""
+msgstr "1 年 1 月 1 日を序数 1 とする早期グレゴリオ暦序数に対応する :class:`.datetime` オブジェクトを返します。\n``1 <= ordinal <= datetime.max.toordinal()`` でなければ :exc:`ValueError` が送出されます。\n返されるオブジェクトの時間、分、秒、およびマイクロ秒はすべて 0 で、 :attr:`tzinfo` は ``None`` となっています。"
 
 #: ../../library/datetime.rst:798
 msgid ""
@@ -1017,7 +1017,7 @@ msgid ""
 "For any :class:`.datetime` object *d*, ``d == datetime.combine(d.date(), "
 "d.timetz())``.  If date is a :class:`.datetime` object, its time components "
 "and :attr:`.tzinfo` attributes are ignored."
-msgstr ""
+msgstr "日付部分が与えられた :class:`date` オブジェクトと等しく、時刻部分と :attr:`.tzinfo` 属性が与えられた :class:`.time` オブジェクトと等しい、新しい :class:`.datetime` オブジェクトを返します。\n任意の :class:`.datetime` オブジェクト *d* で ``d == datetime.combine(d.date(), d.timetz())`` が成立します。\ndate が :class:`.datetime` オブジェクトだった場合、その時刻部分と :attr:`.tzinfo` 属性は無視されます。"
 
 #: ../../library/datetime.rst:809
 msgid ""
@@ -1106,7 +1106,7 @@ msgid ""
 " is raised if datetime2.year would be smaller than :const:`MINYEAR` or "
 "larger than :const:`MAXYEAR`. Note that no time zone adjustments are done "
 "even if the input is an aware object."
-msgstr ""
+msgstr "datetime2 は datetime1 から時間 timedelta 移動したもので、 ``timedelta.days`` > 0 の場合未来へ、 ``timedelta.days`` < 0 の場合過去へ移動します。\n結果は入力の datetime と同じ :attr:`~.datetime.tzinfo` 属性を持ち、演算後には datetime2 - datetime1 == timedelta となります。\ndatetime2.year が :const:`MINYEAR` よりも小さいか、 :const:`MAXYEAR` より大きい場合には :exc:`OverflowError` が送出されます。\n入力が aware なオブジェクトの場合でもタイムゾーン修正は全く行われません。"
 
 #: ../../library/datetime.rst:906
 msgid ""
@@ -1116,7 +1116,7 @@ msgid ""
 "aware. This isn't quite equivalent to datetime1 + (-timedelta), because "
 "-timedelta in isolation can overflow in cases where datetime1 - timedelta "
 "does not."
-msgstr ""
+msgstr "datetime2 + timedelta == datetime1 となるような datetime2 を計算します。\nちなみに、結果は入力の datetime と同じ :attr:`~.datetime.tzinfo` 属性を持ち、入力が aware でもタイムゾーン修正は全く行われません。\nこの操作は date1 + (-timedelta) と等価ではありません。\nなぜならば、 date1 - timedelta がオーバフローしない場合でも、-timedelta 単体がオーバフローする可能性があるからです。"
 
 #: ../../library/datetime.rst:913
 msgid ""
@@ -1132,7 +1132,7 @@ msgid ""
 "attributes are ignored, and the result is a :class:`timedelta` object *t* "
 "such that ``datetime2 + t == datetime1``.  No time zone adjustments are done"
 " in this case."
-msgstr ""
+msgstr "両方とも naive か、両方とも aware で同じ :attr:`~.datetime.tzinfo` 属性を持つ場合、 :attr:`~.datetime.tzinfo` 属性は無視され、結果は ``datetime2 + t == datetime1`` であるような :class:`timedelta` オブジェクト *t* となります。\nこの場合タイムゾーン修正は全く行われません。"
 
 #: ../../library/datetime.rst:922
 msgid ""
@@ -1141,7 +1141,7 @@ msgid ""
 "first.  The result is ``(a.replace(tzinfo=None) - a.utcoffset()) - "
 "(b.replace(tzinfo=None) - b.utcoffset())`` except that the implementation "
 "never overflows."
-msgstr ""
+msgstr "両方が aware で異なる :attr:`~.datetime.tzinfo` 属性を持つ場合、 ``a-b`` は *a* および *b* をまず naive な UTC datetime オブジェクトに変換したかのようにして行います。\n演算結果は決してオーバフローを起こさないことを除き、 ``(a.replace(tzinfo=None) - a.utcoffset()) - (b.replace(tzinfo=None) - b.utcoffset())`` と同じになります。"
 
 #: ../../library/datetime.rst:928
 msgid ""
@@ -1164,13 +1164,13 @@ msgid ""
 "different :attr:`~.datetime.tzinfo` attributes, the comparands are first "
 "adjusted by subtracting their UTC offsets (obtained from "
 "``self.utcoffset()``)."
-msgstr ""
+msgstr "比較対象が両方とも aware で、同じ :attr:`~.datetime.tzinfo` 属性を持つ場合、 :attr:`~.datetime.tzinfo` は無視され datetime だけで比較が行われます。\n比較対象が両方とも aware であり、異なる :attr:`~.datetime.tzinfo` 属性を持つ場合、まず最初に (``self.utcoffset()`` で取得できる) それぞれの UTC オフセットを引いて調整します。"
 
 #: ../../library/datetime.rst:941
 msgid ""
 "Equality comparisons between naive and aware :class:`.datetime` instances "
 "don't raise :exc:`TypeError`."
-msgstr ""
+msgstr "naive な :class:`datetime` インスタンスと aware な :class:`datetime` インスタンスの等価比較では :exc:`TypeError` は送出されません。"
 
 #: ../../library/datetime.rst:947
 msgid ""
@@ -1199,7 +1199,7 @@ msgstr "同じ年、月、日の :class:`date` オブジェクトを返します
 msgid ""
 "Return :class:`.time` object with same hour, minute, second and microsecond."
 " :attr:`.tzinfo` is ``None``.  See also method :meth:`timetz`."
-msgstr ""
+msgstr "同じ時、分、秒、マイクロ秒を持つ :class:`.time` オブジェクトを返します。 :attr:`.tzinfo` は ``None`` です。 :meth:`timetz` も参照してください。"
 
 #: ../../library/datetime.rst:975
 msgid ""
@@ -1220,7 +1220,7 @@ msgid ""
 "Return a :class:`.datetime` object with new :attr:`.tzinfo` attribute *tz*, "
 "adjusting the date and time data so the result is the same UTC time as "
 "*self*, but in *tz*'s local time."
-msgstr ""
+msgstr "*tz* を新たに :attr:`.tzinfo` 属性 として持つ :class:`.datetime` オブジェクトを返します。\n日付および時刻データを調整して、返り値が *self* と同じ UTC 時刻を持ち、 *tz* におけるローカルな時刻を表すようにします。"
 
 #: ../../library/datetime.rst:993
 msgid ""
@@ -1236,7 +1236,7 @@ msgid ""
 "is assumed.  The ``.tzinfo`` attribute of the converted datetime instance "
 "will be set to an instance of :class:`timezone` with the zone name and "
 "offset obtained from the OS."
-msgstr ""
+msgstr "引数無し (もしくは ``tz=None`` の形で) 呼び出された場合、システムのローカルなタイムゾーンとされます。\n変換後の datetime インスタンスの ``.tzinfo`` 属性には、 OS から取得したゾーン名とオフセットを持つ :class:`timezone` インスタンスが設定されます。"
 
 #: ../../library/datetime.rst:1003
 msgid ""
@@ -1275,7 +1275,7 @@ msgid ""
 "``self.tzinfo.utcoffset(self)``, and raises an exception if the latter "
 "doesn't return ``None``, or a :class:`timedelta` object representing a whole"
 " number of minutes with magnitude less than one day."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合、 ``None`` を返し、そうでない場合には ``self.tzinfo.utcoffset(self)`` を返します。\n後者の式が ``None`` か、1 日以下の大きさを持つ経過時間を表す :class:`timedelta` オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1043
 msgid ""
@@ -1283,14 +1283,14 @@ msgid ""
 "``self.tzinfo.dst(self)``, and raises an exception if the latter doesn't "
 "return ``None``, or a :class:`timedelta` object representing a whole number "
 "of minutes with magnitude less than one day."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合 ``None`` を返し、そうでない場合には ``self.tzinfo.dst(self)`` を返します。\n後者の式が ``None`` もしくは、1 日未満の経過時間を表す :class:`timedelta` オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1051
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns "
 "``self.tzinfo.tzname(self)``, raises an exception if the latter doesn't "
 "return ``None`` or a string object,"
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合 ``None`` を返し、そうでない場合には ``self.tzinfo.tzname(self)`` を返します。\n後者の式が ``None`` か文字列オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1058
 msgid ""
@@ -1304,7 +1304,7 @@ msgid ""
 ":meth:`dst` returns ``None``, :attr:`tm_isdst` is set to ``-1``; else if "
 ":meth:`dst` returns a non-zero value, :attr:`tm_isdst` is set to ``1``; else"
 " :attr:`tm_isdst` is set to ``0``."
-msgstr ""
+msgstr ":func:`time.localtime` が返す形式の :class:`time.struct_time` を返します。\n``d.timetuple()`` は ``time.struct_time((d.year, d.month, d.day, d.hour, d.minute, d.second, d.weekday(), yday, dst))`` と等価です。\nここで ``yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1`` はその年の1月1日を ``1`` としたときのその日の位置です。\n返されるタプルの :attr:`tm_isdst` フラグは :meth:`dst` メソッドに従って設定されます: :attr:`.tzinfo` が ``None`` か :meth:`dst` が ``None`` を返す場合、 :attr:`tm_isdst` は ``-1`` に設定されます; そうでない場合、 :meth:`dst` がゼロでない値を返すと :attr:`tm_isdst` は ``1`` となります; それ以外の場合には :attr:`tm_isdst` は ``0`` に設定されます。"
 
 #: ../../library/datetime.rst:1071
 msgid ""
@@ -1333,7 +1333,7 @@ msgid ""
 "Return POSIX timestamp corresponding to the :class:`.datetime` instance.  "
 "The return value is a :class:`float` similar to that returned by "
 ":func:`time.time`."
-msgstr ""
+msgstr ":class:`.datetime` インスタンスに対応する POSIX タイムスタンプを返します。\n返り値は :func:`time.time` で返される値に近い :class:`float` です。"
 
 #: ../../library/datetime.rst:1094
 msgid ""
@@ -1342,12 +1342,12 @@ msgid ""
 "the conversion.  Since :class:`.datetime` supports wider range of values "
 "than :c:func:`mktime` on many platforms, this method may raise "
 ":exc:`OverflowError` for times far in the past or far in the future."
-msgstr ""
+msgstr "このメソッドでは naive な :class:`.datetime` インスタンスはローカル時刻とし、プラットフォームの C 関数 :c:func:`mktime` に頼って変換を行います。\n:class:`.datetime` は多くのプラットフォームの :c:func:`mktime` より広い範囲の値をサポートしているので、遥か過去の時刻や遥か未来の時刻に対し、このメソッドは :exc:`OverflowError` を送出するかもしれません。"
 
 #: ../../library/datetime.rst:1101
 msgid ""
 "For aware :class:`.datetime` instances, the return value is computed as::"
-msgstr ""
+msgstr "aware な :class:`.datetime` インスタンスに対しては以下のように返り値が計算されます::"
 
 #: ../../library/datetime.rst:1110
 msgid ""
@@ -1355,7 +1355,7 @@ msgid ""
 ":class:`.datetime` instance representing UTC time.  If your application uses"
 " this convention and your system timezone is not set to UTC, you can obtain "
 "the POSIX timestamp by supplying ``tzinfo=timezone.utc``::"
-msgstr ""
+msgstr "UTC 時刻を表す naive な :class:`.datetime` インスタンスから直接 POSIX タイムスタンプを取得するメソッドはありません。\nアプリケーションがその変換を使っており、システムのタイムゾーンが UTC に設定されていなかった場合、 ``tzinfo=timezone.utc`` を引数に与えることで POSIX タイムスタンプを取得できます::"
 
 #: ../../library/datetime.rst:1118
 msgid "or by calculating the timestamp directly::"
@@ -1508,7 +1508,7 @@ msgid ""
 "a different type, :exc:`TypeError` is raised unless the comparison is ``==``"
 " or ``!=``.  The latter cases return :const:`False` or :const:`True`, "
 "respectively."
-msgstr ""
+msgstr "比較対象が両方とも aware であり、同じ :attr:`~time.tzinfo` 属性を持つ場合、 :attr:`~time.tzinfo` は無視され datetime だけで比較が行われます。\n比較対象が両方とも aware であり、異なる :attr:`~time.tzinfo` 属性を持つ場合、まず最初に (``self.utcoffset()`` で取得できる) それぞれの UTC オフセットを引いて調整します。\n異なる型どうしの比較がデフォルトのオブジェクトアドレス比較となってしまうのを防ぐために、 :class:`.time` オブジェクトを異なる型のオブジェクトと比較すると、比較演算子が ``==`` または ``!=`` でないかぎり :exc:`TypeError` が送出されます。\n比較演算子が ``==`` または ``!=`` である場合、それぞれ :const:`False` または :const:`True` を返します。"
 
 #: ../../library/datetime.rst:1384
 msgid ""
@@ -1580,7 +1580,7 @@ msgid ""
 "``self.tzinfo.utcoffset(None)``, and raises an exception if the latter "
 "doesn't return ``None`` or a :class:`timedelta` object representing a whole "
 "number of minutes with magnitude less than one day."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合 ``None`` を返し、そうでない場合には ``self.tzinfo.utcoffset(None)`` を返します。\n後者の式が ``None`` もしくは、1 日未満の経過時間を表す :class:`timedelta` オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1448
 msgid ""
@@ -1588,14 +1588,14 @@ msgid ""
 "``self.tzinfo.dst(None)``, and raises an exception if the latter doesn't "
 "return ``None``, or a :class:`timedelta` object representing a whole number "
 "of minutes with magnitude less than one day."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合 ``None`` を返し、そうでない場合には ``self.tzinfo.dst(None)`` を返します。\n後者の式が ``None`` もしくは、 1日未満の経過時間を表す :class:`timedelta` オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1456
 msgid ""
 "If :attr:`.tzinfo` is ``None``, returns ``None``, else returns "
 "``self.tzinfo.tzname(None)``, or raises an exception if the latter doesn't "
 "return ``None`` or a string object."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` の場合 ``None`` を返し、そうでない場合には ``self.tzinfo.tzname(None)`` を返します。\n後者の式が ``None`` か文字列オブジェクトのいずれかを返さない場合には例外を送出します。"
 
 #: ../../library/datetime.rst:1461
 msgid "Example:"
@@ -1614,7 +1614,7 @@ msgid ""
 "supplies a simple concrete subclass of :class:`tzinfo`, :class:`timezone`, "
 "which can represent timezones with fixed offset from UTC such as UTC itself "
 "or North American EST and EDT."
-msgstr ""
+msgstr "このクラスは抽象基底クラスで、直接インスタンス化すべきでないことを意味します。\n具象サブクラスを作成し、(少なくとも) 使いたい :class:`.datetime` のメソッドが必要とする :class:`tzinfo` のメソッドを実装する必要があります。\n:mod:`datetime` モジュールは :class:`tzinfo` のシンプルな具象サブクラス :class:`timezone` を提供します。\nこれは UTC そのものか北アメリカの EST と EDT のような UTC からの固定されたオフセットを持つタイムゾーンを表せます。"
 
 #: ../../library/datetime.rst:1503
 msgid ""
@@ -1679,7 +1679,7 @@ msgid ""
 ":meth:`dst` method to determine how the :attr:`tm_isdst` flag should be set,"
 " and :meth:`tzinfo.fromutc` calls :meth:`dst` to account for DST changes "
 "when crossing time zones."
-msgstr ""
+msgstr "夏時間 (DST) 修正を、 UTC から東向きを正とした分で返します。\nDST 情報が未知の場合、 ``None`` が返されます。\nDST が有効でない場合には ``timedelta(0)`` を返します。\nDST が有効の場合、オフセットは :class:`timedelta` オブジェクトで返します (詳細は :meth:`utcoffset` を参照してください)。\nDST オフセットが利用可能な場合、この値は :meth:`utcoffset` が返す UTC からのオフセットには既に加算されているため、 DST を個別に取得する必要がない限り :meth:`dst` を使って問い合わせる必要はないので注意してください。\n例えば、 :meth:`datetime.timetuple` は :attr:`~.datetime.tzinfo` 属性の :meth:`dst` メソッドを呼んで :attr:`tm_isdst` フラグがセットされているかどうか判断し、 :meth:`tzinfo.fromutc` は :meth:`dst` タイムゾーンを移動する際に DST による変更があるかどうかを調べます。"
 
 #: ../../library/datetime.rst:1554
 msgid ""
@@ -1872,7 +1872,7 @@ msgstr "*pytz* ライブラリは Python に *IANA タイムゾーンデータ�
 
 #: ../../library/datetime.rst:1718
 msgid "`IANA timezone database <https://www.iana.org/time-zones>`_"
-msgstr ""
+msgstr "`IANA タイムゾーンデータベース <https://www.iana.org/time-zones>`_"
 
 #: ../../library/datetime.rst:1715
 msgid ""
@@ -2222,7 +2222,7 @@ msgstr "``%z``"
 #: ../../library/datetime.rst:1873
 msgid ""
 "UTC offset in the form +HHMM or -HHMM (empty string if the object is naive)."
-msgstr ""
+msgstr "UTCオフセットを +HHMM もしくは -HHMM の形式で表示します (オブジェクトがnaiveであれば空文字列)。"
 
 #: ../../library/datetime.rst:1873
 msgid "(empty), +0000, -0400, +1030"
