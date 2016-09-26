@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-26 03:53+0000\n"
+"PO-Revision-Date: 2016-09-26 10:56+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2848,7 +2848,7 @@ msgstr ""
 msgid ""
 "Windows builds now require Microsoft Visual C++ 14.0, which is available as "
 "part of `Visual Studio 2015 <https://www.visualstudio.com/>`_."
-msgstr ""
+msgstr "Windows でのビルドには今では Microsoft Visual C++ 14.0 が必要です。 `Visual Studio 2015 <https://www.visualstudio.com/>`_ の一部として入手できます。"
 
 #: ../../whatsnew/3.5.rst:2217
 msgid ""
@@ -2856,7 +2856,7 @@ msgid ""
 "on some platforms (the tag is optional, and CPython will import extensions "
 "without it, although if the tag is present and mismatched, the extension "
 "won't be loaded):"
-msgstr ""
+msgstr "いくつかのプラットフォームにおいて、拡張モジュールのファイル名にプラットフォームについての情報をタグとして含むようになりました (タグはオプショナルであり、CPython は、タグが含まれていて実行しようとしているプラットフォームとミスマッチな場合にその拡張をロードしようとしない一方で、拡張をそれが含まれていなくてもインポートします):"
 
 #: ../../whatsnew/3.5.rst:2222
 msgid ""
@@ -2881,14 +2881,14 @@ msgid ""
 "``<architecture>`` is the hardware architecture the extension module was "
 "built to run on. It's most commonly either ``i386`` for 32-bit Intel "
 "platforms or ``x86_64`` for 64-bit Intel (and AMD) platforms."
-msgstr ""
+msgstr "``<architecture>`` は拡張モジュールがどのハードウェアアーキテクチャ向けに動作するようビルドされたのかを表します。32-bit Intel プラットフォーム向けの ``i386`` か 64-bit Intel (及び AMD) プラットフォーム向けの ``x86_64`` がもっとも一般的です。"
 
 #: ../../whatsnew/3.5.rst:2235
 msgid ""
 "``<os>`` is always ``linux-gnu``, except for extensions built to talk to the"
 " 32-bit ABI on 64-bit platforms, in which case it is ``linux-gnu32`` (and "
 "``<architecture>`` will be ``x86_64``)."
-msgstr ""
+msgstr "``<os>`` は原則として ``linux-gnu`` ですが、64-bit プラットフォームにおいて 32-bit ABI で動作するようビルドされた拡張モジュールの場合は ``linux-gnu32`` になります (この場合 ``<architecture>`` は ``x86_64`` となるでしょう)。"
 
 #: ../../whatsnew/3.5.rst:2239
 msgid ""
@@ -2901,7 +2901,7 @@ msgid ""
 "``<platform>`` is the platform the extension module was built for, either "
 "``win32`` for Win32, ``win_amd64`` for Win64, ``win_ia64`` for Windows "
 "Itanium 64, and ``win_arm`` for Windows on ARM."
-msgstr ""
+msgstr "``<platform>`` は拡張モジュールがどのプラットフォーム向けにビルドされたものなのかを表し、 Win32 用の ``win32`` , Win64 用の ``win_amd64`` , Windows Itanium 64 用の ``win_ia64`` , Windows on ARM 用の ``win_arm`` のいずれかです。"
 
 #: ../../whatsnew/3.5.rst:2252
 msgid ""
