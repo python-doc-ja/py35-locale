@@ -137,7 +137,7 @@ msgid "When a database is accessed by multiple connections, and one of the proce
 msgstr ""
 
 #: ../../library/sqlite3.rst:185
-msgid "For the *isolation_level* parameter, please see the :attr:`Connection.isolation_level` property of :class:`Connection` objects."
+msgid "For the *isolation_level* parameter, please see the :attr:`~Connection.isolation_level` property of :class:`Connection` objects."
 msgstr ""
 
 #: ../../library/sqlite3.rst:188
@@ -213,7 +213,7 @@ msgid ":const:`True` if a transaction is active (there are uncommitted changes),
 msgstr ""
 
 #: ../../library/sqlite3.rst:290
-msgid "The cursor method accepts a single optional parameter *cursorClass*. If supplied, this must be a custom cursor class that extends :class:`sqlite3.Cursor`."
+msgid "The cursor method accepts a single optional parameter *factory*. If supplied, this must be a callable returning an instance of :class:`Cursor` or its subclasses."
 msgstr ""
 
 #: ../../library/sqlite3.rst:296

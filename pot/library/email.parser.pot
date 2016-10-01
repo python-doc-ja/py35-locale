@@ -148,7 +148,7 @@ msgid "The bytes contained in *fp* must be formatted as a block of :rfc:`2822` s
 msgstr ""
 
 #: ../../library/email.parser.rst:207
-msgid "Similar to the :meth:`parse` method, except it takes a byte string object instead of a file-like object.  Calling this method on a byte string is exactly equivalent to wrapping *text* in a :class:`~io.BytesIO` instance first and calling :meth:`parse`."
+msgid "Similar to the :meth:`parse` method, except it takes a :term:`bytes-like object` instead of a file-like object.  Calling this method is equivalent to wrapping *text* in a :class:`~io.BytesIO` instance first and calling :meth:`parse`."
 msgstr ""
 
 #: ../../library/email.parser.rst:217
@@ -160,7 +160,7 @@ msgid "Return a message object structure from a string.  This is exactly equival
 msgstr ""
 
 #: ../../library/email.parser.rst:236
-msgid "Return a message object structure from a byte string.  This is exactly equivalent to ``BytesParser().parsebytes(s)``.  Optional *_class* and *strict* are interpreted as with the :class:`~email.parser.Parser` class constructor."
+msgid "Return a message object structure from a :term:`bytes-like object`.  This is exactly equivalent to ``BytesParser().parsebytes(s)``.  Optional *_class* and *strict* are interpreted as with the :class:`~email.parser.Parser` class constructor."
 msgstr ""
 
 #: ../../library/email.parser.rst:248

@@ -1764,7 +1764,7 @@ msgid "The *failfast*, *catchbreak* and *buffer* parameters have the same effect
 msgstr ""
 
 #: ../../library/unittest.rst:2056
-msgid "The *warning* argument specifies the :ref:`warning filter <warning-filter>` that should be used while running the tests.  If it's not specified, it will remain ``None`` if a :option:`-W` option is passed to :program:`python`, otherwise it will be set to ``'default'``."
+msgid "The *warnings* argument specifies the :ref:`warning filter <warning-filter>` that should be used while running the tests.  If it's not specified, it will remain ``None`` if a :option:`-W` option is passed to :program:`python`, otherwise it will be set to ``'default'``."
 msgstr ""
 
 #: ../../library/unittest.rst:2061

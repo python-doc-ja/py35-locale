@@ -251,6 +251,6 @@ msgid "Create a new bytes object in *\\*bytes* containing the contents of *newpa
 msgstr ""
 
 #: ../../c-api/bytes.rst:193
-msgid "A way to resize a bytes object even though it is \"immutable\". Only use this to build up a brand new bytes object; don't use this if the bytes may already be known in other parts of the code.  It is an error to call this function if the refcount on the input bytes object is not one. Pass the address of an existing bytes object as an lvalue (it may be written into), and the new size desired.  On success, *\\*bytes* holds the resized bytes object and ``0`` is returned; the address in *\\*bytes* may differ from its input value.  If the reallocation fails, the original bytes object at *\\*bytes* is deallocated, *\\*bytes* is set to *NULL*, a memory exception is set, and ``-1`` is returned."
+msgid "A way to resize a bytes object even though it is \"immutable\". Only use this to build up a brand new bytes object; don't use this if the bytes may already be known in other parts of the code.  It is an error to call this function if the refcount on the input bytes object is not one. Pass the address of an existing bytes object as an lvalue (it may be written into), and the new size desired.  On success, *\\*bytes* holds the resized bytes object and ``0`` is returned; the address in *\\*bytes* may differ from its input value.  If the reallocation fails, the original bytes object at *\\*bytes* is deallocated, *\\*bytes* is set to *NULL*, :exc:`MemoryError` is set, and ``-1`` is returned."
 msgstr ""
 

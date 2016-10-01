@@ -180,7 +180,7 @@ msgid "Find the loader for a module, optionally within the specified *path*. If 
 msgstr ""
 
 #: ../../library/importlib.rst:121
-msgid "A dotted name does not have its parent's implicitly imported as that requires loading them and that may not be desired. To properly import a submodule you will need to import all parent packages of the submodule and use the correct argument to *path*."
+msgid "A dotted name does not have its parents implicitly imported as that requires loading them and that may not be desired. To properly import a submodule you will need to import all parent packages of the submodule and use the correct argument to *path*."
 msgstr ""
 
 #: ../../library/importlib.rst:128

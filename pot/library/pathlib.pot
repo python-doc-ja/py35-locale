@@ -493,7 +493,7 @@ msgid "Make the path absolute, resolving any symlinks.  A new path object is ret
 msgstr ""
 
 #: ../../library/pathlib.rst:924
-msgid "`\"..\"` components are also eliminated (this is the only method to do so)::"
+msgid "\"``..``\" components are also eliminated (this is the only method to do so)::"
 msgstr ""
 
 #: ../../library/pathlib.rst:930
@@ -501,7 +501,7 @@ msgid "If the path doesn't exist, :exc:`FileNotFoundError` is raised.  If an inf
 msgstr ""
 
 #: ../../library/pathlib.rst:937
-msgid "This is like calling :meth:`glob` with \"``**``\" added in front of the given *pattern*:"
+msgid "This is like calling :meth:`Path.glob` with \"``**``\" added in front of the given *pattern*:"
 msgstr ""
 
 #: ../../library/pathlib.rst:950

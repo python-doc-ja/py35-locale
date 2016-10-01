@@ -180,7 +180,7 @@ msgid "The integer *optimize* specifies the optimization level of the compiler; 
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:291
-msgid "Like :c:func:`Py_CompileStringExFlags`, but *filename* is a byte string decoded from the filesystem encoding (:func:`os.fsdecode`)."
+msgid "Like :c:func:`Py_CompileStringObject`, but *filename* is a byte string decoded from the filesystem encoding (:func:`os.fsdecode`)."
 msgstr ""
 
 #: ../../c-api/veryhigh.rst:298

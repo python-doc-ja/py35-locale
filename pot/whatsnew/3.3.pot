@@ -1967,7 +1967,7 @@ msgid "You can query the SSL compression algorithm used by an SSL socket, thanks
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1957
-msgid "Support has been added for the Next Procotol Negotiation extension using the :meth:`ssl.SSLContext.set_npn_protocols` method. (Contributed by Colin Marc in :issue:`14204`.)"
+msgid "Support has been added for the Next Protocol Negotiation extension using the :meth:`ssl.SSLContext.set_npn_protocols` method. (Contributed by Colin Marc in :issue:`14204`.)"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1961

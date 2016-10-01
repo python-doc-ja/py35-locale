@@ -1091,7 +1091,7 @@ msgid "Return a reverse :term:`iterator`.  *seq* must be an object which has a :
 msgstr ""
 
 #: ../../library/functions.rst:1236
-msgid "Return the floating point value *number* rounded to *ndigits* digits after the decimal point.  If *ndigits* is omitted, it returns the nearest integer to its input.  Delegates to ``number.__round__(ndigits)``."
+msgid "Return the floating point value *number* rounded to *ndigits* digits after the decimal point.  If *ndigits* is omitted or is ``None``, it returns the nearest integer to its input.  Delegates to ``number.__round__(ndigits)``."
 msgstr ""
 
 #: ../../library/functions.rst:1240

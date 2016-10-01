@@ -259,7 +259,7 @@ msgid "Now here's a demonstration of what the \"count\" action gives. You've pro
 msgstr ""
 
 #: ../../howto/argparse.rst:506
-msgid "And, just like the \"store_true\" action, if you don't specify the ``-v`` flag, that flag is considered to have ``None`` value."
+msgid "And if you don't specify the ``-v`` flag, that flag is considered to have ``None`` value."
 msgstr ""
 
 #: ../../howto/argparse.rst:509

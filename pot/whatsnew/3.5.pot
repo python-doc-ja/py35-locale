@@ -24,636 +24,636 @@ msgid "Elvis Pranskevichus <elvis@magic.io>, Yury Selivanov <yury@magic.io>"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:47
-msgid "This article explains the new features in Python 3.5, compared to 3.4. Python 3.5 was released on September 13, 2015.  See the `changelog <https://docs.python.org/3.5/whatsnew/changelog.html>`_ for a full list of changes."
+msgid "This article explains the new features in Python 3.5, compared to 3.4. Python 3.5 was released on September 13, 2015.  See the :ref:`changelog <changelog>` for a full list of changes."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:54
+#: ../../whatsnew/3.5.rst:53
 msgid ":pep:`478` - Python 3.5 Release Schedule"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:58
+#: ../../whatsnew/3.5.rst:57
 msgid "Summary -- Release highlights"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:60
+#: ../../whatsnew/3.5.rst:59
 msgid "New syntax features:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:62
+#: ../../whatsnew/3.5.rst:61
 msgid ":ref:`PEP 492 <whatsnew-pep-492>`, coroutines with async and await syntax."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:63
+#: ../../whatsnew/3.5.rst:62
 msgid ":ref:`PEP 465 <whatsnew-pep-465>`, a new matrix multiplication operator: ``a @ b``."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:64
+#: ../../whatsnew/3.5.rst:63
 msgid ":ref:`PEP 448 <whatsnew-pep-448>`, additional unpacking generalizations."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:67
+#: ../../whatsnew/3.5.rst:66
 msgid "New library modules:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:69
+#: ../../whatsnew/3.5.rst:68
 msgid ":mod:`typing`: :ref:`PEP 484 -- Type Hints <whatsnew-pep-484>`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:70
+#: ../../whatsnew/3.5.rst:69
 msgid ":mod:`zipapp`: :ref:`PEP 441 Improving Python ZIP Application Support <whatsnew-zipapp>`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:74
+#: ../../whatsnew/3.5.rst:73
 msgid "New built-in features:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:76
+#: ../../whatsnew/3.5.rst:75
 msgid "``bytes % args``, ``bytearray % args``: :ref:`PEP 461 <whatsnew-pep-461>` -- Adding ``%`` formatting to bytes and bytearray."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:79
+#: ../../whatsnew/3.5.rst:78
 msgid "New :meth:`bytes.hex`, :meth:`bytearray.hex` and :meth:`memoryview.hex` methods. (Contributed by Arnon Yaari in :issue:`9951`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:82
+#: ../../whatsnew/3.5.rst:81
 msgid ":class:`memoryview` now supports tuple indexing (including multi-dimensional). (Contributed by Antoine Pitrou in :issue:`23632`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:85
+#: ../../whatsnew/3.5.rst:84
 msgid "Generators have a new ``gi_yieldfrom`` attribute, which returns the object being iterated by ``yield from`` expressions. (Contributed by Benno Leslie and Yury Selivanov in :issue:`24450`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:89
+#: ../../whatsnew/3.5.rst:88
 msgid "A new :exc:`RecursionError` exception is now raised when maximum recursion depth is reached.  (Contributed by Georg Brandl in :issue:`19235`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:94
+#: ../../whatsnew/3.5.rst:93
 msgid "CPython implementation improvements:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:96
+#: ../../whatsnew/3.5.rst:95
 msgid "When the ``LC_TYPE`` locale is the POSIX locale (``C`` locale), :py:data:`sys.stdin` and :py:data:`sys.stdout` now use the ``surrogateescape`` error handler, instead of the ``strict`` error handler. (Contributed by Victor Stinner in :issue:`19977`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:101
+#: ../../whatsnew/3.5.rst:100
 msgid "``.pyo`` files are no longer used and have been replaced by a more flexible scheme that includes the optimization level explicitly in ``.pyc`` name. (See :ref:`PEP 488 overview <whatsnew-pep-488>`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:105
+#: ../../whatsnew/3.5.rst:104
 msgid "Builtin and extension modules are now initialized in a multi-phase process, which is similar to how Python modules are loaded. (See :ref:`PEP 489 overview <whatsnew-pep-489>`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:110
+#: ../../whatsnew/3.5.rst:109
 msgid "Significant improvements in the standard library:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:112
+#: ../../whatsnew/3.5.rst:111
 msgid ":class:`collections.OrderedDict` is now :ref:`implemented in C <whatsnew-ordereddict>`, which makes it 4 to 100 times faster."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:116
+#: ../../whatsnew/3.5.rst:115
 msgid "The :mod:`ssl` module gained :ref:`support for Memory BIO <whatsnew-sslmemorybio>`, which decouples SSL protocol handling from network IO."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:120
+#: ../../whatsnew/3.5.rst:119
 msgid "The new :func:`os.scandir` function provides a :ref:`better and significantly faster way <whatsnew-pep-471>` of directory traversal."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:124
+#: ../../whatsnew/3.5.rst:123
 msgid ":func:`functools.lru_cache` has been mostly :ref:`reimplemented in C <whatsnew-lrucache>`, yielding much better performance."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:128
+#: ../../whatsnew/3.5.rst:127
 msgid "The new :func:`subprocess.run` function provides a :ref:`streamlined way to run subprocesses <whatsnew-subprocess>`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:131
+#: ../../whatsnew/3.5.rst:130
 msgid "The :mod:`traceback` module has been significantly :ref:`enhanced <whatsnew-traceback>` for improved performance and developer convenience."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:136
+#: ../../whatsnew/3.5.rst:135
 msgid "Security improvements:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:138
+#: ../../whatsnew/3.5.rst:137
 msgid "SSLv3 is now disabled throughout the standard library. It can still be enabled by instantiating a :class:`ssl.SSLContext` manually.  (See :issue:`22638` for more details; this change was backported to CPython 3.4 and 2.7.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:143
+#: ../../whatsnew/3.5.rst:142
 msgid "HTTP cookie parsing is now stricter, in order to protect against potential injection attacks. (Contributed by Antoine Pitrou in :issue:`22796`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:148
+#: ../../whatsnew/3.5.rst:147
 msgid "Windows improvements:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:150
+#: ../../whatsnew/3.5.rst:149
 msgid "A new installer for Windows has replaced the old MSI. See :ref:`using-on-windows` for more information."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:153
+#: ../../whatsnew/3.5.rst:152
 msgid "Windows builds now use Microsoft Visual C++ 14.0, and extension modules should use the same."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:157
+#: ../../whatsnew/3.5.rst:156
 msgid "Please read on for a comprehensive list of user-facing changes, including many other smaller improvements, CPython optimizations, deprecations, and potential porting issues."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:163
+#: ../../whatsnew/3.5.rst:162
 msgid "New Features"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:168
+#: ../../whatsnew/3.5.rst:167
 msgid "PEP 492 - Coroutines with async and await syntax"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:170
+#: ../../whatsnew/3.5.rst:169
 msgid ":pep:`492` greatly improves support for asynchronous programming in Python by adding :term:`awaitable objects <awaitable>`, :term:`coroutine functions <coroutine function>`, :term:`asynchronous iteration <asynchronous iterable>`, and :term:`asynchronous context managers <asynchronous context manager>`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:176
+#: ../../whatsnew/3.5.rst:175
 msgid "Coroutine functions are declared using the new :keyword:`async def` syntax::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:181
+#: ../../whatsnew/3.5.rst:180
 msgid "Inside a coroutine function, the new :keyword:`await` expression can be used to suspend coroutine execution until the result is available.  Any object can be *awaited*, as long as it implements the :term:`awaitable` protocol by defining the :meth:`__await__` method."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:186
+#: ../../whatsnew/3.5.rst:185
 msgid "PEP 492 also adds :keyword:`async for` statement for convenient iteration over asynchronous iterables."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:189
+#: ../../whatsnew/3.5.rst:188
 msgid "An example of a rudimentary HTTP client written using the new syntax::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:215
+#: ../../whatsnew/3.5.rst:214
 msgid "Similarly to asynchronous iteration, there is a new syntax for asynchronous context managers.  The following script::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:235
+#: ../../whatsnew/3.5.rst:234
 msgid "will output::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:244
+#: ../../whatsnew/3.5.rst:243
 msgid "Note that both :keyword:`async for` and :keyword:`async with` can only be used inside a coroutine function declared with :keyword:`async def`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:247
+#: ../../whatsnew/3.5.rst:246
 msgid "Coroutine functions are intended to be run inside a compatible event loop, such as the :ref:`asyncio loop <asyncio-event-loop>`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:253
+#: ../../whatsnew/3.5.rst:252
 msgid "Starting with CPython 3.5.2, ``__aiter__`` can directly return :term:`asynchronous iterators <asynchronous iterator>`.  Returning an :term:`awaitable` object will result in a :exc:`PendingDeprecationWarning`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:259
+#: ../../whatsnew/3.5.rst:258
 msgid "See more details in the :ref:`async-iterators` documentation section."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:265
+#: ../../whatsnew/3.5.rst:264
 msgid ":pep:`492` -- Coroutines with async and await syntax"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:266
+#: ../../whatsnew/3.5.rst:265
 msgid "PEP written and implemented by Yury Selivanov."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:272
+#: ../../whatsnew/3.5.rst:271
 msgid "PEP 465 - A dedicated infix operator for matrix multiplication"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:274
+#: ../../whatsnew/3.5.rst:273
 msgid ":pep:`465` adds the ``@`` infix operator for matrix multiplication. Currently, no builtin Python types implement the new operator, however, it can be implemented by defining :meth:`__matmul__`, :meth:`__rmatmul__`, and :meth:`__imatmul__` for regular, reflected, and in-place matrix multiplication.  The semantics of these methods is similar to that of methods defining other infix arithmetic operators."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:281
+#: ../../whatsnew/3.5.rst:280
 msgid "Matrix multiplication is a notably common operation in many fields of mathematics, science, engineering, and the addition of ``@`` allows writing cleaner code::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:287
+#: ../../whatsnew/3.5.rst:286
 msgid "instead of::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:292
+#: ../../whatsnew/3.5.rst:291
 msgid "NumPy 1.10 has support for the new operator::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:312
+#: ../../whatsnew/3.5.rst:311
 msgid ":pep:`465` -- A dedicated infix operator for matrix multiplication"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:313
+#: ../../whatsnew/3.5.rst:312
 msgid "PEP written by Nathaniel J. Smith; implemented by Benjamin Peterson."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:319
+#: ../../whatsnew/3.5.rst:318
 msgid "PEP 448 - Additional Unpacking Generalizations"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:321
+#: ../../whatsnew/3.5.rst:320
 msgid ":pep:`448` extends the allowed uses of the ``*`` iterable unpacking operator and ``**`` dictionary unpacking operator.  It is now possible to use an arbitrary number of unpackings in :ref:`function calls <calls>`::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:335
+#: ../../whatsnew/3.5.rst:334
 msgid "Similarly, tuple, list, set, and dictionary displays allow multiple unpackings (see :ref:`exprlists` and :ref:`dict`)::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:353
+#: ../../whatsnew/3.5.rst:352
 msgid ":pep:`448` -- Additional Unpacking Generalizations"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:353
+#: ../../whatsnew/3.5.rst:352
 msgid "PEP written by Joshua Landau; implemented by Neil Girdhar, Thomas Wouters, and Joshua Landau."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:360
+#: ../../whatsnew/3.5.rst:359
 msgid "PEP 461 - percent formatting support for bytes and bytearray"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:362
+#: ../../whatsnew/3.5.rst:361
 msgid ":pep:`461` adds support for the ``%`` :ref:`interpolation operator <bytes-formatting>` to :class:`bytes` and :class:`bytearray`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:366
+#: ../../whatsnew/3.5.rst:365
 msgid "While interpolation is usually thought of as a string operation, there are cases where interpolation on ``bytes`` or ``bytearrays`` makes sense, and the work needed to make up for this missing functionality detracts from the overall readability of the code.  This issue is particularly important when dealing with wire format protocols, which are often a mixture of binary and ASCII compatible text."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:373
+#: ../../whatsnew/3.5.rst:372
 #: ../../whatsnew/3.5.rst:1847
 msgid "Examples::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:381
+#: ../../whatsnew/3.5.rst:380
 msgid "Unicode is not allowed for ``%b``, but it is accepted by ``%a`` (equivalent of ``repr(obj).encode('ascii', 'backslashreplace')``)::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:392
+#: ../../whatsnew/3.5.rst:391
 msgid "Note that ``%s`` and ``%r`` conversion types, although supported, should only be used in codebases that need compatibility with Python 2."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:398
+#: ../../whatsnew/3.5.rst:397
 msgid ":pep:`461` -- Adding % formatting to bytes and bytearray"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:398
+#: ../../whatsnew/3.5.rst:397
 msgid "PEP written by Ethan Furman; implemented by Neil Schemenauer and Ethan Furman."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:405
+#: ../../whatsnew/3.5.rst:404
 msgid "PEP 484 - Type Hints"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:407
+#: ../../whatsnew/3.5.rst:406
 msgid "Function annotation syntax has been a Python feature since version 3.0 (:pep:`3107`), however the semantics of annotations has been left undefined."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:410
+#: ../../whatsnew/3.5.rst:409
 msgid "Experience has shown that the majority of function annotation uses were to provide type hints to function parameters and return values.  It became evident that it would be beneficial for Python users, if the standard library included the base definitions and tools for type annotations."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:415
+#: ../../whatsnew/3.5.rst:414
 msgid ":pep:`484` introduces a :term:`provisional module <provisional api>` to provide these standard definitions and tools, along with some conventions for situations where annotations are not available."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:419
+#: ../../whatsnew/3.5.rst:418
 msgid "For example, here is a simple function whose argument and return type are declared in the annotations::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:425
+#: ../../whatsnew/3.5.rst:424
 msgid "While these annotations are available at runtime through the usual :attr:`__annotations__` attribute, *no automatic type checking happens at runtime*.  Instead, it is assumed that a separate off-line type checker (e.g. `mypy <http://mypy-lang.org>`_) will be used for on-demand source code analysis."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:431
+#: ../../whatsnew/3.5.rst:430
 msgid "The type system supports unions, generic types, and a special type named :class:`~typing.Any` which is consistent with (i.e. assignable to and from) all types."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:437
+#: ../../whatsnew/3.5.rst:436
 msgid ":mod:`typing` module documentation"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:439
+#: ../../whatsnew/3.5.rst:438
 msgid ":pep:`484` -- Type Hints"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:439
+#: ../../whatsnew/3.5.rst:438
 msgid "PEP written by Guido van Rossum, Jukka Lehtosalo, and Łukasz Langa; implemented by Guido van Rossum."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:441
+#: ../../whatsnew/3.5.rst:440
 msgid ":pep:`483` -- The Theory of Type Hints"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:442
+#: ../../whatsnew/3.5.rst:441
 msgid "PEP written by Guido van Rossum"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:448
+#: ../../whatsnew/3.5.rst:447
 msgid "PEP 471 - os.scandir() function -- a better and faster directory iterator"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:450
+#: ../../whatsnew/3.5.rst:449
 msgid ":pep:`471` adds a new directory iteration function, :func:`os.scandir`, to the standard library.  Additionally, :func:`os.walk` is now implemented using ``scandir``, which makes it 3 to 5 times faster on POSIX systems and 7 to 20 times faster on Windows systems.  This is largely achieved by greatly reducing the number of calls to :func:`os.stat` required to walk a directory tree."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:457
+#: ../../whatsnew/3.5.rst:456
 msgid "Additionally, ``scandir`` returns an iterator, as opposed to returning a list of file names, which improves memory efficiency when iterating over very large directories."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:461
+#: ../../whatsnew/3.5.rst:460
 msgid "The following example shows a simple use of :func:`os.scandir` to display all the files (excluding directories) in the given *path* that don't start with ``'.'``. The :meth:`entry.is_file() <os.DirEntry.is_file>` call will generally not make an additional system call::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:472
+#: ../../whatsnew/3.5.rst:471
 msgid ":pep:`471` -- os.scandir() function -- a better and faster directory iterator"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:473
+#: ../../whatsnew/3.5.rst:472
 msgid "PEP written and implemented by Ben Hoyt with the help of Victor Stinner."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:479
+#: ../../whatsnew/3.5.rst:478
 msgid "PEP 475: Retry system calls failing with EINTR"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:481
+#: ../../whatsnew/3.5.rst:480
 msgid "An :py:data:`errno.EINTR` error code is returned whenever a system call, that is waiting for I/O, is interrupted by a signal.  Previously, Python would raise :exc:`InterruptedError` in such cases.  This meant that, when writing a Python application, the developer had two choices:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:486
+#: ../../whatsnew/3.5.rst:485
 msgid "Ignore the ``InterruptedError``."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:487
+#: ../../whatsnew/3.5.rst:486
 msgid "Handle the ``InterruptedError`` and attempt to restart the interrupted system call at every call site."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:490
+#: ../../whatsnew/3.5.rst:489
 msgid "The first option makes an application fail intermittently. The second option adds a large amount of boilerplate that makes the code nearly unreadable.  Compare::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:496
+#: ../../whatsnew/3.5.rst:495
 msgid "and::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:505
+#: ../../whatsnew/3.5.rst:504
 msgid ":pep:`475` implements automatic retry of system calls on ``EINTR``.  This removes the burden of dealing with ``EINTR`` or :exc:`InterruptedError` in user code in most situations and makes Python programs, including the standard library, more robust.  Note that the system call is only retried if the signal handler does not raise an exception."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:512
+#: ../../whatsnew/3.5.rst:511
 msgid "Below is a list of functions which are now retried when interrupted by a signal:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:515
+#: ../../whatsnew/3.5.rst:514
 msgid ":func:`open` and :func:`io.open`;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:517
+#: ../../whatsnew/3.5.rst:516
 msgid "functions of the :mod:`faulthandler` module;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:519
+#: ../../whatsnew/3.5.rst:518
 msgid ":mod:`os` functions: :func:`~os.fchdir`, :func:`~os.fchmod`, :func:`~os.fchown`, :func:`~os.fdatasync`, :func:`~os.fstat`, :func:`~os.fstatvfs`, :func:`~os.fsync`, :func:`~os.ftruncate`, :func:`~os.mkfifo`, :func:`~os.mknod`, :func:`~os.open`, :func:`~os.posix_fadvise`, :func:`~os.posix_fallocate`, :func:`~os.pread`, :func:`~os.pwrite`, :func:`~os.read`, :func:`~os.readv`, :func:`~os.sendfile`, :func:`~os.wait3`, :func:`~os.wait4`, :func:`~os.wait`, :func:`~os.waitid`, :func:`~os.waitpid`, :func:`~os.write`, :func:`~os.writev`;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:529
+#: ../../whatsnew/3.5.rst:528
 msgid "special cases: :func:`os.close` and :func:`os.dup2` now ignore :py:data:`~errno.EINTR` errors; the syscall is not retried (see the PEP for the rationale);"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:533
+#: ../../whatsnew/3.5.rst:532
 msgid ":mod:`select` functions: :func:`devpoll.poll() <select.devpoll.poll>`, :func:`epoll.poll() <select.epoll.poll>`, :func:`kqueue.control() <select.kqueue.control>`, :func:`poll.poll() <select.poll.poll>`, :func:`~select.select`;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:538
+#: ../../whatsnew/3.5.rst:537
 msgid "methods of the :class:`~socket.socket` class: :meth:`~socket.socket.accept`, :meth:`~socket.socket.connect` (except for non-blocking sockets), :meth:`~socket.socket.recv`, :meth:`~socket.socket.recvfrom`, :meth:`~socket.socket.recvmsg`, :meth:`~socket.socket.send`, :meth:`~socket.socket.sendall`, :meth:`~socket.socket.sendmsg`, :meth:`~socket.socket.sendto`;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:545
+#: ../../whatsnew/3.5.rst:544
 msgid ":func:`signal.sigtimedwait` and :func:`signal.sigwaitinfo`;"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:547
+#: ../../whatsnew/3.5.rst:546
 msgid ":func:`time.sleep`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:552
+#: ../../whatsnew/3.5.rst:551
 msgid ":pep:`475` -- Retry system calls failing with EINTR"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:552
+#: ../../whatsnew/3.5.rst:551
 msgid "PEP and implementation written by Charles-François Natali and Victor Stinner, with the help of Antoine Pitrou (the French connection)."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:559
+#: ../../whatsnew/3.5.rst:558
 msgid "PEP 479: Change StopIteration handling inside generators"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:561
+#: ../../whatsnew/3.5.rst:560
 msgid "The interaction of generators and :exc:`StopIteration` in Python 3.4 and earlier was sometimes surprising, and could conceal obscure bugs.  Previously, ``StopIteration`` raised accidentally inside a generator function was interpreted as the end of the iteration by the loop construct driving the generator."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:567
+#: ../../whatsnew/3.5.rst:566
 msgid ":pep:`479` changes the behavior of generators: when a ``StopIteration`` exception is raised inside a generator, it is replaced with a :exc:`RuntimeError` before it exits the generator frame.  The main goal of this change is to ease debugging in the situation where an unguarded :func:`next` call raises ``StopIteration`` and causes the iteration controlled by the generator to terminate silently. This is particularly pernicious in combination with the ``yield from`` construct."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:575
+#: ../../whatsnew/3.5.rst:574
 msgid "This is a backwards incompatible change, so to enable the new behavior, a :term:`__future__` import is necessary::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:595
+#: ../../whatsnew/3.5.rst:594
 msgid "Without a ``__future__`` import, a :exc:`PendingDeprecationWarning` will be raised whenever a ``StopIteration`` exception is raised inside a generator."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:601
+#: ../../whatsnew/3.5.rst:600
 msgid ":pep:`479` -- Change StopIteration handling inside generators"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:601
+#: ../../whatsnew/3.5.rst:600
 msgid "PEP written by Chris Angelico and Guido van Rossum. Implemented by Chris Angelico, Yury Selivanov and Nick Coghlan."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:608
+#: ../../whatsnew/3.5.rst:607
 msgid "PEP 485: A function for testing approximate equality"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:610
+#: ../../whatsnew/3.5.rst:609
 msgid ":pep:`485` adds the :func:`math.isclose` and :func:`cmath.isclose` functions which tell whether two values are approximately equal or \"close\" to each other.  Whether or not two values are considered close is determined according to given absolute and relative tolerances. Relative tolerance is the maximum allowed difference between ``isclose`` arguments, relative to the larger absolute value::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:625
+#: ../../whatsnew/3.5.rst:624
 msgid "It is also possible to compare two values using absolute tolerance, which must be a non-negative value::"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:639
+#: ../../whatsnew/3.5.rst:638
 msgid ":pep:`485` -- A function for testing approximate equality"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:639
+#: ../../whatsnew/3.5.rst:638
 msgid "PEP written by Christopher Barker; implemented by Chris Barker and Tal Einat."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:646
+#: ../../whatsnew/3.5.rst:645
 msgid "PEP 486: Make the Python Launcher aware of virtual environments"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:648
+#: ../../whatsnew/3.5.rst:647
 msgid ":pep:`486` makes the Windows launcher (see :pep:`397`) aware of an active virtual environment. When the default interpreter would be used and the ``VIRTUAL_ENV`` environment variable is set, the interpreter in the virtual environment will be used."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:655
+#: ../../whatsnew/3.5.rst:654
 msgid ":pep:`486` -- Make the Python Launcher aware of virtual environments"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:656
+#: ../../whatsnew/3.5.rst:655
 msgid "PEP written and implemented by Paul Moore."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:662
+#: ../../whatsnew/3.5.rst:661
 msgid "PEP 488: Elimination of PYO files"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:664
+#: ../../whatsnew/3.5.rst:663
 msgid ":pep:`488` does away with the concept of ``.pyo`` files. This means that ``.pyc`` files represent both unoptimized and optimized bytecode. To prevent the need to constantly regenerate bytecode files, ``.pyc`` files now have an optional ``opt-`` tag in their name when the bytecode is optimized. This has the side-effect of no more bytecode file name clashes when running under either :option:`-O` or :option:`-OO`. Consequently, bytecode files generated from :option:`-O`, and :option:`-OO` may now exist simultaneously. :func:`importlib.util.cache_from_source` has an updated API to help with this change."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:676
+#: ../../whatsnew/3.5.rst:675
 msgid ":pep:`488` -- Elimination of PYO files"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:677
+#: ../../whatsnew/3.5.rst:676
 msgid "PEP written and implemented by Brett Cannon."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:683
+#: ../../whatsnew/3.5.rst:682
 msgid "PEP 489: Multi-phase extension module initialization"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:685
+#: ../../whatsnew/3.5.rst:684
 msgid ":pep:`489` updates extension module initialization to take advantage of the two step module loading mechanism introduced by :pep:`451` in Python 3.4."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:688
+#: ../../whatsnew/3.5.rst:687
 msgid "This change brings the import semantics of extension modules that opt-in to using the new mechanism much closer to those of Python source and bytecode modules, including the ability to use any valid identifier as a module name, rather than being restricted to ASCII."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:696
+#: ../../whatsnew/3.5.rst:695
 msgid ":pep:`489` -- Multi-phase extension module initialization"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:696
+#: ../../whatsnew/3.5.rst:695
 msgid "PEP written by Petr Viktorin, Stefan Behnel, and Nick Coghlan; implemented by Petr Viktorin."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:701
+#: ../../whatsnew/3.5.rst:700
 msgid "Other Language Changes"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:703
+#: ../../whatsnew/3.5.rst:702
 msgid "Some smaller changes made to the core Python language are:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:705
+#: ../../whatsnew/3.5.rst:704
 msgid "Added the ``\"namereplace\"`` error handlers.  The ``\"backslashreplace\"`` error handlers now work with decoding and translating. (Contributed by Serhiy Storchaka in :issue:`19676` and :issue:`22286`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:709
+#: ../../whatsnew/3.5.rst:708
 msgid "The :option:`-b` option now affects comparisons of :class:`bytes` with :class:`int`.  (Contributed by Serhiy Storchaka in :issue:`23681`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:712
+#: ../../whatsnew/3.5.rst:711
 msgid "New Kazakh ``kz1048`` and Tajik ``koi8_t`` :ref:`codecs <standard-encodings>`. (Contributed by Serhiy Storchaka in :issue:`22682` and :issue:`22681`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:715
+#: ../../whatsnew/3.5.rst:714
 msgid "Property docstrings are now writable. This is especially useful for :func:`collections.namedtuple` docstrings. (Contributed by Berker Peksag in :issue:`24064`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:719
+#: ../../whatsnew/3.5.rst:718
 msgid "Circular imports involving relative imports are now supported. (Contributed by Brett Cannon and Antoine Pitrou in :issue:`17636`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:724
+#: ../../whatsnew/3.5.rst:723
 msgid "New Modules"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:727
+#: ../../whatsnew/3.5.rst:726
 msgid "typing"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:729
+#: ../../whatsnew/3.5.rst:728
 msgid "The new :mod:`typing` :term:`provisional <provisional api>` module provides standard definitions and tools for function type annotations. See :ref:`Type Hints <whatsnew-pep-484>` for more information."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:736
+#: ../../whatsnew/3.5.rst:735
 msgid "zipapp"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:738
+#: ../../whatsnew/3.5.rst:737
 msgid "The new :mod:`zipapp` module (specified in :pep:`441`) provides an API and command line tool for creating executable Python Zip Applications, which were introduced in Python 2.6 in :issue:`1739468`, but which were not well publicized, either at the time or since."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:743
+#: ../../whatsnew/3.5.rst:742
 msgid "With the new module, bundling your application is as simple as putting all the files, including a ``__main__.py`` file, into a directory ``myapp`` and running:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:752
+#: ../../whatsnew/3.5.rst:751
 msgid "The module implementation has been contributed by Paul Moore in :issue:`23491`."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:757
+#: ../../whatsnew/3.5.rst:756
 msgid ":pep:`441` -- Improving Python ZIP Application Support"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:761
+#: ../../whatsnew/3.5.rst:760
 msgid "Improved Modules"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:764
+#: ../../whatsnew/3.5.rst:763
 msgid "argparse"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:766
+#: ../../whatsnew/3.5.rst:765
 msgid "The :class:`~argparse.ArgumentParser` class now allows disabling :ref:`abbreviated usage <prefix-matching>` of long options by setting :ref:`allow_abbrev` to ``False``.  (Contributed by Jonathan Paugh, Steven Bethard, paul j3 and Daniel Eriksson in :issue:`14910`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:773
+#: ../../whatsnew/3.5.rst:772
 msgid "asyncio"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:775
+#: ../../whatsnew/3.5.rst:774
 msgid "Since the :mod:`asyncio` module is :term:`provisional <provisional api>`, all changes introduced in Python 3.5 have also been backported to Python 3.4.x."
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:778
+#: ../../whatsnew/3.5.rst:777
 msgid "Notable changes in the :mod:`asyncio` module since Python 3.4.0:"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:780
+#: ../../whatsnew/3.5.rst:779
 msgid "New debugging APIs: :meth:`loop.set_debug() <asyncio.BaseEventLoop.set_debug>` and :meth:`loop.get_debug() <asyncio.BaseEventLoop.get_debug>` methods. (Contributed by Victor Stinner.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:784
+#: ../../whatsnew/3.5.rst:783
 msgid "The proactor event loop now supports SSL. (Contributed by Antoine Pitrou and Victor Stinner in :issue:`22560`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:787
+#: ../../whatsnew/3.5.rst:786
 msgid "A new :meth:`loop.is_closed() <asyncio.BaseEventLoop.is_closed>` method to check if the event loop is closed. (Contributed by Victor Stinner in :issue:`21326`.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:791
+#: ../../whatsnew/3.5.rst:790
 msgid "A new :meth:`loop.create_task() <asyncio.BaseEventLoop.create_task>` to conveniently create and schedule a new :class:`~asyncio.Task` for a coroutine.  The ``create_task`` method is also used by all asyncio functions that wrap coroutines into tasks, such as :func:`asyncio.wait`, :func:`asyncio.gather`, etc. (Contributed by Victor Stinner.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:798
+#: ../../whatsnew/3.5.rst:797
 msgid "A new :meth:`transport.get_write_buffer_limits() <asyncio.WriteTransport.get_write_buffer_limits>` method to inquire for *high-* and *low-* water limits of the flow control. (Contributed by Victor Stinner.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:803
+#: ../../whatsnew/3.5.rst:802
 msgid "The :func:`~asyncio.async` function is deprecated in favor of :func:`~asyncio.ensure_future`. (Contributed by Yury Selivanov.)"
 msgstr ""
 
-#: ../../whatsnew/3.5.rst:807
-msgid "New :meth:`loop.set_task_factory() <asyncio.BaseEventLoop.set_task_factory>` and :meth:`loop.set_task_factory() <asyncio.BaseEventLoop.get_task_factory>` methods to customize the task factory that :meth:`loop.create_task() <asyncio.BaseEventLoop.create_task>` method uses. (Contributed by Yury Selivanov.)"
+#: ../../whatsnew/3.5.rst:806
+msgid "New :meth:`loop.set_task_factory() <asyncio.AbstractEventLoop.set_task_factory>` and :meth:`loop.get_task_factory() <asyncio.AbstractEventLoop.get_task_factory>` methods to customize the task factory that :meth:`loop.create_task() <asyncio.BaseEventLoop.create_task>` method uses.  (Contributed by Yury Selivanov.)"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:813

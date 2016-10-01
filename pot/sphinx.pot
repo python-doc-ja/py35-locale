@@ -15,52 +15,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../tools/templates/dummy.html:5
+#: ../../tools/templates/customsourcelink.html:3
+msgid "This Page"
+msgstr ""
+
+#: ../../tools/templates/customsourcelink.html:5
+msgid "Report a Bug"
+msgstr ""
+
+#: ../../tools/templates/customsourcelink.html:7
+msgid "Show Source"
+msgstr ""
+
+#: ../../tools/templates/layout.html:9
+msgid "Documentation "
+msgstr ""
+
+#: ../../tools/templates/layout.html:20
+msgid "Quick search"
+msgstr ""
+
+#: ../../tools/templates/layout.html:21
+msgid "Go"
+msgstr ""
+
+#: ../../tools/templates/layout.html:118
+#: ../../tools/templates/indexcontent.html:56
+msgid "Copyright"
+msgstr ""
+
+#: ../../tools/templates/layout.html:120
+msgid "The Python Software Foundation is a non-profit corporation."
+msgstr ""
+
+#: ../../tools/templates/layout.html:121
+msgid "Please donate."
+msgstr ""
+
+#: ../../tools/templates/layout.html:123
+msgid "Last updated on %(last_updated)s."
+msgstr ""
+
+#: ../../tools/templates/layout.html:124
+msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+msgstr ""
+
+#: ../../tools/templates/layout.html:126
+msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
+msgstr ""
+
+#: ../../tools/templates/dummy.html:6
 msgid "CPython implementation detail:"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:1
-msgid "Download"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:2
-msgid "Download these documents"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:3
-msgid "Docs for other versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:5
-msgid "Python 2.7 (stable)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:6
-msgid "Python 3.4 (stable)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:7
-msgid "Old versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:10
-msgid "Other resources"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:13
-msgid "PEP Index"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "Beginner's Guide"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Book List"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:16
-msgid "Audio/Visual Talks"
 msgstr ""
 
 #: ../../tools/templates/indexcontent.html:3
@@ -215,44 +220,47 @@ msgstr ""
 msgid "History and License of Python"
 msgstr ""
 
-#: ../../tools/templates/indexcontent.html:56
-#: ../../tools/templates/layout.html:94
-msgid "Copyright"
+#: ../../tools/templates/indexsidebar.html:1
+msgid "Download"
 msgstr ""
 
-#: ../../tools/templates/layout.html:9
-msgid "Documentation "
+#: ../../tools/templates/indexsidebar.html:2
+msgid "Download these documents"
 msgstr ""
 
-#: ../../tools/templates/layout.html:96
-msgid "The Python Software Foundation is a non-profit corporation."
+#: ../../tools/templates/indexsidebar.html:3
+msgid "Docs for other versions"
 msgstr ""
 
-#: ../../tools/templates/layout.html:97
-msgid "Please donate."
+#: ../../tools/templates/indexsidebar.html:5
+msgid "Python 2.7 (stable)"
 msgstr ""
 
-#: ../../tools/templates/layout.html:99
-msgid "Last updated on %(last_updated)s."
+#: ../../tools/templates/indexsidebar.html:6
+msgid "Python 3.4 (stable)"
 msgstr ""
 
-#: ../../tools/templates/layout.html:100
-msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+#: ../../tools/templates/indexsidebar.html:7
+msgid "Old versions"
 msgstr ""
 
-#: ../../tools/templates/layout.html:102
-msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
+#: ../../tools/templates/indexsidebar.html:10
+msgid "Other resources"
 msgstr ""
 
-#: ../../tools/templates/layout.html:107
-msgid "This Page"
+#: ../../tools/templates/indexsidebar.html:13
+msgid "PEP Index"
 msgstr ""
 
-#: ../../tools/templates/layout.html:109
-msgid "Report a Bug"
+#: ../../tools/templates/indexsidebar.html:14
+msgid "Beginner's Guide"
 msgstr ""
 
-#: ../../tools/templates/layout.html:111
-msgid "Show Source"
+#: ../../tools/templates/indexsidebar.html:15
+msgid "Book List"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:16
+msgid "Audio/Visual Talks"
 msgstr ""
 

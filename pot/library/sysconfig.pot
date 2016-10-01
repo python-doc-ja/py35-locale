@@ -281,38 +281,38 @@ msgid "For other non-POSIX platforms, currently just returns :data:`sys.platform
 msgstr ""
 
 #: ../../library/sysconfig.rst:207
-msgid "Return ``True`` if the current Python installation was built from source."
-msgstr ""
-
-#: ../../library/sysconfig.rst:212
-msgid "Parse a :file:`config.h`\\-style file."
+msgid "Return ``True`` if the running Python interpreter was built from source and is being run from its built location, and not from a location resulting from e.g. running ``make install`` or installing via a binary installer."
 msgstr ""
 
 #: ../../library/sysconfig.rst:214
-msgid "*fp* is a file-like object pointing to the :file:`config.h`\\-like file."
+msgid "Parse a :file:`config.h`\\-style file."
 msgstr ""
 
 #: ../../library/sysconfig.rst:216
+msgid "*fp* is a file-like object pointing to the :file:`config.h`\\-like file."
+msgstr ""
+
+#: ../../library/sysconfig.rst:218
 msgid "A dictionary containing name/value pairs is returned.  If an optional dictionary is passed in as the second argument, it is used instead of a new dictionary, and updated with the values read in the file."
 msgstr ""
 
-#: ../../library/sysconfig.rst:223
+#: ../../library/sysconfig.rst:225
 msgid "Return the path of :file:`pyconfig.h`."
 msgstr ""
 
-#: ../../library/sysconfig.rst:227
+#: ../../library/sysconfig.rst:229
 msgid "Return the path of :file:`Makefile`."
 msgstr ""
 
-#: ../../library/sysconfig.rst:230
+#: ../../library/sysconfig.rst:232
 msgid "Using :mod:`sysconfig` as a script"
 msgstr ""
 
-#: ../../library/sysconfig.rst:232
+#: ../../library/sysconfig.rst:234
 msgid "You can use :mod:`sysconfig` as a script with Python's *-m* option:"
 msgstr ""
 
-#: ../../library/sysconfig.rst:259
+#: ../../library/sysconfig.rst:261
 msgid "This call will print in the standard output the information returned by :func:`get_platform`, :func:`get_python_version`, :func:`get_path` and :func:`get_config_vars`."
 msgstr ""
 

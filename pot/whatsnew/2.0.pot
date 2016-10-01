@@ -100,7 +100,7 @@ msgid "In Python source code, Unicode strings are written as ``u\"string\"``.  A
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:161
-msgid "Unicode strings, just like regular strings, are an immutable sequence type. They can be indexed and sliced, but not modified in place. Unicode strings have an ``encode( [encoding] )`` method that returns an 8-bit string in the desired encoding.  Encodings are named by strings, such as ``'ascii'``, ``'utf-8'``, ``'iso-8859-1'``, or whatever.  A codec API is defined for implementing and registering new encodings that are then available throughout a Python program. If an encoding isn't specified, the default encoding is usually 7-bit ASCII, though it can be changed for your Python installation by calling the ``sys.setdefaultencoding(encoding)`` function in a customised version of :file:`site.py`."
+msgid "Unicode strings, just like regular strings, are an immutable sequence type. They can be indexed and sliced, but not modified in place. Unicode strings have an ``encode( [encoding] )`` method that returns an 8-bit string in the desired encoding.  Encodings are named by strings, such as ``'ascii'``, ``'utf-8'``, ``'iso-8859-1'``, or whatever.  A codec API is defined for implementing and registering new encodings that are then available throughout a Python program. If an encoding isn't specified, the default encoding is usually 7-bit ASCII, though it can be changed for your Python installation by calling the ``sys.setdefaultencoding(encoding)`` function in a customized version of :file:`site.py`."
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:172
@@ -672,7 +672,7 @@ msgid ":mod:`zipfile`: A module for reading and writing ZIP-format archives.  Th
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1142
-msgid ":mod:`imputil`: A module that provides a simpler way for writing customised import hooks, in comparison to the existing :mod:`ihooks` module.  (Implemented by Greg Stein, with much discussion on python-dev along the way.)"
+msgid ":mod:`imputil`: A module that provides a simpler way for writing customized import hooks, in comparison to the existing :mod:`ihooks` module.  (Implemented by Greg Stein, with much discussion on python-dev along the way.)"
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:1150

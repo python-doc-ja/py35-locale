@@ -41,22 +41,22 @@ msgid "Return ``1`` if the mapping object has the key *key* and ``0`` otherwise.
 msgstr ""
 
 #: ../../c-api/mapping.rst:53
-msgid "On success, return a list, a tuple or a dictionary view in case of a dict, of the keys in object *o*. On failure, return *NULL*."
+msgid "On success, return a list or tuple of the keys in object *o*.  On failure, return *NULL*."
 msgstr ""
 
 #: ../../c-api/mapping.rst:59
-msgid "On success, return a list, a tuple or a dictionary view in case of a dict, of the values in object *o*. On failure, return *NULL*."
+msgid "On success, return a list or tuple of the values in object *o*.  On failure, return *NULL*."
 msgstr ""
 
 #: ../../c-api/mapping.rst:65
-msgid "On success, return a list, a tuple or a dictionary view in case of a dict, of the items in object *o*, where each item is a tuple containing a key-value pair.  On failure, return *NULL*."
+msgid "On success, return a list or tuple of the items in object *o*, where each item is a tuple containing a key-value pair.  On failure, return *NULL*."
 msgstr ""
 
-#: ../../c-api/mapping.rst:72
+#: ../../c-api/mapping.rst:71
 msgid "Return element of *o* corresponding to the object *key* or *NULL* on failure. This is the equivalent of the Python expression ``o[key]``."
 msgstr ""
 
-#: ../../c-api/mapping.rst:78
+#: ../../c-api/mapping.rst:77
 msgid "Map the object *key* to the value *v* in object *o*. Returns ``-1`` on failure. This is the equivalent of the Python statement ``o[key] = v``."
 msgstr ""
 

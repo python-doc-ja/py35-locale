@@ -48,11 +48,11 @@ msgid "It is assumed that :data:`sys.path` is a sequence.  Items of :data:`sys.p
 msgstr ""
 
 #: ../../library/pkgutil.rst:49
-msgid ":pep:`302` Importer that wraps Python's \"classic\" import algorithm."
+msgid ":pep:`302` Finder that wraps Python's \"classic\" import algorithm."
 msgstr ""
 
 #: ../../library/pkgutil.rst:51
-msgid "If *dirname* is a string, a :pep:`302` importer is created that searches that directory.  If *dirname* is ``None``, a :pep:`302` importer is created that searches the current :data:`sys.path`, plus any modules that are frozen or built-in."
+msgid "If *dirname* is a string, a :pep:`302` finder is created that searches that directory.  If *dirname* is ``None``, a :pep:`302` finder is created that searches the current :data:`sys.path`, plus any modules that are frozen or built-in."
 msgstr ""
 
 #: ../../library/pkgutil.rst:56
@@ -65,11 +65,11 @@ msgid "This emulation is no longer needed, as the standard import mechanism is n
 msgstr ""
 
 #: ../../library/pkgutil.rst:66
-msgid ":pep:`302` Loader that wraps Python's \"classic\" import algorithm."
+msgid ":term:`Loader` that wraps Python's \"classic\" import algorithm."
 msgstr ""
 
 #: ../../library/pkgutil.rst:75
-msgid "Retrieve a :pep:`302` module loader for the given *fullname*."
+msgid "Retrieve a module :term:`loader` for the given *fullname*."
 msgstr ""
 
 #: ../../library/pkgutil.rst:77
@@ -91,11 +91,11 @@ msgid "Updated to be based on :pep:`451`"
 msgstr ""
 
 #: ../../library/pkgutil.rst:91
-msgid "Retrieve a :pep:`302` importer for the given *path_item*."
+msgid "Retrieve a :term:`finder` for the given *path_item*."
 msgstr ""
 
 #: ../../library/pkgutil.rst:93
-msgid "The returned importer is cached in :data:`sys.path_importer_cache` if it was newly created by a path hook."
+msgid "The returned finder is cached in :data:`sys.path_importer_cache` if it was newly created by a path hook."
 msgstr ""
 
 #: ../../library/pkgutil.rst:96
@@ -103,7 +103,7 @@ msgid "The cache (or part of it) can be cleared manually if a rescan of :data:`s
 msgstr ""
 
 #: ../../library/pkgutil.rst:106
-msgid "Get a :pep:`302` \"loader\" object for *module_or_name*."
+msgid "Get a :term:`loader` object for *module_or_name*."
 msgstr ""
 
 #: ../../library/pkgutil.rst:108
@@ -111,11 +111,11 @@ msgid "If the module or package is accessible via the normal import mechanism, a
 msgstr ""
 
 #: ../../library/pkgutil.rst:124
-msgid "Yield :pep:`302` importers for the given module name."
+msgid "Yield :term:`finder` objects for the given module name."
 msgstr ""
 
 #: ../../library/pkgutil.rst:126
-msgid "If fullname contains a '.', the importers will be for the package containing fullname, otherwise they will be all registered top level importers (i.e. those on both sys.meta_path and sys.path_hooks)."
+msgid "If fullname contains a '.', the finders will be for the package containing fullname, otherwise they will be all registered top level finders (i.e. those on both sys.meta_path and sys.path_hooks)."
 msgstr ""
 
 #: ../../library/pkgutil.rst:130
@@ -123,7 +123,7 @@ msgid "If the named module is in a package, that package is imported as a side e
 msgstr ""
 
 #: ../../library/pkgutil.rst:133
-msgid "If no module name is specified, all top level importers are produced."
+msgid "If no module name is specified, all top level finders are produced."
 msgstr ""
 
 #: ../../library/pkgutil.rst:142
@@ -166,7 +166,7 @@ msgid "Get a resource from a package."
 msgstr ""
 
 #: ../../library/pkgutil.rst:204
-msgid "This is a wrapper for the :pep:`302` loader :func:`get_data` API.  The *package* argument should be the name of a package, in standard module format (``foo.bar``).  The *resource* argument should be in the form of a relative filename, using ``/`` as the path separator.  The parent directory name ``..`` is not allowed, and nor is a rooted name (starting with a ``/``)."
+msgid "This is a wrapper for the :term:`loader` :func:`get_data` API.  The *package* argument should be the name of a package, in standard module format (``foo.bar``).  The *resource* argument should be in the form of a relative filename, using ``/`` as the path separator.  The parent directory name ``..`` is not allowed, and nor is a rooted name (starting with a ``/``)."
 msgstr ""
 
 #: ../../library/pkgutil.rst:210
@@ -178,6 +178,6 @@ msgid "For packages located in the filesystem, which have already been imported,
 msgstr ""
 
 #: ../../library/pkgutil.rst:219
-msgid "If the package cannot be located or loaded, or it uses a :pep:`302` loader which does not support :func:`get_data`, then ``None`` is returned."
+msgid "If the package cannot be located or loaded, or it uses a :term:`loader` which does not support :func:`get_data`, then ``None`` is returned."
 msgstr ""
 
