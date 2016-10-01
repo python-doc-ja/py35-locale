@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-05 03:44+0000\n"
+"PO-Revision-Date: 2016-10-01 13:55+0000\n"
 "Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgstr "HTTPS のサポートは、Python が SSL サポート付きでコンパ
 msgid "The module provides the following classes:"
 msgstr "このモジュールでは以下のクラスを提供しています:"
 
-#: ../../library/http.client.rst:37
+#: ../../library/http.client.rst:36
 msgid ""
 "An :class:`HTTPConnection` instance represents one transaction with an HTTP "
 "server.  It should be instantiated passing it a host and optional port "
@@ -60,23 +60,23 @@ msgid ""
 "source address the HTTP connection is made from."
 msgstr ":class:`HTTPConnection` インスタンスは、HTTP サーバとの一回のトランザクションを表現します。インスタンスの生成はホスト名とオプションのポート番号を与えて行います。ポート番号を指定しなかった場合、ホスト名文字列が ``host:port`` の形式であれば、ホスト名からポート番号を導き、そうでない場合には標準の HTTP ポート番号 (80) を使います。オプションの引数 *timeout* が渡された場合、ブロックする処理(コネクション接続など) のタイムアウト時間(秒数)として利用されます。(渡されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます。)オプションの引数 *source_address* を (host, port) という形式のタプルにすると HTTP 接続の接続元アドレスとして使用します。"
 
-#: ../../library/http.client.rst:47
+#: ../../library/http.client.rst:46
 msgid ""
 "For example, the following calls all create instances that connect to the "
 "server at the same host and port::"
 msgstr "例えば、以下の呼び出しは全て同じサーバの同じポートに接続するインスタンスを生成します::"
 
-#: ../../library/http.client.rst:55
+#: ../../library/http.client.rst:54
 msgid "*source_address* was added."
 msgstr "*source_address* が追加されました。"
 
-#: ../../library/http.client.rst:58
+#: ../../library/http.client.rst:57
 msgid ""
 "The  *strict* parameter was removed. HTTP 0.9-style \"Simple Responses\" are"
 " not longer supported."
 msgstr "*strict* パラメータは廃止されました。HTTP 0.9 の \"シンプルなレスポンス\" のような形式はもはやサポートされません。"
 
-#: ../../library/http.client.rst:68
+#: ../../library/http.client.rst:67
 msgid ""
 "A subclass of :class:`HTTPConnection` that uses SSL for communication with "
 "secure servers.  Default port is ``443``.  If *context* is specified, it "
@@ -84,7 +84,7 @@ msgid ""
 "options."
 msgstr ":class:`HTTPConnection` のサブクラスはセキュア・サーバとやりとりする為の SSL を使う場合に用います。デフォルトのポート番号は ``443`` です。*context* が指定されれば、それは様々な SSL オプションを記述する :class:`ssl.SSLContext` インスタンスでなければなりません。"
 
-#: ../../library/http.client.rst:73
+#: ../../library/http.client.rst:72
 msgid ""
 "*key_file* and *cert_file* are deprecated, please use "
 ":meth:`ssl.SSLContext.load_cert_chain` instead, or let "
@@ -94,28 +94,28 @@ msgid ""
 "used instead."
 msgstr "*key_file* と *cert_file* は廃止されたので、代わりに :meth:`ssl.SSLContext.load_cert_chain` を使うか、または  :func:`ssl.create_default_context` が、システムが信頼する CA 証明書をあなたのために選んでくれます。 *check_hostname* パラメータも廃止されました;  *context* の :attr:`ssl.SSLContext.check_hostname` 属性を代わりに使うべきです。"
 
-#: ../../library/http.client.rst:80
+#: ../../library/http.client.rst:79
 msgid ""
 "Please read :ref:`ssl-security` for more information on best practices."
 msgstr "ベストプラクティスに関するより良い情報が :ref:`ssl-security` にありますのでお読みください。"
 
-#: ../../library/http.client.rst:82
+#: ../../library/http.client.rst:81
 msgid "*source_address*, *context* and *check_hostname* were added."
 msgstr "*source_address*、*context* そして *check_hostname* が追加されました。"
 
-#: ../../library/http.client.rst:85
+#: ../../library/http.client.rst:84
 msgid ""
 "This class now supports HTTPS virtual hosts if possible (that is, if "
 ":data:`ssl.HAS_SNI` is true)."
 msgstr "このクラスは現在、可能であれば(つまり :data:`ssl.HAS_SNI`  が真の場合) HTTPS のバーチャルホストをサポートしています。"
 
-#: ../../library/http.client.rst:89
+#: ../../library/http.client.rst:88
 msgid ""
 "The *strict* parameter was removed. HTTP 0.9-style \"Simple Responses\" are "
 "no longer supported."
 msgstr "*strict* パラメータは廃止されました。HTTP 0.9 の \"シンプルなレスポンス\" のような形式はもはやサポートされません。"
 
-#: ../../library/http.client.rst:93
+#: ../../library/http.client.rst:92
 msgid ""
 "This class now performs all the necessary certificate and hostname checks by"
 " default. To revert to the previous, unverified, behavior "
@@ -123,58 +123,58 @@ msgid ""
 "parameter."
 msgstr "このクラスは今や全ての必要な証明書とホスト名の検証をデフォルトで行うようになりました。昔の、検証を行わない振る舞いに戻したければ、 *context* に :func:`ssl._create_unverified_context` を渡すことで出来ます。"
 
-#: ../../library/http.client.rst:102
+#: ../../library/http.client.rst:101
 msgid ""
 "Class whose instances are returned upon successful connection.  Not "
 "instantiated directly by user."
 msgstr "コネクションに成功したときに、このクラスのインスタンスが返されます。ユーザーから直接利用されることはありません。"
 
-#: ../../library/http.client.rst:105
+#: ../../library/http.client.rst:104
 msgid ""
 "The *strict* parameter was removed. HTTP 0.9 style \"Simple Responses\" are "
 "no longer supported."
 msgstr "*strict* パラメータは廃止されました。HTTP 0.9 の \"シンプルなレスポンス\" のような形式はもはやサポートされません。"
 
-#: ../../library/http.client.rst:110
+#: ../../library/http.client.rst:109
 msgid "The following exceptions are raised as appropriate:"
 msgstr "状況に応じて、以下の例外が送出されます:"
 
-#: ../../library/http.client.rst:115
+#: ../../library/http.client.rst:114
 msgid ""
 "The base class of the other exceptions in this module.  It is a subclass of "
 ":exc:`Exception`."
 msgstr "このモジュールにおける他の例外クラスの基底クラスです。 :exc:`Exception` のサブクラスです。"
 
-#: ../../library/http.client.rst:121 ../../library/http.client.rst:132
-#: ../../library/http.client.rst:137 ../../library/http.client.rst:142
-#: ../../library/http.client.rst:147 ../../library/http.client.rst:152
+#: ../../library/http.client.rst:120 ../../library/http.client.rst:131
+#: ../../library/http.client.rst:136 ../../library/http.client.rst:141
+#: ../../library/http.client.rst:146 ../../library/http.client.rst:151
 msgid "A subclass of :exc:`HTTPException`."
 msgstr ":exc:`HTTPException` サブクラスです。"
 
-#: ../../library/http.client.rst:126
+#: ../../library/http.client.rst:125
 msgid ""
 "A subclass of :exc:`HTTPException`, raised if a port is given and is either "
 "non-numeric or empty."
 msgstr ":exc:`HTTPException` のサブクラスです。ポート番号を指定したものの、その値が数字でなかったり空のオブジェクトであった場合に送出されます。"
 
-#: ../../library/http.client.rst:157 ../../library/http.client.rst:162
-#: ../../library/http.client.rst:167
+#: ../../library/http.client.rst:156 ../../library/http.client.rst:161
+#: ../../library/http.client.rst:166
 msgid "A subclass of :exc:`ImproperConnectionState`."
 msgstr ":exc:`ImproperConnectionState` のサブクラスです。"
 
-#: ../../library/http.client.rst:172
+#: ../../library/http.client.rst:171
 msgid ""
 "A subclass of :exc:`HTTPException`.  Raised if a server responds with a HTTP"
 " status code that we don't understand."
 msgstr ":exc:`HTTPException` のサブクラスです。サーバが理解できない HTTP 状態コードで応答した場合に送出されます。"
 
-#: ../../library/http.client.rst:178
+#: ../../library/http.client.rst:177
 msgid ""
 "A subclass of :exc:`HTTPException`.  Raised if an excessively long line is "
 "received in the HTTP protocol from the server."
 msgstr ""
 
-#: ../../library/http.client.rst:184
+#: ../../library/http.client.rst:183
 msgid ""
 "A subclass of :exc:`ConnectionResetError` and :exc:`BadStatusLine`.  Raised "
 "by :meth:`HTTPConnection.getresponse` when the attempt to read the response "
@@ -182,53 +182,53 @@ msgid ""
 "has closed the connection."
 msgstr ""
 
-#: ../../library/http.client.rst:189
+#: ../../library/http.client.rst:188
 msgid "Previously, :exc:`BadStatusLine`\\ ``('')`` was raised."
 msgstr ""
 
-#: ../../library/http.client.rst:193
+#: ../../library/http.client.rst:192
 msgid "The constants defined in this module are:"
 msgstr "このモジュールで定義されている定数は以下の通りです:"
 
-#: ../../library/http.client.rst:197
+#: ../../library/http.client.rst:196
 msgid "The default port for the HTTP protocol (always ``80``)."
 msgstr "HTTP プロトコルの標準のポート (通常は ``80``) です。"
 
-#: ../../library/http.client.rst:202
+#: ../../library/http.client.rst:200
 msgid "The default port for the HTTPS protocol (always ``443``)."
 msgstr "HTTPS プロトコルの標準のポート (通常は ``443``) です。"
 
-#: ../../library/http.client.rst:206
+#: ../../library/http.client.rst:204
 msgid "This dictionary maps the HTTP 1.1 status codes to the W3C names."
 msgstr "このディクショナリは、HTTP 1.1ステータスコードをW3Cの名前にマップしたものです。"
 
-#: ../../library/http.client.rst:208
+#: ../../library/http.client.rst:206
 msgid ""
 "Example: ``http.client.responses[http.client.NOT_FOUND]`` is ``'Not "
 "Found'``."
 msgstr "例: ``http.client.responses[http.client.NOT_FOUND]`` は ``'Not Found'`` を示します。"
 
-#: ../../library/http.client.rst:210
+#: ../../library/http.client.rst:208
 msgid ""
 "See :ref:`http-status-codes` for a list of HTTP status codes that are "
 "available in this module as constants."
 msgstr ""
 
-#: ../../library/http.client.rst:217
+#: ../../library/http.client.rst:215
 msgid "HTTPConnection Objects"
 msgstr "HTTPConnection オブジェクト"
 
-#: ../../library/http.client.rst:219
+#: ../../library/http.client.rst:217
 msgid ":class:`HTTPConnection` instances have the following methods:"
 msgstr ":class:`HTTPConnection` インスタンスには以下のメソッドがあります:"
 
-#: ../../library/http.client.rst:224
+#: ../../library/http.client.rst:222
 msgid ""
 "This will send a request to the server using the HTTP request method "
 "*method* and the selector *url*."
 msgstr "このメソッドは、HTTP 要求メソッド *method* およびセレクタ *url* を使って、要求をサーバに送ります。"
 
-#: ../../library/http.client.rst:227
+#: ../../library/http.client.rst:225
 msgid ""
 "If *body* is specified, the specified data is sent after the headers are "
 "finished.  It may be a string, a :term:`bytes-like object`, an open "
@@ -244,13 +244,13 @@ msgid ""
 "exhausted."
 msgstr ""
 
-#: ../../library/http.client.rst:240
+#: ../../library/http.client.rst:238
 msgid ""
 "The *headers* argument should be a mapping of extra HTTP headers to send "
 "with the request."
 msgstr "*headers* 引数は要求と同時に送信される拡張 HTTP ヘッダの内容からなるマップ型でなくてはなりません。"
 
-#: ../../library/http.client.rst:243
+#: ../../library/http.client.rst:241
 msgid ""
 "If *headers* does not contain a Content-Length item, one is added "
 "automatically if possible.  If *body* is ``None``, the Content-Length header"
@@ -262,30 +262,30 @@ msgid ""
 "``fstat`` call.  Otherwise no Content-Length header is added."
 msgstr ""
 
-#: ../../library/http.client.rst:252
+#: ../../library/http.client.rst:250
 msgid "*body* can now be an iterable."
 msgstr "*body* は iterable オブジェクトとして使用できます。"
 
-#: ../../library/http.client.rst:257
+#: ../../library/http.client.rst:255
 msgid ""
 "Should be called after a request is sent to get the response from the "
 "server. Returns an :class:`HTTPResponse` instance."
 msgstr "サーバに対して HTTP 要求を送り出した後に呼び出されなければりません。要求に対する応答を取得します。 :class:`HTTPResponse` インスタンスを返します。"
 
-#: ../../library/http.client.rst:262
+#: ../../library/http.client.rst:260
 msgid ""
 "Note that you must have read the whole response before you can send a new "
 "request to the server."
 msgstr "すべての応答を読み込んでからでなければ新しい要求をサーバに送ることはできないことに注意しましょう。"
 
-#: ../../library/http.client.rst:265
+#: ../../library/http.client.rst:263
 msgid ""
 "If a :exc:`ConnectionError` or subclass is raised, the "
 ":class:`HTTPConnection` object will be ready to reconnect when a new request"
 " is sent."
 msgstr ""
 
-#: ../../library/http.client.rst:273
+#: ../../library/http.client.rst:271
 msgid ""
 "Set the debugging level.  The default debug level is ``0``, meaning no "
 "debugging output is printed.  Any value greater than ``0`` will cause all "
@@ -293,26 +293,26 @@ msgid ""
 "is passed to any new :class:`HTTPResponse` objects that are created."
 msgstr ""
 
-#: ../../library/http.client.rst:283
+#: ../../library/http.client.rst:281
 msgid ""
 "Set the host and the port for HTTP Connect Tunnelling. This allows running "
 "the connection through a proxy server."
 msgstr "HTTP トンネリング接続のホスト名とポート番号を設定します。これによりプロキシサーバを通しての接続を実行できます。"
 
-#: ../../library/http.client.rst:286
+#: ../../library/http.client.rst:284
 msgid ""
 "The host and port arguments specify the endpoint of the tunneled connection "
 "(i.e. the address included in the CONNECT request, *not* the address of the "
 "proxy server)."
 msgstr ""
 
-#: ../../library/http.client.rst:290
+#: ../../library/http.client.rst:288
 msgid ""
 "The headers argument should be a mapping of extra HTTP headers to send with "
 "the CONNECT request."
 msgstr "ヘッダのパラメータは CONNECT リクエストで送信するために他の HTTP ヘッダにマッピングされます。"
 
-#: ../../library/http.client.rst:293
+#: ../../library/http.client.rst:291
 msgid ""
 "For example, to tunnel through a HTTPS proxy server running locally on port "
 "8080, we would pass the address of the proxy to the :class:`HTTPSConnection`"
@@ -320,34 +320,34 @@ msgid ""
 "to the :meth:`~HTTPConnection.set_tunnel` method::"
 msgstr ""
 
-#: ../../library/http.client.rst:308
+#: ../../library/http.client.rst:306
 msgid ""
 "Connect to the server specified when the object was created.  By default, "
 "this is called automatically when making a request if the client does not "
 "already have a connection."
 msgstr ""
 
-#: ../../library/http.client.rst:315
+#: ../../library/http.client.rst:313
 msgid "Close the connection to the server."
 msgstr "サーバへの接続を閉じます。"
 
-#: ../../library/http.client.rst:317
+#: ../../library/http.client.rst:315
 msgid ""
 "As an alternative to using the :meth:`request` method described above, you "
 "can also send your request step by step, by using the four functions below."
 msgstr "上で説明した :meth:`request` メソッドを使うかわりに、以下の4つの関数を使用して要求をステップバイステップで送信することもできます。"
 
-#: ../../library/http.client.rst:323
+#: ../../library/http.client.rst:322
 msgid ""
 "This should be the first call after the connection to the server has been "
-"made. It sends a line to the server consisting of the *request* string, the "
-"*selector* string, and the HTTP version (``HTTP/1.1``).  To disable "
-"automatic sending of ``Host:`` or ``Accept-Encoding:`` headers (for example "
-"to accept additional content encodings), specify *skip_host* or "
-"*skip_accept_encoding* with non-False values."
-msgstr "サーバへの接続が確立したら、最初にこのメソッドを呼び出さなくてはなりません。このメソッドは *request* 文字列、*selector* 文字列、そして HTTP バージョン (``HTTP/1.1``) からなる一行を送信します。``Host:`` や ``Accept-Encoding:`` ヘッダの自動送信を無効にしたい場合 (例えば別のコンテンツエンコーディングを受け入れたい場合) には、*skip_host* や *skip_accept_encoding* を偽でない値に設定してください。"
+"made. It sends a line to the server consisting of the *method* string, the "
+"*url* string, and the HTTP version (``HTTP/1.1``).  To disable automatic "
+"sending of ``Host:`` or ``Accept-Encoding:`` headers (for example to accept "
+"additional content encodings), specify *skip_host* or *skip_accept_encoding*"
+" with non-False values."
+msgstr ""
 
-#: ../../library/http.client.rst:333
+#: ../../library/http.client.rst:332
 msgid ""
 "Send an :rfc:`822`\\ -style header to the server.  It sends a line to the "
 "server consisting of the header, a colon and a space, and the first "
@@ -355,7 +355,7 @@ msgid ""
 "consisting of a tab and an argument."
 msgstr ":rfc:`822` 形式のヘッダをサーバに送ります。この処理では、 *header* 、コロンとスペース、そして最初の引数からなる 1 行をサーバに送ります。追加の引数を指定した場合、継続して各行にタブ一つと引数の入った引数行が送信されます。"
 
-#: ../../library/http.client.rst:341
+#: ../../library/http.client.rst:340
 msgid ""
 "Send a blank line to the server, signalling the end of the headers. The "
 "optional *message_body* argument can be used to pass a message body "
@@ -364,41 +364,41 @@ msgid ""
 "separate packet."
 msgstr "サーバに空行を送り、ヘッダ部が終了したことを通知します。オプションの *message_body* 引数を、リクエストに関連したメッセージボディを渡すのに使うことが出来ます。"
 
-#: ../../library/http.client.rst:349
+#: ../../library/http.client.rst:348
 msgid ""
 "Send data to the server.  This should be used directly only after the "
 ":meth:`endheaders` method has been called and before :meth:`getresponse` is "
 "called."
 msgstr "サーバにデータを送ります。このメソッドは :meth:`endheaders`  が呼び出された直後で、かつ :meth:`getresponse` が呼び出される前に使わなければなりません。"
 
-#: ../../library/http.client.rst:357
+#: ../../library/http.client.rst:356
 msgid "HTTPResponse Objects"
 msgstr "HTTPResponse オブジェクト"
 
-#: ../../library/http.client.rst:359
+#: ../../library/http.client.rst:358
 msgid ""
 "An :class:`HTTPResponse` instance wraps the HTTP response from the server.  "
 "It provides access to the request headers and the entity body.  The response"
 " is an iterable object and can be used in a with statement."
 msgstr ":class:`HTTPResponse` インスタンスはサーバからのHTTPレスポンスをラップします。これを使用してリクエストヘッダとエンティティボディへアクセスすることができます。レスポンスはイテレート可能なオブジェクトであるので、with文と使うことが可能です。"
 
-#: ../../library/http.client.rst:364
+#: ../../library/http.client.rst:363
 msgid ""
 "The :class:`io.BufferedIOBase` interface is now implemented and all of its "
 "reader operations are supported."
 msgstr ""
 
-#: ../../library/http.client.rst:371
+#: ../../library/http.client.rst:370
 msgid "Reads and returns the response body, or up to the next *amt* bytes."
 msgstr "応答の本体全体か、*amt* バイトまで読み出して返します。"
 
-#: ../../library/http.client.rst:375
+#: ../../library/http.client.rst:374
 msgid ""
 "Reads up to the next len(b) bytes of the response body into the buffer *b*. "
 "Returns the number of bytes read."
 msgstr "バッファ *b* にレスポンスボディの次のデータを最大 len(b) バイト読み込みます。何バイト読んだかを返します。"
 
-#: ../../library/http.client.rst:382
+#: ../../library/http.client.rst:381
 msgid ""
 "Return the value of the header *name*, or *default* if there is no header "
 "matching *name*.  If there is more than one  header with the name *name*, "
@@ -406,63 +406,63 @@ msgid ""
 " than a single string, its elements are similarly returned joined by commas."
 msgstr ""
 
-#: ../../library/http.client.rst:390
+#: ../../library/http.client.rst:388
 msgid "Return a list of (header, value) tuples."
 msgstr "(header, value) のタプルからなるリストを返します。"
 
-#: ../../library/http.client.rst:394
+#: ../../library/http.client.rst:392
 msgid "Return the ``fileno`` of the underlying socket."
 msgstr "ソケットの ``fileno`` を返します。"
 
-#: ../../library/http.client.rst:398
+#: ../../library/http.client.rst:396
 msgid ""
 "A :class:`http.client.HTTPMessage` instance containing the response headers."
 "  :class:`http.client.HTTPMessage` is a subclass of "
 ":class:`email.message.Message`."
 msgstr ""
 
-#: ../../library/http.client.rst:405
+#: ../../library/http.client.rst:402
 msgid ""
 "HTTP protocol version used by server.  10 for HTTP/1.0, 11 for HTTP/1.1."
 msgstr "サーバが使用した HTTP プロトコルバージョンです。10 は HTTP/1.0 を、11 は HTTP/1.1 を表します。"
 
-#: ../../library/http.client.rst:410
+#: ../../library/http.client.rst:406
 msgid "Status code returned by server."
 msgstr "サーバから返される状態コードです。"
 
-#: ../../library/http.client.rst:415
+#: ../../library/http.client.rst:410
 msgid "Reason phrase returned by server."
 msgstr "サーバから返される応答の理由文です。"
 
-#: ../../library/http.client.rst:420
+#: ../../library/http.client.rst:414
 msgid ""
 "A debugging hook.  If :attr:`debuglevel` is greater than zero, messages will"
 " be printed to stdout as the response is read and parsed."
 msgstr ""
 
-#: ../../library/http.client.rst:425
+#: ../../library/http.client.rst:419
 msgid "Is ``True`` if the stream is closed."
 msgstr "ストリームが閉じている場合 ``True`` となります。"
 
-#: ../../library/http.client.rst:428
+#: ../../library/http.client.rst:422
 msgid "Examples"
 msgstr "使用例"
 
-#: ../../library/http.client.rst:430
+#: ../../library/http.client.rst:424
 msgid "Here is an example session that uses the ``GET`` method::"
 msgstr "以下は ``GET`` リクエストの送信方法を示した例です::"
 
-#: ../../library/http.client.rst:454
+#: ../../library/http.client.rst:448
 msgid ""
 "Here is an example session that uses the ``HEAD`` method.  Note that the "
 "``HEAD`` method never returns any data. ::"
 msgstr "次の例のセッションでは、``HEAD`` メソッドを利用しています。``HEAD`` メソッドは全くデータを返さないことに注目してください。 ::"
 
-#: ../../library/http.client.rst:469
+#: ../../library/http.client.rst:463
 msgid "Here is an example session that shows how to ``POST`` requests::"
 msgstr "以下は ``POST`` リクエストの送信方法を示した例です::"
 
-#: ../../library/http.client.rst:485
+#: ../../library/http.client.rst:479
 msgid ""
 "Client side ``HTTP PUT`` requests are very similar to ``POST`` requests. The"
 " difference lies only the server side where HTTP server will allow resources"
@@ -472,11 +472,11 @@ msgid ""
 "do ``PUT`` request using http.client::"
 msgstr ""
 
-#: ../../library/http.client.rst:507
+#: ../../library/http.client.rst:501
 msgid "HTTPMessage Objects"
 msgstr "HTTPMessage オブジェクト"
 
-#: ../../library/http.client.rst:509
+#: ../../library/http.client.rst:503
 msgid ""
 "An :class:`http.client.HTTPMessage` instance holds the headers from an HTTP "
 "response.  It is implemented using the :class:`email.message.Message` class."

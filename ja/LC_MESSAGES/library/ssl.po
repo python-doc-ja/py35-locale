@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-05 04:55+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-01 14:01+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -221,9 +221,9 @@ msgid ""
 " use.  Typically, the server chooses a particular protocol version, and the "
 "client must adapt to the server's choice.  Most of the versions are not "
 "interoperable with the other versions.  If not specified, the default is "
-":data:`PROTOCOL_SSLv23`; it provides the most compatibility with other "
+":data:`PROTOCOL_TLS`; it provides the most compatibility with other "
 "versions."
-msgstr "``ssl_version`` 引数は、使用するSSLプロトコルのバージョンを指定します。通常、サーバー側が特定のプロトコルバージョンを選び、クライアント側はサーバーの選んだプロトコルを受け入れなければなりません。ほとんどのバージョンは他のバージョンと互換性がありません。もしこの引数が指定されなかった場合、デフォルトは :data:`PROTOCOL_SSLv23` になります。このバージョンは、できるだけの互換性を確保するように選ばれています。"
+msgstr ""
 
 #: ../../library/ssl.rst:184
 msgid ""
@@ -244,8 +244,8 @@ msgid "**SSLv3**"
 msgstr "**SSLv3**"
 
 #: ../../library/ssl.rst:190
-msgid "**SSLv23**"
-msgstr "**SSLv23**"
+msgid "**TLS**"
+msgstr ""
 
 #: ../../library/ssl.rst:190
 msgid "**TLSv1**"
@@ -293,8 +293,8 @@ msgid "*SSLv3*"
 msgstr "*SSLv3*"
 
 #: ../../library/ssl.rst:194
-msgid "*SSLv23*"
-msgstr "*SSLv23*"
+msgid "*TLS* (*SSLv23*)"
+msgstr ""
 
 #: ../../library/ssl.rst:195
 msgid "*TLSv1*"
@@ -374,14 +374,14 @@ msgstr "*cafile*, *capath*, *cadata* は証明書の検証で信用するオプ�
 
 #: ../../library/ssl.rst:247
 msgid ""
-"The settings are: :data:`PROTOCOL_SSLv23`, :data:`OP_NO_SSLv2`, and "
+"The settings are: :data:`PROTOCOL_TLS`, :data:`OP_NO_SSLv2`, and "
 ":data:`OP_NO_SSLv3` with high encryption cipher suites without RC4 and "
 "without unauthenticated cipher suites. Passing :data:`~Purpose.SERVER_AUTH` "
 "as *purpose* sets :data:`~SSLContext.verify_mode` to :data:`CERT_REQUIRED` "
 "and either loads CA certificates (when at least one of *cafile*, *capath* or"
 " *cadata* is given) or uses :meth:`SSLContext.load_default_certs` to load "
 "default CA certificates."
-msgstr "これで作られる設定はこのようになります: RC4 を除く、高レベルで、未認証のものを含まない暗号化一式と :data:`PROTOCOL_SSLv23`, :data:`OP_NO_SSLv2`, :data:`OP_NO_SSLv3` 。 *purpose* に :data:`~Purpose.SERVER_AUTH` を渡すと、 :data:`~SSLContext.verify_mode` には :data:`CERT_REQUIRED` がセットされ、(*cafile*, *capath*, *cadata* のいずれかが与えられれば) CA 証明書がロードされるかまたはデフォルトの CA 証明書をロードするために :meth:`SSLContext.load_default_certs` が使われます。"
+msgstr ""
 
 #: ../../library/ssl.rst:256
 msgid ""
@@ -413,10 +413,18 @@ msgid "RC4 was dropped from the default cipher string."
 msgstr "デフォルトの暗号設定から RC4 が除かれました。"
 
 #: ../../library/ssl.rst:284
+msgid "ChaCha20/Poly1305 was added to the default cipher string."
+msgstr ""
+
+#: ../../library/ssl.rst:286
+msgid "3DES was dropped from the default cipher string."
+msgstr ""
+
+#: ../../library/ssl.rst:290
 msgid "Random generation"
 msgstr "乱数生成"
 
-#: ../../library/ssl.rst:288
+#: ../../library/ssl.rst:294
 msgid ""
 "Return *num* cryptographically strong pseudo-random bytes. Raises an "
 ":class:`SSLError` if the PRNG has not been seeded with enough data or if the"
@@ -425,11 +433,11 @@ msgid ""
 " to seed the PRNG."
 msgstr "暗号学的に強固な擬似乱数の *num* バイトを返します。擬似乱数生成器に十分なデータでシードが与えられていない場合や、現在の RANDOM メソッドに操作がサポートされていない場合は :class:`SSLError` を送出します。 :func:`RAND_status` を使って擬似乱数生成器の状態をチェックできます。\n:func:`RAND_add` を使って擬似乱数生成器にシードを与えることができます。"
 
-#: ../../library/ssl.rst:294 ../../library/ssl.rst:315
+#: ../../library/ssl.rst:300 ../../library/ssl.rst:321
 msgid "For almost all applications :func:`os.urandom` is preferable."
 msgstr "ほとんどすべてのアプリケーションでは :func:`os.urandom` が望ましいです。"
 
-#: ../../library/ssl.rst:296
+#: ../../library/ssl.rst:302
 msgid ""
 "Read the Wikipedia article, `Cryptographically secure pseudorandom number "
 "generator (CSPRNG) "
@@ -437,7 +445,7 @@ msgid ""
 " to get the requirements of a cryptographically generator."
 msgstr "暗号論的擬似乱数生成器に要求されることについては Wikipedia の記事 `Cryptographically secure pseudorandom number generator (CSPRNG) <https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator>`_ (日本語版: `暗号論的擬似乱数生成器 <http://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E8%AB%96%E7%9A%84%E6%93%AC%E4%BC%BC%E4%B9%B1%E6%95%B0%E7%94%9F%E6%88%90%E5%99%A8>`_) を参照してください。"
 
-#: ../../library/ssl.rst:305
+#: ../../library/ssl.rst:311
 msgid ""
 "Return (bytes, is_cryptographic): bytes are *num* pseudo-random bytes, "
 "is_cryptographic is ``True`` if the bytes generated are cryptographically "
@@ -445,7 +453,7 @@ msgid ""
 " current RAND method."
 msgstr "(bytes, is_cryptographic) タプルを返却: bytes は長さ *num* の擬似乱数バイト列、 is_cryptographic は、生成されたバイト列が暗号として強ければ ``True`` 。 操作が現在使われている RAND メソッドでサポートされていなければ、  :class:`SSLError` が送出されます。"
 
-#: ../../library/ssl.rst:310
+#: ../../library/ssl.rst:316
 msgid ""
 "Generated pseudo-random byte sequences will be unique if they are of "
 "sufficient length, but are not necessarily unpredictable. They can be used "
@@ -453,7 +461,13 @@ msgid ""
 "protocols, but usually not for key generation etc."
 msgstr "生成される擬似乱数バイトシーケンスは十分な長さであれば一意にはなるでしょうが、必ずしも予測不可能とは言えません。これは非暗号目的、あるいは暗号化プロトコルでの若干の用途に使われますが、普通は鍵生成などには使いません。"
 
-#: ../../library/ssl.rst:321
+#: ../../library/ssl.rst:327
+msgid ""
+"OpenSSL has deprecated :func:`ssl.RAND_pseudo_bytes`, use "
+":func:`ssl.RAND_bytes` instead."
+msgstr ""
+
+#: ../../library/ssl.rst:332
 msgid ""
 "Return ``True`` if the SSL pseudo-random number generator has been seeded "
 "with 'enough' randomness, and ``False`` otherwise.  You can use "
@@ -461,7 +475,7 @@ msgid ""
 "the pseudo-random number generator."
 msgstr "SSL 擬似乱数生成器が十分なランダム性(randomness)を受け取っている時に ``True`` を、それ以外の場合は `False` を返します。 :func:`ssl.RAND_egd` と :func:`ssl.RAND_add` を使って擬似乱数生成機にランダム性を加えることができます。"
 
-#: ../../library/ssl.rst:328
+#: ../../library/ssl.rst:339
 msgid ""
 "If you are running an entropy-gathering daemon (EGD) somewhere, and *path* "
 "is the pathname of a socket connection open to it, this will read 256 bytes "
@@ -470,17 +484,17 @@ msgid ""
 "typically only necessary on systems without better sources of randomness."
 msgstr "もしエントロピー収集デーモン(EGD=entropy-gathering daemon)が動いていて、 *path* がEGDへのソケットのパスだった場合、この関数はそのソケットから 256バイトのランダム性を読み込み、SSL擬似乱数生成器にそれを渡すことで、生成される暗号鍵のセキュリティを向上させることができます。これは、より良いランダム性のソースが無いシステムでのみ必要です。"
 
-#: ../../library/ssl.rst:334
+#: ../../library/ssl.rst:345
 msgid ""
 "See http://egd.sourceforge.net/ or http://prngd.sourceforge.net/ for sources"
 " of entropy-gathering daemons."
 msgstr "エントロピー収集デーモンについては、 http://egd.sourceforge.net/ や http://prngd.sourceforge.net/ を参照してください。"
 
-#: ../../library/ssl.rst:337
-msgid "Availability: not available with LibreSSL."
-msgstr "利用できる環境: LibreSSL では利用できません。"
+#: ../../library/ssl.rst:348
+msgid "Availability: not available with LibreSSL and OpenSSL > 1.1.0"
+msgstr ""
 
-#: ../../library/ssl.rst:341
+#: ../../library/ssl.rst:352
 msgid ""
 "Mix the given *bytes* into the SSL pseudo-random number generator.  The "
 "parameter *entropy* (a float) is a lower bound on the entropy contained in "
@@ -488,15 +502,15 @@ msgid ""
 "information on sources of entropy."
 msgstr "与えられた *bytes* をSSL擬似乱数生成器に混ぜます。 *entropy* 引数(float値)は、その文字列に含まれるエントロピーの下限(lower bound)です。 (なので、いつでも :const:`0.0` を使うことができます。) エントロピーのソースについてのより詳しい情報は、 :rfc:`1750` を参照してください。"
 
-#: ../../library/ssl.rst:346
+#: ../../library/ssl.rst:357
 msgid "Writable :term:`bytes-like object` is now accepted."
 msgstr "書き込み可能な :term:`bytes-like object` を使用できるようになりました。"
 
-#: ../../library/ssl.rst:350
+#: ../../library/ssl.rst:361
 msgid "Certificate handling"
 msgstr "証明書の取り扱い"
 
-#: ../../library/ssl.rst:354
+#: ../../library/ssl.rst:365
 msgid ""
 "Verify that *cert* (in decoded format as returned by "
 ":meth:`SSLSocket.getpeercert`) matches the given *hostname*.  The rules "
@@ -506,13 +520,13 @@ msgid ""
 " such as FTPS, IMAPS, POPS and others."
 msgstr "(:meth:`SSLSocket.getpeercert` が返してきたようなデコードされたフォーマットの) *cert* が、与えられた *hostname* に合致するかを検証します。HTTPS サーバの身元をチェックするために適用されるルールは :rfc:`2818`, :rfc:`6125` で概説されているものです。HTTPS に加え、この関数は他の SSL ベースのプロトコル、例えば FTPS, IMAPS, POPS などのサーバの身元をチェックするのに相応しいはずです。"
 
-#: ../../library/ssl.rst:361
+#: ../../library/ssl.rst:372
 msgid ""
 ":exc:`CertificateError` is raised on failure. On success, the function "
 "returns nothing::"
 msgstr "失敗すれば :exc:`CertificateError` が送出されます。成功すれば、この関数は何も返しません::"
 
-#: ../../library/ssl.rst:374
+#: ../../library/ssl.rst:385
 msgid ""
 "The function now follows :rfc:`6125`, section 6.4.3 and does neither match "
 "multiple wildcards (e.g. ``*.*.com`` or ``*a*.example.org``) nor a wildcard "
@@ -521,35 +535,35 @@ msgid ""
 "longer matches ``xn--tda.python.org``."
 msgstr "この関数は :rfc:`6125` の section 6.4.3 に従うようになりましたので、マルチプルワイルドカード(例. ``*.*.com`` や ``*a*.example.org``) にも国際化ドメイン名 (IDN=internationalized domain name)フラグメント内部に含まれるワイルドカードのどちらにも合致しません。 ``www*.xn--pthon-kva.org`` のような IDN A-labels はまだサポートしますが、 ``x*.python.org`` はもはや ``xn--tda.python.org`` には合致しません。"
 
-#: ../../library/ssl.rst:381
+#: ../../library/ssl.rst:392
 msgid ""
 "Matching of IP addresses, when present in the subjectAltName field of the "
 "certificate, is now supported."
 msgstr ""
 
-#: ../../library/ssl.rst:387
+#: ../../library/ssl.rst:398
 msgid ""
 "Return the time in seconds since the Epoch, given the ``cert_time`` string "
 "representing the \"notBefore\" or \"notAfter\" date from a certificate in "
 "``\"%b %d %H:%M:%S %Y %Z\"`` strptime format (C locale)."
 msgstr "``cert_time`` として証明書内の \"notBefore\" や \"notAfter\" の ``\"%b %d %H:%M:%S %Y %Z\"`` strptime フォーマット (C locale) 日付を渡すと、エポックからの積算秒を返します。"
 
-#: ../../library/ssl.rst:392
+#: ../../library/ssl.rst:403
 msgid "Here's an example:"
 msgstr "例です。 :"
 
-#: ../../library/ssl.rst:404
+#: ../../library/ssl.rst:415
 msgid "\"notBefore\" or \"notAfter\" dates must use GMT (:rfc:`5280`)."
 msgstr "\"notBefore\" や \"notAfter\" の日付には GMT を使わなければなりません(:rfc:`5280`)。"
 
-#: ../../library/ssl.rst:406
+#: ../../library/ssl.rst:417
 msgid ""
 "Interpret the input time as a time in UTC as specified by 'GMT' timezone in "
 "the input string. Local timezone was used previously. Return an integer (no "
 "fractions of a second in the input format)"
 msgstr "入力文字列に指定された 'GMT' タイムゾーンを UTC として解釈するようになりました。以前はローカルタイムで解釈していました。また、整数を返すようになりました(入力に含まれる秒の端数を含まない)。"
 
-#: ../../library/ssl.rst:414
+#: ../../library/ssl.rst:425
 msgid ""
 "Given the address ``addr`` of an SSL-protected server, as a (*hostname*, "
 "*port-number*) pair, fetches the server's certificate, and returns it as a "
@@ -561,74 +575,80 @@ msgid ""
 "certificates, and will fail if the validation attempt fails."
 msgstr "SSLで保護されたサーバーのアドレス ``addr`` を (*hostname*, *port-number*) の形で受け取り、そのサーバーから証明書を取得し、それを PEMエンコードされた文字列として返します。 ``ssl_version`` が指定された場合は、サーバーに接続を試みるときにそのバージョンのSSLプロトコルを利用します。 ``ca_certs`` が指定された場合、それは :func:`wrap_socket` の同名の引数と同じフォーマットで、ルート証明書のリストを含むファイルでなければなりません。この関数はサーバー証明書をルート証明書リストに対して認証し、認証が失敗した場合にこの関数も失敗します。"
 
-#: ../../library/ssl.rst:423
+#: ../../library/ssl.rst:434
 msgid "This function is now IPv6-compatible."
 msgstr "この関数は現在IPv6互換です。"
 
-#: ../../library/ssl.rst:426
+#: ../../library/ssl.rst:437
 msgid ""
 "The default *ssl_version* is changed from :data:`PROTOCOL_SSLv3` to "
-":data:`PROTOCOL_SSLv23` for maximum compatibility with modern servers."
+":data:`PROTOCOL_TLS` for maximum compatibility with modern servers."
 msgstr ""
 
-#: ../../library/ssl.rst:432
+#: ../../library/ssl.rst:443
 msgid ""
 "Given a certificate as a DER-encoded blob of bytes, returns a PEM-encoded "
 "string version of the same certificate."
 msgstr "DERエンコードされたバイト列として与えられた証明書から、 PEMエンコードされたバージョンの同じ証明書を返します。"
 
-#: ../../library/ssl.rst:437
+#: ../../library/ssl.rst:448
 msgid ""
 "Given a certificate as an ASCII PEM string, returns a DER-encoded sequence "
 "of bytes for that same certificate."
 msgstr "PEM 形式のASCII文字列として与えられた証明書から、同じ証明書をDERエンコードしたバイト列を返します。"
 
-#: ../../library/ssl.rst:442
+#: ../../library/ssl.rst:453
 msgid ""
 "Returns a named tuple with paths to OpenSSL's default cafile and capath. The"
 " paths are the same as used by :meth:`SSLContext.set_default_verify_paths`. "
 "The return value is a :term:`named tuple` ``DefaultVerifyPaths``:"
 msgstr "OpenSSL デフォルトの cafile, capath を指すパスを名前付きタプルで返します。パスは :meth:`SSLContext.set_default_verify_paths` で使われるものと同じです。戻り値は :term:`named tuple` ``DefaultVerifyPaths`` です:"
 
-#: ../../library/ssl.rst:447
+#: ../../library/ssl.rst:458
 msgid ""
 ":attr:`cafile` - resolved path to cafile or None if the file doesn't exist,"
 msgstr ":attr:`cafile` - cafile のパス、またはファイルが存在しなければ None"
 
-#: ../../library/ssl.rst:448
+#: ../../library/ssl.rst:459
 msgid ""
 ":attr:`capath` - resolved path to capath or None if the directory doesn't "
 "exist,"
 msgstr ":attr:`capath` - capath のパス、またはディレクトリが存在しなければ None"
 
-#: ../../library/ssl.rst:449
+#: ../../library/ssl.rst:460
 msgid ""
 ":attr:`openssl_cafile_env` - OpenSSL's environment key that points to a "
 "cafile,"
 msgstr ":attr:`openssl_cafile_env` - cafile を指す OpenSSL の環境変数"
 
-#: ../../library/ssl.rst:450
+#: ../../library/ssl.rst:461
 msgid ":attr:`openssl_cafile` - hard coded path to a cafile,"
 msgstr ":attr:`openssl_cafile` - OpenSSL にハードコードされた cafile のパス"
 
-#: ../../library/ssl.rst:451
+#: ../../library/ssl.rst:462
 msgid ""
 ":attr:`openssl_capath_env` - OpenSSL's environment key that points to a "
 "capath,"
 msgstr ":attr:`openssl_capath_env` - capath を指す OpenSSL の環境変数"
 
-#: ../../library/ssl.rst:452
+#: ../../library/ssl.rst:463
 msgid ":attr:`openssl_capath` - hard coded path to a capath directory"
 msgstr ":attr:`openssl_capath` - OpenSSL にハードコードされた capath のパス"
 
-#: ../../library/ssl.rst:458
+#: ../../library/ssl.rst:465
+msgid ""
+"Availability: LibreSSL ignores the environment vars "
+":attr:`openssl_cafile_env` and :attr:`openssl_capath_env`"
+msgstr ""
+
+#: ../../library/ssl.rst:472
 msgid ""
 "Retrieve certificates from Windows' system cert store. *store_name* may be "
 "one of ``CA``, ``ROOT`` or ``MY``. Windows may provide additional cert "
 "stores, too."
 msgstr "Windows のシステム証明書ストアより証明書を抽出します。 *store_name* は ``CA``, ``ROOT``, ``MY`` のうちどれか一つでしょう。Windows は追加の証明書ストアを提供しているかもしれません。"
 
-#: ../../library/ssl.rst:462
+#: ../../library/ssl.rst:476
 msgid ""
 "The function returns a list of (cert_bytes, encoding_type, trust) tuples. "
 "The encoding_type specifies the encoding of cert_bytes. It is either "
@@ -637,21 +657,21 @@ msgid ""
 "or exactly ``True`` if the certificate is trustworthy for all purposes."
 msgstr "この関数はタプル (cert_bytes, encoding_type, trust) のリストで返します。encoding_type は cert_bytes のエンコーディングを表します。X.509 ASN.1 に対する :const:`x509_asn` か PKCS#7 ASN.1 データに対する :const:`pkcs_7_asn` のいずれかです。trust は、証明書の目的を、OIDS を内容に持つ set として表すか、または証明書がすべての目的で信頼できるならば ``True`` です。"
 
-#: ../../library/ssl.rst:469 ../../library/ssl.rst:1387
+#: ../../library/ssl.rst:483 ../../library/ssl.rst:1451
 msgid "Example::"
 msgstr "例 ::"
 
-#: ../../library/ssl.rst:475 ../../library/ssl.rst:490
+#: ../../library/ssl.rst:489 ../../library/ssl.rst:504
 msgid "Availability: Windows."
 msgstr "利用できる環境 : Windows."
 
-#: ../../library/ssl.rst:481
+#: ../../library/ssl.rst:495
 msgid ""
 "Retrieve CRLs from Windows' system cert store. *store_name* may be one of "
 "``CA``, ``ROOT`` or ``MY``. Windows may provide additional cert stores, too."
 msgstr "Windows のシステム証明書ストアより CRLs を抽出します。 *store_name* は ``CA``, ``ROOT``, ``MY`` のうちどれか一つでしょう。Windows は追加の証明書ストアを提供しているかもしれません。"
 
-#: ../../library/ssl.rst:485
+#: ../../library/ssl.rst:499
 msgid ""
 "The function returns a list of (cert_bytes, encoding_type, trust) tuples. "
 "The encoding_type specifies the encoding of cert_bytes. It is either "
@@ -659,11 +679,11 @@ msgid ""
 "ASN.1 data."
 msgstr "この関数はタプル (cert_bytes, encoding_type, trust) のリストで返します。encoding_type は cert_bytes のエンコーディングを表します。X.509 ASN.1 に対する :const:`x509_asn` か PKCS#7 ASN.1 データに対する :const:`pkcs_7_asn` のいずれかです。"
 
-#: ../../library/ssl.rst:496
+#: ../../library/ssl.rst:510
 msgid "Constants"
 msgstr "定数"
 
-#: ../../library/ssl.rst:500
+#: ../../library/ssl.rst:514
 msgid ""
 "Possible value for :attr:`SSLContext.verify_mode`, or the ``cert_reqs`` "
 "parameter to :func:`wrap_socket`.  In this mode (the default), no "
@@ -672,11 +692,11 @@ msgid ""
 "is made."
 msgstr ":attr:`SSLContext.verify_mode` または :func:`wrap_socket` の ``cert_reqs`` パラメータに使用する値です。このモード(これがデフォルトです)では、ソケット接続先からの証明書やその認証を必要としません。接続先から証明書を受け取っても検証は試みられません。"
 
-#: ../../library/ssl.rst:506 ../../library/ssl.rst:1689
+#: ../../library/ssl.rst:520 ../../library/ssl.rst:1753
 msgid "See the discussion of :ref:`ssl-security` below."
 msgstr "このドキュメントの下の方の、 :ref:`ssl-security` に関する議論を参照してください。"
 
-#: ../../library/ssl.rst:510
+#: ../../library/ssl.rst:524
 msgid ""
 "Possible value for :attr:`SSLContext.verify_mode`, or the ``cert_reqs`` "
 "parameter to :func:`wrap_socket`.  In this mode no certificates will be "
@@ -685,14 +705,14 @@ msgid ""
 "raised on failure."
 msgstr ":attr:`SSLContext.verify_mode` または :func:`wrap_socket` の ``cert_reqs`` パラメータに使用する値です。このモードでは、ソケット接続先からの証明書やその認証を必要としませんが、証明書が提供されれば検証が試みられ、検証失敗時には :class:`SSLError` が送出されます。"
 
-#: ../../library/ssl.rst:516 ../../library/ssl.rst:527
+#: ../../library/ssl.rst:530 ../../library/ssl.rst:541
 msgid ""
 "Use of this setting requires a valid set of CA certificates to be passed, "
 "either to :meth:`SSLContext.load_verify_locations` or as a value of the "
 "``ca_certs`` parameter to :func:`wrap_socket`."
 msgstr "この設定では、正当なCA証明書のセットを :meth:`SSLContext.load_verify_locations` または :func:`wrap_socket` の ``ca_certs`` パラメータのどちらかに渡す必要があります。"
 
-#: ../../library/ssl.rst:522
+#: ../../library/ssl.rst:536
 msgid ""
 "Possible value for :attr:`SSLContext.verify_mode`, or the ``cert_reqs`` "
 "parameter to :func:`wrap_socket`.  In this mode, certificates are required "
@@ -700,14 +720,14 @@ msgid ""
 "raised if no certificate is provided, or if its validation fails."
 msgstr ":attr:`SSLContext.verify_mode` または :func:`wrap_socket` の ``cert_reqs`` パラメータに使用する値です。このモードでは、ソケット接続先からの証明書やその認証を必要とされ、証明書が提供されないかその検証失敗時には :class:`SSLError` が送出されます。"
 
-#: ../../library/ssl.rst:533
+#: ../../library/ssl.rst:547
 msgid ""
 "Possible value for :attr:`SSLContext.verify_flags`. In this mode, "
 "certificate revocation lists (CRLs) are not checked. By default OpenSSL does"
 " neither require nor verify CRLs."
 msgstr ":attr:`SSLContext.verify_flags` に渡せる値です。このモードでは、証明書失効リスト(CRLs)はチェックされません。デフォルトでは OpenSSL は CRLs を必要ともしませんし検証にも使いません。"
 
-#: ../../library/ssl.rst:541
+#: ../../library/ssl.rst:555
 msgid ""
 "Possible value for :attr:`SSLContext.verify_flags`. In this mode, only the "
 "peer cert is check but non of the intermediate CA certificates. The mode "
@@ -716,169 +736,196 @@ msgid ""
 ":attr:`SSLContext.load_verify_locations`, validation will fail."
 msgstr ":attr:`SSLContext.verify_flags` に渡せる値です。このモードでは、接続先の証明書のチェックのみで仲介の CA 証明書はチェックしません。接続先証明書の発行者(その CA の直接の祖先)によって署名された妥当な CRL が必要です。 :attr:`SSLContext.load_verify_locations` が相応しいものをロードしていなければ、検証は失敗するでしょう。"
 
-#: ../../library/ssl.rst:551
+#: ../../library/ssl.rst:565
 msgid ""
 "Possible value for :attr:`SSLContext.verify_flags`. In this mode, CRLs of "
 "all certificates in the peer cert chain are checked."
 msgstr ":attr:`SSLContext.verify_flags` に渡せる値です。このモードでは、接続先の証明書チェイン内のすべての証明書についての CRLs がチェックされます。"
 
-#: ../../library/ssl.rst:558
+#: ../../library/ssl.rst:572
 msgid ""
 "Possible value for :attr:`SSLContext.verify_flags` to disable workarounds "
 "for broken X.509 certificates."
 msgstr ":attr:`SSLContext.verify_flags` に渡せる値で、壊れた X.509 証明書に対するワークアラウンドを無効にします。"
 
-#: ../../library/ssl.rst:565
+#: ../../library/ssl.rst:579
 msgid ""
 "Possible value for :attr:`SSLContext.verify_flags`. It instructs OpenSSL to "
 "prefer trusted certificates when building the trust chain to validate a "
 "certificate. This flag is enabled by default."
 msgstr ":attr:`SSLContext.verify_flags` に渡せる値です。OpenSSL に対し、証明書検証のために信頼チェインを構築する際、信頼できる証明書を選ぶように指示します。これはデフォルトで有効にされています。"
 
-#: ../../library/ssl.rst:573
+#: ../../library/ssl.rst:587
 msgid ""
 "Selects the highest protocol version that both the client and server "
 "support. Despite the name, this option can select \"TLS\" protocols as well "
 "as \"SSL\"."
 msgstr "チャンネル暗号化プロトコルとして、クライアントとサーバの両方がサポートする中の、プロトコルバージョンが最も大きなものを選択します。その名前にも関わらず、このオプションは \"SSL\" とともに \"TLS\" プロトコルも選択できます。"
 
-#: ../../library/ssl.rst:578
+#: ../../library/ssl.rst:594
+msgid "Alias for data:`PROTOCOL_TLS`."
+msgstr ""
+
+#: ../../library/ssl.rst:598
+msgid "Use data:`PROTOCOL_TLS` instead."
+msgstr ""
+
+#: ../../library/ssl.rst:602
 msgid "Selects SSL version 2 as the channel encryption protocol."
 msgstr "チャンネル暗号化プロトコルとして SSL バージョン2を選択します。"
 
-#: ../../library/ssl.rst:580
+#: ../../library/ssl.rst:604
 msgid ""
 "This protocol is not available if OpenSSL is compiled with the "
 "``OPENSSL_NO_SSL2`` flag."
 msgstr "このプロトコルは、 OpenSSL が ``OPENSSL_NO_SSL2`` フラグが有効な状態でコンパイルされている場合には利用できません。"
 
-#: ../../library/ssl.rst:585
+#: ../../library/ssl.rst:609
 msgid "SSL version 2 is insecure.  Its use is highly discouraged."
 msgstr "SSL version 2 は非セキュアです。このプロトコルは強く非推奨です。"
 
-#: ../../library/ssl.rst:589
+#: ../../library/ssl.rst:613
+msgid "OpenSSL has removed support for SSLv2."
+msgstr ""
+
+#: ../../library/ssl.rst:617
 msgid "Selects SSL version 3 as the channel encryption protocol."
 msgstr "チャンネル暗号化プロトコルとしてSSLバージョン3を選択します。"
 
-#: ../../library/ssl.rst:591
+#: ../../library/ssl.rst:619
 msgid ""
 "This protocol is not be available if OpenSSL is compiled with the "
 "``OPENSSL_NO_SSLv3`` flag."
 msgstr "このプロトコルは、 OpenSSL が ``OPENSSL_NO_SSLv3`` フラグが有効な状態でコンパイルされている場合には利用できません。"
 
-#: ../../library/ssl.rst:596
+#: ../../library/ssl.rst:624
 msgid "SSL version 3 is insecure.  Its use is highly discouraged."
 msgstr "SSL version 3 は非セキュアです。このプロトコルは強く非推奨です。"
 
-#: ../../library/ssl.rst:600
+#: ../../library/ssl.rst:628 ../../library/ssl.rst:637
+#: ../../library/ssl.rst:649 ../../library/ssl.rst:662
+msgid ""
+"OpenSSL has deprecated all version specific protocols. Use the default "
+"protocol data:`PROTOCOL_TLS` with flags like data:`OP_NO_SSLv3` instead."
+msgstr ""
+
+#: ../../library/ssl.rst:633
 msgid "Selects TLS version 1.0 as the channel encryption protocol."
 msgstr "チャンネル暗号化プロトコルとしてTLSバージョン1.0を選択します。"
 
-#: ../../library/ssl.rst:604
+#: ../../library/ssl.rst:642
 msgid ""
 "Selects TLS version 1.1 as the channel encryption protocol. Available only "
 "with openssl version 1.0.1+."
 msgstr "チャンネル暗号化プロトコルとしてTLSバージョン1.1を選択します。 openssl version 1.0.1+ のみで利用可能です。"
 
-#: ../../library/ssl.rst:611
+#: ../../library/ssl.rst:654
 msgid ""
 "Selects TLS version 1.2 as the channel encryption protocol. This is the most"
 " modern version, and probably the best choice for maximum protection, if "
 "both sides can speak it.  Available only with openssl version 1.0.1+."
 msgstr "チャンネル暗号化プロトコルとしてTLSバージョン1.2を選択します。これは最も現代的で、接続の両サイドが利用できる場合は、たぶん最も安全な選択肢です。 openssl version 1.0.1+ のみで利用可能です。"
 
-#: ../../library/ssl.rst:619
+#: ../../library/ssl.rst:667
 msgid ""
 "Enables workarounds for various bugs present in other SSL implementations. "
 "This option is set by default.  It does not necessarily set the same flags "
 "as OpenSSL's ``SSL_OP_ALL`` constant."
 msgstr "相手にする SSL 実装のさまざまなバグを回避するためのワークアラウンドを有効にします。このオプションはデフォルトで有効です。これを有効にする場合 OpenSSL 用の同じ意味のフラグ ``SSL_OP_ALL`` をセットする必要はありません。"
 
-#: ../../library/ssl.rst:627
+#: ../../library/ssl.rst:675
 msgid ""
 "Prevents an SSLv2 connection.  This option is only applicable in conjunction"
-" with :const:`PROTOCOL_SSLv23`.  It prevents the peers from choosing SSLv2 "
-"as the protocol version."
-msgstr "SSLv2 接続が行われないようにします。このオプションは :const:`PROTOCOL_SSLv23` と組み合わせでのみ意味を持ちます。ピア間で SSLv2 がプロトコルバージョンとして選択されることを防ぎます。"
+" with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing SSLv2 as "
+"the protocol version."
+msgstr ""
 
-#: ../../library/ssl.rst:635
+#: ../../library/ssl.rst:683
+msgid "SSLv2 is deprecated"
+msgstr ""
+
+#: ../../library/ssl.rst:688
 msgid ""
 "Prevents an SSLv3 connection.  This option is only applicable in conjunction"
-" with :const:`PROTOCOL_SSLv23`.  It prevents the peers from choosing SSLv3 "
-"as the protocol version."
-msgstr "SSLv3 接続が行われないようにします。このオプションは :const:`PROTOCOL_SSLv23` と組み合わせでのみ意味を持ちます。ピア間で SSLv3 がプロトコルバージョンとして選択されることを防ぎます。"
+" with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing SSLv3 as "
+"the protocol version."
+msgstr ""
 
-#: ../../library/ssl.rst:643
+#: ../../library/ssl.rst:696
+msgid "SSLv3 is deprecated"
+msgstr ""
+
+#: ../../library/ssl.rst:700
 msgid ""
 "Prevents a TLSv1 connection.  This option is only applicable in conjunction "
-"with :const:`PROTOCOL_SSLv23`.  It prevents the peers from choosing TLSv1 as"
-" the protocol version."
-msgstr "TLSv1 接続が行われないようにします。このオプションは :const:`PROTOCOL_SSLv23` と組み合わせでのみ意味を持ちます。ピア間で TLSv1 がプロトコルバージョンとして選択されることを防ぎます。"
+"with :const:`PROTOCOL_TLS`.  It prevents the peers from choosing TLSv1 as "
+"the protocol version."
+msgstr ""
 
-#: ../../library/ssl.rst:651
+#: ../../library/ssl.rst:708
 msgid ""
 "Prevents a TLSv1.1 connection. This option is only applicable in conjunction"
-" with :const:`PROTOCOL_SSLv23`. It prevents the peers from choosing TLSv1.1 "
-"as the protocol version. Available only with openssl version 1.0.1+."
-msgstr "TLSv1.1 接続が行われないようにします。このオプションは :const:`PROTOCOL_SSLv23` と組み合わせでのみ意味を持ちます。ピア間で TLSv1.1 がプロトコルバージョンとして選択されることを防ぎます。openssl version 1.0.1+ でのみ利用できます。"
+" with :const:`PROTOCOL_TLS`. It prevents the peers from choosing TLSv1.1 as "
+"the protocol version. Available only with openssl version 1.0.1+."
+msgstr ""
 
-#: ../../library/ssl.rst:659
+#: ../../library/ssl.rst:716
 msgid ""
 "Prevents a TLSv1.2 connection. This option is only applicable in conjunction"
-" with :const:`PROTOCOL_SSLv23`. It prevents the peers from choosing TLSv1.2 "
-"as the protocol version. Available only with openssl version 1.0.1+."
-msgstr "TLSv1.2 接続が行われないようにします。このオプションは :const:`PROTOCOL_SSLv23` と組み合わせでのみ意味を持ちます。ピア間で TLSv1.2 がプロトコルバージョンとして選択されることを防ぎます。openssl version 1.0.1+ でのみ利用できます。"
+" with :const:`PROTOCOL_TLS`. It prevents the peers from choosing TLSv1.2 as "
+"the protocol version. Available only with openssl version 1.0.1+."
+msgstr ""
 
-#: ../../library/ssl.rst:667
+#: ../../library/ssl.rst:724
 msgid ""
 "Use the server's cipher ordering preference, rather than the client's. This "
 "option has no effect on client sockets and SSLv2 server sockets."
 msgstr "暗号の優先順位として、クライアントのものではなくサーバのものを使います。このオプションはクライアントソケットと SSLv2 のサーバソケットでは効果はありません。"
 
-#: ../../library/ssl.rst:674
+#: ../../library/ssl.rst:731
 msgid ""
 "Prevents re-use of the same DH key for distinct SSL sessions.  This improves"
 " forward secrecy but requires more computational resources. This option only"
 " applies to server sockets."
 msgstr "SSL セッションを区別するのに同じ DH 鍵を再利用しないようにします。これはセキュリティを向上させますが、より多くの計算機リソースを必要とします。このオプションはサーバソケットに適用されます。"
 
-#: ../../library/ssl.rst:682
+#: ../../library/ssl.rst:739
 msgid ""
 "Prevents re-use of the same ECDH key for distinct SSL sessions.  This "
 "improves forward secrecy but requires more computational resources. This "
 "option only applies to server sockets."
 msgstr "SSL セッションを区別するのに同じ ECDH 鍵を再利用しないようにします。これはセキュリティを向上させますが、より多くの計算機リソースを必要とします。このオプションはサーバソケットに適用されます。"
 
-#: ../../library/ssl.rst:690
+#: ../../library/ssl.rst:747
 msgid ""
 "Disable compression on the SSL channel.  This is useful if the application "
 "protocol supports its own compression scheme."
 msgstr "SSL チャネルでの圧縮を無効にします。これはアプリケーションのプロトコルが自身の圧縮方法をサポートする場合に有用です。"
 
-#: ../../library/ssl.rst:693
+#: ../../library/ssl.rst:750
 msgid "This option is only available with OpenSSL 1.0.0 and later."
 msgstr "このオプションは OpenSSL 1.0.0以降のみで使用できます。"
 
-#: ../../library/ssl.rst:699
+#: ../../library/ssl.rst:756
 msgid ""
 "Whether the OpenSSL library has built-in support for the *Application-Layer "
 "Protocol Negotiation* TLS extension as described in :rfc:`7301`."
 msgstr "OpenSSL ライブラリが、組み込みで :rfc:`7301` で記述されている *Application-Layer Protocol Negotiation* TLS 拡張をサポートしているかどうか。"
 
-#: ../../library/ssl.rst:706
+#: ../../library/ssl.rst:763
 msgid ""
 "Whether the OpenSSL library has built-in support for Elliptic Curve-based "
 "Diffie-Hellman key exchange.  This should be true unless the feature was "
 "explicitly disabled by the distributor."
 msgstr "OpenSSL ライブラリが、組み込みの楕円曲線ディフィー・ヘルマン鍵共有をサポートしているかどうか。これは、ディストリビュータが明示的に無効にしていない限りは、真であるはずです。"
 
-#: ../../library/ssl.rst:714
+#: ../../library/ssl.rst:771
 msgid ""
 "Whether the OpenSSL library has built-in support for the *Server Name "
 "Indication* extension (as defined in :rfc:`4366`)."
 msgstr "OpenSSL ライブラリが、組み込みで (:rfc:`4366` で記述されている) *Server Name Indication* 拡張をサポートしているかどうか。"
 
-#: ../../library/ssl.rst:721
+#: ../../library/ssl.rst:778
 msgid ""
 "Whether the OpenSSL library has built-in support for *Next Protocol "
 "Negotiation* as described in the `NPN draft specification "
@@ -887,27 +934,27 @@ msgid ""
 "protocols you want to support."
 msgstr "OpenSSL ライブラリが、組み込みで、`NPN draft specification <https://tools.ietf.org/html/draft-agl-tls-nextprotoneg>`_ で記述されている *Next Protocol Negotiation* をサポートしているかどうか。 true であれば、サポートしたいプロトコルを :meth:`SSLContext.set_npn_protocols` メソッドで提示することができます。"
 
-#: ../../library/ssl.rst:731
+#: ../../library/ssl.rst:788
 msgid ""
 "List of supported TLS channel binding types.  Strings in this list can be "
 "used as arguments to :meth:`SSLSocket.get_channel_binding`."
 msgstr "サポートされている TLS のチャネルバインディングのタイプのリスト。リスト内の文字列は :meth:`SSLSocket.get_channel_binding` の引数に渡せます。"
 
-#: ../../library/ssl.rst:738
+#: ../../library/ssl.rst:795
 msgid "The version string of the OpenSSL library loaded by the interpreter::"
 msgstr "インタプリタによってロードされた OpenSSL ライブラリのバージョン文字列::"
 
-#: ../../library/ssl.rst:747
+#: ../../library/ssl.rst:804
 msgid ""
 "A tuple of five integers representing version information about the OpenSSL "
 "library::"
 msgstr "OpenSSL ライブラリのバージョン情報を表す5つの整数のタプル::"
 
-#: ../../library/ssl.rst:757
+#: ../../library/ssl.rst:814
 msgid "The raw version number of the OpenSSL library, as a single integer::"
 msgstr "1つの整数の形式の、 OpenSSL ライブラリの生のバージョン番号::"
 
-#: ../../library/ssl.rst:770
+#: ../../library/ssl.rst:827
 msgid ""
 "Alert Descriptions from :rfc:`5246` and others. The `IANA TLS Alert Registry"
 " <https://www.iana.org/assignments/tls-parameters/tls-parameters.xml#tls-"
@@ -915,13 +962,13 @@ msgid ""
 "meaning is defined."
 msgstr ":rfc:`5246` その他からのアラートの種類です。 `IANA TLS Alert Registry <https://www.iana.org/assignments/tls-parameters/tls-parameters.xml#tls-parameters-6>`_ にはこのリストとその意味が定義された RFC へのリファレンスが含まれています。"
 
-#: ../../library/ssl.rst:774
+#: ../../library/ssl.rst:831
 msgid ""
 "Used as the return value of the callback function in "
 ":meth:`SSLContext.set_servername_callback`."
 msgstr ":meth:`SSLContext.set_servername_callback` でのコールバック関数の戻り値として使われます。"
 
-#: ../../library/ssl.rst:781
+#: ../../library/ssl.rst:838
 msgid ""
 "Option for :func:`create_default_context` and "
 ":meth:`SSLContext.load_default_certs`.  This value indicates that the "
@@ -929,7 +976,7 @@ msgid ""
 "to create client-side sockets)."
 msgstr ":func:`create_default_context` と :meth:`SSLContext.load_default_certs` に渡すオプションです。この値はコンテキストが Web サーバの認証に使われることを示します (ですので、クライアントサイドのソケットを作るのに使うことになるでしょう)。"
 
-#: ../../library/ssl.rst:790
+#: ../../library/ssl.rst:847
 msgid ""
 "Option for :func:`create_default_context` and "
 ":meth:`SSLContext.load_default_certs`.  This value indicates that the "
@@ -937,85 +984,85 @@ msgid ""
 "to create server-side sockets)."
 msgstr ":func:`create_default_context` と :meth:`SSLContext.load_default_certs` に渡すオプションです。この値はコンテキストが Web クライアントの認証に使われることを示します (ですので、サーバサイドのソケットを作るのに使うことになるでしょう)。"
 
-#: ../../library/ssl.rst:799
+#: ../../library/ssl.rst:856
 msgid "SSL Sockets"
 msgstr "SSL ソケット"
 
-#: ../../library/ssl.rst:803
+#: ../../library/ssl.rst:860
 msgid "SSL sockets provide the following methods of :ref:`socket-objects`:"
 msgstr "SSL ソケットは :ref:`socket-objects` の以下のメソッドを提供します:"
 
-#: ../../library/ssl.rst:805
+#: ../../library/ssl.rst:862
 msgid ":meth:`~socket.socket.accept()`"
 msgstr ":meth:`~socket.socket.accept()`"
 
-#: ../../library/ssl.rst:806
+#: ../../library/ssl.rst:863
 msgid ":meth:`~socket.socket.bind()`"
 msgstr ":meth:`~socket.socket.bind()`"
 
-#: ../../library/ssl.rst:807
+#: ../../library/ssl.rst:864
 msgid ":meth:`~socket.socket.close()`"
 msgstr ":meth:`~socket.socket.close()`"
 
-#: ../../library/ssl.rst:808
+#: ../../library/ssl.rst:865
 msgid ":meth:`~socket.socket.connect()`"
 msgstr ":meth:`~socket.socket.connect()`"
 
-#: ../../library/ssl.rst:809
+#: ../../library/ssl.rst:866
 msgid ":meth:`~socket.socket.detach()`"
 msgstr ":meth:`~socket.socket.detach()`"
 
-#: ../../library/ssl.rst:810
+#: ../../library/ssl.rst:867
 msgid ":meth:`~socket.socket.fileno()`"
 msgstr ":meth:`~socket.socket.fileno()`"
 
-#: ../../library/ssl.rst:811
+#: ../../library/ssl.rst:868
 msgid ""
 ":meth:`~socket.socket.getpeername()`, :meth:`~socket.socket.getsockname()`"
 msgstr ":meth:`~socket.socket.getpeername()`, :meth:`~socket.socket.getsockname()`"
 
-#: ../../library/ssl.rst:812
+#: ../../library/ssl.rst:869
 msgid ""
 ":meth:`~socket.socket.getsockopt()`, :meth:`~socket.socket.setsockopt()`"
 msgstr ":meth:`~socket.socket.getsockopt()`, :meth:`~socket.socket.setsockopt()`"
 
-#: ../../library/ssl.rst:813
+#: ../../library/ssl.rst:870
 msgid ""
 ":meth:`~socket.socket.gettimeout()`, :meth:`~socket.socket.settimeout()`, "
 ":meth:`~socket.socket.setblocking()`"
 msgstr ":meth:`~socket.socket.gettimeout()`, :meth:`~socket.socket.settimeout()`, :meth:`~socket.socket.setblocking()`"
 
-#: ../../library/ssl.rst:815
+#: ../../library/ssl.rst:872
 msgid ":meth:`~socket.socket.listen()`"
 msgstr ":meth:`~socket.socket.listen()`"
 
-#: ../../library/ssl.rst:816
+#: ../../library/ssl.rst:873
 msgid ":meth:`~socket.socket.makefile()`"
 msgstr ":meth:`~socket.socket.makefile()`"
 
-#: ../../library/ssl.rst:817
+#: ../../library/ssl.rst:874
 msgid ""
 ":meth:`~socket.socket.recv()`, :meth:`~socket.socket.recv_into()` (but "
 "passing a non-zero ``flags`` argument is not allowed)"
 msgstr ":meth:`~socket.socket.recv()`, :meth:`~socket.socket.recv_into()` (非ゼロの ``flags`` は渡せません)"
 
-#: ../../library/ssl.rst:819
+#: ../../library/ssl.rst:876
 msgid ""
 ":meth:`~socket.socket.send()`, :meth:`~socket.socket.sendall()` (with the "
 "same limitation)"
 msgstr ":meth:`~socket.socket.send()`, :meth:`~socket.socket.sendall()` (非ゼロの ``flags`` は渡せません)"
 
-#: ../../library/ssl.rst:821
+#: ../../library/ssl.rst:878
 msgid ""
 ":meth:`~socket.socket.sendfile()` (but :mod:`os.sendfile` will be used for "
 "plain-text sockets only, else :meth:`~socket.socket.send()` will be used)"
 msgstr ""
 
-#: ../../library/ssl.rst:823
+#: ../../library/ssl.rst:880
 msgid ":meth:`~socket.socket.shutdown()`"
 msgstr ":meth:`~socket.socket.shutdown()`"
 
-#: ../../library/ssl.rst:825
+#: ../../library/ssl.rst:882
 msgid ""
 "However, since the SSL (and TLS) protocol has its own framing atop of TCP, "
 "the SSL sockets abstraction can, in certain respects, diverge from the "
@@ -1023,78 +1070,78 @@ msgid ""
 "on non-blocking sockets <ssl-nonblocking>`."
 msgstr "SSL(およびTLS)プロトコルは TCP の上に独自の枠組みを持っているので、SSLソケットの抽象化は、いくつかの点で通常の OSレベルのソケットの仕様から逸脱することがあります。特に :ref:`ノンブロッキングソケットについての注釈 <ssl-nonblocking>` を参照してください。"
 
-#: ../../library/ssl.rst:830
+#: ../../library/ssl.rst:887
 msgid ""
 "Usually, :class:`SSLSocket` are not created directly, but using the "
 ":func:`wrap_socket` function or the :meth:`SSLContext.wrap_socket` method."
 msgstr "通常は、 :class:`SSLSocket` を直接作るのではなく、 :func:`wrap_socket` 関数か :meth:`SSLContext.wrap_socket` メソッドを使います。"
 
-#: ../../library/ssl.rst:833
+#: ../../library/ssl.rst:890
 msgid "The :meth:`sendfile` method was added."
 msgstr ":meth:`sendfile` メソッドが追加されました。"
 
-#: ../../library/ssl.rst:836
+#: ../../library/ssl.rst:893
 msgid ""
 "The :meth:`shutdown` does not reset the socket timeout each time bytes are "
 "received or sent. The socket timeout is now to maximum total duration of the"
 " shutdown."
 msgstr ""
 
-#: ../../library/ssl.rst:842
+#: ../../library/ssl.rst:899
 msgid "SSL sockets also have the following additional methods and attributes:"
 msgstr "SSL ソケットには、以下に示す追加のメソッドと属性もあります:"
 
-#: ../../library/ssl.rst:846
+#: ../../library/ssl.rst:903
 msgid ""
 "Read up to *len* bytes of data from the SSL socket and return the result as "
 "a ``bytes`` instance. If *buffer* is specified, then read into the buffer "
 "instead, and return the number of bytes read."
 msgstr "SSL ソケットからデータの *len* バイトまでを読み出し、読み出した結果を ``bytes`` インスタンスで返します。 *buffer* を指定すると、結果は代わりに buffer に読み込まれ、読み込んだバイト数を返します。"
 
-#: ../../library/ssl.rst:850
+#: ../../library/ssl.rst:907
 msgid ""
 "Raise :exc:`SSLWantReadError` or :exc:`SSLWantWriteError` if the socket is "
 ":ref:`non-blocking <ssl-nonblocking>` and the read would block."
 msgstr "ソケットが :ref:`non-blocking <ssl-nonblocking>` で読み出しがブロックすると、 :exc:`SSLWantReadError` もしくは :exc:`SSLWantWriteError` が送出されます。"
 
-#: ../../library/ssl.rst:853
+#: ../../library/ssl.rst:910
 msgid ""
 "As at any time a re-negotiation is possible, a call to :meth:`read` can also"
 " cause write operations."
 msgstr "再ネゴシエーションがいつでも可能なので、 :meth:`read`  の呼び出しは書き込み操作も引き起こしえます。"
 
-#: ../../library/ssl.rst:856
+#: ../../library/ssl.rst:913
 msgid ""
 "The socket timeout is no more reset each time bytes are received or sent. "
 "The socket timeout is now to maximum total duration to read up to *len* "
 "bytes."
 msgstr ""
 
-#: ../../library/ssl.rst:863
+#: ../../library/ssl.rst:920
 msgid ""
 "Write *buf* to the SSL socket and return the number of bytes written. The "
 "*buf* argument must be an object supporting the buffer interface."
 msgstr "*buf* を SSL ソケットに書き込み、書き込んだバイト数を返します。 *buf* 引数はバッファインターフェイスをサポートするオブジェクトでなければなりません。"
 
-#: ../../library/ssl.rst:866
+#: ../../library/ssl.rst:923
 msgid ""
 "Raise :exc:`SSLWantReadError` or :exc:`SSLWantWriteError` if the socket is "
 ":ref:`non-blocking <ssl-nonblocking>` and the write would block."
 msgstr "ソケットが :ref:`non-blocking <ssl-nonblocking>` で書き込みがブロックすると、 :exc:`SSLWantReadError` もしくは :exc:`SSLWantWriteError` が送出されます。"
 
-#: ../../library/ssl.rst:869
+#: ../../library/ssl.rst:926
 msgid ""
 "As at any time a re-negotiation is possible, a call to :meth:`write` can "
 "also cause read operations."
 msgstr "再ネゴシエーションがいつでも可能なので、 :meth:`write`  の呼び出しは読み出し操作も引き起こしえます。"
 
-#: ../../library/ssl.rst:872
+#: ../../library/ssl.rst:929
 msgid ""
 "The socket timeout is no more reset each time bytes are received or sent. "
 "The socket timeout is now to maximum total duration to write *buf*."
 msgstr ""
 
-#: ../../library/ssl.rst:878
+#: ../../library/ssl.rst:935
 msgid ""
 "The :meth:`~SSLSocket.read` and :meth:`~SSLSocket.write` methods are the "
 "low-level methods that read and write unencrypted, application-level data "
@@ -1103,38 +1150,38 @@ msgid ""
 ":meth:`SSLSocket.unwrap` was not called."
 msgstr ":meth:`~SSLSocket.read`, :meth:`~SSLSocket.write` メソッドは下位レベルのメソッドであり、暗号化されていないアプリケーションレベルのデータを読み書きし、それを復号/暗号化して暗号化された書き込みレベルのデータにします。これらのメソッドはアクティブな SSL 接続つまり、ハンドシェイクが完了していて、 :meth:`SSLSocket.unwrap` が呼ばれていないことを必要とします。"
 
-#: ../../library/ssl.rst:884
+#: ../../library/ssl.rst:941
 msgid ""
 "Normally you should use the socket API methods like "
 ":meth:`~socket.socket.recv` and :meth:`~socket.socket.send` instead of these"
 " methods."
 msgstr "通常はこれらのメソッドの代わりに :meth:`~socket.socket.recv` や :meth:`~socket.socket.send` のようなソケット API メソッドを使うべきです。"
 
-#: ../../library/ssl.rst:890
+#: ../../library/ssl.rst:947
 msgid "Perform the SSL setup handshake."
 msgstr "SSL セットアップのハンドシェイクを実行します。"
 
-#: ../../library/ssl.rst:892
+#: ../../library/ssl.rst:949
 msgid ""
 "The handshake method also performs :func:`match_hostname` when the "
 ":attr:`~SSLContext.check_hostname` attribute of the socket's "
 ":attr:`~SSLSocket.context` is true."
 msgstr "ソケットの :attr:`~SSLSocket.context` の属性 :attr:`~SSLContext.check_hostname` が真の場合に、ハンドシェイクメソッドが :func:`match_hostname` を実行するようになりました。"
 
-#: ../../library/ssl.rst:897
+#: ../../library/ssl.rst:954
 msgid ""
 "The socket timeout is no more reset each time bytes are received or sent. "
 "The socket timeout is now to maximum total duration of the handshake."
 msgstr ""
 
-#: ../../library/ssl.rst:903
+#: ../../library/ssl.rst:960
 msgid ""
 "If there is no certificate for the peer on the other end of the connection, "
 "return ``None``.  If the SSL handshake hasn't been done yet, raise "
 ":exc:`ValueError`."
 msgstr "接続先に証明書が無い場合、 ``None`` を返します。SSL ハンドシェイクがまだ行われていない場合は、 :exc:`ValueError` が送出されます。"
 
-#: ../../library/ssl.rst:907
+#: ../../library/ssl.rst:964
 msgid ""
 "If the ``binary_form`` parameter is :const:`False`, and a certificate was "
 "received from the peer, this method returns a :class:`dict` instance.  If "
@@ -1146,7 +1193,7 @@ msgid ""
 "also be a ``subjectAltName`` key in the dictionary."
 msgstr "``binary_form`` が :const:`False` で接続先から証明書を取得した場合、このメソッドは :class:`dict` のインスタンスを返します。証明書が認証されていない場合、辞書は空です。証明書が認証されていた場合いくつかのキーを持った辞書を返し、 ``subject`` (証明書が発行された principal), ``issuer`` (証明書を発行した principal) を含みます。証明書が *Subject Alternative Name* 拡張(:rfc:`3280` を参照)のインスタンスを格納していた場合、 ``subjectAltName`` キーも辞書に含まれます。"
 
-#: ../../library/ssl.rst:916
+#: ../../library/ssl.rst:973
 msgid ""
 "The ``subject`` and ``issuer`` fields are tuples containing the sequence of "
 "relative distinguished names (RDNs) given in the certificate's data "
@@ -1154,13 +1201,13 @@ msgid ""
 "value pairs.  Here is a real-world example::"
 msgstr "``subject``, ``issuer`` フィールドは、証明書のそれぞれのフィールドについてのデータ構造で与えられる RDN (relative distinguishued name) のシーケンスを格納したタプルで、各 RDN は name-value ペアのシーケンスです。現実世界での例をお見せします::"
 
-#: ../../library/ssl.rst:942
+#: ../../library/ssl.rst:999
 msgid ""
 "To validate a certificate for a particular service, you can use the "
 ":func:`match_hostname` function."
 msgstr "特定のサービスのために証明書の検証がしたければ、 :func:`match_hostname` 関数を使うことができます。"
 
-#: ../../library/ssl.rst:945
+#: ../../library/ssl.rst:1002
 msgid ""
 "If the ``binary_form`` parameter is :const:`True`, and a certificate was "
 "provided, this method returns the DER-encoded form of the entire certificate"
@@ -1169,13 +1216,13 @@ msgid ""
 "socket's role:"
 msgstr "``binary_form`` 引数が :const:`True` だった場合、証明書が渡されていればこのメソッドはDERエンコードされた証明書全体をバイト列として返し、接続先が証明書を提示しなかった場合は :const:`None` を返します。接続先が証明書を提供するかどうかは SSL ソケットの役割に依存します:"
 
-#: ../../library/ssl.rst:951
+#: ../../library/ssl.rst:1008
 msgid ""
 "for a client SSL socket, the server will always provide a certificate, "
 "regardless of whether validation was required;"
 msgstr "クライアント側ソケットでは、認証が要求されているかどうかに関わらず、サーバは常に証明書を提供します;"
 
-#: ../../library/ssl.rst:954
+#: ../../library/ssl.rst:1011
 msgid ""
 "for a server SSL socket, the client will only provide a certificate when "
 "requested by the server; therefore :meth:`getpeercert` will return "
@@ -1183,20 +1230,20 @@ msgid ""
 ":const:`CERT_OPTIONAL` or :const:`CERT_REQUIRED`)."
 msgstr "サーバ側ソケットでは、クライアントはサーバによって認証が要求されている場合にのみ証明書を提供します; ですので、 (:const:`CERT_OPTIONAL` や :const:`CERT_REQUIRED` ではなく) :const:`CERT_NONE` を使うと :meth:`getpeercert` は :const:`None` を返します。"
 
-#: ../../library/ssl.rst:959
+#: ../../library/ssl.rst:1016
 msgid ""
 "The returned dictionary includes additional items such as ``issuer`` and "
 "``notBefore``."
 msgstr "返される辞書に ``issuer``, ``notBefore`` のような追加アイテムを含むようになりました。"
 
-#: ../../library/ssl.rst:963
+#: ../../library/ssl.rst:1020
 msgid ""
 ":exc:`ValueError` is raised when the handshake isn't done. The returned "
 "dictionary includes additional X509v3 extension items   such as "
 "``crlDistributionPoints``, ``caIssuers`` and ``OCSP`` URIs."
 msgstr "ハンドシェイクが済んでいなければ :exc:`ValueError` を投げるようになりました。返される辞書に ``crlDistributionPoints``, ``caIssuers``, ``OCSP`` URI のような X509v3 拡張アイテムを含むようになりました。"
 
-#: ../../library/ssl.rst:970
+#: ../../library/ssl.rst:1027
 msgid ""
 "Returns a three-value tuple containing the name of the cipher being used, "
 "the version of the SSL protocol that defines its use, and the number of "
@@ -1204,7 +1251,7 @@ msgid ""
 "``None``."
 msgstr "利用されている暗号の名前、その暗号の利用を定義しているSSLプロトコルのバージョン、利用されている鍵のbit長の3つの値を含むタプルを返します。もし接続が確立されていない場合、 ``None`` を返します。"
 
-#: ../../library/ssl.rst:976
+#: ../../library/ssl.rst:1033
 msgid ""
 "Return the list of ciphers shared by the client during the handshake.  Each "
 "entry of the returned list is a three-value tuple containing the name of the"
@@ -1214,25 +1261,25 @@ msgid ""
 "client socket."
 msgstr ""
 
-#: ../../library/ssl.rst:987
+#: ../../library/ssl.rst:1044
 msgid ""
 "Return the compression algorithm being used as a string, or ``None`` if the "
 "connection isn't compressed."
 msgstr "使われている圧縮アルゴリズムを文字列で返します。接続が圧縮されていなければ ``None`` を返します。"
 
-#: ../../library/ssl.rst:990
+#: ../../library/ssl.rst:1047
 msgid ""
 "If the higher-level protocol supports its own compression mechanism, you can"
 " use :data:`OP_NO_COMPRESSION` to disable SSL-level compression."
 msgstr "上位レベルのプロトコルが自身で圧縮メカニズムをサポートする場合、SSL レベルでの圧縮を :data:`OP_NO_COMPRESSION` を使って無効にできます。"
 
-#: ../../library/ssl.rst:997
+#: ../../library/ssl.rst:1054
 msgid ""
 "Get channel binding data for current connection, as a bytes object.  Returns"
 " ``None`` if not connected or the handshake has not been completed."
 msgstr "現在の接続におけるチャネルバインディングのデータを取得します。未接続あるいはハンドシェイクが完了していなければ ``None`` を返します。"
 
-#: ../../library/ssl.rst:1000
+#: ../../library/ssl.rst:1057
 msgid ""
 "The *cb_type* parameter allow selection of the desired channel binding type."
 " Valid channel binding types are listed in the :data:`CHANNEL_BINDING_TYPES`"
@@ -1241,7 +1288,7 @@ msgid ""
 "unsupported channel binding type is requested."
 msgstr "*cb_type* パラメータにより、望みのチャネルバインディングのタイプを選択できます。チャネルバインディングのタイプの妥当なものは :data:`CHANNEL_BINDING_TYPES` でリストされています。現在のところは :rfc:`5929` で定義されている 'tls-unique' のみがサポートされています。未サポートのチャネルバインディングのタイプが要求された場合、 :exc:`ValueError` を送出します。"
 
-#: ../../library/ssl.rst:1010
+#: ../../library/ssl.rst:1067
 msgid ""
 "Return the protocol that was selected during the TLS handshake.  If "
 ":meth:`SSLContext.set_alpn_protocols` was not called, if the other party "
@@ -1250,7 +1297,7 @@ msgid ""
 "returned."
 msgstr "TLS ハンドシェイクで選択されたプロトコルを返します。 :meth:`SSLContext.set_alpn_protocols` が呼ばれていない場合、相手側が ALPN をサポートしていない場合、クライアントが提案したプロトコルのどれもソケットがサポートしない場合、あるいはハンドシェイクがまだ行われていない場合には、 ``None`` が返されます。"
 
-#: ../../library/ssl.rst:1020
+#: ../../library/ssl.rst:1077
 msgid ""
 "Return the higher-level protocol that was selected during the TLS/SSL "
 "handshake. If :meth:`SSLContext.set_npn_protocols` was not called, or if the"
@@ -1258,7 +1305,7 @@ msgid ""
 " this will return ``None``."
 msgstr "TLS/SSL ハンドシェイクで選択された上位レベルのプロトコルを返します。 :meth:`SSLContext.set_npn_protocols` が呼ばれていない場合、相手側が NPN をサポートしていない場合、あるいはハンドシェイクがまだ行われていない場合には、 ``None`` が返されます。"
 
-#: ../../library/ssl.rst:1029
+#: ../../library/ssl.rst:1086
 msgid ""
 "Performs the SSL shutdown handshake, which removes the TLS layer from the "
 "underlying socket, and returns the underlying socket object.  This can be "
@@ -1267,7 +1314,7 @@ msgid ""
 "other side of the connection, rather than the original socket."
 msgstr "SSLシャットダウンハンドシェイクを実行します。これは下位レイヤーのソケットからTLSレイヤーを取り除き、下位レイヤーのソケットオブジェクトを返します。これは暗号化されたオペレーションから暗号化されていない接続に移行するときに利用されます。以降の通信には、オリジナルのソケットではなくこのメソッドが返したソケットのみを利用するべきです。"
 
-#: ../../library/ssl.rst:1037
+#: ../../library/ssl.rst:1094
 msgid ""
 "Return the actual SSL protocol version negotiated by the connection as a "
 "string, or ``None`` is no secure connection is established. As of this "
@@ -1276,13 +1323,13 @@ msgid ""
 "may define more return values."
 msgstr "コネクションによって実際にネゴシエイトされた SSL プロトコルバージョンを文字列で、または、セキュアなコネクションが確立していなければ ``None`` を返します。これを書いている時点では、 ``\"SSLv2\"``, ``\"SSLv3\"``, ``\"TLSv1\"``, ``\"TLSv1.1\"``, ``\"TLSv1.2\"`` などが返ります。最新の OpenSSL はもっと色々な値を定義しているかもしれません。"
 
-#: ../../library/ssl.rst:1047
+#: ../../library/ssl.rst:1104
 msgid ""
 "Returns the number of already decrypted bytes available for read, pending on"
 " the connection."
 msgstr "接続において既に復号済みで読み出し可能で保留になっているバイト列の数を返します。"
 
-#: ../../library/ssl.rst:1052
+#: ../../library/ssl.rst:1109
 msgid ""
 "The :class:`SSLContext` object this SSL socket is tied to.  If the SSL "
 "socket was created using the top-level :func:`wrap_socket` function (rather "
@@ -1290,23 +1337,23 @@ msgid ""
 "created for this SSL socket."
 msgstr "この SSL ソケットに結び付けられた :class:`SSLContext` オブジェクトです。SSL ソケットが (:meth:`SSLContext.wrap_socket` ではなく)トップレベルの :func:`wrap_socket` 関数を使って作られた場合、これはこの SSL ソケットのために作られたカスタムコンテキストオブジェクトです。"
 
-#: ../../library/ssl.rst:1061
+#: ../../library/ssl.rst:1118
 msgid ""
 "A boolean which is ``True`` for server-side sockets and ``False`` for "
 "client-side sockets."
 msgstr "サーバサイドのソケットに対して ``True`` 、クライアントサイドのソケットに対して ``False`` となる真偽値です。"
 
-#: ../../library/ssl.rst:1068
+#: ../../library/ssl.rst:1125
 msgid ""
 "Hostname of the server: :class:`str` type, or ``None`` for server-side "
 "socket or if the hostname was not specified in the constructor."
 msgstr "サーバのホスト名: :class:`str` 型、またはサーバサイドのソケットの場合とコンストラクタで hostname が指定されなかった場合は ``None``"
 
-#: ../../library/ssl.rst:1075
+#: ../../library/ssl.rst:1132
 msgid "SSL Contexts"
 msgstr "SSL コンテキスト"
 
-#: ../../library/ssl.rst:1079
+#: ../../library/ssl.rst:1136
 msgid ""
 "An SSL context holds various data longer-lived than single SSL connections, "
 "such as SSL configuration options, certificate(s) and private key(s). It "
@@ -1314,35 +1361,39 @@ msgid ""
 "speed up repeated connections from the same clients."
 msgstr "SSL コンテキストは、SSL 構成オプション、証明書(群)や秘密鍵(群)などのような、一回の SSL 接続よりも長生きするさまざまなデータを保持します。これはサーバサイドソケットの SSL セッションのキャッシュも管理し、同じクライアントからの繰り返しの接続時の速度向上に一役買います。"
 
-#: ../../library/ssl.rst:1086
+#: ../../library/ssl.rst:1143
 msgid ""
-"Create a new SSL context.  You must pass *protocol* which must be one of the"
-" ``PROTOCOL_*`` constants defined in this module. :data:`PROTOCOL_SSLv23` is"
-" currently recommended for maximum interoperability."
-msgstr "新しい SSL コンテキストを作成します。 *protocol* にはこのモジュールで定義されている ``PROTOCOL_*`` 定数のうち一つを指定しなければなりません。最大限の互換性のためには、現時点での推奨は :data:`PROTOCOL_SSLv23` です。"
+"Create a new SSL context.  You may pass *protocol* which must be one of the "
+"``PROTOCOL_*`` constants defined in this module. :data:`PROTOCOL_TLS` is "
+"currently recommended for maximum interoperability and default value."
+msgstr ""
 
-#: ../../library/ssl.rst:1092
+#: ../../library/ssl.rst:1149
 msgid ""
 ":func:`create_default_context` lets the :mod:`ssl` module choose security "
 "settings for a given purpose."
 msgstr ":func:`create_default_context` は :mod:`ssl` モジュールに、目的に合ったセキュリティ設定を選ばせます。"
 
-#: ../../library/ssl.rst:1096
+#: ../../library/ssl.rst:1154
+msgid ":data:`PROTOCOL_TLS` is the default value."
+msgstr ""
+
+#: ../../library/ssl.rst:1157
 msgid ":class:`SSLContext` objects have the following methods and attributes:"
 msgstr ":class:`SSLContext` オブジェクトは以下のメソッドと属性を持っています:"
 
-#: ../../library/ssl.rst:1100
+#: ../../library/ssl.rst:1161
 msgid ""
 "Get statistics about quantities of loaded X.509 certificates, count of X.509"
 " certificates flagged as CA certificates and certificate revocation lists as"
 " dictionary."
 msgstr "ロードされた X.509 証明書の数、CA 証明書で活性の X.509 証明書の数、証明書失効リストの数、についての統計情報を辞書として取得します。"
 
-#: ../../library/ssl.rst:1104
+#: ../../library/ssl.rst:1165
 msgid "Example for a context with one CA cert and one other cert::"
 msgstr "一つの CA と他の一つの証明書を持ったコンテキストでの例です::"
 
-#: ../../library/ssl.rst:1114
+#: ../../library/ssl.rst:1175
 msgid ""
 "Load a private key and the corresponding certificate.  The *certfile* string"
 " must be the path to a single file in PEM format containing the certificate "
@@ -1354,7 +1405,7 @@ msgid ""
 "*certfile*."
 msgstr "秘密鍵と対応する証明書をロードします。 *certfile* は、証明書と、証明書認証で必要とされる任意の数の CA 証明書を含む、PEM フォーマットの単一ファイルへのパスでなければなりません。 *keyfile* を指定する場合は、秘密鍵が含まれるファイルを指さなければなりません。そうでなければ秘密鍵も *certfile* から取られます。 *certfile* に証明書をどのように格納すれば良いかについての詳しい情報は、 :ref:`ssl-certificates` の議論を参照してください。"
 
-#: ../../library/ssl.rst:1123
+#: ../../library/ssl.rst:1184
 msgid ""
 "The *password* argument may be a function to call to get the password for "
 "decrypting the private key.  It will only be called if the private key is "
@@ -1366,24 +1417,24 @@ msgid ""
 "encrypted and no password is needed."
 msgstr "*password* 引数に、秘密鍵を復号するためのパスワードを返す関数を与えることができます。その関数は秘密鍵が暗号化されていて、なおかつパスワードが必要な場合にのみ呼び出されます。その関数は引数なしで呼び出され、string, bytes, または bytearray を返さなければなりません。戻り値が string の場合は鍵を復号化するのに使う前に UTF-8 でエンコードされます。string の代わりに bytes や bytearray を返した場合は *password* 引数に直接供給されます。秘密鍵が暗号化されていなかったりパスワードを必要としない場合は、指定は無視されます。"
 
-#: ../../library/ssl.rst:1132
+#: ../../library/ssl.rst:1193
 msgid ""
 "If the *password* argument is not specified and a password is required, "
 "OpenSSL's built-in password prompting mechanism will be used to "
 "interactively prompt the user for a password."
 msgstr "*password* が与えられず、そしてパスワードが必要な場合には、OpenSSL 組み込みのパスワード問い合わせメカニズムが、ユーザに対話的にパスワードを問い合わせます。"
 
-#: ../../library/ssl.rst:1136
+#: ../../library/ssl.rst:1197
 msgid ""
 "An :class:`SSLError` is raised if the private key doesn't match with the "
 "certificate."
 msgstr "秘密鍵が証明書に合致しなければ、 :class:`SSLError` が送出されます。"
 
-#: ../../library/ssl.rst:1139
+#: ../../library/ssl.rst:1200
 msgid "New optional argument *password*."
 msgstr "新しいオプション引数 *password*。"
 
-#: ../../library/ssl.rst:1144
+#: ../../library/ssl.rst:1205
 msgid ""
 "Load a set of default \"certification authority\" (CA) certificates from "
 "default locations. On Windows it loads CA certs from the ``CA`` and ``ROOT``"
@@ -1392,7 +1443,7 @@ msgid ""
 "load CA certificates from other locations, too."
 msgstr "デフォルトの場所から \"認証局\" (CA=certification authority) 証明書ファイル一式をロードします。Windows では、CA 証明書はシステム記憶域の ``CA`` と ``ROOT`` からロードします。それ以外のシステムでは、この関数は :meth:`SSLContext.set_default_verify_paths` を呼び出します。将来的にはこのメソッドは、他の場所からも CA 証明書をロードするかもしれません。"
 
-#: ../../library/ssl.rst:1150
+#: ../../library/ssl.rst:1211
 msgid ""
 "The *purpose* flag specifies what kind of CA certificates are loaded. The "
 "default settings :data:`Purpose.SERVER_AUTH` loads certificates, that are "
@@ -1401,35 +1452,35 @@ msgid ""
 "verification on the server side."
 msgstr "*purpose* フラグでどの種類の CA 証明書をロードするかを指定します。デフォルトの :data:`Purpose.SERVER_AUTH` は TLS web サーバの認証のために活性かつ信頼された証明書をロードします(クライアントサイドのソケット)。 :data:`Purpose.CLIENT_AUTH` はクライアント証明書の正当性検証をサーバサイドで行うための CA 証明書をロードします。"
 
-#: ../../library/ssl.rst:1160
+#: ../../library/ssl.rst:1221
 msgid ""
 "Load a set of \"certification authority\" (CA) certificates used to validate"
 " other peers' certificates when :data:`verify_mode` is other than "
 ":data:`CERT_NONE`.  At least one of *cafile* or *capath* must be specified."
 msgstr ":data:`verify_mode` が :data:`CERT_NONE` でない場合に接続先の証明書ファイルの正当性検証に使われる \"認証局\" (CA=certification authority) 証明書ファイル一式をロードします。少なくとも *cafile* か *capath* のどちらかは指定しなければなりません。"
 
-#: ../../library/ssl.rst:1164
+#: ../../library/ssl.rst:1225
 msgid ""
 "This method can also load certification revocation lists (CRLs) in PEM or "
 "DER format. In order to make use of CRLs, :attr:`SSLContext.verify_flags` "
 "must be configured properly."
 msgstr "このメソッドは PEM または DER フォーマットの証明書失効リスト (CRLs=certification revocation lists)もロードできます。CRLs のために使うには、 :attr:`SSLContext.verify_flags` を適切に設定しなければなりません。"
 
-#: ../../library/ssl.rst:1168
+#: ../../library/ssl.rst:1229
 msgid ""
 "The *cafile* string, if present, is the path to a file of concatenated CA "
 "certificates in PEM format. See the discussion of :ref:`ssl-certificates` "
 "for more information about how to arrange the certificates in this file."
 msgstr "*cafile* を指定する場合は、PEM フォーマットで CA 証明書が結合されたファイルへのパスを指定してください。このファイル内で証明書をどのように編成すれば良いのかについての詳しい情報については、 :ref:`ssl-certificates` の議論を参照してください。"
 
-#: ../../library/ssl.rst:1173
+#: ../../library/ssl.rst:1234
 msgid ""
 "The *capath* string, if present, is the path to a directory containing "
 "several CA certificates in PEM format, following an `OpenSSL specific layout"
 " <https://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html>`_."
 msgstr "*capath* を指定する場合は、PEM フォーマットの CA 証明書が含まれる、`OpenSSL specific layout <https://www.openssl.org/docs/ssl/SSL_CTX_load_verify_locations.html>`_ に従ったディレクトリへのパスを指定してください。"
 
-#: ../../library/ssl.rst:1178
+#: ../../library/ssl.rst:1239
 msgid ""
 "The *cadata* object, if present, is either an ASCII string of one or more "
 "PEM-encoded certificates or a :term:`bytes-like object` of DER-encoded "
@@ -1437,11 +1488,11 @@ msgid ""
 " are ignored but at least one certificate must be present."
 msgstr "*cadata* オブジェクトを指定する場合は、PEM エンコードの証明書一つ以上の ASCII 文字列か、DER エンコードの証明書の :term:`bytes-like object` オブジェクトのどちらかを指定してください。PEM エンコードの証明書の周囲の余分な行は無視されますが、少なくとも一つの証明書が含まれている必要があります。"
 
-#: ../../library/ssl.rst:1183
+#: ../../library/ssl.rst:1244
 msgid "New optional argument *cadata*"
 msgstr "新しいオプション引数 *cadata* 。"
 
-#: ../../library/ssl.rst:1188
+#: ../../library/ssl.rst:1249
 msgid ""
 "Get a list of loaded \"certification authority\" (CA) certificates. If the "
 "``binary_form`` parameter is :const:`False` each list entry is a dict like "
@@ -1451,13 +1502,13 @@ msgid ""
 "a SSL connection."
 msgstr "ロードされた \"認証局\" (CA=certification authority) 証明書のリストを取得します。 ``binary_form`` パラメータが :const:`False` であれば、リストのそれぞれのエントリは :meth:`SSLSocket.getpeercert` が出力するような辞書になります。そうでない場合このメソッドは、DER エンコード形式の証明書のリストで返します。返却されるリストには、 SSL 接続によって要求されてロードされない限りは *capath* からの証明書は含みません。"
 
-#: ../../library/ssl.rst:1196
+#: ../../library/ssl.rst:1257
 msgid ""
 "Certificates in a capath directory aren't loaded unless they have been used "
 "at least once."
 msgstr "capath ディレクトリ内の証明書は一度でも使われない限りはロードされません。"
 
-#: ../../library/ssl.rst:1203
+#: ../../library/ssl.rst:1264
 msgid ""
 "Load a set of default \"certification authority\" (CA) certificates from a "
 "filesystem path defined when building the OpenSSL library.  Unfortunately, "
@@ -1467,7 +1518,7 @@ msgid ""
 "configured properly."
 msgstr "デフォルトの \"認証局\" (CA=certification authority) 証明書を、OpenSSL ライブラリがビルドされた際に定義されたファイルシステム上のパスからロードします。残念ながらこのメソッドが成功したかどうかを知るための簡単な方法はありません: 証明書が見つからなくてもエラーは返りません。OpenSSL ライブラリがオペレーティングシステムの一部として提供されている際にはどうやら適切に構成できるようですが。"
 
-#: ../../library/ssl.rst:1212
+#: ../../library/ssl.rst:1273
 msgid ""
 "Set the available ciphers for sockets created with this context. It should "
 "be a string in the `OpenSSL cipher list format "
@@ -1477,13 +1528,13 @@ msgid ""
 "raised."
 msgstr "このコンテキストによって作られるソケットで利用できる暗号を設定します。 `OpenSSL cipher list format <https://www.openssl.org/docs/apps/ciphers.html#CIPHER-LIST-FORMAT>`_ に書かれている形式の文字列でなければなりません。 (OpenSSL のコンパイル時オプションや他の設定がそれらすべての暗号の使用を禁止しているなどの理由で) どの暗号も選べない場合、 :class:`SSLError` が送出されます。"
 
-#: ../../library/ssl.rst:1220
+#: ../../library/ssl.rst:1281
 msgid ""
 "when connected, the :meth:`SSLSocket.cipher` method of SSL sockets will give"
 " the currently selected cipher."
 msgstr "接続時に SSL ソケットの :meth:`SSLSocket.cipher` メソッドが、現在選択されているその暗号を使います。"
 
-#: ../../library/ssl.rst:1225
+#: ../../library/ssl.rst:1286
 msgid ""
 "Specify which protocols the socket should advertise during the SSL/TLS "
 "handshake. It should be a list of ASCII strings, like ``['http/1.1', "
@@ -1493,13 +1544,19 @@ msgid ""
 "will return the agreed-upon protocol."
 msgstr "SSL/TLS ハンドシェイク時にソケットが提示すべきプロトコルを指定します。 ``['http/1.1', 'spdy/2']`` のような推奨順に並べた ASII 文字列のリストでなければなりません。プロトコルの選択は :rfc:`7301` に従いハンドシェイクの中で行われます。ハンドシェイクが正常に終了後、 :meth:`SSLSocket.selected_alpn_protocol` メソッドは合意されたプロトコルを返します。"
 
-#: ../../library/ssl.rst:1232
+#: ../../library/ssl.rst:1293
 msgid ""
 "This method will raise :exc:`NotImplementedError` if :data:`HAS_ALPN` is "
 "False."
 msgstr "このメソッドは :data:`HAS_ALPN` が偽の場合 :exc:`NotImplementedError` を送出します。"
 
-#: ../../library/ssl.rst:1239
+#: ../../library/ssl.rst:1296
+msgid ""
+"OpenSSL 1.1.0+ will abort the handshake and raise :exc:`SSLError` when both "
+"sides support ALPN but cannot agree on a protocol."
+msgstr ""
+
+#: ../../library/ssl.rst:1303
 msgid ""
 "Specify which protocols the socket should advertise during the SSL/TLS "
 "handshake. It should be a list of strings, like ``['http/1.1', 'spdy/2']``, "
@@ -1510,13 +1567,13 @@ msgid ""
 "will return the agreed-upon protocol."
 msgstr "SSL/TLS ハンドシェイク時にソケットが提示すべきプロトコルを指定します。 ``['http/1.1', 'spdy/2']`` のような推奨順に並べた文字列のリストでなければなりません。プロトコルの選択は `NPN draft specification <https://tools.ietf.org/html/draft-agl-tls-nextprotoneg>`_ に従いハンドシェイクの中で行われます。ハンドシェイクが正常に終了後、 :meth:`SSLSocket.selected_alpn_protocol` メソッドは合意されたプロトコルを返します。"
 
-#: ../../library/ssl.rst:1247
+#: ../../library/ssl.rst:1311
 msgid ""
 "This method will raise :exc:`NotImplementedError` if :data:`HAS_NPN` is "
 "False."
 msgstr "このメソッドは :data:`HAS_NPN` が偽の場合 :exc:`NotImplementedError` を送出します。"
 
-#: ../../library/ssl.rst:1254
+#: ../../library/ssl.rst:1318
 msgid ""
 "Register a callback function that will be called after the TLS Client Hello "
 "handshake message has been received by the SSL/TLS server when the TLS "
@@ -1524,14 +1581,14 @@ msgid ""
 "mechanism is specified in :rfc:`6066` section 3 - Server Name Indication."
 msgstr "TLS クライアントがサーバ名表示を指定した際の、SSL/TLS サーバによって TLS Client Hello ハンドシェイクメッセージが受け取られたあとで呼び出されるコールバック関数を登録します。サーバ名表示メカニズムは :rfc:`6066` セクション 3 - Server Name Indication で述べられています。"
 
-#: ../../library/ssl.rst:1259
+#: ../../library/ssl.rst:1323
 msgid ""
 "Only one callback can be set per ``SSLContext``.  If *server_name_callback* "
 "is ``None`` then the callback is disabled. Calling this function a "
 "subsequent time will disable the previously registered callback."
 msgstr "``SSLContext`` ごとに一つだけコールバックをセットできます。 *server_name_callback* を ``None`` にすればコールバックは無効になります。この関数を続けて呼ぶと、以前に登録されたコールバックを上書きします。"
 
-#: ../../library/ssl.rst:1263
+#: ../../library/ssl.rst:1327
 msgid ""
 "The callback function, *server_name_callback*, will be called with three "
 "arguments; the first being the :class:`ssl.SSLSocket`, the second is a "
@@ -1541,7 +1598,7 @@ msgid ""
 " server name argument is the IDNA decoded server name."
 msgstr "コールバック関数 *server_name_callback* は 3 つの引数で呼び出されます; 最初の引数は :class:`ssl.SSLSocket` です。2 つ目の引数は、クライアントが相手をしようと意図しているサーバ名を表す文字列 (または TLS Client Hello がサーバ名を含まない場合は ``None``) です。そして 3 つ目の引数はオリジナルの :class:`SSLContext` です。サーバ名引数は IDNA デコードされたサーバ名です。"
 
-#: ../../library/ssl.rst:1270
+#: ../../library/ssl.rst:1334
 msgid ""
 "A typical use of this callback is to change the :class:`ssl.SSLSocket`'s "
 ":attr:`SSLSocket.context` attribute to a new object of type "
@@ -1549,7 +1606,7 @@ msgid ""
 " name."
 msgstr "このコールバックの典型的な利用方法は、 :class:`ssl.SSLSocket` の :attr:`SSLSocket.context` 属性を、サーバ名に合致する証明書チェインを持つ新しい :class:`SSLContext` オブジェクトに変更することです。"
 
-#: ../../library/ssl.rst:1275
+#: ../../library/ssl.rst:1339
 msgid ""
 "Due to the early negotiation phase of the TLS connection, only limited "
 "methods and attributes are usable like "
@@ -1560,7 +1617,7 @@ msgid ""
 " will not contain return meaningful values nor can they be called safely."
 msgstr "TLS 接続の初期ネゴシエーションのフェーズなので、 :meth:`SSLSocket.selected_alpn_protocol`, :attr:`SSLSocket.context` のような限られたメソッドと属性のみ使えます。 :meth:`SSLSocket.getpeercert`, :meth:`SSLSocket.getpeercert`, :meth:`SSLSocket.cipher`, :meth:`SSLSocket.compress` メソッドは TLS 接続が TLS Client Hello よりも先に進行していることを必要としますから、これらは意味のある値を返しませんし、安全に呼び出すこともできません。"
 
-#: ../../library/ssl.rst:1283
+#: ../../library/ssl.rst:1347
 msgid ""
 "The *server_name_callback* function must return ``None`` to allow the TLS "
 "negotiation to continue.  If a TLS failure is required, a constant "
@@ -1569,27 +1626,27 @@ msgid ""
 ":const:`ALERT_DESCRIPTION_INTERNAL_ERROR`."
 msgstr "TLS ネゴシエーションを継続させるならば、 *server_name_callback* 関数は ``None`` を返さなければなりません。TLS が失敗することを必要とするなら、 constant :const:`ALERT_DESCRIPTION_* <ALERT_DESCRIPTION_INTERNAL_ERROR>` を返してください。ここにない値を返すと、致命エラー :const:`ALERT_DESCRIPTION_INTERNAL_ERROR` を引き起こします。"
 
-#: ../../library/ssl.rst:1289
+#: ../../library/ssl.rst:1353
 msgid ""
 "If there is an IDNA decoding error on the server name, the TLS connection "
 "will terminate with an :const:`ALERT_DESCRIPTION_INTERNAL_ERROR` fatal TLS "
 "alert message to the client."
 msgstr "サーバ名に対する IDNA デコードのエラーがあれば、TLS 接続はクライアントに対する TLS の致命的アラートメッセージ :const:`ALERT_DESCRIPTION_INTERNAL_ERROR` とともに終了します。"
 
-#: ../../library/ssl.rst:1293
+#: ../../library/ssl.rst:1357
 msgid ""
 "If an exception is raised from the *server_name_callback* function the TLS "
 "connection will terminate with a fatal TLS alert message "
 ":const:`ALERT_DESCRIPTION_HANDSHAKE_FAILURE`."
 msgstr "*server_name_callback* 関数が例外を送出した場合、TLS 接続は TLS の致命的アラートメッセージ :const:`ALERT_DESCRIPTION_HANDSHAKE_FAILURE` とともに終了します。"
 
-#: ../../library/ssl.rst:1297
+#: ../../library/ssl.rst:1361
 msgid ""
 "This method will raise :exc:`NotImplementedError` if the OpenSSL library had"
 " OPENSSL_NO_TLSEXT defined when it was built."
 msgstr "このメソッドは OpenSSL ライブラリが OPENSSL_NO_TLSEXT を定義してビルドされている場合、 :exc:`NotImplementedError` を送出します。"
 
-#: ../../library/ssl.rst:1304
+#: ../../library/ssl.rst:1368
 msgid ""
 "Load the key generation parameters for Diffie-Helman (DH) key exchange. "
 "Using DH key exchange improves forward secrecy at the expense of "
@@ -1598,13 +1655,13 @@ msgid ""
 "format."
 msgstr "ディフィー・ヘルマン(DH)鍵交換のための鍵生成パラメータをロードします。DH 鍵交換を用いることは、(サーバ、クライアントともに)計算機リソースに高い処理負荷をかけますがセキュリティを向上させます。 *dhfile* パラメータは PEM フォーマットの DH パラメータを含んだファイルへのパスでなければなりません。"
 
-#: ../../library/ssl.rst:1310
+#: ../../library/ssl.rst:1374
 msgid ""
 "This setting doesn't apply to client sockets.  You can also use the "
 ":data:`OP_SINGLE_DH_USE` option to further improve security."
 msgstr "この設定はクライアントソケットには適用されません。さらにセキュリティを改善するのに :data:`OP_SINGLE_DH_USE` オプションも利用できます。"
 
-#: ../../library/ssl.rst:1317
+#: ../../library/ssl.rst:1381
 msgid ""
 "Set the curve name for Elliptic Curve-based Diffie-Hellman (ECDH) key "
 "exchange.  ECDH is significantly faster than regular DH while arguably as "
@@ -1613,34 +1670,34 @@ msgid ""
 "curve."
 msgstr "楕円曲線ディフィー・ヘルマン(ECDH)鍵交換の曲線名を指定します。ECDH はもとの DH に較べて、ほぼ間違いなく同程度に安全である一方で、顕著に高速です。 *curve_name* パラメータは既知の楕円曲線を表す文字列でなければなりません。例えば ``prime256v1`` が広くサポートされている曲線です。"
 
-#: ../../library/ssl.rst:1323
+#: ../../library/ssl.rst:1387
 msgid ""
 "This setting doesn't apply to client sockets.  You can also use the "
 ":data:`OP_SINGLE_ECDH_USE` option to further improve security."
 msgstr "この設定はクライアントソケットには適用されません。さらにセキュリティを改善するのに :data:`OP_SINGLE_ECDH_USE` オプションも利用できます。"
 
-#: ../../library/ssl.rst:1326
+#: ../../library/ssl.rst:1390
 msgid "This method is not available if :data:`HAS_ECDH` is False."
 msgstr "このメソッドは :data:`HAS_ECDH` が False の場合は利用できません。"
 
-#: ../../library/ssl.rst:1331
+#: ../../library/ssl.rst:1395
 msgid ""
 "`SSL/TLS & Perfect Forward Secrecy <http://vincent.bernat.im/en/blog/2011"
 "-ssl-perfect-forward-secrecy.html>`_"
 msgstr "`SSL/TLS & Perfect Forward Secrecy <http://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy.html>`_"
 
-#: ../../library/ssl.rst:1332
+#: ../../library/ssl.rst:1396
 msgid "Vincent Bernat."
 msgstr "Vincent Bernat."
 
-#: ../../library/ssl.rst:1338
+#: ../../library/ssl.rst:1402
 msgid ""
 "Wrap an existing Python socket *sock* and return an :class:`SSLSocket` "
 "object.  *sock* must be a :data:`~socket.SOCK_STREAM` socket; other socket "
 "types are unsupported."
 msgstr "既存の Python ソケット *sock* をラップして :class:`ssl.SSLSocket` オブジェクトを返します。 *sock* は :data:`~socket.SOCK_STREAM` ソケットでなければなりません; ほかのタイプのソケットはサポートされていません。"
 
-#: ../../library/ssl.rst:1342
+#: ../../library/ssl.rst:1406
 msgid ""
 "The returned SSL socket is tied to the context, its settings and "
 "certificates.  The parameters *server_side*, *do_handshake_on_connect* and "
@@ -1648,7 +1705,7 @@ msgid ""
 ":func:`wrap_socket` function."
 msgstr "返される SSL ソケットは、コンテキスト、その設定と証明書に関連付けられます。パラメータ *server_side*, *do_handshake_on_connect*, *suppress_ragged_eofs* はトップレベルの関数 :func:`wrap_socket` のものと同じ意味です。"
 
-#: ../../library/ssl.rst:1347
+#: ../../library/ssl.rst:1411
 msgid ""
 "On client connections, the optional parameter *server_hostname* specifies "
 "the hostname of the service which we are connecting to.  This allows a "
@@ -1657,26 +1714,26 @@ msgid ""
 "*server_hostname* will raise a :exc:`ValueError` if *server_side* is true."
 msgstr "クライアントサイドから接続では、 *server_hostname* で接続しようとしているサービスのホスト名を指定できます。これは HTTP バーチャルホストにかなり似て、シングルサーバで複数の SSL ベースのサービスを別々の証明書でホストしているようなサーバに対して使えます。 *server_side* が true の場合に *server_hostname* を指定すると :exc:`ValueError` を送出します。"
 
-#: ../../library/ssl.rst:1353
+#: ../../library/ssl.rst:1417
 msgid ""
 "Always allow a server_hostname to be passed, even if OpenSSL does not have "
 "SNI."
 msgstr "OpenSSL が SNI をサポートしなくても server_hostname を許容するようになりました。"
 
-#: ../../library/ssl.rst:1360
+#: ../../library/ssl.rst:1424
 msgid ""
 "Create a new :class:`SSLObject` instance by wrapping the BIO objects "
 "*incoming* and *outgoing*. The SSL routines will read input data from the "
 "incoming BIO and write data to the outgoing BIO."
 msgstr ""
 
-#: ../../library/ssl.rst:1364
+#: ../../library/ssl.rst:1428
 msgid ""
 "The *server_side* and *server_hostname* parameters have the same meaning as "
 "in :meth:`SSLContext.wrap_socket`."
 msgstr ""
 
-#: ../../library/ssl.rst:1369
+#: ../../library/ssl.rst:1433
 msgid ""
 "Get statistics about the SSL sessions created or managed by this context. A "
 "dictionary is returned which maps the names of each `piece of information "
@@ -1685,7 +1742,7 @@ msgid ""
 " the session cache since the context was created::"
 msgstr "このコンテキストによって作られた、または管理されている SSL セッションについての統計情報を取得します。 `piece of information <https://www.openssl.org/docs/ssl/SSL_CTX_sess_number.html>`_ のそれぞれの名前にそれらが持つ数値をマッピングした辞書で返します。例えば、コンテキストが作られてからのセッションキャッシュのキャッシュヒットとキャッシュミスの総計を見るには::"
 
-#: ../../library/ssl.rst:1381
+#: ../../library/ssl.rst:1445
 msgid ""
 "Whether to match the peer cert's hostname with :func:`match_hostname` in "
 ":meth:`SSLSocket.do_handshake`. The context's "
@@ -1694,31 +1751,31 @@ msgid ""
 ":meth:`~SSLContext.wrap_socket` in order to match the hostname."
 msgstr ":meth:`SSLSocket.do_handshake` 呼び出し時に、 :func:`match_hostname` を使って接続先証明書のホスト名の合致を見るかどうか。コンテキストの :attr:`~SSLContext.verify_mode` には :data:`CERT_OPTIONAL` か :data:`CERT_REQUIRED` をセットしなければなりません。また :meth:`~SSLContext.wrap_socket` にはホスト名の合致をみるための *server_hostname* を渡さなければなりません。"
 
-#: ../../library/ssl.rst:1404
+#: ../../library/ssl.rst:1468
 msgid "This features requires OpenSSL 0.9.8f or newer."
 msgstr "この機能にはOpenSSL0.9.8f以降が必要です。"
 
-#: ../../library/ssl.rst:1408
+#: ../../library/ssl.rst:1472
 msgid ""
 "An integer representing the set of SSL options enabled on this context. The "
 "default value is :data:`OP_ALL`, but you can specify other options such as "
 ":data:`OP_NO_SSLv2` by ORing them together."
 msgstr "このコンテキストで有効になっている SSL オプションを表す整数。デフォルトの値は :data:`OP_ALL` ですが、 :data:`OP_NO_SSLv2` のような他の値をビット OR 演算で指定できます。"
 
-#: ../../library/ssl.rst:1413
+#: ../../library/ssl.rst:1477
 msgid ""
 "With versions of OpenSSL older than 0.9.8m, it is only possible to set "
 "options, not to clear them.  Attempting to clear an option (by resetting the"
 " corresponding bits) will raise a ``ValueError``."
 msgstr "OpenSSL の 0.9.8m より古いバージョンを使う場合、値はセットはできますがクリアができません。オプションを (対応するビットをリセットすることで) クリアしようとすると ``ValueError`` が送出されます。"
 
-#: ../../library/ssl.rst:1419
+#: ../../library/ssl.rst:1483
 msgid ""
 "The protocol version chosen when constructing the context.  This attribute "
 "is read-only."
 msgstr "コンテキストの構築時に選択されたプロトコルバージョン。この属性は読み取り専用です。"
 
-#: ../../library/ssl.rst:1424
+#: ../../library/ssl.rst:1488
 msgid ""
 "The flags for certificate verification operations. You can set flags like "
 ":data:`VERIFY_CRL_CHECK_LEAF` by ORing them together. By default OpenSSL "
@@ -1726,18 +1783,18 @@ msgid ""
 "Available only with openssl version 0.9.8+."
 msgstr "証明書の検証操作のためのフラグです。 :data:`VERIFY_CRL_CHECK_LEAF` などのフラグをビット OR 演算でセットできます。デフォルトでは OpenSSL は証明書失効リスト (CRLs) を必要としませんし検証にも使いません。openssl version 0.9.8+ でのみ利用可能です。"
 
-#: ../../library/ssl.rst:1433
+#: ../../library/ssl.rst:1497
 msgid ""
 "Whether to try to verify other peers' certificates and how to behave if "
 "verification fails.  This attribute must be one of :data:`CERT_NONE`, "
 ":data:`CERT_OPTIONAL` or :data:`CERT_REQUIRED`."
 msgstr "接続先の証明書の検証を試みるかどうか、また、検証が失敗した場合にどのように振舞うべきかを制御します。この属性は :data:`CERT_NONE`, :data:`CERT_OPTIONAL`, :data:`CERT_REQUIRED` のうちどれか一つでなければなりません。"
 
-#: ../../library/ssl.rst:1445
+#: ../../library/ssl.rst:1509
 msgid "Certificates"
 msgstr "証明書"
 
-#: ../../library/ssl.rst:1447
+#: ../../library/ssl.rst:1511
 msgid ""
 "Certificates in general are part of a public-key / private-key system.  In "
 "this system, each *principal*, (which may be a machine, or a person, or an "
@@ -1748,7 +1805,7 @@ msgid ""
 " other part, and **only** with the other part."
 msgstr "証明書を大まかに説明すると、公開鍵/秘密鍵システムの一種です。このシステムでは、各 *principal* (これはマシン、人、組織などです) は、ユニークな2つの暗号鍵を割り当てられます。1つは公開され、 *公開鍵(public key)* と呼ばれます。もう一方は秘密にされ、 *秘密鍵(private key)* と呼ばれます。 2つの鍵は関連しており、片方の鍵で暗号化したメッセージは、もう片方の鍵 **のみ** で復号できます。"
 
-#: ../../library/ssl.rst:1455
+#: ../../library/ssl.rst:1519
 msgid ""
 "A certificate contains information about two principals.  It contains the "
 "name of a *subject*, and the subject's public key.  It also contains a "
@@ -1762,7 +1819,7 @@ msgid ""
 " as two fields, called \"notBefore\" and \"notAfter\"."
 msgstr "証明書は2つの principal の情報を含んでいます。証明書は *subject* 名とその公開鍵を含んでいます。また、もう一つの principal である *発行者(issuer)* からの、 subject が本人であることと、その公開鍵が正しいことの宣言(statement)を含んでいます。発行者からの宣言は、その発行者の秘密鍵で署名されています。発行者の秘密鍵は発行者しか知りませんが、誰もがその発行者の公開鍵を利用して宣言を復号し、証明書内の別の情報と比較することで認証することができます。証明書はまた、その証明書が有効である期限に関する情報も含んでいます。この期限は \"notBefore\" と \"notAfter\" と呼ばれる2つのフィールドで表現されています。"
 
-#: ../../library/ssl.rst:1465
+#: ../../library/ssl.rst:1529
 msgid ""
 "In the Python use of certificates, a client or server can use a certificate "
 "to prove who they are.  The other side of a network connection can also be "
@@ -1775,18 +1832,18 @@ msgid ""
 "this process to take place."
 msgstr "Python において証明書を利用する場合、クライアントもサーバーも自分を証明するために証明書を利用することができます。ネットワーク接続の相手側に証明書の提示を要求する事ができ、そのクライアントやサーバーが認証を必要とするならその証明書を認証することができます。認証が失敗した場合、接続は例外を発生させます。認証は下位層のOpenSSLフレームワークが自動的に行います。アプリケーションは認証機構について意識する必要はありません。しかし、アプリケーションは認証プロセスのために幾つかの証明書を提供する必要があるかもしれません。"
 
-#: ../../library/ssl.rst:1475
+#: ../../library/ssl.rst:1539
 msgid ""
 "Python uses files to contain certificates.  They should be formatted as "
 "\"PEM\" (see :rfc:`1422`), which is a base-64 encoded form wrapped with a "
 "header line and a footer line::"
 msgstr "Python は証明書を格納したファイルを利用します。そのファイルは \"PEM\" (:rfc:`1422` 参照) フォーマットという、ヘッダー行とフッター行の間にbase-64エンコードされた形をとっている必要があります。 ::"
 
-#: ../../library/ssl.rst:1484
+#: ../../library/ssl.rst:1548
 msgid "Certificate chains"
 msgstr "証明書チェイン"
 
-#: ../../library/ssl.rst:1486
+#: ../../library/ssl.rst:1550
 msgid ""
 "The Python files which contain certificates can contain a sequence of "
 "certificates, sometimes called a *certificate chain*.  This chain should "
@@ -1802,11 +1859,11 @@ msgid ""
 " agency which issued the certification authority's certificate::"
 msgstr "Pythonが利用する証明書を格納したファイルは、ときには *証明書チェイン(certificate chain)* と呼ばれる証明書のシーケンスを格納します。このチェインは、まずクライアントやサーバー自体の principal の証明書で始まらなければなりません。それ以降に続く証明書は、手前の証明書の発行者(issuer)の証明書になり、最後にsubject と発行者が同じ *自己署名(self-signed)* 証明書で終わります。この最後の証明書は *ルート証明書(root certificate* と呼ばれます。これらの証明書チェインは1つの証明書ファイルに結合されなければなりません。例えば、3つの証明書からなる証明書チェインがあるとします。私たちのサーバーの証明書から、私たちのサーバーに署名した認証局の証明書、そして認証局の証明書を発行した機関のルート証明書です。 ::"
 
-#: ../../library/ssl.rst:1510
+#: ../../library/ssl.rst:1574
 msgid "CA certificates"
 msgstr "CA 証明書"
 
-#: ../../library/ssl.rst:1512
+#: ../../library/ssl.rst:1576
 msgid ""
 "If you are going to require validation of the other side of the connection's"
 " certificate, you need to provide a \"CA certs\" file, filled with the "
@@ -1818,11 +1875,11 @@ msgid ""
 ":func:`.create_default_context`."
 msgstr "もし相手から送られてきた証明書の認証をしたい場合、信頼している各発行者の証明書チェインが入った \"CA certs\" ファイルを提供する必要があります。繰り返しますが、このファイルは単純に、各チェインを結合しただけのものです。認証のために、Pythonはそのファイルの中の最初にマッチしたチェインを利用します。:meth:`SSLContext.load_default_certs` を呼び出すことでプラットフォームの証明書ファイルも使われますが、これは :func:`.create_default_context` によって自動的に行われます。"
 
-#: ../../library/ssl.rst:1521
+#: ../../library/ssl.rst:1585
 msgid "Combined key and certificate"
 msgstr "秘密鍵と証明書を一緒にする"
 
-#: ../../library/ssl.rst:1523
+#: ../../library/ssl.rst:1587
 msgid ""
 "Often the private key is stored in the same file as the certificate; in this"
 " case, only the ``certfile`` parameter to :meth:`SSLContext.load_cert_chain`"
@@ -1831,11 +1888,11 @@ msgid ""
 "certificate chain::"
 msgstr "多くの場合、証明書と同じファイルに秘密鍵も格納されています。この場合、 :meth:`SSLContext.load_cert_chain`, :func:`wrap_socket` には ``certfile`` 引数だけが必要とされます。秘密鍵が証明書ファイルに格納されている場合、秘密鍵は証明書チェインの最初の証明書よりも先にないといけません。 ::"
 
-#: ../../library/ssl.rst:1537
+#: ../../library/ssl.rst:1601
 msgid "Self-signed certificates"
 msgstr "自己署名証明書"
 
-#: ../../library/ssl.rst:1539
+#: ../../library/ssl.rst:1603
 msgid ""
 "If you are going to create a server that provides SSL-encrypted connection "
 "services, you will need to acquire a certificate for that service.  There "
@@ -1845,51 +1902,51 @@ msgid ""
 "package, using something like the following::"
 msgstr "SSL暗号化接続サービスを提供するサーバーを建てる場合、適切な証明書を取得するには、認証局から買うなどの幾つかの方法があります。また、自己署名証明書を作るケースもあります。 OpenSSLを使って自己署名証明書を作るには、次のようにします。 ::"
 
-#: ../../library/ssl.rst:1568
+#: ../../library/ssl.rst:1632
 msgid ""
 "The disadvantage of a self-signed certificate is that it is its own root "
 "certificate, and no one else will have it in their cache of known (and "
 "trusted) root certificates."
 msgstr "自己署名証明書の欠点は、それ自身がルート証明書であり、他の人はその証明書を持っていない (そして信頼しない)ことです。"
 
-#: ../../library/ssl.rst:1574
+#: ../../library/ssl.rst:1638
 msgid "Examples"
 msgstr "使用例"
 
-#: ../../library/ssl.rst:1577
+#: ../../library/ssl.rst:1641
 msgid "Testing for SSL support"
 msgstr "SSLサポートをテストする"
 
-#: ../../library/ssl.rst:1579
+#: ../../library/ssl.rst:1643
 msgid ""
 "To test for the presence of SSL support in a Python installation, user code "
 "should use the following idiom::"
 msgstr "インストールされているPythonがSSLをサポートしているかどうかをテストするために、ユーザーコードは次のイディオムを利用することができます。 ::"
 
-#: ../../library/ssl.rst:1590
+#: ../../library/ssl.rst:1654
 msgid "Client-side operation"
 msgstr "クライアントサイドの処理"
 
-#: ../../library/ssl.rst:1592
+#: ../../library/ssl.rst:1656
 msgid ""
 "This example creates a SSL context with the recommended security settings "
 "for client sockets, including automatic certificate verification::"
 msgstr "この例では、自動的に証明書の検証を行うことを含む望ましいセキュリティ設定でクライアントソケットの SSL コンテキストを作ります::"
 
-#: ../../library/ssl.rst:1597
+#: ../../library/ssl.rst:1661
 msgid ""
 "If you prefer to tune security settings yourself, you might create a context"
 " from scratch (but beware that you might not get the settings right)::"
 msgstr "自分自身でセキュリティ設定を調整したいと望むなら、スクラッチからコンテキストを作ることはできます (ですが正しくない設定をしてしまいがちなことに注意してください)::"
 
-#: ../../library/ssl.rst:1606
+#: ../../library/ssl.rst:1670
 msgid ""
 "(this snippet assumes your operating system places a bundle of all CA "
 "certificates in ``/etc/ssl/certs/ca-bundle.crt``; if not, you'll get an "
 "error and have to adjust the location)"
 msgstr "(このスニペットはすべての CA 証明書が ``/etc/ssl/certs/ca-bundle.crt`` にバンドルされていることを仮定しています; もし違っていればエラーになりますので、適宜修正してください)"
 
-#: ../../library/ssl.rst:1610
+#: ../../library/ssl.rst:1674
 msgid ""
 "When you use the context to connect to a server, :const:`CERT_REQUIRED` "
 "validates the server certificate: it ensures that the server certificate was"
@@ -1897,27 +1954,27 @@ msgid ""
 "correctness::"
 msgstr "サーバへの接続にこのコンテキストを使うと、 :const:`CERT_REQUIRED` でサーバの証明書の検証が行われます: サーバの証明書が CA 証明書のいずれかに署名されていて、その署名が正しいことを保障します。"
 
-#: ../../library/ssl.rst:1619
+#: ../../library/ssl.rst:1683
 msgid "You may then fetch the certificate::"
 msgstr "そして証明書を持ってくることができます::"
 
-#: ../../library/ssl.rst:1623
+#: ../../library/ssl.rst:1687
 msgid ""
 "Visual inspection shows that the certificate does identify the desired "
 "service (that is, the HTTPS host ``www.python.org``)::"
 msgstr "証明書が、期待しているサービス (つまり、 HTTPS ホスト ``www.python.org``) の身元を特定していることを視覚的に点検してみましょう::"
 
-#: ../../library/ssl.rst:1666
+#: ../../library/ssl.rst:1730
 msgid ""
 "Now the SSL channel is established and the certificate verified, you can "
 "proceed to talk with the server::"
 msgstr "SSL チャネルは今や確立されて証明書が検証されているので、サーバとのお喋りを続けることができます::"
 
-#: ../../library/ssl.rst:1693
+#: ../../library/ssl.rst:1757
 msgid "Server-side operation"
 msgstr "サーバーサイドの処理"
 
-#: ../../library/ssl.rst:1695
+#: ../../library/ssl.rst:1759
 msgid ""
 "For server operation, typically you'll need to have a server certificate, "
 "and private key, each in a file.  You'll first create a context holding the "
@@ -1926,7 +1983,7 @@ msgid ""
 "start waiting for clients to connect::"
 msgstr "サーバーサイドの処理では、通常、サーバー証明書と秘密鍵がそれぞれファイルに格納された形で必要です。最初に秘密鍵と証明書が保持されたコンテキストを作成し、クライアントがあなたの信憑性をチェックできるようにします。そののちにソケットを開き、ポートにバインドし、そのソケットの :meth:`listen` を呼び、クライアントからの接続を待ちます。 ::"
 
-#: ../../library/ssl.rst:1710
+#: ../../library/ssl.rst:1774
 msgid ""
 "When a client connects, you'll call :meth:`accept` on the socket to get the "
 "new socket from the other end, and use the context's "
@@ -1934,13 +1991,13 @@ msgid ""
 " the connection::"
 msgstr "クライアントが接続してきた場合、 :meth:`accept` を呼んで新しいソケットを作成し、接続のためにサーバサイドの SSL ソケットを、コンテキストの :meth:`SSLContext.wrap_socket` メソッドで作ります::"
 
-#: ../../library/ssl.rst:1723
+#: ../../library/ssl.rst:1787
 msgid ""
 "Then you'll read data from the ``connstream`` and do something with it till "
 "you are finished with the client (or the client is finished with you)::"
 msgstr "そして、 ``connstream`` からデータを読み、クライアントと切断する(あるいはクライアントが切断してくる)まで何か処理をします。 ::"
 
-#: ../../library/ssl.rst:1737
+#: ../../library/ssl.rst:1801
 msgid ""
 "And go back to listening for new client connections (of course, a real "
 "server would probably handle each client connection in a separate thread, or"
@@ -1948,18 +2005,18 @@ msgid ""
 "event loop)."
 msgstr "そして新しいクライアント接続のために listen に戻ります。 (もちろん現実のサーバは、おそらく個々のクライアント接続ごとに別のスレッドで処理するか、ソケットを :ref:`ノンブロッキングモード <ssl-nonblocking>` にし、イベントループを使うでしょう。)"
 
-#: ../../library/ssl.rst:1745
+#: ../../library/ssl.rst:1809
 msgid "Notes on non-blocking sockets"
 msgstr "ノンブロッキングソケットについての注意事項"
 
-#: ../../library/ssl.rst:1747
+#: ../../library/ssl.rst:1811
 msgid ""
 "SSL sockets behave slightly different than regular sockets in non-blocking "
 "mode. When working with non-blocking sockets, there are thus several things "
 "you need to be aware of:"
 msgstr "SSL ソケットはノンブロッキングモードにおいては、普通のソケットとは少し違った振る舞いをします。ですのでノンブロッキングソケットとともに使う場合、いくつか気をつけなければならない事項があります:"
 
-#: ../../library/ssl.rst:1751
+#: ../../library/ssl.rst:1815
 msgid ""
 "Most :class:`SSLSocket` methods will raise either :exc:`SSLWantWriteError` "
 "or :exc:`SSLWantReadError` instead of :exc:`BlockingIOError` if an I/O "
@@ -1971,13 +2028,13 @@ msgid ""
 "require a prior *write* to the underlying socket."
 msgstr "ほとんどの :class:`SSLSocket` のメソッドは I/O 操作がブロックすると :exc:`BlockingIOError` ではなく :exc:`SSLWantWriteError` か :exc:`SSLWantReadError` のどちらかを送出します。 :exc:`SSLWantReadError` は下層のソケットで読み出しが必要な場合に送出され、 :exc:`SSLWantWriteError` は下層のソケットで書き込みが必要な場合に送出されます。SSL ソケットに対して *書き込み* を試みると下層のソケットから最初に *読み出す* 必要があるかもしれず、SSL ソケットに対して *読み出し* を試みると下層のソケットに先に *書き込む* 必要があるかもしれないことに注意してください。"
 
-#: ../../library/ssl.rst:1763
+#: ../../library/ssl.rst:1827
 msgid ""
 "In earlier Python versions, the :meth:`!SSLSocket.send` method returned zero"
 " instead of raising :exc:`SSLWantWriteError` or :exc:`SSLWantReadError`."
 msgstr ""
 
-#: ../../library/ssl.rst:1767
+#: ../../library/ssl.rst:1831
 msgid ""
 "Calling :func:`~select.select` tells you that the OS-level socket can be "
 "read from (or written to), but it does not imply that there is sufficient "
@@ -1987,7 +2044,7 @@ msgid ""
 ":func:`~select.select`."
 msgstr ":func:`~select.select` 呼び出しは OS レベルでのソケットが読み出し可能(または書き込み可能)になったことを教えてくれますが、上位の SSL レイヤーでの十分なデータがあることを意味するわけではありません。例えば、SSL フレームの一部が届いただけかもしれません。ですから、 :meth:`SSLSocket.recv` と :meth:`SSLSocket.send` の失敗を処理することに備え、ほかの :func:`~select.select` 呼び出し後にリトライしなければなりません。"
 
-#: ../../library/ssl.rst:1774
+#: ../../library/ssl.rst:1838
 msgid ""
 "Conversely, since the SSL layer has its own framing, a SSL socket may still "
 "have data available for reading without :func:`~select.select` being aware "
@@ -1996,13 +2053,13 @@ msgid ""
 " call if still necessary."
 msgstr "反対に、SSL レイヤーは自身で独自の枠組みを持っているために、読み出せるけれども :func:`~select.select` が気付くことのないデータを SSL ソケットが持っていることがあります。ですので、潜在的に入手可能なデータを飲み干すために最初に :meth:`SSLSocket.recv` を呼び出すべきであり、そののちでそれでもまだ必要な場合にだけ :func:`~select.select` でブロックすべきです。"
 
-#: ../../library/ssl.rst:1780
+#: ../../library/ssl.rst:1844
 msgid ""
 "(of course, similar provisions apply when using other primitives such as "
 ":func:`~select.poll`, or those in the :mod:`selectors` module)"
 msgstr "(当然のことながら、ほかのプリミティブ、例えば :func:`~select.poll` や :mod:`selectors` モジュール内のものを使う際にも似た但し書きが付きます)"
 
-#: ../../library/ssl.rst:1783
+#: ../../library/ssl.rst:1847
 msgid ""
 "The SSL handshake itself will be non-blocking: the "
 ":meth:`SSLSocket.do_handshake` method has to be retried until it returns "
@@ -2010,7 +2067,7 @@ msgid ""
 "the socket's readiness::"
 msgstr "SSL ハンドシェイクそのものがノンブロッキングになります: :meth:`SSLSocket.do_handshake` メソッドは成功するまでリトライしなければなりません。 :func:`~select.select` を用いてソケットの準備が整うのを待つためには、およそ以下のようにします::"
 
-#: ../../library/ssl.rst:1799
+#: ../../library/ssl.rst:1863
 msgid ""
 "The :mod:`asyncio` module supports :ref:`non-blocking SSL sockets <ssl-"
 "nonblocking>` and provides a higher level API. It polls for events using the"
@@ -2019,26 +2076,26 @@ msgid ""
 "SSL handshake asynchronously as well."
 msgstr ":mod:`asyncio` モジュールは :ref:`ノンブロッキング SSL ソケット <ssl-nonblocking>` をサポートし、より高いレベルの API を提供しています。 :mod:`selectors` モジュールを使ってイベントを poll し、 :exc:`SSLWantWriteError`, :exc:`SSLWantReadError`, :exc:`BlockingIOError` 例外を処理します。SSL ハンドシェイクも非同期に実行します。"
 
-#: ../../library/ssl.rst:1808
+#: ../../library/ssl.rst:1872
 msgid "Memory BIO Support"
 msgstr "メモリ BIO サポート"
 
-#: ../../library/ssl.rst:1812
+#: ../../library/ssl.rst:1876
 msgid ""
 "Ever since the SSL module was introduced in Python 2.6, the "
 ":class:`SSLSocket` class has provided two related but distinct areas of "
 "functionality:"
 msgstr ""
 
-#: ../../library/ssl.rst:1815
+#: ../../library/ssl.rst:1879
 msgid "SSL protocol handling"
 msgstr "SSL プロトコル処理"
 
-#: ../../library/ssl.rst:1816
+#: ../../library/ssl.rst:1880
 msgid "Network IO"
 msgstr "ネットワーク IO"
 
-#: ../../library/ssl.rst:1818
+#: ../../library/ssl.rst:1882
 msgid ""
 "The network IO API is identical to that provided by :class:`socket.socket`, "
 "from which :class:`SSLSocket` also inherits. This allows an SSL socket to be"
@@ -2046,7 +2103,7 @@ msgid ""
 "add SSL support to an existing application."
 msgstr ""
 
-#: ../../library/ssl.rst:1823
+#: ../../library/ssl.rst:1887
 msgid ""
 "Combining SSL protocol handling and network IO usually works well, but there"
 " are some cases where it doesn't. An example is async IO frameworks that "
@@ -2058,7 +2115,7 @@ msgid ""
 "called :class:`SSLObject` is provided."
 msgstr ""
 
-#: ../../library/ssl.rst:1834
+#: ../../library/ssl.rst:1898
 msgid ""
 "A reduced-scope variant of :class:`SSLSocket` representing an SSL protocol "
 "instance that does not contain any network IO methods. This class is "
@@ -2066,7 +2123,7 @@ msgid ""
 "for SSL through memory buffers."
 msgstr ""
 
-#: ../../library/ssl.rst:1839
+#: ../../library/ssl.rst:1903
 msgid ""
 "This class implements an interface on top of a low-level SSL object as "
 "implemented by OpenSSL. This object captures the state of an SSL connection "
@@ -2074,7 +2131,7 @@ msgid ""
 " separate \"BIO\" objects which are OpenSSL's IO abstraction layer."
 msgstr ""
 
-#: ../../library/ssl.rst:1844
+#: ../../library/ssl.rst:1908
 msgid ""
 "An :class:`SSLObject` instance can be created using the "
 ":meth:`~SSLContext.wrap_bio` method. This method will create the "
@@ -2083,108 +2140,108 @@ msgid ""
 " *outgoing* BIO is used to pass data the other way around."
 msgstr ""
 
-#: ../../library/ssl.rst:1850
+#: ../../library/ssl.rst:1914
 msgid "The following methods are available:"
 msgstr "次のメソッドがサポートされています:"
 
-#: ../../library/ssl.rst:1852
+#: ../../library/ssl.rst:1916
 msgid ":attr:`~SSLSocket.context`"
 msgstr ":attr:`~SSLSocket.context`"
 
-#: ../../library/ssl.rst:1853
+#: ../../library/ssl.rst:1917
 msgid ":attr:`~SSLSocket.server_side`"
 msgstr ":attr:`~SSLSocket.server_side`"
 
-#: ../../library/ssl.rst:1854
+#: ../../library/ssl.rst:1918
 msgid ":attr:`~SSLSocket.server_hostname`"
 msgstr ":attr:`~SSLSocket.server_hostname`"
 
-#: ../../library/ssl.rst:1855
+#: ../../library/ssl.rst:1919
 msgid ":meth:`~SSLSocket.read`"
 msgstr ":meth:`~SSLSocket.read`"
 
-#: ../../library/ssl.rst:1856
+#: ../../library/ssl.rst:1920
 msgid ":meth:`~SSLSocket.write`"
 msgstr ":meth:`~SSLSocket.write`"
 
-#: ../../library/ssl.rst:1857
+#: ../../library/ssl.rst:1921
 msgid ":meth:`~SSLSocket.getpeercert`"
 msgstr ":meth:`~SSLSocket.getpeercert`"
 
-#: ../../library/ssl.rst:1858
+#: ../../library/ssl.rst:1922
 msgid ":meth:`~SSLSocket.selected_npn_protocol`"
 msgstr ":meth:`~SSLSocket.selected_npn_protocol`"
 
-#: ../../library/ssl.rst:1859
+#: ../../library/ssl.rst:1923
 msgid ":meth:`~SSLSocket.cipher`"
 msgstr ":meth:`~SSLSocket.cipher`"
 
-#: ../../library/ssl.rst:1860
+#: ../../library/ssl.rst:1924
 msgid ":meth:`~SSLSocket.shared_ciphers`"
 msgstr ":meth:`~SSLSocket.shared_ciphers`"
 
-#: ../../library/ssl.rst:1861
+#: ../../library/ssl.rst:1925
 msgid ":meth:`~SSLSocket.compression`"
 msgstr ":meth:`~SSLSocket.compression`"
 
-#: ../../library/ssl.rst:1862
+#: ../../library/ssl.rst:1926
 msgid ":meth:`~SSLSocket.pending`"
 msgstr ":meth:`~SSLSocket.pending`"
 
-#: ../../library/ssl.rst:1863
+#: ../../library/ssl.rst:1927
 msgid ":meth:`~SSLSocket.do_handshake`"
 msgstr ":meth:`~SSLSocket.do_handshake`"
 
-#: ../../library/ssl.rst:1864
+#: ../../library/ssl.rst:1928
 msgid ":meth:`~SSLSocket.unwrap`"
 msgstr ":meth:`~SSLSocket.unwrap`"
 
-#: ../../library/ssl.rst:1865
+#: ../../library/ssl.rst:1929
 msgid ":meth:`~SSLSocket.get_channel_binding`"
 msgstr ":meth:`~SSLSocket.get_channel_binding`"
 
-#: ../../library/ssl.rst:1867
+#: ../../library/ssl.rst:1931
 msgid ""
 "When compared to :class:`SSLSocket`, this object lacks the following "
 "features:"
 msgstr ""
 
-#: ../../library/ssl.rst:1870
+#: ../../library/ssl.rst:1934
 msgid ""
 "Any form of network IO incluging methods such as ``recv()`` and ``send()``."
 msgstr ""
 
-#: ../../library/ssl.rst:1873
+#: ../../library/ssl.rst:1937
 msgid ""
 "There is no *do_handshake_on_connect* machinery. You must always manually "
 "call :meth:`~SSLSocket.do_handshake` to start the handshake."
 msgstr ""
 
-#: ../../library/ssl.rst:1876
+#: ../../library/ssl.rst:1940
 msgid ""
 "There is no handling of *suppress_ragged_eofs*. All end-of-file conditions "
 "that are in violation of the protocol are reported via the "
 ":exc:`SSLEOFError` exception."
 msgstr ""
 
-#: ../../library/ssl.rst:1880
+#: ../../library/ssl.rst:1944
 msgid ""
 "The method :meth:`~SSLSocket.unwrap` call does not return anything, unlike "
 "for an SSL socket where it returns the underlying socket."
 msgstr ""
 
-#: ../../library/ssl.rst:1883
+#: ../../library/ssl.rst:1947
 msgid ""
 "The *server_name_callback* callback passed to "
 ":meth:`SSLContext.set_servername_callback` will get an :class:`SSLObject` "
 "instance instead of a :class:`SSLSocket` instance as its first parameter."
 msgstr ""
 
-#: ../../library/ssl.rst:1887
+#: ../../library/ssl.rst:1951
 msgid "Some notes related to the use of :class:`SSLObject`:"
 msgstr ""
 
-#: ../../library/ssl.rst:1889
+#: ../../library/ssl.rst:1953
 msgid ""
 "All IO on an :class:`SSLObject` is :ref:`non-blocking <ssl-nonblocking>`. "
 "This means that for example :meth:`~SSLSocket.read` will raise an "
@@ -2192,70 +2249,70 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../library/ssl.rst:1894
+#: ../../library/ssl.rst:1958
 msgid ""
 "There is no module-level ``wrap_bio()`` call like there is for "
 ":meth:`~SSLContext.wrap_socket`. An :class:`SSLObject` is always created via"
 " an :class:`SSLContext`."
 msgstr ""
 
-#: ../../library/ssl.rst:1898
+#: ../../library/ssl.rst:1962
 msgid ""
 "An SSLObject communicates with the outside world using memory buffers. The "
 "class :class:`MemoryBIO` provides a memory buffer that can be used for this "
 "purpose.  It wraps an OpenSSL memory BIO (Basic IO) object:"
 msgstr ""
 
-#: ../../library/ssl.rst:1904
+#: ../../library/ssl.rst:1968
 msgid ""
 "A memory buffer that can be used to pass data between Python and an SSL "
 "protocol instance."
 msgstr ""
 
-#: ../../library/ssl.rst:1909
+#: ../../library/ssl.rst:1973
 msgid "Return the number of bytes currently in the memory buffer."
 msgstr ""
 
-#: ../../library/ssl.rst:1913
+#: ../../library/ssl.rst:1977
 msgid ""
 "A boolean indicating whether the memory BIO is current at the end-of-file "
 "position."
 msgstr ""
 
-#: ../../library/ssl.rst:1918
+#: ../../library/ssl.rst:1982
 msgid ""
 "Read up to *n* bytes from the memory buffer. If *n* is not specified or "
 "negative, all bytes are returned."
 msgstr ""
 
-#: ../../library/ssl.rst:1923
+#: ../../library/ssl.rst:1987
 msgid ""
 "Write the bytes from *buf* to the memory BIO. The *buf* argument must be an "
 "object supporting the buffer protocol."
 msgstr ""
 
-#: ../../library/ssl.rst:1926
+#: ../../library/ssl.rst:1990
 msgid ""
 "The return value is the number of bytes written, which is always equal to "
 "the length of *buf*."
 msgstr ""
 
-#: ../../library/ssl.rst:1931
+#: ../../library/ssl.rst:1995
 msgid ""
 "Write an EOF marker to the memory BIO. After this method has been called, it"
 " is illegal to call :meth:`~MemoryBIO.write`. The attribute :attr:`eof` will"
 " become true after all data currently in the buffer has been read."
 msgstr ""
 
-#: ../../library/ssl.rst:1939
+#: ../../library/ssl.rst:2003
 msgid "Security considerations"
 msgstr "セキュリティで考慮すべき点"
 
-#: ../../library/ssl.rst:1942
+#: ../../library/ssl.rst:2006
 msgid "Best defaults"
 msgstr "最善のデフォルト値"
 
-#: ../../library/ssl.rst:1944
+#: ../../library/ssl.rst:2008
 msgid ""
 "For **client use**, if you don't have any special requirements for your "
 "security policy, it is highly recommended that you use the "
@@ -2265,19 +2322,19 @@ msgid ""
 "settings."
 msgstr "**クライアントでの使用** では、あなたのセキュリティポリシーによる特殊な要件がない限りは、SSL コンテキストを作成するためには :func:`create_default_context` 関数を使用することを強くお勧めします。それはシステムが信頼した CA 証明書をロードし、証明書の検証を有効化し、ホスト名のチェックを行い、そしてセキュアなプロトコルとセキュアな暗号の分別ある設定を試みます。"
 
-#: ../../library/ssl.rst:1951
+#: ../../library/ssl.rst:2015
 msgid ""
 "For example, here is how you would use the :class:`smtplib.SMTP` class to "
 "create a trusted, secure connection to a SMTP server::"
 msgstr "例としてここに、どうやって SMTP に対して信頼できるセキュアな接続を行う :class:`smtplib.SMTP` クラスを使えばいいかお見せします::"
 
-#: ../../library/ssl.rst:1960
+#: ../../library/ssl.rst:2024
 msgid ""
 "If a client certificate is needed for the connection, it can be added with "
 ":meth:`SSLContext.load_cert_chain`."
 msgstr "接続にクライアントの証明書が必要な場合、 :meth:`SSLContext.load_cert_chain` によって追加できます。"
 
-#: ../../library/ssl.rst:1963
+#: ../../library/ssl.rst:2027
 msgid ""
 "By contrast, if you create the SSL context by calling the "
 ":class:`SSLContext` constructor yourself, it will not have certificate "
@@ -2285,15 +2342,15 @@ msgid ""
 "read the paragraphs below to achieve a good security level."
 msgstr "対照的に、 :class:`SSLContext` クラスのコンストラクタを自身で呼び出すことによって SSL コンテキストを作ると、デフォルトでは証明書検証もホスト名チェックも行わないものになります。もしそうするのであれば、良いセキュリティレベルを知るために、どうか下の方にあるパラグラフをお読みください。"
 
-#: ../../library/ssl.rst:1969
+#: ../../library/ssl.rst:2033
 msgid "Manual settings"
 msgstr "手動での設定"
 
-#: ../../library/ssl.rst:1972
+#: ../../library/ssl.rst:2036
 msgid "Verifying certificates"
 msgstr "証明書の検証"
 
-#: ../../library/ssl.rst:1974
+#: ../../library/ssl.rst:2038
 msgid ""
 "When calling the :class:`SSLContext` constructor directly, "
 ":const:`CERT_NONE` is the default.  Since it does not authenticate the other"
@@ -2309,7 +2366,7 @@ msgid ""
 "enabled."
 msgstr ":class:`SSLContext` のコンストラクタを直接呼び出した場合、 :const:`CERT_NONE` がデフォルトとして使われます。これは接続先の身元特定をしないので安全ではありませんし、特にクライアントモードでは大抵相手となるサーバの信憑性を保障したいでしょう。ですから、クライアントモードでは :const:`CERT_REQUIRED` を強くお勧めします。ですが、それだけでは不十分です; :meth:`SSLSocket.getpeercert` を呼び出してサーバ証明書が望んだサービスと合致するかのチェックもしなければなりません。多くのプロトコルとアプリケーションにとって、サービスはホスト名で特定されます; この場合、 :func:`match_hostname` が使えます。これらの共通的なチェックは :attr:`SSLContext.check_hostname` が有効な場合、自動的に行われます。"
 
-#: ../../library/ssl.rst:1987
+#: ../../library/ssl.rst:2051
 msgid ""
 "In server mode, if you want to authenticate your clients using the SSL layer"
 " (rather than using a higher-level authentication mechanism), you'll also "
@@ -2317,37 +2374,37 @@ msgid ""
 "certificate."
 msgstr "サーバモードにおいて、(より上位のレベルでの認証メカニズムではなく) SSL レイヤーを使ってあなたのクライアントを認証したいならば、 :const:`CERT_REQUIRED` を指定して同じようにクライアントの証明書を検証すべきでしょう。"
 
-#: ../../library/ssl.rst:1993
+#: ../../library/ssl.rst:2057
 msgid ""
 "In client mode, :const:`CERT_OPTIONAL` and :const:`CERT_REQUIRED` are "
 "equivalent unless anonymous ciphers are enabled (they are disabled by "
 "default)."
 msgstr "クライアントモードでは anonymous ciphers が有効(デフォルトでは無効)でない限り、 :const:`CERT_OPTIONAL` と :const:`CERT_REQUIRED` は同じ意味になります。"
 
-#: ../../library/ssl.rst:1998
+#: ../../library/ssl.rst:2062
 msgid "Protocol versions"
 msgstr "プロトコルのバージョン"
 
-#: ../../library/ssl.rst:2000
+#: ../../library/ssl.rst:2064
 msgid ""
 "SSL versions 2 and 3 are considered insecure and are therefore dangerous to "
 "use.  If you want maximum compatibility between clients and servers, it is "
-"recommended to use :const:`PROTOCOL_SSLv23` as the protocol version and then"
-" disable SSLv2 and SSLv3 explicitly using the :data:`SSLContext.options` "
+"recommended to use :const:`PROTOCOL_TLS` as the protocol version and then "
+"disable SSLv2 and SSLv3 explicitly using the :data:`SSLContext.options` "
 "attribute::"
-msgstr "SSL versions 2 と 3 は非セキュアと考えられており、それゆえその使用は危険です。クライアントとサーバの最大限の互換性が欲しいならば、 :data:`SSLContext.options` 属性で明示的に SSLv2, SSLv3 を無効にして :const:`PROTOCOL_SSLv23` を使ってください::"
+msgstr ""
 
-#: ../../library/ssl.rst:2010
+#: ../../library/ssl.rst:2076
 msgid ""
-"The SSL context created above will only allow TLSv1 and later (if supported "
-"by your system) connections."
-msgstr "上で作った SSL コンテキストは TLSv1 かそれ以降(あなたのシステムでサポートされていれば)だけでの接続を許可します。"
+"The SSL context created above will only allow TLSv1.2 and later (if "
+"supported by your system) connections."
+msgstr ""
 
-#: ../../library/ssl.rst:2014
+#: ../../library/ssl.rst:2080
 msgid "Cipher selection"
 msgstr "暗号の選択"
 
-#: ../../library/ssl.rst:2016
+#: ../../library/ssl.rst:2082
 msgid ""
 "If you have advanced security requirements, fine-tuning of the ciphers "
 "enabled when negotiating a SSL session is possible through the "
@@ -2359,11 +2416,11 @@ msgid ""
 "given cipher list, use the ``openssl ciphers`` command on your system."
 msgstr ""
 
-#: ../../library/ssl.rst:2026
+#: ../../library/ssl.rst:2092
 msgid "Multi-processing"
 msgstr "マルチプロセス化"
 
-#: ../../library/ssl.rst:2028
+#: ../../library/ssl.rst:2094
 msgid ""
 "If using this module as part of a multi-processed application (using, for "
 "example the :mod:`multiprocessing` or :mod:`concurrent.futures` modules), be"
@@ -2374,90 +2431,90 @@ msgid ""
 ":func:`~ssl.RAND_pseudo_bytes` is sufficient."
 msgstr "(例えば :mod:`multiprocessing` や :mod:`concurrent.futures` を使って、)マルチプロセスアプリケーションの一部としてこのモジュールを使う場合、OpenSSL の内部の乱数発生器は fork したプロセスを適切に処理しないことに気を付けて下さい。SSL の機能を :func:`os.fork` とともに使う場合、アプリケーションは親プロセスの PRNG 状態を変更しなければなりません。 :func:`~ssl.RAND_add`, :func:`~ssl.RAND_bytes`, :func:`~ssl.RAND_pseudo_bytes` のいずれかの呼び出し成功があれば十分です。"
 
-#: ../../library/ssl.rst:2040
+#: ../../library/ssl.rst:2106
 msgid "Class :class:`socket.socket`"
 msgstr ":class:`socket.socket` クラス"
 
-#: ../../library/ssl.rst:2040
+#: ../../library/ssl.rst:2106
 msgid "Documentation of underlying :mod:`socket` class"
 msgstr "下位レイヤーの :mod:`socket` クラスのドキュメント"
 
-#: ../../library/ssl.rst:2043
+#: ../../library/ssl.rst:2109
 msgid ""
 "`SSL/TLS Strong Encryption: An Introduction "
 "<https://httpd.apache.org/docs/trunk/en/ssl/ssl_intro.html>`_"
 msgstr "`SSL/TLS Strong Encryption: An Introduction <https://httpd.apache.org/docs/trunk/en/ssl/ssl_intro.html>`_"
 
-#: ../../library/ssl.rst:2043
+#: ../../library/ssl.rst:2109
 msgid "Intro from the Apache webserver documentation"
 msgstr "Apache WEBサーバのドキュメンテーションのイントロ"
 
-#: ../../library/ssl.rst:2046
+#: ../../library/ssl.rst:2112
 msgid ""
 "`RFC 1422: Privacy Enhancement for Internet Electronic Mail: Part II: "
 "Certificate-Based Key Management <https://www.ietf.org/rfc/rfc1422>`_"
 msgstr "`RFC 1422: Privacy Enhancement for Internet Electronic Mail: Part II: Certificate-Based Key Management <https://www.ietf.org/rfc/rfc1422>`_"
 
-#: ../../library/ssl.rst:2046
+#: ../../library/ssl.rst:2112
 msgid "Steve Kent"
 msgstr "Steve Kent"
 
-#: ../../library/ssl.rst:2049
+#: ../../library/ssl.rst:2115
 msgid ""
 "`RFC 1750: Randomness Recommendations for Security "
 "<https://www.ietf.org/rfc/rfc1750>`_"
 msgstr "`RFC 1750: Randomness Recommendations for Security <https://www.ietf.org/rfc/rfc1750>`_"
 
-#: ../../library/ssl.rst:2049
+#: ../../library/ssl.rst:2115
 msgid "D. Eastlake et. al."
 msgstr "D. Eastlake et. al."
 
-#: ../../library/ssl.rst:2052
+#: ../../library/ssl.rst:2118
 msgid ""
 "`RFC 3280: Internet X.509 Public Key Infrastructure Certificate and CRL "
 "Profile <https://www.ietf.org/rfc/rfc3280>`_"
 msgstr "`RFC 3280: Internet X.509 Public Key Infrastructure Certificate and CRL Profile <https://www.ietf.org/rfc/rfc3280>`_"
 
-#: ../../library/ssl.rst:2052
+#: ../../library/ssl.rst:2118
 msgid "Housley et. al."
 msgstr "Housley et. al."
 
-#: ../../library/ssl.rst:2055
+#: ../../library/ssl.rst:2121
 msgid ""
 "`RFC 4366: Transport Layer Security (TLS) Extensions "
 "<https://www.ietf.org/rfc/rfc4366>`_"
 msgstr "`RFC 4366: Transport Layer Security (TLS) Extensions <https://www.ietf.org/rfc/rfc4366>`_"
 
-#: ../../library/ssl.rst:2055
+#: ../../library/ssl.rst:2121
 msgid "Blake-Wilson et. al."
 msgstr "Blake-Wilson et. al."
 
-#: ../../library/ssl.rst:2058
+#: ../../library/ssl.rst:2124
 msgid ""
 "`RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 "
 "<https://tools.ietf.org/html/rfc5246>`_"
 msgstr "`RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 <https://tools.ietf.org/html/rfc5246>`_"
 
-#: ../../library/ssl.rst:2058
+#: ../../library/ssl.rst:2124
 msgid "T. Dierks et. al."
 msgstr "T. Dierks et. al."
 
-#: ../../library/ssl.rst:2061
+#: ../../library/ssl.rst:2127
 msgid ""
 "`RFC 6066: Transport Layer Security (TLS) Extensions "
 "<https://tools.ietf.org/html/rfc6066>`_"
 msgstr "`RFC 6066: Transport Layer Security (TLS) Extensions <https://tools.ietf.org/html/rfc6066>`_"
 
-#: ../../library/ssl.rst:2061
+#: ../../library/ssl.rst:2127
 msgid "D. Eastlake"
 msgstr "D. Eastlake"
 
-#: ../../library/ssl.rst:2063
+#: ../../library/ssl.rst:2129
 msgid ""
 "`IANA TLS: Transport Layer Security (TLS) Parameters "
 "<https://www.iana.org/assignments/tls-parameters/tls-parameters.xml>`_"
 msgstr "`IANA TLS: Transport Layer Security (TLS) Parameters <https://www.iana.org/assignments/tls-parameters/tls-parameters.xml>`_"
 
-#: ../../library/ssl.rst:2064
+#: ../../library/ssl.rst:2130
 msgid "IANA"
 msgstr "IANA"

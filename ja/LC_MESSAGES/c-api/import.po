@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-02 19:46+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-01 13:45+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -234,14 +234,15 @@ msgstr "モジュール管理のための辞書 (いわゆる ``sys.modules``)�
 
 #: ../../c-api/import.rst:210
 msgid ""
-"Return an importer object for a :data:`sys.path`/:attr:`pkg.__path__` item "
+"Return a finder object for a :data:`sys.path`/:attr:`pkg.__path__` item "
 "*path*, possibly by fetching it from the :data:`sys.path_importer_cache` "
 "dict.  If it wasn't yet cached, traverse :data:`sys.path_hooks` until a hook"
 " is found that can handle the path item.  Return ``None`` if no hook could; "
-"this tells our caller it should fall back to the built-in import mechanism. "
-"Cache the result in :data:`sys.path_importer_cache`.  Return a new reference"
-" to the importer object."
-msgstr ":data:`sys.path`/:attr:`pkg.__path__` の要素 *path* の、 importer オブジェクトを返します。可能なら、 :data:`sys.path_importer_cache` からフェッチします。まだキャッシュされていない場合、そのパスを扱える hook が見つかるまで :data:`sys.path_hooks` を巡回します。 hook が見つからない場合、 ``None`` を返します。この場合、呼び出し元はビルトインのインポート機構にフォールバックします。結果は :data:`sys.path_importer_cache` にキャッシュされます。 importer オブジェクトへの新しい参照を返します。"
+"this tells our caller that the :term:`path based finder` could not find a "
+"finder for this path item. Cache the result in "
+":data:`sys.path_importer_cache`. Return a new reference to the finder "
+"object."
+msgstr ""
 
 #: ../../c-api/import.rst:221
 msgid "Initialize the import mechanism.  For internal use only."

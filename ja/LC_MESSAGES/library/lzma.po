@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-02 22:18+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-01 14:05+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -589,13 +589,13 @@ msgstr "``depth``: マッチファインダが使用する検索の最大深度�
 #: ../../library/lzma.rst:364
 msgid ""
 "The delta filter stores the differences between bytes, producing more "
-"repetitive input for the compressor in certain circumstances. It only "
-"supports a single The delta filter supports only one option, ``dist``. This "
-"indicates the distance between bytes to be subtracted. The default is 1, "
-"i.e. take the differences between adjacent bytes."
-msgstr "デルタフィルターは、バイト間の差異を保存し、特定の状況で、コンプレッサーに対してさらに反復的な入力を生成します。デルタフィルターは、1 つのオプション ``dist`` のみをサポートします。つまり、差し引くバイトどうしの距離を示します。デフォルトは 1 で、隣接するバイトの差異を扱います。"
+"repetitive input for the compressor in certain circumstances. It supports "
+"one option, ``dist``. This indicates the distance between bytes to be "
+"subtracted. The default is 1, i.e. take the differences between adjacent "
+"bytes."
+msgstr ""
 
-#: ../../library/lzma.rst:370
+#: ../../library/lzma.rst:369
 msgid ""
 "The BCJ filters are intended to be applied to machine code. They convert "
 "relative branches, calls and jumps in the code to use absolute addressing, "
@@ -605,30 +605,30 @@ msgid ""
 "data. The default is 0."
 msgstr " BMC フィルターは、マシンコードに対して適用されるように設計されています。このフィルターは、コード内の相対的なブランチ、呼び出し、ジャンプを変換し、絶対アドレス指定として使用します。ここでは、コンプレッサーにより exploit されうる冗長性を増加させることが目的です。これらのフィルターは、 ``start_offset`` オプションをサポートしています。これは、入力データの先頭にマップされるべきアドレスを指定します。"
 
-#: ../../library/lzma.rst:378
+#: ../../library/lzma.rst:377
 msgid "Examples"
 msgstr "使用例"
 
-#: ../../library/lzma.rst:380
+#: ../../library/lzma.rst:379
 msgid "Reading in a compressed file::"
 msgstr "圧縮ファイルからの読み込み::"
 
-#: ../../library/lzma.rst:386
+#: ../../library/lzma.rst:385
 msgid "Creating a compressed file::"
 msgstr "圧縮ファイルの作成::"
 
-#: ../../library/lzma.rst:393
+#: ../../library/lzma.rst:392
 msgid "Compressing data in memory::"
 msgstr "メモリ上でデータを圧縮::"
 
-#: ../../library/lzma.rst:399
+#: ../../library/lzma.rst:398
 msgid "Incremental compression::"
 msgstr "逐次圧縮::"
 
-#: ../../library/lzma.rst:410
+#: ../../library/lzma.rst:409
 msgid "Writing compressed data to an already-open file::"
 msgstr "すでにオープンしているファイルへの圧縮データの書き出し::"
 
-#: ../../library/lzma.rst:419
+#: ../../library/lzma.rst:418
 msgid "Creating a compressed file using a custom filter chain::"
 msgstr "カスタムフィルタチェインを使った圧縮ファイルの作成::"

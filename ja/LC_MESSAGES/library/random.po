@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-28 05:28+0000\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>\n"
+"PO-Revision-Date: 2016-10-01 13:48+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,28 +113,35 @@ msgstr "*a* が int の場合、それが直接使われます。"
 msgid ""
 "With version 2 (the default), a :class:`str`, :class:`bytes`, or "
 ":class:`bytearray` object gets converted to an :class:`int` and all of its "
-"bits are used.  With version 1, the :func:`hash` of *a* is used instead."
-msgstr "バージョン2 (デフォルト) では、 :class:`str`, :class:`bytes`, :class:`bytearray` オブジェクトは :class:`int` に変換され、そのビットがすべて使用されます。バージョン1では *a* の :func:`hash` が代わりに使用されます。"
+"bits are used."
+msgstr ""
 
-#: ../../library/random.rst:69
+#: ../../library/random.rst:68
+msgid ""
+"With version 1 (provided for reproducing random sequences from older "
+"versions of Python), the algorithm for :class:`str` and :class:`bytes` "
+"generates a narrower range of seeds."
+msgstr ""
+
+#: ../../library/random.rst:72
 msgid ""
 "Moved to the version 2 scheme which uses all of the bits in a string seed."
 msgstr "文字列シードのすべてのビットを使うバージョン2スキームに移行。"
 
-#: ../../library/random.rst:74
+#: ../../library/random.rst:77
 msgid ""
 "Return an object capturing the current internal state of the generator.  "
 "This object can be passed to :func:`setstate` to restore the state."
 msgstr "乱数生成器の現在の内部状態を記憶したオブジェクトを返します。このオブジェクトを :func:`setstate` に渡して内部状態を復帰することができます。"
 
-#: ../../library/random.rst:80
+#: ../../library/random.rst:83
 msgid ""
 "*state* should have been obtained from a previous call to :func:`getstate`, "
 "and :func:`setstate` restores the internal state of the generator to what it"
 " was at the time :func:`getstate` was called."
 msgstr "*state* は予め :func:`getstate` を呼び出して得ておかなくてはなりません。 :func:`setstate` は :func:`getstate` が呼び出された時の乱数生成器の内部状態を復帰します。"
 
-#: ../../library/random.rst:87
+#: ../../library/random.rst:90
 msgid ""
 "Returns a Python integer with *k* random bits. This method is supplied with "
 "the MersenneTwister generator and some other generators may also provide it "
@@ -142,68 +149,68 @@ msgid ""
 ":meth:`randrange` to handle arbitrarily large ranges."
 msgstr "*k* 桁の乱数ビットで Python の整数を生成し、返します。このメソッドはメルセンヌツイスタ生成器で提供されており、その他の乱数生成器でもオプションの API として提供されている場合があります。:meth:`randrange` メソッドを使用できる場合、:meth:`getrandbits` はそのメソッドを有効にし、任意の大きな範囲を扱えるようになります。"
 
-#: ../../library/random.rst:93
+#: ../../library/random.rst:96
 msgid "Functions for integers:"
 msgstr "整数用の関数:"
 
-#: ../../library/random.rst:98
+#: ../../library/random.rst:101
 msgid ""
 "Return a randomly selected element from ``range(start, stop, step)``.  This "
 "is equivalent to ``choice(range(start, stop, step))``, but doesn't actually "
 "build a range object."
 msgstr "``range(start, stop, step)`` からランダムに選ばれた要素を返します。この関数は ``choice(range(start, stop, step))`` と等価ですが、実際には range オブジェクトを生成しません。"
 
-#: ../../library/random.rst:102
+#: ../../library/random.rst:105
 msgid ""
 "The positional argument pattern matches that of :func:`range`.  Keyword "
 "arguments should not be used because the function may use them in unexpected"
 " ways."
 msgstr "位置引数のパターンは :func:`range` のそれと一致します。キーワード引数は、この関数に望まれない方法で使われるかもしれないので、使うべきではありません。"
 
-#: ../../library/random.rst:105
+#: ../../library/random.rst:108
 msgid ""
 ":meth:`randrange` is more sophisticated about producing equally distributed "
 "values.  Formerly it used a style like ``int(random()*n)`` which could "
 "produce slightly uneven distributions."
 msgstr "一様に分布した値の生成に関して :meth:`randrange` がより洗練されました。以前は ``int(random()*n)`` のようなやや一様でない分布を生成するスタイルを使用していました。"
 
-#: ../../library/random.rst:112
+#: ../../library/random.rst:115
 msgid ""
 "Return a random integer *N* such that ``a <= N <= b``.  Alias for "
 "``randrange(a, b+1)``."
 msgstr "``a <= N <= b`` であるようなランダムな整数 *N* を返します。``randrange(a, b+1)`` のエイリアスです。"
 
-#: ../../library/random.rst:116
+#: ../../library/random.rst:119
 msgid "Functions for sequences:"
 msgstr "シーケンス用の関数:"
 
-#: ../../library/random.rst:120
+#: ../../library/random.rst:123
 msgid ""
 "Return a random element from the non-empty sequence *seq*. If *seq* is "
 "empty, raises :exc:`IndexError`."
 msgstr "空でないシーケンス *seq* からランダムに要素を返します。 *seq* が空のときは、 :exc:`IndexError` が送出されます。"
 
-#: ../../library/random.rst:126
+#: ../../library/random.rst:129
 msgid ""
 "Shuffle the sequence *x* in place. The optional argument *random* is a "
 "0-argument function returning a random float in [0.0, 1.0); by default, this"
 " is the function :func:`.random`."
 msgstr "シーケンス *x* をインプレースにシャッフルします。オプションの引数 *random* は、引数を持たず、 [0.0, 1.0) のランダムな浮動小数点数を返すような関数です。デフォルトでは、これは関数 :func:`random` です。"
 
-#: ../../library/random.rst:130
+#: ../../library/random.rst:133
 msgid ""
 "Note that for even rather small ``len(x)``, the total number of permutations"
 " of *x* is larger than the period of most random number generators; this "
 "implies that most permutations of a long sequence can never be generated."
 msgstr "やや小さい ``len(x)`` であっても、*x* の順列の総数はほとんどの乱数生成器の周期よりも大きくなるので注意してください; このことは長いシーケンスに対してはほとんどの順列は生成されないことを意味します。"
 
-#: ../../library/random.rst:137
+#: ../../library/random.rst:140
 msgid ""
 "Return a *k* length list of unique elements chosen from the population "
 "sequence or set. Used for random sampling without replacement."
 msgstr "母集団のシーケンスまたは集合から選ばれた長さ *k* の一意な要素からなるリストを返します。置換を行わないランダムサンプリングに用いられます。"
 
-#: ../../library/random.rst:140
+#: ../../library/random.rst:143
 msgid ""
 "Returns a new list containing elements from the population while leaving the"
 " original population unchanged.  The resulting list is in selection order so"
@@ -212,27 +219,27 @@ msgid ""
 "winners (the subslices)."
 msgstr "母集団自体を変更せずに、母集団内の要素を含む新たなリストを返します。返されたリストは選択された順に並んでいるので、このリストの部分スライスもランダムなサンプルになります。これにより、くじの当選者 (サンプル) を1等賞と2等賞（の部分スライス）に分けることも可能です。"
 
-#: ../../library/random.rst:146
+#: ../../library/random.rst:149
 msgid ""
 "Members of the population need not be :term:`hashable` or unique.  If the "
 "population contains repeats, then each occurrence is a possible selection in"
 " the sample."
 msgstr "母集団の要素はハッシュ可能 (:term:`hashable`) でなくても、ユニークでなくてもかまいません。母集団が繰り返しを含む場合、出現するそれぞれがサンプルに選択されえます。"
 
-#: ../../library/random.rst:149
+#: ../../library/random.rst:152
 msgid ""
 "To choose a sample from a range of integers, use an :func:`range` object as "
 "an argument.  This is especially fast and space efficient for sampling from "
 "a large population:  ``sample(range(10000000), 60)``."
 msgstr "整数のある範囲からサンプルを選ぶには、引数に :func:`range` オブジェクトを使いましょう。特に、巨大な母集団からサンプルを取るとき、速度と空間効率が上がります: ``sample(range(10000000), 60)`` 。"
 
-#: ../../library/random.rst:153
+#: ../../library/random.rst:156
 msgid ""
 "If the sample size is larger than the population size, a :exc:`ValueError` "
 "is raised."
 msgstr "サンプルの大きさが母集団の大きさより大きいなら、 :exc:`ValueError` が送出されます。"
 
-#: ../../library/random.rst:156
+#: ../../library/random.rst:159
 msgid ""
 "The following functions generate specific real-valued distributions. "
 "Function parameters are named after the corresponding variables in the "
@@ -240,23 +247,23 @@ msgid ""
 "these equations can be found in any statistics text."
 msgstr "以下の関数は特定の実数値分布を生成します。関数の引数の名前は、一般的な数学の慣例で使われている分布の公式の対応する変数から取られています; これらの公式のほとんどはどんな統計学のテキストにも載っています。"
 
-#: ../../library/random.rst:164
+#: ../../library/random.rst:167
 msgid "Return the next random floating point number in the range [0.0, 1.0)."
 msgstr "範囲 [0.0, 1.0) の次のランダムな浮動小数点数を返します。"
 
-#: ../../library/random.rst:169
+#: ../../library/random.rst:172
 msgid ""
 "Return a random floating point number *N* such that ``a <= N <= b`` for ``a "
 "<= b`` and ``b <= N <= a`` for ``b < a``."
 msgstr "``a <= b`` であれば ``a <= N <= b``、``b < a`` であれば ``b <= N <= a`` であるようなランダムな浮動小数点数 *N* を返します。"
 
-#: ../../library/random.rst:172
+#: ../../library/random.rst:175
 msgid ""
 "The end-point value ``b`` may or may not be included in the range depending "
 "on floating-point rounding in the equation ``a + (b-a) * random()``."
 msgstr "端点の値 ``b`` が範囲に含まれるかどうかは、等式 ``a + (b-a) * random()`` における浮動小数点の丸めに依存します。"
 
-#: ../../library/random.rst:178
+#: ../../library/random.rst:181
 msgid ""
 "Return a random floating point number *N* such that ``low <= N <= high`` and"
 " with the specified *mode* between those bounds.  The *low* and *high* "
@@ -264,13 +271,13 @@ msgid ""
 "midpoint between the bounds, giving a symmetric distribution."
 msgstr "``low <= N <= high`` でありこれら境界値の間に指定された最頻値 *mode* を持つようなランダムな浮動小数点数 *N* を返します。境界 *low* と *high* のデフォルトは 0 と 1 です。最頻値 *mode* 引数のデフォルトは両境界値の中点になり、対称な分布を与えます。"
 
-#: ../../library/random.rst:186
+#: ../../library/random.rst:189
 msgid ""
 "Beta distribution.  Conditions on the parameters are ``alpha > 0`` and "
 "``beta > 0``. Returned values range between 0 and 1."
 msgstr "ベータ分布です。引数の満たすべき条件は ``alpha > 0`` および ``beta > 0`` です。範囲 0 から 1 の値を返します。"
 
-#: ../../library/random.rst:192
+#: ../../library/random.rst:195
 msgid ""
 "Exponential distribution.  *lambd* is 1.0 divided by the desired mean.  It "
 "should be nonzero.  (The parameter would be called \"lambda\", but that is a"
@@ -279,24 +286,24 @@ msgid ""
 "is negative."
 msgstr "指数分布です。*lambd* は平均にしたい値の逆数です。(この引数は \"lambda\" と呼ぶべきなのですが、Python の予約語なので使えません。) 返される値の範囲は *lambd* が正なら 0 から正の無限大、*lambd* が負なら負の無限大から 0 です。"
 
-#: ../../library/random.rst:201
+#: ../../library/random.rst:204
 msgid ""
 "Gamma distribution.  (*Not* the gamma function!)  Conditions on the "
 "parameters are ``alpha > 0`` and ``beta > 0``."
 msgstr "ガンマ分布です (ガンマ関数 *ではありません* ！)。引数の満たすべき条件は ``alpha > 0`` および ``beta > 0`` です。"
 
-#: ../../library/random.rst:204
+#: ../../library/random.rst:207
 msgid "The probability distribution function is::"
 msgstr "確率分布関数は::"
 
-#: ../../library/random.rst:213
+#: ../../library/random.rst:216
 msgid ""
 "Gaussian distribution.  *mu* is the mean, and *sigma* is the standard "
 "deviation.  This is slightly faster than the :func:`normalvariate` function "
 "defined below."
 msgstr "ガウス分布です。 *mu* は平均であり、 *sigma* は標準偏差です。この関数は後で定義する関数 :func:`normalvariate` より少しだけ高速です。"
 
-#: ../../library/random.rst:220
+#: ../../library/random.rst:223
 msgid ""
 "Log normal distribution.  If you take the natural logarithm of this "
 "distribution, you'll get a normal distribution with mean *mu* and standard "
@@ -304,13 +311,13 @@ msgid ""
 "than zero."
 msgstr "対数正規分布です。この分布を自然対数を用いた分布にした場合、平均 *mu* で標準偏差 *sigma* の正規分布になります。*mu* は任意の値を取ることができ、*sigma* はゼロより大きくなければなりません。"
 
-#: ../../library/random.rst:228
+#: ../../library/random.rst:231
 msgid ""
 "Normal distribution.  *mu* is the mean, and *sigma* is the standard "
 "deviation."
 msgstr "正規分布です。*mu* は平均で、*sigma* は標準偏差です。"
 
-#: ../../library/random.rst:233
+#: ../../library/random.rst:236
 msgid ""
 "*mu* is the mean angle, expressed in radians between 0 and 2\\*\\ *pi*, and "
 "*kappa* is the concentration parameter, which must be greater than or equal "
@@ -318,21 +325,21 @@ msgid ""
 "uniform random angle over the range 0 to 2\\*\\ *pi*."
 msgstr "*mu* は平均の角度で、0 から 2\\*\\ *pi* までのラジアンで表されます。*kappa* は濃度パラメタで、ゼロ以上でなければなりません。*kappa* がゼロに等しい場合、この分布は範囲 0 から 2\\*\\ *pi* の一様でランダムな角度の分布に退化します。"
 
-#: ../../library/random.rst:241
+#: ../../library/random.rst:244
 msgid "Pareto distribution.  *alpha* is the shape parameter."
 msgstr "パレート分布です。*alpha* は形状パラメタです。"
 
-#: ../../library/random.rst:246
+#: ../../library/random.rst:249
 msgid ""
 "Weibull distribution.  *alpha* is the scale parameter and *beta* is the "
 "shape parameter."
 msgstr "ワイブル分布です。*alpha* は尺度パラメタで、*beta* は形状パラメタです。"
 
-#: ../../library/random.rst:250
+#: ../../library/random.rst:253
 msgid "Alternative Generator:"
 msgstr "代替の生成器:"
 
-#: ../../library/random.rst:254
+#: ../../library/random.rst:257
 msgid ""
 "Class that uses the :func:`os.urandom` function for generating random "
 "numbers from sources provided by the operating system. Not available on all "
@@ -342,14 +349,14 @@ msgid ""
 ":exc:`NotImplementedError` if called."
 msgstr "オペレーティングシステムの提供する発生源によって乱数を生成する :func:`os.urandom` 関数を使うクラスです。すべてのシステムで使えるメソッドではありません。ソフトウェアの状態に依存してはいけませんし、一連の操作は再現不能です。従って、 :meth:`seed` メソッドは何の影響も及ぼさず、無視されます。 :meth:`getstate` と :meth:`setstate` メソッドが呼び出されると、例外 :exc:`NotImplementedError` が送出されます。"
 
-#: ../../library/random.rst:264
+#: ../../library/random.rst:267
 msgid ""
 "M. Matsumoto and T. Nishimura, \"Mersenne Twister: A 623-dimensionally "
 "equidistributed uniform pseudorandom number generator\", ACM Transactions on"
 " Modeling and Computer Simulation Vol. 8, No. 1, January pp.3-30 1998."
 msgstr "M. Matsumoto and T. Nishimura, \"Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator\", ACM Transactions on Modeling and Computer Simulation Vol. 8, No. 1, January pp.3-30 1998."
 
-#: ../../library/random.rst:269
+#: ../../library/random.rst:272
 msgid ""
 "`Complementary-Multiply-with-Carry recipe "
 "<https://code.activestate.com/recipes/576707/>`_ for a compatible "
@@ -357,11 +364,11 @@ msgid ""
 "simple update operations."
 msgstr "`Complementary-Multiply-with-Carry recipe <https://code.activestate.com/recipes/576707/>`_  長い周期と比較的シンプルな更新操作を備えた互換性のある別の乱数生成器。"
 
-#: ../../library/random.rst:276
+#: ../../library/random.rst:279
 msgid "Notes on Reproducibility"
 msgstr "再現性について"
 
-#: ../../library/random.rst:278
+#: ../../library/random.rst:281
 msgid ""
 "Sometimes it is useful to be able to reproduce the sequences given by a "
 "pseudo random number generator.  By re-using a seed value, the same sequence"
@@ -369,45 +376,45 @@ msgid ""
 "running."
 msgstr "疑似乱数生成器から与えられたシーケンスを再現できると便利なことがあります。シード値を再利用することで、複数のスレッドが実行されていない限り、実行ごとに同じシーケンスが再現できます。"
 
-#: ../../library/random.rst:282
+#: ../../library/random.rst:285
 msgid ""
 "Most of the random module's algorithms and seeding functions are subject to "
 "change across Python versions, but two aspects are guaranteed not to change:"
 msgstr "random モジュールのアルゴリズムやシード処理関数のほとんどは、Python バージョン間で変更される対象となりますが、次の二点は変更されないことが保証されています:"
 
-#: ../../library/random.rst:285
+#: ../../library/random.rst:288
 msgid ""
 "If a new seeding method is added, then a backward compatible seeder will be "
 "offered."
 msgstr "新しいシード処理メソッドが追加されたら、後方互換なシード処理器が提供されます。"
 
-#: ../../library/random.rst:288
+#: ../../library/random.rst:291
 msgid ""
 "The generator's :meth:`~Random.random` method will continue to produce the "
 "same sequence when the compatible seeder is given the same seed."
 msgstr "生成器の :meth:`~Random.random` メソッドは、互換なシード処理器に同じシードが与えられた場合、引き続き同じシーケンスを生成します。"
 
-#: ../../library/random.rst:294
+#: ../../library/random.rst:297
 msgid "Examples and Recipes"
 msgstr "例とレシピ"
 
-#: ../../library/random.rst:296
+#: ../../library/random.rst:299
 msgid "Basic usage::"
 msgstr "基本的な使用例::"
 
-#: ../../library/random.rst:321
+#: ../../library/random.rst:324
 msgid ""
 "A common task is to make a :func:`random.choice` with weighted "
 "probabilities."
 msgstr "ありがちな作業として、重み付けされた確率の :func:`random.choice` を作ることがあります。"
 
-#: ../../library/random.rst:323
+#: ../../library/random.rst:326
 msgid ""
 "If the weights are small integer ratios, a simple technique is to build a "
 "sample population with repeats::"
 msgstr "重み付けが整数比率なら、簡単なテクニックはサンプル母集団を繰り返しで作ることです::"
 
-#: ../../library/random.rst:331
+#: ../../library/random.rst:337
 msgid ""
 "A more general approach is to arrange the weights in a cumulative "
 "distribution with :func:`itertools.accumulate`, and then locate the random "

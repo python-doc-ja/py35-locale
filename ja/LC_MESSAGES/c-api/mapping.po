@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,8 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-21 21:32+0900\n"
-"PO-Revision-Date: 2016-03-21 14:51+0000\n"
+"PO-Revision-Date: 2016-10-01 13:46+0000\n"
 "Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -56,30 +55,29 @@ msgstr "マップ型オブジェクトがキー *key* を持つ場合に ``1`` �
 
 #: ../../c-api/mapping.rst:53
 msgid ""
-"On success, return a list, a tuple or a dictionary view in case of a dict, "
-"of the keys in object *o*. On failure, return *NULL*."
+"On success, return a list or tuple of the keys in object *o*.  On failure, "
+"return *NULL*."
 msgstr ""
 
 #: ../../c-api/mapping.rst:59
 msgid ""
-"On success, return a list, a tuple or a dictionary view in case of a dict, "
-"of the values in object *o*. On failure, return *NULL*."
+"On success, return a list or tuple of the values in object *o*.  On failure,"
+" return *NULL*."
 msgstr ""
 
 #: ../../c-api/mapping.rst:65
 msgid ""
-"On success, return a list, a tuple or a dictionary view in case of a dict, "
-"of the items in object *o*, where each item is a tuple containing a key-"
-"value pair.  On failure, return *NULL*."
+"On success, return a list or tuple of the items in object *o*, where each "
+"item is a tuple containing a key-value pair.  On failure, return *NULL*."
 msgstr ""
 
-#: ../../c-api/mapping.rst:72
+#: ../../c-api/mapping.rst:71
 msgid ""
 "Return element of *o* corresponding to the object *key* or *NULL* on "
 "failure. This is the equivalent of the Python expression ``o[key]``."
 msgstr "オブジェクト *key* に対応する *o* の要素を返します。失敗すると *NULL* を返します。Python の式 ``o[key]`` と同じです。"
 
-#: ../../c-api/mapping.rst:78
+#: ../../c-api/mapping.rst:77
 msgid ""
 "Map the object *key* to the value *v* in object *o*. Returns ``-1`` on "
 "failure. This is the equivalent of the Python statement ``o[key] = v``."
