@@ -7,12 +7,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-01 14:02+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-02 16:41+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1300,7 +1301,7 @@ msgid ""
 "details, consult the :manpage:`dlopen(3)` manpage.  On Windows, *mode* is "
 "ignored.  On posix systems, RTLD_NOW is always added, and is not "
 "configurable."
-msgstr ""
+msgstr "*mode* パラメータを使うと、ライブラリがどうやってロードされたかを特定できます。\n詳細は :manpage:`dlopen(3)` マニュアルページを参考にしてください。\nWindows では *mode* は無視されます。\nPOSIX システムでは RTLD_NOW が常に追加され、設定変更はできません。"
 
 #: ../../library/ctypes.rst:1361
 msgid ""
@@ -1680,7 +1681,7 @@ msgid ""
 "This example demonstrates how to wrap the Windows ``MessageBoxW`` function "
 "so that it supports default parameters and named arguments. The C "
 "declaration from the windows header file is this::"
-msgstr ""
+msgstr "この例では、デフォルトパラメータと名前付き引数をサポートするために Windows の ``MessageBoxW`` 関数をラップする方法を示します。\nwindows のヘッダファイルの C の宣言は次の通りです::"
 
 #: ../../library/ctypes.rst:1679 ../../library/ctypes.rst:1702
 msgid "Here is the wrapping with :mod:`ctypes`::"
@@ -1688,7 +1689,7 @@ msgstr ":mod:`ctypes` を使ってラップします::"
 
 #: ../../library/ctypes.rst:1687
 msgid "The ``MessageBox`` foreign function can now be called in these ways::"
-msgstr ""
+msgstr "これで外部関数の ``MessageBox`` を次のような方法で呼び出すことができるようになりました::"
 
 #: ../../library/ctypes.rst:1693
 msgid ""

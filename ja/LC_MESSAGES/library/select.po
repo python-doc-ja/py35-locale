@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-01 14:02+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-02 17:29+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,7 +83,7 @@ msgid ""
 "(Only supported on Linux 2.5.44 and newer.) Return an edge polling object, "
 "which can be used as Edge or Level Triggered interface for I/O events. "
 "*sizehint* and *flags* are deprecated and completely ignored."
-msgstr ""
+msgstr "(Linux 2.5.44 以降でのみサポート) エッジポーリング (edge polling) オブジェクトを返します。\nこのオブジェクトは、 I/O イベントのエッジトリガもしくはレベルトリガインタフェースとして使えます。\n*sizehint* および *flags* は非推奨であり、無視されます。"
 
 #: ../../library/select.rst:62
 msgid ""
@@ -111,7 +112,7 @@ msgstr ":keyword:`with` 文のサポートが追加されました。新しい�
 msgid ""
 "The *flags* parameter.  ``select.EPOLL_CLOEXEC`` is used by default now. Use"
 " :func:`os.set_inheritable` to make the file descriptor inheritable."
-msgstr ""
+msgstr "*flags* パラメータ。\n現在ではデフォルトで ``select.EPOLL_CLOEXEC`` が使われます。\nファイルディスクリプタを継承可能にするには :func:`os.set_inheritable` を使ってください。"
 
 #: ../../library/select.rst:85
 msgid ""
