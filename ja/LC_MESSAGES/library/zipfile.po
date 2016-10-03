@@ -6,12 +6,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:26+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 09:08+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -274,7 +275,7 @@ msgid ""
 "Deprecated since version 3.4, will be removed in version 3.6: The 'U' or  "
 "'rU' mode.  Use io.TextIOWrapper for reading compressed text files in "
 "universal newlines mode."
-msgstr "バージョン 3.4 で非推奨、バージョン 3.6 で削除予定。'U' や 'rU' モード。 圧縮されたテキストファイルを universal newlines モードで読み込むには `io.TextIOWrapper を使用してください。"
+msgstr "バージョン 3.4 で非推奨、バージョン 3.6 で削除予定。'U' や 'rU' モード。 圧縮されたテキストファイルを universal newlines モードで読み込むには io.TextIOWrapper を使用してください。"
 
 #: ../../library/zipfile.rst:248
 msgid ""

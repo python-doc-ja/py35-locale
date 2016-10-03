@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:41+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 11:29+0000\n"
+"Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -650,7 +650,7 @@ msgid ""
 "Here is a simple example of a POINT structure, which contains two integers "
 "named *x* and *y*, and also shows how to initialize a structure in the "
 "constructor::"
-msgstr "以下は、 *x* と *y* という名前の二つの整数からなる簡単な POINT 構造体の例です。コンストラクタで構造体を初期化する方法も説明しています。"
+msgstr "以下は、 *x* と *y* という名前の二つの整数からなる簡単な POINT 構造体の例です。コンストラクタで構造体を初期化する方法も説明しています::"
 
 #: ../../library/ctypes.rst:586
 msgid ""
@@ -767,7 +767,7 @@ msgstr "ポインタのインスタンスは :mod:`ctypes` 型に対して :func
 msgid ""
 "Pointer instances have a :attr:`~_Pointer.contents` attribute which returns "
 "the object to which the pointer points, the ``i`` object above::"
-msgstr "次のように、ポインタインスタンスは、ポインタが指すオブジェクト (上の例では ``i``) を返す :attr:`~_Pointer.contents` 属性を持ちます。"
+msgstr "次のように、ポインタインスタンスは、ポインタが指すオブジェクト (上の例では ``i``) を返す :attr:`~_Pointer.contents` 属性を持ちます::"
 
 #: ../../library/ctypes.rst:733
 msgid ""
@@ -977,7 +977,7 @@ msgstr "ここで 2 つの要素を実際に比較し、役に立つ結果を返
 
 #: ../../library/ctypes.rst:1025
 msgid "As we can easily check, our array is sorted now::"
-msgstr "簡単に確認できるように、配列を次のようにソートしました。"
+msgstr "簡単に確認できるように、配列を次のようにソートしました::"
 
 #: ../../library/ctypes.rst:1034
 msgid ""
@@ -1723,7 +1723,7 @@ msgid ""
 "output parameters.  If you want to return a tuple of window coordinates "
 "instead of a ``RECT`` instance, you can retrieve the fields in the function "
 "and return them instead, the normal processing will no longer take place::"
-msgstr ":attr:`errcheck` 関数が受け取った引数タプルを変更なしに返した場合、 :mod:`ctypes` は出力パラメータに対する通常の処理を続けます。 ``RECT`` インスタンスの代わりに window 座標のタプルを返すには、関数のフィールドを取り出し、代わりにそれらを返すことができます。この場合、通常処理は行われなくなります。"
+msgstr ":attr:`errcheck` 関数が受け取った引数タプルを変更なしに返した場合、 :mod:`ctypes` は出力パラメータに対する通常の処理を続けます。 ``RECT`` インスタンスの代わりに window 座標のタプルを返すには、関数のフィールドを取り出し、代わりにそれらを返すことができます。この場合、通常処理は行われなくなります::"
 
 #: ../../library/ctypes.rst:1748
 msgid "Utility functions"

@@ -4,12 +4,13 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-05 06:04+0000\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 09:34+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -732,7 +733,7 @@ msgstr ":meth:`AbstractEventLoop.create_connection` および :func:`asyncio.ope
 #: ../../library/asyncio-eventloop.rst:556
 msgid ""
 "Accept a connection.  Modeled after blocking :meth:`socket.socket.accept`."
-msgstr "接続を受け付けます。\n:meth:`socket.socket.accept`のブロック をモデルにしています。"
+msgstr "接続を受け付けます。 :meth:`socket.socket.accept` のブロック をモデルにしています。"
 
 #: ../../library/asyncio-eventloop.rst:559
 msgid ""
@@ -786,7 +787,7 @@ msgid ""
 "interface.  *pipe* is a :term:`file-like object <file object>`. Return pair "
 "``(transport, protocol)``, where *transport* supports the "
 ":class:`ReadTransport` interface."
-msgstr "*protocol_factory* は :class:`Protocol` インターフェースを持つオブジェクトのインスタンスを作成しなければなりません。*pipe* は :term:`ファイルライクオブジェクト <file object>` です。``(トランスポート, プロトコル)`` のペアを返し、*トランスポート* は :class:`ReadTransport` インターフェースをサポートします。"
+msgstr "*protocol_factory* は :class:`Protocol` インターフェースを持つオブジェクトのインスタンスを作成しなければなりません。 *pipe* は :term:`ファイルライクオブジェクト <file object>` です。 ``(トランスポート, プロトコル)`` のペアを返し、 *トランスポート* は :class:`ReadTransport` インターフェースをサポートします。"
 
 #: ../../library/asyncio-eventloop.rst:603
 #: ../../library/asyncio-eventloop.rst:617

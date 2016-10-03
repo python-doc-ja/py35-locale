@@ -5,12 +5,12 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-05 21:05+0000\n"
+"PO-Revision-Date: 2016-10-03 10:19+0000\n"
 "Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +106,7 @@ msgid ""
 "with Tkinter, all you need to do is to import one module. In general, you "
 "can just import :mod:`tkinter.tix`, and replace the toplevel call to "
 ":class:`tkinter.Tk` with :class:`tix.Tk`::"
-msgstr ":mod:`tkinter.tix` モジュールのクラスは :mod:`tkinter` モジュールのクラスをサブクラス化します。前者は後者をインポートするので、モジュールを一つインポートするだけで :mod:`tkinter.tix` を Tkinter と一緒に使うことができます。一般的に、 :mod:`tkinter.tix` をインポートし、トップレベルでの :class:`tkinter.Tk` への呼び出しは :class:`tix.Tk` に置き換えるだけで済みます。次に例を示します。"
+msgstr ":mod:`tkinter.tix` モジュールのクラスは :mod:`tkinter` モジュールのクラスをサブクラス化します。前者は後者をインポートするので、モジュールを一つインポートするだけで :mod:`tkinter.tix` を Tkinter と一緒に使うことができます。一般的に、 :mod:`tkinter.tix` をインポートし、トップレベルでの :class:`tkinter.Tk` への呼び出しは :class:`tix.Tk` に置き換えるだけで済みます。次に例を示します::"
 
 #: ../../library/tkinter.tix.rst:67
 msgid ""
@@ -125,7 +125,7 @@ msgid ""
 "(:file:`tk8183.dll` or :file:`libtk8183.so`). The directory with the dynamic"
 " object library should also have a file called :file:`pkgIndex.tcl` (case "
 "sensitive), which contains the line::"
-msgstr "これが失敗した場合は、 Tk のインストールに問題があり、先に進む前に解決しなければなりません。インストールされた Tix ライブラリを指定するためには環境変数 :envvar:`TIX_LIBRARY` を使ってください。 Tk 動的オブジェクトライブラリ (:file:`tk8183.dll` または :file:`libtk8183.so`) を含むディレクトリと同じディレクトリに、動的オブジェクトライブラリ (:file:`tix8183.dll` または :file:`libtix8183.so`) があるかどうかを確かめてください。動的オブジェクトライブラリのあるディレクトリには、 :file:`pkgIndex.tcl` (大文字、小文字を区別します) という名前のファイルも含まれているべきで、それには次の一行が含まれます。"
+msgstr "これが失敗した場合は、 Tk のインストールに問題があり、先に進む前に解決しなければなりません。インストールされた Tix ライブラリを指定するためには環境変数 :envvar:`TIX_LIBRARY` を使ってください。 Tk 動的オブジェクトライブラリ (:file:`tk8183.dll` または :file:`libtk8183.so`) を含むディレクトリと同じディレクトリに、動的オブジェクトライブラリ (:file:`tix8183.dll` または :file:`libtix8183.so`) があるかどうかを確かめてください。動的オブジェクトライブラリのあるディレクトリには、 :file:`pkgIndex.tcl` (大文字、小文字を区別します) という名前のファイルも含まれているべきで、それには次の一行が含まれます::"
 
 #: ../../library/tkinter.tix.rst:88
 msgid "Tix Widgets"

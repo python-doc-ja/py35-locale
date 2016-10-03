@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 07:20+0000\n"
+"PO-Revision-Date: 2016-10-03 08:08+0000\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -426,7 +426,7 @@ msgid ""
 "database of ``uri -> is_authenticated`` mappings.  Can be used by a "
 "BasicAuth handler to determine when to send authentication credentials "
 "immediately instead of waiting for a ``401`` response first."
-msgstr ""
+msgstr "``uri -> is_authenticated`` マッピングのデータベースも持つ :class:`HTTPPasswordMgrWithDefaultRealm` のバリエーションです。最初に ``401`` レスポンスを待つのではなく直ちに認証情報を送るときの条件を判断するために、 BasicAuth ハンドラによって使われます。"
 
 #: ../../library/urllib.request.rst:323
 msgid ""
@@ -445,7 +445,7 @@ msgid ""
 "``update_authenticated`` is called to set ``is_authenticated`` ``True`` for "
 "the URI, so that subsequent requests to the URI or any of its super-URIs "
 "will automatically include the authentication credentials."
-msgstr ""
+msgstr "これは、リモートホストとプロキシの両方に対して HTTP 認証を行うことを助ける mixin クラスです。 *password_mgr* は、もし与えられたら :class:`HTTPPasswordMgr` と互換性のあるオブジェクトでなければなりません; サポートすべきインタフェースに関する情報は :ref:`http-password-mgr` 節を参照してください。もし *passwd_mgr* が ``is_authenticated`` と ``update_authenticated`` メソッドも提供するなら (:ref:`http-password-mgr-with-prior-auth` を参照)、ハンドラは与えられた URI に対する ``is_authenticated`` の結果を用いてリクエストにおいて認証情報を送るかどうかを決定します。もし ``is_authenticated`` がその URI に対して ``True`` を返すなら、認証情報が送られます。 ``is_authenticated`` が ``False`` なら認証情報は送られません。そして、もし ``401`` レスポンスを受け取ったら、認証情報を付けて改めてリクエストが送信されます。もし認証が成功したら、それ以降その URI またはその親 URI に対して行われるリクエストが認証情報を自動的に含むように、 URI に対して ``is_authenticated`` を ``True`` に設定するために ``update_authenticated`` が呼ばれます。"
 
 #: ../../library/urllib.request.rst:340
 msgid "Added ``is_authenticated`` support."
@@ -553,7 +553,7 @@ msgid ""
 "Request.full_url is a property with setter, getter and a deleter. Getting "
 ":attr:`~Request.full_url` returns the original request URL with the "
 "fragment, if it was present."
-msgstr ""
+msgstr "Request.full_url は、 setter, getter, deleter を持つプロパティです。もし存在すれば、 :attr:`~Request.full_url` はオリジナルのリクエスト URL フラグメント付きで返します。"
 
 #: ../../library/urllib.request.rst:461
 msgid "The URI scheme."
@@ -583,7 +583,7 @@ msgstr "リクエストのエンティティボディか、指定されない場
 msgid ""
 "Changing value of :attr:`Request.data` now deletes \"Content-Length\" header"
 " if it was previously set or calculated."
-msgstr ""
+msgstr ":attr:`Request.data` の値が変更されると、もしそれ以前に \"Content-Length\" ヘッダーの値が設定または計算されていたらヘッダーが削除されるようになりました。"
 
 #: ../../library/urllib.request.rst:487
 msgid ""

@@ -7,12 +7,13 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 06:46+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 10:22+0000\n"
+"Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -464,7 +465,7 @@ msgid ""
 "setting *inline_comment_prefixes*.  In any circumstances, the only way of "
 "storing comment prefix characters at the beginning of a line in multiline "
 "values is to interpolate the prefix, for example::"
-msgstr "設定パーサーはコメント接頭辞のエスケープをサポートしないので、*inline_comment_prefixes* はユーザーがコメント接頭辞として使われる文字を含むオプション値を指定するのを妨げる可能性があります。疑わしい場合には、*inline_comment_prefixes* を設定しないようにしてください。どのような状況でも、複数行にわたる値で、行の先頭にコメント接頭辞文字を保存する唯一の方法は、次の例のように接頭辞を補間することです。"
+msgstr "設定パーサーはコメント接頭辞のエスケープをサポートしないので、*inline_comment_prefixes* はユーザーがコメント接頭辞として使われる文字を含むオプション値を指定するのを妨げる可能性があります。疑わしい場合には、*inline_comment_prefixes* を設定しないようにしてください。どのような状況でも、複数行にわたる値で、行の先頭にコメント接頭辞文字を保存する唯一の方法は、次の例のように接頭辞を補間することです::"
 
 #: ../../library/configparser.rst:615
 msgid "*strict*, default value: ``True``"
@@ -693,7 +694,7 @@ msgid ""
 "interpolation completely, ``ExtendedInterpolation()`` provides a more "
 "advanced variant inspired by ``zc.buildout``.  More on the subject in the "
 "`dedicated documentation section <#interpolation-of-values>`_."
-msgstr "補間の動作は、*interpolation* 引数を通してカスタムハンドラを与えることでカスタマイズできます。``None`` 引数を使うと補間を完全に無効にできます。``ExtendedInterpolation()`` は、``zc.buildout`` に影響を受けたより高度な補間を提供します。この件に `特化したドキュメントのセクション <#interpolation-of-values>`_を参照してください。"
+msgstr "補間の動作は、 *interpolation* 引数を通してカスタムハンドラを与えることでカスタマイズできます。 ``None`` 引数を使うと補間を完全に無効にできます。 ``ExtendedInterpolation()`` は、 ``zc.buildout`` に影響を受けたより高度な補間を提供します。この件に `特化したドキュメントのセクション <#interpolation-of-values>`_ を参照してください。"
 
 #: ../../library/configparser.rst:919
 msgid ""
@@ -711,7 +712,7 @@ msgid ""
 "implementing the conversion from string to the desired datatype.  Every "
 "converter gets its own corresponding :meth:`get*()` method on the parser "
 "object and section proxies."
-msgstr "*converters*  が与えられた場合、各キーが型コンバーターの名前を表し、各値が文字列から目的のデータ型への変換を実装する呼び出し可能オブジェクトです。各コンバーターは、自身の対応する :meth:`get*()`メソッドをパーサーオブジェクトとセクションプロキシで取得します。"
+msgstr "*converters* が与えられた場合、各キーが型コンバーターの名前を表し、各値が文字列から目的のデータ型への変換を実装する呼び出し可能オブジェクトです。各コンバーターは、自身の対応する :meth:`get*()` メソッドをパーサーオブジェクトとセクションプロキシで取得します。"
 
 #: ../../library/configparser.rst:931
 msgid "The default *dict_type* is :class:`collections.OrderedDict`."
@@ -779,7 +780,7 @@ msgid ""
 " application which requires initial values to be loaded from a file should "
 "load the required file or files using :meth:`read_file` before calling "
 ":meth:`read` for any optional files::"
-msgstr "ファイル名のリストを読んで解析を試み、うまく解析できたファイル名のリストを返します。 *filenames* が文字列の場合、この引数は1つのファイル名として扱われます。 *filenames* 中に開けないファイルがある場合、そのファイルは無視されます。この挙動は、設定ファイルが置かれる可能性のある場所 (例えば、 カレントディレクトリ、ホームディレクトリ、システム全体の設定を行うディレクトリ) のリストを指定して、リストの中で存在する全ての設定ファイルを読むことを想定して設計されています。 どの設定ファイルも存在しなかった場合、 :class:`ConfigParser` のインスタンスは空のデータセットを持ちます。初期値の設定ファイルを先に読み込んでおく必要があるアプリケーションでは、 オプションのファイルを読み込むための :meth:`read` を呼ぶ前に 、:meth:`read_file` を用いて必要なファイルを読み込みんでください。"
+msgstr "ファイル名のリストを読んで解析を試み、うまく解析できたファイル名のリストを返します。 *filenames* が文字列の場合、この引数は1つのファイル名として扱われます。 *filenames* 中に開けないファイルがある場合、そのファイルは無視されます。この挙動は、設定ファイルが置かれる可能性のある場所 (例えば、 カレントディレクトリ、ホームディレクトリ、システム全体の設定を行うディレクトリ) のリストを指定して、リストの中で存在する全ての設定ファイルを読むことを想定して設計されています。 どの設定ファイルも存在しなかった場合、 :class:`ConfigParser` のインスタンスは空のデータセットを持ちます。初期値の設定ファイルを先に読み込んでおく必要があるアプリケーションでは、 オプションのファイルを読み込むための :meth:`read` を呼ぶ前に 、:meth:`read_file` を用いて必要なファイルを読み込みんでください::"
 
 #: ../../library/configparser.rst:1005
 msgid ""

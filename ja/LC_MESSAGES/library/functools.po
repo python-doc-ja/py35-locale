@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-03 16:30+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 10:20+0000\n"
+"Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -252,7 +252,7 @@ msgid ""
 "To define a generic function, decorate it with the ``@singledispatch`` "
 "decorator. Note that the dispatch happens on the type of the first argument,"
 " create your function accordingly::"
-msgstr "汎用関数を定義するには、 ``@singledispatch`` デコレータでデコレートします。ディスパッチは 1 つ目の引数の型で行われることに注意して、関数を次のように作成してください。"
+msgstr "汎用関数を定義するには、 ``@singledispatch`` デコレータでデコレートします。ディスパッチは 1 つ目の引数の型で行われることに注意して、関数を次のように作成してください::"
 
 #: ../../library/functools.rst:283
 msgid ""
@@ -260,26 +260,26 @@ msgid ""
 "attribute of the generic function.  It is a decorator, taking a type "
 "parameter and decorating a function implementing the operation for that "
 "type::"
-msgstr "関数にオーバーロード実装を追加するには、汎用関数の :func:`register` 属性を使用します。この属性は、型引数を取り、その型の操作を実装する関数をデコレートするデコレータです。"
+msgstr "関数にオーバーロード実装を追加するには、汎用関数の :func:`register` 属性を使用します。この属性は、型引数を取り、その型の操作を実装する関数をデコレートするデコレータです::"
 
 #: ../../library/functools.rst:301
 msgid ""
 "To enable registering lambdas and pre-existing functions, the "
 ":func:`register` attribute can be used in a functional form::"
-msgstr ":func:`register` 属性を関数形式で使用すると、lambda 関数と既存の関数の登録を有効にできます。"
+msgstr ":func:`register` 属性を関数形式で使用すると、lambda 関数と既存の関数の登録を有効にできます::"
 
 #: ../../library/functools.rst:309
 msgid ""
 "The :func:`register` attribute returns the undecorated function which "
 "enables decorator stacking, pickling, as well as creating unit tests for "
 "each variant independently::"
-msgstr " :func:`register` 属性は、デコレートされていない関数を返します。この関数により、複層デコレータ、デコレータの pickle 化、各変数の独立なユニットテストの作成が可能です。"
+msgstr " :func:`register` 属性は、デコレートされていない関数を返します。この関数により、複層デコレータ、デコレータの pickle 化、各変数の独立なユニットテストの作成が可能です::"
 
 #: ../../library/functools.rst:323
 msgid ""
 "When called, the generic function dispatches on the type of the first "
 "argument::"
-msgstr "汎用関数は、呼び出されると 1 つ目の引数の型でディスパッチします。"
+msgstr "汎用関数は、呼び出されると 1 つ目の引数の型でディスパッチします::"
 
 #: ../../library/functools.rst:343
 msgid ""
@@ -294,13 +294,13 @@ msgstr "特定の型について登録された実装が存在しない場合、
 msgid ""
 "To check which implementation will the generic function choose for a given "
 "type, use the ``dispatch()`` attribute::"
-msgstr "指定された型に対して、汎用関数がどの実装を選択するかを確認するには、``dispatch()``  属性を使用します。"
+msgstr "指定された型に対して、汎用関数がどの実装を選択するかを確認するには、``dispatch()``  属性を使用します::"
 
 #: ../../library/functools.rst:357
 msgid ""
 "To access all registered implementations, use the read-only ``registry`` "
 "attribute::"
-msgstr "登録されたすべての実装にアクセスするには、読み取り専用の ``registry`` 属性を使用します。"
+msgstr "登録されたすべての実装にアクセスするには、読み取り専用の ``registry`` 属性を使用します::"
 
 #: ../../library/functools.rst:374
 msgid ""

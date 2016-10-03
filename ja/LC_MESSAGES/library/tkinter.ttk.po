@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # Shun Sakurai, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-03 10:41+0000\n"
+"PO-Revision-Date: 2016-10-03 11:29+0000\n"
 "Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,7 @@ msgstr "Ttk を使い始めるために、モジュールをインポートし�
 #: ../../library/tkinter.ttk.rst:40
 msgid ""
 "To override the basic Tk widgets, the import should follow the Tk import::"
-msgstr "基本的な Tk ウィジェットを上書きするため、次のように Tk のインポートに続けてインポートを行います。"
+msgstr "基本的な Tk ウィジェットを上書きするため、次のように Tk のインポートに続けてインポートを行います::"
 
 #: ../../library/tkinter.ttk.rst:45
 msgid ""
@@ -1792,7 +1792,7 @@ msgstr "*kw* のそれぞれのキーはオプション名で値はそのオプ�
 msgid ""
 "For example, to change every default button to be a flat button with some "
 "padding and a different background color::"
-msgstr "例えば、全てのデフォルトのボタンをパディングのある平らな見た目にし、背景の色を変更するには以下のようにします。"
+msgstr "例えば、全てのデフォルトのボタンをパディングのある平らな見た目にし、背景の色を変更するには以下のようにします::"
 
 #: ../../library/tkinter.ttk.rst:1216
 msgid "Query or sets dynamic values of the specified option(s) in *style*."
@@ -1808,7 +1808,7 @@ msgstr "*kw* のそれぞれのキーはオプション名で、値はタプル�
 
 #: ../../library/tkinter.ttk.rst:1223
 msgid "An example may make it more understandable::"
-msgstr "以下のように、例を示す方がわかりやすいでしょう。"
+msgstr "以下のように、例を示す方がわかりやすいでしょう::"
 
 #: ../../library/tkinter.ttk.rst:1241
 msgid ""
