@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-04 23:35+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 14:44+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1167,7 +1168,7 @@ msgstr "(Implemented by Fredrik Lundh following a suggestion by Raymond Hettinge
 msgid ""
 "The :meth:`startswith` and :meth:`endswith` methods of string types now "
 "accept tuples of strings to check for. ::"
-msgstr "文字列型の :meth:`startswith` と:meth:`endswith` メソッドが、チェックされる文字列のタプルを受け容れるようになりました::"
+msgstr "文字列型の :meth:`startswith` と :meth:`endswith` メソッドが、チェックされる文字列のタプルを受け容れるようになりました::"
 
 #: ../../whatsnew/2.5.rst:1025
 msgid "(Implemented by Georg Brandl following a suggestion by Tom Lynn.)"

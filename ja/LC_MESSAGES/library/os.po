@@ -8,12 +8,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:27+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 14:20+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2018,7 +2019,7 @@ msgid ""
 "the files (excluding directories) in the given *path* that don't start with "
 "``'.'``. The ``entry.is_file()`` call will generally not make an additional "
 "system call::"
-msgstr "次の単純な例では、:func:`scandir` を使用して、指定した *path* 内の先頭が ``'.'`` でないすべてのファイル (ディレクトリを除く) をすべて表示します。``entry.is_file()`` を呼び出しても、通常は追加のシステムコールは行われません。"
+msgstr "次の単純な例では、:func:`scandir` を使用して、指定した *path* 内の先頭が ``'.'`` でないすべてのファイル (ディレクトリを除く) をすべて表示します。``entry.is_file()`` を呼び出しても、通常は追加のシステムコールは行われません::"
 
 #: ../../library/os.rst:1923
 msgid ""
@@ -2550,7 +2551,7 @@ msgid ""
 "one might be unsupported on another.  For consistency's sakes, functions "
 "that support *dir_fd* always allow specifying the parameter, but will raise "
 "an exception if the functionality is not actually available."
-msgstr ":mod:`os`モジュールのどの関数が *dir_fd* 引数の使用を許可するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 *dir_fd* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
+msgstr ":mod:`os` モジュールのどの関数が *dir_fd* 引数の使用を許可するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 *dir_fd* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
 
 #: ../../library/os.rst:2346
 msgid ""
@@ -2596,7 +2597,7 @@ msgid ""
 "consistency's sakes, functions that support *fd* always allow specifying the"
 " parameter, but will raise an exception if the functionality is not actually"
 " available."
-msgstr ":mod:`os`モジュールのどの関数が、*path* 引数をオープンしているファイル記述子として指定するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 *fd* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
+msgstr ":mod:`os` モジュールのどの関数が、*path* 引数をオープンしているファイル記述子として指定するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 *fd* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
 
 #: ../../library/os.rst:2388
 msgid ""
@@ -2615,7 +2616,7 @@ msgid ""
 " one might be unsupported on another.  For consistency's sakes, functions "
 "that support *follow_symlinks* always allow specifying the parameter, but "
 "will raise an exception if the functionality is not actually available."
-msgstr ":mod:`os`モジュールのどの関数が * follow_symlinks* 引数の使用を許可するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 * follow_symlinks* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
+msgstr ":mod:`os` モジュールのどの関数が *follow_symlinks* 引数の使用を許可するかを示す、:class:`~collections.abc.Set` オブジェクト。異なるプラットフォームでは、異なる機能を持ち、あるプラットフォームで動作するオプションが、別のプラットフォームでは動作しない場合があります。一貫性を保つため、 *follow_symlinks* をサポートする関数は常に引数の指定を許可しますが、機能が実際に使用できない場合には、例外を送出します。"
 
 #: ../../library/os.rst:2408
 msgid ""

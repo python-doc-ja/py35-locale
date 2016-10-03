@@ -6,12 +6,13 @@
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 10:21+0000\n"
-"Last-Translator: Shun Sakurai\n"
+"PO-Revision-Date: 2016-10-03 14:22+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -388,7 +389,7 @@ msgid ""
 "default *copy_function* is :func:`copy2`.  Using :func:`copy` as the "
 "*copy_function* allows the move to succeed when it is not possible to also "
 "copy the metadata, at the expense of not copying any of the metadata."
-msgstr "*copy_function* を指定する場合、 *src* と *dst* の 2 つの引数を持つ呼び出し可能オブジェクトにする必要があります。この関数は、:func:`os.rename` を使用できない場合に *src* を *dest* にコピーするために使用されます。ソースがディレクトリの場合、 :func:`copytree` が呼び出され、ディレクトリを :func:`copy_function` に渡します。デフォルトの  *copy_function* は :func:`copy2`です。:func:`copy` を *copy_function* として使用すると、メタデータをともにコピーすることができない場合に移動を成功させることができます。この場合、メタデータはまったくコピーされません。"
+msgstr "*copy_function* を指定する場合、 *src* と *dst* の 2 つの引数を持つ呼び出し可能オブジェクトにする必要があります。この関数は、:func:`os.rename` を使用できない場合に *src* を *dest* にコピーするために使用されます。ソースがディレクトリの場合、 :func:`copytree` が呼び出され、ディレクトリを :func:`copy_function` に渡します。デフォルトの  *copy_function* は :func:`copy2` です。:func:`copy` を *copy_function* として使用すると、メタデータをともにコピーすることができない場合に移動を成功させることができます。この場合、メタデータはまったくコピーされません。"
 
 #: ../../library/shutil.rst:309
 msgid ""

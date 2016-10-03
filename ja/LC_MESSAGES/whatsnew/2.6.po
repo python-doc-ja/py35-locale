@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-26 05:33+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 14:24+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1324,7 +1325,7 @@ msgid ""
 "have :meth:`keys`, :meth:`values`, and :meth:`items` methods?  What about "
 "the iterative variants  such as :meth:`iterkeys`?  :meth:`copy` and "
 ":meth:`update`?  Iterating over the object with :func:`iter`?"
-msgstr "あなたがなにか特別なクラスを持っていて、辞書スタイルのアクセスをサポートするのか知りたいとしましょう。「辞書スタイル」ってなんでしょうね、それにしても。たぶんアイテムにアクセスするのに ``obj[1]`` が使えるでしょう。それは ``obj[2] = value`` のように値をセットするのも含まれるでしょうね? あるいは :meth:`keys`, :meth:`values`, :meth:`items` メソッドを持ちますかね? :meth:`iterkeys`　みたいな列挙系はいかがでしょう? :meth:`copy` と :meth:`update` は? オブジェクトを巡回するのに :func:`iter` で出来ます?"
+msgstr "あなたがなにか特別なクラスを持っていて、辞書スタイルのアクセスをサポートするのか知りたいとしましょう。「辞書スタイル」ってなんでしょうね、それにしても。たぶんアイテムにアクセスするのに ``obj[1]`` が使えるでしょう。それは ``obj[2] = value`` のように値をセットするのも含まれるでしょうね? あるいは :meth:`keys`, :meth:`values`, :meth:`items` メソッドを持ちますかね? :meth:`iterkeys` みたいな列挙系はいかがでしょう? :meth:`copy` と :meth:`update` は? オブジェクトを巡回するのに :func:`iter` で出来ます?"
 
 #: ../../whatsnew/2.6.rst:1184
 msgid ""

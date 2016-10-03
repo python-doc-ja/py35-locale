@@ -4,12 +4,13 @@
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-26 02:56+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 14:44+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -212,7 +213,7 @@ msgid ""
 " no queen threatens another) and the Knight's Tour (a route that takes a "
 "knight to every square of an $NxN$ chessboard without visiting any square "
 "twice)."
-msgstr "ほかにも:file:`Lib/test/test_generators.py` には、N-Queens 問題 (N×N コマのチェス盤に、互いに攻撃できないような配置で N 個のクイーンを置く) やナイト・ツアー (N×N 盤の全コマをナイトが一度ずつ通るような経路を探す) の解を出す例が入っています。"
+msgstr "ほかにも :file:`Lib/test/test_generators.py` には、N-Queens 問題 (N×N コマのチェス盤に、互いに攻撃できないような配置で N 個のクイーンを置く) やナイト・ツアー (N×N 盤の全コマをナイトが一度ずつ通るような経路を探す) の解を出す例が入っています。"
 
 #: ../../whatsnew/2.3.rst:220
 msgid ""

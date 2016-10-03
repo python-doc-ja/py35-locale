@@ -6,12 +6,13 @@
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Shun Sakurai, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 11:30+0000\n"
-"Last-Translator: Shun Sakurai\n"
+"PO-Revision-Date: 2016-10-03 14:39+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4378,7 +4379,7 @@ msgid ""
 "The example above shows part of the implementation of "
 ":class:`collections.Counter`.  A different ``__missing__`` method is used by"
 " :class:`collections.defaultdict`."
-msgstr "ここでお見せした例は :class:`collections.Counter` 実装の一部です。これとは違った ``__missing__`` が:class:`collections.defaultdict` で使われています。"
+msgstr "ここでお見せした例は :class:`collections.Counter` 実装の一部です。これとは違った ``__missing__`` が :class:`collections.defaultdict` で使われています。"
 
 #: ../../library/stdtypes.rst:4091
 msgid "Set ``d[key]`` to *value*."

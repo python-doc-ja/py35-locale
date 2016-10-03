@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 10:41+0000\n"
+"PO-Revision-Date: 2016-10-03 11:29+0000\n"
 "Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1159,7 +1159,7 @@ msgstr "短いオプション (1文字のオプション) では、オプショ�
 msgid ""
 "Several short options can be joined together, using only a single ``-`` "
 "prefix, as long as only the last option (or none of them) requires a value::"
-msgstr "最後の1つのオプションだけが値を要求する場合、または値を要求するオプションがない場合、複数の短いオプションは次のように1つの接頭辞 ``-`` だけで連結できます。"
+msgstr "最後の1つのオプションだけが値を要求する場合、または値を要求するオプションがない場合、複数の短いオプションは次のように1つの接頭辞 ``-`` だけで連結できます::"
 
 #: ../../library/argparse.rst:1371
 msgid "Invalid arguments"

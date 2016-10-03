@@ -4,12 +4,13 @@
 # 
 # Translators:
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 17:32+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 14:27+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -222,7 +223,7 @@ msgid ""
 " used, the relevant variable, in this case :attr:`args.verbosity`, is given "
 "``None`` as a value, which is the reason it fails the truth test of the "
 ":keyword:`if` statement."
-msgstr "optional 引数を指定せずにプログラムを実行したときにエラーにならないことから、このオプションの指定が任意（optional)であることがわかります。注意すべき点として、デフォルトでは、optional 引数が使用されないときは、関連する変数（このケースでは、 :attr:`args.verbosity`）の値に ``None`` が設定されることです。こうする理由は :keyword:`if` 文の真偽判定が偽を返すようにするためです。"
+msgstr "optional 引数を指定せずにプログラムを実行したときにエラーにならないことから、このオプションの指定が任意（optional)であることがわかります。注意すべき点として、デフォルトでは、optional 引数が使用されないときは、関連する変数（このケースでは、 :attr:`args.verbosity`) の値に ``None`` が設定されることです。こうする理由は :keyword:`if` 文の真偽判定が偽を返すようにするためです。"
 
 #: ../../howto/argparse.rst:263
 msgid "The help message is a bit different."
