@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-25 06:47+0000\n"
+"PO-Revision-Date: 2016-10-03 07:20+0000\n"
 "Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +136,7 @@ msgid ""
 " as the :attr:`~http.client.HTTPResponse.reason` attribute --- the reason "
 "phrase returned by server --- instead of the response headers as it is "
 "specified in the documentation for :class:`~http.client.HTTPResponse`."
-msgstr ""
+msgstr "HTTP および HTTPS URL の場合、この関数は、わずかに修正された :class:`http.client.HTTPResponse` オブジェクトを返します。上記の3つの新しいメソッドに加えて、 msg 属性が :class:`~http.client.HTTPResponse` のドキュメンテーションで指定されているレスポンスヘッダーの代わりに :attr:`~http.client.HTTPResponse.reason` 属性 --- サーバーから返された reason フレーズ --- と同じ情報を含んでいます。"
 
 #: ../../library/urllib.request.rst:86
 msgid ""
@@ -266,7 +266,7 @@ msgid ""
 "header. If you need to use an HTTP proxy in a CGI environment, either use "
 "``ProxyHandler`` explicitly, or make sure the variable name is in lowercase "
 "(or at least the ``_proxy`` suffix)."
-msgstr ""
+msgstr "もし環境変数 ``REQUEST_METHOD`` が設定されていたら (これは通常スクリプトが CGI 環境で動いていることを示しています)、環境変数 ``HTTP_PROXY`` (大文字の ``_PROXY``) は無視されます。その理由は、クライアントが \"Proxy:\" HTTP ヘッダーを使ってこの環境変数を注入できるからです。もし CGI 環境で HTTP プロキシを使う必要があれば、 ``ProxyHandler`` を明示的に使用するか、環境変数名を小文字にしてください (あるいは、少なくともサフィックスを ``_proxy`` にしてください) 。"
 
 #: ../../library/urllib.request.rst:187
 msgid "The following classes are provided:"
@@ -351,7 +351,7 @@ msgstr "引数 :attr:`Request.method` が Request クラスに追加されまし
 
 #: ../../library/urllib.request.rst:244
 msgid "Default :attr:`Request.method` may be indicated at the class level."
-msgstr ""
+msgstr ":attr:`Request.method` のデフォルト値はクラスレベルで指定されることがあります。"
 
 #: ../../library/urllib.request.rst:250
 msgid ""
