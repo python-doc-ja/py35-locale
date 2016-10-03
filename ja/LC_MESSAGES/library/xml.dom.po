@@ -5,12 +5,13 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:45+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 16:32+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1311,7 +1312,7 @@ msgid ""
 "The mapping from OMG IDL to Python defines accessor functions for IDL "
 "``attribute`` declarations in much the way the Java mapping does. Mapping "
 "the IDL declarations ::"
-msgstr "OMG IDL から Python への対応付けは、IDL `attribute` 宣言へのアクセサ関数の定義を、Java による対応付けが行うのとほとんど同じように行います。IDL 宣言の対応付け ::"
+msgstr "OMG IDL から Python への対応付けは、IDL ``attribute`` 宣言へのアクセサ関数の定義を、Java による対応付けが行うのとほとんど同じように行います。IDL 宣言の対応付け ::"
 
 #: ../../library/xml.dom.rst:1008
 msgid ""

@@ -5,13 +5,14 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2015
-# tomo <cocoatomo77@gmail.com>, 2015
+# tomo, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-03 00:00+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 17:35+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1159,7 +1160,7 @@ msgstr "この関数は :func:`testmod` と同じ検索方法を使います。"
 msgid ""
 ":func:`DocTestSuite` returns an empty :class:`unittest.TestSuite` if "
 "*module* contains no docstrings instead of raising :exc:`ValueError`."
-msgstr "もし*module*が、実行結果ValueErrorをあげる代わりに、何もdocstringsを含んでいない場合には。関数DocTestSuiteは、空のunittest.TestSuiteクラスを返します。"
+msgstr "*module* がドキュメンテーション文字列を含まない場合には、 :func:`DocTestSuite` は :exc:`ValueError` を送出するのではなく空の  :class:`unittest.TestSuite` を返します。"
 
 #: ../../library/doctest.rst:1073
 msgid ""

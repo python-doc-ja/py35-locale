@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-05 12:46+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 16:45+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -552,7 +553,7 @@ msgid ""
 "For a mock object with a :attr:`spec`, ``__class__`` returns the spec class "
 "instead. This allows mock objects to pass :func:`isinstance` tests for the "
 "object they are replacing / masquerading as:"
-msgstr "通常、オブジェクトの :attr:`__class__` 属性はその型を返します。 :attr:`spec` を設定したオブジェクトの場合、 `__class__` は代わりに :attr:`spec` のクラスを返します。これにより、置き換え / 偽装しているオブジェクトに対する :func:`isinstance` も通過することができます:"
+msgstr "通常、オブジェクトの :attr:`__class__` 属性はその型を返します。 :attr:`spec` を設定したオブジェクトの場合、 ``__class__`` は代わりに :attr:`spec` のクラスを返します。これにより、置き換え / 偽装しているオブジェクトに対する :func:`isinstance` も通過することができます:"
 
 #: ../../library/unittest.mock.rst:658
 msgid ""

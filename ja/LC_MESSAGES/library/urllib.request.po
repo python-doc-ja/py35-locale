@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 08:08+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 16:38+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -407,7 +408,7 @@ msgstr ":envvar:`no_proxy` 環境変数は、proxyを利用せずにアクセス
 msgid ""
 "``HTTP_PROXY`` will be ignored if a variable ``REQUEST_METHOD`` is set; see "
 "the documentation on :func:`~urllib.request.getproxies`."
-msgstr "もし変数 ``REQUEST_METHOD`` が設定されていたら ``HTTP_PROXY`` は無視されます; urllib.request.getproxies のドキュメンテーションを見てください。"
+msgstr "変数 ``REQUEST_METHOD`` が設定されている場合、 ``HTTP_PROXY`` は無視されます; :func:`~urllib.request.getproxies` のドキュメンテーションを参照してください。"
 
 #: ../../library/urllib.request.rst:301
 msgid "Keep a database of  ``(realm, uri) -> (user, password)`` mappings."

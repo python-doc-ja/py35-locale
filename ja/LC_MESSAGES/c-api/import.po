@@ -5,12 +5,13 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-01 13:45+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 15:45+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -242,7 +243,7 @@ msgid ""
 "finder for this path item. Cache the result in "
 ":data:`sys.path_importer_cache`. Return a new reference to the finder "
 "object."
-msgstr ""
+msgstr ":data:`sys.path` もしくは :attr:`pkg.__path__` の要素である *path* を見付けるためのオブジェクトを返します。場合によっては :data:`sys.path_importer_cache` 辞書から取得することもあります。\nもしまだオブジェクトがキャッシュされていなかった場合は、 path 要素を扱えるフックが見付かるまで :data:`sys.path_hooks` を走査します。\nどのフックも path 要素を扱えない場合は ``None`` を返します; これにより、 :term:`path based finder` がこの path 要素を見付けるためのオブジェクトが得られなかったことを呼び出し元に伝えます。\n最終的に得られたオブジェクトを :data:`sys.path_importer_cache` へキャッシュし、オブジェクトへの新たな参照を返します。"
 
 #: ../../c-api/import.rst:221
 msgid "Initialize the import mechanism.  For internal use only."

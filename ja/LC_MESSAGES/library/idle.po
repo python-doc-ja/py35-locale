@@ -7,12 +7,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:52+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-03 17:22+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1086,7 +1087,7 @@ msgid ""
 "items (e.g. from foo import baz) if the changes are to take effect.  For "
 "these reasons, it is preferable to run IDLE with the default subprocess if "
 "at all possible."
-msgstr "IDLE を ``-n`` コマンドラインスイッチを使って開始した場合、IDLE は単一のプロセス内で動作し、RPC Python 実行サーバを走らせるサブプロセスを作りません。これは、プラットフォーム上で Python がサブプロセスや RPC ソケットインターフェイスを作れない場合に有用かもしれません。ただし、このモードではユーザコードが IDLE 自身から隔離されませんし、Run/Run Module (F5) 選択時に環境が再起動されてまっさらな状態になることもありません。コードを変更した場合、影響するモジュールを reload() しないといけませんし、変更を反映するには、すべての特定の項目 (``from foo import baz`` など) を再インポートしないといけません。これらの理由から、可能なら常にデフォルトのサブプロセスを起こすモードで IDLE を起動するのが吉です。"
+msgstr "IDLE を ``-n`` コマンドラインスイッチを使って開始した場合、IDLE は単一のプロセス内で動作し、RPC Python 実行サーバを走らせるサブプロセスを作りません。これは、プラットフォーム上で Python がサブプロセスや RPC ソケットインターフェイスを作れない場合に有用かもしれません。ただし、このモードではユーザコードが IDLE 自身から隔離されませんし、Run/Run Module (F5) 選択時に環境が再起動されてまっさらな状態になることもありません。コードを変更した場合、影響するモジュールを reload() しないといけませんし、変更を反映するには、すべての特定の項目 (``from foo import baz`` など) を再インポートしないといけません。これらの理由から、可能なら常にデフォルトのサブプロセスを起こすモードで IDLE を起動するのが吉です。"
 
 #: ../../library/idle.rst:605
 msgid "Help and preferences"
