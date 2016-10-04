@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-26 02:20+0000\n"
+"PO-Revision-Date: 2016-10-04 03:08+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1033,7 +1033,7 @@ msgid ""
 "would no changing this while preserving backward compatibility, since all "
 "logging calls which are out there in existing code will be using %-format "
 "strings."
-msgstr "logging の呼び出し (`:meth:`~Logger.debug`, :meth:`~Logger.info`  など) は、ログメッセージのために位置引数しか受け取らず、キーワード引数はそれを処理するときのオプションを指定するためだけに使われます。 (例えば、 ``exc_info`` キーワード引数を使ってログを取るトレースバック情報を指定したり、 ``extra`` キーワード引数を使ってログに付与する追加のコンテキスト情報を指定します。)logging パッケージは内部で % を使って format 文字列と引数をマージしているので、 :meth:`str.format` や :class:`string.Template` を使って logging を呼び出す事はできません。既存の logging 呼び出しは %-format を使っているので、後方互換性のためにこの部分を変更することはできません。"
+msgstr "logging の呼び出し (:meth:`~Logger.debug`, :meth:`~Logger.info`  など) は、ログメッセージのために位置引数しか受け取らず、キーワード引数はそれを処理するときのオプションを指定するためだけに使われます。 (例えば、 ``exc_info`` キーワード引数を使ってログを取るトレースバック情報を指定したり、 ``extra`` キーワード引数を使ってログに付与する追加のコンテキスト情報を指定します。)logging パッケージは内部で % を使って format 文字列と引数をマージしているので、 :meth:`str.format` や :class:`string.Template` を使って logging を呼び出す事はできません。既存の logging 呼び出しは %-format を使っているので、後方互換性のためにこの部分を変更することはできません。"
 
 #: ../../howto/logging-cookbook.rst:1930
 msgid ""

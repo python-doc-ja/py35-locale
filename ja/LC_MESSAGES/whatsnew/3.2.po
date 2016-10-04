@@ -4,13 +4,14 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-26 05:32+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-04 03:20+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2099,7 +2100,7 @@ msgid ""
 "n``.  The functions and methods affected are :func:`~random.randrange`, "
 ":func:`~random.randint`, :func:`~random.choice`, :func:`~random.shuffle` and"
 " :func:`~random.sample`."
-msgstr ":mod:`random` モジュールの整数メソッドの一様分布の生成が改善されました。\n以前は ``int(n*random())`` を計算していました。\nこの方法では *n* が2の冪乗でない限り僅かにバイアスがあります。\n現在の方法では次の2の冪乗の範囲まで複数の選択肢を作成し、``0 <= x < n`` の範囲に入ったもののみを保持します。\n影響を受ける関数やメソッドは :func:`~random.randrange`、:func:`~random.randint``、:func:`~random.choice`、:func:`~random.shuffle` ならびに :func:`~random.sample` です。"
+msgstr ":mod:`random` モジュールの整数メソッドの一様分布の生成が改善されました。\n以前は ``int(n*random())`` を計算していました。\nこの方法では *n* が2の冪乗でない限り僅かにバイアスがあります。\n現在の方法では次の2の冪乗の範囲まで複数の選択肢を作成し、``0 <= x < n`` の範囲に入ったもののみを保持します。\n影響を受ける関数やメソッドは :func:`~random.randrange`、:func:`~random.randint`、:func:`~random.choice`、:func:`~random.shuffle` ならびに :func:`~random.sample` です。"
 
 #: ../../whatsnew/3.2.rst:1837
 msgid "(Contributed by Raymond Hettinger; :issue:`9025`.)"
