@@ -4,13 +4,14 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-26 05:32+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-10-04 13:09+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -306,7 +307,7 @@ msgid ""
 "Python 3.0, whereas in 2.6, ``ur'\\u20ac'`` was the single \"euro\" "
 "character.  (Of course, this change only affects raw string literals; the "
 "euro character is ``'\\u20ac'`` in Python 3.0.)"
-msgstr "raw 文字列リテラル内にある全てのバックスラッシュが「字句通り」に解釈されます。つまり ``'\\U'`` も ``'\\u'`` も、 raw 文字列内にあっては何ら特別に扱われないということです。例えば ``r'\\u20ac'`` は Python 3.0 では 6 文字の文字列です。Python 2.x では``ur'\\u20ac'`` が単一の「ユーロ」文字であったのにです。(無論この変更は raw 文字列リテラルについてだけのもので、ユーロ文字は Python 3.0 で ``'\\u20ac'`` です。)"
+msgstr "raw 文字列リテラル内にある全てのバックスラッシュが「字句通り」に解釈されます。つまり ``'\\U'`` も ``'\\u'`` も、 raw 文字列内にあっては何ら特別に扱われないということです。例えば ``r'\\u20ac'`` は Python 3.0 では 6 文字の文字列です。Python 2.x では ``ur'\\u20ac'`` が単一の「ユーロ」文字であったのにです。(無論この変更は raw 文字列リテラルについてだけのもので、ユーロ文字は Python 3.0 で ``'\\u20ac'`` です。)"
 
 #: ../../whatsnew/3.0.rst:281
 msgid ""

@@ -5,12 +5,13 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-04 23:28+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-04 11:36+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -459,7 +460,7 @@ msgid ""
 "but equivalent, function calls.  When needed, the appropriate ``import`` "
 "statements are added, e.g. ``import collections``.  The following mapping "
 "are made:"
-msgstr "関数の呼び出しは、 :mod:`operator` モジュール内のさまざまな関数を、他の、しかし機能的には同等の関数の呼び出しに変換します。必要に応じて、適切な``import``ステートメントが追加されます。例``import collections``など。以下のマッピングが行われます。"
+msgstr "関数の呼び出しは、 :mod:`operator` モジュール内のさまざまな関数を、他の、しかし機能的には同等の関数の呼び出しに変換します。必要に応じて、適切な ``import`` ステートメントが追加されます。例 ``import collections`` など。以下のマッピングが行われます。"
 
 #: ../../library/2to3.rst:360
 msgid "``operator.isCallable(obj)``"
