@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-03 08:54+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 05:28+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -208,7 +209,7 @@ msgid ""
 "member with a function defined in another C module, so, instead, we'll "
 "assign the :c:member:`~PyTypeObject.tp_new` slot in the module "
 "initialization function just before calling :c:func:`PyType_Ready`::"
-msgstr "とりあえずやりたいのは、この :class:`Noddy` オブジェクトを新しく作れるようにすることです。オブジェクトの作成を許可するには、 :c:member:`~PyTypeObject.tp_new` の実装を提供する必要があります。今回は、 API 関数によって提供されるデフォルトの実装 :c:func:`PyType_GenericNew` を使うだけにしましょう。これを単に :c:member:`~PyTypeObject.tp_new` スロットに代入すればよいのですが、これは互換上の理由からできません。プラットフォームやコンパイラによっては、構造体メンバの初期化に別の場所で定義されている C の関数を代入することはできないのです。なので、この :c:member:`~PyTypeObject.tp_new` の値はモジュール初期化用の関数で代入します。 :c:func:`PyType_Ready` を呼ぶ直前です::"
+msgstr "とりあえずやりたいのは、この :class:`Noddy` オブジェクトを新しく作れるようにすることです。\nオブジェクトの作成を許可するには、 :c:member:`~PyTypeObject.tp_new` の実装を提供する必要があります。\n今回は、 API 関数によって提供されるデフォルトの実装 :c:func:`PyType_GenericNew` を使うだけにしましょう。\nこれを単に :c:member:`~PyTypeObject.tp_new` スロットに代入すればよいのですが、これは互換上の理由からできません。プラットフォームやコンパイラによっては、構造体メンバの初期化に別の場所で定義されている C の関数を代入することはできないのです。なので、この :c:member:`~PyTypeObject.tp_new` の値はモジュール初期化用の関数で代入します。\n:c:func:`PyType_Ready` を呼ぶ直前です::"
 
 #: ../../extending/newtypes.rst:189
 msgid ""

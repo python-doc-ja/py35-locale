@@ -1,16 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # Shun Sakurai, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-07-26 16:20+0000\n"
-"Last-Translator: tomo <cocoatomo77@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 05:17+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,30 +129,30 @@ msgid ""
 "the insertion."
 msgstr "これは Python レベルの :meth:`dict.setdefault` と同じです。\nもしあれば、辞書 *p* から *key* に対応する値を返します。\nキーが辞書になければ、値 *defaultobj* を挿入し *defaultobj* を返します。\nこの関数は、 *key* のハッシュ値を検索と挿入ごとに別々に評価するのではなく、一度だけしか評価しません。"
 
-#: ../../c-api/dict.rst:124
+#: ../../c-api/dict.rst:125
 msgid ""
 "Return a :c:type:`PyListObject` containing all the items from the "
 "dictionary."
 msgstr "辞書内の全ての要素対が入った :c:type:`PyListObject` を返します。"
 
-#: ../../c-api/dict.rst:129
+#: ../../c-api/dict.rst:130
 msgid ""
 "Return a :c:type:`PyListObject` containing all the keys from the dictionary."
 msgstr "辞書内の全てのキーが入った :c:type:`PyListObject` を返します。"
 
-#: ../../c-api/dict.rst:134
+#: ../../c-api/dict.rst:135
 msgid ""
 "Return a :c:type:`PyListObject` containing all the values from the "
 "dictionary *p*."
 msgstr "辞書 *p* 内の全ての値が入った :c:type:`PyListObject` を返します。"
 
-#: ../../c-api/dict.rst:142
+#: ../../c-api/dict.rst:143
 msgid ""
 "Return the number of items in the dictionary.  This is equivalent to "
 "``len(p)`` on a dictionary."
 msgstr "辞書内の要素の数を返します。辞書に対して ``len(p)`` を実行するのと同じです。"
 
-#: ../../c-api/dict.rst:148
+#: ../../c-api/dict.rst:149
 msgid ""
 "Iterate over all key-value pairs in the dictionary *p*.  The "
 ":c:type:`Py_ssize_t` referred to by *ppos* must be initialized to ``0`` "
@@ -163,20 +164,20 @@ msgid ""
 "through them are borrowed.  *ppos* should not be altered during iteration. "
 "Its value represents offsets within the internal dictionary structure, and "
 "since the structure is sparse, the offsets are not consecutive."
-msgstr "辞書 *p* 内の全てのキー/値のペアにわたる反復処理を行います。 *ppos* が参照している :c:type:`Py_ssize_t` 型は、この関数で反復処理を開始する際に、最初に関数を呼び出すよりも前に ``0`` に初期化しておかなければなりません; この関数は辞書内の各ペアを取り上げるごとに真を返し、全てのペアを取り上げたことが分かると偽を返します。パラメタ *pkey* および *pvalue* には、それぞれ辞書の各々のキーと値を指すポインタか、または *NULL* が入ります。この関数から返される参照はすべて借りた参照になります。反復処理中に *ppos* を変更してはなりません。この値は内部的な辞書構造体のオフセットを表現しており、構造体はスパースなので、オフセットの値に一貫性がないためです。"
+msgstr "辞書 *p* 内の全てのキー/値のペアにわたる反復処理を行います。 *ppos* が参照している :c:type:`Py_ssize_t` 型は、この関数で反復処理を開始する際に、最初に関数を呼び出すよりも前に ``0`` に初期化しておかなければなりません; この関数は辞書内の各ペアを取り上げるごとに真を返し、全てのペアを取り上げたことが分かると偽を返します。パラメタ *pkey* および *pvalue* には、それぞれ辞書の各々のキーと値が埋められた :c:type:`PyObject\\*` 変数を指すポインタか、または *NULL* が入ります。この関数から返される参照はすべて借用参照になります。反復処理中に *ppos* を変更してはなりません。この値は内部的な辞書構造体のオフセットを表現しており、構造体はスパースなので、オフセットの値に一貫性がないためです。"
 
-#: ../../c-api/dict.rst:159
+#: ../../c-api/dict.rst:160
 msgid "For example::"
 msgstr "例えば::"
 
-#: ../../c-api/dict.rst:169
+#: ../../c-api/dict.rst:170
 msgid ""
 "The dictionary *p* should not be mutated during iteration.  It is safe to "
 "modify the values of the keys as you iterate over the dictionary, but only "
 "so long as the set of keys does not change.  For example::"
 msgstr "反復処理中に辞書 *p* を変更してはなりません。辞書を反復処理する際に、キーに対応する値を変更しても大丈夫になりましたが、キーの集合を変更しないことが前提です。以下に例を示します::"
 
-#: ../../c-api/dict.rst:194
+#: ../../c-api/dict.rst:195
 msgid ""
 "Iterate over mapping object *b* adding key-value pairs to dictionary *a*. "
 "*b* may be a dictionary, or any object supporting :c:func:`PyMapping_Keys` "
@@ -186,7 +187,7 @@ msgid ""
 " or ``-1`` if an exception was raised."
 msgstr "マップ型オブジェクト *b* の全ての要素にわたって、反復的にキー/値のペアを辞書 *a* に追加します。 *b* は辞書か、 :c:func:`PyMapping_Keys` または :c:func:`PyObject_GetItem` をサポートする何らかのオブジェクトにできます。 *override* が真ならば、 *a* のキーと一致するキーが *b* にある際に、既存のペアを置き換えます。それ以外の場合は、 *b* のキーに一致するキーが *a* にないときのみ追加を行います。成功した場合には ``0`` を返し、例外が送出された場合には ``-1`` を返します。"
 
-#: ../../c-api/dict.rst:204
+#: ../../c-api/dict.rst:205
 msgid ""
 "This is the same as ``PyDict_Merge(a, b, 1)`` in C, and is similar to "
 "``a.update(b)`` in Python except that :c:func:`PyDict_Update` doesn't fall "
@@ -195,7 +196,7 @@ msgid ""
 " exception was raised."
 msgstr "C で表せば ``PyDict_Merge(a, b, 1)`` と同じで、また Python の ``a.update(b)`` と似ていますが、 :c:func:`PyDict_Update` は第二引数が \"keys\" 属性を持たない場合にキー/値ペアのシーケンスを反復することはありません。成功した場合には ``0`` を返し、例外が送出された場合には ``-1`` を返します。"
 
-#: ../../c-api/dict.rst:213
+#: ../../c-api/dict.rst:214
 msgid ""
 "Update or merge into dictionary *a*, from the key-value pairs in *seq2*. "
 "*seq2* must be an iterable object producing iterable objects of length 2, "
@@ -205,6 +206,6 @@ msgid ""
 "value)::"
 msgstr "*seq2* 内のキー/値ペアを使って、辞書 *a* の内容を更新したり統合したりします。*seq2* は、キー/値のペアとみなせる長さ 2 の反復可能オブジェクト(iterable object) を生成する反復可能オブジェクトでなければなりません。重複するキーが存在する場合、*override* が真ならば先に出現したキーを使い、そうでない場合は後に出現したキーを使います。成功した場合には ``0`` を返し、例外が送出された場合には ``-1`` を返します。(戻り値以外は) 等価な Python コードを書くと、以下のようになります::"
 
-#: ../../c-api/dict.rst:228
+#: ../../c-api/dict.rst:229
 msgid "Clear the free list. Return the total number of freed items."
 msgstr "free list をクリアします。解放された要素数を返します。"
