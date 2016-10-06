@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2015, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-28 15:21+0900\n"
-"PO-Revision-Date: 2015-12-28 07:15+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-10-06 10:32+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../tutorial/venv.rst:6
+#: ../../tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
 msgstr "仮想環境とパッケージ"
 
-#: ../tutorial/venv.rst:9
+#: ../../tutorial/venv.rst:9
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../tutorial/venv.rst:11
+#: ../../tutorial/venv.rst:11
 msgid ""
 "Python applications will often use packages and modules that don't come as "
 "part of the standard library.  Applications will sometimes need a specific "
@@ -34,7 +34,7 @@ msgid ""
 "version of the library's interface."
 msgstr "Python アプリケーションはよく標準ライブラリ以外のパッケージやモジュールを利用します。またアプリケーションがあるバグ修正を必要としていたり、過去のバージョンのインターフェイスに依存しているために、ライブラリの特定のバージョンを必要とすることもあります。"
 
-#: ../tutorial/venv.rst:17
+#: ../../tutorial/venv.rst:17
 msgid ""
 "This means it may not be possible for one Python installation to meet the "
 "requirements of every application.  If application A needs version 1.0 of a "
@@ -43,7 +43,7 @@ msgid ""
 "application unable to run."
 msgstr "そのため、1つのインストールされたPythonが全てのアプリケーションの要求に対応することは不可能です。もしアプリケーションAがあるモジュールのバージョン 1.0 を要求していて、別のアプリケーションBが同じモジュールのバージョン 2.0 を要求している場合、2つの要求は衝突していて、1.0 と 2.0 のどちらかのバージョンをインストールしても片方のアプリケーションが動きません。"
 
-#: ../tutorial/venv.rst:23
+#: ../../tutorial/venv.rst:23
 msgid ""
 "The solution for this problem is to create a :term:`virtual environment` "
 "(often shortened to \"virtualenv\"), a self-contained directory tree that "
@@ -51,7 +51,7 @@ msgid ""
 "number of additional packages."
 msgstr "この問題の解決策は 仮想環境 (:term:`virtual environment`, 一般的に \"virtualenv\" と略す) を作ることです。仮想環境とは、特定のバージョンの Python と幾つかの追加パッケージを含んだ Python インストールを構成するディレクトリです。"
 
-#: ../tutorial/venv.rst:28
+#: ../../tutorial/venv.rst:28
 msgid ""
 "Different applications can then use different virtual environments. To "
 "resolve the earlier example of conflicting requirements, application A can "
@@ -61,11 +61,11 @@ msgid ""
 "application A's environment."
 msgstr "別のアプリケーションはそれぞれ別の仮想環境を使うことができます。先の例にあった要求の衝突を解決する場合、アプリケーションAが固有の仮想環境を持ってそこにライブラリのバージョン 1.0 をインストールし、アプリケーションBが持つ別の仮想環境にライブラリのバージョン 2.0 をインストールすることができます。そしてアプリケーションBがライブラリのバージョンを 3.0 に更新することを要求する場合も、アプリケーションAに影響しません。"
 
-#: ../tutorial/venv.rst:37
+#: ../../tutorial/venv.rst:37
 msgid "Creating Virtual Environments"
 msgstr "仮想環境の作成"
 
-#: ../tutorial/venv.rst:39
+#: ../../tutorial/venv.rst:39
 msgid ""
 "The script used to create and manage virtual environments is called "
 ":program:`pyvenv`.  :program:`pyvenv` will usually install the most recent "
@@ -75,39 +75,39 @@ msgid ""
 "whichever version you want."
 msgstr "仮想環境の作成と管理を行うためのスクリプトが :program:`pyvenv` です。 :program:`pyvenv` は通常利用可能なもっとも新しいバージョンの Python をインストールします。このスクリプトはバージョン番号のサフィックス付きでもインストールされています。なので、複数のバージョンの Python がインストールされていてそのうち特定の Python バージョンを利用したい場合は、 ``pyvenv-3.4`` のようなスクリプトを実行することで利用したいバージョンを指定します。"
 
-#: ../tutorial/venv.rst:46
+#: ../../tutorial/venv.rst:46
 msgid ""
 "To create a virtualenv, decide upon a directory where you want to place it "
 "and run :program:`pyvenv` with the directory path::"
 msgstr "仮想環境を作るには、仮想環境を置くディレクトリを決めて、 :program:`pyvenv` にそのディレクトリのパスを指定して実行します::"
 
-#: ../tutorial/venv.rst:52
+#: ../../tutorial/venv.rst:52
 msgid ""
 "This will create the ``tutorial-env`` directory if it doesn't exist, and "
 "also create directories inside it containing a copy of the Python "
 "interpreter, the standard library, and various supporting files."
 msgstr "これは ``tutorial-env`` ディレクトリがなければ作成して、その中に Python インタプリタ、標準ライブラリ、その他関連するファイルを含むサブディレクトリを作ります。"
 
-#: ../tutorial/venv.rst:56
+#: ../../tutorial/venv.rst:56
 msgid "Once you've created a virtual environment, you need to activate it."
 msgstr "仮想環境を作ったら、それを有効化する必要があります。"
 
-#: ../tutorial/venv.rst:59
+#: ../../tutorial/venv.rst:59
 msgid "On Windows, run::"
 msgstr "Windows の場合::"
 
-#: ../tutorial/venv.rst:63
+#: ../../tutorial/venv.rst:63
 msgid "On Unix or MacOS, run::"
 msgstr "Unix や Mac OS の場合::"
 
-#: ../tutorial/venv.rst:67
+#: ../../tutorial/venv.rst:67
 msgid ""
 "(This script is written for the bash shell.  If you use the :program:`csh` "
 "or :program:`fish` shells, there are alternate ``activate.csh`` and "
 "``activate.fish`` scripts you should use instead.)"
 msgstr "(このスクリプトは bash shell で書かれています。 :program:`csh` や :program:`fish` を利用している場合、代わりに利用できる ``activate.csh`` と ``activate.fish`` スクリプトがあります。)"
 
-#: ../tutorial/venv.rst:72
+#: ../../tutorial/venv.rst:72
 msgid ""
 "Activating the virtualenv will change your shell's prompt to show what "
 "virtualenv you're using, and modify the environment so that running "
@@ -115,11 +115,11 @@ msgid ""
 "  For example::"
 msgstr "仮想環境を有効化したら、シェルのプロンプトが利用中の仮想環境を示すように変更され、``python`` がその仮想環境の Python を実行するように環境を修正します::"
 
-#: ../tutorial/venv.rst:89
+#: ../../tutorial/venv.rst:89
 msgid "Managing Packages with pip"
 msgstr "pip を使ったパッケージ管理"
 
-#: ../tutorial/venv.rst:91
+#: ../../tutorial/venv.rst:91
 msgid ""
 "Once you've activated a virtual environment, you can install, upgrade, and "
 "remove packages using a program called :program:`pip`.  By default ``pip`` "
@@ -127,28 +127,28 @@ msgid ""
 "<https://pypi.python.org/pypi>.  You can browse the Python Package Index by "
 "going to it in your web browser, or you can use ``pip``'s limited search "
 "feature::"
-msgstr "仮想環境を有効化したら、 :program:`pip` と呼ばれるプログラムでパッケージをインストール、アップグレード、削除することができます。デフォルトでは ``pip`` は Python Package Index <https://pypi.python.org/pypy> からパッケージをインストールします。ブラウザで Python Package Index をブラウズすることもできますし、 ``pip`` の限定的な検索機能を使うこともできます::"
+msgstr "仮想環境を有効化したら、 :program:`pip` と呼ばれるプログラムでパッケージをインストール、アップグレード、削除することができます。デフォルトでは ``pip`` は Python Package Index <https://pypi.python.org/pypi> からパッケージをインストールします。ブラウザで Python Package Index をブラウズすることもできますし、 ``pip`` の限定的な検索機能を使うこともできます::"
 
-#: ../tutorial/venv.rst:106
+#: ../../tutorial/venv.rst:106
 msgid ""
 "``pip`` has a number of subcommands: \"search\", \"install\", \"uninstall\","
 " \"freeze\", etc.  (Consult the :ref:`installing-index` guide for complete "
 "documentation for ``pip``.)"
 msgstr "``pip`` は \"search\", \"install\", \"uninstall\", \"freeze\" など、いくつかのサブコマンドを持っています。 (``pip`` の完全なドキュメントは :ref:`installing-index` ガイドを参照してください。)"
 
-#: ../tutorial/venv.rst:110
+#: ../../tutorial/venv.rst:110
 msgid ""
 "You can install the latest version of a package by specifying a package's "
 "name::"
 msgstr "パッケージ名を指定してそのパッケージの最新版をインストールすることができます::"
 
-#: ../tutorial/venv.rst:119
+#: ../../tutorial/venv.rst:119
 msgid ""
 "You can also install a specific version of a package by giving the package "
 "name  followed by ``==`` and the version number::"
 msgstr "パッケージ名のあとに ``==`` とバージョン番号を付けることで、特定のバージョンのパッケージをインストールすることもできます::"
 
-#: ../tutorial/venv.rst:128
+#: ../../tutorial/venv.rst:128
 msgid ""
 "If you re-run this command, ``pip`` will notice that the requested version "
 "is already installed and do nothing.  You can supply a different version "
@@ -156,37 +156,37 @@ msgid ""
 "upgrade the package to the latest version::"
 msgstr "同じコマンドを再び実行した場合、``pip`` は要求されたバージョンがインストール済みだと表示して何もしません。別のバージョン番号を指定すればそのバージョンをインストールしますし、``pip install --upgrade`` を実行すればそのパッケージを最新版に更新します::"
 
-#: ../tutorial/venv.rst:141
+#: ../../tutorial/venv.rst:141
 msgid ""
 "``pip uninstall`` followed by one or more package names will remove the "
 "packages from the virtual environment."
 msgstr "``pip uninstall`` コマンドに削除するパッケージ名を1つ以上指定します。"
 
-#: ../tutorial/venv.rst:144
+#: ../../tutorial/venv.rst:144
 msgid "``pip show`` will display information about a particular package::"
 msgstr "``pip show`` は指定されたパッケージの情報を表示します::"
 
-#: ../tutorial/venv.rst:159
+#: ../../tutorial/venv.rst:159
 msgid ""
 "``pip list`` will display all of the packages installed in the virtual "
 "environment::"
 msgstr "``pip list`` は仮想環境にインストールされた全てのパッケージを表示します::"
 
-#: ../tutorial/venv.rst:169
+#: ../../tutorial/venv.rst:169
 msgid ""
 "``pip freeze`` will produce a similar list of the installed packages, but "
 "the output uses the format that ``pip install`` expects. A common convention"
 " is to put this list in a ``requirements.txt`` file::"
 msgstr "``pip freeze`` はインストールされたパッケージ一覧を、``pip install`` が解釈するフォーマットで生成します。一般的な慣習として、このリストを ``requirements.txt`` というファイルに保存します::"
 
-#: ../tutorial/venv.rst:179
+#: ../../tutorial/venv.rst:179
 msgid ""
 "The ``requirements.txt`` can then be committed to version control and "
 "shipped as part of an application.  Users can then install all the necessary"
 " packages with ``install -r``::"
 msgstr "``requirements.txt`` をバージョン管理システムにコミットして、アプリケーションの一部として配布することができます。ユーザーは必要なパッケージを ``install -r`` でインストールできます::"
 
-#: ../tutorial/venv.rst:194
+#: ../../tutorial/venv.rst:194
 msgid ""
 "``pip`` has many more options.  Consult the :ref:`installing-index` guide "
 "for complete documentation for ``pip``.  When you've written a package and "

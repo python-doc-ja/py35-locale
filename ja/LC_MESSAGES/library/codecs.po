@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-02 20:24+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 09:57+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -369,7 +370,7 @@ msgstr "不正な形式のデータを無視し、何も通知することなく
 msgid ""
 "The following error handlers are only applicable to :term:`text encodings "
 "<text encoding>`:"
-msgstr "以下のエラーハンドラは、:term:` テキストエンコーディング <text encoding>` にのみ適用されます。"
+msgstr "以下のエラーハンドラは、 :term:`テキストエンコーディング <text encoding>` にのみ適用されます。"
 
 #: ../../library/codecs.rst:309
 msgid "``'replace'``"
@@ -535,7 +536,7 @@ msgid ""
 " encoding>` only): substitutes ``'?'`` for encoding errors (to be encoded by"
 " the codec), and ``'\\ufffd'`` (the Unicode replacement character) for "
 "decoding errors."
-msgstr "``'replace'`` エラー処理を実装します (:term:` テキストエンコーディング <text encoding>` のみ)。(codec によりエンコードする必要のある) エンコードエラーに対しては ``'?'`` に、デコードエラーに対しては ``'\\ufffd'`` (Unicode 代替文字) に置き換えます。"
+msgstr "``'replace'`` エラー処理を実装します ( :term:`テキストエンコーディング <text encoding>` のみ)。(codec によりエンコードする必要のある) エンコードエラーに対しては ``'?'`` に、デコードエラーに対しては ``'\\ufffd'`` (Unicode 代替文字) に置き換えます。"
 
 #: ../../library/codecs.rst:414
 msgid ""
@@ -548,21 +549,21 @@ msgid ""
 "Implements the ``'xmlcharrefreplace'`` error handling (for encoding with "
 ":term:`text encodings <text encoding>` only): the unencodable character is "
 "replaced by an appropriate XML character reference."
-msgstr "``'xmlcharrefreplace'`` エラー処理を実装します (:term:` テキストエンコーディング <text encoding>` のエンコードのみ)。エンコードできない文字は、適切な XML 文字参照に置き換えます。"
+msgstr "``'xmlcharrefreplace'`` エラー処理を実装します ( :term:`テキストエンコーディング <text encoding>` のエンコードのみ)。エンコードできない文字は、適切な XML 文字参照に置き換えます。"
 
 #: ../../library/codecs.rst:427
 msgid ""
 "Implements the ``'backslashreplace'`` error handling (for :term:`text "
 "encodings <text encoding>` only): malformed data is replaced by a "
 "backslashed escape sequence."
-msgstr "``'backslashreplace'`` エラー処理を実装します (:term:` テキストエンコーディング <text encoding>` のエンコードのみ)。不正な形式のデータは、バックスラッシュ付きのエスケープシーケンスに置き換えます。"
+msgstr "``'backslashreplace'`` エラー処理を実装します ( :term:`テキストエンコーディング <text encoding>` のエンコードのみ)。不正な形式のデータは、バックスラッシュ付きのエスケープシーケンスに置き換えます。"
 
 #: ../../library/codecs.rst:433
 msgid ""
 "Implements the ``'namereplace'`` error handling (for encoding with "
 ":term:`text encodings <text encoding>` only): the unencodable character is "
 "replaced by a ``\\N{...}`` escape sequence."
-msgstr "``'namereplace'`` エラー処理を実装します (:term:` テキストエンコーディング <text encoding>` のエンコードのみ)。エンコードできない文字は、``\\N{...}`` エスケープシーケンスに置き換えます。"
+msgstr "``'namereplace'`` エラー処理を実装します ( :term:`テキストエンコーディング <text encoding>` のエンコードのみ)。エンコードできない文字は、``\\N{...}`` エスケープシーケンスに置き換えます。"
 
 #: ../../library/codecs.rst:443
 msgid "Stateless Encoding and Decoding"
@@ -580,7 +581,7 @@ msgid ""
 "consumed). For instance, :term:`text encoding` converts a string object to a"
 " bytes object using a particular character set encoding (e.g., ``cp1252`` or"
 " ``iso-8859-1``)."
-msgstr "オブジェクト *input* エンコードし、(出力オブジェクト, 消費した長さ) のタプルを返します。例えば、 :term:`text encoding` は文字列オブジェクトを特有の文字セット (例えば ``cp1252`` や ``iso-8859-1``) を用いてバイト列オブジェクトに変換します。"
+msgstr "オブジェクト *input* エンコードし、(出力オブジェクト, 消費した長さ) のタプルを返します。例えば、 :term:`テキストエンコーディング <text encoding>` は文字列オブジェクトを特有の文字セット (例えば ``cp1252`` や ``iso-8859-1``) を用いてバイト列オブジェクトに変換します。"
 
 #: ../../library/codecs.rst:456 ../../library/codecs.rst:478
 msgid ""
@@ -607,7 +608,7 @@ msgid ""
 "consumed).  For instance, for a :term:`text encoding`, decoding converts a "
 "bytes object encoded using a particular character set encoding to a string "
 "object."
-msgstr "オブジェクト *input* をデコードし、(出力オブジェクト, 消費した長さ) のタプルを返します。例えば、 :term:`text encoding` は、は特定の文字集合エンコーディングでエンコードされたバイト列オブジェクトを文字列オブジェクトに変換します。"
+msgstr "オブジェクト *input* をデコードし、(出力オブジェクト, 消費した長さ) のタプルを返します。例えば、 :term:`テキストエンコーディング <text encoding>` は、特定の文字集合エンコーディングでエンコードされたバイト列オブジェクトを文字列オブジェクトに変換します。"
 
 #: ../../library/codecs.rst:474
 msgid ""
@@ -1104,7 +1105,7 @@ msgid ""
 "as *decoding*. There are a variety of different text serialisation codecs, "
 "which are collectivity referred to as :term:`text encodings <text "
 "encoding>`."
-msgstr "文字列は内部的に範囲 ``0x0``-``0x10FFFF`` のコードポイントのシーケンスとして格納されます (実装に関する詳細については :pep:`393` を参照)。文字列オブジェクトが CPU とメモリの外で使用されるようになると、エンディアン性やこれらの配列をバイト列として格納する方法が問題になります。他の codec でも同様ですが、文字列オブジェクトをバイト列に変換することはエンコードと呼ばれます。また、バイト列から文字列オブジェクトを再生成することはデコードと呼ばれます。テキストをシリアライズする codec には多くの種類があります。それらは、集合的に term:`テキストエンコーディング <text encoding>` と呼ばれます。"
+msgstr "文字列は内部的に範囲 ``0x0``-``0x10FFFF`` のコードポイントのシーケンスとして格納されます (実装に関する詳細については :pep:`393` を参照)。文字列オブジェクトが CPU とメモリの外で使用されるようになると、エンディアン性やこれらの配列をバイト列として格納する方法が問題になります。他の codec でも同様ですが、文字列オブジェクトをバイト列に変換することはエンコードと呼ばれます。また、バイト列から文字列オブジェクトを再生成することはデコードと呼ばれます。テキストをシリアライズする codec には多くの種類があります。それらは、集合的に :term:`テキストエンコーディング <text encoding>` と呼ばれます。"
 
 #: ../../library/codecs.rst:861
 msgid ""

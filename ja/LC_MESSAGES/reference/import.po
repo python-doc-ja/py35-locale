@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-19 06:06+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 10:30+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1179,7 +1180,7 @@ msgid ""
 "In :ref:`the remaining cases <using-on-interface-options>` "
 "``__main__.__spec__`` is set to ``None``, as the code used to populate the "
 ":mod:`__main__` does not correspond directly with an importable module:"
-msgstr ":ref:`それ以外のケース <using-on-interface-options>` では、 ``__main__.__spec__`` は ``None`` に設定されます。これは、 ``__main__`` を生成 (populate) するために使われたコードがインポート可能なモジュールと直接一致していないためです:"
+msgstr ":ref:`それ以外のケース <using-on-interface-options>` では、 ``__main__.__spec__`` は ``None`` に設定されます。これは、 :mod:`__main__` を生成 (populate) するために使われたコードがインポート可能なモジュールと直接一致していないためです:"
 
 #: ../../reference/import.rst:913
 msgid "interactive prompt"
@@ -1257,7 +1258,7 @@ msgid ""
 "The original `specification for packages "
 "<http://legacy.python.org/doc/essays/packages.html>`_ is still available to "
 "read, although some details have changed since the writing of that document."
-msgstr "Python の初期の頃からすると、インポート機構は目覚ましい発展を遂げました。一部細かいところがドキュメントが書かれたときから変わってはいますが、オリジナルの `パッケージの仕様 <https://legacy.python.org/doc/essays/packages.html>`_ はまだ読むことができます。"
+msgstr "Python の初期の頃からすると、インポート機構は目覚ましい発展を遂げました。一部細かいところがドキュメントが書かれたときから変わってはいますが、オリジナルの `パッケージの仕様 <http://legacy.python.org/doc/essays/packages.html>`_ はまだ読むことができます。"
 
 #: ../../reference/import.rst:957
 msgid ""

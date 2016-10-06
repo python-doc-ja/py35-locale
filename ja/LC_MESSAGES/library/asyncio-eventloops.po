@@ -4,13 +4,14 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-14 15:46+0000\n"
-"Last-Translator: tomo <cocoatomo77@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 09:41+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -186,7 +187,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/High_Precision_Event_Timer>`_) and on the "
 "Windows configuration. See :ref:`asyncio delayed calls <asyncio-delayed-"
 "calls>`."
-msgstr "Windows のモノトニック時計の時間分解能は、通常約 15.6 秒です。\n最高分解能は 0.5 秒です。\n分解能はハードウェア (`HPET <http://ja.wikipedia.org/wiki/High_Precision_Event_Timer>`_ の可否) および Windows の設定に依存します。\n:ref:`asyncio 遅延呼び出し <asyncio-delayed-calls>` を参照してください。"
+msgstr "Windows のモノトニック時計の時間分解能は、通常約 15.6 秒です。\n最高分解能は 0.5 秒です。\n分解能はハードウェア (`HPET <https://ja.wikipedia.org/wiki/High_Precision_Event_Timer>`_ の可否) および Windows の設定に依存します。\n:ref:`asyncio 遅延呼び出し <asyncio-delayed-calls>` を参照してください。"
 
 #: ../../library/asyncio-eventloops.rst:115
 msgid ":class:`ProactorEventLoop` now supports SSL."

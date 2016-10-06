@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-03 14:20+0000\n"
+"PO-Revision-Date: 2016-10-06 10:03+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1111,7 +1111,7 @@ msgstr "クロスプラットフォームのアプリケーションは *headers
 msgid ""
 "For a higher-level wrapper of :func:`sendfile`, see "
 ":meth:`socket.socket.sendfile`."
-msgstr ":func:`sendfile` のより高水準のラッパについては :func:`sendfile` を参照してください。"
+msgstr ":func:`sendfile` のより高水準のラッパについては :meth:`socket.socket.sendfile` を参照してください。"
 
 #: ../../library/os.rst:1118
 msgid ""

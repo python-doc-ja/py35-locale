@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-03 15:32+0000\n"
-"Last-Translator: Nozomu Kaneko <nozom.kaneko@gmail.com>\n"
+"PO-Revision-Date: 2016-10-06 10:19+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -232,7 +233,7 @@ msgid ""
 "parse compressed XML streams such as gzipped HTTP streams or LZMA-compressed"
 " files. For an attacker it can reduce the amount of transmitted data by "
 "three magnitudes or more."
-msgstr "解凍爆弾 (あるいは `ZIP 爆弾 <http://ja.wikipedia.org/wiki/%E9%AB%98%E5%9C%A7%E7%B8%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%88%86%E5%BC%BE>`_) は、gzip 圧縮 HTTP ストリームや LZMA 圧縮ファイルなどの圧縮された XML ストリームをパースできる全ての XML ライブラリに対し行われます。\n攻撃者は送信データ量を1/3以下に減らすことができます。"
+msgstr "解凍爆弾 (あるいは `ZIP 爆弾 <https://ja.wikipedia.org/wiki/%E9%AB%98%E5%9C%A7%E7%B8%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%88%86%E5%BC%BE>`_) は、gzip 圧縮 HTTP ストリームや LZMA 圧縮ファイルなどの圧縮された XML ストリームをパースできる全ての XML ライブラリに対し行われます。\n攻撃者は送信データ量を1/3以下に減らすことができます。"
 
 #: ../../library/xml.rst:111
 msgid ""
