@@ -8,12 +8,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-02 16:58+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-06 15:13+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1413,7 +1414,7 @@ msgid ""
 "Use and behaviors of the *timeout* argument are the same as in "
 ":meth:`Lock.acquire`.  Note that some of these behaviors of *timeout* differ"
 " from the implemented behaviors in :meth:`threading.RLock.acquire`."
-msgstr "*timeout* 引数の使い方と振る舞いは :meth:`Lock.acquire` と同じです。 *timeout* 引数の振る舞いがいくつかの点で :meth:`threading.Lock.acquire` と異なるので注意してください。"
+msgstr "*timeout* 引数の使い方と振る舞いは :meth:`Lock.acquire` と同じです。 *timeout* 引数の振る舞いがいくつかの点で :meth:`threading.RLock.acquire` と異なるので注意してください。"
 
 #: ../../library/multiprocessing.rst:1277
 msgid ""

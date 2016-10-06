@@ -8,12 +8,13 @@
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-05 14:40+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-10-06 14:34+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -504,7 +505,7 @@ msgid ""
 ":exc:`select.error`.  All these exception types are now only one: "
 ":exc:`OSError`.  The other names are kept as aliases for compatibility "
 "reasons."
-msgstr ":exc:`OSError`、:exc:`IOError`、:exc:`EnvironmentError`、exc:`WindowsError`、:exc:`mmap.error`、:exc:`socket.error`、そして  :exc:`select.error` の中から適切な例外の型を選ぶのに心配する必要はもうありません。\n上記の例外の型は全てたった1つ :exc:`OSError` になりました。\n:exc:`OSError` 以外の名前は互換性のためにエイリアスとして残されています。"
+msgstr ":exc:`OSError`、:exc:`IOError`、:exc:`EnvironmentError`、:exc:`WindowsError`、:exc:`mmap.error`、:exc:`socket.error`、そして  :exc:`select.error` の中から適切な例外の型を選ぶのに心配する必要はもうありません。\n上記の例外の型は全てたった1つ :exc:`OSError` になりました。\n:exc:`OSError` 以外の名前は互換性のためにエイリアスとして残されています。"
 
 #: ../../whatsnew/3.3.rst:339
 msgid ""
@@ -781,7 +782,7 @@ msgid ""
 " parameters kinds, and bound arguments, which considerably simplifies "
 "writing decorators and any code that validates or amends calling signatures "
 "or arguments."
-msgstr "新たに追加された関数 `inspect.signature` は、Python 呼び出し可能オブジェクト (callable) を調べることを簡単で直接的なものにしてくれます。幅広い callable をサポートしています:デコレートされているかどうかによらず関数、クラス、 :func:`functools.partial` オブジェクト。新たに追加されたクラス群 :class:`inspect.Signature`, :class:`inspect.Parameter`, :class:`inspect.BoundArguments` は、アノテーション、デフォルト値、パラメータの種類、束縛されている引数などのような呼び出しシグニチャについての情報を保持し、これによって、デコレータを書いたりあるいは呼び出しシグニチャや引数を検証したり改訂したりするコードを書くことが、非常に単純になります。"
+msgstr "新たに追加された関数 :func:`inspect.signature` は、Python 呼び出し可能オブジェクト (callable) を調べることを簡単で直接的なものにしてくれます。幅広い callable をサポートしています:デコレートされているかどうかによらず関数、クラス、 :func:`functools.partial` オブジェクト。新たに追加されたクラス群 :class:`inspect.Signature`, :class:`inspect.Parameter`, :class:`inspect.BoundArguments` は、アノテーション、デフォルト値、パラメータの種類、束縛されている引数などのような呼び出しシグニチャについての情報を保持し、これによって、デコレータを書いたりあるいは呼び出しシグニチャや引数を検証したり改訂したりするコードを書くことが、非常に単純になります。"
 
 #: ../../whatsnew/3.3.rst:641
 msgid ":pep:`362`: -  Function Signature Object"
@@ -1477,7 +1478,7 @@ msgid ""
 "Equality comparisons between naive and aware :class:`~datetime.datetime` "
 "instances now return :const:`False` instead of raising :exc:`TypeError` "
 "(:issue:`15006`)."
-msgstr "naive な :class:`datetime` インスタンスと aware な :class:`datetime` インスタンスの等価比較で、 :exc:`TypeError` を投げずに :const:`False` を返すようになりました。 (:issue:`15006`)."
+msgstr "naive な :class:`~datetime.datetime` インスタンスと aware な :class:`~datetime.datetime` インスタンスの等価比較で、 :exc:`TypeError` を投げずに :const:`False` を返すようになりました。 (:issue:`15006`)."
 
 #: ../../whatsnew/3.3.rst:1081
 msgid ""

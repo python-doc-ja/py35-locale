@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-04 11:42+0000\n"
+"PO-Revision-Date: 2016-10-06 15:03+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -374,7 +374,7 @@ msgid ""
 ":mod:`pkg.string`. Additional leading periods perform the relative import "
 "starting from the parent of the current package.  For example, code in the "
 ":mod:`A.B.C` module can do::"
-msgstr "これは現在のパッケージからの相対で ``string`` モジュールをインポートしますので、 :mod:`pkg.main` 内ではこれは、 *name1* と *name2* を :mod:`pkg.string` からインポートするでしょう。加えて、先行する複数ピリオドは、現在のパッケージの親からの相対インポートを実行します。例えば、 :mod:`A.B.C` モジュール内のコードはこのように出来ます::"
+msgstr "これは現在のパッケージからの相対で :mod:`string` モジュールをインポートしますので、 :mod:`pkg.main` 内ではこれは、 *name1* と *name2* を :mod:`pkg.string` からインポートするでしょう。加えて、先行する複数ピリオドは、現在のパッケージの親からの相対インポートを実行します。例えば、 :mod:`A.B.C` モジュール内のコードはこのように出来ます::"
 
 #: ../../whatsnew/2.5.rst:324
 msgid ""
@@ -529,7 +529,7 @@ msgid ""
 "level expression on the right-hand side of an assignment.  This means you "
 "can write ``val = yield i`` but have to use parentheses when there's an "
 "operation, as in ``val = (yield i) + 12``.)"
-msgstr "(:pep:`342` がその規則を正確に説明していますが、それによると ``yield`` -式は、代入式で右辺のトップレベルにあるとき以外はいつも括弧を付ける必要があります。つまり ``val = yield i`` とは書けますが、 ``val = (yield i) + 12`` のように演算子があるときは括弧を使わなくてはいけません。)"
+msgstr "(:pep:`342` がその規則を正確に説明していますが、それによると :keyword:`yield` 式は、代入式で右辺のトップレベルにあるとき以外はいつも括弧を付ける必要があります。つまり ``val = yield i`` とは書けますが、 ``val = (yield i) + 12`` のように演算子があるときは括弧を使わなくてはいけません。)"
 
 #: ../../whatsnew/2.5.rst:457
 msgid ""
@@ -537,7 +537,7 @@ msgid ""
 " generator's code is then resumed and the :keyword:`yield` expression "
 "returns the specified *value*.  If the regular :meth:`next` method is "
 "called, the :keyword:`yield` returns :const:`None`."
-msgstr "ジェネレータに値を送るには ``send(value)`` メソッドを呼びます。するとジェネレータのコードが実行を再開し、 ``yield`` 式がその *value* を返すのです。ふつうの ``next()`` メソッドを呼ぶと、 ``yield`` は ``None`` を返します。"
+msgstr "ジェネレータに値を送るには ``send(value)`` メソッドを呼びます。するとジェネレータのコードが実行を再開し、 :keyword:`yield`  式がその *value* を返すのです。ふつうの ``next()`` メソッドを呼ぶと、 :keyword:`yield` は :const:`None` を返します。"
 
 #: ../../whatsnew/2.5.rst:462
 msgid ""
@@ -555,7 +555,7 @@ msgid ""
 "check for this case.  Don't just use its value in expressions unless you're "
 "sure that the :meth:`send` method will be the only method used to resume "
 "your generator function."
-msgstr "``yield`` が ``None`` を返すことはよくあるのですから、そうなっていないかどうか必ずチェックしておくべきです。ジェネレータ関数を再開するために使うメソッドが :meth:`send` しかないのだと確信してるのでない限り、式の値をそのまま使ってはいけません。"
+msgstr ":keyword:`yield` が :const:`None` を返すことはよくあるのですから、そうなっていないかどうか必ずチェックしておくべきです。ジェネレータ関数を再開するために使うメソッドが :meth:`send` しかないのだと確信してるのでない限り、式の値をそのまま使ってはいけません。"
 
 #: ../../whatsnew/2.5.rst:497
 msgid ""
@@ -567,7 +567,7 @@ msgid ""
 "``throw(type, value=None, traceback=None)`` is used to raise an exception "
 "inside the generator; the exception is raised by the :keyword:`yield` "
 "expression where the generator's execution is paused."
-msgstr "``throw(type, value=None, traceback=None)`` はジェネレータ内で例外を投げるために使います; その例外はジェネレータの実行が停止したところの ``yield`` 式によって投げられます。"
+msgstr "``throw(type, value=None, traceback=None)`` はジェネレータ内で例外を投げるために使います; その例外はジェネレータの実行が停止したところの :keyword:`yield` 式によって投げられます。"
 
 #: ../../whatsnew/2.5.rst:503
 msgid ""
@@ -602,7 +602,7 @@ msgid ""
 "entered, exited, and resumed at many different points (the :keyword:`yield` "
 "statements). We'll have to figure out patterns for using coroutines "
 "effectively in Python."
-msgstr "ジェネレータは *コルーチン* という、より一般化された形式のサブルーチンにもなります。サブルーチンは一カ所 (関数の冒頭) から入って別の一カ所 (``return`` 文) から出るだけですが、コルーチンはいろいろな場所 (``yield`` 文) から入ったり出たり再開したりできるのです。わたしたちは Python でコルーチンを効果的に使うためのパターンを理解する必要があります。"
+msgstr "ジェネレータは *コルーチン* という、より一般化された形式のサブルーチンにもなります。サブルーチンは一カ所 (関数の冒頭) から入って別の一カ所 (:keyword:`return` 文) から出るだけですが、コルーチンはいろいろな場所 (:keyword:`yield` 文) から入ったり出たり再開したりできるのです。わたしたちは Python でコルーチンを効果的に使うためのパターンを理解する必要があります。"
 
 #: ../../whatsnew/2.5.rst:523
 msgid ""

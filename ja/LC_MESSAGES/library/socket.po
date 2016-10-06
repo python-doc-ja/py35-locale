@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-06 11:09+0000\n"
+"PO-Revision-Date: 2016-10-06 13:26+0000\n"
 "Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgid ""
 "higher-level than in the C interface: as with :meth:`read` and :meth:`write`"
 " operations on Python files, buffer allocation on receive operations is "
 "automatic, and buffer length is implicit on send operations."
-msgstr "Pythonインターフェースは、Unixのソケット用システムコールとライブラリを、そのままPythonのオブジェクト指向スタイルに変換したものです。各種ソケット関連のシステムコールは、 :func:`.socket` 関数で生成する :dfn:`socket オブジェクト` のメソッドとして実装されています。 メソッドのパラメータはCのインターフェースよりも多少高水準で、例えば :meth:`read` や :meth:`write` メソッドではファイルオブジェクトと同様、 受信時のバッファ確保や送信時の出力サイズなどは自動的に処理されます。"
+msgstr "Pythonインターフェースは、Unixのソケット用システムコールとライブラリインターフェースを、そのままPythonのオブジェクト指向スタイルに変換したものです。各種ソケット関連のシステムコールは、 :func:`.socket` 関数で生成される :dfn:`socket オブジェクト` のメソッドとして実装されています。 メソッドの引数は C のインターフェースよりも多少高水準で、例えばファイルに対する :meth:`read` や :meth:`write` メソッドと同様に、 受信時のバッファ確保は自動的に処理され、送信時のバッファ長は暗黙的に決まります。"
 
 #: ../../library/socket.rst:33
 msgid "Module :mod:`socketserver`"
@@ -140,7 +140,7 @@ msgid ""
 "in clustered computer environments.  Addresses are represented by a tuple, "
 "and the fields depend on the address type. The general tuple form is "
 "``(addr_type, v1, v2, v3 [, scope])``, where:"
-msgstr "Linux 限定で、 :const:`AF_TIPC` アドレスファミリーを用いて TIPC がサポートされます。 TIPC はオープンな、 IP ベースではないネットワークプロトコルで、クラスタコンピューティング環境のために設計されました。アドレスはタプルで表現され、フィールドはアドレスタイプに依存します。一般的なタプルの形式は ``(addr_type, v1, v2, v3 [, scope])`` で、それぞれは:"
+msgstr "Linux 限定で、 :const:`AF_TIPC` アドレスファミリーを用いて TIPC がサポートされます。 TIPC は、クラスタコンピューティング環境のために設計された、IP ベースではないオープンなネットワークプロトコルです。アドレスはタプルで表現され、フィールドはアドレスタイプに依存します。一般的なタプルの形式は ``(addr_type, v1, v2, v3 [, scope])`` で、それぞれは次の通りです:"
 
 #: ../../library/socket.rst:88
 msgid ""
@@ -229,7 +229,7 @@ msgstr ""
 msgid ""
 "Certain other address families (:const:`AF_PACKET`, :const:`AF_CAN`) support"
 " specific representations."
-msgstr ""
+msgstr "その他の特定のアドレスファミリー (:const:`AF_PACKET`, :const:`AF_CAN`) は、それぞれ固有の形式をサポートしています。"
 
 #: ../../library/socket.rst:141
 msgid ""
@@ -673,7 +673,7 @@ msgstr "ホスト名から、IPv4形式の各種アドレス情報を取得し�
 msgid ""
 "Return a string containing the hostname of the machine where  the Python "
 "interpreter is currently executing."
-msgstr "Pythonインタープリタを現在実行中のマシンのホスト名を示す文字列を取得します。"
+msgstr "Pythonインタープリタを現在実行しているマシンのホスト名を含む文字列を返します。"
 
 #: ../../library/socket.rst:573
 msgid ""
@@ -830,7 +830,7 @@ msgid ""
 "``'7.10.0.5'`` or ``'5aef:2b::8'``). :func:`inet_ntop` is useful when a "
 "library or network protocol returns an object of type :c:type:`struct "
 "in_addr` (similar to :func:`inet_ntoa`) or :c:type:`struct in6_addr`."
-msgstr ""
+msgstr "パックしたIPアドレス (数バイトからなる :term:`bytes-like オブジェクト` ) を、 ``'7.10.0.5'`` や ``'5aef:2b::8'`` などの標準的な、アドレスファミリ固有の文字列形式に変換します。 :func:`inet_ntop` は (:func:`inet_ntoa` と同様に)、 :c:type:`struct in_addr` 型や :c:type:`struct in6_addr` 型のオブジェクトを返すライブラリやネットワークプロトコル等で使用することができます。"
 
 #: ../../library/socket.rst:712
 msgid ""
@@ -838,7 +838,7 @@ msgid ""
 ":const:`AF_INET6`. If the bytes object *packed_ip* is not the correct length"
 " for the specified address family, :exc:`ValueError` will be raised. "
 ":exc:`OSError` is raised for errors from the call to :func:`inet_ntop`."
-msgstr ""
+msgstr "現在サポートされている *address_family* の値は、 :const:`AF_INET` と :const:`AF_INET6` です。バイトオブジェクトの *packed_ip* の長さが、指定したアドレスファミリで適切な長さでない場合、 :exc:`ValueError` が発生します。 :func:`inet_ntop` の呼び出しでエラーが起こると、 :exc:`OSError` が発生します。"
 
 #: ../../library/socket.rst:734
 msgid ""
@@ -855,7 +855,7 @@ msgstr "指定された *length* にある制御メッセージ（CMSG）から�
 #: ../../library/socket.rst:1125 ../../library/socket.rst:1167
 #: ../../library/socket.rst:1271
 msgid "Availability: most Unix platforms, possibly others."
-msgstr "利用可能: ほとんどのUnixで利用できる。他のプラットフォームでも、おそらく利用できる。"
+msgstr "利用できる環境: 主な Unix で利用できます。他のプラットフォームでも、利用できる場合があります。"
 
 #: ../../library/socket.rst:750
 msgid ""
@@ -957,7 +957,7 @@ msgid ""
 "If the system call is interrupted and the signal handler does not raise an "
 "exception, the method now retries the system call instead of raising an "
 ":exc:`InterruptedError` exception (see :pep:`475` for the rationale)."
-msgstr ""
+msgstr "システムコールが中断されシグナルハンドラが例外を送出しなかった場合、このメソッドは :exc:`InterruptedError` 例外を送出する代わりにシステムコールを再試行するようになりました (論拠については :pep:`475` を参照してください)。"
 
 #: ../../library/socket.rst:861
 msgid ""
@@ -972,7 +972,7 @@ msgid ""
 " closed.  Once that happens, all future operations on the socket object will"
 " fail. The remote end will receive no more data (after queued data is "
 "flushed)."
-msgstr "ソケットが閉じられたことをマークします。 :meth:`makefile()` が返したファイルオブジェクトを閉じる時のように、ソケットに対応するシステムの基本リソース（例：ファイル記述子）もすべて閉じます。一度この操作をすると、その後、このソケットでは全ての操作が失敗します。リモート端点ではキューに溜まったデータがフラッシュされた後はそれ以上のデータを受信しません。"
+msgstr "ソケットを閉じられたものとしてマークします。 :meth:`makefile()` が返したファイルオブジェクトを閉じる時、対応する下層のシステムリソース（例：ファイル記述子）もすべて閉じます。一度この操作をすると、その後、このソケットオブジェクトに対するすべての操作が失敗します。キューに溜まったデータがフラッシュされた後は、リモート側の端点ではそれ以上のデータを受信しません。"
 
 #: ../../library/socket.rst:873
 msgid ""
@@ -1038,7 +1038,7 @@ msgstr "ソケットを複製します。"
 msgid ""
 "Return the socket's file descriptor (a small integer), or -1 on failure. "
 "This is useful with :func:`select.select`."
-msgstr ""
+msgstr "ソケットのファイル記述子を短い整数型で返します。失敗時には、-1 を返します。ファイル記述子は、 :func:`select.select` などで使用します。"
 
 #: ../../library/socket.rst:938
 msgid ""
@@ -1099,7 +1099,7 @@ msgid ""
 "interface.  Please refer to the `Win32 documentation "
 "<https://msdn.microsoft.com/en-us/library/ms741621%28VS.85%29.aspx>`_ for "
 "more information."
-msgstr ""
+msgstr ":meth:`ioctl` メソッドは WSAIoctl システムインタフェースへの制限されたインタフェースです。詳しい情報については、 `Win32 documentation <https://msdn.microsoft.com/en-us/library/ms741621%28VS.85%29.aspx>`_ を参照してください。"
 
 #: ../../library/socket.rst:994
 msgid ""
@@ -1126,14 +1126,14 @@ msgid ""
 "are interpreted the same way as by the built-in :func:`open` function, "
 "except the only supported *mode* values are ``'r'`` (default), ``'w'`` and "
 "``'b'``."
-msgstr ""
+msgstr "ソケットに関連付けられた :term:`ファイルオブジェクト` を返します。戻り値の正確な型は、 :meth:`makefile` に指定した引数によります。これらの引数は、組み込み関数 :func:`open` の引数と同様に解釈されます。ただし、*mode* の値は  ``'r'`` (デフォルト), ``'w'``, ``'b'`` のみがサポートされています。"
 
 #: ../../library/socket.rst:1017
 msgid ""
 "The socket must be in blocking mode; it can have a timeout, but the file "
 "object's internal buffer may end up in an inconsistent state if a timeout "
 "occurs."
-msgstr ""
+msgstr "ソケットはブロッキングモードでなければなりません。タイムアウトを設定することはできますが、タイムアウトが発生すると、ファイルオブジェクトの内部バッファが矛盾した状態になることがあります。"
 
 #: ../../library/socket.rst:1021
 msgid ""
@@ -1405,7 +1405,7 @@ msgid ""
 " is up to the caller to ensure that the bytestring contains the proper bits "
 "(see the optional built-in module :mod:`struct` for a way to encode C "
 "structures as bytestrings)."
-msgstr ""
+msgstr "指定したソケットオプションの値を設定します (Unixのマニュアルページ :manpage:`setsockopt(2)` を参照)。:const:`SO_\\*` などの必要なシンボリック定数は、 :mod:`socket` モジュールで定義されています。値には、整数または :term:`bytes-like オブジェクト` をバッファとして指定する事ができます。bytes-like オブジェクトを指定する場合、呼び出し側が責任を持ってバイト文字列に適切なビットが含まれるようにします (組み込みの :mod:`struct` モジュールを利用すれば、Cの構造体をバイト文字列としてエンコードする事ができます)。"
 
 #: ../../library/socket.rst:1346
 msgid ""
@@ -1474,7 +1474,7 @@ msgid ""
 " system-dependent) if they cannot be completed immediately: functions from "
 "the :mod:`select` can be used to know when and whether a socket is available"
 " for reading or writing."
-msgstr "*非ブロッキングモード* での操作は、 :mod:`select` モジュールの関数を使って、ソケットのI/Oが利用可能かどうか調べるがごとく、ただちに完了します。 *ブロッキングモード* でブロックされる時のように、I/Oが利用可能でなければ、例外が送出されます。例外の種類は、システムに依存しています。"
+msgstr "*非ブロッキングモード* での操作は、ただちに完了できない場合、例外を送出して失敗します。この場合の例外の種類は、システムに依存するため、ここに記すことができません。 :mod:`select` モジュールの関数を使って、ソケットの読み書きが利用可能かどうか、可能な場合はいつ利用できるかを調べることができます。"
 
 #: ../../library/socket.rst:1406
 msgid ""
@@ -1504,7 +1504,7 @@ msgid ""
 ":meth:`create_connection`.  However, the system network stack may also "
 "return a connection timeout error of its own regardless of any Python socket"
 " timeout setting."
-msgstr ""
+msgstr ":meth:`~socket.connect` もタイムアウト設定に従います。一般的に、 :meth:`~socket.settimeout` を :meth:`~socket.connect` の前に呼ぶか、 :meth:`create_connection` にタイムアウト引数を渡すことが推奨されます。ただし、システムのネットワークスタックが Python のソケットタイムアウトの設定を無視して、自身の接続タイムアウトエラーを返すこともあります。"
 
 #: ../../library/socket.rst:1428
 msgid "Timeouts and the ``accept`` method"
@@ -1585,7 +1585,7 @@ msgstr ""
 
 #: ../../library/socket.rst:1597
 msgid "This example might require special privileges::"
-msgstr "この例は特権を必要とするかもしれません::"
+msgstr "次の例では、特権が必要になるかもしれません::"
 
 #: ../../library/socket.rst:1637
 msgid ""
@@ -1614,19 +1614,19 @@ msgstr ":data:`SO_REUSEADDR` フラグは、 ``TIME_WAIT`` 状態にあるロー
 #: ../../library/socket.rst:1658
 msgid ""
 "For an introduction to socket programming (in C), see the following papers:"
-msgstr ""
+msgstr "C 言語によるソケットプログラミングの基礎については、以下の資料を参照してください。 "
 
 #: ../../library/socket.rst:1660
 msgid ""
 "*An Introductory 4.3BSD Interprocess Communication Tutorial*, by Stuart "
 "Sechrest"
-msgstr ""
+msgstr "*An Introductory 4.3BSD Interprocess Communication Tutorial*, by Stuart Sechrest"
 
 #: ../../library/socket.rst:1662
 msgid ""
 "*An Advanced 4.3BSD Interprocess Communication Tutorial*, by Samuel J.  "
 "Leffler et al,"
-msgstr ""
+msgstr "*An Advanced 4.3BSD Interprocess Communication Tutorial*, by Samuel J.  Leffler et al,"
 
 #: ../../library/socket.rst:1665
 msgid ""
@@ -1637,4 +1637,4 @@ msgid ""
 "Windows, see the WinSock (or Winsock 2) specification.  For IPv6-ready APIs,"
 " readers may want to refer to :rfc:`3493` titled Basic Socket Interface "
 "Extensions for IPv6."
-msgstr ""
+msgstr "両書とも UNIX Programmer's Manual, Supplementary Documents 1 (PS1:7章 PS1:8章)。ソケットの詳細については、各プラットフォームのソケット関連システムコールに関するドキュメントも参照してください。Unix ではマニュアルページ、WindowsではWinSock (または WinSock2) 仕様書をご覧ください。IPv6 対応の API については、 :rfc:`3493` \"Basic Socket Interface Extensions for IPv6\" を参照してください。"

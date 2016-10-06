@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-04 13:09+0000\n"
+"PO-Revision-Date: 2016-10-06 14:49+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -482,7 +482,7 @@ msgstr "新たな8進数リテラル、e.g. ``0o720`` (2.6 で既にありまし
 msgid ""
 "New binary literals, e.g. ``0b1010`` (already in 2.6), and there is a new "
 "corresponding built-in function, :func:`bin`."
-msgstr "新たなバイナリリテラル、e.g. ``0b1010`` (2.6 で既にありました) と、関連する新しい組み込み関数 :func:`bytes` が導入されました。"
+msgstr "新たなバイナリリテラル、e.g. ``0b1010`` (2.6 で既にありました) と、関連する新しい組み込み関数 :func:`bin` が導入されました。"
 
 #: ../../whatsnew/3.0.rst:402
 msgid ""
@@ -657,7 +657,7 @@ msgid ""
 ":ref:`pep-3110`.  The :keyword:`except` *exc* :keyword:`as` *var* syntax is "
 "now standard and :keyword:`except` *exc*, *var* is no longer supported.  (Of"
 " course, the :keyword:`as` *var* part is still optional.)"
-msgstr ":ref:`pep-3110`. ``except exc as var:`` 構文が標準となり、 ``except exc, var:`` はもうサポートされません。(もちろん :keyword:`as` *var* 部分は今でも省略可能です。)"
+msgstr ":ref:`pep-3110`.   :keyword:`except` *exc* :keyword:`as` *var*  構文が標準となり、  :keyword:`except` *exc*, *var* はもうサポートされません。(もちろん :keyword:`as` *var* 部分は今でも省略可能です。)"
 
 #: ../../whatsnew/3.0.rst:515
 msgid ""

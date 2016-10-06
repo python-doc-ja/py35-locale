@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-04 11:43+0000\n"
+"PO-Revision-Date: 2016-10-06 14:27+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -260,7 +260,7 @@ msgstr ":ref:`オブジェクトの安全なファイナライゼーション <w
 msgid ""
 "Leveraging :pep:`442`, in most cases :ref:`module globals are no longer set "
 "to None during finalization <whatsnew-pep-442>` (:issue:`18214`)."
-msgstr ":pep:`442` を活用することで、ほとんどのケースで :ref:`モジュールのグローバルがファイナライゼーション中に None がセットされることはなくなりました <whatsnew-pep-442>` 。"
+msgstr ":pep:`442` を活用することで、ほとんどのケースで :ref:`モジュールのグローバルがファイナライゼーション中に None がセットされることはなくなりました <whatsnew-pep-442>`  (:issue:`18214`)。"
 
 #: ../../whatsnew/3.4.rst:165
 msgid ":ref:`Configurable memory allocators <whatsnew-pep-445>` (:pep:`445`)."
@@ -343,7 +343,7 @@ msgid ""
 "these commands by default, as long as, when invoked, they provide clear and "
 "simple directions on how to install them on that platform (usually using the"
 " system package manager)."
-msgstr "`discussed in the PEP <https://www.python.org/dev/peps/pep-0477/#disabling-ensurepip-by-downstream-distributors>`_ の通りプラットフォームのパッケージャは、プラットフォームでのそれらインストールの単純明快な手段を自身が提供する(普通システムのパッケージマネージャ)からと言う理由で、デフォルトでのこれらコマンドのインストールを選択しないかもしれません。"
+msgstr "`discussed in the PEP`__ の通りプラットフォームのパッケージャは、プラットフォームでのそれらインストールの単純明快な手段を自身が提供する(普通システムのパッケージマネージャ)からと言う理由で、デフォルトでのこれらコマンドのインストールを選択しないかもしれません。"
 
 #: ../../whatsnew/3.4.rst:227
 msgid ""
@@ -2505,7 +2505,7 @@ msgid ""
 "the normal operation of the cyclic garbage collector.  This avoids a whole "
 "class of interpreter-shutdown-time errors, usually involving ``__del__`` "
 "methods, that have plagued Python since the cyclic GC was first introduced."
-msgstr "この変更の一環で、モジュールのグローバルは、ほとんどのケースではインタプリタのシャットダウン中に強制的に ``None`` がセットされることはなくなり、代わりに循環ガーベージコレクタの通常のオペレーションに委ねます。このことは、循環 GC が最初に導入されて以来悩みの種だった、普通 ``__del__`` メソッドを巻き込んだ「インタプリタシャットダウン時エラーの類」全体を回避します。(---訳注: :issue:`18214` (superseder for :issue:`812369`), `changeset 84936:79e2f5bbc30c <https://hg.python.org/cpython/rev/79e2f5bbc30c/>`_ ---)"
+msgstr "この変更の一環で、モジュールのグローバルは、ほとんどのケースではインタプリタのシャットダウン中に強制的に :const:`None` がセットされることはなくなり、代わりに循環ガーベージコレクタの通常のオペレーションに委ねます。このことは、循環 GC が最初に導入されて以来悩みの種だった、普通 ``__del__`` メソッドを巻き込んだ「インタプリタシャットダウン時エラーの類」全体を回避します。(---訳注: :issue:`18214` (superseder for :issue:`812369`), `changeset 84936:79e2f5bbc30c <https://hg.python.org/cpython/rev/79e2f5bbc30c/>`_ ---)"
 
 #: ../../whatsnew/3.4.rst:1834
 msgid ":pep:`442` -- Safe object finalization"

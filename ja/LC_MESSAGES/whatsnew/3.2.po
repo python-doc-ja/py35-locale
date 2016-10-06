@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-04 03:20+0000\n"
+"PO-Revision-Date: 2016-10-06 14:42+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1524,7 +1524,7 @@ msgid ""
 ":term:`abstract base class` (except for ``truncate()``).  It also has a "
 ":meth:`~gzip.GzipFile.peek` method and supports unseekable as well as zero-"
 "padded file objects."
-msgstr ":class:`gzip.GzipFile` が :class:`io.BufferedIOBase` :term:`抽象基底クラス <abstract base class>` を継承しました (``truncate()`` をのぞく)。\n :meth:`~gzip.GzipFile.peek` メソッドが追加され、シーク不能なファイルオブジェクトならびにゼロ埋めされたファイルオブジェクトをサポートしました。"
+msgstr ":class:`gzip.GzipFile` が :class:`io.BufferedIOBase` :term:`抽象基底クラス <abstract base class>` を継承しました (``truncate()`` をのぞく)。\n:meth:`~gzip.GzipFile.peek` メソッドが追加され、シーク不能なファイルオブジェクトならびにゼロ埋めされたファイルオブジェクトをサポートしました。"
 
 #: ../../whatsnew/3.2.rst:1400
 msgid ""
@@ -1900,7 +1900,7 @@ msgstr ":class:`~http.client.HTTPConnection` クラスと :class:`~http.client.H
 msgid ""
 "Support for certificate checking and HTTPS virtual hosts were added to "
 ":class:`~http.client.HTTPSConnection`."
-msgstr "証明書検証と HTTPS バーチャルホストのサポートが追加されました。"
+msgstr ":class:`~http.client.HTTPSConnection` に、証明書検証と HTTPS バーチャルホストのサポートが追加されました。"
 
 #: ../../whatsnew/3.2.rst:1714
 msgid ""
@@ -2164,7 +2164,7 @@ msgid ""
 "The :mod:`inspect` module has a new function "
 ":func:`~inspect.getgeneratorstate` to easily identify the current state of a"
 " generator-iterator::"
-msgstr "`inspect` モジュールに新たな関数 :func:`~inspect.getgeneratorstate` が追加されました。これで簡単にジェネレータイテレータの現在状態を識別出来ます (---訳注: generator-iterator という用語を使っている箇所は Python ドキュメント全体通して多くはないのですが 2.x の :ref:`yield` 説明中に登場します。ジェネレータと同じ意味です。なお getgeneratorstate はジェネレータでないイテレータには使えません。---)::"
+msgstr ":mod:`inspect` モジュールに新たな関数 :func:`~inspect.getgeneratorstate` が追加されました。これで簡単にジェネレータイテレータの現在状態を識別出来ます (---訳注: generator-iterator という用語を使っている箇所は Python ドキュメント全体通して多くはないのですが 2.x の :ref:`yield` 説明中に登場します。ジェネレータと同じ意味です。なお getgeneratorstate はジェネレータでないイテレータには使えません。---)::"
 
 #: ../../whatsnew/3.2.rst:1894
 msgid "(Contributed by Rodolpho Eckhardt and Nick Coghlan, :issue:`10220`.)"
@@ -2470,7 +2470,7 @@ msgid ""
 " accepting either a string or bytes type for the *query* argument.  If it is"
 " a string, then the *safe*, *encoding*, and *error* parameters are sent to "
 ":func:`~urllib.parse.quote_plus` for encoding::"
-msgstr "文字列で渡した場合、パラメータ  *safe*, *encoding*, *error* がエンコードのために :func:`~urllib.parse.quote_plus` に送られます::"
+msgstr "また、  :func:`~urllib.parse.urlencode` 関数はさらに柔軟になり、 *query* 引数としては文字列とバイト列のどちらも受け付けます。文字列で渡した場合、パラメータ  *safe*, *encoding*, *error* がエンコードのために :func:`~urllib.parse.quote_plus` に送られます::"
 
 #: ../../whatsnew/3.2.rst:2246
 msgid ""
