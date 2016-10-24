@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-16 07:12+0000\n"
+"PO-Revision-Date: 2016-10-24 04:37+0000\n"
 "Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -114,7 +114,7 @@ msgid ""
 "since it is an identity function at runtime, not an actual type. Similarly, "
 "it is not possible to create another :func:`NewType` based on a ``Derived`` "
 "type::"
-msgstr ""
+msgstr "これはまた ``Derived`` は実行時には関数で、実際の型ではないため、これのサブタイプを作ることが出来ないことを意味します。同様に、 ``Derived`` 型を基にした :func:`NewType` を作ることはできません::"
 
 #: ../../library/typing.rst:120
 msgid "See :pep:`484` for more details."
@@ -157,7 +157,7 @@ msgid ""
 "It is possible to declare the return type of a callable without specifying "
 "the call signature by substituting a literal ellipsis for the list of "
 "arguments in the type hint: ``Callable[..., ReturnType]``."
-msgstr ""
+msgstr "callable の返り値の型を型ヒントの実引数のリストを ellipsis で置換することでシグネチャを指定することなく宣言することが出来ます: ``Callable[..., ReturnType]``。"
 
 #: ../../library/typing.rst:158
 msgid "Generics"
@@ -414,7 +414,7 @@ msgstr "オプショナル型。"
 
 #: ../../library/typing.rst:450
 msgid "``Optional[X]`` is equivalent to ``Union[X, None]``."
-msgstr ""
+msgstr "``Optional[X]`` は ``Union[X, None]`` と同値です。"
 
 #: ../../library/typing.rst:452
 msgid ""
@@ -515,15 +515,15 @@ msgstr ""
 
 #: ../../library/typing.rst:550
 msgid "A generic version of :class:`collections.abc.Iterable`."
-msgstr ""
+msgstr ":class:`collections.abc.Iterable` のジェネリック版です。"
 
 #: ../../library/typing.rst:554
 msgid "A generic version of :class:`collections.abc.Iterator`."
-msgstr ""
+msgstr ":class:`collections.abc.Iterator` のジェネリック版です。"
 
 #: ../../library/typing.rst:558
 msgid "A generic version of :class:`collections.abc.Reversible`."
-msgstr ""
+msgstr ":class:`collections.abc.Reversible` のジェネリック版です。"
 
 #: ../../library/typing.rst:562
 msgid "An ABC with one abstract method ``__int__``."
@@ -551,11 +551,11 @@ msgstr ":class:`collections.abc.Container` のジェネリック版です。"
 
 #: ../../library/typing.rst:584
 msgid "An alias to :class:`collections.abc.Hashable`"
-msgstr ""
+msgstr ":class:`collections.abc.Hashable` へのエイリアス"
 
 #: ../../library/typing.rst:588
 msgid "An alias to :class:`collections.abc.Sized`"
-msgstr ""
+msgstr ":class:`collections.abc.Sized` へのエイリアス"
 
 #: ../../library/typing.rst:592
 msgid "A generic version of :class:`collections.abc.Set`."
@@ -708,7 +708,7 @@ msgid ""
 "This defines the generic type ``IO[AnyStr]`` and aliases ``TextIO`` and "
 "``BinaryIO`` for respectively ``IO[str]`` and ``IO[bytes]``. These "
 "representing the types of I/O streams such as returned by :func:`open`."
-msgstr "これはジェネリック型 ``IO[AnyStr]`` と ``TextIO`` と ``BinaryIO`` をそれぞれ ``IO[str]`` と ``IO[bytes]`` のエイリアスとして定義します。これらは :func:`open` によって返されるような I/O ストリームの型を表します。"
+msgstr "これはジェネリック型 ``IO[AnyStr]`` を定義し、 ``TextIO`` と ``BinaryIO`` をそれぞれ ``IO[str]`` と ``IO[bytes]`` のエイリアスとして定義します。これらは :func:`open` によって返されるような I/O ストリームの型を表します。"
 
 #: ../../library/typing.rst:754
 msgid "Wrapper namespace for regular expression matching types."
