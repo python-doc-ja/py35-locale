@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-24 04:18+0000\n"
+"PO-Revision-Date: 2016-10-24 11:22+0000\n"
 "Last-Translator: Shun Sakurai\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1938,7 +1938,7 @@ msgstr "この例では、自動的に証明書の検証を行うことを含む
 msgid ""
 "If you prefer to tune security settings yourself, you might create a context"
 " from scratch (but beware that you might not get the settings right)::"
-msgstr "自分自身でセキュリティ設定を調整したいと望むなら、スクラッチからコンテキストを作ることはできます (ですが正しくない設定をしてしまいがちなことに注意してください)::"
+msgstr "自分自身でセキュリティ設定を調整したい場合、コンテキストを一から作ることはできます (ただし、正しくない設定をしてしまいがちなことに注意してください)::"
 
 #: ../../library/ssl.rst:1670
 msgid ""
@@ -2321,13 +2321,13 @@ msgid ""
 "load the system's trusted CA certificates, enable certificate validation and"
 " hostname checking, and try to choose reasonably secure protocol and cipher "
 "settings."
-msgstr "**クライアントでの使用** では、あなたのセキュリティポリシーによる特殊な要件がない限りは、SSL コンテキストを作成するためには :func:`create_default_context` 関数を使用することを強くお勧めします。それはシステムが信頼した CA 証明書をロードし、証明書の検証を有効化し、ホスト名のチェックを行い、そしてセキュアなプロトコルとセキュアな暗号の分別ある設定を試みます。"
+msgstr "**クライアントでの使用** では、セキュリティポリシーによる特殊な要件がない限りは、 :func:`create_default_context` 関数を使用して SSL コンテキストを作成することを強くお勧めします。この関数は、システムの信頼済み CA 証明書をロードし、証明書の検証とホスト名のチェックを有効化し、十分にセキュアなプロトコルと暗号を選択しようとします。"
 
 #: ../../library/ssl.rst:2015
 msgid ""
 "For example, here is how you would use the :class:`smtplib.SMTP` class to "
 "create a trusted, secure connection to a SMTP server::"
-msgstr "例としてここに、どうやって SMTP に対して信頼できるセキュアな接続を行う :class:`smtplib.SMTP` クラスを使えばいいかお見せします::"
+msgstr "例として、 :class:`smtplib.SMTP` クラスを使用して SMTP サーバーに対して信頼できるセキュアな接続を行う方法を以下に示します::"
 
 #: ../../library/ssl.rst:2024
 msgid ""
@@ -2341,7 +2341,7 @@ msgid ""
 ":class:`SSLContext` constructor yourself, it will not have certificate "
 "validation nor hostname checking enabled by default.  If you do so, please "
 "read the paragraphs below to achieve a good security level."
-msgstr "対照的に、 :class:`SSLContext` クラスのコンストラクタを自身で呼び出すことによって SSL コンテキストを作ると、デフォルトでは証明書検証もホスト名チェックも行わないものになります。もしそうするのであれば、良いセキュリティレベルを知るために、どうか下の方にあるパラグラフをお読みください。"
+msgstr "対照的に、自分自身で :class:`SSLContext` クラスのコンストラクタを呼び出すことによって SSL コンテキストを作ると、デフォルトでは証明書検証もホスト名チェックも有効になりません。自分で設定を行う場合は、十分なセキュリティレベルを達成するために、以下のパラグラフをお読みください。"
 
 #: ../../library/ssl.rst:2033
 msgid "Manual settings"
