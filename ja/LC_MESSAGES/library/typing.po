@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-01 06:12+0000\n"
+"PO-Revision-Date: 2016-11-05 15:45+0000\n"
 "Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,7 @@ msgstr "型エイリアスは複雑な型シグネチャを単純化するのに
 msgid ""
 "Note that ``None`` as a type hint is a special case and is replaced by "
 "``type(None)``."
-msgstr ""
+msgstr "型ヒントとしての ``None`` は特別なケースであり、 ``type(None)`` によって置き換えられます。"
 
 #: ../../library/typing.rst:68
 msgid "NewType"
