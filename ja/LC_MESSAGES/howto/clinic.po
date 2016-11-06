@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-05 17:14+0000\n"
+"PO-Revision-Date: 2016-11-06 01:15+0000\n"
 "Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +139,7 @@ msgid ""
 "Everything in between these two lines is input for Argument Clinic. All of "
 "these lines, including the beginning and ending comment lines, are "
 "collectively called an Argument Clinic \"block\"."
-msgstr "これらの2つの行の間のすべてが Argument Clinic への入力になります。\nこれらのコメント行の開始と終了も含めたすべての行が、 Argument Clinic \"block\" と呼ばれます。"
+msgstr "これらの2つの行の間のすべてが Argument Clinic への入力になります。\nこれらのコメント行の開始と終了も含めたすべての行が、 Argument Clinic \"ブロック\" と呼ばれます。"
 
 #: ../../howto/clinic.rst:99
 msgid ""
@@ -147,7 +147,7 @@ msgid ""
 "output is rewritten into the C file immediately after the block, followed by"
 " a comment containing a checksum. The Argument Clinic block now looks like "
 "this::"
-msgstr "Argument Clinic はその block をパースすると、出力を生成します。\nその出力は、そのCソースファイルの該当する block の直後に挿入され、チェックサムを含むコメントで終了します。\nその結果 Argument Clinick block は次のようになります。 ::"
+msgstr "Argument Clinic はその block をパースすると、出力を生成します。\nその出力は、そのCソースファイルの該当する block の直後に挿入され、チェックサムを含むコメントで終了します。\nその結果 Argument Clinick ブロック は次のようになります。 ::"
 
 #: ../../howto/clinic.rst:110
 msgid ""
@@ -164,38 +164,38 @@ msgid ""
 "the purpose of the checksum--to detect if someone changed the output, as "
 "these edits would be lost the next time Argument Clinic writes out fresh "
 "output.)"
-msgstr "Argument Clinick block の出力部分を修正してはいけません。\n出力が望みどおりになるまで、入力を修正してください。\n(出力部分に対する修正は、次に Argument Clinic が新しい出力を書いたときに失われてしまいます。\nチェックサムの目的は出力部分に対する修正を検出するためです。)"
+msgstr "Argument Clinick ブロック の出力部分を修正してはいけません。\n出力が望みどおりになるまで、入力を修正してください。\n(出力部分に対する修正は、次に Argument Clinic が新しい出力を書いたときに失われてしまいます。\nチェックサムの目的は出力部分に対する修正を検出するためです。)"
 
 #: ../../howto/clinic.rst:119
 msgid ""
 "For the sake of clarity, here's the terminology we'll use with Argument "
 "Clinic:"
-msgstr ""
+msgstr "混乱を避けるために、 Argument Clinic で利用する用語を定義しておきます。"
 
 #: ../../howto/clinic.rst:121
 msgid ""
 "The first line of the comment (``/*[clinic input]``) is the *start line*."
-msgstr ""
+msgstr "コメントの最初の行 (``/*[clinic input]``) は *スタートライン* です。"
 
 #: ../../howto/clinic.rst:122
 msgid ""
 "The last line of the initial comment (``[clinic start generated code]*/``) "
 "is the *end line*."
-msgstr ""
+msgstr "Argument Clinic を実行する前の状態のコメントの最終行 (``[clinic start generated code]*/``) は *エンドライン* です。"
 
 #: ../../howto/clinic.rst:123
 msgid ""
 "The last line (``/*[clinic end generated code: checksum=...]*/``) is the "
 "*checksum line*."
-msgstr ""
+msgstr "最後の行 (``/*[clinic end generated code: checksum=...]*/``) は *チェックサムライン* です。"
 
 #: ../../howto/clinic.rst:124
 msgid "In between the start line and the end line is the *input*."
-msgstr ""
+msgstr "スタートラインとエンドラインの間が *インプット* です。"
 
 #: ../../howto/clinic.rst:125
 msgid "In between the end line and the checksum line is the *output*."
-msgstr ""
+msgstr "エンドラインとチェックサムラインの間が *アウトプット* です。"
 
 #: ../../howto/clinic.rst:126
 msgid ""
@@ -203,7 +203,7 @@ msgid ""
 "inclusively, is the *block*.  (A block that hasn't been successfully "
 "processed by Argument Clinic yet doesn't have output or a checksum line, but"
 " it's still considered a block.)"
-msgstr ""
+msgstr "スタートラインからエンドラインまで、その2行を含めた全体が *ブロック* です。\n(Argument Clinic がまだ正常に処理を実行できてないブロックは、アウトプットとチェックサムラインをまだ持っていませんが、それもブロックとして扱います。)"
 
 #: ../../howto/clinic.rst:133
 msgid "Converting Your First Function"
