@@ -4,14 +4,14 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
-# tomo <cocoatomo77@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-09-28 02:04+0000\n"
-"Last-Translator: tomo <cocoatomo77@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
+"PO-Revision-Date: 2016-11-08 01:47+0000\n"
+"Last-Translator: tomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -419,7 +419,7 @@ msgid ""
 "The child watcher must be instantiated in the main thread, before executing "
 "subprocesses from other threads. Call the :func:`get_child_watcher` function"
 " in the main thread to instantiate the child watcher."
-msgstr ""
+msgstr "子ウォッチャーは、他のスレッドからサブプロセスが実行される前に、メインスレッドで作成されなければなりません。\nメインスレッドで :func:`get_child_watcher` を呼んで子ウォッチャーをインスタンス化してください。"
 
 #: ../../library/asyncio-subprocess.rst:316
 msgid "The :class:`asyncio.subprocess.Process` class is not thread safe."
@@ -444,7 +444,7 @@ msgid ""
 "Example of a subprocess protocol using to get the output of a subprocess and"
 " to wait for the subprocess exit. The subprocess is created by the "
 ":meth:`AbstractEventLoop.subprocess_exec` method::"
-msgstr ""
+msgstr "サブプロセスの出力を取得しサブプロセスの終了を待機するサブプロセスプロトコルの例です。サブプロセスは :meth:`AbstractEventLoop.subprocess_exec` メソッドで作成されます::"
 
 #: ../../library/asyncio-subprocess.rst:384
 msgid "Subprocess using streams"
