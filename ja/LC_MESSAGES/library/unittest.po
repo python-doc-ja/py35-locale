@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-09 02:34+0000\n"
+"PO-Revision-Date: 2016-11-09 14:50+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +71,7 @@ msgid ""
 "A :dfn:`test case` is the individual unit of testing.  It checks for a "
 "specific response to a particular set of inputs.  :mod:`unittest` provides a"
 " base class, :class:`TestCase`, which may be used to create new test cases."
-msgstr ":dfn:`test case` はテストの独立した単位で、各入力に対する結果をチェックします。テストケースを作成する場合は、 :mod:`unittest` が提供する :class:`TestCase` クラスを基底クラスとして利用することができます。"
+msgstr "テストケース (:dfn:`test case`) はテストの独立した単位で、各入力に対する結果をチェックします。テストケースを作成する場合は、 :mod:`unittest` が提供する :class:`TestCase` クラスを基底クラスとして利用することができます。"
 
 #: ../../library/unittest.rst:41
 msgid "test suite"
@@ -81,7 +81,7 @@ msgstr "テストスイート"
 msgid ""
 "A :dfn:`test suite` is a collection of test cases, test suites, or both.  It"
 " is used to aggregate tests that should be executed together."
-msgstr ":dfn:`test suite` はテストケースとテストスイートの集まりで、同時に実行しなければならないテストをまとめる場合に使用します。"
+msgstr "テストスイート (:dfn:`test suite`) はテストケースとテストスイートの集まりで、同時に実行しなければならないテストをまとめる場合に使用します。"
 
 #: ../../library/unittest.rst:48
 msgid "test runner"
@@ -93,7 +93,7 @@ msgid ""
 "tests and provides the outcome to the user.  The runner may use a graphical "
 "interface, a textual interface, or return a special value to indicate the "
 "results of executing the tests."
-msgstr ":dfn:`test runner` はテストの実行を管理し結果を提供する要素です。ランナーはグラフィカルインターフェースやテキストインターフェースを使用しても構いませんし、テストの実行結果を示す特別な値を返しても構いません。"
+msgstr "テストランナー (:dfn:`test runner`) はテストの実行を管理し結果を提供する要素です。ランナーはグラフィカルインターフェースやテキストインターフェースを使用しても構いませんし、テストの実行結果を示す特別な値を返しても構いません。"
 
 #: ../../library/unittest.rst:53
 msgid "Module :mod:`doctest`"
@@ -1206,7 +1206,7 @@ msgstr "このコンテキストマネージャは、捕捉した警告オブジ
 msgid ""
 "This method works regardless of the warning filters in place when it is "
 "called."
-msgstr ""
+msgstr "このメソッドは呼び出されたときに警告フィルタを無視して動作します。"
 
 #: ../../library/unittest.rst:1027
 msgid ""
@@ -1220,21 +1220,21 @@ msgstr ":meth:`assertWarns` と同等ですが、警告メッセージが *regex
 msgid ""
 "A context manager to test that at least one message is logged on the "
 "*logger* or one of its children, with at least the given *level*."
-msgstr ""
+msgstr "*logger* かその子ロガーのうちの1つに、少なくとも1つのログメッセージが少なくとも与えられた *level* で出力されることをテストするコンテキストマネージャです。"
 
 #: ../../library/unittest.rst:1052
 msgid ""
 "If given, *logger* should be a :class:`logging.Logger` object or a "
 ":class:`str` giving the name of a logger.  The default is the root logger, "
 "which will catch all messages."
-msgstr ""
+msgstr "*logger* が与えられた場合、 :class:`logging.Logger` オブジェクトもしくはロガーの名前である :class:`str` であるべきです。\nデフォルトはルートロガーで、これは全てのメッセージを掴まえます。"
 
 #: ../../library/unittest.rst:1056
 msgid ""
 "If given, *level* should be either a numeric logging level or its string "
 "equivalent (for example either ``\"ERROR\"`` or :attr:`logging.ERROR`).  The"
 " default is :attr:`logging.INFO`."
-msgstr ""
+msgstr "*level* が与えられた場合、ログレベルを表す数値もしくはそれに相当する文字列 (例えば ``\"ERROR\"`` もしくは :attr:`logging.ERROR`) であるべきです。\nデフォルトは :attr:`logging.INFO` です。"
 
 #: ../../library/unittest.rst:1060
 msgid ""
@@ -1246,18 +1246,18 @@ msgstr "``with`` ブロック内で出たメッセージの少なくとも一つ
 msgid ""
 "The object returned by the context manager is a recording helper which keeps"
 " tracks of the matching log messages.  It has two attributes:"
-msgstr ""
+msgstr "コンテキストマネージャから返されるオブジェクトは、条件に該当するログメッセージを追跡し続ける記録のためのヘルパーです。\nこのオブジェクトには2つの属性があります:"
 
 #: ../../library/unittest.rst:1069
 msgid ""
 "A list of :class:`logging.LogRecord` objects of the matching log messages."
-msgstr ""
+msgstr "該当するログメッセージを表す :class:`logging.LogRecord` オブジェクトのリスト。"
 
 #: ../../library/unittest.rst:1074
 msgid ""
 "A list of :class:`str` objects with the formatted output of matching "
 "messages."
-msgstr ""
+msgstr "該当するメッセージ出力をフォーマットした :class:`str` オブジェクトのリスト。"
 
 #: ../../library/unittest.rst:1077
 msgid "Example::"
@@ -1643,7 +1643,7 @@ msgid ""
 "in the presence of a docstring.  This caused compatibility issues with "
 "unittest extensions and adding the test name was moved to the "
 ":class:`TextTestResult` in Python 3.2."
-msgstr ""
+msgstr "3.1で docstring があったとしても、返される短い説明文字列にテスト名が付けられるようになりました。\nこの変更によって unittest 拡張に互換性の問題が発生し、 Python 3.2 でテスト名が追加される場所は :class:`TextTestResult` へ移動しました。"
 
 #: ../../library/unittest.rst:1394
 msgid ""
@@ -1893,7 +1893,7 @@ msgid ""
 "call iteration. After :meth:`TestSuite.run`, callers should not rely on the "
 "tests returned by this method unless the caller uses a subclass that "
 "overrides :meth:`TestSuite._removeTestAtIndex` to preserve test references."
-msgstr ""
+msgstr ":class:`TestSuite` でグループ化されたテストは反復アクセスできます。\nサブクラスは :meth:`__iter__` をオーバーライドすることで、遅延処理でテストを提供できます。\n1つのスイート内でこのメソッドは何度も呼ばれる可能性があることに注意してください (例えば、テスト数のカウントや等価性の比較)。\nそのため、 :meth:`TestSuite.run` を実行する前に反復アクセスを何度繰り返しても同じテスト群を返すようにしなければなりません。\n呼び出し側が :meth:`TestSuite._removeTestAtIndex` をオーバーライドしたサブクラスを使いテストへの参照を保存していない限り、 :meth:`TestSuite.run` を実行した後はこのメソッドが返すテスト群を信頼すべきではありません。"
 
 #: ../../library/unittest.rst:1534
 msgid ""
@@ -1907,7 +1907,7 @@ msgid ""
 "In earlier versions the :class:`TestSuite` held references to each "
 ":class:`TestCase` after :meth:`TestSuite.run`. Subclasses can restore that "
 "behavior by overriding :meth:`TestSuite._removeTestAtIndex`."
-msgstr ""
+msgstr "以前のバージョンでは、 :meth:`TestSuite.run` の実行後は :class:`TestSuite` が各 :class:`TestCase` への参照を保持していました。\nサブクラスで :meth:`TestSuite._removeTestAtIndex` をオーバーライドすることでこの振る舞いを復元できます。"
 
 #: ../../library/unittest.rst:1544
 msgid ""
@@ -1939,7 +1939,7 @@ msgid ""
 " the loader at any point. Fatal errors are signalled by the relevant a "
 "method raising an exception to the caller. Non-fatal errors are also "
 "indicated by a synthetic test that will raise the original error when run."
-msgstr ""
+msgstr "テストの読み込み中に起きた致命的でないエラーのリストです。\nどの時点でもローダーからリセットされることはありません。\n致命的なエラーは適切なメソッドが例外を送出して、呼び出し元に通知します。\n致命的でないエラーも、実行したときのエラーを総合テストが通知してくれます。"
 
 #: ../../library/unittest.rst:1573
 msgid ":class:`TestLoader` objects have the following methods:"
