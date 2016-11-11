@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-11 11:10+0000\n"
+"PO-Revision-Date: 2016-11-11 12:52+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1689,14 +1689,14 @@ msgstr "このクラスでは :class:`TestCase` インターフェースの内�
 
 #: ../../library/unittest.rst:1434
 msgid "Deprecated aliases"
-msgstr "廃止予定のエイリアス"
+msgstr "非推奨のエイリアス"
 
 #: ../../library/unittest.rst:1436
 msgid ""
 "For historical reasons, some of the :class:`TestCase` methods had one or "
 "more aliases that are now deprecated.  The following table lists the correct"
 " names along with their deprecated aliases:"
-msgstr "歴史的な経緯で、 :class:`TestCase` のいくつかのエイリアスは廃止予定となりました。以下の表に、廃止予定のエイリアスをまとめます:"
+msgstr "歴史的な経緯で、 :class:`TestCase` のいくつかのエイリアスは非推奨となりました。以下の表に、非推奨のエイリアスをまとめます:"
 
 #: ../../library/unittest.rst:1441
 msgid "Method Name"
@@ -1704,7 +1704,7 @@ msgstr "メソッド名"
 
 #: ../../library/unittest.rst:1441 ../../library/unittest.rst:1441
 msgid "Deprecated alias"
-msgstr "廃止予定のエイリアス"
+msgstr "非推奨のエイリアス"
 
 #: ../../library/unittest.rst:1443
 msgid ":meth:`.assertEqual`"
@@ -1994,7 +1994,7 @@ msgid ""
 "deprecated and ignored, although it is still accepted for backward "
 "compatibility.  The method also now accepts a keyword-only argument "
 "*pattern* which is passed to ``load_tests`` as the third argument."
-msgstr "ドキュメントにない、非公式の *use_load_tests* デフォルト引数は廃止予定で、後方互換性のために残されていますが無視されます。\nまた、このメソッドはキーワード専用引数 *pattern* を受け取るようになりました。これは ``load_tests`` の第三引数に渡されます。"
+msgstr "ドキュメントにない、非公式の *use_load_tests* デフォルト引数は非推奨で、後方互換性のために残されていますが無視されます。\nまた、このメソッドはキーワード専用引数 *pattern* を受け取るようになりました。これは ``load_tests`` の第三引数に渡されます。"
 
 #: ../../library/unittest.rst:1620
 msgid "Return a suite of all tests cases given a string specifier."
@@ -2428,7 +2428,7 @@ msgid ""
 " order to avoid too many warning messages.  This behavior can be overridden "
 "using the :option:`-Wd` or :option:`-Wa` options and leaving *warnings* to "
 "``None``."
-msgstr ""
+msgstr ":ref:`デフォルトで無視 <warning-ignored>` に設定されているとしても、このランナーのデフォルトでは :exc:`DeprecationWarning`, :exc:`PendingDeprecationWarning`, :exc:`ResourceWarning`, :exc:`ImportWarning` を表示します。\n:ref:`unittest の非推奨メソッド <deprecated-aliases>` で起きた非推奨警告も特別な場合として扱われ、警告フィルタが ``'default'`` もしくは ``'always'`` だったとき、対象の警告メッセージが出ないようにモジュールごとに1回だけ表示されます。\n:option:`-Wd` オプションや :option:`-Wa` オプションを使ったり、 *warnings* を ``None`` にしたりしておくと、この動作を上書きできます。"
 
 #: ../../library/unittest.rst:1980
 msgid "Added the ``warnings`` argument."
@@ -2465,7 +2465,7 @@ msgid ""
 "method takes a :class:`TestSuite` or :class:`TestCase` instance. A "
 ":class:`TestResult` is created by calling :func:`_makeResult` and the "
 "test(s) are run and the results printed to stdout."
-msgstr ""
+msgstr "このメソッドは `TextTestRunner` へのメインの公開インターフェースです。\nこのメソッドは :class:`TestSuite` インスタンスあるいは :class:`TestCase` インスタンスを受け取ります。\n:func:`_makeResult` が呼ばれて :class:`TestResult` が作成され、テストが実行され、結果が標準出力に表示されます。"
 
 #: ../../library/unittest.rst:2016
 msgid ""
@@ -2487,7 +2487,7 @@ msgid ""
 "iterable of test names to run if no test names are specified via *argv*.  If"
 " not specified or ``None`` and no test names are provided via *argv*, all "
 "tests found in *module* are run."
-msgstr ""
+msgstr "*defaultTest* 引数は、 *argv* にテスト名が指定されていない場合に実行する、ある1つのテストの名前もしくはテスト名のイテラブルです。\nこの引数を指定しないか ``None`` を指定し、かつ *argv* にテスト名が与えられない場合は、 *module* にある全てのテストを実行します。"
 
 #: ../../library/unittest.rst:2035
 msgid ""
@@ -2528,7 +2528,7 @@ msgid ""
 " that should be used while running the tests.  If it's not specified, it "
 "will remain ``None`` if a :option:`-W` option is passed to "
 ":program:`python`, otherwise it will be set to ``'default'``."
-msgstr ""
+msgstr "*warnings* 引数では、テストの実行中に使うべき :ref:`警告フィルタ <warning-filter>` を指定します。\nこの引数が指定されない場合には、 :option:`-W` オプションが :program:`python` に渡されていなければ ``None`` のままで、そうでなければ ``'default'`` が設定されます。"
 
 #: ../../library/unittest.rst:2061
 msgid ""
@@ -2602,7 +2602,7 @@ msgid ""
 "does not exist, discovery will recurse into the package as though it were "
 "just another directory.  Otherwise, discovery of the package's tests will be"
 " left up to ``load_tests`` which is called with the following arguments::"
-msgstr ""
+msgstr "コマンドラインからでも :meth:`TestLoader.discover` の呼び出しでも、パッケージを含むディレクトリで検索を始めた場合、そのパッケージの :file:`__init__.py` をチェックして ``load_tests`` を探します。\nその関数が存在しない場合、他のディレクトリであるかのようにパッケージの中を再帰的に検索します。\nその関数が存在した場合、パッケージのテストの検索をそちらに任せ、 ``load_tests`` が次の引数で呼び出されます::"
 
 #: ../../library/unittest.rst:2121
 msgid ""
@@ -2622,7 +2622,7 @@ msgstr "パターンは ``load_tests`` に渡されるので、パッケージ�
 msgid ""
 "Discovery no longer checks package names for matching *pattern* due to the "
 "impossibility of package names matching the default pattern."
-msgstr ""
+msgstr "パッケージ名がデフォルトのパターンに適合するのが不可能なため、検索ではパッケージ名が *pattern* に適合するかのチェックは行われなくなりました。"
 
 #: ../../library/unittest.rst:2143
 msgid "Class and Module Fixtures"
