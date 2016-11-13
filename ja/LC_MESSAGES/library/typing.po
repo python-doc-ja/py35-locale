@@ -4,14 +4,15 @@
 # 
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
+# tomo, 2016
 # Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-05 15:45+0000\n"
-"Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>\n"
+"PO-Revision-Date: 2016-11-13 16:41+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -505,13 +506,13 @@ msgstr ""
 msgid ""
 "The only legal parameters for :class:`Type` are classes, unions of classes, "
 "and :class:`Any`. For example::"
-msgstr ""
+msgstr ":class:`Type` で許されているパラメータは、クラスかクラスの直和型か :class:`Any` です。\n例えば次のようになります::"
 
 #: ../../library/typing.rst:545
 msgid ""
 "``Type[Any]`` is equivalent to ``Type`` which in turn is equivalent to "
 "``type``, which is the root of Python's metaclass hierarchy."
-msgstr ""
+msgstr "``Type[Any]`` は ``Type`` と等しく、さらにこれは ``type`` と等しいもので、 Python のメタクラス階層のルートです。"
 
 #: ../../library/typing.rst:550
 msgid "A generic version of :class:`collections.abc.Iterable`."
@@ -743,7 +744,7 @@ msgid ""
 "A helper function to indicate a distinct types to a typechecker, see "
 ":ref:`distinct`. At runtime it returns a function that returns its argument."
 " Usage::"
-msgstr ""
+msgstr "異なる型であることを型チェッカーに教えるためのヘルパー関数です。\n:ref:`distinct` を参照してください。\n実行時には、その引数を返す関数を返します。\n使い方は次のようになります::"
 
 #: ../../library/typing.rst:791
 msgid "Cast a value to a type."
