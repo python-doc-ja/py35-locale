@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-13 16:41+0000\n"
+"PO-Revision-Date: 2016-11-14 01:42+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -781,11 +781,11 @@ msgid ""
 "directly will raise ``NotImplementedError``. An example of overload that "
 "gives a more precise type than can be expressed using a union or a type "
 "variable::"
-msgstr ""
+msgstr "``@overload`` デコレータを使うと、引数の型の複数の組み合わせをサポートする関数やメソッドを書けるようになります。\n``@overload`` 付きの定義を並べた後ろに、(同じ関数やメソッドの) ``@overload`` 無しの定義が来なければなりません。\n``@overload`` 付きの定義は型チェッカーのためでしかありません。\nというのも、 ``@overload`` 付きの定義は ``@overload`` 無しの定義で上書きされるからです。\n後者は実行時に使われますが、型チェッカーからは無視されるべきなのです。\n実行時には、 ``@overload`` 付きの関数を直接呼び出すと ``NotImplementedError`` を送出します。\n次のコードはオーバーロードを使うことで直和型や型変数を使うよりもより正確な型が表現できる例です::"
 
 #: ../../library/typing.rst:832
 msgid "See :pep:`484` for details and comparison with other typing semantics."
-msgstr ""
+msgstr "詳細と他の型付け意味論との比較は :pep:`484` を参照してください。"
 
 #: ../../library/typing.rst:836
 msgid "Decorator to indicate that annotations are not type hints."
@@ -821,11 +821,11 @@ msgid ""
 "As introduced in :pep:`526`, a variable annotation wrapped in ClassVar "
 "indicates that a given attribute is intended to be used as a class variable "
 "and should not be set on instances of that class. Usage::"
-msgstr ""
+msgstr ":pep:`526` で導入された通り、 ClassVar でラップされた変数アノテーションによって、ある属性はクラス変数として使うつもりであり、そのクラスのインスタンスから設定すべきではないということを示せます。使い方は次のようになります::"
 
 #: ../../library/typing.rst:863
 msgid "ClassVar accepts only types and cannot be further subscribed."
-msgstr ""
+msgstr "ClassVar は型のみを受け入れ、それ以外は受け付けられません。"
 
 #: ../../library/typing.rst:865
 msgid ""
@@ -833,7 +833,7 @@ msgid ""
 "issubclass(). Note that ClassVar does not change Python runtime behavior, it"
 " can be used by 3rd party type checkers, so that the following code will "
 "flagged as an error by those::"
-msgstr ""
+msgstr "ClassVar はクラスそのものではないので、 isinstance() や issubclass() で使うべきではありません。\n次のコードにサードパーティーの型チェッカーが印を付けられるように、 ClassVar は Python ランタイムの振る舞いを変更しないことに注意してください::"
 
 #: ../../library/typing.rst:879
 msgid ""

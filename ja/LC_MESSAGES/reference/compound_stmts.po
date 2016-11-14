@@ -5,13 +5,14 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # INADA Naoki <songofacandy@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-08-26 05:30+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
+"PO-Revision-Date: 2016-11-14 01:53+0000\n"
+"Last-Translator: tomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -461,13 +462,13 @@ msgstr "関数定義は一つ以上のデコレータ (:term:`decorator`) 式で
 #: ../../reference/compound_stmts.rst:506
 #: ../../reference/compound_stmts.rst:643
 msgid "is roughly equivalent to ::"
-msgstr ""
+msgstr "は、だいたい次と等価です ::"
 
 #: ../../reference/compound_stmts.rst:511
 msgid ""
 "except that the original function is not temporarily bound to the name "
 "``func``."
-msgstr ""
+msgstr "ただし、前者のコードでは元々の関数を ``func`` という名前へ一時的に束縛することはない、というところを除きます。"
 
 #: ../../reference/compound_stmts.rst:517
 msgid ""
@@ -593,7 +594,7 @@ msgstr "関数をデコレートするのと同じように、クラスもデコ
 msgid ""
 "The evaluation rules for the decorator expressions are the same as for "
 "function decorators.  The result is then bound to the class name."
-msgstr ""
+msgstr "デコレータ式の評価規則は関数デコレータと同じです。結果はクラス名に束縛されます。"
 
 #: ../../reference/compound_stmts.rst:651
 msgid ""
