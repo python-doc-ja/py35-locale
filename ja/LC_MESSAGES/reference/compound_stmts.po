@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-14 01:53+0000\n"
+"PO-Revision-Date: 2016-11-14 13:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -628,7 +628,7 @@ msgid ""
 "``async`` identifiers become reserved keywords; :keyword:`await` "
 "expressions, :keyword:`async for` and :keyword:`async with` can only be used"
 " in coroutine bodies."
-msgstr ""
+msgstr "Python で実行しているコルーチンは多くの時点で一時停止と再開ができます (:term:`coroutine` を参照)。\nコルーチンの本体では、 ``await`` 識別子と ``async`` 識別子はどれも予約語になります;\n:keyword:`await` 式である :keyword:`async for` と :keyword:`async with` はコルーチンの本体でしか使えません。"
 
 #: ../../reference/compound_stmts.rst:691
 msgid ""
@@ -655,7 +655,7 @@ msgid ""
 "An :term:`asynchronous iterable` is able to call asynchronous code in its "
 "*iter* implementation, and :term:`asynchronous iterator` can call "
 "asynchronous code in its *next* method."
-msgstr ""
+msgstr ":term:`asynchronous iterable` の *iter* の実装からは非同期のコードが呼べ、 :term:`asynchronous iterator` の *next* メソッドからも非同期のコードが呼べます。"
 
 #: ../../reference/compound_stmts.rst:717
 msgid ""
@@ -691,7 +691,7 @@ msgstr ":keyword:`async with` 文"
 msgid ""
 "An :term:`asynchronous context manager` is a :term:`context manager` that is"
 " able to suspend execution in its *enter* and *exit* methods."
-msgstr ""
+msgstr ":term:`asynchronous context manager` は、 *enter* メソッドと *exit* メソッド内部で実行を一時停止できる :term:`context manager` です。"
 
 #: ../../reference/compound_stmts.rst:781
 msgid "See also :meth:`__aenter__` and :meth:`__aexit__` for details."
@@ -705,7 +705,7 @@ msgstr ":keyword:`async def` 関数外で ``async with`` 文を使用すると :
 
 #: ../../reference/compound_stmts.rst:788
 msgid ":pep:`492` - Coroutines with async and await syntax"
-msgstr ""
+msgstr ":pep:`492` - async 構文および await 構文付きのコルーチン"
 
 #: ../../reference/compound_stmts.rst:792
 msgid "Footnotes"

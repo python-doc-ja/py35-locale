@@ -5,13 +5,14 @@
 # Translators:
 # E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-10-01 14:06+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
+"PO-Revision-Date: 2016-11-14 14:41+0000\n"
+"Last-Translator: tomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -708,7 +709,7 @@ msgid ""
 "is the method name (same as ``__func__.__name__``); :attr:`__module__` is "
 "the name of the module the method was defined in, or ``None`` if "
 "unavailable."
-msgstr ""
+msgstr "読み出し専用の特殊属性: :attr:`__self__` はクラスインスタンスオブジェクトで、 :attr:`__func__` は関数オブジェクトです;\n:attr:`__doc__` はメソッドのドキュメンテーション文字列 (``__func__.__doc__`` と同じ) です;\n:attr:`~definition.__name__` はメソッドの名前 (``__func__.__name__`` と同じ) です;\n:attr:`__module__` はメソッドが定義されたモジュールの名前か、モジュール名がない場合は ``None`` になります。"
 
 #: ../../reference/datamodel.rst:558
 msgid ""
@@ -822,7 +823,7 @@ msgid ""
 ":attr:`~definition.__name__` is the function's name; :attr:`__self__` is set"
 " to ``None`` (but see the next item); :attr:`__module__` is the name of the "
 "module the function was defined in or ``None`` if unavailable."
-msgstr ""
+msgstr "組み込み関数オブジェクトはC関数へのラッパーです。\n組み込み関数の例は :func:`len` や :func:`math.sin` (:mod:`math` は標準の組み込みモジュール) です。\n引数の数や型は C 関数で決定されています。\n読み出し専用の特殊属性: :attr:`__doc__` は関数のドキュメンテーション文字列です。\nドキュメンテーションがない場合は ``None`` になります;\n:attr:`~definition.__name__` は関数の名前です;\n:attr:`__self__` は ``None`` に設定されています (組み込みメソッドの節も参照してください);\n:attr:`__module__` は、関数が定義されているモジュールの名前です。\nモジュール名がない場合は ``None`` になります。"
 
 #: ../../reference/datamodel.rst:655
 msgid "Built-in methods"
@@ -888,7 +889,7 @@ msgstr "属性の代入を行うと、モジュールの名前空間辞書の内
 msgid ""
 "Special read-only attribute: :attr:`~object.__dict__` is the module's "
 "namespace as a dictionary object."
-msgstr ""
+msgstr "読み出し専用の特殊属性: :attr:`~object.__dict__` はモジュールの名前空間で、辞書オブジェクトです。"
 
 #: ../../reference/datamodel.rst:696
 msgid ""
