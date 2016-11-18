@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 01:56+0000\n"
+"PO-Revision-Date: 2016-11-18 15:26+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -940,7 +940,7 @@ msgid ""
 "method object. See section :ref:`descriptors` for another way in which "
 "attributes retrieved from a class may differ from those actually contained "
 "in its :attr:`~object.__dict__`."
-msgstr ""
+msgstr "クラス (:class:`C` とします) 属性参照がクラスメソッドオブジェクトを返そうとするときには、 そのオブジェクトは :attr:`__self__` 属性が :class:`C` であるようなインスタンスメソッドオブジェクトに変換されます。\n静的メソッドオブジェクトを返そうとするときには、静的メソッドオブジェクトでラップされたオブジェクトに変換されます。\n:ref:`descriptors` 節を参照すると、また別の理由でクラスから取り出した属性と実際に :attr:`~object.__dict__` に保存されているものが異なることがあるのが分かります。"
 
 #: ../../reference/datamodel.rst:751
 msgid ""
@@ -984,7 +984,7 @@ msgid ""
 "objects actually stored in the class's :attr:`~object.__dict__`.  If no "
 "class attribute is found, and the object's class has a :meth:`__getattr__` "
 "method, that is called to satisfy the lookup."
-msgstr "クラスインスタンスは、クラスオブジェクト (上記参照) を呼び出して生成します。\nクラスインスタンスは辞書で実装された名前空間を持っており、属性参照の時にはまずこの辞書が探索されます。\nここで属性が見つからず、インスタンスのクラスにその名前の属性があるときは、続けてクラス属性を検索します。\n見つかったクラス属性がユーザ定義関数オブジェクトだった場合、クラスインスタンスを :attr:`__self__` 属性とするインスタンスメソッドオブジェクトに変換します。\n静的メソッドオブジェクトやクラスメソッドオブジェクトも同様に変換されます;\n上記の \"クラス\" を参照してください。\n:ref:`descriptors` 節を参照するとまた別の方法で、インスタンスを通してクラスから取り出した属性と、実際に :attr:`~object.__dict__` に保存されているものが異なる可能性が出てくるのが分かります。\nクラス属性が見つからず、かつオブジェクトのクラスが :meth:`__getattr__` メソッドを持っている場合は、探索の義務を果たすためにこのメソッドが呼び出されます。"
+msgstr "クラスインスタンスは、クラスオブジェクト (上記参照) を呼び出して生成します。\nクラスインスタンスは辞書で実装された名前空間を持っており、属性参照の時にはまずこの辞書が探索されます。\nここで属性が見つからず、インスタンスのクラスにその名前の属性があるときは、続けてクラス属性を検索します。\n見つかったクラス属性がユーザ定義関数オブジェクトだった場合、クラスインスタンスを :attr:`__self__` 属性とするインスタンスメソッドオブジェクトに変換します。\n静的メソッドオブジェクトやクラスメソッドオブジェクトも同様に変換されます;\n上記の \"クラス\" を参照してください。\n:ref:`descriptors` 節を参照すると、また別の理由でインスタンスを通してクラスから取り出した属性と実際に :attr:`~object.__dict__` に保存されているものが異なることがあるのが分かります。\nクラス属性が見つからず、かつオブジェクトのクラスが :meth:`__getattr__` メソッドを持っている場合は、探索の義務を果たすためにこのメソッドが呼び出されます。"
 
 #: ../../reference/datamodel.rst:795
 msgid ""
@@ -2599,25 +2599,25 @@ msgid ""
 "An :term:`awaitable` object generally implements an :meth:`__await__` "
 "method. :term:`Coroutine` objects returned from :keyword:`async def` "
 "functions are awaitable."
-msgstr ""
+msgstr ":term:`awaitable` オブジェクトは一般的には :meth:`__await__` が実装されています。\n:keyword:`async def` 関数が返す :term:`Coroutine` オブジェクトは待機可能です。"
 
 #: ../../reference/datamodel.rst:2291
 msgid ""
 "The :term:`generator iterator` objects returned from generators decorated "
 "with :func:`types.coroutine` or :func:`asyncio.coroutine` are also "
 "awaitable, but they do not implement :meth:`__await__`."
-msgstr ""
+msgstr ":func:`types.coroutine` デコレータもしくは :func:`asyncio.coroutine` でデコレータが付けられたジェネレータから返される :term:`generator iterator` オブジェクトも待機可能ですが、 :meth:`__await__` は実装されていません。"
 
 #: ../../reference/datamodel.rst:2297
 msgid ""
 "Must return an :term:`iterator`.  Should be used to implement "
 ":term:`awaitable` objects.  For instance, :class:`asyncio.Future` implements"
 " this method to be compatible with the :keyword:`await` expression."
-msgstr ""
+msgstr ":term:`iterator` を返さなければなりません。\nこのメソッドは :term:`awaitable` オブジェクトを実装するのに使われるべきです。\n簡単のために、 :class:`asyncio.Future` にはこのメソッドが実装され、 :keyword:`await` 式と互換性を持つようになっています。"
 
 #: ../../reference/datamodel.rst:2303
 msgid ":pep:`492` for additional information about awaitable objects."
-msgstr ""
+msgstr "待機可能オブジェクトについてより詳しくは :pep:`492` を参照してください。"
 
 #: ../../reference/datamodel.rst:2309
 msgid "Coroutine Objects"
