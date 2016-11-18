@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
+# E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-16 05:28+0000\n"
+"PO-Revision-Date: 2016-11-18 01:56+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1735,7 +1735,7 @@ msgid ""
 "type (or a subclass) is expected or required as the first positional "
 "argument (for example, CPython sets this attribute for unbound methods that "
 "are implemented in C)."
-msgstr ""
+msgstr ":attr:`__objclass__` 属性は :mod:`inspect` モジュールによって解釈され、このオブジェクトが定義されたクラスを特定するのに使われます (この属性を適切に設定しておくと、動的なクラスの属性を実行時に調べる助けになります)。\n呼び出される側にとっては、この属性で指定されたクラス (もしくはそのサブクラス) のインスタンスが1番目の位置引数として期待もしくは要求されていることが示せます (例えば、 CPython は束縛されていない C で実行されたメソッドにこの属性を設定します)。"
 
 #: ../../reference/datamodel.rst:1505
 msgid "Invoking Descriptors"
@@ -1962,7 +1962,7 @@ msgid ""
 "keyword argument in the class definition line, or by inheriting from an "
 "existing class that included such an argument. In the following example, "
 "both ``MyClass`` and ``MySubclass`` are instances of ``Meta``::"
-msgstr ""
+msgstr "クラス生成プロセスはカスタマイズできます。\nそのためにはクラス定義行で ``metaclass`` キーワード引数を渡すか、そのような引数を定義行に含む既存のクラスを継承します。\n次の例で ``MyClass`` と ``MySubclass`` は両方とも ``Meta`` のインスタンスです::"
 
 #: ../../reference/datamodel.rst:1654
 msgid ""
@@ -2100,7 +2100,7 @@ msgid ""
 "After the class object is created, it is passed to the class decorators "
 "included in the class definition (if any) and the resulting object is bound "
 "in the local namespace as the defined class."
-msgstr "クラスオブジェクトが作成された後で、(もしあれば) クラス定義に含まれているクラスデコレータにクラスオブジェクトが渡され、その結果生じるオブジェクトが定義されたクラスとしてローカルの名前空間に束縛されます。"
+msgstr "クラスオブジェクトが作成された後には、クラス定義に含まれているクラスデコレータ (もしあれば) にクラスオブジェクトが渡され、デコレータが返すオブジェクトがここで定義されたクラスとしてローカルの名前空間に束縛されます。"
 
 #: ../../reference/datamodel.rst:1736
 msgid ""
@@ -2108,7 +2108,7 @@ msgid ""
 "namespace parameter is copied to a standard Python dictionary and the "
 "original object is discarded. The new copy becomes the "
 ":attr:`~object.__dict__` attribute of the class object."
-msgstr ""
+msgstr "新しいクラスが ``type.__new__`` で生成されたときは、名前空間引数として与えられたオブジェクトは標準の Python の辞書に複製され、元のオブジェクトは破棄されます。\n新しく複製したものは、クラスオブジェクトの :attr:`~object.__dict__` 属性になります。"
 
 #: ../../reference/datamodel.rst:1743
 msgid ":pep:`3135` - New super"
