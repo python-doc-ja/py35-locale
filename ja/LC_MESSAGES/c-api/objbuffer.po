@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2015, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,21 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-28 15:21+0900\n"
-"PO-Revision-Date: 2015-12-28 06:46+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
+"PO-Revision-Date: 2016-11-18 22:17+0000\n"
+"Last-Translator: Julien <github@mandark.fr>\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../c-api/objbuffer.rst:4
+#: ../../c-api/objbuffer.rst:4
 msgid "Old Buffer Protocol"
 msgstr "古いバッファプロトコル"
 
-#: ../c-api/objbuffer.rst:8
+#: ../../c-api/objbuffer.rst:8
 msgid ""
 "These functions were part of the \"old buffer protocol\" API in Python 2. In"
 " Python 3, this protocol doesn't exist anymore but the functions are still "
@@ -31,7 +30,7 @@ msgid ""
 "exported."
 msgstr "これらの関数は、 Python 2 の「古いバッファプロトコル」 API の一部です。 Python 3 では、もうこのプロトコルは存在しませんが、 2.x のコードを移植しやすいように関数は公開されています。 :ref:`新しいバッファプロトコル <bufferobjects>` と互換性のあるラッパー関数のように振る舞いますが、バッファがエクスポートされるときに取得されるリソースの生存期間を管理することはできません。"
 
-#: ../c-api/objbuffer.rst:15
+#: ../../c-api/objbuffer.rst:15
 msgid ""
 "Therefore, it is recommended that you call :c:func:`PyObject_GetBuffer` (or "
 "the ``y*`` or ``w*`` :ref:`format codes <arg-parsing>` with the "
@@ -40,7 +39,7 @@ msgid ""
 "released."
 msgstr "従って、あるオブジェクトのバッファビューを取得するために、 :c:func:`PyObject_GetBuffer` (もしくは ``y*`` および ``w*``  :ref:`フォーマットコード <arg-parsing>` で :c:func:`PyArg_ParseTuple` やその仲間) を呼び出し、バッファビューを解放するときには :c:func:`PyBuffer_Release` を呼び出します。"
 
-#: ../c-api/objbuffer.rst:23
+#: ../../c-api/objbuffer.rst:23
 msgid ""
 "Returns a pointer to a read-only memory location usable as character-based "
 "input.  The *obj* argument must support the single-segment character buffer "
@@ -49,7 +48,7 @@ msgid ""
 ":exc:`TypeError` on error."
 msgstr "文字ベースの入力として使える読み出し専用メモリ上の位置へのポインタを返します。 *obj* 引数は単一セグメントからなる文字バッファインタフェースをサポートしていなければなりません。成功すると ``0`` を返し、 *buffer* をメモリの位置に、  *buffer_len* をバッファの長さに設定します。エラーの際には  ``-1`` を返し、 :exc:`TypeError` をセットします。"
 
-#: ../c-api/objbuffer.rst:32
+#: ../../c-api/objbuffer.rst:32
 msgid ""
 "Returns a pointer to a read-only memory location containing arbitrary data. "
 "The *obj* argument must support the single-segment readable buffer "
@@ -58,13 +57,13 @@ msgid ""
 ":exc:`TypeError` on error."
 msgstr "任意のデータを収めた読み出し専用のメモリ上の位置へのポインタを返します。 *obj* 引数は単一セグメントからなる読み出し可能バッファインタフェースをサポートしていなければなりません。成功すると ``0`` を返し、 *buffer* をメモリの位置に、  *buffer_len* をバッファの長さに設定します。エラーの際には  ``-1`` を返し、 :exc:`TypeError` をセットします。"
 
-#: ../c-api/objbuffer.rst:41
+#: ../../c-api/objbuffer.rst:41
 msgid ""
 "Returns ``1`` if *o* supports the single-segment readable buffer interface. "
 "Otherwise returns ``0``."
 msgstr "*o* が単一セグメントからなる読み出し可能バッファインタフェースをサポートしている場合に ``1`` を返します。それ以外の場合には ``0`` を返します。"
 
-#: ../c-api/objbuffer.rst:47
+#: ../../c-api/objbuffer.rst:47
 msgid ""
 "Returns a pointer to a writable memory location.  The *obj* argument must "
 "support the single-segment, character buffer interface.  On success, returns"

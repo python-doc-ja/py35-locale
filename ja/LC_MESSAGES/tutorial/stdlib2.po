@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 2001-2016, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# E. Kawashima <e.kawaschima+transifex@gmail.com>, 2016
+# E. Kawashima, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-21 21:32+0900\n"
-"PO-Revision-Date: 2016-05-28 16:10+0000\n"
-"Last-Translator: E. Kawashima <e.kawaschima+transifex@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-35/language/ja/)\n"
+"PO-Revision-Date: 2016-11-18 22:24+0000\n"
+"Last-Translator: Julien <github@mandark.fr>\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -138,7 +137,7 @@ msgid ""
 "tasks in background while the main program continues to run::"
 msgstr "以下のコードでは、高水準のモジュール :mod:`threading` でメインのプログラムを動かしながら背後で別のタスクを動作させられるようにする方法を示しています::"
 
-#: ../../tutorial/stdlib2.rst:196
+#: ../../tutorial/stdlib2.rst:197
 msgid ""
 "The principal challenge of multi-threaded applications is coordinating "
 "threads that share data or other resources.  To that end, the threading "
@@ -146,7 +145,7 @@ msgid ""
 "events, condition variables, and semaphores."
 msgstr "マルチスレッドアプリケーションを作る上で最も難しい問題は、データやリソースを共有するスレッド間の調整 (coordination)です。この問題を解決するため、:mod:`threading` モジュールではロックやイベント、状態変数、セマフォといった数々の同期プリミティブを提供しています。"
 
-#: ../../tutorial/stdlib2.rst:201
+#: ../../tutorial/stdlib2.rst:202
 msgid ""
 "While those tools are powerful, minor design errors can result in problems "
 "that are difficult to reproduce.  So, the preferred approach to task "
@@ -157,22 +156,22 @@ msgid ""
 "and more reliable."
 msgstr "こうしたツールは強力な一方、ちょっとした設計上の欠陥で再現困難な問題を引き起こすことがあります。したがって、タスク間調整では :mod:`queue` モジュールを使って他の複数のスレッドからのリクエストを一つのスレッドに送り込み、一つのリソースへのアクセスをできるだけ一つのスレッドに集中させるほうが良いでしょう。スレッド間の通信や調整に :class:`~queue.Queue` オブジェクトを使うと、設計が容易になり、可読性が高まり、信頼性が増します。"
 
-#: ../../tutorial/stdlib2.rst:212
+#: ../../tutorial/stdlib2.rst:213
 msgid "Logging"
 msgstr "ログ記録"
 
-#: ../../tutorial/stdlib2.rst:214
+#: ../../tutorial/stdlib2.rst:215
 msgid ""
 "The :mod:`logging` module offers a full featured and flexible logging "
 "system. At its simplest, log messages are sent to a file or to "
 "``sys.stderr``::"
 msgstr ":mod:`logging` モジュールでは、数多くの機能をそなえた柔軟性のあるログ記録システムを提供しています。最も簡単な使い方では、ログメッセージをファイルや ``sys.stderr`` に送信します::"
 
-#: ../../tutorial/stdlib2.rst:224
+#: ../../tutorial/stdlib2.rst:225
 msgid "This produces the following output:"
 msgstr "これは以下の出力を生成します:"
 
-#: ../../tutorial/stdlib2.rst:232
+#: ../../tutorial/stdlib2.rst:233
 msgid ""
 "By default, informational and debugging messages are suppressed and the "
 "output is sent to standard error.  Other output options include routing "
@@ -182,25 +181,25 @@ msgid ""
 ":const:`~logging.ERROR`, and :const:`~logging.CRITICAL`."
 msgstr "デフォルトでは、:meth:`~logging.Logger.info` と :meth:`~logging.Logger.debug` による出力は抑制され、出力は標準エラーに送信されます。選択可能な送信先には、email、データグラム、ソケット、HTTP サーバへの送信などがあります。新たにフィルタを作成すると、:const:`~logging.DEBUG`、:const:`~logging.INFO`、:const:`~logging.WARNING`、:const:`~logging.ERROR`、:const:`~logging.CRITICAL` といったメッセージのプライオリティによって異なる送信先を選択することができます。"
 
-#: ../../tutorial/stdlib2.rst:239
+#: ../../tutorial/stdlib2.rst:240
 msgid ""
 "The logging system can be configured directly from Python or can be loaded "
 "from a user editable configuration file for customized logging without "
 "altering the application."
 msgstr "ログ記録システムは Python から直接設定することもできますし、アプリケーションを変更しなくてもカスタマイズできるよう、ユーザが編集可能な設定ファイルによって設定することもできます。"
 
-#: ../../tutorial/stdlib2.rst:247
+#: ../../tutorial/stdlib2.rst:248
 msgid "Weak References"
 msgstr "弱参照"
 
-#: ../../tutorial/stdlib2.rst:249
+#: ../../tutorial/stdlib2.rst:250
 msgid ""
 "Python does automatic memory management (reference counting for most objects"
 " and :term:`garbage collection` to eliminate cycles).  The memory is freed "
 "shortly after the last reference to it has been eliminated."
 msgstr "Python は自動的にメモリを管理します (ほとんどのオブジェクトは参照カウント方式で管理し、ガベージコレクション(:term:`garbage collection`)で循環参照を除去します)。オブジェクトに対する最後の参照がなくなってしばらくするとメモリは解放されます。"
 
-#: ../../tutorial/stdlib2.rst:253
+#: ../../tutorial/stdlib2.rst:254
 msgid ""
 "This approach works fine for most applications but occasionally there is a "
 "need to track objects only as long as they are being used by something else."
@@ -212,18 +211,18 @@ msgid ""
 "expensive to create::"
 msgstr "このようなアプローチはほとんどのアプリケーションでうまく動作しますが、中にはオブジェクトをどこか別の場所で利用している間だけ追跡しておきたい場合もあります。残念ながら、オブジェクトを追跡するだけでオブジェクトに対する恒久的な参照を作ることになってしまいます。 :mod:`weakref` モジュールでは、オブジェクトへの参照を作らずに追跡するためのツールを提供しています。弱参照オブジェクトが不要になると、弱参照 (weakref) テーブルから自動的に除去され、コールバック関数がトリガされます。弱参照を使う典型的な応用例には、作成コストの大きいオブジェクトのキャッシュがあります::"
 
-#: ../../tutorial/stdlib2.rst:288
+#: ../../tutorial/stdlib2.rst:289
 msgid "Tools for Working with Lists"
 msgstr "リスト操作のためのツール"
 
-#: ../../tutorial/stdlib2.rst:290
+#: ../../tutorial/stdlib2.rst:291
 msgid ""
 "Many data structure needs can be met with the built-in list type. However, "
 "sometimes there is a need for alternative implementations with different "
 "performance trade-offs."
 msgstr "多くのデータ構造は、組み込みリスト型を使った実装で事足ります。とはいえ、時には組み込みリストとは違うパフォーマンス上のトレードオフを持つような実装が必要になこともあります。"
 
-#: ../../tutorial/stdlib2.rst:294
+#: ../../tutorial/stdlib2.rst:295
 msgid ""
 "The :mod:`array` module provides an :class:`~array.array()` object that is "
 "like a list that stores only homogeneous data and stores it more compactly."
@@ -232,7 +231,7 @@ msgid ""
 "per entry for regular lists of Python int objects::"
 msgstr ":mod:`array` (配列) モジュールでは、:class:`~array.array()` オブジェクトを提供しています。配列はリストに似ていますが、同じ形式のデータだけが保存でき、よりコンパクトに保存されます。以下の例では、通常 1 要素あたり 16 バイトを必要とする Python 整数型のリストの 代りに、2 バイトの符号無しの 2 進数 (タイプコード ``\"H\"``) の配列を使っています::"
 
-#: ../../tutorial/stdlib2.rst:307
+#: ../../tutorial/stdlib2.rst:308
 msgid ""
 "The :mod:`collections` module provides a :class:`~collections.deque()` "
 "object that is like a list with faster appends and pops from the left side "
@@ -240,14 +239,14 @@ msgid ""
 "implementing queues and breadth first tree searches::"
 msgstr ":mod:`collections` モジュールでは、:class:`~collections.deque()` オブジェクトを提供しています。リスト型に似ていますが、データの追加と左端からの取り出しが速く、その一方で中間にある値の参照は遅くなります。こうしたオブジェクトはキューや幅優先のツリー探索の実装に 向いています::"
 
-#: ../../tutorial/stdlib2.rst:328
+#: ../../tutorial/stdlib2.rst:329
 msgid ""
 "In addition to alternative list implementations, the library also offers "
 "other tools such as the :mod:`bisect` module with functions for manipulating"
 " sorted lists::"
 msgstr "リストの代わりの実装以外にも、標準ライブラリにはソート済みのリストを操作するための関数を備えた :mod:`bisect` のようなツールも提供しています::"
 
-#: ../../tutorial/stdlib2.rst:338
+#: ../../tutorial/stdlib2.rst:339
 msgid ""
 "The :mod:`heapq` module provides functions for implementing heaps based on "
 "regular lists.  The lowest valued entry is always kept at position zero.  "
@@ -255,49 +254,49 @@ msgid ""
 " but do not want to run a full list sort::"
 msgstr ":mod:`heapq` モジュールは、通常のリストでヒープを実装するための関数を提供しています。ヒープでは、最も低い値をもつエントリがつねにゼロの位置に配置されます。ヒープは、毎回リストをソートすることなく、最小の値をもつ要素に繰り返しアクセスするようなアプリケーションで便利です::"
 
-#: ../../tutorial/stdlib2.rst:354
+#: ../../tutorial/stdlib2.rst:355
 msgid "Decimal Floating Point Arithmetic"
 msgstr "10 進浮動小数演算"
 
-#: ../../tutorial/stdlib2.rst:356
+#: ../../tutorial/stdlib2.rst:357
 msgid ""
 "The :mod:`decimal` module offers a :class:`~decimal.Decimal` datatype for "
 "decimal floating point arithmetic.  Compared to the built-in :class:`float` "
 "implementation of binary floating point, the class is especially helpful for"
 msgstr ":mod:`decimal` モジュールでは、 10 進浮動小数の算術演算をサポートする :class:`~decimal.Decimal` データ型を提供しています。組み込みの 2 進浮動小数の実装である :class:`float` に比べて、このクラスがとりわけ便利なのは、以下の場合です"
 
-#: ../../tutorial/stdlib2.rst:360
+#: ../../tutorial/stdlib2.rst:361
 msgid ""
 "financial applications and other uses which require exact decimal "
 "representation,"
 msgstr "財務アプリケーションやその他の正確な10進表記が必要なアプリケーション、"
 
-#: ../../tutorial/stdlib2.rst:362
+#: ../../tutorial/stdlib2.rst:363
 msgid "control over precision,"
 msgstr "精度の制御、"
 
-#: ../../tutorial/stdlib2.rst:363
+#: ../../tutorial/stdlib2.rst:364
 msgid "control over rounding to meet legal or regulatory requirements,"
 msgstr "法的または規制上の理由に基づく値丸めの制御、"
 
-#: ../../tutorial/stdlib2.rst:364
+#: ../../tutorial/stdlib2.rst:365
 msgid "tracking of significant decimal places, or"
 msgstr "有効桁数の追跡が必要になる場合"
 
-#: ../../tutorial/stdlib2.rst:365
+#: ../../tutorial/stdlib2.rst:366
 msgid ""
 "applications where the user expects the results to match calculations done "
 "by hand."
 msgstr "ユーザが手計算の結果と同じ演算結果を期待するようなアプリケーション。"
 
-#: ../../tutorial/stdlib2.rst:368
+#: ../../tutorial/stdlib2.rst:369
 msgid ""
 "For example, calculating a 5% tax on a 70 cent phone charge gives different "
 "results in decimal floating point and binary floating point. The difference "
 "becomes significant if the results are rounded to the nearest cent::"
 msgstr "例えば、70 セントの電話代にかかる 5% の税金を計算しようとすると、10 進の浮動小数点値と 2 進の浮動小数点値では違う結果になってしまいます。計算結果を四捨五入してセント単位にしようとすると、以下のように違いがはっきり現れます::"
 
-#: ../../tutorial/stdlib2.rst:378
+#: ../../tutorial/stdlib2.rst:379
 msgid ""
 "The :class:`~decimal.Decimal` result keeps a trailing zero, automatically "
 "inferring four place significance from multiplicands with two place "
@@ -306,14 +305,14 @@ msgid ""
 "decimal quantities."
 msgstr "上の例で、:class:`~decimal.Decimal` を使った計算では、末尾桁のゼロが保存されており、有効数字2桁の被乗数から自動的に有効数字を 4 桁と判断しています。:class:`~decimal.Decimal` は手計算と 同じ方法で計算を行い、2 進浮動小数が 10 進小数成分を正確に表現できないことに よって起きる問題を回避しています。"
 
-#: ../../tutorial/stdlib2.rst:384
+#: ../../tutorial/stdlib2.rst:385
 msgid ""
 "Exact representation enables the :class:`~decimal.Decimal` class to perform "
 "modulo calculations and equality tests that are unsuitable for binary "
 "floating point::"
 msgstr ":class:`~decimal.Decimal` クラスは厳密な値を表現できるため、2 進浮動小数点数では 期待通りに計算できないような剰余の計算や等値テストも実現できます::"
 
-#: ../../tutorial/stdlib2.rst:398
+#: ../../tutorial/stdlib2.rst:399
 msgid ""
 "The :mod:`decimal` module provides arithmetic with as much precision as "
 "needed::"
