@@ -4,12 +4,13 @@
 # 
 # Translators:
 # E. Kawashima, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:20+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-11-23 06:02+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,20 +65,20 @@ msgid ""
 "The bytecode analysis API allows pieces of Python code to be wrapped in a "
 ":class:`Bytecode` object that provides easy access to details of the "
 "compiled code."
-msgstr ""
+msgstr "バイトコード解析の API を使うと、 Python のコード片を :class:`Bytecode` オブジェクトでラップでき、コンパイルされたコードの細かいところに簡単にアクセスできます。"
 
 #: ../../library/dis.rst:52
 msgid ""
 "Analyse the bytecode corresponding to a function, generator, method, string "
 "of source code, or a code object (as returned by :func:`compile`)."
-msgstr ""
+msgstr "関数、ジェネレータ、メソッド、ソースコード文字列、(:func:`compile` が返すような) コードオブジェクトに対応するバイトコードを解析します。"
 
 #: ../../library/dis.rst:55
 msgid ""
 "This is a convenience wrapper around many of the functions listed below, "
 "most notably :func:`get_instructions`, as iterating over a :class:`Bytecode`"
 " instance yields the bytecode operations as :class:`Instruction` instances."
-msgstr ""
+msgstr "これは、下で並べられている関数の多くのものをまとめた便利なラッパーです。\nとりわけ目立つのは :func:`get_instructions` で、 :class:`Bytecode` インスタンスに対し反復処理をしながら、バイトコード操作を :class:`Instruction` インスタンスとして返します。"
 
 #: ../../library/dis.rst:59 ../../library/dis.rst:200
 msgid ""
@@ -85,20 +86,20 @@ msgid ""
 "reported for the first source line in the disassembled code.  Otherwise, the"
 " source line information (if any) is taken directly from the disassembled "
 "code object."
-msgstr ""
+msgstr "*first_line* が None でない場合は、それを逆アセンブルしたコードのソースの最初の行に表示する行番号とします。\nそうでない場合は、ソースの行の情報 (もしあれば) を逆アセンブルされたコードオブジェクトから直接取得します。"
 
 #: ../../library/dis.rst:64
 msgid ""
 "If *current_offset* is not None, it refers to an instruction offset in the "
 "disassembled code. Setting this means :meth:`.dis` will display a \"current "
 "instruction\" marker against the specified opcode."
-msgstr ""
+msgstr "*current_offset* が None でない場合は、逆アセンブルされたコードでのあるインストラクションのオフセット位置を示します。\nこれを設定すると、 :meth:`.dis` の出力において、指定された命令コード (opcode) に \"現在の命令 (instruction)\" を表す印が表示されます。"
 
 #: ../../library/dis.rst:70
 msgid ""
 "Construct a :class:`Bytecode` instance from the given traceback, setting "
 "*current_offset* to the instruction responsible for the exception."
-msgstr ""
+msgstr "与えられたトレースバックから :class:`Bytecode` インスタンスを構築し、 *current_offset* がその例外の原因となった命令となるよう設定します。"
 
 #: ../../library/dis.rst:75
 msgid "The compiled code object."
@@ -560,7 +561,7 @@ msgstr "新たなフレームオブジェクトを作成します。"
 
 #: ../../library/dis.rst:553
 msgid "**Miscellaneous opcodes**"
-msgstr "**その他の命令**"
+msgstr "**その他の命令コード**"
 
 #: ../../library/dis.rst:557
 msgid ""

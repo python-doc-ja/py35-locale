@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-23 03:27+0000\n"
+"PO-Revision-Date: 2016-11-23 04:16+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2707,11 +2707,11 @@ msgstr "*非同期イテレータ* オブジェクトを返さなくてはなり
 msgid ""
 "Must return an *awaitable* resulting in a next value of the iterator.  "
 "Should raise a :exc:`StopAsyncIteration` error when the iteration is over."
-msgstr ""
+msgstr "イテレータの次の値を返す *待機可能オブジェクト* を返さなければなりません。\n反復処理が終了したときには :exc:`StopAsyncIteration` エラーを送出すべきです。"
 
 #: ../../reference/datamodel.rst:2381
 msgid "An example of an asynchronous iterable object::"
-msgstr ""
+msgstr "非同期イテラブルオブジェクトの例::"
 
 #: ../../reference/datamodel.rst:2400
 msgid ""
@@ -2726,7 +2726,7 @@ msgid ""
 " to continue returning awaitables from ``__aiter__``.  If you want to avoid "
 "the PendingDeprecationWarning and keep the code backwards compatible, the "
 "following decorator can be used::"
-msgstr ""
+msgstr "CPython 3.5.x での後方互換性のあるコードを書くときに推奨される方法は、 ``__aiter__`` から待機可能オブジェクトを返し続けることです。\nPendingDeprecationWarning を避け、コードの後方互換性を保ちたい場合は、次のデコレータが使えます::"
 
 #: ../../reference/datamodel.rst:2425
 msgid "Example::"
@@ -2737,7 +2737,7 @@ msgid ""
 "Starting with CPython 3.6, the :exc:`PendingDeprecationWarning` will be "
 "replaced with the :exc:`DeprecationWarning`. In CPython 3.7, returning an "
 "awaitable from ``__aiter__`` will result in a :exc:`RuntimeError`."
-msgstr ""
+msgstr "CPython 3.6 からは、 :exc:`PendingDeprecationWarning` は :exc:`DeprecationWarning` に置き換えられます。\nCPython 3.7 では、 ``__aiter__`` から待機可能オブジェクトを返すと :exc:`RuntimeError` が送出されます。"
 
 #: ../../reference/datamodel.rst:2443
 msgid "Asynchronous Context Managers"
@@ -2747,29 +2747,29 @@ msgstr "非同期コンテクストマネージャ (Asynchronous Context Manager
 msgid ""
 "An *asynchronous context manager* is a *context manager* that is able to "
 "suspend execution in its ``__aenter__`` and ``__aexit__`` methods."
-msgstr ""
+msgstr "*非同期コンテキストマネージャ* は、 ``__aenter__`` メソッドと ``__aexit__`` メソッド内部で実行を一時停止できる *コンテキストマネージャ* です。"
 
 #: ../../reference/datamodel.rst:2448
 msgid ""
 "Asynchronous context managers can be used in an :keyword:`async with` "
 "statement."
-msgstr ""
+msgstr "非同期コンテキストマネージャは :keyword:`async with` 文の中で使えます。"
 
 #: ../../reference/datamodel.rst:2452
 msgid ""
 "This method is semantically similar to the :meth:`__enter__`, with only "
 "difference that it must return an *awaitable*."
-msgstr ""
+msgstr "このメソッドは文法的には :meth:`__enter__` に似ていますが、 *待機可能オブジェクト* を返さなければならないところだけが異なります。"
 
 #: ../../reference/datamodel.rst:2457
 msgid ""
 "This method is semantically similar to the :meth:`__exit__`, with only "
 "difference that it must return an *awaitable*."
-msgstr ""
+msgstr "このメソッドは文法的には :meth:`__exit__` に似ていますが、 *待機可能オブジェクト* を返さなければならないところだけが異なります。"
 
 #: ../../reference/datamodel.rst:2460
 msgid "An example of an asynchronous context manager class::"
-msgstr ""
+msgstr "非同期コンテキストマネージャクラスの例::"
 
 #: ../../reference/datamodel.rst:2473
 msgid "Footnotes"

@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:20+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-11-23 04:48+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,14 +35,14 @@ msgstr "このモジュールでは :class:`HTMLParser` クラスを定義しま
 
 #: ../../library/html.parser.rst:20
 msgid "Create a parser instance able to parse invalid markup."
-msgstr ""
+msgstr "不正なマークアップをパースするパーサーインスタンスを作成します。"
 
 #: ../../library/html.parser.rst:22
 msgid ""
 "If *convert_charrefs* is ``True`` (the default), all character references "
 "(except the ones in ``script``/``style`` elements) are automatically "
 "converted to the corresponding Unicode characters."
-msgstr ""
+msgstr "*convert_charrefs* が (デフォルトの) ``True`` である場合、全ての文字参照 (``script``/``style`` 要素にあるものは除く) は自動的に対応する Unicode 文字に変換されます。"
 
 #: ../../library/html.parser.rst:26
 msgid ""
@@ -64,7 +65,7 @@ msgstr "キーワード引数 *convert_charrefs* を追加。"
 
 #: ../../library/html.parser.rst:37
 msgid "The default value for argument *convert_charrefs* is now ``True``."
-msgstr ""
+msgstr "*convert_charrefs* のデフォルト値は ``True`` になりました。"
 
 #: ../../library/html.parser.rst:42
 msgid "Example HTML Parser Application"
@@ -257,7 +258,7 @@ msgid ""
 "The *data* parameter will be the entire contents of the declaration inside "
 "the ``<![...]>`` markup.  It is sometimes useful to be overridden by a "
 "derived class.  The base class implementation does nothing."
-msgstr ""
+msgstr "パラメーター *data* は ``<![...]>`` マークアップ内の宣言の内容全体になります。\nこれは派生クラスで上書きする時に役立つことがあります。\n基底クラスの実装では何もしません。"
 
 #: ../../library/html.parser.rst:230
 msgid "Examples"

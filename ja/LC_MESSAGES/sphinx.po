@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-11-23 04:33+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -83,7 +83,7 @@ msgstr "What's new in Python %(version)s?"
 
 #: ../../tools/templates/indexcontent.html:7
 msgid "or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents</a> since 2.0"
-msgstr "あるいは2.0からのすべての<a href=\"%(whatsnew_index)s\">all \"What's new\" ドキュメント</a>"
+msgstr "あるいは2.0からの<a href=\"%(whatsnew_index)s\">すべての \"What's new\" ドキュメント</a>"
 
 #: ../../tools/templates/indexcontent.html:8
 msgid "Tutorial"
