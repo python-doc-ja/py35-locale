@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-22 17:30+0000\n"
+"PO-Revision-Date: 2016-11-23 03:27+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2665,7 +2665,7 @@ msgid ""
 ":exc:`StopIteration`, or other exception) is the same as when iterating over"
 " the :meth:`__await__` return value, described above.  If the exception is "
 "not caught in the coroutine, it propagates back to the caller."
-msgstr "コルーチンで指定された例外を送出します。\nこのメソッドは、イテレータにコルーチンを一時停止する :meth:`~generator.throw` メソッドがある場合に処理を委任します。\nそうでない場合には、中断した時点で例外が送出されます。\n結果 (返り値か :exc:`StopIteration` かその他の例外) は、上で解説したような :meth:`__await__` の返り値に対して反復処理を行ったときと同じです。\n例外がコルーチンの中で捕捉されなかった場合、呼び出し元へ伝搬されます。"
+msgstr "コルーチンで指定された例外を送出します。\nこのメソッドは、イテレータにコルーチンを一時停止する :meth:`~generator.throw` メソッドがある場合に処理を委任します。\nそうでない場合には、中断した地点から例外が送出されます。\n結果 (返り値か :exc:`StopIteration` かその他の例外) は、上で解説したような :meth:`__await__` の返り値に対して反復処理を行ったときと同じです。\n例外がコルーチンの中で捕捉されなかった場合、呼び出し元へ伝搬されます。"
 
 #: ../../reference/datamodel.rst:2350
 msgid ""
@@ -2675,13 +2675,13 @@ msgid ""
 "a method.  Then it raises :exc:`GeneratorExit` at the suspension point, "
 "causing the coroutine to immediately clean itself up. Finally, the coroutine"
 " is marked as having finished executing, even if it was never started."
-msgstr ""
+msgstr "コルーチンが自分自身の後片付けをし終了します。\nコルーチンが一時停止している場合は、コルーチンを一時停止させたイテレータに :meth:`~generator.close` メソッドがあれば、まずはそれに処理を委任します。\nそして一時停止した地点から :exc:`GeneratorExit` が送出され、ただちにコルーチンが自分自身の後片付けを行います。\n最後に、実行が開始されていなかった場合でも、コルーチンに実行が完了した印を付けます。"
 
 #: ../../reference/datamodel.rst:2358
 msgid ""
 "Coroutine objects are automatically closed using the above process when they"
 " are about to be destroyed."
-msgstr ""
+msgstr "コルーチンオブジェクトが破棄されるときには、上記の手順を経て自動的に閉じられます。"
 
 #: ../../reference/datamodel.rst:2364
 msgid "Asynchronous Iterators"
@@ -2692,16 +2692,16 @@ msgid ""
 "An *asynchronous iterable* is able to call asynchronous code in its "
 "``__aiter__`` implementation, and an *asynchronous iterator* can call "
 "asynchronous code in its ``__anext__`` method."
-msgstr ""
+msgstr "*非同期イテラブル* の ``__aiter__`` の実装からは非同期のコードが呼べ、 *非同期イテレータ* の ``__anext__`` メソッドからは非同期のコードが呼べます。"
 
 #: ../../reference/datamodel.rst:2370
 msgid ""
 "Asynchronous iterators can be used in an :keyword:`async for` statement."
-msgstr ""
+msgstr "非同期イテレータは :keyword:`async for` 文の中で使えます。"
 
 #: ../../reference/datamodel.rst:2374
 msgid "Must return an *asynchronous iterator* object."
-msgstr ""
+msgstr "*非同期イテレータ* オブジェクトを返さなくてはなりません。"
 
 #: ../../reference/datamodel.rst:2378
 msgid ""
