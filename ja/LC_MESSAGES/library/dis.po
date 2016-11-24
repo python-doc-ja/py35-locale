@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-24 02:20+0000\n"
+"PO-Revision-Date: 2016-11-24 16:54+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgid ""
 "This is a convenience wrapper around many of the functions listed below, "
 "most notably :func:`get_instructions`, as iterating over a :class:`Bytecode`"
 " instance yields the bytecode operations as :class:`Instruction` instances."
-msgstr "これは、下で並べられている関数の多くのものをまとめた便利なラッパーです。\nとりわけ目立つのは :func:`get_instructions` で、 :class:`Bytecode` インスタンスに対し反復処理をしながら、バイトコード操作を :class:`Instruction` インスタンスとして返します。"
+msgstr "これは、下で並べられている関数の多くのものをまとめた便利なラッパーです。\nとりわけ目立つのは :func:`get_instructions` で、 :class:`Bytecode` インスタンスに対し反復処理をしながら、バイトコード命令を :class:`Instruction` インスタンスとして返します。"
 
 #: ../../library/dis.rst:59 ../../library/dis.rst:200
 msgid ""
@@ -187,7 +187,7 @@ msgstr "*x* オブジェクトを逆アセンブルします。 *x* はモジュ
 msgid ""
 "The disassembly is written as text to the supplied *file* argument if "
 "provided and to ``sys.stdout`` otherwise."
-msgstr "*file* 引数が与えられた場合は、アセンブリをそこに書き込みます。\nそうでない場合は ``sys.stdout`` に出力します。"
+msgstr "*file* 引数が渡された場合は、アセンブリをそこに書き込みます。\nそうでない場合は ``sys.stdout`` に出力します。"
 
 #: ../../library/dis.rst:157
 msgid ""
@@ -240,13 +240,13 @@ msgstr "パラメタの解釈は、ローカル変数とグローバル変数の
 msgid ""
 "Return an iterator over the instructions in the supplied function, method, "
 "source code string or code object."
-msgstr ""
+msgstr "渡された関数、メソッド、ソースコード文字列、コードオブジェクトにある命令のイテレータを返します。"
 
 #: ../../library/dis.rst:197
 msgid ""
 "The iterator generates a series of :class:`Instruction` named tuples giving "
 "the details of each operation in the supplied code."
-msgstr ""
+msgstr "イテレータは、与えられたコードの各命令の詳細情報を保持する名前付きタプル :class:`Instruction` からなる列を生成します。"
 
 #: ../../library/dis.rst:210
 msgid ""
@@ -264,7 +264,7 @@ msgstr "ジャンプ先であるコードオブジェクト *code* のすべて�
 
 #: ../../library/dis.rst:223
 msgid "Compute the stack effect of *opcode* with argument *oparg*."
-msgstr ""
+msgstr "*opcode* と引数 *oparg* がスタックに与える影響を計算します。"
 
 #: ../../library/dis.rst:230
 msgid "Python Bytecode Instructions"
@@ -274,11 +274,11 @@ msgstr "Python バイトコード命令"
 msgid ""
 "The :func:`get_instructions` function and :class:`Bytecode` class provide "
 "details of bytecode instructions as :class:`Instruction` instances:"
-msgstr ""
+msgstr ":func:`get_instructions` 関数と :class:`Bytecode` クラスはバイトコード命令の詳細を :class:`Instruction` インスタンスの形で提供します:"
 
 #: ../../library/dis.rst:237
 msgid "Details for a bytecode operation"
-msgstr ""
+msgstr "バイトコード命令の詳細"
 
 #: ../../library/dis.rst:241
 msgid ""
