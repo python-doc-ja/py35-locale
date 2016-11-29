@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-29 02:47+0000\n"
+"PO-Revision-Date: 2016-11-29 16:26+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -946,7 +946,7 @@ msgstr "関数を呼び出します。 *argc* の下位バイトは位置パラ�
 msgid ""
 "Pushes a new function object on the stack.  From bottom to top, the consumed"
 " stack must consist of"
-msgstr "新しい関数オブジェクトをスタックにプッシュします。\nスタックの下から上の順に、スタックは以下の構成でなければなりません。"
+msgstr "新しい関数オブジェクトをスタックにプッシュします。\nスタックの下から上の順に、以下の構成でなければなりません。"
 
 #: ../../library/dis.rst:934
 msgid "``argc & 0xFF`` default argument objects in positional order"
@@ -966,15 +966,15 @@ msgstr "``(argc >> 16) & 0x7FFF`` 仮引数のアノテーションオブジェ�
 msgid ""
 "a tuple listing the parameter names for the annotations (only if there are "
 "ony annotation objects)"
-msgstr ""
+msgstr "アノテーションに対応する仮引数名を並べたタプル (アノテーションがある場合のみ)"
 
 #: ../../library/dis.rst:940
 msgid "the code associated with the function (at TOS1)"
-msgstr ""
+msgstr "関数に関連付けられたコード (TOS1の位置)"
 
 #: ../../library/dis.rst:941
 msgid "the :term:`qualified name` of the function (at TOS)"
-msgstr ""
+msgstr "関数の :term:`qualified name` (TOSの位置)"
 
 #: ../../library/dis.rst:946
 msgid ""
@@ -984,7 +984,7 @@ msgid ""
 "for the closure's free variables.  *argc* is interpreted as in "
 "``MAKE_FUNCTION``; the annotations and defaults are also in the same order "
 "below TOS2."
-msgstr ""
+msgstr "新しい関数オブジェクトを生成し、その *__closure__* スロットを設定し、スタックにプッシュします。\nTOS は関数の :term:`qualified name` であり、 TOS1 は関数に関連付けられたコードであり、 TOS2 はクロージャの自由変数のセルからなるタプルです。\n*argc* は ``MAKE_FUNCTION`` によって解釈されます; アノテーションとデフォルト引数は、スタックの下にある TOS2 と同じ順序です。"
 
 #: ../../library/dis.rst:957
 msgid ""
@@ -1032,13 +1032,13 @@ msgstr "これは実際の命令コードではありません。引数を取ら
 
 #: ../../library/dis.rst:1001
 msgid "Opcode collections"
-msgstr ""
+msgstr "命令コードコレクション"
 
 #: ../../library/dis.rst:1003
 msgid ""
 "These collections are provided for automatic introspection of bytecode "
 "instructions:"
-msgstr ""
+msgstr "これらのコレクションは、自動でバイトコード命令を解析するために提供されています:"
 
 #: ../../library/dis.rst:1008
 msgid "Sequence of operation names, indexable using the bytecode."
