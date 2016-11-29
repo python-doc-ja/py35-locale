@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-26 15:14+0000\n"
+"PO-Revision-Date: 2016-11-29 02:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -568,7 +568,7 @@ msgid ""
 "Implements the expression statement for the interactive mode.  TOS is "
 "removed from the stack and printed.  In non-interactive mode, an expression "
 "statement is terminated with :opcode:`POP_TOP`."
-msgstr "対話モードのための式文に対応します。TOS はスタックから取り除かれ表示されます。 非対話モードにおいては、式文は :opcode:`POP_TOP` で終了しています。"
+msgstr "対話モードのための式文を実行します。TOS はスタックから取り除かれ表示されます。 非対話モードにおいては、式文は :opcode:`POP_TOP` で終了しています。"
 
 #: ../../library/dis.rst:564
 msgid "Terminates a loop due to a :keyword:`break` statement."
@@ -853,7 +853,7 @@ msgid ""
 " this yields a new value, push it on the stack (leaving the iterator below "
 "it).  If the iterator indicates it is exhausted TOS is popped, and the byte "
 "code counter is incremented by *delta*."
-msgstr ""
+msgstr "TOS はイテレータです。\nその :meth:`~iterator.__next__` メソッドを呼び出します。\n新しい値が yield された場合は、それをスタックにプッシュします (イテレータはその下に残されます)。\nイテレータの呼び出しで要素が尽きたことが示された場合は、 TOS がポップされ、バイトコードカウンタが *delta* だけ増やされます。"
 
 #: ../../library/dis.rst:841
 msgid "Loads the global named ``co_names[namei]`` onto the stack."
@@ -909,7 +909,7 @@ msgid ""
 "Much like :opcode:`LOAD_DEREF` but first checks the locals dictionary before"
 " consulting the cell.  This is used for loading free variables in class "
 "bodies."
-msgstr ""
+msgstr ":opcode:`LOAD_DEREF` とほぼ同じですが、セルを調べる前にまずローカルの辞書を確認します。\nこれはクラス本体に自由変数を読み込むために使います。"
 
 #: ../../library/dis.rst:900
 msgid ""
@@ -921,7 +921,7 @@ msgstr "セルと自由変数の記憶領域のスロット *i* に含まれる�
 msgid ""
 "Empties the cell contained in slot *i* of the cell and free variable "
 "storage. Used by the :keyword:`del` statement."
-msgstr ""
+msgstr "セルと自由変数の記憶領域のスロット *i* にあるセルを空にします。\n:keyword:`del` 文で使われます。"
 
 #: ../../library/dis.rst:912
 msgid ""
@@ -946,21 +946,21 @@ msgstr "関数を呼び出します。 *argc* の下位バイトは位置パラ�
 msgid ""
 "Pushes a new function object on the stack.  From bottom to top, the consumed"
 " stack must consist of"
-msgstr ""
+msgstr "新しい関数オブジェクトをスタックにプッシュします。\nスタックの下から上の順に、スタックは以下の構成でなければなりません。"
 
 #: ../../library/dis.rst:934
 msgid "``argc & 0xFF`` default argument objects in positional order"
-msgstr ""
+msgstr "``argc & 0xFF`` 位置の順序で並べたデフォルト引数オブジェクト"
 
 #: ../../library/dis.rst:935
 msgid ""
 "``(argc >> 8) & 0xFF`` pairs of name and default argument, with the name "
 "just below the object on the stack, for keyword-only parameters"
-msgstr ""
+msgstr "``(argc >> 8) & 0xFF`` 名前付き引数のみについて、名前とデフォルト引数のペアをスタック上で名前がオブジェクトのすぐ下にくるように並べたもの"
 
 #: ../../library/dis.rst:937
 msgid "``(argc >> 16) & 0x7FFF`` parameter annotation objects"
-msgstr ""
+msgstr "``(argc >> 16) & 0x7FFF`` 仮引数のアノテーションオブジェクト"
 
 #: ../../library/dis.rst:938
 msgid ""
