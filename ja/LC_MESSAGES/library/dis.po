@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-29 16:26+0000\n"
+"PO-Revision-Date: 2016-11-30 02:36+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -728,7 +728,7 @@ msgstr "``del name`` を実行します。 *namei* はコードオブジェク�
 msgid ""
 "Unpacks TOS into *count* individual values, which are put onto the stack "
 "right-to-left."
-msgstr "TOS を *count* 個の個別の値にアンパックして、右から左の順にスタックに置きます。"
+msgstr "TOS を *count* 個の個別の値にアンパックして、右から左の順にスタックに積みます。"
 
 #: ../../library/dis.rst:709
 msgid ""
@@ -736,14 +736,14 @@ msgid ""
 " individual values, where the total number of values can be smaller than the"
 " number of items in the iterable: one of the new values will be a list of "
 "all leftover items."
-msgstr ""
+msgstr "星付きの対象ありの代入を実行します:\nTOS にあるイテラブルを個別の値にばらしますが、ばらした値の総数はイテラブルの要素数より小さくなることがあります:\nそのときは、値の1つはばらされずに残った要素からなるリストです。"
 
 #: ../../library/dis.rst:714
 msgid ""
 "The low byte of *counts* is the number of values before the list value, the "
 "high byte of *counts* the number of values after it.  The resulting values "
 "are put onto the stack right-to-left."
-msgstr ""
+msgstr "*counts* の下位バイトはそのリスト値より前にある値の個数で、 *counts* の上位バイトはそれより後ろにある値の個数です。\nそうしてできた値は右から左の順でスタックに積まれます。"
 
 #: ../../library/dis.rst:721
 msgid ""
@@ -1062,7 +1062,7 @@ msgid ""
 "context refers to names in the current scope that are referenced by inner "
 "scopes or names in outer scopes that are referenced from this scope.  It "
 "does *not* include references to global or builtin scopes)."
-msgstr ""
+msgstr "自由変数にアクセスするバイトコードのリスト (この文脈での '自由' とは、現在のスコープにある名前で内側のスコープから参照されているもの、もしくは外側のスコープにある名前で現在のスコープから参照しているものを指します。グローバルスコープや組み込みのスコープへの参照は含み *ません*)。"
 
 #: ../../library/dis.rst:1036
 msgid "Sequence of bytecodes that access an attribute by name."
