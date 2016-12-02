@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-02 02:59+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -283,7 +284,7 @@ msgid ""
 "Since a bound method is ephemeral, a standard weak reference cannot keep "
 "hold of it.  :class:`WeakMethod` has special code to recreate the bound "
 "method until either the object or the original function dies::"
-msgstr ""
+msgstr "拡張された :class:`ref` のサブクラスで、束縛されたメソッドへの弱参照をシミュレートします (つまり、クラスで定義され、インスタンスにあるメソッド)。\n束縛されたメソッドは短命なので、標準の弱参照では保持し続けられません。\n :class:`WeakMethod` には、オブジェクトと元々の関数が死ぬまで束縛されたメソッドを再作成する特別なコードがあります::"
 
 #: ../../library/weakref.rst:241
 msgid ""
