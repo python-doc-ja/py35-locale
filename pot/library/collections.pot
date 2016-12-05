@@ -324,7 +324,7 @@ msgid "Though :class:`list` objects support similar operations, they are optimiz
 msgstr ""
 
 #: ../../library/collections.rst:415
-msgid "If *maxlen* is not specified or is *None*, deques may grow to an arbitrary length.  Otherwise, the deque is bounded to the specified maximum length.  Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end.  Bounded length deques provide functionality similar to the ``tail`` filter in Unix. They are also useful for tracking transactions and other pools of data where only the most recent activity is of interest."
+msgid "If *maxlen* is not specified or is ``None``, deques may grow to an arbitrary length.  Otherwise, the deque is bounded to the specified maximum length.  Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end.  Bounded length deques provide functionality similar to the ``tail`` filter in Unix. They are also useful for tracking transactions and other pools of data where only the most recent activity is of interest."
 msgstr ""
 
 #: ../../library/collections.rst:424
@@ -396,7 +396,7 @@ msgid "Deque objects also provide one read-only attribute:"
 msgstr ""
 
 #: ../../library/collections.rst:523
-msgid "Maximum size of a deque or *None* if unbounded."
+msgid "Maximum size of a deque or ``None`` if unbounded."
 msgstr ""
 
 #: ../../library/collections.rst:528

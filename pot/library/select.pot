@@ -456,7 +456,7 @@ msgid "Low level interface to kevent"
 msgstr ""
 
 #: ../../library/select.rst:462
-msgid "changelist must be an iterable of kevent object or None"
+msgid "changelist must be an iterable of kevent object or ``None``"
 msgstr ""
 
 #: ../../library/select.rst:463

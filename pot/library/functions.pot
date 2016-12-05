@@ -697,7 +697,7 @@ msgid "Return an integer object constructed from a number or string *x*, or retu
 msgstr ""
 
 #: ../../library/functions.rst:683
-msgid "If *x* is not a number or if *base* is given, then *x* must be a string, :class:`bytes`, or :class:`bytearray` instance representing an :ref:`integer literal <integers>` in radix *base*.  Optionally, the literal can be preceded by ``+`` or ``-`` (with no space in between) and surrounded by whitespace.  A base-n literal consists of the digits 0 to n-1, with ``a`` to ``z`` (or ``A`` to ``Z``) having values 10 to 35.  The default *base* is 10. The allowed values are 0 and 2-36. Base-2, -8, and -16 literals can be optionally prefixed with ``0b``/``0B``, ``0o``/``0O``, or ``0x``/``0X``, as with integer literals in code.  Base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16, and so that ``int('010', 0)`` is not legal, while ``int('010')`` is, as well as ``int('010', 8)``."
+msgid "If *x* is not a number or if *base* is given, then *x* must be a string, :class:`bytes`, or :class:`bytearray` instance representing an :ref:`integer literal <integers>` in radix *base*.  Optionally, the literal can be preceded by ``+`` or ``-`` (with no space in between) and surrounded by whitespace.  A base-n literal consists of the digits 0 to n-1, with ``a`` to ``z`` (or ``A`` to ``Z``) having values 10 to 35.  The default *base* is 10. The allowed values are 0 and 2--36. Base-2, -8, and -16 literals can be optionally prefixed with ``0b``/``0B``, ``0o``/``0O``, or ``0x``/``0X``, as with integer literals in code.  Base 0 means to interpret exactly as a code literal, so that the actual base is 2, 8, 10, or 16, and so that ``int('010', 0)`` is not legal, while ``int('010')`` is, as well as ``int('010', 8)``."
 msgstr ""
 
 #: ../../library/functions.rst:696
@@ -915,7 +915,7 @@ msgid "*encoding* is the name of the encoding used to decode or encode the file.
 msgstr ""
 
 #: ../../library/functions.rst:951
-msgid "*errors* is an optional string that specifies how encoding and decoding errors are to be handled--this cannot be used in binary mode. A variety of standard error handlers are available (listed under :ref:`error-handlers`), though any error handling name that has been registered with :func:`codecs.register_error` is also valid.  The standard names include:"
+msgid "*errors* is an optional string that specifies how encoding and decoding errors are to be handled—this cannot be used in binary mode. A variety of standard error handlers are available (listed under :ref:`error-handlers`), though any error handling name that has been registered with :func:`codecs.register_error` is also valid.  The standard names include:"
 msgstr ""
 
 #: ../../library/functions.rst:959

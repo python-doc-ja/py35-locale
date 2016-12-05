@@ -449,7 +449,7 @@ msgid "If *parents* is false (the default), a missing parent raises :exc:`FileNo
 msgstr ""
 
 #: ../../library/pathlib.rst:835
-msgid "If *exist_ok* is false (the default), an :exc:`FileExistsError` is raised if the target directory already exists."
+msgid "If *exist_ok* is false (the default), :exc:`FileExistsError` is raised if the target directory already exists."
 msgstr ""
 
 #: ../../library/pathlib.rst:838

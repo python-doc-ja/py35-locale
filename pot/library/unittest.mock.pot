@@ -160,7 +160,7 @@ msgid "*unsafe*: By default if any attribute starts with *assert* or *assret* wi
 msgstr ""
 
 #: ../../library/unittest.mock.rst:247
-msgid "*wraps*: Item for the mock object to wrap. If *wraps* is not None then calling the Mock will pass the call through to the wrapped object (returning the real result). Attribute access on the mock will return a Mock object that wraps the corresponding attribute of the wrapped object (so attempting to access an attribute that doesn't exist will raise an :exc:`AttributeError`)."
+msgid "*wraps*: Item for the mock object to wrap. If *wraps* is not ``None`` then calling the Mock will pass the call through to the wrapped object (returning the real result). Attribute access on the mock will return a Mock object that wraps the corresponding attribute of the wrapped object (so attempting to access an attribute that doesn't exist will raise an :exc:`AttributeError`)."
 msgstr ""
 
 #: ../../library/unittest.mock.rst:254

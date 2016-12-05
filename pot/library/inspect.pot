@@ -354,7 +354,7 @@ msgid "co_flags"
 msgstr ""
 
 #: ../../library/inspect.rst:155
-msgid "bitmap: 1=optimized ``|`` 2=newlocals ``|`` 4=\\*arg ``|`` 8=\\*\\*arg"
+msgid "bitmap of ``CO_*`` flags, read more :ref:`here <inspect-module-co-flags>`"
 msgstr ""
 
 #: ../../library/inspect.rst:159
@@ -1152,18 +1152,58 @@ msgid "This function is analogous to :func:`~inspect.getgeneratorlocals`, but wo
 msgstr ""
 
 #: ../../library/inspect.rst:1238
-msgid "Command Line Interface"
+msgid "Code Objects Bit Flags"
 msgstr ""
 
 #: ../../library/inspect.rst:1240
-msgid "The :mod:`inspect` module also provides a basic introspection capability from the command line."
+msgid "Python code objects have a ``co_flags`` attribute, which is a bitmap of the following flags:"
 msgstr ""
 
 #: ../../library/inspect.rst:1245
+msgid "If set, a new dict will be created for the frame's ``f_locals`` when the code object is executed."
+msgstr ""
+
+#: ../../library/inspect.rst:1250
+msgid "The code object has a variable positional parameter (``*args``-like)."
+msgstr ""
+
+#: ../../library/inspect.rst:1254
+msgid "The code object has a variable keyword parameter (``**kwargs``-like)."
+msgstr ""
+
+#: ../../library/inspect.rst:1258
+msgid "The flag is set when the code object is a generator function, i.e. a generator object is returned when the code object is executed."
+msgstr ""
+
+#: ../../library/inspect.rst:1263
+msgid "The flag is set if there are no free or cell variables."
+msgstr ""
+
+#: ../../library/inspect.rst:1267
+msgid "The flag is set when the code object is a coroutine function, i.e. a coroutine object is returned when the code object is executed.  See :pep:`492` for more details."
+msgstr ""
+
+#: ../../library/inspect.rst:1275
+msgid "Used to turn generators into generator-based coroutines.  Generator objects with this flag can be used in ``await`` expression, and can ``yield from`` coroutine objects.  See :pep:`492` for more details."
+msgstr ""
+
+#: ../../library/inspect.rst:1282
+msgid "The flags are specific to CPython, and may not be defined in other Python implementations.  Furthermore, the flags are an implementation detail, and can be removed or deprecated in future Python releases. It's recommended to use public APIs from the :mod:`inspect` module for any introspection needs."
+msgstr ""
+
+#: ../../library/inspect.rst:1293
+msgid "Command Line Interface"
+msgstr ""
+
+#: ../../library/inspect.rst:1295
+msgid "The :mod:`inspect` module also provides a basic introspection capability from the command line."
+msgstr ""
+
+#: ../../library/inspect.rst:1300
 msgid "By default, accepts the name of a module and prints the source of that module. A class or function within the module can be printed instead by appended a colon and the qualified name of the target object."
 msgstr ""
 
-#: ../../library/inspect.rst:1251
+#: ../../library/inspect.rst:1306
 msgid "Print information about the specified object rather than the source code"
 msgstr ""
 

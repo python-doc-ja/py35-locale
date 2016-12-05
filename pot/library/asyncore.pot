@@ -48,7 +48,7 @@ msgid "Once the initial channel(s) is(are) created, calling the :func:`loop` fun
 msgstr ""
 
 #: ../../library/asyncore.rst:58
-msgid "Enter a polling loop that terminates after count passes or all open channels have been closed.  All arguments are optional.  The *count* parameter defaults to None, resulting in the loop terminating only when all channels have been closed.  The *timeout* argument sets the timeout parameter for the appropriate :func:`~select.select` or :func:`~select.poll` call, measured in seconds; the default is 30 seconds.  The *use_poll* parameter, if true, indicates that :func:`~select.poll` should be used in preference to :func:`~select.select` (the default is ``False``)."
+msgid "Enter a polling loop that terminates after count passes or all open channels have been closed.  All arguments are optional.  The *count* parameter defaults to ``None``, resulting in the loop terminating only when all channels have been closed.  The *timeout* argument sets the timeout parameter for the appropriate :func:`~select.select` or :func:`~select.poll` call, measured in seconds; the default is 30 seconds.  The *use_poll* parameter, if true, indicates that :func:`~select.poll` should be used in preference to :func:`~select.select` (the default is ``False``)."
 msgstr ""
 
 #: ../../library/asyncore.rst:67

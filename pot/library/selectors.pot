@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/selectors.rst:2
-msgid ":mod:`selectors` -- High-level I/O multiplexing"
+msgid ":mod:`selectors` --- High-level I/O multiplexing"
 msgstr ""
 
 #: ../../library/selectors.rst:9

@@ -381,7 +381,7 @@ msgid "A short description of each of these follows, but see the relevant module
 msgstr ""
 
 #: ../../distutils/apiref.rst:169
-msgid "The Extension class describes a single C or C++extension module in a setup script. It accepts the following keyword arguments in its constructor:"
+msgid "The Extension class describes a single C or C++ extension module in a setup script. It accepts the following keyword arguments in its constructor:"
 msgstr ""
 
 #: ../../distutils/apiref.rst:177
@@ -409,7 +409,7 @@ msgid "*define_macros*"
 msgstr ""
 
 #: ../../distutils/apiref.rst:200
-msgid "list of macros to define; each macro is defined using a 2-tuple ``(name, value)``, where *value* is either the string to define it to or ``None`` to define it without a particular value (equivalent of ``#define FOO`` in source or :option:`-DFOO` on Unix C compiler command line)"
+msgid "list of macros to define; each macro is defined using a 2-tuple ``(name, value)``, where *value* is either the string to define it to or ``None`` to define it without a particular value (equivalent of ``#define FOO`` in source or :option:`!-DFOO` on Unix C compiler command line)"
 msgstr ""
 
 #: ../../distutils/apiref.rst:200
@@ -537,7 +537,7 @@ msgid "Generate linker options for searching library directories and linking wit
 msgstr ""
 
 #: ../../distutils/apiref.rst:322
-msgid "Generate C pre-processor options (:option:`-D`, :option:`!-U`, :option:`!-I`) as used by at least two types of compilers: the typical Unix compiler and Visual C++. *macros* is the usual thing, a list of 1- or 2-tuples, where ``(name,)`` means undefine (:option:`!-U`) macro *name*, and ``(name, value)`` means define (:option:`-D`) macro *name* to *value*.  *include_dirs* is just a list of directory names to be added to the header file search path (:option:`!-I`). Returns a list of command-line options suitable for either Unix compilers or Visual C++."
+msgid "Generate C pre-processor options (:option:`!-D`, :option:`!-U`, :option:`!-I`) as used by at least two types of compilers: the typical Unix compiler and Visual C++. *macros* is the usual thing, a list of 1- or 2-tuples, where ``(name,)`` means undefine (:option:`!-U`) macro *name*, and ``(name, value)`` means define (:option:`!-D`) macro *name* to *value*.  *include_dirs* is just a list of directory names to be added to the header file search path (:option:`!-I`). Returns a list of command-line options suitable for either Unix compilers or Visual C++."
 msgstr ""
 
 #: ../../distutils/apiref.rst:334
@@ -557,7 +557,7 @@ msgid "Factory function to generate an instance of some CCompiler subclass for t
 msgstr ""
 
 #: ../../distutils/apiref.rst:362
-msgid "Print list of available compilers (used by the :option:`--help-compiler` options to :command:`build`, :command:`build_ext`, :command:`build_clib`)."
+msgid "Print list of available compilers (used by the :option:`!--help-compiler` options to :command:`build`, :command:`build_ext`, :command:`build_clib`)."
 msgstr ""
 
 #: ../../distutils/apiref.rst:368
@@ -870,23 +870,23 @@ msgid "This module provides the :class:`UnixCCompiler` class, a subclass of :cla
 msgstr ""
 
 #: ../../distutils/apiref.rst:792
-msgid "macros defined with :option:`-Dname[=value]`"
+msgid "macros defined with :option:`!-Dname[=value]`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:794
-msgid "macros undefined with :option:`-Uname`"
+msgid "macros undefined with :option:`!-Uname`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:796
-msgid "include search directories specified with :option:`-Idir`"
+msgid "include search directories specified with :option:`!-Idir`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:798
-msgid "libraries specified with :option:`-llib`"
+msgid "libraries specified with :option:`!-llib`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:800
-msgid "library search directories specified with :option:`-Ldir`"
+msgid "library search directories specified with :option:`!-Ldir`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:802
@@ -898,7 +898,7 @@ msgid "link static library handled by :program:`ar` command (possibly with :prog
 msgstr ""
 
 #: ../../distutils/apiref.rst:808
-msgid "link shared library handled by :program:`cc` :option:`-shared`"
+msgid "link shared library handled by :program:`cc` :option:`!-shared`"
 msgstr ""
 
 #: ../../distutils/apiref.rst:812
@@ -1258,7 +1258,7 @@ msgid "options set attributes of a passed-in object"
 msgstr ""
 
 #: ../../distutils/apiref.rst:1321
-msgid "boolean options can have \"negative aliases\" --- eg. if :option:`--quiet` is the \"negative alias\" of :option:`--verbose`, then :option:`--quiet` on the command line sets *verbose* to false."
+msgid "boolean options can have \"negative aliases\" --- eg. if :option:`!--quiet` is the \"negative alias\" of :option:`!--verbose`, then :option:`!--quiet` on the command line sets *verbose* to false."
 msgstr ""
 
 #: ../../distutils/apiref.rst:1327

@@ -80,7 +80,7 @@ msgid "Copy the permission bits, last access time, last modification time, and f
 msgstr ""
 
 #: ../../library/shutil.rst:107
-msgid "If *follow_symlinks* is false, and *src* and *dst* both refer to symbolic links, :func:`copystat` will operate on the symbolic links themselves rather than the files the symbolic links refer to--reading the information from the *src* symbolic link, and writing the information to the *dst* symbolic link."
+msgid "If *follow_symlinks* is false, and *src* and *dst* both refer to symbolic links, :func:`copystat` will operate on the symbolic links themselves rather than the files the symbolic links refer to—reading the information from the *src* symbolic link, and writing the information to the *dst* symbolic link."
 msgstr ""
 
 #: ../../library/shutil.rst:116

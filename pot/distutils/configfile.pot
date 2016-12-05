@@ -52,15 +52,15 @@ msgid "You can find out the list of options supported by a particular command wi
 msgstr ""
 
 #: ../../distutils/configfile.rst:69
-msgid "Note that an option spelled :option:`--foo-bar` on the command-line  is spelled ``foo_bar`` in configuration files."
+msgid "Note that an option spelled :option:`!--foo-bar` on the command-line  is spelled ``foo_bar`` in configuration files."
 msgstr ""
 
 #: ../../distutils/configfile.rst:74
-msgid "For example, say you want your extensions to be built \"in-place\"---that is, you have an extension :mod:`pkg.ext`, and you want the compiled extension file (:file:`ext.so` on Unix, say) to be put in the same source directory as your pure Python modules :mod:`pkg.mod1` and :mod:`pkg.mod2`.  You can always use the :option:`--inplace` option on the command-line to ensure this::"
+msgid "For example, say you want your extensions to be built \"in-place\"---that is, you have an extension :mod:`pkg.ext`, and you want the compiled extension file (:file:`ext.so` on Unix, say) to be put in the same source directory as your pure Python modules :mod:`pkg.mod1` and :mod:`pkg.mod2`.  You can always use the :option:`!--inplace` option on the command-line to ensure this::"
 msgstr ""
 
 #: ../../distutils/configfile.rst:82
-msgid "But this requires that you always specify the :command:`build_ext` command explicitly, and remember to provide :option:`--inplace`. An easier way is to \"set and forget\" this option, by encoding it in :file:`setup.cfg`, the configuration file for this distribution::"
+msgid "But this requires that you always specify the :command:`build_ext` command explicitly, and remember to provide :option:`!--inplace`. An easier way is to \"set and forget\" this option, by encoding it in :file:`setup.cfg`, the configuration file for this distribution::"
 msgstr ""
 
 #: ../../distutils/configfile.rst:90

@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/winreg.rst:2
-msgid ":mod:`winreg` -- Windows registry access"
+msgid ":mod:`winreg` --- Windows registry access"
 msgstr ""
 
 #: ../../library/winreg.rst:12

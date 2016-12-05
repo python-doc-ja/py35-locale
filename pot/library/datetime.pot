@@ -991,7 +991,7 @@ msgid "Using datetime with tzinfo:"
 msgstr ""
 
 #: ../../library/datetime.rst:1300
-msgid ":class:`time` Objects"
+msgid ":class:`.time` Objects"
 msgstr ""
 
 #: ../../library/datetime.rst:1302
@@ -1035,7 +1035,7 @@ msgid "If both comparands are aware, and have the same :attr:`~time.tzinfo` attr
 msgstr ""
 
 #: ../../library/datetime.rst:1384
-msgid "Equality comparisons between naive and aware :class:`time` instances don't raise :exc:`TypeError`."
+msgid "Equality comparisons between naive and aware :class:`~datetime.time` instances don't raise :exc:`TypeError`."
 msgstr ""
 
 #: ../../library/datetime.rst:1388

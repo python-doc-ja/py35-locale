@@ -19,6 +19,10 @@ msgstr ""
 msgid "General Python FAQ"
 msgstr ""
 
+#: ../../faq/general.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/general.rst:13
 msgid "General Information"
 msgstr ""
@@ -228,7 +232,7 @@ msgid "The very first article about Python was written in 1991 and is now quite 
 msgstr ""
 
 #: ../../faq/general.rst:253
-msgid "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 (December 1991), Amsterdam, pp 283-303."
+msgid "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 (December 1991), Amsterdam, pp 283--303."
 msgstr ""
 
 #: ../../faq/general.rst:259

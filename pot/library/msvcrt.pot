@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/msvcrt.rst:2
-msgid ":mod:`msvcrt` -- Useful routines from the MS VC++ runtime"
+msgid ":mod:`msvcrt` --- Useful routines from the MS VC++ runtime"
 msgstr ""
 
 #: ../../library/msvcrt.rst:12

@@ -112,7 +112,7 @@ msgid "Bootstraps ``pip`` into the current or designated environment."
 msgstr ""
 
 #: ../../library/ensurepip.rst:98
-msgid "*root* specifies an alternative root directory to install relative to. If *root* is None, then installation uses the default install location for the current environment."
+msgid "*root* specifies an alternative root directory to install relative to. If *root* is ``None``, then installation uses the default install location for the current environment."
 msgstr ""
 
 #: ../../library/ensurepip.rst:102

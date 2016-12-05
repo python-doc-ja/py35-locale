@@ -817,7 +817,7 @@ msgid "title - title for the sub-parser group in help output; by default \"subco
 msgstr ""
 
 #: ../../library/argparse.rst:1554
-msgid "description - description for the sub-parser group in help output, by default None"
+msgid "description - description for the sub-parser group in help output, by default ``None``"
 msgstr ""
 
 #: ../../library/argparse.rst:1557
@@ -833,15 +833,15 @@ msgid "action_ - the basic type of action to be taken when this argument is enco
 msgstr ""
 
 #: ../../library/argparse.rst:1567
-msgid "dest_ - name of the attribute under which sub-command name will be stored; by default None and no value is stored"
+msgid "dest_ - name of the attribute under which sub-command name will be stored; by default ``None`` and no value is stored"
 msgstr ""
 
 #: ../../library/argparse.rst:1570
-msgid "help_ - help for sub-parser group in help output, by default None"
+msgid "help_ - help for sub-parser group in help output, by default ``None``"
 msgstr ""
 
 #: ../../library/argparse.rst:1572
-msgid "metavar_ - string presenting available sub-commands in help; by default it is None and presents sub-commands in form {cmd1, cmd2, ..}"
+msgid "metavar_ - string presenting available sub-commands in help; by default it is ``None`` and presents sub-commands in form {cmd1, cmd2, ..}"
 msgstr ""
 
 #: ../../library/argparse.rst:1575
@@ -993,86 +993,86 @@ msgid "This method takes a single argument *arg_line* which is a string read fro
 msgstr ""
 
 #: ../../library/argparse.rst:1960
-msgid "A useful override of this method is one that treats each space-separated word as an argument::"
+msgid "A useful override of this method is one that treats each space-separated word as an argument.  The following example demonstrates how to do this::"
 msgstr ""
 
-#: ../../library/argparse.rst:1968
+#: ../../library/argparse.rst:1969
 msgid "Exiting methods"
 msgstr ""
 
-#: ../../library/argparse.rst:1972
+#: ../../library/argparse.rst:1973
 msgid "This method terminates the program, exiting with the specified *status* and, if given, it prints a *message* before that."
 msgstr ""
 
-#: ../../library/argparse.rst:1977
+#: ../../library/argparse.rst:1978
 msgid "This method prints a usage message including the *message* to the standard error and terminates the program with a status code of 2."
 msgstr ""
 
-#: ../../library/argparse.rst:1983
+#: ../../library/argparse.rst:1984
 msgid "Upgrading optparse code"
 msgstr ""
 
-#: ../../library/argparse.rst:1985
+#: ../../library/argparse.rst:1986
 msgid "Originally, the :mod:`argparse` module had attempted to maintain compatibility with :mod:`optparse`.  However, :mod:`optparse` was difficult to extend transparently, particularly with the changes required to support the new ``nargs=`` specifiers and better usage messages.  When most everything in :mod:`optparse` had either been copy-pasted over or monkey-patched, it no longer seemed practical to try to maintain the backwards compatibility."
 msgstr ""
 
-#: ../../library/argparse.rst:1992
+#: ../../library/argparse.rst:1993
 msgid "The :mod:`argparse` module improves on the standard library :mod:`optparse` module in a number of ways including:"
 msgstr ""
 
-#: ../../library/argparse.rst:1995
+#: ../../library/argparse.rst:1996
 msgid "Handling positional arguments."
 msgstr ""
 
-#: ../../library/argparse.rst:1996
+#: ../../library/argparse.rst:1997
 msgid "Supporting sub-commands."
 msgstr ""
 
-#: ../../library/argparse.rst:1997
+#: ../../library/argparse.rst:1998
 msgid "Allowing alternative option prefixes like ``+`` and ``/``."
 msgstr ""
 
-#: ../../library/argparse.rst:1998
+#: ../../library/argparse.rst:1999
 msgid "Handling zero-or-more and one-or-more style arguments."
 msgstr ""
 
-#: ../../library/argparse.rst:1999
+#: ../../library/argparse.rst:2000
 msgid "Producing more informative usage messages."
 msgstr ""
 
-#: ../../library/argparse.rst:2000
+#: ../../library/argparse.rst:2001
 msgid "Providing a much simpler interface for custom ``type`` and ``action``."
 msgstr ""
 
-#: ../../library/argparse.rst:2002
+#: ../../library/argparse.rst:2003
 msgid "A partial upgrade path from :mod:`optparse` to :mod:`argparse`:"
 msgstr ""
 
-#: ../../library/argparse.rst:2004
+#: ../../library/argparse.rst:2005
 msgid "Replace all :meth:`optparse.OptionParser.add_option` calls with :meth:`ArgumentParser.add_argument` calls."
 msgstr ""
 
-#: ../../library/argparse.rst:2007
+#: ../../library/argparse.rst:2008
 msgid "Replace ``(options, args) = parser.parse_args()`` with ``args = parser.parse_args()`` and add additional :meth:`ArgumentParser.add_argument` calls for the positional arguments. Keep in mind that what was previously called ``options``, now in :mod:`argparse` context is called ``args``."
 msgstr ""
 
-#: ../../library/argparse.rst:2012
+#: ../../library/argparse.rst:2013
 msgid "Replace callback actions and the ``callback_*`` keyword arguments with ``type`` or ``action`` arguments."
 msgstr ""
 
-#: ../../library/argparse.rst:2015
+#: ../../library/argparse.rst:2016
 msgid "Replace string names for ``type`` keyword arguments with the corresponding type objects (e.g. int, float, complex, etc)."
 msgstr ""
 
-#: ../../library/argparse.rst:2018
+#: ../../library/argparse.rst:2019
 msgid "Replace :class:`optparse.Values` with :class:`Namespace` and :exc:`optparse.OptionError` and :exc:`optparse.OptionValueError` with :exc:`ArgumentError`."
 msgstr ""
 
-#: ../../library/argparse.rst:2022
+#: ../../library/argparse.rst:2023
 msgid "Replace strings with implicit arguments such as ``%default`` or ``%prog`` with the standard Python syntax to use dictionaries to format strings, that is, ``%(default)s`` and ``%(prog)s``."
 msgstr ""
 
-#: ../../library/argparse.rst:2026
+#: ../../library/argparse.rst:2027
 msgid "Replace the OptionParser constructor ``version`` argument with a call to ``parser.add_argument('--version', action='version', version='<the version>')``."
 msgstr ""
 

@@ -196,7 +196,7 @@ msgid "Returns the server software's version string. This is a combination of th
 msgstr ""
 
 #: ../../library/http.server.rst:280
-msgid "Returns the date and time given by *timestamp* (which must be None or in the format returned by :func:`time.time`), formatted for a message header. If *timestamp* is omitted, it uses the current date and time."
+msgid "Returns the date and time given by *timestamp* (which must be ``None`` or in the format returned by :func:`time.time`), formatted for a message header. If *timestamp* is omitted, it uses the current date and time."
 msgstr ""
 
 #: ../../library/http.server.rst:284

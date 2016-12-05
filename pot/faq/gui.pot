@@ -19,6 +19,10 @@ msgstr ""
 msgid "Graphic User Interface FAQ"
 msgstr ""
 
+#: ../../faq/gui.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/gui.rst:15
 msgid "General GUI Questions"
 msgstr ""

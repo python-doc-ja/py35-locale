@@ -177,7 +177,7 @@ msgid "Error Codes"
 msgstr ""
 
 #: ../../howto/urllib2.rst:242
-msgid "Because the default handlers handle redirects (codes in the 300 range), and codes in the 100-299 range indicate success, you will usually only see error codes in the 400-599 range."
+msgid "Because the default handlers handle redirects (codes in the 300 range), and codes in the 100--299 range indicate success, you will usually only see error codes in the 400--599 range."
 msgstr ""
 
 #: ../../howto/urllib2.rst:246

@@ -385,22 +385,22 @@ msgid "Example of Client Usage"
 msgstr ""
 
 #: ../../library/xmlrpc.client.rst:557
-msgid "To access an XML-RPC server through a HTTP proxy, you need to define a custom transport.  The following example shows how:"
+msgid "To access an XML-RPC server through a HTTP proxy, you need to define a custom transport.  The following example shows how::"
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:588
+#: ../../library/xmlrpc.client.rst:582
 msgid "Example of Client and Server Usage"
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:590
+#: ../../library/xmlrpc.client.rst:584
 msgid "See :ref:`simplexmlrpcserver-example`."
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:594
+#: ../../library/xmlrpc.client.rst:588
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/xmlrpc.client.rst:595
+#: ../../library/xmlrpc.client.rst:589
 msgid "This approach has been first presented in `a discussion on xmlrpc.com <https://web.archive.org/web/20060624230303/http://www.xmlrpc.com/discuss/msgReader$1208?mode=topic>`_."
 msgstr ""
 

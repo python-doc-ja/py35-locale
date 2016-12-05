@@ -200,6 +200,6 @@ msgid "A note on branch cuts: They are curves along which the given function fai
 msgstr ""
 
 #: ../../library/cmath.rst:276
-msgid "Kahan, W:  Branch cuts for complex elementary functions; or, Much ado about nothing's sign bit.  In Iserles, A., and Powell, M. (eds.), The state of the art in numerical analysis. Clarendon Press (1987) pp165-211."
+msgid "Kahan, W:  Branch cuts for complex elementary functions; or, Much ado about nothing's sign bit.  In Iserles, A., and Powell, M. (eds.), The state of the art in numerical analysis. Clarendon Press (1987) pp165--211."
 msgstr ""
 

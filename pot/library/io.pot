@@ -505,7 +505,7 @@ msgid "The *name* can be one of two things:"
 msgstr ""
 
 #: ../../library/io.rst:539
-msgid "a character string or :class:`bytes` object representing the path to the file which will be opened. In this case closefd must be True (the default) otherwise an error will be raised."
+msgid "a character string or :class:`bytes` object representing the path to the file which will be opened. In this case closefd must be ``True`` (the default) otherwise an error will be raised."
 msgstr ""
 
 #: ../../library/io.rst:542

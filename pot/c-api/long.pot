@@ -159,7 +159,7 @@ msgid "Return a C :c:type:`unsigned long` representation of *obj*.  If *obj* is 
 msgstr ""
 
 #: ../../c-api/long.rst:234
-msgid "If the value of *obj* is out of range for an :c:type:`unsigned long`, return the reduction of that value modulo :const:`ULONG_MAX + 1`."
+msgid "If the value of *obj* is out of range for an :c:type:`unsigned long`, return the reduction of that value modulo ``ULONG_MAX + 1``."
 msgstr ""
 
 #: ../../c-api/long.rst:240
@@ -167,7 +167,7 @@ msgid "Return a C :c:type:`unsigned long long` representation of *obj*.  If *obj
 msgstr ""
 
 #: ../../c-api/long.rst:244
-msgid "If the value of *obj* is out of range for an :c:type:`unsigned long long`, return the reduction of that value modulo :const:`PY_ULLONG_MAX + 1`."
+msgid "If the value of *obj* is out of range for an :c:type:`unsigned long long`, return the reduction of that value modulo ``PY_ULLONG_MAX + 1``."
 msgstr ""
 
 #: ../../c-api/long.rst:250

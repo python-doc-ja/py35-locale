@@ -96,7 +96,7 @@ msgid "Return ``a == b``.  This function uses an approach designed to prevent ti
 msgstr ""
 
 #: ../../library/hmac.rst:112
-msgid "If *a* and *b* are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of *a* and *b*--but not their values."
+msgid "If *a* and *b* are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of *a* and *b*—but not their values."
 msgstr ""
 
 #: ../../library/hmac.rst:122

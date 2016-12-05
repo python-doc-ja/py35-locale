@@ -412,86 +412,58 @@ msgid "Instance method objects have attributes, too: ``m.__self__`` is the insta
 msgstr ""
 
 #: ../../tutorial/classes.rst:750
-msgid "Exceptions Are Classes Too"
-msgstr ""
-
-#: ../../tutorial/classes.rst:752
-msgid "User-defined exceptions are identified by classes as well.  Using this mechanism it is possible to create extensible hierarchies of exceptions."
-msgstr ""
-
-#: ../../tutorial/classes.rst:755
-msgid "There are two new valid (semantic) forms for the :keyword:`raise` statement::"
-msgstr ""
-
-#: ../../tutorial/classes.rst:761
-msgid "In the first form, ``Class`` must be an instance of :class:`type` or of a class derived from it.  The first form is a shorthand for::"
-msgstr ""
-
-#: ../../tutorial/classes.rst:766
-msgid "A class in an :keyword:`except` clause is compatible with an exception if it is the same class or a base class thereof (but not the other way around --- an except clause listing a derived class is not compatible with a base class).  For example, the following code will print B, C, D in that order::"
-msgstr ""
-
-#: ../../tutorial/classes.rst:788
-msgid "Note that if the except clauses were reversed (with ``except B`` first), it would have printed B, B, B --- the first matching except clause is triggered."
-msgstr ""
-
-#: ../../tutorial/classes.rst:791
-msgid "When an error message is printed for an unhandled exception, the exception's class name is printed, then a colon and a space, and finally the instance converted to a string using the built-in function :func:`str`."
-msgstr ""
-
-#: ../../tutorial/classes.rst:799
 msgid "Iterators"
 msgstr ""
 
-#: ../../tutorial/classes.rst:801
+#: ../../tutorial/classes.rst:752
 msgid "By now you have probably noticed that most container objects can be looped over using a :keyword:`for` statement::"
 msgstr ""
 
-#: ../../tutorial/classes.rst:815
+#: ../../tutorial/classes.rst:766
 msgid "This style of access is clear, concise, and convenient.  The use of iterators pervades and unifies Python.  Behind the scenes, the :keyword:`for` statement calls :func:`iter` on the container object.  The function returns an iterator object that defines the method :meth:`~iterator.__next__` which accesses elements in the container one at a time.  When there are no more elements, :meth:`~iterator.__next__` raises a :exc:`StopIteration` exception which tells the :keyword:`for` loop to terminate.  You can call the :meth:`~iterator.__next__` method using the :func:`next` built-in function; this example shows how it all works::"
 msgstr ""
 
-#: ../../tutorial/classes.rst:840
+#: ../../tutorial/classes.rst:791
 msgid "Having seen the mechanics behind the iterator protocol, it is easy to add iterator behavior to your classes.  Define an :meth:`__iter__` method which returns an object with a :meth:`~iterator.__next__` method.  If the class defines :meth:`__next__`, then :meth:`__iter__` can just return ``self``::"
 msgstr ""
 
-#: ../../tutorial/classes.rst:877
+#: ../../tutorial/classes.rst:828
 msgid "Generators"
 msgstr ""
 
-#: ../../tutorial/classes.rst:879
+#: ../../tutorial/classes.rst:830
 msgid ":term:`Generator`\\s are a simple and powerful tool for creating iterators.  They are written like regular functions but use the :keyword:`yield` statement whenever they want to return data.  Each time :func:`next` is called on it, the generator resumes where it left off (it remembers all the data values and which statement was last executed).  An example shows that generators can be trivially easy to create::"
 msgstr ""
 
-#: ../../tutorial/classes.rst:900
+#: ../../tutorial/classes.rst:851
 msgid "Anything that can be done with generators can also be done with class-based iterators as described in the previous section.  What makes generators so compact is that the :meth:`__iter__` and :meth:`~generator.__next__` methods are created automatically."
 msgstr ""
 
-#: ../../tutorial/classes.rst:905
+#: ../../tutorial/classes.rst:856
 msgid "Another key feature is that the local variables and execution state are automatically saved between calls.  This made the function easier to write and much more clear than an approach using instance variables like ``self.index`` and ``self.data``."
 msgstr ""
 
-#: ../../tutorial/classes.rst:910
+#: ../../tutorial/classes.rst:861
 msgid "In addition to automatic method creation and saving program state, when generators terminate, they automatically raise :exc:`StopIteration`. In combination, these features make it easy to create iterators with no more effort than writing a regular function."
 msgstr ""
 
-#: ../../tutorial/classes.rst:919
+#: ../../tutorial/classes.rst:870
 msgid "Generator Expressions"
 msgstr ""
 
-#: ../../tutorial/classes.rst:921
+#: ../../tutorial/classes.rst:872
 msgid "Some simple generators can be coded succinctly as expressions using a syntax similar to list comprehensions but with parentheses instead of brackets.  These expressions are designed for situations where the generator is used right away by an enclosing function.  Generator expressions are more compact but less versatile than full generator definitions and tend to be more memory friendly than equivalent list comprehensions."
 msgstr ""
 
-#: ../../tutorial/classes.rst:928
+#: ../../tutorial/classes.rst:879
 msgid "Examples::"
 msgstr ""
 
-#: ../../tutorial/classes.rst:952
+#: ../../tutorial/classes.rst:903
 msgid "Footnotes"
 msgstr ""
 
-#: ../../tutorial/classes.rst:953
+#: ../../tutorial/classes.rst:904
 msgid "Except for one thing.  Module objects have a secret read-only attribute called :attr:`~object.__dict__` which returns the dictionary used to implement the module's namespace; the name :attr:`~object.__dict__` is an attribute but not a global name. Obviously, using this violates the abstraction of namespace implementation, and should be restricted to things like post-mortem debuggers."
 msgstr ""
 

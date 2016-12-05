@@ -245,7 +245,7 @@ msgid "Creates a user-defined function that you can later use from within SQL st
 msgstr ""
 
 #: ../../library/sqlite3.rst:341
-msgid "The function can return any of the types supported by SQLite: bytes, str, int, float and None."
+msgid "The function can return any of the types supported by SQLite: bytes, str, int, float and ``None``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:344
@@ -264,7 +264,7 @@ msgid "The aggregate class must implement a ``step`` method, which accepts the n
 msgstr ""
 
 #: ../../library/sqlite3.rst:358
-msgid "The ``finalize`` method can return any of the types supported by SQLite: bytes, str, int, float and None."
+msgid "The ``finalize`` method can return any of the types supported by SQLite: bytes, str, int, float and ``None``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:368
@@ -280,7 +280,7 @@ msgid "The following example shows a custom collation that sorts \"the wrong way
 msgstr ""
 
 #: ../../library/sqlite3.rst:381
-msgid "To remove a collation, call ``create_collation`` with None as callable::"
+msgid "To remove a collation, call ``create_collation`` with ``None`` as callable::"
 msgstr ""
 
 #: ../../library/sqlite3.rst:388
@@ -724,7 +724,7 @@ msgid "You can control which kind of ``BEGIN`` statements sqlite3 implicitly exe
 msgstr ""
 
 #: ../../library/sqlite3.rst:937
-msgid "If you want **autocommit mode**, then set :attr:`isolation_level` to None."
+msgid "If you want **autocommit mode**, then set :attr:`isolation_level` to ``None``."
 msgstr ""
 
 #: ../../library/sqlite3.rst:939

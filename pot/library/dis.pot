@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../library/dis.rst:59
 #: ../../library/dis.rst:200
-msgid "If *first_line* is not None, it indicates the line number that should be reported for the first source line in the disassembled code.  Otherwise, the source line information (if any) is taken directly from the disassembled code object."
+msgid "If *first_line* is not ``None``, it indicates the line number that should be reported for the first source line in the disassembled code.  Otherwise, the source line information (if any) is taken directly from the disassembled code object."
 msgstr ""
 
 #: ../../library/dis.rst:64
-msgid "If *current_offset* is not None, it refers to an instruction offset in the disassembled code. Setting this means :meth:`.dis` will display a \"current instruction\" marker against the specified opcode."
+msgid "If *current_offset* is not ``None``, it refers to an instruction offset in the disassembled code. Setting this means :meth:`.dis` will display a \"current instruction\" marker against the specified opcode."
 msgstr ""
 
 #: ../../library/dis.rst:70
@@ -214,7 +214,7 @@ msgid "human readable name for operation"
 msgstr ""
 
 #: ../../library/dis.rst:252
-msgid "numeric argument to operation (if any), otherwise None"
+msgid "numeric argument to operation (if any), otherwise ``None``"
 msgstr ""
 
 #: ../../library/dis.rst:257
@@ -230,7 +230,7 @@ msgid "start index of operation within bytecode sequence"
 msgstr ""
 
 #: ../../library/dis.rst:272
-msgid "line started by this opcode (if any), otherwise None"
+msgid "line started by this opcode (if any), otherwise ``None``"
 msgstr ""
 
 #: ../../library/dis.rst:277

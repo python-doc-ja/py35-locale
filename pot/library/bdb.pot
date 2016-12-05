@@ -260,7 +260,7 @@ msgid "Start debugging from *frame*.  If *frame* is not specified, debugging sta
 msgstr ""
 
 #: ../../library/bdb.rst:243
-msgid "Stop only at breakpoints or when finished.  If there are no breakpoints, set the system trace function to None."
+msgid "Stop only at breakpoints or when finished.  If there are no breakpoints, set the system trace function to ``None``."
 msgstr ""
 
 #: ../../library/bdb.rst:248

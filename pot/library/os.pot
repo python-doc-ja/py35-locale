@@ -294,7 +294,7 @@ msgid "Availability: most flavors of Unix."
 msgstr ""
 
 #: ../../library/os.rst:219
-msgid "Returns the list of directories that will be searched for a named executable, similar to a shell, when launching a process. *env*, when specified, should be an environment variable dictionary to lookup the PATH in. By default, when *env* is None, :data:`environ` is used."
+msgid "Returns the list of directories that will be searched for a named executable, similar to a shell, when launching a process. *env*, when specified, should be an environment variable dictionary to lookup the PATH in. By default, when *env* is ``None``, :data:`environ` is used."
 msgstr ""
 
 #: ../../library/os.rst:230
@@ -2525,7 +2525,7 @@ msgid "Dictionary mapping names accepted by :func:`confstr` to the integer value
 msgstr ""
 
 #: ../../library/os.rst:3624
-msgid "Return the number of CPUs in the system. Returns None if undetermined."
+msgid "Return the number of CPUs in the system. Returns ``None`` if undetermined."
 msgstr ""
 
 #: ../../library/os.rst:3631

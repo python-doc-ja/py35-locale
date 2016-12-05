@@ -426,7 +426,7 @@ msgid "Loggers have a concept of *effective level*. If a level is not explicitly
 msgstr ""
 
 #: ../../howto/logging.rst:462
-msgid "Child loggers propagate messages up to the handlers associated with their ancestor loggers. Because of this, it is unnecessary to define and configure handlers for all the loggers an application uses. It is sufficient to configure handlers for a top-level logger and create child loggers as needed. (You can, however, turn off propagation by setting the *propagate* attribute of a logger to *False*.)"
+msgid "Child loggers propagate messages up to the handlers associated with their ancestor loggers. Because of this, it is unnecessary to define and configure handlers for all the loggers an application uses. It is sufficient to configure handlers for a top-level logger and create child loggers as needed. (You can, however, turn off propagation by setting the *propagate* attribute of a logger to ``False``.)"
 msgstr ""
 
 #: ../../howto/logging.rst:473
@@ -574,11 +574,11 @@ msgid "For versions of Python prior to 3.2, the behaviour is as follows:"
 msgstr ""
 
 #: ../../howto/logging.rst:750
-msgid "If *logging.raiseExceptions* is *False* (production mode), the event is silently dropped."
+msgid "If *logging.raiseExceptions* is ``False`` (production mode), the event is silently dropped."
 msgstr ""
 
 #: ../../howto/logging.rst:753
-msgid "If *logging.raiseExceptions* is *True* (development mode), a message 'No handlers could be found for logger X.Y.Z' is printed once."
+msgid "If *logging.raiseExceptions* is ``True`` (development mode), a message 'No handlers could be found for logger X.Y.Z' is printed once."
 msgstr ""
 
 #: ../../howto/logging.rst:756
@@ -590,7 +590,7 @@ msgid "The event is output using a 'handler of last resort', stored in ``logging
 msgstr ""
 
 #: ../../howto/logging.rst:767
-msgid "To obtain the pre-3.2 behaviour, ``logging.lastResort`` can be set to *None*."
+msgid "To obtain the pre-3.2 behaviour, ``logging.lastResort`` can be set to ``None``."
 msgstr ""
 
 #: ../../howto/logging.rst:772

@@ -193,7 +193,7 @@ msgid "If *vars* is provided, it must be a dictionary of variables that will upd
 msgstr ""
 
 #: ../../library/sysconfig.rst:155
-msgid "If *expand* is set to False, the paths will not be expanded."
+msgid "If *expand* is set to false, the paths will not be expanded."
 msgstr ""
 
 #: ../../library/sysconfig.rst:157

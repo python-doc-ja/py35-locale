@@ -19,6 +19,10 @@ msgstr ""
 msgid "Library and Extension FAQ"
 msgstr ""
 
+#: ../../faq/library.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/library.rst:12
 msgid "General Library Questions"
 msgstr ""

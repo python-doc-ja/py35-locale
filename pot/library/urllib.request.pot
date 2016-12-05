@@ -28,7 +28,7 @@ msgid "The :mod:`urllib.request` module defines functions and classes which help
 msgstr ""
 
 #: ../../library/urllib.request.rst:21
-msgid "The `Requests package <https://requests.readthedocs.org/>`_ is recommended for a higher-level HTTP client interface."
+msgid "The `Requests package <http://docs.python-requests.org/>`_ is recommended for a higher-level HTTP client interface."
 msgstr ""
 
 #: ../../library/urllib.request.rst:25
@@ -354,7 +354,7 @@ msgid "The URI path.  If the :class:`Request` uses a proxy, then selector will b
 msgstr ""
 
 #: ../../library/urllib.request.rst:479
-msgid "The entity body for the request, or None if not specified."
+msgid "The entity body for the request, or ``None`` if not specified."
 msgstr ""
 
 #: ../../library/urllib.request.rst:481

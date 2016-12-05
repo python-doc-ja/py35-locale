@@ -438,7 +438,7 @@ msgid "The same as ``'d'``."
 msgstr ""
 
 #: ../../library/string.rst:432
-msgid "In addition to the above presentation types, integers can be formatted with the floating point presentation types listed below (except ``'n'`` and None). When doing so, :func:`float` is used to convert the integer to a floating point number before formatting."
+msgid "In addition to the above presentation types, integers can be formatted with the floating point presentation types listed below (except ``'n'`` and ``None``). When doing so, :func:`float` is used to convert the integer to a floating point number before formatting."
 msgstr ""
 
 #: ../../library/string.rst:437

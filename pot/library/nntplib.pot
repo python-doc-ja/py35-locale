@@ -140,7 +140,7 @@ msgid "Return the :rfc:`3977` capabilities advertised by the server, as a :class
 msgstr ""
 
 #: ../../library/nntplib.rst:222
-msgid "Send ``AUTHINFO`` commands with the user name and password.  If *user* and *password* are None and *usenetrc* is true, credentials from ``~/.netrc`` will be used if possible."
+msgid "Send ``AUTHINFO`` commands with the user name and password.  If *user* and *password* are ``None`` and *usenetrc* is true, credentials from ``~/.netrc`` will be used if possible."
 msgstr ""
 
 #: ../../library/nntplib.rst:226

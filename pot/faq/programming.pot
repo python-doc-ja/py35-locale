@@ -19,6 +19,10 @@ msgstr ""
 msgid "Programming FAQ"
 msgstr ""
 
+#: ../../faq/programming.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/programming.rst:12
 msgid "General Questions"
 msgstr ""

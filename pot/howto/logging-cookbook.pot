@@ -296,7 +296,7 @@ msgid "There is, however, a way that you can use {}- and $- formatting to constr
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:1086
-msgid "Either of these can be used in place of a format string, to allow {}- or $-formatting to be used to build the actual \"message\" part which appears in the formatted log output in place of \"%(message)s\" or \"{message}\" or \"$message\". It's a little unwieldy to use the class names whenever you want to log something, but it's quite palatable if you use an alias such as __ (double underscore – not to be confused with _, the single underscore used as a synonym/alias for :func:`gettext.gettext` or its brethren)."
+msgid "Either of these can be used in place of a format string, to allow {}- or $-formatting to be used to build the actual \"message\" part which appears in the formatted log output in place of \"%(message)s\" or \"{message}\" or \"$message\". It's a little unwieldy to use the class names whenever you want to log something, but it's quite palatable if you use an alias such as __ (double underscore --- not to be confused with _, the single underscore used as a synonym/alias for :func:`gettext.gettext` or its brethren)."
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:1094
@@ -356,7 +356,7 @@ msgid "The second approach works reasonably well for many cases, but does not al
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:1209
-msgid "at module level). It's probably one too many things to think about. Developers could also add the filter to a :class:`~logging.NullHandler` attached to their top-level logger, but this would not be invoked if an application developer attached a handler to a lower-level library logger – so output from that handler would not reflect the intentions of the library developer."
+msgid "at module level). It's probably one too many things to think about. Developers could also add the filter to a :class:`~logging.NullHandler` attached to their top-level logger, but this would not be invoked if an application developer attached a handler to a lower-level library logger --- so output from that handler would not reflect the intentions of the library developer."
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:1215

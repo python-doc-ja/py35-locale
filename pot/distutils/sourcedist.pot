@@ -28,7 +28,7 @@ msgid "(assuming you haven't specified any :command:`sdist` options in the setup
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:17
-msgid "You can specify as many formats as you like using the :option:`--formats` option, for example::"
+msgid "You can specify as many formats as you like using the :option:`!--formats` option, for example::"
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:22
@@ -200,7 +200,7 @@ msgid "The manifest template has one command per line, where each command specif
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:144
-msgid "The meanings should be fairly clear: include all files in the distribution root matching :file:`\\*.txt`, all files anywhere under the :file:`examples` directory matching :file:`\\*.txt` or :file:`\\*.py`, and exclude all directories matching :file:`examples/sample?/build`.  All of this is done *after* the standard include set, so you can exclude files from the standard set with explicit instructions in the manifest template.  (Or, you can use the :option:`--no-defaults` option to disable the standard set entirely.)  There are several other commands available in the manifest template mini-language; see section :ref:`sdist-cmd`."
+msgid "The meanings should be fairly clear: include all files in the distribution root matching :file:`\\*.txt`, all files anywhere under the :file:`examples` directory matching :file:`\\*.txt` or :file:`\\*.py`, and exclude all directories matching :file:`examples/sample?/build`.  All of this is done *after* the standard include set, so you can exclude files from the standard set with explicit instructions in the manifest template.  (Or, you can use the :option:`!--no-defaults` option to disable the standard set entirely.)  There are several other commands available in the manifest template mini-language; see section :ref:`sdist-cmd`."
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:154
@@ -220,7 +220,7 @@ msgid "Now we have our complete list of files, which is written to the manifest 
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:168
-msgid "You can disable the default set of included files with the :option:`--no-defaults` option, and you can disable the standard exclude set with :option:`--no-prune`."
+msgid "You can disable the default set of included files with the :option:`!--no-defaults` option, and you can disable the standard exclude set with :option:`!--no-prune`."
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:172
@@ -284,7 +284,7 @@ msgid "use the list of files now in :file:`MANIFEST` (either just generated or r
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:227
-msgid "There are a couple of options that modify this behaviour.  First, use the :option:`--no-defaults` and :option:`--no-prune` to disable the standard \"include\" and \"exclude\" sets."
+msgid "There are a couple of options that modify this behaviour.  First, use the :option:`!--no-defaults` and :option:`!--no-prune` to disable the standard \"include\" and \"exclude\" sets."
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:231
@@ -292,6 +292,6 @@ msgid "Second, you might just want to (re)generate the manifest, but not create 
 msgstr ""
 
 #: ../../distutils/sourcedist.rst:236
-msgid ":option:`-o` is a shortcut for :option:`--manifest-only`."
+msgid ":option:`!-o` is a shortcut for :option:`!--manifest-only`."
 msgstr ""
 

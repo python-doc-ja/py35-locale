@@ -19,6 +19,10 @@ msgstr ""
 msgid "Extending/Embedding FAQ"
 msgstr ""
 
+#: ../../faq/extending.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/extending.rst:16
 msgid "Can I create my own functions in C?"
 msgstr ""

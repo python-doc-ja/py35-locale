@@ -403,11 +403,11 @@ msgid "Returns a named tuple with paths to OpenSSL's default cafile and capath. 
 msgstr ""
 
 #: ../../library/ssl.rst:458
-msgid ":attr:`cafile` - resolved path to cafile or None if the file doesn't exist,"
+msgid ":attr:`cafile` - resolved path to cafile or ``None`` if the file doesn't exist,"
 msgstr ""
 
 #: ../../library/ssl.rst:459
-msgid ":attr:`capath` - resolved path to capath or None if the directory doesn't exist,"
+msgid ":attr:`capath` - resolved path to capath or ``None`` if the directory doesn't exist,"
 msgstr ""
 
 #: ../../library/ssl.rst:460
@@ -1070,7 +1070,7 @@ msgid "This setting doesn't apply to client sockets.  You can also use the :data
 msgstr ""
 
 #: ../../library/ssl.rst:1390
-msgid "This method is not available if :data:`HAS_ECDH` is False."
+msgid "This method is not available if :data:`HAS_ECDH` is ``False``."
 msgstr ""
 
 #: ../../library/ssl.rst:1395

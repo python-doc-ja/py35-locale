@@ -210,7 +210,7 @@ msgid "The maximum number of dimensions is officially limited to 64."
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:184
-msgid "The representation of empty shape, strides and suboffsets is now an empty tuple instead of None."
+msgid "The representation of empty shape, strides and suboffsets is now an empty tuple instead of ``None``."
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:187
@@ -1727,7 +1727,7 @@ msgid "sched"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1744
-msgid ":meth:`~sched.scheduler.run` now accepts a *blocking* parameter which when set to False makes the method execute the scheduled events due to expire soonest (if any) and then return immediately. This is useful in case you want to use the :class:`~sched.scheduler` in non-blocking applications.  (Contributed by Giampaolo Rodolà in :issue:`13449`.)"
+msgid ":meth:`~sched.scheduler.run` now accepts a *blocking* parameter which when set to false makes the method execute the scheduled events due to expire soonest (if any) and then return immediately. This is useful in case you want to use the :class:`~sched.scheduler` in non-blocking applications.  (Contributed by Giampaolo Rodolà in :issue:`13449`.)"
 msgstr ""
 
 #: ../../whatsnew/3.3.rst:1750

@@ -201,7 +201,7 @@ msgid "Return ``True`` if the future was cancelled."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:248
-msgid "Return True if the future is done."
+msgid "Return ``True`` if the future is done."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:250
@@ -294,7 +294,7 @@ msgid "Schedule the execution of a :ref:`coroutine <coroutine>`: wrap it in a fu
 msgstr ""
 
 #: ../../library/asyncio-task.rst:375
-msgid "A task is responsible for executing a coroutine object in an event loop.  If the wrapped coroutine yields from a future, the task suspends the execution of the wrapped coroutine and waits for the completition of the future. When the future is done, the execution of the wrapped coroutine restarts with the result or the exception of the future."
+msgid "A task is responsible for executing a coroutine object in an event loop.  If the wrapped coroutine yields from a future, the task suspends the execution of the wrapped coroutine and waits for the completion of the future. When the future is done, the execution of the wrapped coroutine restarts with the result or the exception of the future."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:381
@@ -442,7 +442,7 @@ msgid "Return a future aggregating results from the given coroutine objects or f
 msgstr ""
 
 #: ../../library/asyncio-task.rst:562
-msgid "All futures must share the same event loop.  If all the tasks are done successfully, the returned future's result is the list of results (in the order of the original sequence, not necessarily the order of results arrival).  If *return_exceptions* is True, exceptions in the tasks are treated the same as successful results, and gathered in the result list; otherwise, the first raised exception will be immediately propagated to the returned future."
+msgid "All futures must share the same event loop.  If all the tasks are done successfully, the returned future's result is the list of results (in the order of the original sequence, not necessarily the order of results arrival).  If *return_exceptions* is true, exceptions in the tasks are treated the same as successful results, and gathered in the result list; otherwise, the first raised exception will be immediately propagated to the returned future."
 msgstr ""
 
 #: ../../library/asyncio-task.rst:570

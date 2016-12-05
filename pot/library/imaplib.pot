@@ -92,7 +92,7 @@ msgid "The following utility functions are defined:"
 msgstr ""
 
 #: ../../library/imaplib.rst:121
-msgid "Parse an IMAP4 ``INTERNALDATE`` string and return corresponding local time.  The return value is a :class:`time.struct_time` tuple or None if the string has wrong format."
+msgid "Parse an IMAP4 ``INTERNALDATE`` string and return corresponding local time.  The return value is a :class:`time.struct_time` tuple or ``None`` if the string has wrong format."
 msgstr ""
 
 #: ../../library/imaplib.rst:127

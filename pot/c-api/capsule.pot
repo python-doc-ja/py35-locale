@@ -108,7 +108,7 @@ msgid "In other words, if :c:func:`PyCapsule_IsValid` returns a true value, call
 msgstr ""
 
 #: ../../c-api/capsule.rst:122
-msgid "Return a nonzero value if the object is valid and matches the name passed in. Return 0 otherwise.  This function will not fail."
+msgid "Return a nonzero value if the object is valid and matches the name passed in. Return ``0`` otherwise.  This function will not fail."
 msgstr ""
 
 #: ../../c-api/capsule.rst:127
@@ -119,7 +119,7 @@ msgstr ""
 #: ../../c-api/capsule.rst:135
 #: ../../c-api/capsule.rst:143
 #: ../../c-api/capsule.rst:150
-msgid "Return 0 on success.  Return nonzero and set an exception on failure."
+msgid "Return ``0`` on success.  Return nonzero and set an exception on failure."
 msgstr ""
 
 #: ../../c-api/capsule.rst:133

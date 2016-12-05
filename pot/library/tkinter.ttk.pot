@@ -1578,7 +1578,7 @@ msgid "Layouts"
 msgstr ""
 
 #: ../../library/tkinter.ttk.rst:1407
-msgid "A layout can be just None, if it takes no options, or a dict of options specifying how to arrange the element. The layout mechanism uses a simplified version of the pack geometry manager: given an initial cavity, each element is allocated a parcel. Valid options/values are:"
+msgid "A layout can be just ``None``, if it takes no options, or a dict of options specifying how to arrange the element. The layout mechanism uses a simplified version of the pack geometry manager: given an initial cavity, each element is allocated a parcel. Valid options/values are:"
 msgstr ""
 
 #: ../../library/tkinter.ttk.rst:1416

@@ -276,7 +276,7 @@ msgid "A context manager that creates a temporary directory at *path* and yields
 msgstr ""
 
 #: ../../library/test.rst:401
-msgid "If *path* is None, the temporary directory is created using :func:`tempfile.mkdtemp`.  If *quiet* is ``False``, the context manager raises an exception on error.  Otherwise, if *path* is specified and cannot be created, only a warning is issued."
+msgid "If *path* is ``None``, the temporary directory is created using :func:`tempfile.mkdtemp`.  If *quiet* is ``False``, the context manager raises an exception on error.  Otherwise, if *path* is specified and cannot be created, only a warning is issued."
 msgstr ""
 
 #: ../../library/test.rst:409
@@ -292,7 +292,7 @@ msgid "A context manager that temporarily creates a new directory and changes th
 msgstr ""
 
 #: ../../library/test.rst:422
-msgid "The context manager creates a temporary directory in the current directory with name *name* before temporarily changing the current working directory.  If *name* is None, the temporary directory is created using :func:`tempfile.mkdtemp`."
+msgid "The context manager creates a temporary directory in the current directory with name *name* before temporarily changing the current working directory.  If *name* is ``None``, the temporary directory is created using :func:`tempfile.mkdtemp`."
 msgstr ""
 
 #: ../../library/test.rst:427

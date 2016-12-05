@@ -248,7 +248,7 @@ msgid "Removes the specified handler *hdlr* from this logger."
 msgstr ""
 
 #: ../../library/logging.rst:297
-msgid "Finds the caller's source filename and line number. Returns the filename, line number, function name and stack information as a 4-element tuple. The stack information is returned as *None* unless *stack_info* is *True*."
+msgid "Finds the caller's source filename and line number. Returns the filename, line number, function name and stack information as a 4-element tuple. The stack information is returned as ``None`` unless *stack_info* is ``True``."
 msgstr ""
 
 #: ../../library/logging.rst:304
@@ -260,7 +260,7 @@ msgid "This is a factory method which can be overridden in subclasses to create 
 msgstr ""
 
 #: ../../library/logging.rst:317
-msgid "Checks to see if this logger has any handlers configured. This is done by looking for handlers in this logger and its parents in the logger hierarchy. Returns ``True`` if a handler was found, else ``False``. The method stops searching up the hierarchy whenever a logger with the 'propagate' attribute set to False is found - that will be the last logger which is checked for the existence of handlers."
+msgid "Checks to see if this logger has any handlers configured. This is done by looking for handlers in this logger and its parents in the logger hierarchy. Returns ``True`` if a handler was found, else ``False``. The method stops searching up the hierarchy whenever a logger with the 'propagate' attribute set to false is found - that will be the last logger which is checked for the existence of handlers."
 msgstr ""
 
 #: ../../library/logging.rst:330
@@ -448,7 +448,7 @@ msgid "This function uses a user-configurable function to convert the creation t
 msgstr ""
 
 #: ../../library/logging.rst:558
-msgid "Previously, the default ISO 8601 format was hard-coded as in this example: ``2010-09-06 22:38:15,292`` where the part before the comma is handled by a strptime format string (``'%Y-%m-%d %H:%M:%S'``), and the part after the comma is a millisecond value. Because strptime does not have a format placeholder for milliseconds, the millisecond value is appended using another format string, ``'%s,%03d'`` – and both of these format strings have been hardcoded into this method. With the change, these strings are defined as class-level attributes which can be overridden at the instance level when desired. The names of the attributes are ``default_time_format`` (for the strptime format string) and ``default_msec_format`` (for appending the millisecond value)."
+msgid "Previously, the default ISO 8601 format was hard-coded as in this example: ``2010-09-06 22:38:15,292`` where the part before the comma is handled by a strptime format string (``'%Y-%m-%d %H:%M:%S'``), and the part after the comma is a millisecond value. Because strptime does not have a format placeholder for milliseconds, the millisecond value is appended using another format string, ``'%s,%03d'`` --- and both of these format strings have been hardcoded into this method. With the change, these strings are defined as class-level attributes which can be overridden at the instance level when desired. The names of the attributes are ``default_time_format`` (for the strptime format string) and ``default_msec_format`` (for appending the millisecond value)."
 msgstr ""
 
 #: ../../library/logging.rst:573
@@ -532,7 +532,7 @@ msgid "Variable data to merge into the *msg* argument to obtain the event descri
 msgstr ""
 
 #: ../../library/logging.rst:674
-msgid "An exception tuple with the current exception information, or *None* if no exception information is available."
+msgid "An exception tuple with the current exception information, or ``None`` if no exception information is available."
 msgstr ""
 
 #: ../../library/logging.rst:676
@@ -633,7 +633,7 @@ msgid "exc_info"
 msgstr ""
 
 #: ../../library/logging.rst:756
-msgid "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, *None*."
+msgid "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, ``None``."
 msgstr ""
 
 #: ../../library/logging.rst:759
@@ -1121,7 +1121,7 @@ msgid "The arguments for the logging message."
 msgstr ""
 
 #: ../../library/logging.rst:1190
-msgid "An exception tuple, or None."
+msgid "An exception tuple, or ``None``."
 msgstr ""
 
 #: ../../library/logging.rst:1191

@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/asyncio.rst:2
-msgid ":mod:`asyncio` -- Asynchronous I/O, event loop, coroutines and tasks"
+msgid ":mod:`asyncio` --- Asynchronous I/O, event loop, coroutines and tasks"
 msgstr ""
 
 #: ../../library/asyncio.rst:9

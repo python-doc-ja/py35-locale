@@ -44,7 +44,7 @@ msgid "A simple ascending sort is very easy: just call the :func:`sorted` functi
 msgstr ""
 
 #: ../../howto/sorting.rst:26
-msgid "You can also use the :meth:`list.sort` method. It modifies the list in-place (and returns *None* to avoid confusion). Usually it's less convenient than :func:`sorted` - but if you don't need the original list, it's slightly more efficient."
+msgid "You can also use the :meth:`list.sort` method. It modifies the list in-place (and returns ``None`` to avoid confusion). Usually it's less convenient than :func:`sorted` - but if you don't need the original list, it's slightly more efficient."
 msgstr ""
 
 #: ../../howto/sorting.rst:36

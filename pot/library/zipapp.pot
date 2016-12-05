@@ -116,7 +116,7 @@ msgid "If it is an open file object, the archive will be written to that file ob
 msgstr ""
 
 #: ../../library/zipapp.rst:124
-msgid "If the target is omitted (or None), the source must be a directory and the target will be a file with the same name as the source, with a ``.pyz`` extension added."
+msgid "If the target is omitted (or ``None``), the source must be a directory and the target will be a file with the same name as the source, with a ``.pyz`` extension added."
 msgstr ""
 
 #: ../../library/zipapp.rst:128

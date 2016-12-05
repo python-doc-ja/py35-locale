@@ -501,7 +501,7 @@ msgid "There were relatively few smaller changes made in Python 2.1 due to the s
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:691
-msgid "A specialized object allocator is now optionally available, that should be faster than the system :func:`malloc` and have less memory overhead.  The allocator uses C's :func:`malloc` function to get large pools of memory, and then fulfills smaller memory requests from these pools.  It can be enabled by providing the :option:`--with-pymalloc` option to the :program:`configure` script; see :file:`Objects/obmalloc.c` for the implementation details."
+msgid "A specialized object allocator is now optionally available, that should be faster than the system :func:`malloc` and have less memory overhead.  The allocator uses C's :func:`malloc` function to get large pools of memory, and then fulfills smaller memory requests from these pools.  It can be enabled by providing the :option:`!--with-pymalloc` option to the :program:`configure` script; see :file:`Objects/obmalloc.c` for the implementation details."
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:698
@@ -521,7 +521,7 @@ msgid "A new module and method for file objects was also added, contributed by J
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:733
-msgid "For a fuller discussion of the line I/O changes, see the python-dev summary for January 1-15, 2001 at https://mail.python.org/pipermail/python-dev/2001-January/."
+msgid "For a fuller discussion of the line I/O changes, see the python-dev summary for January 1--15, 2001 at https://mail.python.org/pipermail/python-dev/2001-January/."
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:736

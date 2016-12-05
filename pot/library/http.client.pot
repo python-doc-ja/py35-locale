@@ -28,7 +28,7 @@ msgid "This module defines classes which implement the client side of the HTTP a
 msgstr ""
 
 #: ../../library/http.client.rst:23
-msgid "The `Requests package <https://requests.readthedocs.org/>`_ is recommended for a higher-level HTTP client interface."
+msgid "The `Requests package <http://docs.python-requests.org/>`_ is recommended for a higher-level HTTP client interface."
 msgstr ""
 
 #: ../../library/http.client.rst:28

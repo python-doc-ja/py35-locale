@@ -683,11 +683,11 @@ msgid "The :meth:`datetime.date.strftime` method is no longer restricted to year
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1003
-msgid "Whenever a two-digit year is used in a time tuple, the interpretation has been governed by :attr:`time.accept2dyear`.  The default is *True* which means that for a two-digit year, the century is guessed according to the POSIX rules governing the ``%y`` strptime format."
+msgid "Whenever a two-digit year is used in a time tuple, the interpretation has been governed by :attr:`time.accept2dyear`.  The default is ``True`` which means that for a two-digit year, the century is guessed according to the POSIX rules governing the ``%y`` strptime format."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1008
-msgid "Starting with Py3.2, use of the century guessing heuristic will emit a :exc:`DeprecationWarning`.  Instead, it is recommended that :attr:`time.accept2dyear` be set to *False* so that large date ranges can be used without guesswork::"
+msgid "Starting with Py3.2, use of the century guessing heuristic will emit a :exc:`DeprecationWarning`.  Instead, it is recommended that :attr:`time.accept2dyear` be set to ``False`` so that large date ranges can be used without guesswork::"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1027
@@ -707,7 +707,7 @@ msgid "The :mod:`math` module has been updated with six new functions inspired b
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1045
-msgid "The :func:`~math.isfinite` function provides a reliable and fast way to detect special values.  It returns *True* for regular numbers and *False* for *Nan* or *Infinity*:"
+msgid "The :func:`~math.isfinite` function provides a reliable and fast way to detect special values.  It returns ``True`` for regular numbers and ``False`` for *Nan* or *Infinity*:"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1053
@@ -791,7 +791,7 @@ msgid "If no configuration is set-up before a logging event occurs, there is now
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1194
-msgid "The use of filters has been simplified.  Instead of creating a :class:`~logging.Filter` object, the predicate can be any Python callable that returns *True* or *False*."
+msgid "The use of filters has been simplified.  Instead of creating a :class:`~logging.Filter` object, the predicate can be any Python callable that returns ``True`` or ``False``."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1198
@@ -971,7 +971,7 @@ msgid "The :class:`~tarfile.TarFile` class can now be used as a context manager.
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1437
-msgid "The new *filter* option replaces the older, less flexible *exclude* parameter which is now deprecated.  If specified, the optional *filter* parameter needs to be a :term:`keyword argument`.  The user-supplied filter function accepts a :class:`~tarfile.TarInfo` object and returns an updated :class:`~tarfile.TarInfo` object, or if it wants the file to be excluded, the function can return *None*::"
+msgid "The new *filter* option replaces the older, less flexible *exclude* parameter which is now deprecated.  If specified, the optional *filter* parameter needs to be a :term:`keyword argument`.  The user-supplied filter function accepts a :class:`~tarfile.TarInfo` object and returns an updated :class:`~tarfile.TarInfo` object, or if it wants the file to be excluded, the function can return ``None``::"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1461
@@ -995,7 +995,7 @@ msgid "ast"
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1486
-msgid "The :mod:`ast` module has a wonderful a general-purpose tool for safely evaluating expression strings using the Python literal syntax.  The :func:`ast.literal_eval` function serves as a secure alternative to the builtin :func:`eval` function which is easily abused.  Python 3.2 adds :class:`bytes` and :class:`set` literals to the list of supported types: strings, bytes, numbers, tuples, lists, dicts, sets, booleans, and None."
+msgid "The :mod:`ast` module has a wonderful a general-purpose tool for safely evaluating expression strings using the Python literal syntax.  The :func:`ast.literal_eval` function serves as a secure alternative to the builtin :func:`eval` function which is easily abused.  Python 3.2 adds :class:`bytes` and :class:`set` literals to the list of supported types: strings, bytes, numbers, tuples, lists, dicts, sets, booleans, and ``None``."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:1507

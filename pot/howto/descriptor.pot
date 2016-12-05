@@ -208,7 +208,7 @@ msgid "Running the interpreter shows how the function descriptor works in practi
 msgstr ""
 
 #: ../../howto/descriptor.rst:301
-msgid "The output suggests that bound and unbound methods are two different types. While they could have been implemented that way, the actual C implementation of :c:type:`PyMethod_Type` in :source:`Objects/classobject.c` is a single object with two different representations depending on whether the :attr:`im_self` field is set or is *NULL* (the C equivalent of *None*)."
+msgid "The output suggests that bound and unbound methods are two different types. While they could have been implemented that way, the actual C implementation of :c:type:`PyMethod_Type` in :source:`Objects/classobject.c` is a single object with two different representations depending on whether the :attr:`im_self` field is set or is *NULL* (the C equivalent of ``None``)."
 msgstr ""
 
 #: ../../howto/descriptor.rst:307

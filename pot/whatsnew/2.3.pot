@@ -232,7 +232,7 @@ msgid "Universal newline support is also used when importing modules and when ex
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:396
-msgid "This feature can be disabled when compiling Python by specifying the :option:`--without-universal-newlines` switch when running Python's :program:`configure` script."
+msgid "This feature can be disabled when compiling Python by specifying the :option:`!--without-universal-newlines` switch when running Python's :program:`configure` script."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:403
@@ -1025,11 +1025,11 @@ msgid "Date and time types suitable for expressing timestamps were added as the 
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1685
-msgid "The three primary types are: :class:`date`, representing a day, month, and year; :class:`time`, consisting of hour, minute, and second; and :class:`datetime`, which contains all the attributes of both :class:`date` and :class:`time`. There's also a :class:`timedelta` class representing differences between two points in time, and time zone logic is implemented by classes inheriting from the abstract :class:`tzinfo` class."
+msgid "The three primary types are: :class:`date`, representing a day, month, and year; :class:`~datetime.time`, consisting of hour, minute, and second; and :class:`~datetime.datetime`, which contains all the attributes of both :class:`date` and :class:`~datetime.time`. There's also a :class:`timedelta` class representing differences between two points in time, and time zone logic is implemented by classes inheriting from the abstract :class:`tzinfo` class."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1692
-msgid "You can create instances of :class:`date` and :class:`time` by either supplying keyword arguments to the appropriate constructor, e.g. ``datetime.date(year=1972, month=10, day=15)``, or by using one of a number of class methods.  For example, the :meth:`date.today` class method returns the current local date."
+msgid "You can create instances of :class:`date` and :class:`~datetime.time` by either supplying keyword arguments to the appropriate constructor, e.g. ``datetime.date(year=1972, month=10, day=15)``, or by using one of a number of class methods.  For example, the :meth:`date.today` class method returns the current local date."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1698
@@ -1037,11 +1037,11 @@ msgid "Once created, instances of the date/time classes are all immutable. There
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1710
-msgid "The :meth:`replace` method allows modifying one or more fields  of a :class:`date` or :class:`datetime` instance, returning a new instance::"
+msgid "The :meth:`replace` method allows modifying one or more fields  of a :class:`date` or :class:`~datetime.datetime` instance, returning a new instance::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1720
-msgid "Instances can be compared, hashed, and converted to strings (the result is the same as that of :meth:`isoformat`).  :class:`date` and :class:`datetime` instances can be subtracted from each other, and added to :class:`timedelta` instances.  The largest missing feature is that there's no standard library support for parsing strings and getting back a :class:`date` or :class:`datetime`."
+msgid "Instances can be compared, hashed, and converted to strings (the result is the same as that of :meth:`isoformat`).  :class:`date` and :class:`~datetime.datetime` instances can be subtracted from each other, and added to :class:`timedelta` instances.  The largest missing feature is that there's no standard library support for parsing strings and getting back a :class:`date` or :class:`~datetime.datetime`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1727
@@ -1093,7 +1093,7 @@ msgid "Pymalloc, a specialized object allocator written by Vladimir Marangozov, 
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1813
-msgid "In 2.1 and 2.2, pymalloc was an experimental feature and wasn't enabled by default; you had to explicitly enable it when compiling Python by providing the :option:`--with-pymalloc` option to the :program:`configure` script.  In 2.3, pymalloc has had further enhancements and is now enabled by default; you'll have to supply :option:`--without-pymalloc` to disable it."
+msgid "In 2.1 and 2.2, pymalloc was an experimental feature and wasn't enabled by default; you had to explicitly enable it when compiling Python by providing the :option:`!--with-pymalloc` option to the :program:`configure` script.  In 2.3, pymalloc has had further enhancements and is now enabled by default; you'll have to supply :option:`!--without-pymalloc` to disable it."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1819
@@ -1121,7 +1121,7 @@ msgid "To allocate and free Python objects, use the \"object\" family :c:func:`P
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1852
-msgid "Thanks to lots of work by Tim Peters, pymalloc in 2.3 also provides debugging features to catch memory overwrites and doubled frees in both extension modules and in the interpreter itself.  To enable this support, compile a debugging version of the Python interpreter by running :program:`configure` with :option:`--with-pydebug`."
+msgid "Thanks to lots of work by Tim Peters, pymalloc in 2.3 also provides debugging features to catch memory overwrites and doubled frees in both extension modules and in the interpreter itself.  To enable this support, compile a debugging version of the Python interpreter by running :program:`configure` with :option:`!--with-pydebug`."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1858
@@ -1145,11 +1145,11 @@ msgid "Changes to Python's build process and to the C API include:"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1880
-msgid "The cycle detection implementation used by the garbage collection has proven to be stable, so it's now been made mandatory.  You can no longer compile Python without it, and the :option:`--with-cycle-gc` switch to :program:`configure` has been removed."
+msgid "The cycle detection implementation used by the garbage collection has proven to be stable, so it's now been made mandatory.  You can no longer compile Python without it, and the :option:`!--with-cycle-gc` switch to :program:`configure` has been removed."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1885
-msgid "Python can now optionally be built as a shared library (:file:`libpython2.3.so`) by supplying :option:`--enable-shared` when running Python's :program:`configure` script.  (Contributed by Ondrej Palkovsky.)"
+msgid "Python can now optionally be built as a shared library (:file:`libpython2.3.so`) by supplying :option:`!--enable-shared` when running Python's :program:`configure` script.  (Contributed by Ondrej Palkovsky.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1889
@@ -1157,7 +1157,7 @@ msgid "The :c:macro:`DL_EXPORT` and :c:macro:`DL_IMPORT` macros are now deprecat
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1894
-msgid "The interpreter can be compiled without any docstrings for the built-in functions and modules by supplying :option:`--without-doc-strings` to the :program:`configure` script. This makes the Python executable about 10% smaller, but will also mean that you can't get help for Python's built-ins.  (Contributed by Gustavo Niemeyer.)"
+msgid "The interpreter can be compiled without any docstrings for the built-in functions and modules by supplying :option:`!--without-doc-strings` to the :program:`configure` script. This makes the Python executable about 10% smaller, but will also mean that you can't get help for Python's built-ins.  (Contributed by Gustavo Niemeyer.)"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:1900

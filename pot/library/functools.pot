@@ -57,11 +57,11 @@ msgid "Since a dictionary is used to cache results, the positional and keyword a
 msgstr ""
 
 #: ../../library/functools.rst:55
-msgid "If *maxsize* is set to None, the LRU feature is disabled and the cache can grow without bound.  The LRU feature performs best when *maxsize* is a power-of-two."
+msgid "If *maxsize* is set to ``None``, the LRU feature is disabled and the cache can grow without bound.  The LRU feature performs best when *maxsize* is a power-of-two."
 msgstr ""
 
 #: ../../library/functools.rst:59
-msgid "If *typed* is set to True, function arguments of different types will be cached separately.  For example, ``f(3)`` and ``f(3.0)`` will be treated as distinct calls with distinct results."
+msgid "If *typed* is set to true, function arguments of different types will be cached separately.  For example, ``f(3)`` and ``f(3.0)`` will be treated as distinct calls with distinct results."
 msgstr ""
 
 #: ../../library/functools.rst:63

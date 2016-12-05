@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../c-api/none.rst:6
-msgid "The None Object"
+msgid "The ``None`` Object"
 msgstr ""
 
 #: ../../c-api/none.rst:10
@@ -28,6 +28,6 @@ msgid "The Python ``None`` object, denoting lack of value.  This object has no m
 msgstr ""
 
 #: ../../c-api/none.rst:25
-msgid "Properly handle returning :c:data:`Py_None` from within a C function (that is, increment the reference count of None and return it.)"
+msgid "Properly handle returning :c:data:`Py_None` from within a C function (that is, increment the reference count of ``None`` and return it.)"
 msgstr ""
 

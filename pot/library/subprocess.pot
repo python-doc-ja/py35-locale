@@ -68,7 +68,7 @@ msgid "The *input* argument is passed to :meth:`Popen.communicate` and thus to t
 msgstr ""
 
 #: ../../library/subprocess.rst:67
-msgid "If *check* is True, and the process exits with a non-zero exit code, a :exc:`CalledProcessError` exception will be raised. Attributes of that exception hold the arguments, the exit code, and stdout and stderr if they were captured."
+msgid "If *check* is true, and the process exits with a non-zero exit code, a :exc:`CalledProcessError` exception will be raised. Attributes of that exception hold the arguments, the exit code, and stdout and stderr if they were captured."
 msgstr ""
 
 #: ../../library/subprocess.rst:72
@@ -93,15 +93,15 @@ msgid "A negative value ``-N`` indicates that the child was terminated by signal
 msgstr ""
 
 #: ../../library/subprocess.rst:106
-msgid "Captured stdout from the child process. A bytes sequence, or a string if :func:`run` was called with ``universal_newlines=True``. None if stdout was not captured."
+msgid "Captured stdout from the child process. A bytes sequence, or a string if :func:`run` was called with ``universal_newlines=True``. ``None`` if stdout was not captured."
 msgstr ""
 
 #: ../../library/subprocess.rst:110
-msgid "If you ran the process with ``stderr=subprocess.STDOUT``, stdout and stderr will be combined in this attribute, and :attr:`stderr` will be None."
+msgid "If you ran the process with ``stderr=subprocess.STDOUT``, stdout and stderr will be combined in this attribute, and :attr:`stderr` will be ``None``."
 msgstr ""
 
 #: ../../library/subprocess.rst:116
-msgid "Captured stderr from the child process. A bytes sequence, or a string if :func:`run` was called with ``universal_newlines=True``. None if stderr was not captured."
+msgid "Captured stderr from the child process. A bytes sequence, or a string if :func:`run` was called with ``universal_newlines=True``. ``None`` if stderr was not captured."
 msgstr ""
 
 #: ../../library/subprocess.rst:122
@@ -243,7 +243,7 @@ msgid "On Windows, if *args* is a sequence, it will be converted to a string in 
 msgstr ""
 
 #: ../../library/subprocess.rst:350
-msgid "The *shell* argument (which defaults to *False*) specifies whether to use the shell as the program to execute.  If *shell* is *True*, it is recommended to pass *args* as a string rather than as a sequence."
+msgid "The *shell* argument (which defaults to ``False``) specifies whether to use the shell as the program to execute.  If *shell* is ``True``, it is recommended to pass *args* as a string rather than as a sequence."
 msgstr ""
 
 #: ../../library/subprocess.rst:354

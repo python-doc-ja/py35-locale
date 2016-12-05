@@ -152,7 +152,7 @@ msgid "Another new enhancement to the Python package index at https://pypi.pytho
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:236
-msgid "Before a package can be uploaded, you must be able to build a distribution using the :command:`sdist` Distutils command.  Once that works, you can run ``python setup.py upload`` to add your package to the PyPI archive.  Optionally you can GPG-sign the package by supplying the :option:`--sign` and :option:`--identity` options."
+msgid "Before a package can be uploaded, you must be able to build a distribution using the :command:`sdist` Distutils command.  Once that works, you can run ``python setup.py upload`` to add your package to the PyPI archive.  Optionally you can GPG-sign the package by supplying the :option:`!--sign` and :option:`!--identity` options."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:242
@@ -852,7 +852,7 @@ msgid "(Contributed by Skip Montanaro and Andrew McNamara.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1310
-msgid "The :class:`datetime` class in the :mod:`datetime`  module now has a ``strptime(string, format)``  method for parsing date strings, contributed by Josh Spoerri. It uses the same format characters as :func:`time.strptime` and :func:`time.strftime`::"
+msgid "The :class:`~datetime.datetime` class in the :mod:`datetime`  module now has a ``strptime(string, format)``  method for parsing date strings, contributed by Josh Spoerri. It uses the same format characters as :func:`time.strptime` and :func:`time.strftime`::"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1320
@@ -973,7 +973,7 @@ msgid "The :mod:`pyexpat` module now uses version 2.0 of the Expat parser. (Cont
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1500
-msgid "The :class:`Queue` class provided by the :mod:`Queue` module gained two new methods.  :meth:`join` blocks until all items in the queue have been retrieved and all processing work on the items  have been completed.  Worker threads call the other new method,  :meth:`task_done`, to signal that processing for an item has been completed.  (Contributed by Raymond Hettinger.)"
+msgid "The :class:`~queue.Queue` class provided by the :mod:`Queue` module gained two new methods.  :meth:`join` blocks until all items in the queue have been retrieved and all processing work on the items  have been completed.  Worker threads call the other new method,  :meth:`task_done`, to signal that processing for an item has been completed.  (Contributed by Raymond Hettinger.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1506
@@ -1061,11 +1061,11 @@ msgid "The :mod:`weakref` module's :class:`WeakKeyDictionary` and :class:`WeakVa
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1640
-msgid "The :mod:`webbrowser` module received a number of enhancements. It's now usable as a script with ``python -m webbrowser``, taking a URL as the argument; there are a number of switches  to control the behaviour (:option:`-n` for a new browser window,  :option:`!-t` for a new tab).  New module-level functions, :func:`open_new` and :func:`open_new_tab`, were added  to support this.  The module's :func:`open` function supports an additional feature, an *autoraise* parameter that signals whether to raise the open window when possible. A number of additional browsers were added to the supported list such as Firefox, Opera, Konqueror, and elinks.  (Contributed by Oleg Broytmann and Georg Brandl.)"
+msgid "The :mod:`webbrowser` module received a number of enhancements. It's now usable as a script with ``python -m webbrowser``, taking a URL as the argument; there are a number of switches  to control the behaviour (:option:`!-n` for a new browser window,  :option:`!-t` for a new tab).  New module-level functions, :func:`open_new` and :func:`open_new_tab`, were added  to support this.  The module's :func:`open` function supports an additional feature, an *autoraise* parameter that signals whether to raise the open window when possible. A number of additional browsers were added to the supported list such as Firefox, Opera, Konqueror, and elinks.  (Contributed by Oleg Broytmann and Georg Brandl.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1652
-msgid "The :mod:`xmlrpclib` module now supports returning  :class:`datetime` objects for the XML-RPC date type.  Supply  ``use_datetime=True`` to the :func:`loads` function or the :class:`Unmarshaller` class to enable this feature. (Contributed by Skip Montanaro.)"
+msgid "The :mod:`xmlrpclib` module now supports returning  :class:`~datetime.datetime` objects for the XML-RPC date type.  Supply  ``use_datetime=True`` to the :func:`loads` function or the :class:`Unmarshaller` class to enable this feature. (Contributed by Skip Montanaro.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1659
@@ -1497,7 +1497,7 @@ msgid "MacOS X (10.3 and higher): dynamic loading of modules now uses the :c:fun
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2212
-msgid "MacOS X: an :option:`--enable-universalsdk` switch was added to the :program:`configure` script that compiles the interpreter as a universal binary able to run on both PowerPC and Intel processors. (Contributed by Ronald Oussoren; :issue:`2573`.)"
+msgid "MacOS X: an :option:`!--enable-universalsdk` switch was added to the :program:`configure` script that compiles the interpreter as a universal binary able to run on both PowerPC and Intel processors. (Contributed by Ronald Oussoren; :issue:`2573`.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2217

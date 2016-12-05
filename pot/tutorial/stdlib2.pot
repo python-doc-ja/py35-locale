@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../tutorial/stdlib2.rst:5
-msgid "Brief Tour of the Standard Library -- Part II"
+msgid "Brief Tour of the Standard Library --- Part II"
 msgstr ""
 
 #: ../../tutorial/stdlib2.rst:7

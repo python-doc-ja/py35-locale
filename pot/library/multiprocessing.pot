@@ -649,7 +649,7 @@ msgid "Return a context object which has the same attributes as the :mod:`multip
 msgstr ""
 
 #: ../../library/multiprocessing.rst:945
-msgid "If *method* is *None* then the default context is returned. Otherwise *method* should be ``'fork'``, ``'spawn'``, ``'forkserver'``.  :exc:`ValueError` is raised if the specified start method is not available."
+msgid "If *method* is ``None`` then the default context is returned. Otherwise *method* should be ``'fork'``, ``'spawn'``, ``'forkserver'``.  :exc:`ValueError` is raised if the specified start method is not available."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:954
@@ -657,11 +657,11 @@ msgid "Return the name of start method used for starting processes."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:956
-msgid "If the start method has not been fixed and *allow_none* is false, then the start method is fixed to the default and the name is returned.  If the start method has not been fixed and *allow_none* is true then *None* is returned."
+msgid "If the start method has not been fixed and *allow_none* is false, then the start method is fixed to the default and the name is returned.  If the start method has not been fixed and *allow_none* is true then ``None`` is returned."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:961
-msgid "The return value can be ``'fork'``, ``'spawn'``, ``'forkserver'`` or *None*.  ``'fork'`` is the default on Unix, while ``'spawn'`` is the default on Windows."
+msgid "The return value can be ``'fork'``, ``'spawn'``, ``'forkserver'`` or ``None``.  ``'fork'`` is the default on Unix, while ``'spawn'`` is the default on Windows."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:969
@@ -1444,7 +1444,7 @@ msgid "If *initializer* is not ``None`` then each worker process will call ``ini
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2029
-msgid "*maxtasksperchild* is the number of tasks a worker process can complete before it will exit and be replaced with a fresh worker process, to enable unused resources to be freed. The default *maxtasksperchild* is None, which means worker processes will live as long as the pool."
+msgid "*maxtasksperchild* is the number of tasks a worker process can complete before it will exit and be replaced with a fresh worker process, to enable unused resources to be freed. The default *maxtasksperchild* is ``None``, which means worker processes will live as long as the pool."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2034
@@ -1635,7 +1635,7 @@ msgid "If *authenticate* is ``True`` (``False`` by default) or *authkey* is not 
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2300
-msgid "If *authkey* is a byte string then it will be used as the authentication key; otherwise it must be *None*."
+msgid "If *authkey* is a byte string then it will be used as the authentication key; otherwise it must be ``None``."
 msgstr ""
 
 #: ../../library/multiprocessing.rst:2303

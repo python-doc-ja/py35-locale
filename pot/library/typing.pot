@@ -24,7 +24,7 @@ msgid "**Source code:** :source:`Lib/typing.py`"
 msgstr ""
 
 #: ../../library/typing.rst:13
-msgid "This module supports type hints as specified by :pep:`484`.  The most fundamental support consists of the type :class:`Any`, :class:`Union`, :class:`Tuple`, :class:`Callable`, :class:`TypeVar`, and :class:`Generic`.  For full specification please see :pep:`484`.  For a simplified introduction to type hints see :pep:`483`."
+msgid "This module supports type hints as specified by :pep:`484`.  The most fundamental support consists of the types :data:`Any`, :data:`Union`, :data:`Tuple`, :data:`Callable`, :class:`TypeVar`, and :class:`Generic`.  For full specification please see :pep:`484`.  For a simplified introduction to type hints see :pep:`483`."
 msgstr ""
 
 #: ../../library/typing.rst:20
@@ -156,459 +156,467 @@ msgid "In this case ``MyDict`` has a single parameter, ``T``."
 msgstr ""
 
 #: ../../library/typing.rst:269
-msgid "Subclassing a generic class without specifying type parameters assumes :class:`Any` for each position. In the following example, ``MyIterable`` is not generic but implicitly inherits from ``Iterable[Any]``::"
+msgid "Using a generic class without specifying type parameters assumes :data:`Any` for each position. In the following example, ``MyIterable`` is not generic but implicitly inherits from ``Iterable[Any]``::"
 msgstr ""
 
 #: ../../library/typing.rst:277
-msgid "The metaclass used by :class:`Generic` is a subclass of :class:`abc.ABCMeta`. A generic class can be an ABC by including abstract methods or properties, and generic classes can also have ABCs as base classes without a metaclass conflict.  Generic metaclasses are not supported."
+msgid "User defined generic type aliases are also supported. Examples::"
 msgstr ""
 
-#: ../../library/typing.rst:284
-msgid "The :class:`Any` type"
+#: ../../library/typing.rst:293
+msgid "The metaclass used by :class:`Generic` is a subclass of :class:`abc.ABCMeta`. A generic class can be an ABC by including abstract methods or properties, and generic classes can also have ABCs as base classes without a metaclass conflict. Generic metaclasses are not supported. The outcome of parameterizing generics is cached, and most types in the typing module are hashable and comparable for equality."
 msgstr ""
 
-#: ../../library/typing.rst:286
-msgid "A special kind of type is :class:`Any`. A static type checker will treat every type as being compatible with :class:`Any` and :class:`Any` as being compatible with every type."
+#: ../../library/typing.rst:302
+msgid "The :data:`Any` type"
 msgstr ""
 
-#: ../../library/typing.rst:290
-msgid "This means that it is possible to perform any operation or method call on a value of type on :class:`Any` and assign it to any variable::"
+#: ../../library/typing.rst:304
+msgid "A special kind of type is :data:`Any`. A static type checker will treat every type as being compatible with :data:`Any` and :data:`Any` as being compatible with every type."
 msgstr ""
 
 #: ../../library/typing.rst:308
-msgid "Notice that no typechecking is performed when assigning a value of type :class:`Any` to a more precise type. For example, the static type checker did not report an error when assigning ``a`` to ``s`` even though ``s`` was declared to be of type :class:`str` and receives an :class:`int` value at runtime!"
+msgid "This means that it is possible to perform any operation or method call on a value of type on :data:`Any` and assign it to any variable::"
 msgstr ""
 
-#: ../../library/typing.rst:314
-msgid "Furthermore, all functions without a return type or parameter types will implicitly default to using :class:`Any`::"
+#: ../../library/typing.rst:326
+msgid "Notice that no typechecking is performed when assigning a value of type :data:`Any` to a more precise type. For example, the static type checker did not report an error when assigning ``a`` to ``s`` even though ``s`` was declared to be of type :class:`str` and receives an :class:`int` value at runtime!"
 msgstr ""
 
-#: ../../library/typing.rst:327
-msgid "This behavior allows :class:`Any` to be used as an *escape hatch* when you need to mix dynamically and statically typed code."
+#: ../../library/typing.rst:332
+msgid "Furthermore, all functions without a return type or parameter types will implicitly default to using :data:`Any`::"
 msgstr ""
 
-#: ../../library/typing.rst:330
-msgid "Contrast the behavior of :class:`Any` with the behavior of :class:`object`. Similar to :class:`Any`, every type is a subtype of :class:`object`. However, unlike :class:`Any`, the reverse is not true: :class:`object` is *not* a subtype of every other type."
+#: ../../library/typing.rst:345
+msgid "This behavior allows :data:`Any` to be used as an *escape hatch* when you need to mix dynamically and statically typed code."
 msgstr ""
 
-#: ../../library/typing.rst:335
+#: ../../library/typing.rst:348
+msgid "Contrast the behavior of :data:`Any` with the behavior of :class:`object`. Similar to :data:`Any`, every type is a subtype of :class:`object`. However, unlike :data:`Any`, the reverse is not true: :class:`object` is *not* a subtype of every other type."
+msgstr ""
+
+#: ../../library/typing.rst:353
 msgid "That means when the type of a value is :class:`object`, a type checker will reject almost all operations on it, and assigning it to a variable (or using it as a return value) of a more specialized type is a type error. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:357
-msgid "Use :class:`object` to indicate that a value could be any type in a typesafe manner. Use :class:`Any` to indicate that a value is dynamically typed."
+#: ../../library/typing.rst:375
+msgid "Use :class:`object` to indicate that a value could be any type in a typesafe manner. Use :data:`Any` to indicate that a value is dynamically typed."
 msgstr ""
 
-#: ../../library/typing.rst:361
+#: ../../library/typing.rst:379
 msgid "Classes, functions, and decorators"
 msgstr ""
 
-#: ../../library/typing.rst:363
+#: ../../library/typing.rst:381
 msgid "The module defines the following classes, functions and decorators:"
 msgstr ""
 
-#: ../../library/typing.rst:367
-msgid "Special type indicating an unconstrained type."
-msgstr ""
-
-#: ../../library/typing.rst:369
-msgid "Any object is an instance of :class:`Any`."
-msgstr ""
-
-#: ../../library/typing.rst:370
-msgid "Any class is a subclass of :class:`Any`."
-msgstr ""
-
-#: ../../library/typing.rst:371
-msgid "As a special case, :class:`Any` and :class:`object` are subclasses of each other."
-msgstr ""
-
-#: ../../library/typing.rst:376
+#: ../../library/typing.rst:385
 msgid "Type variable."
 msgstr ""
 
-#: ../../library/typing.rst:378
-#: ../../library/typing.rst:767
+#: ../../library/typing.rst:387
+#: ../../library/typing.rst:705
 msgid "Usage::"
 msgstr ""
 
-#: ../../library/typing.rst:383
+#: ../../library/typing.rst:392
 msgid "Type variables exist primarily for the benefit of static type checkers.  They serve as the parameters for generic types as well as for generic function definitions.  See class Generic for more information on generic types.  Generic functions work as follows::"
 msgstr ""
 
-#: ../../library/typing.rst:396
+#: ../../library/typing.rst:405
 msgid "The latter example's signature is essentially the overloading of ``(str, str) -> str`` and ``(bytes, bytes) -> bytes``.  Also note that if the arguments are instances of some subclass of :class:`str`, the return type is still plain :class:`str`."
 msgstr ""
 
-#: ../../library/typing.rst:401
+#: ../../library/typing.rst:410
 msgid "At runtime, ``isinstance(x, T)`` will raise :exc:`TypeError`.  In general, :func:`isinstance` and :func:`issubclass` should not be used with types."
 msgstr ""
 
-#: ../../library/typing.rst:404
+#: ../../library/typing.rst:413
 msgid "Type variables may be marked covariant or contravariant by passing ``covariant=True`` or ``contravariant=True``.  See :pep:`484` for more details.  By default type variables are invariant.  Alternatively, a type variable may specify an upper bound using ``bound=<type>``. This means that an actual type substituted (explicitly or implicitly) for the type variable must be a subclass of the boundary type, see :pep:`484`."
 msgstr ""
 
-#: ../../library/typing.rst:414
-msgid "Union type; ``Union[X, Y]`` means either X or Y."
-msgstr ""
-
-#: ../../library/typing.rst:416
-msgid "To define a union, use e.g. ``Union[int, str]``.  Details:"
-msgstr ""
-
-#: ../../library/typing.rst:418
-msgid "The arguments must be types and there must be at least one."
-msgstr ""
-
-#: ../../library/typing.rst:420
-msgid "Unions of unions are flattened, e.g.::"
-msgstr ""
-
-#: ../../library/typing.rst:424
-msgid "Unions of a single argument vanish, e.g.::"
-msgstr ""
-
-#: ../../library/typing.rst:428
-msgid "Redundant arguments are skipped, e.g.::"
-msgstr ""
-
-#: ../../library/typing.rst:432
-msgid "When comparing unions, the argument order is ignored, e.g.::"
-msgstr ""
-
-#: ../../library/typing.rst:436
-msgid "If :class:`Any` is present it is the sole survivor, e.g.::"
-msgstr ""
-
-#: ../../library/typing.rst:440
-msgid "You cannot subclass or instantiate a union."
-msgstr ""
-
-#: ../../library/typing.rst:442
-msgid "You cannot write ``Union[X][Y]``."
-msgstr ""
-
-#: ../../library/typing.rst:444
-msgid "You can use ``Optional[X]`` as a shorthand for ``Union[X, None]``."
-msgstr ""
-
-#: ../../library/typing.rst:448
-msgid "Optional type."
-msgstr ""
-
-#: ../../library/typing.rst:450
-msgid "``Optional[X]`` is equivalent to ``Union[X, None]``."
-msgstr ""
-
-#: ../../library/typing.rst:452
-msgid "Note that this is not the same concept as an optional argument, which is one that has a default.  An optional argument with a default needn't use the ``Optional`` qualifier on its type annotation (although it is inferred if the default is ``None``). A mandatory argument may still have an ``Optional`` type if an explicit value of ``None`` is allowed."
-msgstr ""
-
-#: ../../library/typing.rst:461
-msgid "Tuple type; ``Tuple[X, Y]`` is the type of a tuple of two items with the first item of type X and the second of type Y."
-msgstr ""
-
-#: ../../library/typing.rst:464
-msgid "Example: ``Tuple[T1, T2]`` is a tuple of two elements corresponding to type variables T1 and T2.  ``Tuple[int, float, str]`` is a tuple of an int, a float and a string."
-msgstr ""
-
-#: ../../library/typing.rst:468
-msgid "To specify a variable-length tuple of homogeneous type, use literal ellipsis, e.g. ``Tuple[int, ...]``."
-msgstr ""
-
-#: ../../library/typing.rst:473
-msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
-msgstr ""
-
-#: ../../library/typing.rst:475
-msgid "The subscription syntax must always be used with exactly two values: the argument list and the return type.  The argument list must be a list of types; the return type must be a single type."
-msgstr ""
-
-#: ../../library/typing.rst:479
-msgid "There is no syntax to indicate optional or keyword arguments, such function types are rarely used as callback types. ``Callable[..., ReturnType]`` could be used to type hint a callable taking any number of arguments and returning ``ReturnType``. A plain :class:`Callable` is equivalent to ``Callable[..., Any]``."
-msgstr ""
-
-#: ../../library/typing.rst:487
+#: ../../library/typing.rst:423
 msgid "Abstract base class for generic types."
 msgstr ""
 
-#: ../../library/typing.rst:489
+#: ../../library/typing.rst:425
 msgid "A generic type is typically declared by inheriting from an instantiation of this class with one or more type variables. For example, a generic mapping type might be defined as::"
 msgstr ""
 
-#: ../../library/typing.rst:498
+#: ../../library/typing.rst:434
 msgid "This class can then be used as follows::"
 msgstr ""
 
-#: ../../library/typing.rst:511
+#: ../../library/typing.rst:447
 msgid "A variable annotated with ``C`` may accept a value of type ``C``. In contrast, a variable annotated with ``Type[C]`` may accept values that are classes themselves -- specifically, it will accept the *class object* of ``C``. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:520
+#: ../../library/typing.rst:456
 msgid "Note that ``Type[C]`` is covariant::"
 msgstr ""
 
-#: ../../library/typing.rst:532
+#: ../../library/typing.rst:468
 msgid "The fact that ``Type[C]`` is covariant implies that all subclasses of ``C`` should implement the same constructor signature and class method signatures as ``C``. The type checker should flag violations of this, but should also allow constructor calls in subclasses that match the constructor calls in the indicated base class. How the type checker is required to handle this particular case may change in future revisions of :pep:`484`."
 msgstr ""
 
-#: ../../library/typing.rst:540
-msgid "The only legal parameters for :class:`Type` are classes, unions of classes, and :class:`Any`. For example::"
+#: ../../library/typing.rst:476
+msgid "The only legal parameters for :class:`Type` are classes, unions of classes, and :data:`Any`. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:545
+#: ../../library/typing.rst:481
 msgid "``Type[Any]`` is equivalent to ``Type`` which in turn is equivalent to ``type``, which is the root of Python's metaclass hierarchy."
 msgstr ""
 
-#: ../../library/typing.rst:550
+#: ../../library/typing.rst:486
 msgid "A generic version of :class:`collections.abc.Iterable`."
 msgstr ""
 
-#: ../../library/typing.rst:554
+#: ../../library/typing.rst:490
 msgid "A generic version of :class:`collections.abc.Iterator`."
 msgstr ""
 
-#: ../../library/typing.rst:558
+#: ../../library/typing.rst:494
 msgid "A generic version of :class:`collections.abc.Reversible`."
 msgstr ""
 
-#: ../../library/typing.rst:562
+#: ../../library/typing.rst:498
 msgid "An ABC with one abstract method ``__int__``."
 msgstr ""
 
-#: ../../library/typing.rst:566
+#: ../../library/typing.rst:502
 msgid "An ABC with one abstract method ``__float__``."
 msgstr ""
 
-#: ../../library/typing.rst:570
+#: ../../library/typing.rst:506
 msgid "An ABC with one abstract method ``__abs__`` that is covariant in its return type."
 msgstr ""
 
-#: ../../library/typing.rst:575
+#: ../../library/typing.rst:511
 msgid "An ABC with one abstract method ``__round__`` that is covariant in its return type."
 msgstr ""
 
-#: ../../library/typing.rst:580
+#: ../../library/typing.rst:516
 msgid "A generic version of :class:`collections.abc.Container`."
 msgstr ""
 
-#: ../../library/typing.rst:584
+#: ../../library/typing.rst:520
 msgid "An alias to :class:`collections.abc.Hashable`"
 msgstr ""
 
-#: ../../library/typing.rst:588
+#: ../../library/typing.rst:524
 msgid "An alias to :class:`collections.abc.Sized`"
 msgstr ""
 
-#: ../../library/typing.rst:592
+#: ../../library/typing.rst:528
 msgid "A generic version of :class:`collections.abc.Set`."
 msgstr ""
 
-#: ../../library/typing.rst:596
+#: ../../library/typing.rst:532
 msgid "A generic version of :class:`collections.abc.MutableSet`."
 msgstr ""
 
-#: ../../library/typing.rst:600
+#: ../../library/typing.rst:536
 msgid "A generic version of :class:`collections.abc.Mapping`."
 msgstr ""
 
-#: ../../library/typing.rst:604
+#: ../../library/typing.rst:540
 msgid "A generic version of :class:`collections.abc.MutableMapping`."
 msgstr ""
 
-#: ../../library/typing.rst:608
+#: ../../library/typing.rst:544
 msgid "A generic version of :class:`collections.abc.Sequence`."
 msgstr ""
 
-#: ../../library/typing.rst:612
+#: ../../library/typing.rst:548
 msgid "A generic version of :class:`collections.abc.MutableSequence`."
 msgstr ""
 
-#: ../../library/typing.rst:616
+#: ../../library/typing.rst:552
 msgid "A generic version of :class:`collections.abc.ByteString`."
 msgstr ""
 
-#: ../../library/typing.rst:618
+#: ../../library/typing.rst:554
 msgid "This type represents the types :class:`bytes`, :class:`bytearray`, and :class:`memoryview`."
 msgstr ""
 
-#: ../../library/typing.rst:621
+#: ../../library/typing.rst:557
 msgid "As a shorthand for this type, :class:`bytes` can be used to annotate arguments of any of the types mentioned above."
 msgstr ""
 
-#: ../../library/typing.rst:626
+#: ../../library/typing.rst:562
 msgid "Generic version of :class:`list`. Useful for annotating return types. To annotate arguments it is preferred to use abstract collection types such as :class:`Mapping`, :class:`Sequence`, or :class:`AbstractSet`."
 msgstr ""
 
-#: ../../library/typing.rst:631
+#: ../../library/typing.rst:567
 msgid "This type may be used as follows::"
 msgstr ""
 
-#: ../../library/typing.rst:643
+#: ../../library/typing.rst:579
 msgid "A generic version of :class:`builtins.set <set>`."
 msgstr ""
 
-#: ../../library/typing.rst:647
+#: ../../library/typing.rst:583
+msgid "A generic version of :class:`builtins.frozenset <frozenset>`."
+msgstr ""
+
+#: ../../library/typing.rst:587
 msgid "A generic version of :class:`collections.abc.MappingView`."
 msgstr ""
 
-#: ../../library/typing.rst:651
+#: ../../library/typing.rst:591
 msgid "A generic version of :class:`collections.abc.KeysView`."
 msgstr ""
 
-#: ../../library/typing.rst:655
+#: ../../library/typing.rst:595
 msgid "A generic version of :class:`collections.abc.ItemsView`."
 msgstr ""
 
-#: ../../library/typing.rst:659
+#: ../../library/typing.rst:599
 msgid "A generic version of :class:`collections.abc.ValuesView`."
 msgstr ""
 
-#: ../../library/typing.rst:663
+#: ../../library/typing.rst:603
 msgid "A generic version of :class:`collections.abc.Awaitable`."
 msgstr ""
 
-#: ../../library/typing.rst:667
+#: ../../library/typing.rst:607
+msgid "A generic version of :class:`collections.abc.Coroutine`. The variance and order of type variables correspond to those of :class:`Generator`, for example::"
+msgstr ""
+
+#: ../../library/typing.rst:620
 msgid "A generic version of :class:`collections.abc.AsyncIterable`."
 msgstr ""
 
-#: ../../library/typing.rst:671
+#: ../../library/typing.rst:624
 msgid "A generic version of :class:`collections.abc.AsyncIterator`."
 msgstr ""
 
-#: ../../library/typing.rst:675
+#: ../../library/typing.rst:628
 msgid "A generic version of :class:`dict`. The usage of this type is as follows::"
 msgstr ""
 
-#: ../../library/typing.rst:683
+#: ../../library/typing.rst:636
 msgid "A generic version of :class:`collections.defaultdict`"
 msgstr ""
 
-#: ../../library/typing.rst:687
+#: ../../library/typing.rst:640
 msgid "A generator can be annotated by the generic type ``Generator[YieldType, SendType, ReturnType]``. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:696
+#: ../../library/typing.rst:649
 msgid "Note that unlike many other generics in the typing module, the ``SendType`` of :class:`Generator` behaves contravariantly, not covariantly or invariantly."
 msgstr ""
 
-#: ../../library/typing.rst:700
+#: ../../library/typing.rst:653
 msgid "If your generator will only yield values, set the ``SendType`` and ``ReturnType`` to ``None``::"
 msgstr ""
 
-#: ../../library/typing.rst:708
+#: ../../library/typing.rst:661
 msgid "Alternatively, annotate your generator as having a return type of either ``Iterable[YieldType]`` or ``Iterator[YieldType]``::"
 msgstr ""
 
-#: ../../library/typing.rst:718
-msgid "``AnyStr`` is a type variable defined as ``AnyStr = TypeVar('AnyStr', str, bytes)``."
-msgstr ""
-
-#: ../../library/typing.rst:721
-msgid "It is meant to be used for functions that may accept any kind of string without allowing different kinds of strings to mix. For example::"
-msgstr ""
-
-#: ../../library/typing.rst:733
+#: ../../library/typing.rst:671
 msgid "``Text`` is an alias for ``str``. It is provided to supply a forward compatible path for Python 2 code: in Python 2, ``Text`` is an alias for ``unicode``."
 msgstr ""
 
-#: ../../library/typing.rst:737
+#: ../../library/typing.rst:675
 msgid "Use ``Text`` to indicate that a value must contain a unicode string in a manner that is compatible with both Python 2 and Python 3::"
 msgstr ""
 
-#: ../../library/typing.rst:745
+#: ../../library/typing.rst:683
 msgid "Wrapper namespace for I/O stream types."
 msgstr ""
 
-#: ../../library/typing.rst:747
+#: ../../library/typing.rst:685
 msgid "This defines the generic type ``IO[AnyStr]`` and aliases ``TextIO`` and ``BinaryIO`` for respectively ``IO[str]`` and ``IO[bytes]``. These representing the types of I/O streams such as returned by :func:`open`."
 msgstr ""
 
-#: ../../library/typing.rst:754
+#: ../../library/typing.rst:692
 msgid "Wrapper namespace for regular expression matching types."
 msgstr ""
 
-#: ../../library/typing.rst:756
+#: ../../library/typing.rst:694
 msgid "This defines the type aliases ``Pattern`` and ``Match`` which correspond to the return types from :func:`re.compile` and :func:`re.match`.  These types (and the corresponding functions) are generic in ``AnyStr`` and can be made specific by writing ``Pattern[str]``, ``Pattern[bytes]``, ``Match[str]``, or ``Match[bytes]``."
 msgstr ""
 
-#: ../../library/typing.rst:765
+#: ../../library/typing.rst:703
 msgid "Typed version of namedtuple."
 msgstr ""
 
-#: ../../library/typing.rst:771
+#: ../../library/typing.rst:709
 msgid "This is equivalent to::"
 msgstr ""
 
-#: ../../library/typing.rst:775
+#: ../../library/typing.rst:713
 msgid "The resulting class has one extra attribute: _field_types, giving a dict mapping field names to types.  (The field names are in the _fields attribute, which is part of the namedtuple API.)"
 msgstr ""
 
-#: ../../library/typing.rst:782
+#: ../../library/typing.rst:720
 msgid "A helper function to indicate a distinct types to a typechecker, see :ref:`distinct`. At runtime it returns a function that returns its argument. Usage::"
 msgstr ""
 
-#: ../../library/typing.rst:791
+#: ../../library/typing.rst:729
 msgid "Cast a value to a type."
 msgstr ""
 
-#: ../../library/typing.rst:793
+#: ../../library/typing.rst:731
 msgid "This returns the value unchanged.  To the type checker this signals that the return value has the designated type, but at runtime we intentionally don't check anything (we want this to be as fast as possible)."
 msgstr ""
 
-#: ../../library/typing.rst:800
-msgid "Return type hints for a function or method object."
+#: ../../library/typing.rst:738
+msgid "Return a dictionary containing type hints for a function, method, module or class object."
 msgstr ""
 
-#: ../../library/typing.rst:802
-msgid "This is often the same as ``obj.__annotations__``, but it handles forward references encoded as string literals, and if necessary adds ``Optional[t]`` if a default value equal to None is set."
+#: ../../library/typing.rst:741
+msgid "This is often the same as ``obj.__annotations__``. In addition, forward references encoded as string literals are handled by evaluating them in ``globals`` and ``locals`` namespaces. If necessary, ``Optional[t]`` is added for function and method annotations if a default value equal to ``None`` is set. For a class ``C``, return a dictionary constructed by merging all the ``__annotations__`` along ``C.__mro__`` in reverse order."
 msgstr ""
 
-#: ../../library/typing.rst:808
+#: ../../library/typing.rst:751
 msgid "The ``@overload`` decorator allows describing functions and methods that support multiple different combinations of argument types. A series of ``@overload``-decorated definitions must be followed by exactly one non-``@overload``-decorated definition (for the same function/method). The ``@overload``-decorated definitions are for the benefit of the type checker only, since they will be overwritten by the non-``@overload``-decorated definition, while the latter is used at runtime but should be ignored by a type checker.  At runtime, calling a ``@overload``-decorated function directly will raise ``NotImplementedError``. An example of overload that gives a more precise type than can be expressed using a union or a type variable::"
 msgstr ""
 
-#: ../../library/typing.rst:832
+#: ../../library/typing.rst:775
 msgid "See :pep:`484` for details and comparison with other typing semantics."
 msgstr ""
 
-#: ../../library/typing.rst:836
+#: ../../library/typing.rst:779
 msgid "Decorator to indicate that annotations are not type hints."
 msgstr ""
 
-#: ../../library/typing.rst:838
+#: ../../library/typing.rst:781
 msgid "The argument must be a class or function; if it is a class, it applies recursively to all methods defined in that class (but not to methods defined in its superclasses or subclasses)."
 msgstr ""
 
-#: ../../library/typing.rst:842
+#: ../../library/typing.rst:785
 msgid "This mutates the function(s) in place."
 msgstr ""
 
-#: ../../library/typing.rst:846
+#: ../../library/typing.rst:789
 msgid "Decorator to give another decorator the :func:`no_type_check` effect."
 msgstr ""
 
-#: ../../library/typing.rst:848
+#: ../../library/typing.rst:791
 msgid "This wraps the decorator with something that wraps the decorated function in :func:`no_type_check`."
 msgstr ""
 
-#: ../../library/typing.rst:853
-msgid "Special type construct to mark class variables."
+#: ../../library/typing.rst:796
+msgid "Special type indicating an unconstrained type."
 msgstr ""
 
-#: ../../library/typing.rst:855
-msgid "As introduced in :pep:`526`, a variable annotation wrapped in ClassVar indicates that a given attribute is intended to be used as a class variable and should not be set on instances of that class. Usage::"
+#: ../../library/typing.rst:798
+msgid "Every type is compatible with :data:`Any`."
+msgstr ""
+
+#: ../../library/typing.rst:799
+msgid ":data:`Any` is compatible with every type."
+msgstr ""
+
+#: ../../library/typing.rst:803
+msgid "Union type; ``Union[X, Y]`` means either X or Y."
+msgstr ""
+
+#: ../../library/typing.rst:805
+msgid "To define a union, use e.g. ``Union[int, str]``.  Details:"
+msgstr ""
+
+#: ../../library/typing.rst:807
+msgid "The arguments must be types and there must be at least one."
+msgstr ""
+
+#: ../../library/typing.rst:809
+msgid "Unions of unions are flattened, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:813
+msgid "Unions of a single argument vanish, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:817
+msgid "Redundant arguments are skipped, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:821
+msgid "When comparing unions, the argument order is ignored, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:825
+msgid "When a class and its subclass are present, the former is skipped, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:829
+msgid "You cannot subclass or instantiate a union."
+msgstr ""
+
+#: ../../library/typing.rst:831
+msgid "You cannot write ``Union[X][Y]``."
+msgstr ""
+
+#: ../../library/typing.rst:833
+msgid "You can use ``Optional[X]`` as a shorthand for ``Union[X, None]``."
+msgstr ""
+
+#: ../../library/typing.rst:837
+msgid "Optional type."
+msgstr ""
+
+#: ../../library/typing.rst:839
+msgid "``Optional[X]`` is equivalent to ``Union[X, None]``."
+msgstr ""
+
+#: ../../library/typing.rst:841
+msgid "Note that this is not the same concept as an optional argument, which is one that has a default.  An optional argument with a default needn't use the ``Optional`` qualifier on its type annotation (although it is inferred if the default is ``None``). A mandatory argument may still have an ``Optional`` type if an explicit value of ``None`` is allowed."
+msgstr ""
+
+#: ../../library/typing.rst:850
+msgid "Tuple type; ``Tuple[X, Y]`` is the type of a tuple of two items with the first item of type X and the second of type Y."
+msgstr ""
+
+#: ../../library/typing.rst:853
+msgid "Example: ``Tuple[T1, T2]`` is a tuple of two elements corresponding to type variables T1 and T2.  ``Tuple[int, float, str]`` is a tuple of an int, a float and a string."
+msgstr ""
+
+#: ../../library/typing.rst:857
+msgid "To specify a variable-length tuple of homogeneous type, use literal ellipsis, e.g. ``Tuple[int, ...]``. A plain :data:`Tuple` is equivalent to ``Tuple[Any, ...]``, and in turn to :class:`tuple`."
 msgstr ""
 
 #: ../../library/typing.rst:863
-msgid "ClassVar accepts only types and cannot be further subscribed."
+msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
 msgstr ""
 
 #: ../../library/typing.rst:865
-msgid "ClassVar is not a class itself, and should not be used with isinstance() or issubclass(). Note that ClassVar does not change Python runtime behavior, it can be used by 3rd party type checkers, so that the following code will flagged as an error by those::"
+msgid "The subscription syntax must always be used with exactly two values: the argument list and the return type.  The argument list must be a list of types or an ellipsis; the return type must be a single type."
 msgstr ""
 
-#: ../../library/typing.rst:879
+#: ../../library/typing.rst:870
+msgid "There is no syntax to indicate optional or keyword arguments; such function types are rarely used as callback types. ``Callable[..., ReturnType]`` (literal ellipsis) can be used to type hint a callable taking any number of arguments and returning ``ReturnType``.  A plain :data:`Callable` is equivalent to ``Callable[..., Any]``, and in turn to :class:`collections.abc.Callable`."
+msgstr ""
+
+#: ../../library/typing.rst:880
+msgid "Special type construct to mark class variables."
+msgstr ""
+
+#: ../../library/typing.rst:882
+msgid "As introduced in :pep:`526`, a variable annotation wrapped in ClassVar indicates that a given attribute is intended to be used as a class variable and should not be set on instances of that class. Usage::"
+msgstr ""
+
+#: ../../library/typing.rst:890
+msgid ":data:`ClassVar` accepts only types and cannot be further subscribed."
+msgstr ""
+
+#: ../../library/typing.rst:892
+msgid ":data:`ClassVar` is not a class itself, and should not be used with :func:`isinstance` or :func:`issubclass`. Note that :data:`ClassVar` does not change Python runtime behavior; it can be used by 3rd party type checkers, so that the following code might flagged as an error by those::"
+msgstr ""
+
+#: ../../library/typing.rst:906
+msgid "``AnyStr`` is a type variable defined as ``AnyStr = TypeVar('AnyStr', str, bytes)``."
+msgstr ""
+
+#: ../../library/typing.rst:909
+msgid "It is meant to be used for functions that may accept any kind of string without allowing different kinds of strings to mix. For example::"
+msgstr ""
+
+#: ../../library/typing.rst:921
 msgid "A special constant that is assumed to be ``True`` by 3rd party static type checkers. It is ``False`` at runtime. Usage::"
 msgstr ""
 

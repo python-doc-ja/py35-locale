@@ -19,6 +19,10 @@ msgstr ""
 msgid "Python on Windows FAQ"
 msgstr ""
 
+#: ../../faq/windows.rst:0
+msgid "Contents"
+msgstr ""
+
 #: ../../faq/windows.rst:18
 msgid "How do I run a Python program under Windows?"
 msgstr ""

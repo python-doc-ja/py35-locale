@@ -1537,7 +1537,7 @@ msgid "The *mode* argument of the :func:`~tarfile.open` function now accepts ``\
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:1892
-msgid "The :meth:`TarFile.extractall() <tarfile.TarFile.extractall>` and :meth:`TarFile.extract() <tarfile.TarFile.extract>` methods now take a keyword argument *numeric_only*.  If set to ``True``, the extracted files and directories will be owned by the numeric ``uid`` and ``gid`` from the tarfile. If set to ``False`` (the default, and the behavior in versions prior to 3.5), they will be owned by the named user and group in the tarfile. (Contributed by Michael Vogt and Eric Smith in :issue:`23193`.)"
+msgid "The :meth:`TarFile.extractall() <tarfile.TarFile.extractall>` and :meth:`TarFile.extract() <tarfile.TarFile.extract>` methods now take a keyword argument *numeric_owner*.  If set to ``True``, the extracted files and directories will be owned by the numeric ``uid`` and ``gid`` from the tarfile. If set to ``False`` (the default, and the behavior in versions prior to 3.5), they will be owned by the named user and group in the tarfile. (Contributed by Michael Vogt and Eric Smith in :issue:`23193`.)"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:1900
@@ -1753,7 +1753,7 @@ msgid "Many operations on :class:`io.BytesIO` are now 50% to 100% faster. (Contr
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2132
-msgid "The :func:`marshal.dumps` function is now faster: 65-85% with versions 3 and 4, 20-25% with versions 0 to 2 on typical data, and up to 5 times in best cases. (Contributed by Serhiy Storchaka in :issue:`20416` and :issue:`23344`.)"
+msgid "The :func:`marshal.dumps` function is now faster: 65--85% with versions 3 and 4, 20--25% with versions 0 to 2 on typical data, and up to 5 times in best cases. (Contributed by Serhiy Storchaka in :issue:`20416` and :issue:`23344`.)"
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2137

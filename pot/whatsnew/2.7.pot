@@ -60,7 +60,7 @@ msgid "Some key consequences of the long-term significance of 2.7 are:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:103
-msgid "As noted above, the 2.7 release has a much longer period of maintenance when compared to earlier 2.x versions. Python 2.7 is currently expected to remain supported by the core development team (receiving security updates and other bug fixes) until at least 2020 (10 years after its initial release, compared to the more typical support period of 18-24 months)."
+msgid "As noted above, the 2.7 release has a much longer period of maintenance when compared to earlier 2.x versions. Python 2.7 is currently expected to remain supported by the core development team (receiving security updates and other bug fixes) until at least 2020 (10 years after its initial release, compared to the more typical support period of 18--24 months)."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:109
@@ -168,7 +168,7 @@ msgid ":func:`operator.isCallable` and :func:`operator.sequenceIncludes`, which 
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:201
-msgid "The :option:`-3` switch now automatically enables the :option:`-Qwarn <-Q>` switch that causes warnings about using classic division with integers and long integers."
+msgid "The :option:`!-3` switch now automatically enables the :option:`!-Qwarn` switch that causes warnings about using classic division with integers and long integers."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:214
@@ -192,7 +192,7 @@ msgid "Deleting an entry and reinserting it will move it to the end::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:247
-msgid "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* argument that defaults to True.  If *last* is True, the most recently added key is returned and removed; if it's False, the oldest key is selected::"
+msgid "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* argument that defaults to ``True``.  If *last* is true, the most recently added key is returned and removed; if it's false, the oldest key is selected::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:262
@@ -284,7 +284,7 @@ msgid "Here's an example::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:393
-msgid "Unless you override it, :option:`-h` and :option:`--help` switches are automatically added, and produce neatly formatted output::"
+msgid "Unless you override it, :option:`!-h` and :option:`!--help` switches are automatically added, and produce neatly formatted output::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:410
@@ -605,7 +605,7 @@ msgid "The garbage collector tries to avoid tracking simple containers which can
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:956
-msgid "Long integers are now stored internally either in base 2**15 or in base 2**30, the base being determined at build time.  Previously, they were always stored in base 2**15.  Using base 2**30 gives significant performance improvements on 64-bit machines, but benchmark results on 32-bit machines have been mixed.  Therefore, the default is to use base 2**30 on 64-bit machines and base 2**15 on 32-bit machines; on Unix, there's a new configure option :option:`--enable-big-digits` that can be used to override this default."
+msgid "Long integers are now stored internally either in base 2**15 or in base 2**30, the base being determined at build time.  Previously, they were always stored in base 2**15.  Using base 2**30 gives significant performance improvements on 64-bit machines, but benchmark results on 32-bit machines have been mixed.  Therefore, the default is to use base 2**30 on 64-bit machines and base 2**15 on 32-bit machines; on Unix, there's a new configure option :option:`!--enable-big-digits` that can be used to override this default."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:965
@@ -625,7 +625,7 @@ msgid "The division algorithm for long integers has been made faster by tighteni
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:991
-msgid "The implementation of ``%`` checks for the left-side operand being a Python string and special-cases it; this results in a 1-3% performance increase for applications that frequently use ``%`` with strings, such as templating libraries. (Implemented by Collin Winter; :issue:`5176`.)"
+msgid "The implementation of ``%`` checks for the left-side operand being a Python string and special-cases it; this results in a 1--3% performance increase for applications that frequently use ``%`` with strings, such as templating libraries. (Implemented by Collin Winter; :issue:`5176`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:997
@@ -949,7 +949,7 @@ msgid "The :meth:`~socket.socket.recv_into` and :meth:`~socket.socket.recvfrom_i
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1518
-msgid "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now supports socket timeouts and disabling the Nagle algorithm. The :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute defaults to False; if overridden to be True, new request connections will have the TCP_NODELAY option set to prevent buffering many small sends into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class attribute can hold a timeout in seconds that will be applied to the request socket; if no request is received within that time, :meth:`~SocketServer.BaseServer.handle_timeout` will be called and :meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
+msgid "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now supports socket timeouts and disabling the Nagle algorithm. The :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute defaults to ``False``; if overridden to be true, new request connections will have the TCP_NODELAY option set to prevent buffering many small sends into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class attribute can hold a timeout in seconds that will be applied to the request socket; if no request is received within that time, :meth:`~SocketServer.BaseServer.handle_timeout` will be called and :meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1530
@@ -1162,11 +1162,11 @@ msgid "The :func:`~unittest.main` function supports some other new options:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1847
-msgid ":option:`-b <unittest -b>` or :option:`--buffer` will buffer the standard output and standard error streams during each test.  If the test passes, any resulting output will be discarded; on failure, the buffered output will be displayed."
+msgid ":option:`-b <unittest -b>` or :option:`!--buffer` will buffer the standard output and standard error streams during each test.  If the test passes, any resulting output will be discarded; on failure, the buffered output will be displayed."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1852
-msgid ":option:`-c <unittest -c>` or :option:`--catch` will cause the control-C interrupt to be handled more gracefully.  Instead of interrupting the test process immediately, the currently running test will be completed and then the partial results up to the interruption will be reported. If you're impatient, a second press of control-C will cause an immediate interruption."
+msgid ":option:`-c <unittest -c>` or :option:`!--catch` will cause the control-C interrupt to be handled more gracefully.  Instead of interrupting the test process immediately, the currently running test will be completed and then the partial results up to the interruption will be reported. If you're impatient, a second press of control-C will cause an immediate interruption."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1859
@@ -1174,7 +1174,7 @@ msgid "This control-C handler tries to avoid causing problems when the code bein
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1866
-msgid ":option:`-f <unittest -f>` or :option:`--failfast` makes test execution stop immediately when a test fails instead of continuing to execute further tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
+msgid ":option:`-f <unittest -f>` or :option:`!--failfast` makes test execution stop immediately when a test fails instead of continuing to execute further tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1871
@@ -1186,7 +1186,7 @@ msgid "Test cases can raise the :exc:`~unittest.SkipTest` exception to skip a te
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1878
-msgid "The error messages for :meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, and :meth:`~unittest.TestCase.assertFalse` failures now provide more information.  If you set the :attr:`~unittest.TestCase.longMessage` attribute of your :class:`~unittest.TestCase` classes to True, both the standard error message and any additional message you provide will be printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
+msgid "The error messages for :meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, and :meth:`~unittest.TestCase.assertFalse` failures now provide more information.  If you set the :attr:`~unittest.TestCase.longMessage` attribute of your :class:`~unittest.TestCase` classes to true, both the standard error message and any additional message you provide will be printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1885
@@ -1270,7 +1270,7 @@ msgid "A new hook lets you extend the :meth:`~unittest.TestCase.assertEqual` met
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1988
-msgid ":func:`unittest.main` now takes an optional ``exit`` argument.  If False, :func:`~unittest.main` doesn't call :func:`sys.exit`, allowing :func:`~unittest.main` to be used from the interactive interpreter. (Contributed by J. Pablo Fernández; :issue:`3379`.)"
+msgid ":func:`unittest.main` now takes an optional ``exit`` argument.  If false, :func:`~unittest.main` doesn't call :func:`sys.exit`, allowing :func:`~unittest.main` to be used from the interactive interpreter. (Contributed by J. Pablo Fernández; :issue:`3379`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1993
@@ -1426,15 +1426,15 @@ msgid "Global symbols defined by the :mod:`ctypes` module are now prefixed with 
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2241
-msgid "New configure option: the :option:`--with-system-expat` switch allows building the :mod:`pyexpat` module to use the system Expat library. (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
+msgid "New configure option: the :option:`!--with-system-expat` switch allows building the :mod:`pyexpat` module to use the system Expat library. (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2245
-msgid "New configure option: the :option:`--with-valgrind` option will now disable the pymalloc allocator, which is difficult for the Valgrind memory-error detector to analyze correctly. Valgrind will therefore be better at detecting memory leaks and overruns. (Contributed by James Henstridge; :issue:`2422`.)"
+msgid "New configure option: the :option:`!--with-valgrind` option will now disable the pymalloc allocator, which is difficult for the Valgrind memory-error detector to analyze correctly. Valgrind will therefore be better at detecting memory leaks and overruns. (Contributed by James Henstridge; :issue:`2422`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2252
-msgid "New configure option: you can now supply an empty string to :option:`--with-dbmliborder=` in order to disable all of the various DBM modules.  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+msgid "New configure option: you can now supply an empty string to :option:`!--with-dbmliborder=` in order to disable all of the various DBM modules.  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2257
@@ -1538,11 +1538,11 @@ msgid "When importing a module from a :file:`.pyc` or :file:`.pyo` file with an 
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2400
-msgid "The :file:`regrtest.py` script now takes a :option:`--randseed=` switch that takes an integer that will be used as the random seed for the :option:`-r` option that executes tests in random order. The :option:`-r` option also reports the seed that was used (Added by Collin Winter.)"
+msgid "The :file:`regrtest.py` script now takes a :option:`!--randseed=` switch that takes an integer that will be used as the random seed for the :option:`!-r` option that executes tests in random order. The :option:`!-r` option also reports the seed that was used (Added by Collin Winter.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2406
-msgid "Another :file:`regrtest.py` switch is :option:`-j`, which takes an integer specifying how many tests run in parallel. This allows reducing the total runtime on multi-core machines. This option is compatible with several other options, including the :option:`!-R` switch which is known to produce long runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used with a new :option:`-F` switch that runs selected tests in a loop until they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
+msgid "Another :file:`regrtest.py` switch is :option:`!-j`, which takes an integer specifying how many tests run in parallel. This allows reducing the total runtime on multi-core machines. This option is compatible with several other options, including the :option:`!-R` switch which is known to produce long runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used with a new :option:`!-F` switch that runs selected tests in a loop until they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2415

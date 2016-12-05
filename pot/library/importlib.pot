@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/importlib.rst:2
-msgid ":mod:`importlib` -- The implementation of :keyword:`import`"
+msgid ":mod:`importlib` --- The implementation of :keyword:`import`"
 msgstr ""
 
 #: ../../library/importlib.rst:12
@@ -876,7 +876,7 @@ msgid "(``__loader__``)"
 msgstr ""
 
 #: ../../library/importlib.rst:1046
-msgid "The loader to use for loading.  For namespace packages this should be set to None."
+msgid "The loader to use for loading.  For namespace packages this should be set to ``None``."
 msgstr ""
 
 #: ../../library/importlib.rst:1051
@@ -884,7 +884,7 @@ msgid "(``__file__``)"
 msgstr ""
 
 #: ../../library/importlib.rst:1053
-msgid "Name of the place from which the module is loaded, e.g. \"builtin\" for built-in modules and the filename for modules loaded from source. Normally \"origin\" should be set, but it may be None (the default) which indicates it is unspecified."
+msgid "Name of the place from which the module is loaded, e.g. \"builtin\" for built-in modules and the filename for modules loaded from source. Normally \"origin\" should be set, but it may be ``None`` (the default) which indicates it is unspecified."
 msgstr ""
 
 #: ../../library/importlib.rst:1060
@@ -892,11 +892,11 @@ msgid "(``__path__``)"
 msgstr ""
 
 #: ../../library/importlib.rst:1062
-msgid "List of strings for where to find submodules, if a package (None otherwise)."
+msgid "List of strings for where to find submodules, if a package (``None`` otherwise)."
 msgstr ""
 
 #: ../../library/importlib.rst:1067
-msgid "Container of extra module-specific data for use during loading (or None)."
+msgid "Container of extra module-specific data for use during loading (or ``None``)."
 msgstr ""
 
 #: ../../library/importlib.rst:1072
@@ -904,7 +904,7 @@ msgid "(``__cached__``)"
 msgstr ""
 
 #: ../../library/importlib.rst:1074
-msgid "String for where the compiled module should be stored (or None)."
+msgid "String for where the compiled module should be stored (or ``None``)."
 msgstr ""
 
 #: ../../library/importlib.rst:1078
@@ -912,7 +912,7 @@ msgid "(``__package__``)"
 msgstr ""
 
 #: ../../library/importlib.rst:1080
-msgid "(Read-only) Fully-qualified name of the package to which the module belongs as a submodule (or None)."
+msgid "(Read-only) Fully-qualified name of the package to which the module belongs as a submodule (or ``None``)."
 msgstr ""
 
 #: ../../library/importlib.rst:1085

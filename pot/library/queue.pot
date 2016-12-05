@@ -84,7 +84,7 @@ msgid "Return ``True`` if the queue is full, ``False`` otherwise.  If full() ret
 msgstr ""
 
 #: ../../library/queue.rst:105
-msgid "Put *item* into the queue. If optional args *block* is true and *timeout* is None (the default), block if necessary until a free slot is available. If *timeout* is a positive number, it blocks at most *timeout* seconds and raises the :exc:`Full` exception if no free slot was available within that time. Otherwise (*block* is false), put an item on the queue if a free slot is immediately available, else raise the :exc:`Full` exception (*timeout* is ignored in that case)."
+msgid "Put *item* into the queue. If optional args *block* is true and *timeout* is ``None`` (the default), block if necessary until a free slot is available. If *timeout* is a positive number, it blocks at most *timeout* seconds and raises the :exc:`Full` exception if no free slot was available within that time. Otherwise (*block* is false), put an item on the queue if a free slot is immediately available, else raise the :exc:`Full` exception (*timeout* is ignored in that case)."
 msgstr ""
 
 #: ../../library/queue.rst:116
@@ -92,7 +92,7 @@ msgid "Equivalent to ``put(item, False)``."
 msgstr ""
 
 #: ../../library/queue.rst:121
-msgid "Remove and return an item from the queue. If optional args *block* is true and *timeout* is None (the default), block if necessary until an item is available. If *timeout* is a positive number, it blocks at most *timeout* seconds and raises the :exc:`Empty` exception if no item was available within that time. Otherwise (*block* is false), return an item if one is immediately available, else raise the :exc:`Empty` exception (*timeout* is ignored in that case)."
+msgid "Remove and return an item from the queue. If optional args *block* is true and *timeout* is ``None`` (the default), block if necessary until an item is available. If *timeout* is a positive number, it blocks at most *timeout* seconds and raises the :exc:`Empty` exception if no item was available within that time. Otherwise (*block* is false), return an item if one is immediately available, else raise the :exc:`Empty` exception (*timeout* is ignored in that case)."
 msgstr ""
 
 #: ../../library/queue.rst:131

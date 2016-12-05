@@ -132,7 +132,7 @@ msgid "How building works"
 msgstr ""
 
 #: ../../install/index.rst:200
-msgid "As implied above, the :command:`build` command is responsible for putting the files to install into a *build directory*.  By default, this is :file:`build` under the distribution root; if you're excessively concerned with speed, or want to keep the source tree pristine, you can change the build directory with the :option:`--build-base` option. For example::"
+msgid "As implied above, the :command:`build` command is responsible for putting the files to install into a *build directory*.  By default, this is :file:`build` under the distribution root; if you're excessively concerned with speed, or want to keep the source tree pristine, you can change the build directory with the :option:`!--build-base` option. For example::"
 msgstr ""
 
 #: ../../install/index.rst:208
@@ -388,7 +388,7 @@ msgid "Installing a new module distribution is as simple as ::"
 msgstr ""
 
 #: ../../install/index.rst:402
-msgid "where you can supply any directory you like for the :option:`--home` option.  On Unix, lazy typists can just type a tilde (``~``); the :command:`install` command will expand this to your home directory::"
+msgid "where you can supply any directory you like for the :option:`!--home` option.  On Unix, lazy typists can just type a tilde (``~``); the :command:`install` command will expand this to your home directory::"
 msgstr ""
 
 #: ../../install/index.rst:408
@@ -396,7 +396,7 @@ msgid "To make Python find the distributions installed with this scheme, you may
 msgstr ""
 
 #: ../../install/index.rst:413
-msgid "The :option:`--home` option defines the installation base directory.  Files are installed to the following directories under the installation base as follows:"
+msgid "The :option:`!--home` option defines the installation base directory.  Files are installed to the following directories under the installation base as follows:"
 msgstr ""
 
 #: ../../install/index.rst:419
@@ -436,7 +436,7 @@ msgid "Another possibility is a network filesystem where the name used to write 
 msgstr ""
 
 #: ../../install/index.rst:458
-msgid "In either case, the :option:`--prefix` option defines the installation base, and the :option:`--exec-prefix` option defines the platform-specific installation base, which is used for platform-specific files.  (Currently, this just means non-pure module distributions, but could be expanded to C libraries, binary executables, etc.)  If :option:`--exec-prefix` is not supplied, it defaults to :option:`--prefix`.  Files are installed as follows:"
+msgid "In either case, the :option:`!--prefix` option defines the installation base, and the :option:`!--exec-prefix` option defines the platform-specific installation base, which is used for platform-specific files.  (Currently, this just means non-pure module distributions, but could be expanded to C libraries, binary executables, etc.)  If :option:`!--exec-prefix` is not supplied, it defaults to :option:`!--prefix`.  Files are installed as follows:"
 msgstr ""
 
 #: ../../install/index.rst:468
@@ -463,15 +463,15 @@ msgid ":file:`{prefix}/include/python{X.Y}{abiflags}/{distname}`"
 msgstr ""
 
 #: ../../install/index.rst:475
-msgid "There is no requirement that :option:`--prefix` or :option:`--exec-prefix` actually point to an alternate Python installation; if the directories listed above do not already exist, they are created at installation time."
+msgid "There is no requirement that :option:`!--prefix` or :option:`!--exec-prefix` actually point to an alternate Python installation; if the directories listed above do not already exist, they are created at installation time."
 msgstr ""
 
 #: ../../install/index.rst:479
-msgid "Incidentally, the real reason the prefix scheme is important is simply that a standard Unix installation uses the prefix scheme, but with :option:`--prefix` and :option:`--exec-prefix` supplied by Python itself as ``sys.prefix`` and ``sys.exec_prefix``.  Thus, you might think you'll never use the prefix scheme, but every time you run ``python setup.py install`` without any other options, you're using it."
+msgid "Incidentally, the real reason the prefix scheme is important is simply that a standard Unix installation uses the prefix scheme, but with :option:`!--prefix` and :option:`!--exec-prefix` supplied by Python itself as ``sys.prefix`` and ``sys.exec_prefix``.  Thus, you might think you'll never use the prefix scheme, but every time you run ``python setup.py install`` without any other options, you're using it."
 msgstr ""
 
 #: ../../install/index.rst:486
-msgid "Note that installing extensions to an alternate Python installation has no effect on how those extensions are built: in particular, the Python header files (:file:`Python.h` and friends) installed with the Python interpreter used to run the setup script will be used in compiling extensions.  It is your responsibility to ensure that the interpreter used to run extensions installed in this way is compatible with the interpreter used to build them.  The best way to do this is to ensure that the two interpreters are the same version of Python (possibly different builds, or possibly copies of the same build).  (Of course, if your :option:`--prefix` and :option:`--exec-prefix` don't even point to an alternate Python installation, this is immaterial.)"
+msgid "Note that installing extensions to an alternate Python installation has no effect on how those extensions are built: in particular, the Python header files (:file:`Python.h` and friends) installed with the Python interpreter used to run the setup script will be used in compiling extensions.  It is your responsibility to ensure that the interpreter used to run extensions installed in this way is compatible with the interpreter used to build them.  The best way to do this is to ensure that the two interpreters are the same version of Python (possibly different builds, or possibly copies of the same build).  (Of course, if your :option:`!--prefix` and :option:`!--exec-prefix` don't even point to an alternate Python installation, this is immaterial.)"
 msgstr ""
 
 #: ../../install/index.rst:501
@@ -479,7 +479,7 @@ msgid "Alternate installation: Windows (the prefix scheme)"
 msgstr ""
 
 #: ../../install/index.rst:503
-msgid "Windows has no concept of a user's home directory, and since the standard Python installation under Windows is simpler than under Unix, the :option:`--prefix` option has traditionally been used to install additional packages in separate locations on Windows. ::"
+msgid "Windows has no concept of a user's home directory, and since the standard Python installation under Windows is simpler than under Unix, the :option:`!--prefix` option has traditionally been used to install additional packages in separate locations on Windows. ::"
 msgstr ""
 
 #: ../../install/index.rst:510
@@ -487,7 +487,7 @@ msgid "to install modules to the :file:`\\\\Temp\\\\Python` directory on the cur
 msgstr ""
 
 #: ../../install/index.rst:512
-msgid "The installation base is defined by the :option:`--prefix` option; the :option:`--exec-prefix` option is not supported under Windows, which means that pure Python modules and extension modules are installed into the same location. Files are installed as follows:"
+msgid "The installation base is defined by the :option:`!--prefix` option; the :option:`!--exec-prefix` option is not supported under Windows, which means that pure Python modules and extension modules are installed into the same location. Files are installed as follows:"
 msgstr ""
 
 #: ../../install/index.rst:521
@@ -547,11 +547,11 @@ msgid "These override options can be relative, absolute, or explicitly defined i
 msgstr ""
 
 #: ../../install/index.rst:562
-msgid "For example, say you're installing a module distribution to your home directory under Unix---but you want scripts to go in :file:`~/scripts` rather than :file:`~/bin`. As you might expect, you can override this directory with the :option:`--install-scripts` option; in this case, it makes most sense to supply a relative path, which will be interpreted relative to the installation base directory (your home directory, in this case)::"
+msgid "For example, say you're installing a module distribution to your home directory under Unix---but you want scripts to go in :file:`~/scripts` rather than :file:`~/bin`. As you might expect, you can override this directory with the :option:`!--install-scripts` option; in this case, it makes most sense to supply a relative path, which will be interpreted relative to the installation base directory (your home directory, in this case)::"
 msgstr ""
 
 #: ../../install/index.rst:571
-msgid "Another Unix example: suppose your Python installation was built and installed with a prefix of :file:`/usr/local/python`, so under a standard  installation scripts will wind up in :file:`/usr/local/python/bin`.  If you want them in :file:`/usr/local/bin` instead, you would supply this absolute directory for the :option:`--install-scripts` option::"
+msgid "Another Unix example: suppose your Python installation was built and installed with a prefix of :file:`/usr/local/python`, so under a standard  installation scripts will wind up in :file:`/usr/local/python/bin`.  If you want them in :file:`/usr/local/bin` instead, you would supply this absolute directory for the :option:`!--install-scripts` option::"
 msgstr ""
 
 #: ../../install/index.rst:579
@@ -818,11 +818,11 @@ msgid "*sourcefile* is anything that's likely to be a source code file, at least
 msgstr ""
 
 #: ../../install/index.rst:934
-msgid "*cpparg* is an argument for the C preprocessor,  and is anything starting with :option:`!-I`, :option:`-D`, :option:`!-U` or :option:`-C`."
+msgid "*cpparg* is an argument for the C preprocessor,  and is anything starting with :option:`!-I`, :option:`!-D`, :option:`!-U` or :option:`!-C`."
 msgstr ""
 
 #: ../../install/index.rst:937
-msgid "*library* is anything ending in :file:`.a` or beginning with :option:`-l` or :option:`-L`."
+msgid "*library* is anything ending in :file:`.a` or beginning with :option:`!-l` or :option:`!-L`."
 msgstr ""
 
 #: ../../install/index.rst:940
@@ -830,15 +830,15 @@ msgid "If a particular platform requires a special library on your platform, you
 msgstr ""
 
 #: ../../install/index.rst:946
-msgid "must be linked with the math library :file:`libm.a` on your platform, simply add :option:`-lm` to the line::"
+msgid "must be linked with the math library :file:`libm.a` on your platform, simply add :option:`!-lm` to the line::"
 msgstr ""
 
 #: ../../install/index.rst:951
-msgid "Arbitrary switches intended for the compiler or the linker can be supplied with the :option:`-Xcompiler` *arg* and :option:`-Xlinker` *arg* options::"
+msgid "Arbitrary switches intended for the compiler or the linker can be supplied with the :option:`!-Xcompiler` *arg* and :option:`!-Xlinker` *arg* options::"
 msgstr ""
 
 #: ../../install/index.rst:956
-msgid "The next option after :option:`-Xcompiler` and :option:`-Xlinker` will be appended to the proper command line, so in the above example the compiler will be passed the :option:`-o32` option, and the linker will be passed :option:`-shared`.  If a compiler option requires an argument, you'll have to supply multiple :option:`-Xcompiler` options; for example, to pass ``-x c++`` the :file:`Setup` file would have to contain ``-Xcompiler -x -Xcompiler c++``."
+msgid "The next option after :option:`!-Xcompiler` and :option:`!-Xlinker` will be appended to the proper command line, so in the above example the compiler will be passed the :option:`!-o32` option, and the linker will be passed :option:`!-shared`.  If a compiler option requires an argument, you'll have to supply multiple :option:`!-Xcompiler` options; for example, to pass ``-x c++`` the :file:`Setup` file would have to contain ``-Xcompiler -x -Xcompiler c++``."
 msgstr ""
 
 #: ../../install/index.rst:963

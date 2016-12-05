@@ -440,7 +440,7 @@ msgid "Classes can define methods called :meth:`__truediv__` and :meth:`__floord
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:760
-msgid "Python 2.2 supports some command-line arguments for testing whether code will work with the changed division semantics.  Running python with :option:`-Q warn` will cause a warning to be issued whenever division is applied to two integers.  You can use this to find code that's affected by the change and fix it.  By default, Python 2.2 will simply perform classic division without a warning; the warning will be turned on by default in Python 2.3."
+msgid "Python 2.2 supports some command-line arguments for testing whether code will work with the changed division semantics.  Running python with :option:`!-Q warn` will cause a warning to be issued whenever division is applied to two integers.  You can use this to find code that's affected by the change and fix it.  By default, Python 2.2 will simply perform classic division without a warning; the warning will be turned on by default in Python 2.3."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:770
@@ -456,7 +456,7 @@ msgid "Unicode Changes"
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:779
-msgid "Python's Unicode support has been enhanced a bit in 2.2.  Unicode strings are usually stored as UCS-2, as 16-bit unsigned integers. Python 2.2 can also be compiled to use UCS-4, 32-bit unsigned integers, as its internal encoding by supplying :option:`--enable-unicode=ucs4` to the configure script.   (It's also possible to specify :option:`--disable-unicode` to completely disable Unicode support.)"
+msgid "Python's Unicode support has been enhanced a bit in 2.2.  Unicode strings are usually stored as UCS-2, as 16-bit unsigned integers. Python 2.2 can also be compiled to use UCS-4, 32-bit unsigned integers, as its internal encoding by supplying :option:`!--enable-unicode=ucs4` to the configure script.   (It's also possible to specify :option:`!--disable-unicode` to completely disable Unicode support.)"
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:786
@@ -572,7 +572,7 @@ msgid "The Python profiler has been extensively reworked and various errors in i
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:981
-msgid "The :mod:`socket` module can be compiled to support IPv6; specify the :option:`--enable-ipv6` option to Python's configure script.  (Contributed by Jun-ichiro \"itojun\" Hagino.)"
+msgid "The :mod:`socket` module can be compiled to support IPv6; specify the :option:`!--enable-ipv6` option to Python's configure script.  (Contributed by Jun-ichiro \"itojun\" Hagino.)"
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:985
@@ -704,7 +704,7 @@ msgid "The code for the MacOS port for Python, maintained by Jack Jansen, is now
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1142
-msgid "The most significant change is the ability to build Python as a framework, enabled by supplying the :option:`--enable-framework` option to the configure script when compiling Python.  According to Jack Jansen, \"This installs a self- contained Python installation plus the OS X framework \"glue\" into :file:`/Library/Frameworks/Python.framework` (or another location of choice). For now there is little immediate added benefit to this (actually, there is the disadvantage that you have to change your PATH to be able to find Python), but it is the basis for creating a full-blown Python application, porting the MacPython IDE, possibly using Python as a standard OSA scripting language and much more.\""
+msgid "The most significant change is the ability to build Python as a framework, enabled by supplying the :option:`!--enable-framework` option to the configure script when compiling Python.  According to Jack Jansen, \"This installs a self- contained Python installation plus the OS X framework \"glue\" into :file:`/Library/Frameworks/Python.framework` (or another location of choice). For now there is little immediate added benefit to this (actually, there is the disadvantage that you have to change your PATH to be able to find Python), but it is the basis for creating a full-blown Python application, porting the MacPython IDE, possibly using Python as a standard OSA scripting language and much more.\""
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1153

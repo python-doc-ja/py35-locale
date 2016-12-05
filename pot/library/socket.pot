@@ -833,7 +833,7 @@ msgid "Note that there are no methods :meth:`read` or :meth:`write`; use :meth:`
 msgstr ""
 
 #: ../../library/socket.rst:1369
-msgid "Socket objects also have these (read-only) attributes that correspond to the values given to the :class:`socket` constructor."
+msgid "Socket objects also have these (read-only) attributes that correspond to the values given to the :class:`~socket.socket` constructor."
 msgstr ""
 
 #: ../../library/socket.rst:1375
