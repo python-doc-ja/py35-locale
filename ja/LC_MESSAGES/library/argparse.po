@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:36+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1287,8 +1287,8 @@ msgstr "title - ヘルプ出力でのサブパーサーグループのタイト�
 #: ../../library/argparse.rst:1554
 msgid ""
 "description - description for the sub-parser group in help output, by "
-"default None"
-msgstr "description - ヘルプ出力でのサブパーサーグループの説明です。デフォルトは None になります"
+"default ``None``"
+msgstr ""
 
 #: ../../library/argparse.rst:1557
 msgid ""
@@ -1312,18 +1312,18 @@ msgstr "action_ - コマンドラインにこの引数があったときの基�
 #: ../../library/argparse.rst:1567
 msgid ""
 "dest_ - name of the attribute under which sub-command name will be stored; "
-"by default None and no value is stored"
-msgstr "dest_ - サブコマンド名配下に格納される属性の名前です。デフォルトは None で値は格納されません"
+"by default ``None`` and no value is stored"
+msgstr ""
 
 #: ../../library/argparse.rst:1570
-msgid "help_ - help for sub-parser group in help output, by default None"
-msgstr "help_ - ヘルプ出力内のサブパーサーグループのヘルプです。デフォルトは None です"
+msgid "help_ - help for sub-parser group in help output, by default ``None``"
+msgstr ""
 
 #: ../../library/argparse.rst:1572
 msgid ""
 "metavar_ - string presenting available sub-commands in help; by default it "
-"is None and presents sub-commands in form {cmd1, cmd2, ..}"
-msgstr "metavar_ - ヘルプ内で利用可能なサブコマンドを表す文字列です。デフォルトは None で、サブコマンドを {cmd1, cmd2, ..} のような形式で表します"
+"is ``None`` and presents sub-commands in form {cmd1, cmd2, ..}"
+msgstr ""
 
 #: ../../library/argparse.rst:1575
 msgid "Some example usage::"
@@ -1579,30 +1579,30 @@ msgstr "このメソッドは、引数ファイルから読まれた文字列で
 #: ../../library/argparse.rst:1960
 msgid ""
 "A useful override of this method is one that treats each space-separated "
-"word as an argument::"
-msgstr "このメソッドを上書きする便利な例として、スペースで区切られた単語を 1 つの引数として扱います::"
+"word as an argument.  The following example demonstrates how to do this::"
+msgstr ""
 
-#: ../../library/argparse.rst:1968
+#: ../../library/argparse.rst:1969
 msgid "Exiting methods"
 msgstr "終了メソッド"
 
-#: ../../library/argparse.rst:1972
+#: ../../library/argparse.rst:1973
 msgid ""
 "This method terminates the program, exiting with the specified *status* and,"
 " if given, it prints a *message* before that."
 msgstr "このメソッドは、*message* が指定されていればそれを表示した後、指定された終了ステータス *status* でプログラムを終了します。"
 
-#: ../../library/argparse.rst:1977
+#: ../../library/argparse.rst:1978
 msgid ""
 "This method prints a usage message including the *message* to the standard "
 "error and terminates the program with a status code of 2."
 msgstr "このメソッドは *message* を含む使用法メッセージを標準エラーに表示して、終了ステータス 2 でプログラムを終了します。"
 
-#: ../../library/argparse.rst:1983
+#: ../../library/argparse.rst:1984
 msgid "Upgrading optparse code"
 msgstr "optparse からのアップグレード"
 
-#: ../../library/argparse.rst:1985
+#: ../../library/argparse.rst:1986
 msgid ""
 "Originally, the :mod:`argparse` module had attempted to maintain "
 "compatibility with :mod:`optparse`.  However, :mod:`optparse` was difficult "
@@ -1613,47 +1613,47 @@ msgid ""
 "compatibility."
 msgstr "もともと、:mod:`argparse` モジュールは :mod:`optparse` モジュールとの互換性を保って開発しようと試みられました。しかし、特に新しい ``nargs=`` 指定子とより良い使用法メッセージのために必要な変更のために、:mod:`optparse` を透過的に拡張することは難しかったのです。:mod:`optparse` のほとんどすべてがコピーアンドペーストされたりモンキーパッチを当てられたりしたとき、もはや後方互換性を保とうとすることは現実的ではありませんでした。"
 
-#: ../../library/argparse.rst:1992
+#: ../../library/argparse.rst:1993
 msgid ""
 "The :mod:`argparse` module improves on the standard library :mod:`optparse` "
 "module in a number of ways including:"
 msgstr ":mod:`argparse` モジュールは標準ライブラリ :mod:`optparse` モジュールを、以下を含むたくさんの方法で改善しています:"
 
-#: ../../library/argparse.rst:1995
+#: ../../library/argparse.rst:1996
 msgid "Handling positional arguments."
 msgstr "位置指定引数を扱う"
 
-#: ../../library/argparse.rst:1996
+#: ../../library/argparse.rst:1997
 msgid "Supporting sub-commands."
 msgstr "サブコマンドのサポート"
 
-#: ../../library/argparse.rst:1997
+#: ../../library/argparse.rst:1998
 msgid "Allowing alternative option prefixes like ``+`` and ``/``."
 msgstr "``+``, ``/`` のような代替オプションプレフィクスを許容する"
 
-#: ../../library/argparse.rst:1998
+#: ../../library/argparse.rst:1999
 msgid "Handling zero-or-more and one-or-more style arguments."
 msgstr "zero-or-more スタイル、one-or-more スタイルの引数を扱う"
 
-#: ../../library/argparse.rst:1999
+#: ../../library/argparse.rst:2000
 msgid "Producing more informative usage messages."
 msgstr "より有益な使用方法メッセージの生成"
 
-#: ../../library/argparse.rst:2000
+#: ../../library/argparse.rst:2001
 msgid "Providing a much simpler interface for custom ``type`` and ``action``."
 msgstr "カスタム ``type``, カスタム ``action`` のために遥かに簡単なインターフェイスを提供する"
 
-#: ../../library/argparse.rst:2002
+#: ../../library/argparse.rst:2003
 msgid "A partial upgrade path from :mod:`optparse` to :mod:`argparse`:"
 msgstr ":mod:`optparse` から :mod:`argparse` への現実的なアップグレードパス:"
 
-#: ../../library/argparse.rst:2004
+#: ../../library/argparse.rst:2005
 msgid ""
 "Replace all :meth:`optparse.OptionParser.add_option` calls with "
 ":meth:`ArgumentParser.add_argument` calls."
 msgstr "すべての :meth:`optparse.OptionParser.add_option` の呼び出しを、:meth:`ArgumentParser.add_argument` の呼び出しに置き換える。"
 
-#: ../../library/argparse.rst:2007
+#: ../../library/argparse.rst:2008
 msgid ""
 "Replace ``(options, args) = parser.parse_args()`` with ``args = "
 "parser.parse_args()`` and add additional :meth:`ArgumentParser.add_argument`"
@@ -1661,33 +1661,33 @@ msgid ""
 "called ``options``, now in :mod:`argparse` context is called ``args``."
 msgstr "``(options, args) = parser.parse_args()`` を ``args = parser.parse_args()`` に置き換え、位置引数のために必要に応じて :meth:`ArgumentParser.add_argument` の呼び出しを追加する。これまで ``options`` と呼ばれていたものが、:mod:`argparse` では ``args`` と呼ばれていることに留意してください。"
 
-#: ../../library/argparse.rst:2012
+#: ../../library/argparse.rst:2013
 msgid ""
 "Replace callback actions and the ``callback_*`` keyword arguments with "
 "``type`` or ``action`` arguments."
 msgstr "コールバック・アクションと ``callback_*`` キーワード引数を ``type`` や ``action`` 引数に置き換える。"
 
-#: ../../library/argparse.rst:2015
+#: ../../library/argparse.rst:2016
 msgid ""
 "Replace string names for ``type`` keyword arguments with the corresponding "
 "type objects (e.g. int, float, complex, etc)."
 msgstr "``type`` キーワード引数に渡していた文字列の名前を、それに応じたオブジェクト (例: int, float, complex, ...) に置き換える。"
 
-#: ../../library/argparse.rst:2018
+#: ../../library/argparse.rst:2019
 msgid ""
 "Replace :class:`optparse.Values` with :class:`Namespace` and "
 ":exc:`optparse.OptionError` and :exc:`optparse.OptionValueError` with "
 ":exc:`ArgumentError`."
 msgstr ":class:`optparse.Values` を :class:`Namespace` に置き換え、:exc:`optparse.OptionError` と :exc:`optparse.OptionValueError` を :exc:`ArgumentError` に置き換える。"
 
-#: ../../library/argparse.rst:2022
+#: ../../library/argparse.rst:2023
 msgid ""
 "Replace strings with implicit arguments such as ``%default`` or ``%prog`` "
 "with the standard Python syntax to use dictionaries to format strings, that "
 "is, ``%(default)s`` and ``%(prog)s``."
 msgstr "``%default`` や ``%prog`` などの暗黙の引数を含む文字列を、``%(default)s`` や ``%(prog)s`` などの、通常の Python で辞書を使う場合のフォーマット文字列に置き換える。"
 
-#: ../../library/argparse.rst:2026
+#: ../../library/argparse.rst:2027
 msgid ""
 "Replace the OptionParser constructor ``version`` argument with a call to "
 "``parser.add_argument('--version', action='version', version='<the "

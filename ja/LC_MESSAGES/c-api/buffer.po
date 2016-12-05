@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:17+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:30+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -230,11 +230,11 @@ msgstr "このフィールドは :c:macro:`PyBUF_FORMAT` フラグによって�
 #: ../../c-api/buffer.rst:158
 msgid ""
 "The number of dimensions the memory represents as an n-dimensional array. If"
-" it is 0, :c:member:`~Py_buffer.buf` points to a single item representing a "
-"scalar. In this case, :c:member:`~Py_buffer.shape`, "
+" it is ``0``, :c:member:`~Py_buffer.buf` points to a single item "
+"representing a scalar. In this case, :c:member:`~Py_buffer.shape`, "
 ":c:member:`~Py_buffer.strides` and :c:member:`~Py_buffer.suboffsets` MUST be"
 " *NULL*."
-msgstr "メモリがN次元配列を表している時の次元数。0の場合、 :c:member:`~Py_buffer.buf` はスカラ値を表す1つの要素を指しています。\nこの場合、 :c:member:`~Py_buffer.shape`, :c:member:`~Py_buffer.strides`, :c:member:`~Py_buffer.suboffsets` は *NULL* でなければなりません。"
+msgstr ""
 
 #: ../../c-api/buffer.rst:163
 msgid ""
@@ -585,18 +585,18 @@ msgstr "バッファ関連の関数"
 
 #: ../../c-api/buffer.rst:430
 msgid ""
-"Return 1 if *obj* supports the buffer interface otherwise 0.  When 1 is "
-"returned, it doesn't guarantee that :c:func:`PyObject_GetBuffer` will "
-"succeed."
-msgstr "*obj* がbuffer インタフェースをサポートしている場合は 1 を返し、さもなければ 0 を返します。1 を返したとしても、 :c:func:`PyObject_GetBuffer` が成功することは保証されません。"
+"Return ``1`` if *obj* supports the buffer interface otherwise ``0``.  When "
+"``1`` is returned, it doesn't guarantee that :c:func:`PyObject_GetBuffer` "
+"will succeed."
+msgstr ""
 
 #: ../../c-api/buffer.rst:437
 msgid ""
 "Send a request to *exporter* to fill in *view* as specified by  *flags*. If "
 "the exporter cannot provide a buffer of the exact type, it MUST raise "
 ":c:data:`PyExc_BufferError`, set :c:member:`view->obj` to *NULL* and return "
-"-1."
-msgstr "*exporter* に *flags* で指定された方法で *view* を埋めるように要求します。もし exporter が指定されたとおりにバッファを提供できない場合、 :c:data:`PyExc_BufferError` を送出し、 :c:member:`view->obj` を *NULL* に設定した上で、-1 を返さなければなりません。"
+"``-1``."
+msgstr ""
 
 #: ../../c-api/buffer.rst:442
 msgid ""
@@ -636,9 +636,9 @@ msgstr ""
 
 #: ../../c-api/buffer.rst:471
 msgid ""
-"Return 1 if the memory defined by the *view* is C-style (*order* is ``'C'``)"
-" or Fortran-style (*order* is ``'F'``) :term:`contiguous` or either one "
-"(*order* is ``'A'``).  Return 0 otherwise."
+"Return ``1`` if the memory defined by the *view* is C-style (*order* is "
+"``'C'``) or Fortran-style (*order* is ``'F'``) :term:`contiguous` or either "
+"one (*order* is ``'A'``).  Return ``0`` otherwise."
 msgstr ""
 
 #: ../../c-api/buffer.rst:478
@@ -666,7 +666,7 @@ msgstr ""
 msgid ""
 "On success, set :c:member:`view->obj` to a new reference to *exporter* and "
 "return 0. Otherwise, raise :c:data:`PyExc_BufferError`, set "
-":c:member:`view->obj` to *NULL* and return -1;"
+":c:member:`view->obj` to *NULL* and return ``-1``;"
 msgstr ""
 
 #: ../../c-api/buffer.rst:497

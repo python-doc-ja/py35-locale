@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:17+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:32+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,8 +168,8 @@ msgstr "言い換えると、 :c:func:`PyCapsule_IsValid` が真を返す場合�
 #: ../../c-api/capsule.rst:122
 msgid ""
 "Return a nonzero value if the object is valid and matches the name passed "
-"in. Return 0 otherwise.  This function will not fail."
-msgstr "オブジェクトが有効で name がマッチした場合に非0を、それ以外の場合に 0 を返します。この関数は絶対に失敗しません。"
+"in. Return ``0`` otherwise.  This function will not fail."
+msgstr ""
 
 #: ../../c-api/capsule.rst:127
 msgid "Set the context pointer inside *capsule* to *context*."
@@ -177,8 +177,9 @@ msgstr "*capsule* 内部のコンテキストポインタを *context* に設定
 
 #: ../../c-api/capsule.rst:129 ../../c-api/capsule.rst:135
 #: ../../c-api/capsule.rst:143 ../../c-api/capsule.rst:150
-msgid "Return 0 on success.  Return nonzero and set an exception on failure."
-msgstr "成功したら 0 を、失敗したら例外を設定して非0 を返します。"
+msgid ""
+"Return ``0`` on success.  Return nonzero and set an exception on failure."
+msgstr ""
 
 #: ../../c-api/capsule.rst:133
 msgid "Set the destructor inside *capsule* to *destructor*."

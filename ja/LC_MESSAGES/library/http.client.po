@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:21+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:39+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,9 +33,9 @@ msgstr "このモジュールでは HTTP および HTTPS プロトコルのク�
 
 #: ../../library/http.client.rst:23
 msgid ""
-"The `Requests package <https://requests.readthedocs.org/>`_ is recommended "
+"The `Requests package <http://docs.python-requests.org/>`_ is recommended "
 "for a higher-level HTTP client interface."
-msgstr "より高水準の HTTP クライアントインターフェイスとしては `Requests package <https://requests.readthedocs.org/>`_ がお奨めです。"
+msgstr ""
 
 #: ../../library/http.client.rst:28
 msgid ""

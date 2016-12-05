@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:49+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -151,6 +151,21 @@ msgstr "一つの :keyword:`try` 文に複数の except 節を設けて、さま
 
 #: ../../tutorial/errors.rst:123
 msgid ""
+"A class in an :keyword:`except` clause is compatible with an exception if it"
+" is the same class or a base class thereof (but not the other way around ---"
+" an except clause listing a derived class is not compatible with a base "
+"class).  For example, the following code will print B, C, D in that order::"
+msgstr ":keyword:`except` 節のクラスは、例外と同じクラスか基底クラスのときに互換 (compatible)となります。 (逆方向では成り立ちません --- 派生クラスの例外がリストされている except 節は基底クラスの例外と互換ではありません)。例えば、次のコードは、 B, C, D を順序通りに出力します::"
+
+#: ../../tutorial/errors.rst:147
+msgid ""
+"Note that if the except clauses were reversed (with ``except B`` first), it "
+"would have printed B, B, B --- the first matching except clause is "
+"triggered."
+msgstr "except 節が逆に並んでいた場合 (``except B`` が最初にくる場合)、 B, B, B と出力されるはずだったことに注意してください --- 最初に一致した except 節が駆動されるのです。"
+
+#: ../../tutorial/errors.rst:150
+msgid ""
 "The last except clause may omit the exception name(s), to serve as a "
 "wildcard. Use this with extreme caution, since it is easy to mask a real "
 "programming error in this way!  It can also be used to print an error "
@@ -158,7 +173,7 @@ msgid ""
 "exception as well)::"
 msgstr "最後の except 節では例外名を省いて、ワイルドカード (wildcard、総称記号) にすることができます。ワイルドカードの except 節は非常に注意して使ってください。というのは、ワイルドカードは通常のプログラムエラーをたやすく隠してしまうからです！ワイルドカードの except 節はエラーメッセージを出力した後に例外を再送出する (関数やメソッドの呼び出し側が同様にして例外を処理できるようにする) 用途にも使えます::"
 
-#: ../../tutorial/errors.rst:142
+#: ../../tutorial/errors.rst:169
 msgid ""
 "The :keyword:`try` ... :keyword:`except` statement has an optional *else "
 "clause*, which, when present, must follow all except clauses.  It is useful "
@@ -166,7 +181,7 @@ msgid ""
 "exception.  For example::"
 msgstr ":keyword:`try` ... :keyword:`except` 文には、オプションで *else 節 (else clause)* を設けることができます。 :keyword:`else` 節を設ける場合、全ての :keyword:`except` 節よりも後ろに置かなければなりません。 :keyword:`else` 節は try 節で全く例外が送出されなかったときに実行されるコードを書くのに役立ちます。例えば次のようにします::"
 
-#: ../../tutorial/errors.rst:156
+#: ../../tutorial/errors.rst:183
 msgid ""
 "The use of the :keyword:`else` clause is better than adding additional code "
 "to the :keyword:`try` clause because it avoids accidentally catching an "
@@ -174,14 +189,14 @@ msgid ""
 ":keyword:`try` ... :keyword:`except` statement."
 msgstr "追加のコードを追加するのは :keyword:`try` 節の後ろよりも :keyword:`else` 節の方がよいでしょう。なぜなら、そうすることで :keyword:`try` ... :keyword:`except` 文で保護したいコードから送出されたもの以外の例外を偶然に捕捉してしまうという事態を避けられるからです。"
 
-#: ../../tutorial/errors.rst:161
+#: ../../tutorial/errors.rst:188
 msgid ""
 "When an exception occurs, it may have an associated value, also known as the"
 " exception's *argument*. The presence and type of the argument depend on the"
 " exception type."
 msgstr "例外が発生するとき、例外は関連付けられた値を持つことができます。この値は例外の *引数 (argument)* とも呼ばれます。引数の有無および引数の型は、例外の型に依存します。"
 
-#: ../../tutorial/errors.rst:165
+#: ../../tutorial/errors.rst:192
 msgid ""
 "The except clause may specify a variable after the exception name.  The "
 "variable is bound to an exception instance with the arguments stored in "
@@ -191,48 +206,50 @@ msgid ""
 "raising it and add any attributes to it as desired. ::"
 msgstr "except 節では、例外名の後に変数を指定することができます。この変数は例外インスタンスに結び付けられており、 ``instance.args`` に例外インスタンス生成時の引数が入っています。例外インスタンスには :meth:`__str__` が定義されており、 ``.args`` を参照しなくても引数を直接印字できるように利便性が図られています。必要なら、例外を送出する前にインスタンス化して、任意の属性を追加できます。 ::"
 
-#: ../../tutorial/errors.rst:189
+#: ../../tutorial/errors.rst:216
 msgid ""
 "If an exception has arguments, they are printed as the last part ('detail') "
 "of the message for unhandled exceptions."
 msgstr "例外が引数を持っていれば、それらは処理されない例外のメッセージの最後の部分 (「詳細説明」) に出力されます。"
 
-#: ../../tutorial/errors.rst:192
+#: ../../tutorial/errors.rst:219
 msgid ""
 "Exception handlers don't just handle exceptions if they occur immediately in"
 " the try clause, but also if they occur inside functions that are called "
 "(even indirectly) in the try clause. For example::"
 msgstr "例外ハンドラは、try 節の直接内側で発生した例外を処理するだけではなく、その try 節から (たとえ間接的にでも) 呼び出された関数の内部で発生した例外も処理します。例えば::"
 
-#: ../../tutorial/errors.rst:210
+#: ../../tutorial/errors.rst:237
 msgid "Raising Exceptions"
 msgstr "例外を送出する"
 
-#: ../../tutorial/errors.rst:212
+#: ../../tutorial/errors.rst:239
 msgid ""
 "The :keyword:`raise` statement allows the programmer to force a specified "
 "exception to occur. For example::"
 msgstr ":keyword:`raise` 文を使って、特定の例外を発生させることができます。例えば::"
 
-#: ../../tutorial/errors.rst:220
+#: ../../tutorial/errors.rst:247
 msgid ""
 "The sole argument to :keyword:`raise` indicates the exception to be raised. "
 "This must be either an exception instance or an exception class (a class "
-"that derives from :class:`Exception`)."
-msgstr ":keyword:`raise` は送出したい例外を引数として取ります。これは例外クラス(:class:`Exception` を継承したクラス)か、例外クラスのインスタンスです。"
+"that derives from :class:`Exception`).  If an exception class is passed, it "
+"will be implicitly instantiated by calling its constructor with no "
+"arguments::"
+msgstr ""
 
-#: ../../tutorial/errors.rst:224
+#: ../../tutorial/errors.rst:254
 msgid ""
 "If you need to determine whether an exception was raised but don't intend to"
 " handle it, a simpler form of the :keyword:`raise` statement allows you to "
 "re-raise the exception::"
 msgstr "例外が発生したかどうかを判定したいだけで、その例外を処理するつもりがなければ、単純な形式の :keyword:`raise` 文を使って例外を再送出させることができます::"
 
-#: ../../tutorial/errors.rst:243
+#: ../../tutorial/errors.rst:273
 msgid "User-defined Exceptions"
 msgstr "ユーザー定義例外"
 
-#: ../../tutorial/errors.rst:245
+#: ../../tutorial/errors.rst:275
 msgid ""
 "Programs may name their own exceptions by creating a new exception class "
 "(see :ref:`tut-classes` for more about Python classes).  Exceptions should "
@@ -240,7 +257,7 @@ msgid ""
 "indirectly."
 msgstr "プログラム上で新しい例外クラスを作成することで、独自の例外を指定することができます (Python のクラスについては :ref:`tut-classes` 参照)。例外は、典型的に :exc:`Exception` クラスから、直接または間接的に派生したものです。"
 
-#: ../../tutorial/errors.rst:249
+#: ../../tutorial/errors.rst:279
 msgid ""
 "Exception classes can be defined which do anything any other class can do, "
 "but are usually kept simple, often only offering a number of attributes that"
@@ -251,31 +268,31 @@ msgid ""
 " error conditions::"
 msgstr "例外クラスでは、普通のクラスができることなら何でも定義することができますが、通常は単純なものにしておきます。大抵は、いくつかの属性だけを提供し、例外が発生したときにハンドラがエラーに関する情報を取り出せるようにする程度にとどめます。複数の別個の例外を送出するようなモジュールを作成する際には、そのモジュールで定義されている例外の基底クラスを作成するのが一般的なプラクティスです::"
 
-#: ../../tutorial/errors.rst:287
+#: ../../tutorial/errors.rst:317
 msgid ""
 "Most exceptions are defined with names that end in \"Error,\" similar to the"
 " naming of the standard exceptions."
 msgstr "ほとんどの例外は、標準の例外の名前付けと同様に、 \"Error\" で終わる名前で定義されています。"
 
-#: ../../tutorial/errors.rst:290
+#: ../../tutorial/errors.rst:320
 msgid ""
 "Many standard modules define their own exceptions to report errors that may "
 "occur in functions they define.  More information on classes is presented in"
 " chapter :ref:`tut-classes`."
 msgstr "多くの標準モジュールでは、モジュールで定義されている関数内で発生する可能性のあるエラーを報告させるために、独自の例外を定義しています。クラスについての詳細な情報は :ref:`tut-classes` 章で提供されています。"
 
-#: ../../tutorial/errors.rst:298
+#: ../../tutorial/errors.rst:328
 msgid "Defining Clean-up Actions"
 msgstr "クリーンアップ動作を定義する"
 
-#: ../../tutorial/errors.rst:300
+#: ../../tutorial/errors.rst:330
 msgid ""
 "The :keyword:`try` statement has another optional clause which is intended "
 "to define clean-up actions that must be executed under all circumstances.  "
 "For example::"
 msgstr ":keyword:`try` 文にはもう一つオプションの節があります。この節はクリーンアップ動作を定義するためのもので、どんな状況でも必ず実行されます。例を示します::"
 
-#: ../../tutorial/errors.rst:314
+#: ../../tutorial/errors.rst:344
 msgid ""
 "A *finally clause* is always executed before leaving the :keyword:`try` "
 "statement, whether an exception has occurred or not. When an exception has "
@@ -288,7 +305,7 @@ msgid ""
 "more complicated example::"
 msgstr "*finally 節 (finally clause)* は、例外が発生したかどうかに関わらず、 :keyword:`try` 文を抜ける前に常に実行されます。 :keyword:`try` 節の中で例外が発生して、 :keyword:`except` 節で処理されていない場合、または :keyword:`except` 節か :keyword:`else` 節で例外が発生した場合は、 :keyword:`finally` 節を実行した後、その例外を再送出します。 :keyword:`finally` 節はまた、 :keyword:`try` 節から :keyword:`break` 文や :keyword:`continue` 文、 :keyword:`return` 文経由で抜ける際にも、 \"抜ける途中で\" 実行されます。より複雑な例です::"
 
-#: ../../tutorial/errors.rst:347
+#: ../../tutorial/errors.rst:377
 msgid ""
 "As you can see, the :keyword:`finally` clause is executed in any event.  The"
 " :exc:`TypeError` raised by dividing two strings is not handled by the "
@@ -296,18 +313,18 @@ msgid ""
 ":keyword:`finally` clause has been executed."
 msgstr "見てわかるとおり、 :keyword:`finally` 節はどの場合にも実行されています。文字列を割り算することで発生した :exc:`TypeError` は :keyword:`except` 節で処理されていないので、 :keyword:`finally` 節実行後に再度送出されています。"
 
-#: ../../tutorial/errors.rst:352
+#: ../../tutorial/errors.rst:382
 msgid ""
 "In real world applications, the :keyword:`finally` clause is useful for "
 "releasing external resources (such as files or network connections), "
 "regardless of whether the use of the resource was successful."
 msgstr "実世界のアプリケーションでは、 :keyword:`finally` 節は(ファイルやネットワーク接続などの)外部リソースを、利用が成功したかどうかにかかわらず解放するために便利です。"
 
-#: ../../tutorial/errors.rst:360
+#: ../../tutorial/errors.rst:390
 msgid "Predefined Clean-up Actions"
 msgstr "定義済みクリーンアップ処理"
 
-#: ../../tutorial/errors.rst:362
+#: ../../tutorial/errors.rst:392
 msgid ""
 "Some objects define standard clean-up actions to be undertaken when the "
 "object is no longer needed, regardless of whether or not the operation using"
@@ -315,7 +332,7 @@ msgid ""
 "to open a file and print its contents to the screen. ::"
 msgstr "オブジェクトのなかには、その利用の成否にかかわらず、不要になった際に実行される標準的なクリーンアップ処理が定義されているものがあります。以下の、ファイルをオープンして内容を画面に表示する例をみてください。 ::"
 
-#: ../../tutorial/errors.rst:370
+#: ../../tutorial/errors.rst:400
 msgid ""
 "The problem with this code is that it leaves the file open for an "
 "indeterminate amount of time after this part of the code has finished "
@@ -325,7 +342,7 @@ msgid ""
 "correctly. ::"
 msgstr "このコードの問題点は、コードの実行が終わった後に不定の時間ファイルを開いたままでいることです。これは単純なスクリプトでは問題になりませんが、大きなアプリケーションでは問題になりえます。 :keyword:`with` 文はファイルのようなオブジェクトが常に、即座に正しくクリーンアップされることを保証します。 ::"
 
-#: ../../tutorial/errors.rst:380
+#: ../../tutorial/errors.rst:410
 msgid ""
 "After the statement is executed, the file *f* is always closed, even if a "
 "problem was encountered while processing the lines. Objects which, like "

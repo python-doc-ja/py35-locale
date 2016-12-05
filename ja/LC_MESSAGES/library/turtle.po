@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:37+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -792,10 +792,10 @@ msgstr "*stampid* に対応するハンコを消します。"
 
 #: ../../library/turtle.rst:552
 msgid ""
-"Delete all or first/last *n* of turtle's stamps.  If *n* is None, delete all"
-" stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last *n*"
-" stamps."
-msgstr "全ての、または最初の/最後の *n* 個のハンコを消します。 *n* が None の場合、全てのハンコを消します。 *n* が正の場合には最初の *n* 個、 *n* が負の場合には最後の *n* 個を消します。"
+"Delete all or first/last *n* of turtle's stamps.  If *n* is ``None``, delete"
+" all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last"
+" *n* stamps."
+msgstr ""
 
 #: ../../library/turtle.rst:575
 msgid ""
@@ -1702,7 +1702,8 @@ msgstr "string"
 msgid ""
 "Pop up a dialog window for input of a string. Parameter title is the title "
 "of the dialog window, propmt is a text mostly describing what information to"
-" input. Return the string input. If the dialog is canceled, return None. ::"
+" input. Return the string input. If the dialog is canceled, return ``None``."
+" ::"
 msgstr ""
 
 #: ../../library/turtle.rst:1815
@@ -1713,7 +1714,7 @@ msgid ""
 "maximum value for input The number input must be in the range minval .. "
 "maxval if these are given. If not, a hint is issued and the dialog remains "
 "open for correction. Return the number input. If the dialog is canceled,  "
-"return None. ::"
+"return ``None``. ::"
 msgstr ""
 
 #: ../../library/turtle.rst:1832
@@ -1879,14 +1880,14 @@ msgstr "整数ならばピクセル単位の高さ、浮動小数点数ならば
 #: ../../library/turtle.rst:1986
 msgid ""
 "if positive, starting position in pixels from the left edge of the screen, "
-"if negative from the right edge, if None, center window horizontally"
-msgstr "正の数ならばスクリーンの左端からピクセル単位で測った開始位置、 負の数ならば右端から、None ならば水平方向に真ん中"
+"if negative from the right edge, if ``None``, center window horizontally"
+msgstr ""
 
 #: ../../library/turtle.rst:1989
 msgid ""
 "if positive, starting position in pixels from the top edge of the screen, if"
-" negative from the bottom edge, if None, center window vertically"
-msgstr "正の数ならばスクリーンの上端からピクセル単位で測った開始位置、 負の数ならば下端から、None ならば垂直方向に真ん中"
+" negative from the bottom edge, if ``None``, center window vertically"
+msgstr ""
 
 #: ../../library/turtle.rst:2003
 msgid "a string that is shown in the titlebar of the turtle graphics window"

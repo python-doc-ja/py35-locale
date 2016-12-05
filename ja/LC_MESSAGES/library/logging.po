@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:21+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:37+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -399,8 +399,8 @@ msgstr "指定されたハンドラ *hdlr* をこのロガーから取り除き�
 msgid ""
 "Finds the caller's source filename and line number. Returns the filename, "
 "line number, function name and stack information as a 4-element tuple. The "
-"stack information is returned as *None* unless *stack_info* is *True*."
-msgstr "呼び出し元のソースファイル名と行番号を調べます。ファイル名と行番号、関数名、スタック情報を 4 要素のタプルで返します。*stack_info* が *True* でなければ、スタック情報は *None* が返されます。"
+"stack information is returned as ``None`` unless *stack_info* is ``True``."
+msgstr ""
 
 #: ../../library/logging.rst:304
 msgid ""
@@ -423,9 +423,9 @@ msgid ""
 "looking for handlers in this logger and its parents in the logger hierarchy."
 " Returns ``True`` if a handler was found, else ``False``. The method stops "
 "searching up the hierarchy whenever a logger with the 'propagate' attribute "
-"set to False is found - that will be the last logger which is checked for "
+"set to false is found - that will be the last logger which is checked for "
 "the existence of handlers."
-msgstr "このロガーにハンドラが構成されているかどうかを調べます。このロガーとロガー階層におけるその祖先について調べます。ハンドラが見つかれば ``True`` 、そうでなければ ``False`` を返します。このメソッドは、'propagate' 属性が False に設定されたロガーを見つけると、さらに上位の探索をやめます - そのロガーが、ハンドラが存在するかどうかチェックされる最後のロガー、という意味です。"
+msgstr ""
 
 #: ../../library/logging.rst:330
 msgid "Logging Levels"
@@ -719,13 +719,13 @@ msgid ""
 "strptime format string (``'%Y-%m-%d %H:%M:%S'``), and the part after the "
 "comma is a millisecond value. Because strptime does not have a format "
 "placeholder for milliseconds, the millisecond value is appended using "
-"another format string, ``'%s,%03d'`` – and both of these format strings have"
-" been hardcoded into this method. With the change, these strings are defined"
-" as class-level attributes which can be overridden at the instance level "
-"when desired. The names of the attributes are ``default_time_format`` (for "
-"the strptime format string) and ``default_msec_format`` (for appending the "
-"millisecond value)."
-msgstr "以前は、デフォルトの ISO 8601 フォーマットがこの例のようにハードコーディングされていました: ``2010-09-06 22:38:15,292`` ここで、コンマの前の部分は strptime フォーマット文字列 (``'%Y-%m-%d %H:%M:%S'``) によって扱われる部分で、コンマの後の部分はミリ秒値です。strptime にミリ秒のフォーマットプレースホルダーがないので、ミリ秒値は別のフォーマット文字列 ``'%s,%03d'`` を使用して追加されます。そして、これらのフォーマット文字列は両方ともこのメソッドでハードコーディングされていました。変更後は、これらの文字列はクラスレベル属性として定義され、必要ならインスタンスレベルでオーバーライドすることができます。属性の名前は ``default_time_format`` (strptime 書式文字列用) と ``default_msec_format`` (ミリ秒値の追加用) です。"
+"another format string, ``'%s,%03d'`` --- and both of these format strings "
+"have been hardcoded into this method. With the change, these strings are "
+"defined as class-level attributes which can be overridden at the instance "
+"level when desired. The names of the attributes are ``default_time_format`` "
+"(for the strptime format string) and ``default_msec_format`` (for appending "
+"the millisecond value)."
+msgstr ""
 
 #: ../../library/logging.rst:573
 msgid ""
@@ -869,9 +869,9 @@ msgstr "*msg* 引数と組み合わせてイベント記述を得るための変
 
 #: ../../library/logging.rst:674
 msgid ""
-"An exception tuple with the current exception information, or *None* if no "
-"exception information is available."
-msgstr "**exc_info** -- 現在の例外情報を含む例外タプルか、利用できる例外情報がないなら *None* です。"
+"An exception tuple with the current exception information, or ``None`` if no"
+" exception information is available."
+msgstr ""
 
 #: ../../library/logging.rst:676
 msgid ""
@@ -1012,8 +1012,8 @@ msgstr "exc_info"
 #: ../../library/logging.rst:756
 msgid ""
 "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, "
-"*None*."
-msgstr "(``sys.exc_info`` 風の) 例外タプルか、例外が起こっていなければ *None*。"
+"``None``."
+msgstr ""
 
 #: ../../library/logging.rst:759
 msgid "filename"
@@ -1691,8 +1691,8 @@ msgid "The arguments for the logging message."
 msgstr "ログメッセージに対する引数。"
 
 #: ../../library/logging.rst:1190
-msgid "An exception tuple, or None."
-msgstr "例外タプルまたは None。"
+msgid "An exception tuple, or ``None``."
+msgstr ""
 
 #: ../../library/logging.rst:1191
 msgid "The name of the function or method which invoked the logging call."

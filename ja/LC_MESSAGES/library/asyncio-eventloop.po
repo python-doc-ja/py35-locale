@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:41+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -182,9 +182,9 @@ msgstr ":class:`asyncio.Handle` のインスタンスを返します。それを
 #: ../../library/asyncio-eventloop.rst:122
 #: ../../library/asyncio-eventloop.rst:164
 #: ../../library/asyncio-eventloop.rst:178
-#: ../../library/asyncio-eventloop.rst:474
-#: ../../library/asyncio-eventloop.rst:486
-#: ../../library/asyncio-eventloop.rst:640
+#: ../../library/asyncio-eventloop.rst:495
+#: ../../library/asyncio-eventloop.rst:507
+#: ../../library/asyncio-eventloop.rst:661
 msgid ""
 ":ref:`Use functools.partial to pass keywords to the callback <asyncio-pass-"
 "keywords>`."
@@ -429,7 +429,7 @@ msgid ""
 msgstr "*local_addr* を与える場合、ソケットをローカルに束縛するために使用する ``(local_host, local_port)`` のタプルを指定します。*local_host* および *local_port* は *host* および *port* と同様に getaddrinfo() を使用してルックアップされます。"
 
 #: ../../library/asyncio-eventloop.rst:313
-#: ../../library/asyncio-eventloop.rst:439
+#: ../../library/asyncio-eventloop.rst:443
 msgid "On Windows with :class:`ProactorEventLoop`, SSL/TLS is now supported."
 msgstr "Windows の :class:`ProactorEventLoop` で SSL/TLS がサポートされました。"
 
@@ -474,12 +474,12 @@ msgid ""
 msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:347
-#: ../../library/asyncio-eventloop.rst:425
+#: ../../library/asyncio-eventloop.rst:429
 msgid ""
 "*reuse_address* tells the kernel to reuse a local socket in TIME_WAIT state,"
 " without waiting for its natural timeout to expire. If not specified will "
-"automatically be set to True on UNIX."
-msgstr "*reuse_address* を指定すると、通常のタイムアウトを待機するのではなく、TIME_WAIT の状態によりローカルソケットの再利用を行うようカーネルに通知します。指定しない場合、UNIX では自動的に ``True`` が設定されます。"
+"automatically be set to ``True`` on UNIX."
+msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:352
 msgid ""
@@ -525,36 +525,44 @@ msgstr "UNIX コネクションを作成します: ソケットファミリは :
 
 #: ../../library/asyncio-eventloop.rst:383
 msgid ""
+"*path* is the name of a UNIX domain socket, and is required unless a *sock* "
+"parameter is specified.  Abstract UNIX sockets, :class:`str`, and "
+":class:`bytes` paths are supported."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:387
+msgid ""
 "See the :meth:`AbstractEventLoop.create_connection` method for parameters."
 msgstr "引数については :meth:`AbstractEventLoop.create_connection` メソッドを参照してください。"
 
-#: ../../library/asyncio-eventloop.rst:385
-#: ../../library/asyncio-eventloop.rst:458
+#: ../../library/asyncio-eventloop.rst:389
+#: ../../library/asyncio-eventloop.rst:462
 msgid "Availability: UNIX."
 msgstr "利用できる環境: UNIX。"
 
-#: ../../library/asyncio-eventloop.rst:389
+#: ../../library/asyncio-eventloop.rst:393
 msgid "Creating listening connections"
 msgstr "待ち受けコネクションの作成"
 
-#: ../../library/asyncio-eventloop.rst:393
+#: ../../library/asyncio-eventloop.rst:397
 msgid ""
 "Create a TCP server (socket type :data:`~socket.SOCK_STREAM`) bound to "
 "*host* and *port*."
 msgstr "*host* および *port* に束縛された TCP サーバー (ソケットタイプ :data:`~socket.SOCK_STREAM`) を作成します。"
 
-#: ../../library/asyncio-eventloop.rst:396
+#: ../../library/asyncio-eventloop.rst:400
 msgid ""
 "Return a :class:`Server` object, its :attr:`~Server.sockets` attribute "
 "contains created sockets. Use the :meth:`Server.close` method to stop the "
 "server: close listening sockets."
 msgstr ":class:`Server` オブジェクトを返します。これの :attr:`~Server.sockets` 属性には作成されたソケットが含まれています。サーバーを停止するには :meth:`Server.close` メソッドを使用します: 待受中のソケットを閉じます。"
 
-#: ../../library/asyncio-eventloop.rst:400
+#: ../../library/asyncio-eventloop.rst:404
+#: ../../library/asyncio-eventloop.rst:471
 msgid "Parameters:"
 msgstr "引数:"
 
-#: ../../library/asyncio-eventloop.rst:402
+#: ../../library/asyncio-eventloop.rst:406
 msgid ""
 "The *host* parameter can be a string, in that case the TCP server is bound "
 "to *host* and *port*. The *host* parameter can also be a sequence of strings"
@@ -564,145 +572,167 @@ msgid ""
 "one for IPv6)."
 msgstr "*host* 引数には文字列を渡すことが出来ます。\nその場合、TCP サーバは *host* と *port* に束縛されます。\n*host* 引数には文字列のシーケンスを渡すことも出来ます。\nその場合 TCP サーバはシーケンスの全ホストに束縛されます。\n*host* が空の文字列や ``None`` の場合、全インターフェイスが想定され、複数のソケットからなるリストを返します (最も近いのは IPv4 や IPv6 のものです)。"
 
-#: ../../library/asyncio-eventloop.rst:409
+#: ../../library/asyncio-eventloop.rst:413
 msgid ""
 "*family* can be set to either :data:`socket.AF_INET` or "
 ":data:`~socket.AF_INET6` to force the socket to use IPv4 or IPv6. If not set"
 " it will be determined from host (defaults to :data:`socket.AF_UNSPEC`)."
 msgstr "*family* には :data:`socket.AF_INET` または :data:`~socket.AF_INET6` を指定し、ソケットで IPv4 を使用するか IPv6 を使用するか強制的に設定できます。設定されない場合ホストから決定されます (:data:`socket.AF_UNSPEC` がデフォルトになります)。"
 
-#: ../../library/asyncio-eventloop.rst:413
+#: ../../library/asyncio-eventloop.rst:417
 msgid "*flags* is a bitmask for :meth:`getaddrinfo`."
 msgstr "*flags* は :meth:`getaddrinfo` のためのビットマスクになります。"
 
-#: ../../library/asyncio-eventloop.rst:415
+#: ../../library/asyncio-eventloop.rst:419
 msgid ""
 "*sock* can optionally be specified in order to use a preexisting socket "
 "object. If specified, *host* and *port* should be omitted (must be "
 ":const:`None`)."
 msgstr "任意の引数 *sock* には、既存のソケットオブジェクトの使用順を指定できます。指定した場合、*host* および *port* を指定してはなりません (:const:`None` でなければなりません)。"
 
-#: ../../library/asyncio-eventloop.rst:419
+#: ../../library/asyncio-eventloop.rst:423
 msgid ""
 "*backlog* is the maximum number of queued connections passed to "
 ":meth:`~socket.socket.listen` (defaults to 100)."
 msgstr "*backlog* は :meth:`~socket.socket.listen` に渡される、キューに入るコネクションの最大数になります (デフォルトは 100)。"
 
-#: ../../library/asyncio-eventloop.rst:422
+#: ../../library/asyncio-eventloop.rst:426
+#: ../../library/asyncio-eventloop.rst:476
 msgid ""
 "*ssl* can be set to an :class:`~ssl.SSLContext` to enable SSL over the "
 "accepted connections."
 msgstr "*ssl* には :class:`~ssl.SSLContext` を指定できます。指定すると、受け付けたコネクション上での SSL を有効にします。"
 
-#: ../../library/asyncio-eventloop.rst:430
+#: ../../library/asyncio-eventloop.rst:434
 msgid ""
 "*reuse_port* tells the kernel to allow this endpoint to be bound to the same"
 " port as other existing endpoints are bound to, so long as they all set this"
 " flag when being created. This option is not supported on Windows."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:435
-#: ../../library/asyncio-eventloop.rst:456
-#: ../../library/asyncio-eventloop.rst:513
-#: ../../library/asyncio-eventloop.rst:529
-#: ../../library/asyncio-eventloop.rst:539
-#: ../../library/asyncio-eventloop.rst:567
-#: ../../library/asyncio-eventloop.rst:606
-#: ../../library/asyncio-eventloop.rst:620
-#: ../../library/asyncio-eventloop.rst:671
-#: ../../library/asyncio-eventloop.rst:783
+#: ../../library/asyncio-eventloop.rst:439
+#: ../../library/asyncio-eventloop.rst:460
+#: ../../library/asyncio-eventloop.rst:534
+#: ../../library/asyncio-eventloop.rst:550
+#: ../../library/asyncio-eventloop.rst:560
+#: ../../library/asyncio-eventloop.rst:588
+#: ../../library/asyncio-eventloop.rst:627
+#: ../../library/asyncio-eventloop.rst:641
+#: ../../library/asyncio-eventloop.rst:692
+#: ../../library/asyncio-eventloop.rst:811
 msgid "This method is a :ref:`coroutine <coroutine>`."
 msgstr "このメソッドは :ref:`コルーチン <coroutine>` です。"
 
-#: ../../library/asyncio-eventloop.rst:443
+#: ../../library/asyncio-eventloop.rst:447
 msgid ""
 "The function :func:`start_server` creates a (:class:`StreamReader`, "
 ":class:`StreamWriter`) pair and calls back a function with this pair."
 msgstr "関数 :func:`start_server` は (:class:`StreamReader`, :class:`StreamWriter`) のペアを作成し、このペアで関数を再度呼び出します。"
 
-#: ../../library/asyncio-eventloop.rst:448
+#: ../../library/asyncio-eventloop.rst:452
 msgid "The *host* parameter can now be a sequence of strings."
 msgstr "*host* 引数に文字列のシーケンスを与えられるようになりました。"
 
-#: ../../library/asyncio-eventloop.rst:453
+#: ../../library/asyncio-eventloop.rst:457
 msgid ""
 "Similar to :meth:`AbstractEventLoop.create_server`, but specific to the "
 "socket family :py:data:`~socket.AF_UNIX`."
 msgstr ":meth:`AbstractEventLoop.create_server` と似ていますが、ソケットファミリー :py:data:`~socket.AF_UNIX` 固有です。"
 
-#: ../../library/asyncio-eventloop.rst:462
+#: ../../library/asyncio-eventloop.rst:466
+msgid "Handle an accepted connection."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:468
+msgid ""
+"This is used by servers that accept connections outside of asyncio but that "
+"use asyncio to handle them."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:473
+msgid ""
+"*sock* is a preexisting socket object returned from an ``accept`` call."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:479
+msgid ""
+"This method is a :ref:`coroutine <coroutine>`.  When completed, the "
+"coroutine returns a ``(transport, protocol)`` pair."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:483
 msgid "Watch file descriptors"
 msgstr "ファイル記述子の監視"
 
-#: ../../library/asyncio-eventloop.rst:464
+#: ../../library/asyncio-eventloop.rst:485
 msgid ""
 "On Windows with :class:`SelectorEventLoop`, only socket handles are "
 "supported (ex: pipe file descriptors are not supported)."
 msgstr "Windows の :class:`SelectorEventLoop` では、ソケットの扱いのみサポートされています (例えばパイプのファイル記述子はサポートされません)。"
 
-#: ../../library/asyncio-eventloop.rst:467
+#: ../../library/asyncio-eventloop.rst:488
 msgid ""
 "On Windows with :class:`ProactorEventLoop`, these methods are not supported."
 msgstr "Wndows の :class:`ProactorEventLoop` では、これらのメソッドはサポートされません。"
 
-#: ../../library/asyncio-eventloop.rst:471
+#: ../../library/asyncio-eventloop.rst:492
 msgid ""
 "Start watching the file descriptor for read availability and then call the "
 "*callback* with specified arguments."
 msgstr "読み込み可能なファイル記述子の監視を開始し、指定された引数で *callback* を呼び出します。"
 
-#: ../../library/asyncio-eventloop.rst:479
+#: ../../library/asyncio-eventloop.rst:500
 msgid "Stop watching the file descriptor for read availability."
 msgstr "読み込み可能なファイル記述子の監視を停止します。"
 
-#: ../../library/asyncio-eventloop.rst:483
+#: ../../library/asyncio-eventloop.rst:504
 msgid ""
 "Start watching the file descriptor for write availability and then call the "
 "*callback* with specified arguments."
 msgstr "書き込み可能なファイル記述子の監視を開始し、指定された引数で *callback* を呼び出します。"
 
-#: ../../library/asyncio-eventloop.rst:491
+#: ../../library/asyncio-eventloop.rst:512
 msgid "Stop watching the file descriptor for write availability."
 msgstr "書き込み可能なファイル記述子の監視を停止します。"
 
-#: ../../library/asyncio-eventloop.rst:493
+#: ../../library/asyncio-eventloop.rst:514
 msgid ""
 "The :ref:`watch a file descriptor for read events <asyncio-watch-read-"
 "event>` example uses the low-level :meth:`AbstractEventLoop.add_reader` "
 "method to register the file descriptor of a socket."
 msgstr ":ref:`読み込みイベント用のファイル記述子の監視 <asyncio-watch-read-event>` の例では、ソケットのファイル記述子を登録するのに低水準の :meth:`AbstractEventLoop.add_reader` メソッドを使用しています。"
 
-#: ../../library/asyncio-eventloop.rst:499
+#: ../../library/asyncio-eventloop.rst:520
 msgid "Low-level socket operations"
 msgstr "低水準のソケット操作"
 
-#: ../../library/asyncio-eventloop.rst:503
+#: ../../library/asyncio-eventloop.rst:524
 msgid ""
 "Receive data from the socket.  Modeled after blocking "
 ":meth:`socket.socket.recv` method."
 msgstr "ソケットからデータを受け取ります。\n:meth:`socket.socket.recv` メソッドのブロックをモデルにしています。"
 
-#: ../../library/asyncio-eventloop.rst:506
+#: ../../library/asyncio-eventloop.rst:527
 msgid ""
 "The return value is a bytes object representing the data received.  The "
 "maximum amount of data to be received at once is specified by *nbytes*."
 msgstr "受け取ったデータを表す bytes オブジェクトを返します。\n一度に受け取るデータの最大量を *nbytes* で指定します。"
 
-#: ../../library/asyncio-eventloop.rst:510
-#: ../../library/asyncio-eventloop.rst:526
-#: ../../library/asyncio-eventloop.rst:536
+#: ../../library/asyncio-eventloop.rst:531
+#: ../../library/asyncio-eventloop.rst:547
+#: ../../library/asyncio-eventloop.rst:557
 msgid ""
 "With :class:`SelectorEventLoop` event loop, the socket *sock* must be non-"
 "blocking."
 msgstr ":class:`SelectorEventLoop` イベントループの場合、ソケット *sock* は非ブロックでなければなりません。"
 
-#: ../../library/asyncio-eventloop.rst:517
+#: ../../library/asyncio-eventloop.rst:538
 msgid ""
 "Send data to the socket.  Modeled after blocking "
 ":meth:`socket.socket.sendall` method."
 msgstr "ソケットにデータを送ります。\n:meth:`socket.socket.sendall` メソッドのブロックをモデルにいています。"
 
-#: ../../library/asyncio-eventloop.rst:520
+#: ../../library/asyncio-eventloop.rst:541
 msgid ""
 "The socket must be connected to a remote socket. This method continues to "
 "send data from *data* until either all data has been sent or an error "
@@ -711,13 +741,13 @@ msgid ""
 "processed by the receiving end of the connection."
 msgstr "ソケットはリモートソケットに接続されていなければなりません。\nこのメソッドは全データを送信するかエラーが発生するまで、 *data* からのデータを送信し続けます。\n正常終了すると ``None`` を返します。\nエラー発生時は例外を送出しますが、正常に処理されたデータ量を確認する手段はありません。\nたとえあったとしても、接続の終了を受信するまではできません。"
 
-#: ../../library/asyncio-eventloop.rst:533
+#: ../../library/asyncio-eventloop.rst:554
 msgid ""
 "Connect to a remote socket at *address*.  Modeled after blocking "
 ":meth:`socket.socket.connect` method."
 msgstr "*address* のソケットに接続します。\n:meth:`socket.socket.connect` メソッドのブロックをモデルにしています。"
 
-#: ../../library/asyncio-eventloop.rst:541
+#: ../../library/asyncio-eventloop.rst:562
 msgid ""
 "``address`` no longer needs to be resolved.  ``sock_connect`` will try to "
 "check if the *address* is already resolved by calling "
@@ -725,18 +755,18 @@ msgid ""
 "will be used to resolve the *address*."
 msgstr "``address`` を解決する必要はなくなりました。\n``sock_connect`` は :func:`socket.inet_pton` の呼び出しで *address* が既に解決されているかチェックしようとします。\n解決されていない場合 :meth:`AbstractEventLoop.getaddrinfo` を使用して *address* を解決します。"
 
-#: ../../library/asyncio-eventloop.rst:550
+#: ../../library/asyncio-eventloop.rst:571
 msgid ""
 ":meth:`AbstractEventLoop.create_connection` and  "
 ":func:`asyncio.open_connection() <open_connection>`."
 msgstr ":meth:`AbstractEventLoop.create_connection` および :func:`asyncio.open_connection() <open_connection>`。"
 
-#: ../../library/asyncio-eventloop.rst:556
+#: ../../library/asyncio-eventloop.rst:577
 msgid ""
 "Accept a connection.  Modeled after blocking :meth:`socket.socket.accept`."
 msgstr "接続を受け付けます。 :meth:`socket.socket.accept` のブロック をモデルにしています。"
 
-#: ../../library/asyncio-eventloop.rst:559
+#: ../../library/asyncio-eventloop.rst:580
 msgid ""
 "The socket must be bound to an address and listening for connections. The "
 "return value is a pair ``(conn, address)`` where *conn* is a *new* socket "
@@ -744,45 +774,45 @@ msgid ""
 "the address bound to the socket on the other end of the connection."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:565
+#: ../../library/asyncio-eventloop.rst:586
 msgid "The socket *sock* must be non-blocking."
 msgstr "ソケット *sock* は非ブロックでなければなりません。"
 
-#: ../../library/asyncio-eventloop.rst:571
+#: ../../library/asyncio-eventloop.rst:592
 msgid ":meth:`AbstractEventLoop.create_server` and :func:`start_server`."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:575
+#: ../../library/asyncio-eventloop.rst:596
 msgid "Resolve host name"
 msgstr "ホスト名の解決"
 
-#: ../../library/asyncio-eventloop.rst:579
+#: ../../library/asyncio-eventloop.rst:600
 msgid ""
 "This method is a :ref:`coroutine <coroutine>`, similar to "
 ":meth:`socket.getaddrinfo` function but non-blocking."
 msgstr "このメソッドは :ref:`コルーチン <coroutine>` で、:meth:`socket.getaddrinfo` 関数に似ていますが、ブロックされません。"
 
-#: ../../library/asyncio-eventloop.rst:584
+#: ../../library/asyncio-eventloop.rst:605
 msgid ""
 "This method is a :ref:`coroutine <coroutine>`, similar to "
 ":meth:`socket.getnameinfo` function but non-blocking."
 msgstr "このメソッドは :ref:`コルーチン <coroutine>` で、:meth:`socket.getnameinfo` 関数に似ていますが、ブロックされません。"
 
-#: ../../library/asyncio-eventloop.rst:589
+#: ../../library/asyncio-eventloop.rst:610
 msgid "Connect pipes"
 msgstr "パイプの接続"
 
-#: ../../library/asyncio-eventloop.rst:591
+#: ../../library/asyncio-eventloop.rst:612
 msgid ""
 "On Windows with :class:`SelectorEventLoop`, these methods are not supported."
 " Use :class:`ProactorEventLoop` to support pipes on Windows."
 msgstr "Windows の :class:`SelectorEventLoop` では、これらメソッドはサポートされていません。Windows でパイプをサポートするには、:class:`ProactorEventLoop` を使用してください。"
 
-#: ../../library/asyncio-eventloop.rst:596
+#: ../../library/asyncio-eventloop.rst:617
 msgid "Register read pipe in eventloop."
 msgstr "イベントループ内で読み込みパイプを登録します。"
 
-#: ../../library/asyncio-eventloop.rst:598
+#: ../../library/asyncio-eventloop.rst:619
 msgid ""
 "*protocol_factory* should instantiate object with :class:`Protocol` "
 "interface.  *pipe* is a :term:`file-like object <file object>`. Return pair "
@@ -790,18 +820,18 @@ msgid ""
 ":class:`ReadTransport` interface."
 msgstr "*protocol_factory* は :class:`Protocol` インターフェースを持つオブジェクトのインスタンスを作成しなければなりません。 *pipe* は :term:`ファイルライクオブジェクト <file object>` です。 ``(トランスポート, プロトコル)`` のペアを返し、 *トランスポート* は :class:`ReadTransport` インターフェースをサポートします。"
 
-#: ../../library/asyncio-eventloop.rst:603
-#: ../../library/asyncio-eventloop.rst:617
+#: ../../library/asyncio-eventloop.rst:624
+#: ../../library/asyncio-eventloop.rst:638
 msgid ""
 "With :class:`SelectorEventLoop` event loop, the *pipe* is set to non-"
 "blocking mode."
 msgstr ":class:`SelectorEventLoop` イベントループの場合、*pipe* は非ブロックモードに設定されていなければなりません。"
 
-#: ../../library/asyncio-eventloop.rst:610
+#: ../../library/asyncio-eventloop.rst:631
 msgid "Register write pipe in eventloop."
 msgstr "イベントループ内の書き込みパイプを登録します。"
 
-#: ../../library/asyncio-eventloop.rst:612
+#: ../../library/asyncio-eventloop.rst:633
 msgid ""
 "*protocol_factory* should instantiate object with :class:`BaseProtocol` "
 "interface. *pipe* is :term:`file-like object <file object>`. Return pair "
@@ -809,90 +839,98 @@ msgid ""
 ":class:`WriteTransport` interface."
 msgstr "*protocol_factory* は :class:`BaseProtocol` で作成されたインスタンスオブジェクトでなければなりません。*pipe* は :term:`ファイルライクオブジェクト <file object>` です。``(transport, protocol)`` のペアを返します。*transport* は :class:`WriteTransport` インターフェースをサポートしています。"
 
-#: ../../library/asyncio-eventloop.rst:624
+#: ../../library/asyncio-eventloop.rst:645
 msgid ""
 "The :meth:`AbstractEventLoop.subprocess_exec` and "
 ":meth:`AbstractEventLoop.subprocess_shell` methods."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:629
+#: ../../library/asyncio-eventloop.rst:650
 msgid "UNIX signals"
 msgstr "UNIX シグナル"
 
-#: ../../library/asyncio-eventloop.rst:631
+#: ../../library/asyncio-eventloop.rst:652
 msgid "Availability: UNIX only."
 msgstr "利用できる環境: UNIX のみ。"
 
-#: ../../library/asyncio-eventloop.rst:635
+#: ../../library/asyncio-eventloop.rst:656
 msgid "Add a handler for a signal."
 msgstr "シグナル用のハンドラーを追加します。"
 
-#: ../../library/asyncio-eventloop.rst:637
+#: ../../library/asyncio-eventloop.rst:658
 msgid ""
 "Raise :exc:`ValueError` if the signal number is invalid or uncatchable. "
 "Raise :exc:`RuntimeError` if there is a problem setting up the handler."
 msgstr "シグナルナンバーが誤っているか捕捉不可能な場合 :exc:`ValueError` が送出されます。ハンドラーの設定に問題があった場合 :exc:`RuntimeError` が送出されます。"
 
-#: ../../library/asyncio-eventloop.rst:645
+#: ../../library/asyncio-eventloop.rst:666
 msgid "Remove a handler for a signal."
 msgstr "シグナル用のハンドラーを削除します。"
 
-#: ../../library/asyncio-eventloop.rst:647
+#: ../../library/asyncio-eventloop.rst:668
 msgid "Return ``True`` if a signal handler was removed, ``False`` if not."
 msgstr "シグナルハンドラーが削除されると ``True`` が、されなければ ``False`` を返します。"
 
-#: ../../library/asyncio-eventloop.rst:651
+#: ../../library/asyncio-eventloop.rst:672
 msgid "The :mod:`signal` module."
 msgstr ":mod:`signal` モジュール。"
 
-#: ../../library/asyncio-eventloop.rst:655
+#: ../../library/asyncio-eventloop.rst:676
 msgid "Executor"
 msgstr "実行者"
 
-#: ../../library/asyncio-eventloop.rst:657
+#: ../../library/asyncio-eventloop.rst:678
 msgid ""
 "Call a function in an :class:`~concurrent.futures.Executor` (pool of threads"
 " or pool of processes). By default, an event loop uses a thread pool "
 "executor (:class:`~concurrent.futures.ThreadPoolExecutor`)."
 msgstr ":class:`~concurrent.futures.Executor` (スレッドプールまたはプロセスプール) 内の関数を呼び出します。デフォルトでは、一つのイベントループは一つのスレッドプール実行者 (:class:`~concurrent.futures.ThreadPoolExecutor`) を使用します。"
 
-#: ../../library/asyncio-eventloop.rst:663
+#: ../../library/asyncio-eventloop.rst:684
 msgid "Arrange for a *func* to be called in the specified executor."
 msgstr "特定の実行者で *func* を呼び出す準備をします。"
 
-#: ../../library/asyncio-eventloop.rst:665
+#: ../../library/asyncio-eventloop.rst:686
 msgid ""
 "The *executor* argument should be an :class:`~concurrent.futures.Executor` "
 "instance. The default executor is used if *executor* is ``None``."
 msgstr "引数 *executor* は :class:`~concurrent.futures.Executor` のインスタンスでなければなりません。*executor* が ``None`` のときデフォルトの実行者が使用されます。"
 
-#: ../../library/asyncio-eventloop.rst:668
+#: ../../library/asyncio-eventloop.rst:689
 msgid ""
 ":ref:`Use functools.partial to pass keywords to the *func* <asyncio-pass-"
 "keywords>`."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:675
+#: ../../library/asyncio-eventloop.rst:694
+msgid ""
+":meth:`BaseEventLoop.run_in_executor` no longer configures the "
+"``max_workers`` of the thread pool executor it creates, instead leaving it "
+"up to the thread pool executor "
+"(:class:`~concurrent.futures.ThreadPoolExecutor`) to set the default."
+msgstr ""
+
+#: ../../library/asyncio-eventloop.rst:703
 msgid "Set the default executor used by :meth:`run_in_executor`."
 msgstr ":meth:`run_in_executor` で使用される実行者を設定します。"
 
-#: ../../library/asyncio-eventloop.rst:679
+#: ../../library/asyncio-eventloop.rst:707
 msgid "Error Handling API"
 msgstr "エラーハンドリング API"
 
-#: ../../library/asyncio-eventloop.rst:681
+#: ../../library/asyncio-eventloop.rst:709
 msgid "Allows customizing how exceptions are handled in the event loop."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:685
+#: ../../library/asyncio-eventloop.rst:713
 msgid "Set *handler* as the new event loop exception handler."
 msgstr "*handler* を新しいイベントループ例外ハンドラーとして設定します。"
 
-#: ../../library/asyncio-eventloop.rst:687
+#: ../../library/asyncio-eventloop.rst:715
 msgid "If *handler* is ``None``, the default exception handler will be set."
 msgstr "*handler* が ``None`` の場合、デフォルトの例外ハンドラーが設定されます。"
 
-#: ../../library/asyncio-eventloop.rst:690
+#: ../../library/asyncio-eventloop.rst:718
 msgid ""
 "If *handler* is a callable object, it should have a matching signature to "
 "``(loop, context)``, where ``loop`` will be a reference to the active event "
@@ -900,226 +938,226 @@ msgid ""
 ":meth:`call_exception_handler` documentation for details about context)."
 msgstr "*handler* が呼び出し可能オブジェクトの場合、``(loop, context)`` に一致するシグニチャを持っていなければなりません。\n``loop`` は有効なイベントループへの参照で、``context`` は ``dict`` オブジェクトです (コンテキストの詳細については :meth:`call_exception_handler` ドキュメントを参照してください)。"
 
-#: ../../library/asyncio-eventloop.rst:698
+#: ../../library/asyncio-eventloop.rst:726
 msgid ""
 "Return the exception handler, or ``None`` if the default one is in use."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:705
+#: ../../library/asyncio-eventloop.rst:733
 msgid "Default exception handler."
 msgstr "デフォルトの例外ハンドラーです。"
 
-#: ../../library/asyncio-eventloop.rst:707
+#: ../../library/asyncio-eventloop.rst:735
 msgid ""
 "This is called when an exception occurs and no exception handler is set, and"
 " can be called by a custom exception handler that wants to defer to the "
 "default behavior."
 msgstr "これは例外が発生したときおよび例外ハンドラーが設定されていないときに呼び出され、デフォルトとは振る舞いの異なるカスタム例外ハンドラーを呼び出すこともできます。"
 
-#: ../../library/asyncio-eventloop.rst:711
+#: ../../library/asyncio-eventloop.rst:739
 msgid ""
 "*context* parameter has the same meaning as in "
 ":meth:`call_exception_handler`."
 msgstr "引数 *context* の意味は :meth:`call_exception_handler` と同じです。"
 
-#: ../../library/asyncio-eventloop.rst:716
+#: ../../library/asyncio-eventloop.rst:744
 msgid "Call the current event loop exception handler."
 msgstr "現在のイベントループ例外ハンドラーを呼び出します。"
 
-#: ../../library/asyncio-eventloop.rst:718
+#: ../../library/asyncio-eventloop.rst:746
 msgid ""
 "*context* is a ``dict`` object containing the following keys (new keys may "
 "be introduced later):"
 msgstr "*context* は以下のキーを含む ``dict`` オブジェクトです (新しいキーは後で導入されます):"
 
-#: ../../library/asyncio-eventloop.rst:721
+#: ../../library/asyncio-eventloop.rst:749
 msgid "'message': Error message;"
 msgstr "'message': エラーメッセージ;"
 
-#: ../../library/asyncio-eventloop.rst:722
+#: ../../library/asyncio-eventloop.rst:750
 msgid "'exception' (optional): Exception object;"
 msgstr "'exception' (任意): 例外オブジェクト;"
 
-#: ../../library/asyncio-eventloop.rst:723
+#: ../../library/asyncio-eventloop.rst:751
 msgid "'future' (optional): :class:`asyncio.Future` instance;"
 msgstr "'future' (任意): :class:`asyncio.Future` インスタンス;"
 
-#: ../../library/asyncio-eventloop.rst:724
+#: ../../library/asyncio-eventloop.rst:752
 msgid "'handle' (optional): :class:`asyncio.Handle` instance;"
 msgstr "'handle' (任意): :class:`asyncio.Handle` インスタンス;"
 
-#: ../../library/asyncio-eventloop.rst:725
+#: ../../library/asyncio-eventloop.rst:753
 msgid "'protocol' (optional): :ref:`Protocol <asyncio-protocol>` instance;"
 msgstr "'protocol' (任意): :ref:`プロトコル <asyncio-protocol>` インスタンス;"
 
-#: ../../library/asyncio-eventloop.rst:726
+#: ../../library/asyncio-eventloop.rst:754
 msgid "'transport' (optional): :ref:`Transport <asyncio-transport>` instance;"
 msgstr "'transport' (任意): :ref:`トランスポート <asyncio-transport>` インスタンス;"
 
-#: ../../library/asyncio-eventloop.rst:727
+#: ../../library/asyncio-eventloop.rst:755
 msgid "'socket' (optional): :class:`socket.socket` instance."
 msgstr "'socket' (任意): :class:`socket.socket` インスタンス;"
 
-#: ../../library/asyncio-eventloop.rst:731
+#: ../../library/asyncio-eventloop.rst:759
 msgid ""
 "Note: this method should not be overloaded in subclassed event loops.  For "
 "any custom exception handling, use :meth:`set_exception_handler()` method."
 msgstr "注意: このメソッドはサブクラス化されたイベントループ内でオーバーロードされてはなりません。あらゆるカスタム例外ハンドリングには、:meth:`set_exception_handler()` メソッドを使用してください。"
 
-#: ../../library/asyncio-eventloop.rst:736
+#: ../../library/asyncio-eventloop.rst:764
 msgid "Debug mode"
 msgstr "デバッグモード"
 
-#: ../../library/asyncio-eventloop.rst:740
+#: ../../library/asyncio-eventloop.rst:768
 msgid "Get the debug mode (:class:`bool`) of the event loop."
 msgstr "イベントループのデバッグモード (:class:`bool`) を取得します。"
 
-#: ../../library/asyncio-eventloop.rst:742
+#: ../../library/asyncio-eventloop.rst:770
 msgid ""
 "The default value is ``True`` if the environment variable "
 ":envvar:`PYTHONASYNCIODEBUG` is set to a non-empty string, ``False`` "
 "otherwise."
 msgstr "環境変数 :envvar:`PYTHONASYNCIODEBUG` に空でない文字列が設定されている場合のデフォルト値は ``True``、そうでない場合は ``False`` になります。"
 
-#: ../../library/asyncio-eventloop.rst:750
+#: ../../library/asyncio-eventloop.rst:778
 msgid "Set the debug mode of the event loop."
 msgstr "イベントループのデバッグモードを設定します。"
 
-#: ../../library/asyncio-eventloop.rst:756
+#: ../../library/asyncio-eventloop.rst:784
 msgid "The :ref:`debug mode of asyncio <asyncio-debug-mode>`."
 msgstr ":ref:`asyncio のデバッグモード <asyncio-debug-mode>`。"
 
-#: ../../library/asyncio-eventloop.rst:759
+#: ../../library/asyncio-eventloop.rst:787
 msgid "Server"
 msgstr "サーバー"
 
-#: ../../library/asyncio-eventloop.rst:763
+#: ../../library/asyncio-eventloop.rst:791
 msgid "Server listening on sockets."
 msgstr "ソケット上で待機しているサーバーです。"
 
-#: ../../library/asyncio-eventloop.rst:765
+#: ../../library/asyncio-eventloop.rst:793
 msgid ""
 "Object created by the :meth:`AbstractEventLoop.create_server` method and the"
 " :func:`start_server` function. Don't instantiate the class directly."
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:770
+#: ../../library/asyncio-eventloop.rst:798
 msgid ""
 "Stop serving: close listening sockets and set the :attr:`sockets` attribute "
 "to ``None``."
 msgstr "サーバーを停止します: 待機しているソケットをクローズし :attr:`sockets` 属性に ``None`` を設定します。"
 
-#: ../../library/asyncio-eventloop.rst:773
+#: ../../library/asyncio-eventloop.rst:801
 msgid ""
 "The sockets that represent existing incoming client connections are left "
 "open."
 msgstr "既存の受信中のクライアントとの接続を表すソケットはオープンのままです。"
 
-#: ../../library/asyncio-eventloop.rst:776
+#: ../../library/asyncio-eventloop.rst:804
 msgid ""
 "The server is closed asynchronously, use the :meth:`wait_closed` coroutine "
 "to wait until the server is closed."
 msgstr "サーバーは非同期に停止されます。サーバーの停止を待ちたい場合は :meth:`wait_closed` コルーチンを使用します。"
 
-#: ../../library/asyncio-eventloop.rst:781
+#: ../../library/asyncio-eventloop.rst:809
 msgid "Wait until the :meth:`close` method completes."
 msgstr ":meth:`close` メソッドが完了するまで待ちます。"
 
-#: ../../library/asyncio-eventloop.rst:787
+#: ../../library/asyncio-eventloop.rst:815
 msgid ""
 "List of :class:`socket.socket` objects the server is listening to, or "
 "``None`` if the server is closed."
 msgstr "サーバーが待機している :class:`socket.socket` オブジェクトのリストです。サーバーが停止しているときは ``None`` になります。"
 
-#: ../../library/asyncio-eventloop.rst:792
+#: ../../library/asyncio-eventloop.rst:820
 msgid "Handle"
 msgstr "ハンドル"
 
-#: ../../library/asyncio-eventloop.rst:796
+#: ../../library/asyncio-eventloop.rst:824
 msgid ""
 "A callback wrapper object returned by :func:`AbstractEventLoop.call_soon`, "
 ":func:`AbstractEventLoop.call_soon_threadsafe`, "
 ":func:`AbstractEventLoop.call_later`, and :func:`AbstractEventLoop.call_at`."
 msgstr ":func:`AbstractEventLoop.call_soon`, :func:`AbstractEventLoop.call_soon_threadsafe`, :func:`AbstractEventLoop.call_later`, および :func:`AbstractEventLoop.call_at` が返すコールバックラッパです。"
 
-#: ../../library/asyncio-eventloop.rst:802
+#: ../../library/asyncio-eventloop.rst:830
 msgid ""
 "Cancel the call.  If the callback is already canceled or executed, this "
 "method has no effect."
 msgstr "呼び出しをキャンセルします。コールバックが既にキャンセルされていたり実行されていた場合、このメソッドの影響はありません。"
 
-#: ../../library/asyncio-eventloop.rst:807
+#: ../../library/asyncio-eventloop.rst:835
 msgid "Event loop examples"
 msgstr "イベントループの例"
 
-#: ../../library/asyncio-eventloop.rst:812
+#: ../../library/asyncio-eventloop.rst:840
 msgid "Hello World with call_soon()"
 msgstr "call_soon() を使った Hello World"
 
-#: ../../library/asyncio-eventloop.rst:814
+#: ../../library/asyncio-eventloop.rst:842
 msgid ""
 "Example using the :meth:`AbstractEventLoop.call_soon` method to schedule a "
 "callback. The callback displays ``\"Hello World\"`` and then stops the event"
 " loop::"
 msgstr ":meth:`AbstractEventLoop.call_soon` メソッドを使用してコールバックをスケジュールする例です。\nコールバックは ``\"Hello World\"`` を表示してイベントループを停止します::"
 
-#: ../../library/asyncio-eventloop.rst:835
+#: ../../library/asyncio-eventloop.rst:863
 msgid ""
 "The :ref:`Hello World coroutine <asyncio-hello-world-coroutine>` example "
 "uses a :ref:`coroutine <coroutine>`."
 msgstr ":ref:`コルーチンを使った Hello World <asyncio-hello-world-coroutine>` の例では :ref:`コルーチン <coroutine>` を使用しています。"
 
-#: ../../library/asyncio-eventloop.rst:842
+#: ../../library/asyncio-eventloop.rst:870
 msgid "Display the current date with call_later()"
 msgstr "call_later() で現在の日時を表示する"
 
-#: ../../library/asyncio-eventloop.rst:844
+#: ../../library/asyncio-eventloop.rst:872
 msgid ""
 "Example of callback displaying the current date every second. The callback "
 "uses the :meth:`AbstractEventLoop.call_later` method to reschedule itself "
 "during 5 seconds, and then stops the event loop::"
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:870
+#: ../../library/asyncio-eventloop.rst:898
 msgid ""
 "The :ref:`coroutine displaying the current date <asyncio-date-coroutine>` "
 "example uses a :ref:`coroutine <coroutine>`."
 msgstr ":ref:`現在の日時を表示するコルーチン <asyncio-date-coroutine>` の例は :ref:`コルーチン<coroutine>` を使用しています。"
 
-#: ../../library/asyncio-eventloop.rst:878
+#: ../../library/asyncio-eventloop.rst:906
 msgid "Watch a file descriptor for read events"
 msgstr "読み込みイベント用ファイル記述子の監視"
 
-#: ../../library/asyncio-eventloop.rst:880
+#: ../../library/asyncio-eventloop.rst:908
 msgid ""
 "Wait until a file descriptor received some data using the "
 ":meth:`AbstractEventLoop.add_reader` method and then close the event loop::"
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:917
+#: ../../library/asyncio-eventloop.rst:945
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio-register-socket>` example uses a low-level protocol created by the "
 ":meth:`AbstractEventLoop.create_connection` method."
 msgstr ":ref:`プロトコルを使ってデータを待つオープンソケットの登録 <asyncio-register-socket>` の例では :meth:`AbstractEventLoop.create_connection` メソッドによって作成された低レベルプロトコルを使用しています。"
 
-#: ../../library/asyncio-eventloop.rst:921
+#: ../../library/asyncio-eventloop.rst:949
 msgid ""
 "The :ref:`register an open socket to wait for data using streams <asyncio-"
 "register-socket-streams>` example uses high-level streams created by the "
 ":func:`open_connection` function in a coroutine."
 msgstr ":ref:`ストリームを使ってデータを待つオープンソケットの登録 <asyncio-register-socket-streams>` の例ではコルーチンの :func:`open_connection` 関数によって作成された高水準のストリームを使用しています。"
 
-#: ../../library/asyncio-eventloop.rst:927
+#: ../../library/asyncio-eventloop.rst:955
 msgid "Set signal handlers for SIGINT and SIGTERM"
 msgstr "SIGINT および SIGTERM 用のシグナルハンドラーの設定"
 
-#: ../../library/asyncio-eventloop.rst:929
+#: ../../library/asyncio-eventloop.rst:957
 msgid ""
 "Register handlers for signals :py:data:`SIGINT` and :py:data:`SIGTERM` using"
 " the :meth:`AbstractEventLoop.add_signal_handler` method::"
 msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:953
+#: ../../library/asyncio-eventloop.rst:981
 msgid "This example only works on UNIX."
 msgstr "この例は UNIX でのみ動きます。"

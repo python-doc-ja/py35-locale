@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:20+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:41+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,17 +118,19 @@ msgid ""
 msgstr "*pattern* にマッチする *names* のリストの部分集合を返します。``[n for n in names if fnmatch(n, pattern)]`` と同じですが、もっと効率よく実装しています。"
 
 #: ../../library/fnmatch.rst:77
-msgid "Return the shell-style *pattern* converted to a regular expression."
-msgstr "シェルスタイルの *pattern* を、正規表現に変換して返します。"
+msgid ""
+"Return the shell-style *pattern* converted to a regular expression for using"
+" with :func:`re.match`."
+msgstr ""
 
-#: ../../library/fnmatch.rst:79
+#: ../../library/fnmatch.rst:80
 msgid "Example:"
 msgstr "例:"
 
-#: ../../library/fnmatch.rst:93
+#: ../../library/fnmatch.rst:94
 msgid "Module :mod:`glob`"
 msgstr ":mod:`glob` モジュール"
 
-#: ../../library/fnmatch.rst:94
+#: ../../library/fnmatch.rst:95
 msgid "Unix shell-style path expansion."
 msgstr "Unix シェル形式のパス展開。"

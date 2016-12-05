@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:36+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,10 +169,10 @@ msgstr "開いているファイルオブジェクトを指定した場合、\n�
 
 #: ../../library/zipapp.rst:124
 msgid ""
-"If the target is omitted (or None), the source must be a directory and the "
-"target will be a file with the same name as the source, with a ``.pyz`` "
+"If the target is omitted (or ``None``), the source must be a directory and "
+"the target will be a file with the same name as the source, with a ``.pyz`` "
 "extension added."
-msgstr "target を指定しない場合、 source は必ずディレクトリであり、\ntarget は source のファイル名に ``.pyz`` 拡張子を付与したファイル名となります。"
+msgstr ""
 
 #: ../../library/zipapp.rst:128
 msgid ""

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-30 02:36+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2016-12-05 08:38+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,18 +82,18 @@ msgstr "これは、下で並べられている関数の多くのものをまと
 
 #: ../../library/dis.rst:59 ../../library/dis.rst:200
 msgid ""
-"If *first_line* is not None, it indicates the line number that should be "
-"reported for the first source line in the disassembled code.  Otherwise, the"
-" source line information (if any) is taken directly from the disassembled "
-"code object."
-msgstr "*first_line* が None でない場合は、それを逆アセンブルしたコードのソースの最初の行に表示する行番号とします。\nそうでない場合は、ソースの行の情報 (もしあれば) を逆アセンブルされたコードオブジェクトから直接取得します。"
+"If *first_line* is not ``None``, it indicates the line number that should be"
+" reported for the first source line in the disassembled code.  Otherwise, "
+"the source line information (if any) is taken directly from the disassembled"
+" code object."
+msgstr ""
 
 #: ../../library/dis.rst:64
 msgid ""
-"If *current_offset* is not None, it refers to an instruction offset in the "
-"disassembled code. Setting this means :meth:`.dis` will display a \"current "
-"instruction\" marker against the specified opcode."
-msgstr "*current_offset* が None でない場合は、逆アセンブルされたコードでのあるインストラクションのオフセット位置を示します。\nこれを設定すると、 :meth:`.dis` の出力において、指定された命令コード (opcode) に \"現在の命令 (instruction)\" を表す印が表示されます。"
+"If *current_offset* is not ``None``, it refers to an instruction offset in "
+"the disassembled code. Setting this means :meth:`.dis` will display a "
+"\"current instruction\" marker against the specified opcode."
+msgstr ""
 
 #: ../../library/dis.rst:70
 msgid ""
@@ -291,8 +291,8 @@ msgid "human readable name for operation"
 msgstr "人間が読むための命令名"
 
 #: ../../library/dis.rst:252
-msgid "numeric argument to operation (if any), otherwise None"
-msgstr "(ある場合は) 命令の数値引数、無ければ None"
+msgid "numeric argument to operation (if any), otherwise ``None``"
+msgstr ""
 
 #: ../../library/dis.rst:257
 msgid "resolved arg value (if known), otherwise same as arg"
@@ -307,8 +307,8 @@ msgid "start index of operation within bytecode sequence"
 msgstr "バイトコード列の中での命令の開始位置"
 
 #: ../../library/dis.rst:272
-msgid "line started by this opcode (if any), otherwise None"
-msgstr "(ある場合は) この命令コードが始まる行、無ければ None"
+msgid "line started by this opcode (if any), otherwise ``None``"
+msgstr ""
 
 #: ../../library/dis.rst:277
 msgid "``True`` if other code jumps to here, otherwise ``False``"

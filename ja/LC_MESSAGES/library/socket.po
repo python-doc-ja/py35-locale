@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:22+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:43+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1436,8 +1436,8 @@ msgstr ":meth:`read` メソッドと :meth:`write` メソッドは存在しま�
 #: ../../library/socket.rst:1369
 msgid ""
 "Socket objects also have these (read-only) attributes that correspond to the"
-" values given to the :class:`socket` constructor."
-msgstr "ソケットオブジェクトには以下の :class:`socket` コンストラクタに渡された値に対応した(読み出し専用)属性があります。"
+" values given to the :class:`~socket.socket` constructor."
+msgstr ""
 
 #: ../../library/socket.rst:1375
 msgid "The socket family."

@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:35+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1041,8 +1041,8 @@ msgid ""
 msgstr "*first* と *second* が同じオブジェクトであること（そうでないこと）をテストします。"
 
 #: ../../library/unittest.rst:871
-msgid "Test that *expr* is (or is not) None."
-msgstr "*expr* が None であること（そうでないこと）をテストします。"
+msgid "Test that *expr* is (or is not) ``None``."
+msgstr ""
 
 #: ../../library/unittest.rst:879
 msgid "Test that *first* is (or is not) in *second*."
@@ -1563,28 +1563,25 @@ msgstr ":meth:`test` メソッドが送出する例外を指定するクラス�
 
 #: ../../library/unittest.rst:1319
 msgid ""
-"If set to ``True`` then any explicit failure message you pass in to the "
-":ref:`assert methods <assert-methods>` will be appended to the end of the "
-"normal failure message.  The normal messages contain useful information "
-"about the objects involved, for example the message from assertEqual shows "
-"you the repr of the two unequal objects. Setting this attribute to ``True`` "
-"allows you to have a custom error message in addition to the normal one."
-msgstr "この属性に ``True`` が設定された場合、 :ref:`assert methods <assert-methods>` で指定したすべての明示的な失敗メッセージが、通常の失敗メッセージに追加されます。通常の失敗メッセージには、オブジェクトに関する有用な情報が含まれています。例えば、 assertEqual は異なるオブジェクトの repr を表示します。この属性を ``True`` にすることで、カスタマイズしたエラーメッセージを通常のメッセージに追加することができます。"
+"This class attribute determines what happens when a custom failure message "
+"is passed as the msg argument to an assertXYY call that fails. ``True`` is "
+"the default value. In this case, the custom message is appended to the end "
+"of the standard failure message. When set to ``False``, the custom message "
+"replaces the standard message."
+msgstr ""
 
-#: ../../library/unittest.rst:1327
+#: ../../library/unittest.rst:1325
 msgid ""
-"This attribute defaults to ``True``. If set to False then a custom message "
-"passed to an assert method will silence the normal message."
-msgstr "この属性はデフォルトで ``True`` です。False に設定すると、カスタムメッセージが渡されても表示されません。"
+"The class setting can be overridden in individual test methods by assigning "
+"an instance attribute, self.longMessage, to ``True`` or ``False`` before "
+"calling the assert methods."
+msgstr ""
 
-#: ../../library/unittest.rst:1330
-msgid ""
-"The class setting can be overridden in individual tests by assigning an "
-"instance attribute to ``True`` or ``False`` before calling the assert "
-"methods."
-msgstr "アサートメソッドを呼び出す前に、インスタンス属性として ``True`` または ``False`` を指定することで、この設定をオーバーライドすることができます。"
+#: ../../library/unittest.rst:1329
+msgid "The class setting gets reset before each test call."
+msgstr ""
 
-#: ../../library/unittest.rst:1338
+#: ../../library/unittest.rst:1336
 msgid ""
 "This attribute controls the maximum length of diffs output by assert methods"
 " that report diffs on failure. It defaults to 80*8 characters. Assert "
@@ -1593,51 +1590,52 @@ msgid ""
 ":meth:`assertDictEqual` and :meth:`assertMultiLineEqual`."
 msgstr "この属性は、アサーションメソッドが失敗をレポートする時に表示する差分の長さをコントロールします。デフォルトは 80*8 文字です。この属性が影響するメソッドは、 :meth:`assertSequenceEqual` （およびこのメソッドに委譲するシーケンス比較メソッド）、 :meth:`assertDictEqual` と :meth:`assertMultiLineEqual` です。"
 
-#: ../../library/unittest.rst:1345
+#: ../../library/unittest.rst:1343
 msgid ""
-"Setting ``maxDiff`` to None means that there is no maximum length of diffs."
-msgstr "``maxDiff`` に ``None`` を指定すると差分表示の上限がなくなります。"
+"Setting ``maxDiff`` to ``None`` means that there is no maximum length of "
+"diffs."
+msgstr ""
 
-#: ../../library/unittest.rst:1351
+#: ../../library/unittest.rst:1349
 msgid ""
 "Testing frameworks can use the following methods to collect information on "
 "the test:"
 msgstr "テストフレームワークは、テスト情報を収集するために以下のメソッドを使用します:"
 
-#: ../../library/unittest.rst:1357
+#: ../../library/unittest.rst:1355
 msgid ""
 "Return the number of tests represented by this test object.  For "
 ":class:`TestCase` instances, this will always be ``1``."
 msgstr "テストオブジェクトに含まれるテストの数を返します。 :class:`TestCase` インスタンスは常に ``1`` を返します。"
 
-#: ../../library/unittest.rst:1363
+#: ../../library/unittest.rst:1361
 msgid ""
 "Return an instance of the test result class that should be used for this "
 "test case class (if no other result instance is provided to the :meth:`run` "
 "method)."
 msgstr "このテストケースクラスで使われるテスト結果クラスのインスタンスを (もし :meth:`run` メソッドに他の結果インスタンスが提供されないならば) 返します。"
 
-#: ../../library/unittest.rst:1367
+#: ../../library/unittest.rst:1365
 msgid ""
 "For :class:`TestCase` instances, this will always be an instance of "
 ":class:`TestResult`; subclasses of :class:`TestCase` should override this as"
 " necessary."
 msgstr ":class:`TestCase` インスタンスに対しては、いつも :class:`TestResult` のインスタンスですので、 :class:`TestCase` のサブクラスでは必要に応じてこのメソッドをオーバライドしてください。"
 
-#: ../../library/unittest.rst:1374
+#: ../../library/unittest.rst:1372
 msgid ""
 "Return a string identifying the specific test case.  This is usually the "
 "full name of the test method, including the module and class name."
 msgstr "テストケースを特定する文字列を返します。通常、*id* はモジュール名・クラス名を含む、テストメソッドのフルネームを指定します。"
 
-#: ../../library/unittest.rst:1380
+#: ../../library/unittest.rst:1378
 msgid ""
 "Returns a description of the test, or ``None`` if no description has been "
 "provided.  The default implementation of this method returns the first line "
 "of the test method's docstring, if available, or ``None``."
 msgstr "テストの説明を一行分、または説明がない場合には ``None`` を返します。デフォルトでは、テストメソッドの docstring の先頭の一行、または ``None`` を返します。"
 
-#: ../../library/unittest.rst:1385
+#: ../../library/unittest.rst:1383
 msgid ""
 "In 3.1 this was changed to add the test name to the short description even "
 "in the presence of a docstring.  This caused compatibility issues with "
@@ -1645,7 +1643,7 @@ msgid ""
 ":class:`TextTestResult` in Python 3.2."
 msgstr "3.1で docstring があったとしても、返される短い説明文字列にテスト名が付けられるようになりました。\nこの変更によって unittest 拡張に互換性の問題が発生し、 Python 3.2 でテスト名が追加される場所は :class:`TextTestResult` へ移動しました。"
 
-#: ../../library/unittest.rst:1394
+#: ../../library/unittest.rst:1392
 msgid ""
 "Add a function to be called after :meth:`tearDown` to cleanup resources used"
 " during the test. Functions will be called in reverse order to the order "
@@ -1653,32 +1651,32 @@ msgid ""
 "arguments passed into :meth:`addCleanup` when they are added."
 msgstr ":meth:`tearDown` の後に呼び出される関数を追加します。この関数はリソースのクリーンアップのために使用します。追加された関数は、追加された順と逆の順番で呼び出されます（LIFO）。 :meth:`addCleanup` に渡された引数とキーワード引数が追加された関数にも渡されます。"
 
-#: ../../library/unittest.rst:1400
+#: ../../library/unittest.rst:1398
 msgid ""
 "If :meth:`setUp` fails, meaning that :meth:`tearDown` is not called, then "
 "any cleanup functions added will still be called."
 msgstr ":meth:`setUp` が失敗した場合、つまり :meth:`tearDown` が呼ばれなかった場合でも、追加されたクリーンアップ関数は呼び出されます。"
 
-#: ../../library/unittest.rst:1408
+#: ../../library/unittest.rst:1406
 msgid ""
 "This method is called unconditionally after :meth:`tearDown`, or after "
 ":meth:`setUp` if :meth:`setUp` raises an exception."
 msgstr "このメソッドは、 :meth:`tearDown` の後、もしくは、 :meth:`setUp` が例外を投げた場合は :meth:`setUp` の後に、無条件で呼ばれます。"
 
-#: ../../library/unittest.rst:1411
+#: ../../library/unittest.rst:1409
 msgid ""
 "It is responsible for calling all the cleanup functions added by "
 ":meth:`addCleanup`. If you need cleanup functions to be called *prior* to "
 ":meth:`tearDown` then you can call :meth:`doCleanups` yourself."
 msgstr "このメソッドは、 :meth:`addCleanup` で追加された関数を呼び出す責務を担います。もし、クリーンアップ関数を :meth:`tearDown` より前に呼び出す必要がある場合には、 :meth:`doCleanups` を明示的に呼び出してください。"
 
-#: ../../library/unittest.rst:1416
+#: ../../library/unittest.rst:1414
 msgid ""
 ":meth:`doCleanups` pops methods off the stack of cleanup functions one at a "
 "time, so it can be called at any time."
 msgstr ":meth:`doCleanups` は、どこで呼び出されても、クリーンアップ関数をスタックから削除して実行します。"
 
-#: ../../library/unittest.rst:1424
+#: ../../library/unittest.rst:1422
 msgid ""
 "This class implements the portion of the :class:`TestCase` interface which "
 "allows the test runner to drive the test, but does not provide the methods "
@@ -1687,136 +1685,136 @@ msgid ""
 ":mod:`unittest`-based test framework."
 msgstr "このクラスでは :class:`TestCase` インターフェースの内、テストランナーがテストを実行するためのインターフェースだけを実装しており、テスト結果のチェックやレポートに関するメソッドは実装していません。既存のテストコードを :mod:`unittest` によるテストフレームワークに組み込むために使用します。"
 
-#: ../../library/unittest.rst:1434
+#: ../../library/unittest.rst:1432
 msgid "Deprecated aliases"
 msgstr "非推奨のエイリアス"
 
-#: ../../library/unittest.rst:1436
+#: ../../library/unittest.rst:1434
 msgid ""
 "For historical reasons, some of the :class:`TestCase` methods had one or "
 "more aliases that are now deprecated.  The following table lists the correct"
 " names along with their deprecated aliases:"
 msgstr "歴史的な経緯で、 :class:`TestCase` のいくつかのエイリアスは非推奨となりました。以下の表に、非推奨のエイリアスをまとめます:"
 
-#: ../../library/unittest.rst:1441
+#: ../../library/unittest.rst:1439
 msgid "Method Name"
 msgstr "メソッド名"
 
-#: ../../library/unittest.rst:1441 ../../library/unittest.rst:1441
+#: ../../library/unittest.rst:1439 ../../library/unittest.rst:1439
 msgid "Deprecated alias"
 msgstr "非推奨のエイリアス"
 
-#: ../../library/unittest.rst:1443
+#: ../../library/unittest.rst:1441
 msgid ":meth:`.assertEqual`"
 msgstr ":meth:`.assertEqual`"
 
-#: ../../library/unittest.rst:1443
+#: ../../library/unittest.rst:1441
 msgid "failUnlessEqual"
 msgstr "failUnlessEqual"
 
-#: ../../library/unittest.rst:1443
+#: ../../library/unittest.rst:1441
 msgid "assertEquals"
 msgstr "assertEquals"
 
-#: ../../library/unittest.rst:1444
+#: ../../library/unittest.rst:1442
 msgid ":meth:`.assertNotEqual`"
 msgstr ":meth:`.assertNotEqual`"
 
-#: ../../library/unittest.rst:1444
+#: ../../library/unittest.rst:1442
 msgid "failIfEqual"
 msgstr "failIfEqual"
 
-#: ../../library/unittest.rst:1444
+#: ../../library/unittest.rst:1442
 msgid "assertNotEquals"
 msgstr "assertNotEquals"
 
-#: ../../library/unittest.rst:1445
+#: ../../library/unittest.rst:1443
 msgid ":meth:`.assertTrue`"
 msgstr ":meth:`.assertTrue`"
 
-#: ../../library/unittest.rst:1445
+#: ../../library/unittest.rst:1443
 msgid "failUnless"
 msgstr "failUnless"
 
-#: ../../library/unittest.rst:1445
+#: ../../library/unittest.rst:1443
 msgid "assert\\_"
 msgstr "assert\\_"
 
-#: ../../library/unittest.rst:1446
+#: ../../library/unittest.rst:1444
 msgid ":meth:`.assertFalse`"
 msgstr ":meth:`.assertFalse`"
 
-#: ../../library/unittest.rst:1446
+#: ../../library/unittest.rst:1444
 msgid "failIf"
 msgstr "failIf"
 
-#: ../../library/unittest.rst:1447
+#: ../../library/unittest.rst:1445
 msgid ":meth:`.assertRaises`"
 msgstr ":meth:`.assertRaises`"
 
-#: ../../library/unittest.rst:1447
+#: ../../library/unittest.rst:1445
 msgid "failUnlessRaises"
 msgstr "failUnlessRaises"
 
-#: ../../library/unittest.rst:1448
+#: ../../library/unittest.rst:1446
 msgid ":meth:`.assertAlmostEqual`"
 msgstr ":meth:`.assertAlmostEqual`"
 
-#: ../../library/unittest.rst:1448
+#: ../../library/unittest.rst:1446
 msgid "failUnlessAlmostEqual"
 msgstr "failUnlessAlmostEqual"
 
-#: ../../library/unittest.rst:1448
+#: ../../library/unittest.rst:1446
 msgid "assertAlmostEquals"
 msgstr "assertAlmostEquals"
 
-#: ../../library/unittest.rst:1449
+#: ../../library/unittest.rst:1447
 msgid ":meth:`.assertNotAlmostEqual`"
 msgstr ":meth:`.assertNotAlmostEqual`"
 
-#: ../../library/unittest.rst:1449
+#: ../../library/unittest.rst:1447
 msgid "failIfAlmostEqual"
 msgstr "failIfAlmostEqual"
 
-#: ../../library/unittest.rst:1449
+#: ../../library/unittest.rst:1447
 msgid "assertNotAlmostEquals"
 msgstr "assertNotAlmostEquals"
 
-#: ../../library/unittest.rst:1450
+#: ../../library/unittest.rst:1448
 msgid ":meth:`.assertRegex`"
 msgstr ":meth:`.assertRegex`"
 
-#: ../../library/unittest.rst:1450
+#: ../../library/unittest.rst:1448
 msgid "assertRegexpMatches"
 msgstr "assertRegexpMatches"
 
-#: ../../library/unittest.rst:1451
+#: ../../library/unittest.rst:1449
 msgid ":meth:`.assertRaisesRegex`"
 msgstr ":meth:`.assertRaisesRegex`"
 
-#: ../../library/unittest.rst:1451
+#: ../../library/unittest.rst:1449
 msgid "assertRaisesRegexp"
 msgstr "assertRaisesRegexp"
 
-#: ../../library/unittest.rst:1454
+#: ../../library/unittest.rst:1452
 msgid "the fail* aliases listed in the second column."
 msgstr "2列目に記載されている fail* エイリアス。"
 
-#: ../../library/unittest.rst:1456
+#: ../../library/unittest.rst:1454
 msgid "the assert* aliases listed in the third column."
 msgstr "3列目に記載されている assert* エイリアス。"
 
-#: ../../library/unittest.rst:1458
+#: ../../library/unittest.rst:1456
 msgid ""
 "``assertRegexpMatches`` and ``assertRaisesRegexp`` have been renamed to "
 ":meth:`.assertRegex` and :meth:`.assertRaisesRegex`"
 msgstr "``assertRegexpMatches`` と ``assertRaisesRegexp`` は :meth:`.assertRegex` と :meth:`.assertRaisesRegex` にリネームされました"
 
-#: ../../library/unittest.rst:1466
+#: ../../library/unittest.rst:1464
 msgid "Grouping tests"
 msgstr "テストのグループ化"
 
-#: ../../library/unittest.rst:1470
+#: ../../library/unittest.rst:1468
 msgid ""
 "This class represents an aggregation of individual tests cases and test "
 "suites. The class presents the interface needed by the test runner to allow "
@@ -1824,7 +1822,7 @@ msgid ""
 "is the same as iterating over the suite, running each test individually."
 msgstr "このクラスは、個々のテストケースやテストスイートの集約を示します。通常のテストケースと同じようにテストランナーで実行するためのインタフェースを備えています。 :class:`TestSuite` インスタンスを実行することはスイートの繰り返しを使って個々のテストを実行することと同じです。"
 
-#: ../../library/unittest.rst:1475
+#: ../../library/unittest.rst:1473
 msgid ""
 "If *tests* is given, it must be an iterable of individual test cases or "
 "other test suites that will be used to build the suite initially. Additional"
@@ -1832,7 +1830,7 @@ msgid ""
 "on."
 msgstr "引数 *tests* が指定された場合、それはテストケースに亘る繰り返し可能オブジェクトまたは内部でスイートを組み立てるための他のテストスイートでなければなりません。後からテストケースやスイートをコレクションに付け加えるためのメソッドも提供されています。"
 
-#: ../../library/unittest.rst:1479
+#: ../../library/unittest.rst:1477
 msgid ""
 ":class:`TestSuite` objects behave much like :class:`TestCase` objects, "
 "except they do not actually implement a test.  Instead, they are used to "
@@ -1841,28 +1839,28 @@ msgid ""
 "instances:"
 msgstr ":class:`TestSuite` は :class:`TestCase` オブジェクトのように振る舞います。違いは、スイートにはテストを実装しない点にあります。代わりに、テストをまとめてグループ化して、同時に実行します。 :class:`TestSuite` のインスタンスにテスト追加するためのメソッドが用意されています:"
 
-#: ../../library/unittest.rst:1487
+#: ../../library/unittest.rst:1485
 msgid "Add a :class:`TestCase` or :class:`TestSuite` to the suite."
 msgstr ":class:`TestCase` 又は :class:`TestSuite` のインスタンスをスイートに追加します。"
 
-#: ../../library/unittest.rst:1492
+#: ../../library/unittest.rst:1490
 msgid ""
 "Add all the tests from an iterable of :class:`TestCase` and "
 ":class:`TestSuite` instances to this test suite."
 msgstr "イテラブル *tests* に含まれる全ての :class:`TestCase` 又は :class:`TestSuite` のインスタンスをスイートに追加します。"
 
-#: ../../library/unittest.rst:1495
+#: ../../library/unittest.rst:1493
 msgid ""
 "This is equivalent to iterating over *tests*, calling :meth:`addTest` for "
 "each element."
 msgstr "このメソッドは *tests* 上のイテレーションをしながらそれぞれの要素に :meth:`addTest` を呼び出すのと等価です。"
 
-#: ../../library/unittest.rst:1498
+#: ../../library/unittest.rst:1496
 msgid ""
 ":class:`TestSuite` shares the following methods with :class:`TestCase`:"
 msgstr ":class:`TestSuite` クラスは :class:`TestCase` と以下のメソッドを共有します:"
 
-#: ../../library/unittest.rst:1503
+#: ../../library/unittest.rst:1501
 msgid ""
 "Run the tests associated with this suite, collecting the result into the "
 "test result object passed as *result*.  Note that unlike "
@@ -1870,20 +1868,20 @@ msgid ""
 " passed in."
 msgstr "スイート内のテストを実行し、結果を *result* で指定した結果オブジェクトに収集します。 :meth:`TestCase.run` と異なり、 :meth:`TestSuite.run` では必ず結果オブジェクトを指定する必要があります。"
 
-#: ../../library/unittest.rst:1511
+#: ../../library/unittest.rst:1509
 msgid ""
 "Run the tests associated with this suite without collecting the result. This"
 " allows exceptions raised by the test to be propagated to the caller and can"
 " be used to support running tests under a debugger."
 msgstr "このスイートに関連づけられたテストを結果を収集せずに実行します。これによりテストで送出された例外は呼び出し元に伝わるようになり、デバッガの下でのテスト実行をサポートできるようになります。"
 
-#: ../../library/unittest.rst:1518
+#: ../../library/unittest.rst:1516
 msgid ""
 "Return the number of tests represented by this test object, including all "
 "individual tests and sub-suites."
 msgstr "このテストオブジェクトによって表現されるテストの数を返します。これには個別のテストと下位のスイートも含まれます。"
 
-#: ../../library/unittest.rst:1524
+#: ../../library/unittest.rst:1522
 msgid ""
 "Tests grouped by a :class:`TestSuite` are always accessed by iteration. "
 "Subclasses can lazily provide tests by overriding :meth:`__iter__`. Note "
@@ -1895,32 +1893,32 @@ msgid ""
 "overrides :meth:`TestSuite._removeTestAtIndex` to preserve test references."
 msgstr ":class:`TestSuite` でグループ化されたテストは反復アクセスできます。\nサブクラスは :meth:`__iter__` をオーバーライドすることで、遅延処理でテストを提供できます。\n1つのスイート内でこのメソッドは何度も呼ばれる可能性があることに注意してください (例えば、テスト数のカウントや等価性の比較)。\nそのため、 :meth:`TestSuite.run` を実行する前に反復アクセスを何度繰り返しても同じテスト群を返すようにしなければなりません。\n呼び出し側が :meth:`TestSuite._removeTestAtIndex` をオーバーライドしたサブクラスを使いテストへの参照を保存していない限り、 :meth:`TestSuite.run` を実行した後はこのメソッドが返すテスト群を信頼すべきではありません。"
 
-#: ../../library/unittest.rst:1534
+#: ../../library/unittest.rst:1532
 msgid ""
 "In earlier versions the :class:`TestSuite` accessed tests directly rather "
 "than through iteration, so overriding :meth:`__iter__` wasn't sufficient for"
 " providing tests."
 msgstr "以前のバージョンでは :class:`TestSuite` はイテレータではなく、直接テストにアクセスしていました。そのため、 :meth:`__iter__` をオーバーラードしてもテストにアクセスできませんでした。"
 
-#: ../../library/unittest.rst:1539
+#: ../../library/unittest.rst:1537
 msgid ""
 "In earlier versions the :class:`TestSuite` held references to each "
 ":class:`TestCase` after :meth:`TestSuite.run`. Subclasses can restore that "
 "behavior by overriding :meth:`TestSuite._removeTestAtIndex`."
 msgstr "以前のバージョンでは、 :meth:`TestSuite.run` の実行後は :class:`TestSuite` が各 :class:`TestCase` への参照を保持していました。\nサブクラスで :meth:`TestSuite._removeTestAtIndex` をオーバーライドすることでこの振る舞いを復元できます。"
 
-#: ../../library/unittest.rst:1544
+#: ../../library/unittest.rst:1542
 msgid ""
 "In the typical usage of a :class:`TestSuite` object, the :meth:`run` method "
 "is invoked by a :class:`TestRunner` rather than by the end-user test "
 "harness."
 msgstr "通常、 :class:`TestSuite` の :meth:`run` メソッドは :class:`TestRunner` が起動するため、ユーザが直接実行する必要はありません。"
 
-#: ../../library/unittest.rst:1549
+#: ../../library/unittest.rst:1547
 msgid "Loading and running tests"
 msgstr "テストのロードと起動"
 
-#: ../../library/unittest.rst:1553
+#: ../../library/unittest.rst:1551
 msgid ""
 "The :class:`TestLoader` class is used to create test suites from classes and"
 " modules.  Normally, there is no need to create an instance of this class; "
@@ -1929,11 +1927,11 @@ msgid ""
 "allows customization of some configurable properties."
 msgstr ":class:`TestLoader` クラスはクラスとモジュールからテストスイートを生成します。通常、このクラスのインスタンスを明示的に生成する必要はありません。 :mod:`unittest` モジュールの :data:`unittest.defaultTestLoader` を共用インスタンスとして使用することができます。 しかし、このクラスのサブクラスやインスタンスで、属性をカスタマイズすることができます。"
 
-#: ../../library/unittest.rst:1559
+#: ../../library/unittest.rst:1557
 msgid ":class:`TestLoader` objects have the following attributes:"
 msgstr ":class:`TestLoader` オブジェクトには以下の属性があります:"
 
-#: ../../library/unittest.rst:1564
+#: ../../library/unittest.rst:1562
 msgid ""
 "A list of the non-fatal errors encountered while loading tests. Not reset by"
 " the loader at any point. Fatal errors are signalled by the relevant a "
@@ -1941,17 +1939,17 @@ msgid ""
 "indicated by a synthetic test that will raise the original error when run."
 msgstr "テストの読み込み中に起きた致命的でないエラーのリストです。\nどの時点でもローダーからリセットされることはありません。\n致命的なエラーは適切なメソッドが例外を送出して、呼び出し元に通知します。\n致命的でないエラーも、実行したときのエラーを総合テストが通知してくれます。"
 
-#: ../../library/unittest.rst:1573
+#: ../../library/unittest.rst:1571
 msgid ":class:`TestLoader` objects have the following methods:"
 msgstr ":class:`TestLoader` のオブジェクトには以下のメソッドがあります:"
 
-#: ../../library/unittest.rst:1578
+#: ../../library/unittest.rst:1576
 msgid ""
 "Return a suite of all tests cases contained in the :class:`TestCase`\\ "
 "-derived :class:`testCaseClass`."
 msgstr ":class:`TestCase` の派生クラス :class:`testCaseClass` に含まれる全テストケースのスイートを返します。"
 
-#: ../../library/unittest.rst:1581
+#: ../../library/unittest.rst:1579
 msgid ""
 "A test case instance is created for each method named by "
 ":meth:`getTestCaseNames`. By default these are the method names beginning "
@@ -1960,14 +1958,14 @@ msgid ""
 "that method instead."
 msgstr ":meth:`getTestCaseNames` で指定されたメソッドに対し、テストケースインスタンスが作成されます。\nデフォルトでは ``test`` で始まる名前のメソッド群です。\n:meth:`getTestCaseNames` がメソッド名を返さなかったが、 :meth:`runTest` メソッドが実装されている場合は、そのメソッドに対するテストケースが代わりに作成されます。"
 
-#: ../../library/unittest.rst:1590
+#: ../../library/unittest.rst:1588
 msgid ""
 "Return a suite of all tests cases contained in the given module. This method"
 " searches *module* for classes derived from :class:`TestCase` and creates an"
 " instance of the class for each test method defined for the class."
 msgstr "指定したモジュールに含まれる全テストケースのスイートを返します。このメソッドは *module* 内の :class:`TestCase` 派生クラスを検索し、見つかったクラスのテストメソッドごとにクラスのインスタンスを作成します。"
 
-#: ../../library/unittest.rst:1597
+#: ../../library/unittest.rst:1595
 msgid ""
 "While using a hierarchy of :class:`TestCase`\\ -derived classes can be "
 "convenient in sharing fixtures and helper functions, defining test methods "
@@ -1976,7 +1974,7 @@ msgid ""
 "fixtures are different and defined in subclasses."
 msgstr ":class:`TestCase` クラスを基底クラスとしてクラス階層を構築するとテストフィクスチャや補助的な関数をうまく共用することができますが、基底クラスに直接インスタンス化できないテストメソッドがあると、この :meth:`loadTestsFromModule` を使うことができません。この場合でも、 fixture が全て別々で定義がサブクラスにある場合は使用することができます。"
 
-#: ../../library/unittest.rst:1603
+#: ../../library/unittest.rst:1601
 msgid ""
 "If a module provides a ``load_tests`` function it will be called to load the"
 " tests. This allows modules to customize test loading. This is the "
@@ -1984,11 +1982,11 @@ msgid ""
 "argument to ``load_tests``."
 msgstr "モジュールが ``load_tests`` 関数を用意している場合、この関数がテストの読み込みに使われます。\nこれによりテストの読み込み処理がカスタマイズできます。\nこれが `load_tests プロトコル`_ です。\n*pattern* 引数は ``load_tests`` に第3引数として渡されます。"
 
-#: ../../library/unittest.rst:1608
+#: ../../library/unittest.rst:1606
 msgid "Support for ``load_tests`` added."
 msgstr "``load_tests`` のサポートが追加されました。"
 
-#: ../../library/unittest.rst:1611
+#: ../../library/unittest.rst:1609
 msgid ""
 "The undocumented and unofficial *use_load_tests* default argument is "
 "deprecated and ignored, although it is still accepted for backward "
@@ -1996,11 +1994,11 @@ msgid ""
 "*pattern* which is passed to ``load_tests`` as the third argument."
 msgstr "ドキュメントにない、非公式の *use_load_tests* デフォルト引数は非推奨で、後方互換性のために残されていますが無視されます。\nまた、このメソッドはキーワード専用引数 *pattern* を受け取るようになりました。これは ``load_tests`` の第三引数に渡されます。"
 
-#: ../../library/unittest.rst:1620
+#: ../../library/unittest.rst:1618
 msgid "Return a suite of all tests cases given a string specifier."
 msgstr "文字列で指定される全テストケースを含むスイートを返します。"
 
-#: ../../library/unittest.rst:1622
+#: ../../library/unittest.rst:1620
 msgid ""
 "The specifier *name* is a \"dotted name\" that may resolve either to a "
 "module, a test case class, a test method within a test case class, a "
@@ -2011,7 +2009,7 @@ msgid ""
 " \"a callable object\"."
 msgstr "*name* には \"ドット修飾名\" でモジュールかテストケースクラス、テストケースクラス内のメソッド、 :class:`TestSuite` インスタンスまたは :class:`TestCase` か :class:`TestSuite` のインスタンスを返す呼び出し可能オブジェクトを指定します。このチェックはここで挙げた順番に行なわれます。すなわち、候補テストケースクラス内のメソッドは「呼び出し可能オブジェクト」としてではなく「テストケースクラス内のメソッド」として拾い出されます。"
 
-#: ../../library/unittest.rst:1630
+#: ../../library/unittest.rst:1628
 msgid ""
 "For example, if you have a module :mod:`SampleTests` containing a "
 ":class:`TestCase`\\ -derived class :class:`SampleTestCase` with three test "
@@ -2024,11 +2022,11 @@ msgid ""
 " imported as a side-effect."
 msgstr "例えば :mod:`SampleTests` モジュールに :class:`TestCase` から派生した :class:`SampleTestCase` クラスがあり、 :class:`SampleTestCase` にはテストメソッド :meth:`test_one` ・ :meth:`test_two` ・ :meth:`test_three` があるとします。この場合、 *name* に ``'SampleTests.SampleTestCase'`` と指定すると、 :class:`SampleTestCase` の三つのテストメソッドを実行するテストスイートが作成されます。 ``'SampleTests.SampleTestCase.test_two'`` と指定すれば、 :meth:`test_two` だけを実行するテストスイートが作成されます。インポートされていないモジュールやパッケージ名を含んだ名前を指定した場合は自動的にインポートされます。"
 
-#: ../../library/unittest.rst:1640
+#: ../../library/unittest.rst:1638
 msgid "The method optionally resolves *name* relative to the given *module*."
 msgstr "また、*module* を指定した場合、*module* 内の *name* を取得します。"
 
-#: ../../library/unittest.rst:1642
+#: ../../library/unittest.rst:1640
 msgid ""
 "If an :exc:`ImportError` or :exc:`AttributeError` occurs while traversing "
 "*name* then a synthetic test that raises that error when run will be "
@@ -2036,20 +2034,20 @@ msgid ""
 "self.errors."
 msgstr "*name* を巡回している間に :exc:`ImportError` か :exc:`AttributeError` が発生した場合、実行するとその例外を発生させるようなテストを合成して返します。それらのエラーは self.errors に集められます。"
 
-#: ../../library/unittest.rst:1651
+#: ../../library/unittest.rst:1649
 msgid ""
 "Similar to :meth:`loadTestsFromName`, but takes a sequence of names rather "
 "than a single name.  The return value is a test suite which supports all the"
 " tests defined for each name."
 msgstr ":meth:`loadTestsFromName` と同じですが、名前を一つだけ指定するのではなく、複数の名前のシーケンスを指定する事ができます。戻り値は *names* 中の名前で指定されるテスト全てを含むテストスイートです。"
 
-#: ../../library/unittest.rst:1658
+#: ../../library/unittest.rst:1656
 msgid ""
 "Return a sorted sequence of method names found within *testCaseClass*; this "
 "should be a subclass of :class:`TestCase`."
 msgstr "*testCaseClass* 中の全てのメソッド名を含むソート済みシーケンスを返します。 *testCaseClass* は :class:`TestCase` のサブクラスでなければなりません。"
 
-#: ../../library/unittest.rst:1664
+#: ../../library/unittest.rst:1662
 msgid ""
 "Find all the test modules by recursing into subdirectories from the "
 "specified start directory, and return a TestSuite object containing them. "
@@ -2058,14 +2056,14 @@ msgid ""
 "Python identifiers) will be loaded."
 msgstr "指定された開始ディレクトリからサブディレクトリに再帰することですべてのテストモジュールを検索し、それらを含む TestSuite オブジェクトを返します。*pattern* にマッチしたテストファイルだけがロードの対象になります。（シェルスタイルのパターンマッチングが使われます。）その中で、インポート可能なもジュール（つまりPythonの識別子として有効であるということです）がロードされます。"
 
-#: ../../library/unittest.rst:1670
+#: ../../library/unittest.rst:1668
 msgid ""
 "All test modules must be importable from the top level of the project. If "
 "the start directory is not the top level directory then the top level "
 "directory must be specified separately."
 msgstr "すべてのテストモジュールはプロジェクトのトップレベルからインポート可能である必要があります。開始ディレクトリがトップレベルディレクトリでない場合は、トップレベルディレクトリが分離できなくてはいけません。"
 
-#: ../../library/unittest.rst:1674
+#: ../../library/unittest.rst:1672
 msgid ""
 "If importing a module fails, for example due to a syntax error, then this "
 "will be recorded as a single error and discovery will continue.  If the "
@@ -2073,7 +2071,7 @@ msgid ""
 "as a skip instead of an error."
 msgstr "シンタックスエラーなどでモジュールのインポートに失敗した場合、エラーが記録され、ディスカバリ自体は続けられます。 import  の失敗が :exc:`SkipTest` 例外が発生したためだった場合は、そのモジュールはエラーではなく skip として記録されます。"
 
-#: ../../library/unittest.rst:1679
+#: ../../library/unittest.rst:1677
 msgid ""
 "If a package (a directory containing a file named :file:`__init__.py`) is "
 "found, the package will be checked for a ``load_tests`` function. If this "
@@ -2083,13 +2081,13 @@ msgid ""
 " itself calls ``loader.discover``."
 msgstr "パッケージ (:file:`__init__.py` という名前のファイルがあるディレクトリ) が見付かった場合、そのパッケージに ``load_tests`` 関数があるかをチェックします。\n関数があった場合、次に ``package.load_tests(loader, tests, pattern)`` が呼ばれます。\nテストの検索の実行では、たとえ load_tests 関数自身が ``loader.discover`` を呼んだとしても、パッケージのチェックは1回のみとなることが保証されています。"
 
-#: ../../library/unittest.rst:1687
+#: ../../library/unittest.rst:1685
 msgid ""
 "If ``load_tests`` exists then discovery does *not* recurse into the package,"
 " ``load_tests`` is responsible for loading all tests in the package."
 msgstr "``load_tests`` が存在して、ディスカバリがパッケージ内を再帰的な検索を続けている途中で *ない* 場合、``load_tests`` はそのパッケージ内の全てのテストをロードする責務を担います。"
 
-#: ../../library/unittest.rst:1691
+#: ../../library/unittest.rst:1689
 msgid ""
 "The pattern is deliberately not stored as a loader attribute so that "
 "packages can continue discovery themselves. *top_level_dir* is stored so "
@@ -2097,11 +2095,11 @@ msgid ""
 "``loader.discover()``."
 msgstr "意図的にパターンはローダの属性として保持されないようになっています。それにより、パッケージが自分自身のディスカバリを続ける事ができます。*top_level_dir* は保持されるため、``load_tests`` はこの引数を ``loader.discover()`` に渡す必要はありません。"
 
-#: ../../library/unittest.rst:1696
+#: ../../library/unittest.rst:1694
 msgid "*start_dir* can be a dotted module name as well as a directory."
 msgstr "*start_dir* はドット付のモジュール名でもディレクトリでも構いません。"
 
-#: ../../library/unittest.rst:1700
+#: ../../library/unittest.rst:1698
 msgid ""
 "Modules that raise :exc:`SkipTest` on import are recorded as skips,   not "
 "errors. Discovery works for :term:`namespace packages <namespace package>`. "
@@ -2110,55 +2108,55 @@ msgid ""
 "name."
 msgstr "インポート時に :exc:`SkipTest` を送出するモジュールはエラーではなくスキップとして記録されます。\n:term:`名前空間パッケージ <namespace package>` も検索対象になります。\nファイルシステムの順序がファイル名に従わないとしても実行順序が一定になるように、パスはインポートする前にソートされます。"
 
-#: ../../library/unittest.rst:1708
+#: ../../library/unittest.rst:1706
 msgid ""
 "Found packages are now checked for ``load_tests`` regardless of whether "
 "their path matches *pattern*, because it is impossible for a package name to"
 " match the default pattern."
 msgstr "パッケージ名がデフォルトのパターンに適合するのは不可能なので、パスが *pattern* に適合するかどうかに関係無く、見付けたパッケージに ``load_tests`` があるかをチェックするようになりました。"
 
-#: ../../library/unittest.rst:1714
+#: ../../library/unittest.rst:1712
 msgid ""
 "The following attributes of a :class:`TestLoader` can be configured either "
 "by subclassing or assignment on an instance:"
 msgstr "以下の属性は、サブクラス化またはインスタンスの属性値を変更して :class:`TestLoader` をカスタマイズする場合に使用します:"
 
-#: ../../library/unittest.rst:1720
+#: ../../library/unittest.rst:1718
 msgid ""
 "String giving the prefix of method names which will be interpreted as test "
 "methods.  The default value is ``'test'``."
 msgstr "テストメソッドの名前と判断されるメソッド名の接頭語を示す文字列。デフォルト値は ``'test'`` です。"
 
-#: ../../library/unittest.rst:1723
+#: ../../library/unittest.rst:1721
 msgid ""
 "This affects :meth:`getTestCaseNames` and all the :meth:`loadTestsFrom\\*` "
 "methods."
 msgstr "この値は :meth:`getTestCaseNames` と全ての :meth:`loadTestsFrom\\*` メソッドに影響を与えます。"
 
-#: ../../library/unittest.rst:1729
+#: ../../library/unittest.rst:1727
 msgid ""
 "Function to be used to compare method names when sorting them in "
 ":meth:`getTestCaseNames` and all the :meth:`loadTestsFrom\\*` methods."
 msgstr ":meth:`getTestCaseNames` および全ての :meth:`loadTestsFrom\\*` メソッドでメソッド名をソートする際に使用する比較関数。"
 
-#: ../../library/unittest.rst:1735
+#: ../../library/unittest.rst:1733
 msgid ""
 "Callable object that constructs a test suite from a list of tests. No "
 "methods on the resulting object are needed.  The default value is the "
 ":class:`TestSuite` class."
 msgstr "テストのリストからテストスイートを構築する呼び出し可能オブジェクト。メソッドを持つ必要はありません。デフォルト値は :class:`TestSuite` です。"
 
-#: ../../library/unittest.rst:1739
+#: ../../library/unittest.rst:1737
 msgid "This affects all the :meth:`loadTestsFrom\\*` methods."
 msgstr "この値は全ての :meth:`loadTestsFrom\\*` メソッドに影響を与えます。"
 
-#: ../../library/unittest.rst:1744
+#: ../../library/unittest.rst:1742
 msgid ""
 "This class is used to compile information about which tests have succeeded "
 "and which have failed."
 msgstr "このクラスはどのテストが成功しどのテストが失敗したかという情報を収集するのに使います。"
 
-#: ../../library/unittest.rst:1747
+#: ../../library/unittest.rst:1745
 msgid ""
 "A :class:`TestResult` object stores the results of a set of tests.  The "
 ":class:`TestCase` and :class:`TestSuite` classes ensure that results are "
@@ -2166,7 +2164,7 @@ msgid ""
 "outcome of tests."
 msgstr ":class:`TestResult` は、複数のテスト結果を記録します。 :class:`TestCase` クラスと :class:`TestSuite` クラスのテスト結果を正しく記録しますので、テスト開発者が独自にテスト結果を管理する処理を開発する必要はありません。"
 
-#: ../../library/unittest.rst:1752
+#: ../../library/unittest.rst:1750
 msgid ""
 "Testing frameworks built on top of :mod:`unittest` may want access to the "
 ":class:`TestResult` object generated by running a set of tests for reporting"
@@ -2174,55 +2172,55 @@ msgid ""
 ":meth:`TestRunner.run` method for this purpose."
 msgstr ":mod:`unittest` を利用したテストフレームワークでは、 :meth:`TestRunner.run` が返す :class:`TestResult` インスタンスを参照し、テスト結果をレポートします。"
 
-#: ../../library/unittest.rst:1757
+#: ../../library/unittest.rst:1755
 msgid ""
 ":class:`TestResult` instances have the following attributes that will be of "
 "interest when inspecting the results of running a set of tests:"
 msgstr ":class:`TestResult` インスタンスの以下の属性は、テストの実行結果を検査する際に使用することができます:"
 
-#: ../../library/unittest.rst:1763
+#: ../../library/unittest.rst:1761
 msgid ""
 "A list containing 2-tuples of :class:`TestCase` instances and strings "
 "holding formatted tracebacks. Each tuple represents a test which raised an "
 "unexpected exception."
 msgstr ":class:`TestCase` と例外のトレースバック情報をフォーマットした文字列の 2 要素タプルからなるリスト。それぞれのタプルは予想外の例外を送出したテストに対応します。"
 
-#: ../../library/unittest.rst:1769
+#: ../../library/unittest.rst:1767
 msgid ""
 "A list containing 2-tuples of :class:`TestCase` instances and strings "
 "holding formatted tracebacks. Each tuple represents a test where a failure "
 "was explicitly signalled using the :meth:`TestCase.assert\\*` methods."
 msgstr ":class:`TestCase` と例外のトレースバック情報をフォーマットした文字列の 2 要素タプルからなるリスト。それぞれのタプルは :meth:`TestCase.assert\\*` メソッドを使って見つけ出した失敗に対応します。"
 
-#: ../../library/unittest.rst:1775
+#: ../../library/unittest.rst:1773
 msgid ""
 "A list containing 2-tuples of :class:`TestCase` instances and strings "
 "holding the reason for skipping the test."
 msgstr ":class:`TestCase` インスタンスとテストをスキップした理由を保持する文字列の2要素タプルからなるリストです。"
 
-#: ../../library/unittest.rst:1782
+#: ../../library/unittest.rst:1780
 msgid ""
 "A list containing 2-tuples of :class:`TestCase` instances and strings "
 "holding formatted tracebacks.  Each tuple represents an expected failure of "
 "the test case."
 msgstr ":class:`TestCase` と例外のトレースバック情報をフォーマット済の文字列の 2 要素タプルからなるリストです。それぞれのタプルは予期された失敗に対応します。"
 
-#: ../../library/unittest.rst:1788
+#: ../../library/unittest.rst:1786
 msgid ""
 "A list containing :class:`TestCase` instances that were marked as expected "
 "failures, but succeeded."
 msgstr "予期された失敗とされていながら成功してしまった :class:`TestCase` のインスタンスのリスト。"
 
-#: ../../library/unittest.rst:1793
+#: ../../library/unittest.rst:1791
 msgid ""
 "Set to ``True`` when the execution of tests should stop by :meth:`stop`."
 msgstr "``True`` が設定されると :meth:`stop` によりテストの実行が停止します。"
 
-#: ../../library/unittest.rst:1797
+#: ../../library/unittest.rst:1795
 msgid "The total number of tests run so far."
 msgstr "これまでに実行したテストの総数です。"
 
-#: ../../library/unittest.rst:1801
+#: ../../library/unittest.rst:1799
 msgid ""
 "If set to true, ``sys.stdout`` and ``sys.stderr`` will be buffered in "
 "between :meth:`startTest` and :meth:`stopTest` being called. Collected "
@@ -2231,29 +2229,29 @@ msgid ""
 "error message."
 msgstr "``True`` が設定されると、 ``sys.stdout`` と ``sys.stderr`` は、 :meth:`startTest` から :meth:`stopTest` が呼ばれるまでの間バッファリングされます。実際に、結果が ``sys.stdout`` と ``sys.stderr`` に出力されるのは、テストが失敗するかエラーが発生した時になります。表示の際には、全ての失敗 / エラーメッセージが表示されます。"
 
-#: ../../library/unittest.rst:1810
+#: ../../library/unittest.rst:1808
 msgid ""
 "If set to true :meth:`stop` will be called on the first failure or error, "
 "halting the test run."
 msgstr "真の場合 :meth:`stop` が始めの失敗もしくはエラーの時に呼び出され、テストの実行が終了します。"
 
-#: ../../library/unittest.rst:1817
+#: ../../library/unittest.rst:1815
 msgid "If set to true then local variables will be shown in tracebacks."
 msgstr "真の場合、局所変数がトレースバックに表示されます。"
 
-#: ../../library/unittest.rst:1823
+#: ../../library/unittest.rst:1821
 msgid ""
 "Return ``True`` if all tests run so far have passed, otherwise returns "
 "``False``."
 msgstr "これまでに実行したテストが全て成功していれば ``True`` を、それ以外なら ``False`` を返します。"
 
-#: ../../library/unittest.rst:1826
+#: ../../library/unittest.rst:1824
 msgid ""
 "Returns ``False`` if there were any :attr:`unexpectedSuccesses` from tests "
 "marked with the :func:`expectedFailure` decorator."
 msgstr ":func:`expectedFailure` デコレ－タでマークされたテストに :attr:`unexpectedSuccesses` があった場合 ``False`` を返します。"
 
-#: ../../library/unittest.rst:1832
+#: ../../library/unittest.rst:1830
 msgid ""
 "This method can be called to signal that the set of tests being run should "
 "be aborted by setting the :attr:`shouldStop` attribute to ``True``. "
@@ -2261,7 +2259,7 @@ msgid ""
 "running any additional tests."
 msgstr "このメソッドを呼び出して :class:`TestResult` の :attr:`shouldStop` 属性に ``True`` をセットすることで、実行中のテストは中断しなければならないというシグナルを送ることができます。 :class:`TestRunner` オブジェクトはこのフラグを順守してそれ以上のテストを実行することなく復帰しなければなりません。"
 
-#: ../../library/unittest.rst:1837
+#: ../../library/unittest.rst:1835
 msgid ""
 "For example, this feature is used by the :class:`TextTestRunner` class to "
 "stop the test framework when the user signals an interrupt from the "
@@ -2269,7 +2267,7 @@ msgid ""
 "implementations can use this in a similar manner."
 msgstr "たとえばこの機能は、ユーザのキーボード割り込みを受け取って :class:`TextTestRunner` クラスがテストフレームワークを停止させるのに使えます。 :class:`TestRunner` の実装を提供する対話的なツールでも同じように使用することができます。"
 
-#: ../../library/unittest.rst:1842
+#: ../../library/unittest.rst:1840
 msgid ""
 "The following methods of the :class:`TestResult` class are used to maintain "
 "the internal data structures, and may be extended in subclasses to support "
@@ -2277,136 +2275,136 @@ msgid ""
 "tools which support interactive reporting while tests are being run."
 msgstr ":class:`TestResult` クラスの以下のメソッドは内部データ管理用のメソッドですが、対話的にテスト結果をレポートするテストツールを開発する場合などにはサブクラスで拡張することができます。"
 
-#: ../../library/unittest.rst:1850
+#: ../../library/unittest.rst:1848
 msgid "Called when the test case *test* is about to be run."
 msgstr "*test* を実行する直前に呼び出されます。"
 
-#: ../../library/unittest.rst:1854
+#: ../../library/unittest.rst:1852
 msgid ""
 "Called after the test case *test* has been executed, regardless of the "
 "outcome."
 msgstr "*test* の実行直後に、テスト結果に関わらず呼び出されます。"
 
-#: ../../library/unittest.rst:1859
+#: ../../library/unittest.rst:1857
 msgid "Called once before any tests are executed."
 msgstr "全てのテストが実行される前に一度だけ実行されます。"
 
-#: ../../library/unittest.rst:1866
+#: ../../library/unittest.rst:1864
 msgid "Called once after all tests are executed."
 msgstr "全てのテストが実行された後に一度だけ実行されます。"
 
-#: ../../library/unittest.rst:1873
+#: ../../library/unittest.rst:1871
 msgid ""
 "Called when the test case *test* raises an unexpected exception. *err* is a "
 "tuple of the form returned by :func:`sys.exc_info`: ``(type, value, "
 "traceback)``."
 msgstr "テスト *test* 実行中に、想定外の例外が発生した場合に呼び出されます。 *err* は :func:`sys.exc_info` が返すタプル ``(type, value, traceback)`` です。"
 
-#: ../../library/unittest.rst:1877
+#: ../../library/unittest.rst:1875
 msgid ""
 "The default implementation appends a tuple ``(test, formatted_err)`` to the "
 "instance's :attr:`errors` attribute, where *formatted_err* is a formatted "
 "traceback derived from *err*."
 msgstr "デフォルトの実装では、タプル、 ``(test, formatted_err)`` をインスタンスの :attr:`errors` 属性に追加します。ここで、 *formatted_err* は、 *err* から導出される、整形されたトレースバックです。"
 
-#: ../../library/unittest.rst:1884
+#: ../../library/unittest.rst:1882
 msgid ""
 "Called when the test case *test* signals a failure. *err* is a tuple of the "
 "form returned by :func:`sys.exc_info`: ``(type, value, traceback)``."
 msgstr "テストケース *test* が失敗した場合に呼び出されます。 *err* は :func:`sys.exc_info` が返すタプル ``(type, value, traceback)`` です。"
 
-#: ../../library/unittest.rst:1887
+#: ../../library/unittest.rst:1885
 msgid ""
 "The default implementation appends a tuple ``(test, formatted_err)`` to the "
 "instance's :attr:`failures` attribute, where *formatted_err* is a formatted "
 "traceback derived from *err*."
 msgstr "デフォルトの実装では、タプル、 ``(test, formatted_err)`` をインスタンスの :attr:`failures` 属性に追加します。ここで、 *formatted_err* は、 *err* から導出される、整形されたトレースバックです。"
 
-#: ../../library/unittest.rst:1894
+#: ../../library/unittest.rst:1892
 msgid "Called when the test case *test* succeeds."
 msgstr "テストケース *test* が成功した場合に呼び出されます。"
 
-#: ../../library/unittest.rst:1896
+#: ../../library/unittest.rst:1894
 msgid "The default implementation does nothing."
 msgstr "デフォルトの実装では何もしません。"
 
-#: ../../library/unittest.rst:1901
+#: ../../library/unittest.rst:1899
 msgid ""
 "Called when the test case *test* is skipped.  *reason* is the reason the "
 "test gave for skipping."
 msgstr "*test* がスキップされた時に呼び出されます。*reason* はスキップの際に渡された理由の文字列です。"
 
-#: ../../library/unittest.rst:1904
+#: ../../library/unittest.rst:1902
 msgid ""
 "The default implementation appends a tuple ``(test, reason)`` to the "
 "instance's :attr:`skipped` attribute."
 msgstr "デフォルトの実装では、 ``(test, reason)`` のタプルをインスタンスの :attr:`skipped` 属性に追加します。"
 
-#: ../../library/unittest.rst:1910
+#: ../../library/unittest.rst:1908
 msgid ""
 "Called when the test case *test* fails, but was marked with the "
 ":func:`expectedFailure` decorator."
 msgstr ":func:`expectedFailure` のデコレータでマークされた *test* が失敗した時に呼び出されます。"
 
-#: ../../library/unittest.rst:1913
+#: ../../library/unittest.rst:1911
 msgid ""
 "The default implementation appends a tuple ``(test, formatted_err)`` to the "
 "instance's :attr:`expectedFailures` attribute, where *formatted_err* is a "
 "formatted traceback derived from *err*."
 msgstr "デフォルトの実装では ``(test, formatted_err)`` のタプルをインスタンスの :attr:`expectedFailures` に追加します。ここで *formatted_err* は *err* から派生した整形されたトレースバックです。"
 
-#: ../../library/unittest.rst:1920
+#: ../../library/unittest.rst:1918
 msgid ""
 "Called when the test case *test* was marked with the :func:`expectedFailure`"
 " decorator, but succeeded."
 msgstr ":func:`expectedFailure` のデコレータでマークされた *test* が成功した時に呼び出されます。"
 
-#: ../../library/unittest.rst:1923
+#: ../../library/unittest.rst:1921
 msgid ""
 "The default implementation appends the test to the instance's "
 ":attr:`unexpectedSuccesses` attribute."
 msgstr "デフォルトの実装ではテストをインスタンスの :attr:`unexpectedSuccesses` 属性に追加します。"
 
-#: ../../library/unittest.rst:1929
+#: ../../library/unittest.rst:1927
 msgid ""
 "Called when a subtest finishes.  *test* is the test case corresponding to "
 "the test method.  *subtest* is a custom :class:`TestCase` instance "
 "describing the subtest."
 msgstr "サブテストが終了すると呼ばれます。\n*test* はテストメソッドに対応するテストケースです。\n*subtest* はサブテストを記述するカスタムの :class:`TestCase` インスタンスです。"
 
-#: ../../library/unittest.rst:1933
+#: ../../library/unittest.rst:1931
 msgid ""
 "If *outcome* is :const:`None`, the subtest succeeded.  Otherwise, it failed "
 "with an exception where *outcome* is a tuple of the form returned by "
 ":func:`sys.exc_info`: ``(type, value, traceback)``."
 msgstr "*outcome* が :const:`None` の場合サブテストは成功です。\nそれ以外の場合は失敗で、:func:`sys.exc_info` が返す形式 ``(type, value, traceback)`` の *outcome* を持つ例外を伴います。"
 
-#: ../../library/unittest.rst:1937
+#: ../../library/unittest.rst:1935
 msgid ""
 "The default implementation does nothing when the outcome is a success, and "
 "records subtest failures as normal failures."
 msgstr "結果が成功の場合デフォルトの実装では何もせず、サブテストの失敗を通常の失敗として報告します。"
 
-#: ../../library/unittest.rst:1945
+#: ../../library/unittest.rst:1943
 msgid ""
 "A concrete implementation of :class:`TestResult` used by the "
 ":class:`TextTestRunner`."
 msgstr ":class:`TextTestRunner` に使用される :class:`TestResult` の具象実装です。"
 
-#: ../../library/unittest.rst:1948
+#: ../../library/unittest.rst:1946
 msgid ""
 "This class was previously named ``_TextTestResult``. The old name still "
 "exists as an alias but is deprecated."
 msgstr "このクラスは以前 ``_TextTestResult`` という名前でした。以前の名前はエイリアスとして残っていますが非推奨です。"
 
-#: ../../library/unittest.rst:1955
+#: ../../library/unittest.rst:1953
 msgid ""
 "Instance of the :class:`TestLoader` class intended to be shared.  If no "
 "customization of the :class:`TestLoader` is needed, this instance can be "
 "used instead of repeatedly creating new instances."
 msgstr ":class:`TestLoader` のインスタンスで、共用することが目的です。 :class:`TestLoader` をカスタマイズする必要がなければ、新しい :class:`TestLoader` オブジェクトを作らずにこのインスタンスを使用します。"
 
-#: ../../library/unittest.rst:1963
+#: ../../library/unittest.rst:1961
 msgid ""
 "A basic test runner implementation that outputs results to a stream. If "
 "*stream* is ``None``, the default, :data:`sys.stderr` is used as the output "
@@ -2417,7 +2415,7 @@ msgid ""
 "unittest."
 msgstr "結果をストリームに出力する、基本的なテストランナーの実装です。\n*stream* が ``None`` の場合、デフォルトで :data:`sys.stderr` が出力ストリームとして使われます。\nこのクラスはいくつかの設定項目があるだけで、基本的に非常に単純です。\nグラフィカルなテスト実行アプリケーションでは、独自のテストランナーを実装してください。\nテストランナーの実装は、 unittest に新しい機能が追加されランナーを構築するインターフェースが変更されたときに備えて ``**kwargs`` を受け取れるようにするべきです。"
 
-#: ../../library/unittest.rst:1970
+#: ../../library/unittest.rst:1968
 msgid ""
 "By default this runner shows :exc:`DeprecationWarning`, "
 ":exc:`PendingDeprecationWarning`, :exc:`ResourceWarning` and "
@@ -2426,32 +2424,32 @@ msgid ""
 "<deprecated-aliases>` are also special-cased and, when the warning filters "
 "are ``'default'`` or ``'always'``, they will appear only once per-module, in"
 " order to avoid too many warning messages.  This behavior can be overridden "
-"using the :option:`-Wd` or :option:`-Wa` options and leaving *warnings* to "
-"``None``."
-msgstr ":ref:`デフォルトで無視 <warning-ignored>` に設定されているとしても、このランナーのデフォルトでは :exc:`DeprecationWarning`, :exc:`PendingDeprecationWarning`, :exc:`ResourceWarning`, :exc:`ImportWarning` を表示します。\n:ref:`unittest の非推奨メソッド <deprecated-aliases>` で起きた非推奨警告も特別な場合として扱われ、警告フィルタが ``'default'`` もしくは ``'always'`` だったとき、対象の警告メッセージが出ないようにモジュールごとに1回だけ表示されます。\n:option:`-Wd` オプションや :option:`-Wa` オプションを使ったり、 *warnings* を ``None`` にしたりしておくと、この動作を上書きできます。"
+"using Python's :option:`!-Wd` or :option:`!-Wa` options (see :ref:`Warning "
+"control <using-on-warnings>`) and leaving *warnings* to ``None``."
+msgstr ""
 
-#: ../../library/unittest.rst:1980
+#: ../../library/unittest.rst:1979
 msgid "Added the ``warnings`` argument."
 msgstr "``warnings`` 引数が追加されました。"
 
-#: ../../library/unittest.rst:1983
+#: ../../library/unittest.rst:1982
 msgid ""
 "The default stream is set to :data:`sys.stderr` at instantiation time rather"
 " than import time."
 msgstr "インポート時でなくインスタンス化時にデフォルトのストリームが :data:`sys.stderr` に設定されます。"
 
-#: ../../library/unittest.rst:1987
+#: ../../library/unittest.rst:1986
 msgid "Added the tb_locals parameter."
 msgstr "tb_locals 引数が追加されました。"
 
-#: ../../library/unittest.rst:1992
+#: ../../library/unittest.rst:1991
 msgid ""
 "This method returns the instance of ``TestResult`` used by :meth:`run`. It "
 "is not intended to be called directly, but can be overridden in subclasses "
 "to provide a custom ``TestResult``."
 msgstr "このメソッドは :meth:`run` で使われる ``TestResult`` のインスタンスを返します。このメソッドは明示的に呼び出す必要はありませんが、サブクラスで ``TestResult`` をカスタマイズすることができます。"
 
-#: ../../library/unittest.rst:1996
+#: ../../library/unittest.rst:1995
 msgid ""
 "``_makeResult()`` instantiates the class or callable passed in the "
 "``TextTestRunner`` constructor as the ``resultclass`` argument. It defaults "
@@ -2459,7 +2457,7 @@ msgid ""
 "class is instantiated with the following arguments::"
 msgstr "``_makeResult()`` は、 ``TextTestRunner`` のコンストラクタで ``resultclass`` 引数として渡されたクラスもしくはコーラブルオブジェクトをインスタンス化します。 ``resultclass`` が指定されていない場合には、デフォルトで :class:`TextTestResult` が使用されます。結果のクラスは以下の引数が渡されインスタンス化されます::"
 
-#: ../../library/unittest.rst:2005
+#: ../../library/unittest.rst:2004
 msgid ""
 "This method is the main public interface to the `TextTestRunner`. This "
 "method takes a :class:`TestSuite` or :class:`TestCase` instance. A "
@@ -2467,7 +2465,7 @@ msgid ""
 "test(s) are run and the results printed to stdout."
 msgstr "このメソッドは `TextTestRunner` へのメインの公開インターフェースです。\nこのメソッドは :class:`TestSuite` インスタンスあるいは :class:`TestCase` インスタンスを受け取ります。\n:func:`_makeResult` が呼ばれて :class:`TestResult` が作成され、テストが実行され、結果が標準出力に表示されます。"
 
-#: ../../library/unittest.rst:2016
+#: ../../library/unittest.rst:2015
 msgid ""
 "A command-line program that loads a set of tests from *module* and runs "
 "them; this is primarily for making test modules conveniently executable. The"
@@ -2475,13 +2473,13 @@ msgid ""
 "of a test script::"
 msgstr "*module* から複数のテストを読み込んで実行するためのコマンドラインプログラム。この関数を使えば、簡単に実行可能なテストモジュールを作成する事ができます。一番簡単なこの関数の使い方は、以下の行をテストスクリプトの最後に置くことです::"
 
-#: ../../library/unittest.rst:2024
+#: ../../library/unittest.rst:2023
 msgid ""
 "You can run tests with more detailed information by passing in the verbosity"
 " argument::"
 msgstr "より詳細な情報は verbosity 引数を指定して実行すると得られます::"
 
-#: ../../library/unittest.rst:2030
+#: ../../library/unittest.rst:2029
 msgid ""
 "The *defaultTest* argument is either the name of a single test or an "
 "iterable of test names to run if no test names are specified via *argv*.  If"
@@ -2489,46 +2487,47 @@ msgid ""
 "tests found in *module* are run."
 msgstr "*defaultTest* 引数は、 *argv* にテスト名が指定されていない場合に実行する、ある1つのテストの名前もしくはテスト名のイテラブルです。\nこの引数を指定しないか ``None`` を指定し、かつ *argv* にテスト名が与えられない場合は、 *module* にある全てのテストを実行します。"
 
-#: ../../library/unittest.rst:2035
+#: ../../library/unittest.rst:2034
 msgid ""
 "The *argv* argument can be a list of options passed to the program, with the"
 " first element being the program name.  If not specified or ``None``, the "
 "values of :data:`sys.argv` are used."
 msgstr "*argv* 引数には、プログラムに渡されたオプションのリストを、最初の要素がプログラム名のままで渡せます。指定しないか ``None`` の場合は :data:`sys.argv` が使われます。"
 
-#: ../../library/unittest.rst:2039
+#: ../../library/unittest.rst:2038
 msgid ""
 "The *testRunner* argument can either be a test runner class or an already "
 "created instance of it. By default ``main`` calls :func:`sys.exit` with an "
 "exit code indicating success or failure of the tests run."
 msgstr "引数、 *testRunner* は、test runner class、あるいは、そのインスタンスのどちらでも構いません。でフォルトでは ``main`` はテストが成功したか失敗したかに対応した終了コードと共に :func:`sys.exit` を呼び出します。"
 
-#: ../../library/unittest.rst:2043
+#: ../../library/unittest.rst:2042
 msgid ""
 "The *testLoader* argument has to be a :class:`TestLoader` instance, and "
 "defaults to :data:`defaultTestLoader`."
 msgstr "*testLoader* 引数は :class:`TestLoader` インスタンスでなければなりません。デフォルトは :data:`defaultTestLoader` です。"
 
-#: ../../library/unittest.rst:2046
+#: ../../library/unittest.rst:2045
 msgid ""
 "``main`` supports being used from the interactive interpreter by passing in "
 "the argument ``exit=False``. This displays the result on standard output "
 "without calling :func:`sys.exit`::"
 msgstr "``main`` は、 ``exit=False`` を指定する事で対話的なインタプリタから使用することもできます。この引数を指定すると、 :func:`sys.exit` を呼ばずに、結果のみを出力します::"
 
-#: ../../library/unittest.rst:2053
+#: ../../library/unittest.rst:2052
 msgid ""
 "The *failfast*, *catchbreak* and *buffer* parameters have the same effect as"
 " the same-name `command-line options`_."
 msgstr "*failfast*, *catchbreak*, *buffer* は、`コマンドラインオプション`_ にある同名のオプションと同じ効果のあるパラメータです。"
 
-#: ../../library/unittest.rst:2056
+#: ../../library/unittest.rst:2055
 msgid ""
 "The *warnings* argument specifies the :ref:`warning filter <warning-filter>`"
 " that should be used while running the tests.  If it's not specified, it "
-"will remain ``None`` if a :option:`-W` option is passed to "
-":program:`python`, otherwise it will be set to ``'default'``."
-msgstr "*warnings* 引数では、テストの実行中に使うべき :ref:`警告フィルタ <warning-filter>` を指定します。\nこの引数が指定されない場合には、 :option:`-W` オプションが :program:`python` に渡されていなければ ``None`` のままで、そうでなければ ``'default'`` が設定されます。"
+"will remain ``None`` if a :option:`!-W` option is passed to "
+":program:`python` (see :ref:`Warning control <using-on-warnings>`), "
+"otherwise it will be set to ``'default'``."
+msgstr ""
 
 #: ../../library/unittest.rst:2061
 msgid ""

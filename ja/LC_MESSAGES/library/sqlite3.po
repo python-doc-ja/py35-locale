@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:22+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:34+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -398,8 +398,8 @@ msgstr ""
 #: ../../library/sqlite3.rst:341
 msgid ""
 "The function can return any of the types supported by SQLite: bytes, str, "
-"int, float and None."
-msgstr "関数は SQLite でサポートされている任意の型を返すことができます。具体的には bytes, str, int, float および None です。"
+"int, float and ``None``."
+msgstr ""
 
 #: ../../library/sqlite3.rst:344 ../../library/sqlite3.rst:361
 #: ../../library/sqlite3.rst:471 ../../library/sqlite3.rst:571
@@ -421,8 +421,8 @@ msgstr ""
 #: ../../library/sqlite3.rst:358
 msgid ""
 "The ``finalize`` method can return any of the types supported by SQLite: "
-"bytes, str, int, float and None."
-msgstr "``finalize`` メソッドは SQLite でサポートされている任意の型を返すことができます。具体的には bytes, str, int, float および None です。"
+"bytes, str, int, float and ``None``."
+msgstr ""
 
 #: ../../library/sqlite3.rst:368
 msgid ""
@@ -446,8 +446,8 @@ msgstr "以下の例は「間違った方法で」ソートする自作の照合
 
 #: ../../library/sqlite3.rst:381
 msgid ""
-"To remove a collation, call ``create_collation`` with None as callable::"
-msgstr "照合順序を取り除くには ``create_collation`` を callable として None を渡して呼び出します::"
+"To remove a collation, call ``create_collation`` with ``None`` as callable::"
+msgstr ""
 
 #: ../../library/sqlite3.rst:388
 msgid ""
@@ -1085,8 +1085,9 @@ msgstr "sqlite3 が暗黙のうちに実行する ``BEGIN`` 文の種類(また�
 
 #: ../../library/sqlite3.rst:937
 msgid ""
-"If you want **autocommit mode**, then set :attr:`isolation_level` to None."
-msgstr "もし **自動コミットモード** が使いたければ、 :attr:`isolation_level` は None にしてください。"
+"If you want **autocommit mode**, then set :attr:`isolation_level` to "
+"``None``."
+msgstr ""
 
 #: ../../library/sqlite3.rst:939
 msgid ""

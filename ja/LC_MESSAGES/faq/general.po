@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:18+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:53+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,6 +22,10 @@ msgstr ""
 #: ../../faq/general.rst:5
 msgid "General Python FAQ"
 msgstr "一般 Python FAQ"
+
+#: ../../faq/general.rst:0
+msgid "Contents"
+msgstr "内容"
 
 #: ../../faq/general.rst:13
 msgid "General Information"
@@ -385,8 +389,8 @@ msgstr "Python に関する一番初めの記事はとても古く、1991年に�
 msgid ""
 "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers "
 "Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 "
-"(December 1991), Amsterdam, pp 283-303."
-msgstr "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 (December 1991), Amsterdam, pp 283-303."
+"(December 1991), Amsterdam, pp 283--303."
+msgstr ""
 
 #: ../../faq/general.rst:259
 msgid "Are there any books on Python?"

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:50+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1105,18 +1105,18 @@ msgstr ":meth:`datetime.date.strftime` メソッドにはもう 1900 年以降�
 #: ../../whatsnew/3.2.rst:1003
 msgid ""
 "Whenever a two-digit year is used in a time tuple, the interpretation has "
-"been governed by :attr:`time.accept2dyear`.  The default is *True* which "
+"been governed by :attr:`time.accept2dyear`.  The default is ``True`` which "
 "means that for a two-digit year, the century is guessed according to the "
 "POSIX rules governing the ``%y`` strptime format."
-msgstr "2 桁の年が time のタプルに使われている場合、その解釈は :attr:`time.accept2dyear` 属性で決められてきました。そのデフォルトは ``True`` で、この場合 ``%y`` strptime フォーマットを支配している POSIX 規則によって世紀を推測します。"
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1008
 msgid ""
 "Starting with Py3.2, use of the century guessing heuristic will emit a "
 ":exc:`DeprecationWarning`.  Instead, it is recommended that "
-":attr:`time.accept2dyear` be set to *False* so that large date ranges can be"
-" used without guesswork::"
-msgstr "Python 3.2 より、その発見的手法での世紀推測を使うと :exc:`DeprecationWarning` を発行するようになりました(---訳注: Python 3.3 で :attr:`time.accept2dyear` そのものが削除されました。---) 代わりに :attr:`time.accept2dyear` に ``False`` をセットして、そのような推測なく大きな日付範囲を扱えるようにすることが推奨されます::"
+":attr:`time.accept2dyear` be set to ``False`` so that large date ranges can "
+"be used without guesswork::"
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1027
 msgid ""
@@ -1147,9 +1147,9 @@ msgstr ":mod:`math` モジュールがアップデートされ、C99 標準に�
 #: ../../whatsnew/3.2.rst:1045
 msgid ""
 "The :func:`~math.isfinite` function provides a reliable and fast way to "
-"detect special values.  It returns *True* for regular numbers and *False* "
-"for *Nan* or *Infinity*:"
-msgstr ":func:`~math.isfinite` 関数は特殊値を確実に、かつ高速に検出する方法を提供します。通常の数には *True* を、*Nan* や *Infinity* には *False* を返します:"
+"detect special values.  It returns ``True`` for regular numbers and "
+"``False`` for *Nan* or *Infinity*:"
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1053
 msgid ""
@@ -1282,8 +1282,8 @@ msgstr "ロギングイベントが発生する前に設定がセットアップ
 msgid ""
 "The use of filters has been simplified.  Instead of creating a "
 ":class:`~logging.Filter` object, the predicate can be any Python callable "
-"that returns *True* or *False*."
-msgstr "フィルタの利用は単純になりました。 :class:`~logging.Filter` オブジェクトを作る代わりに、 ``True`` か ``False`` を返す任意の Python 呼び出し可能オブジェクトを述語 (predicate) として利用出来ます。"
+"that returns ``True`` or ``False``."
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1198
 msgid ""
@@ -1573,8 +1573,8 @@ msgid ""
 "parameter needs to be a :term:`keyword argument`.  The user-supplied filter "
 "function accepts a :class:`~tarfile.TarInfo` object and returns an updated "
 ":class:`~tarfile.TarInfo` object, or if it wants the file to be excluded, "
-"the function can return *None*::"
-msgstr "*filter* オプションは古くて柔軟性に欠ける *exclude* パラメータを置き換えるものであり、 *exclude* は非推奨となりました。 *filter* を指定する場合は :term:`keyword argument` として渡さなければなりません。ユーザ指定の filter 関数は :class:`~tarfile.TarInfo` オブジェクトを受け取り、更新した :class:`~tarfile.TarInfo` オブジェクトを返すか、あるいはアーカイブから除外したければ *None* を返してください。"
+"the function can return ``None``::"
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1461
 msgid ""
@@ -1607,8 +1607,8 @@ msgid ""
 ":func:`ast.literal_eval` function serves as a secure alternative to the "
 "builtin :func:`eval` function which is easily abused.  Python 3.2 adds "
 ":class:`bytes` and :class:`set` literals to the list of supported types: "
-"strings, bytes, numbers, tuples, lists, dicts, sets, booleans, and None."
-msgstr ":mod:`ast` モジュールには、Python リテラル構文を使った式文字列を安全に評価できる、汎用目的の素晴らしい道具が含まれています。その :func:`ast.literal_eval` 関数は、悪用されやすい組み込み関数 :func:`eval` の安全な代替品として働いてくれます。Python 3.2 はこれのサポート型に :class:`bytes` と :class:`set` を加えました。結果サポートする型は全部でこれらになりました: 文字列型、バイト列文字列型、数値型、タプル型、リスト型、辞書型、集合型、真偽値型、None。"
+"strings, bytes, numbers, tuples, lists, dicts, sets, booleans, and ``None``."
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:1507
 msgid "(Implemented by Benjamin Peterson and Georg Brandl.)"

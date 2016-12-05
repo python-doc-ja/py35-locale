@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:50+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -106,8 +106,8 @@ msgid ""
 " compared to earlier 2.x versions. Python 2.7 is currently expected to "
 "remain supported by the core development team (receiving security updates "
 "and other bug fixes) until at least 2020 (10 years after its initial "
-"release, compared to the more typical support period of 18-24 months)."
-msgstr "上述のように、 2.7 リリースは以前の 2.x バージョンに較べて遥かに長期間のメンテナンスとなります。Python 2.7 は現在では、最低でも 2020 年までコア開発チームによって(セキュリティアップデートやほかのバグフィックスの)サポートがなされ続けることが求められています(最初のリリースから 10 年後です。普通であれば 18-24 ヶ月なのに)。"
+"release, compared to the more typical support period of 18--24 months)."
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:109
 msgid ""
@@ -274,10 +274,10 @@ msgstr ":func:`operator.isCallable` と :func:`operator.sequenceIncludes` は 3.
 
 #: ../../whatsnew/2.7.rst:201
 msgid ""
-"The :option:`-3` switch now automatically enables the :option:`-Qwarn <-Q>` "
+"The :option:`!-3` switch now automatically enables the :option:`!-Qwarn` "
 "switch that causes warnings about using classic division with integers and "
 "long integers."
-msgstr ":option:`-3` オプションは自動的に :option:`-Qwarn <-Q>` スイッチを有効にして、整数や長整数に対する古い形式の除算が警告を出すようになります。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:214
 msgid "PEP 372: Adding an Ordered Dictionary to collections"
@@ -313,9 +313,10 @@ msgstr "エントリを削除して再挿入すると、順序は一番最後に
 #: ../../whatsnew/2.7.rst:247
 msgid ""
 "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* "
-"argument that defaults to True.  If *last* is True, the most recently added "
-"key is returned and removed; if it's False, the oldest key is selected::"
-msgstr ":meth:`~collections.OrderedDict.popitem` メソッドは、オプションの *last* 引数を持ち、でフォルトで True になっています。 *last* が True の場合、一番最近に追加された key が返され、削除されます。 False の場合、最も古い key が選ばれます。 ::"
+"argument that defaults to ``True``.  If *last* is true, the most recently "
+"added key is returned and removed; if it's false, the oldest key is "
+"selected::"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:262
 msgid ""
@@ -458,9 +459,9 @@ msgstr "以下はこの使用例です::"
 
 #: ../../whatsnew/2.7.rst:393
 msgid ""
-"Unless you override it, :option:`-h` and :option:`--help` switches are "
+"Unless you override it, :option:`!-h` and :option:`!--help` switches are "
 "automatically added, and produce neatly formatted output::"
-msgstr "オーバーライドしない限り、 :option:`-h` と :option:`--help` スイッチが自動的に追加され、綺麗にフォーマットした出力を生成します。 ::"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:410
 msgid ""
@@ -1002,9 +1003,9 @@ msgid ""
 " improvements on 64-bit machines, but benchmark results on 32-bit machines "
 "have been mixed.  Therefore, the default is to use base 2**30 on 64-bit "
 "machines and base 2**15 on 32-bit machines; on Unix, there's a new configure"
-" option :option:`--enable-big-digits` that can be used to override this "
+" option :option:`!--enable-big-digits` that can be used to override this "
 "default."
-msgstr "多倍長整数の内部格納方式が、 2**15 ベースと 2**30 ベースのどちらかをビルド時に選択するようになりました。以前は常に 2**15 ベースで格納していました。 2**30 ベースにすると 64bit マシンに置いては確実にパフォーマンスが向上しますが、 32bit マシンではパフォーマンスが向上する場合も低下する場合もあります。なので、デフォルトでは 64bit マシンでは 2**30 ベースで、 32bit マシンでは 2**15 ベースになるようになります。 Unix では新しい configure オプションとして :option:`--enable-big-digits` が追加され、このデフォルトの選択をオーバーライドできるようになっています。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:965
 msgid ""
@@ -1039,10 +1040,10 @@ msgstr "多倍長整数の除算アルゴリズムが、内部のループの軽
 #: ../../whatsnew/2.7.rst:991
 msgid ""
 "The implementation of ``%`` checks for the left-side operand being a Python "
-"string and special-cases it; this results in a 1-3% performance increase for"
-" applications that frequently use ``%`` with strings, such as templating "
+"string and special-cases it; this results in a 1--3% performance increase "
+"for applications that frequently use ``%`` with strings, such as templating "
 "libraries. (Implemented by Collin Winter; :issue:`5176`.)"
-msgstr "``%`` の実装が、左側のオペランドが文字列型かどうかをチェックしてその場合の処理を特殊化しました。これにより文字列に対して ``%`` を頻繁に使う、テンプレートライブラリなどのアプリケーションのパフォーマンスが1-3%向上します。 (Implemented by Collin Winter; :issue:`5176`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:997
 msgid ""
@@ -1699,15 +1700,15 @@ msgid ""
 "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now "
 "supports socket timeouts and disabling the Nagle algorithm. The "
 ":attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute "
-"defaults to False; if overridden to be True, new request connections will "
-"have the TCP_NODELAY option set to prevent buffering many small sends into a"
-" single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class "
-"attribute can hold a timeout in seconds that will be applied to the request "
-"socket; if no request is received within that time, "
+"defaults to ``False``; if overridden to be true, new request connections "
+"will have the TCP_NODELAY option set to prevent buffering many small sends "
+"into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class"
+" attribute can hold a timeout in seconds that will be applied to the request"
+" socket; if no request is received within that time, "
 ":meth:`~SocketServer.BaseServer.handle_timeout` will be called and "
 ":meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by"
 " Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
-msgstr ":mod:`SocketServer` モジュールの :class:`~SocketServer.TCPServer` クラスは、ソケットタイムアウトと Nagle アルゴリズムの無効化をサポートするようになりました。 :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` クラス属性は、デフォルトで False です。上書きされて True になると、新しいリクエスト接続は、TCP_NODELAY オプションを設定され、一つの TCP パケットにたくさんの小さな送信がバッファリングされることを防ぎます。 :attr:`~SocketServer.BaseServer.timeout` クラス属性は、リクエストソケットに適用されるタイムアウトを秒で保持できます。その時間内にリクエストが受け付けられなければ、 :meth:`~SocketServer.BaseServer.handle_timeout` が呼び出され、 :meth:`~SocketServer.BaseServer.handle_request` が返されます。(Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1530
 msgid ""
@@ -2104,20 +2105,20 @@ msgstr ":func:`~unittest.main` 関数は、その他幾つかの新しいオプ�
 
 #: ../../whatsnew/2.7.rst:1847
 msgid ""
-":option:`-b <unittest -b>` or :option:`--buffer` will buffer the standard "
+":option:`-b <unittest -b>` or :option:`!--buffer` will buffer the standard "
 "output and standard error streams during each test.  If the test passes, any"
 " resulting output will be discarded; on failure, the buffered output will be"
 " displayed."
-msgstr ":option:`-b <unittest -b>` や :option:`--buffer` は、標準出力や標準エラーストリームをそれぞれのテストの間バッファに入れます。テストが通れば、結果の出力は全て捨てられます。失敗したら、バッファに入れられた出力が表示されます。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1852
 msgid ""
-":option:`-c <unittest -c>` or :option:`--catch` will cause the control-C "
+":option:`-c <unittest -c>` or :option:`!--catch` will cause the control-C "
 "interrupt to be handled more gracefully.  Instead of interrupting the test "
 "process immediately, the currently running test will be completed and then "
 "the partial results up to the interruption will be reported. If you're "
 "impatient, a second press of control-C will cause an immediate interruption."
-msgstr ":option:`-c <unittest -c>` や :option:`--catch` は、control-C による中断をより上品にします。テストプロセスを即座に中断するのではなく、現在実行中のテストは完了させ、中断までの部分的な結果は報告されます。待ちきれなければ、control-C をもう一度押せば、即座に中断されます。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1859
 msgid ""
@@ -2131,11 +2132,11 @@ msgstr "この control-C ハンドラは、コードがテストされている�
 
 #: ../../whatsnew/2.7.rst:1866
 msgid ""
-":option:`-f <unittest -f>` or :option:`--failfast` makes test execution stop"
-" immediately when a test fails instead of continuing to execute further "
+":option:`-f <unittest -f>` or :option:`!--failfast` makes test execution "
+"stop immediately when a test fails instead of continuing to execute further "
 "tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; "
 ":issue:`8074`.)"
-msgstr ":option:`-f <unittest -f>` や :option:`--failfast` は、テストが失敗したとき、他のテストを続けるのではなく、テストの実行を即座に停止します。 (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1871
 msgid ""
@@ -2156,10 +2157,10 @@ msgid ""
 ":meth:`~unittest.TestCase.assertTrue`, and "
 ":meth:`~unittest.TestCase.assertFalse` failures now provide more "
 "information.  If you set the :attr:`~unittest.TestCase.longMessage` "
-"attribute of your :class:`~unittest.TestCase` classes to True, both the "
+"attribute of your :class:`~unittest.TestCase` classes to true, both the "
 "standard error message and any additional message you provide will be "
 "printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
-msgstr ":meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, および :meth:`~unittest.TestCase.assertFalse` 失敗のメッセージは、提供する情報量が増えました。 :class:`~unittest.TestCase` クラスの :attr:`~unittest.TestCase.longMessage` 属性を True に設定すると、失敗時に、標準のエラーメッセージと追加して提供したメッセージの両方が表示されます。(Added by Michael Foord; :issue:`5663`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1885
 msgid ""
@@ -2327,11 +2328,11 @@ msgstr "新しいフックにより、 :meth:`~unittest.TestCase.assertEqual` �
 
 #: ../../whatsnew/2.7.rst:1988
 msgid ""
-":func:`unittest.main` now takes an optional ``exit`` argument.  If False, "
+":func:`unittest.main` now takes an optional ``exit`` argument.  If false, "
 ":func:`~unittest.main` doesn't call :func:`sys.exit`, allowing "
 ":func:`~unittest.main` to be used from the interactive interpreter. "
 "(Contributed by J. Pablo Fernández; :issue:`3379`.)"
-msgstr ":func:`unittest.main` はオプションの ``exit`` 引数を取るようになりました。False なら、 :func:`~unittest.main` は :func:`sys.exit` を呼び出さず、これにより対話型インタプリタから :func:`~unittest.main` が使えるようになります。(Contributed by J. Pablo Fernández; :issue:`3379`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1993
 msgid ""
@@ -2642,26 +2643,26 @@ msgstr ":mod:`ctypes` によって定義されたグローバルシンボルに�
 
 #: ../../whatsnew/2.7.rst:2241
 msgid ""
-"New configure option: the :option:`--with-system-expat` switch allows "
+"New configure option: the :option:`!--with-system-expat` switch allows "
 "building the :mod:`pyexpat` module to use the system Expat library. "
 "(Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
-msgstr "新しい設定オプション: :option:`--with-system-expat` スイッチにより、 :mod:`pyexpat` モジュールをビルドして、システム Expat ライブラリを使えます。 (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2245
 msgid ""
-"New configure option: the :option:`--with-valgrind` option will now disable "
-"the pymalloc allocator, which is difficult for the Valgrind memory-error "
+"New configure option: the :option:`!--with-valgrind` option will now disable"
+" the pymalloc allocator, which is difficult for the Valgrind memory-error "
 "detector to analyze correctly. Valgrind will therefore be better at "
 "detecting memory leaks and overruns. (Contributed by James Henstridge; "
 ":issue:`2422`.)"
-msgstr "新しい設定オプション: :option:`--with-valgrind` オプションは、 Valgrind メモリエラー検出器が正しく分析するのが難しい pymalloc アロケータを無効にするようになりました。ですから Valgrind は、メモリリークやオーバーランをより検出できます。 (Contributed by James Henstridge; :issue:`2422`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2252
 msgid ""
-"New configure option: you can now supply an empty string to :option:`--with-"
-"dbmliborder=` in order to disable all of the various DBM modules.  (Added by"
-" Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
-msgstr "新しい設定オプション: :option:`--with-dbmliborder=` に空の文字列を与えて様々な DBM モジュールを全て無効にできます。 (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+"New configure option: you can now supply an empty string to :option"
+":`!--with-dbmliborder=` in order to disable all of the various DBM modules."
+"  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2257
 msgid ""
@@ -2848,22 +2849,22 @@ msgstr "既存の対応する :file:`.py` が存在する :file:`.pyc` または
 
 #: ../../whatsnew/2.7.rst:2400
 msgid ""
-"The :file:`regrtest.py` script now takes a :option:`--randseed=` switch that"
-" takes an integer that will be used as the random seed for the :option:`-r` "
-"option that executes tests in random order. The :option:`-r` option also "
-"reports the seed that was used (Added by Collin Winter.)"
-msgstr ":file:`regrtest.py` スクリプトは、テストを乱順に実行する :option:`-r` オプションの、ランダムシードに使われる整数を取る :option:`--randseed=` スイッチを取るようになりました。 :option:`-r` オプションは、使われたシードも報告します。 (Added by Collin Winter.)"
+"The :file:`regrtest.py` script now takes a :option:`!--randseed=` switch "
+"that takes an integer that will be used as the random seed for the "
+":option:`!-r` option that executes tests in random order. The :option:`!-r` "
+"option also reports the seed that was used (Added by Collin Winter.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2406
 msgid ""
-"Another :file:`regrtest.py` switch is :option:`-j`, which takes an integer "
+"Another :file:`regrtest.py` switch is :option:`!-j`, which takes an integer "
 "specifying how many tests run in parallel. This allows reducing the total "
 "runtime on multi-core machines. This option is compatible with several other"
 " options, including the :option:`!-R` switch which is known to produce long "
 "runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used "
-"with a new :option:`-F` switch that runs selected tests in a loop until they"
-" fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
-msgstr "もう一つの :file:`regrtest.py` スイッチは :option:`-j` で、いくつのテストを並行して実行するかを指定する整数です。これにより、マルチコア機での合計実行時間を短縮できます。このオプションは、実行時間を長くすることで知られている :option:`!-R` スイッチなど、いくつかの他のオプションと互換です。 (Added by Antoine Pitrou, :issue:`6152`.) これはまた、選ばれたテストを失敗するまでループして実行する :option:`-F` スイッチとも同時に使えます。(Added by Antoine Pitrou; :issue:`7312`.)"
+"with a new :option:`!-F` switch that runs selected tests in a loop until "
+"they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2415
 msgid ""

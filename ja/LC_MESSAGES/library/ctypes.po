@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:45+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1186,9 +1186,9 @@ msgstr ":mod:`ctypes.util` モジュールはロードするライブラリを�
 msgid ""
 "Try to find a library and return a pathname.  *name* is the library name "
 "without any prefix like *lib*, suffix like ``.so``, ``.dylib`` or version "
-"number (this is the form used for the posix linker option :option:`-l`).  If"
-" no library can be found, returns ``None``."
-msgstr "ライブラリを見つけてパス名を返そうと試みます。 *name* は ``lib`` のような接頭辞、 ``.so``, ``.dylib`` のような接尾辞、あるいは、バージョン番号が何も付いていないライブラリの名前です (これは posix リンカのオプション :option:`-l` に使われている形式です)。もしライブラリが見つからなければ、 ``None`` を返します。"
+"number (this is the form used for the posix linker option :option:`!-l`).  "
+"If no library can be found, returns ``None``."
+msgstr ""
 
 #: ../../library/ctypes.rst:1259 ../../library/ctypes.rst:1837
 msgid "The exact functionality is system dependent."
@@ -1305,13 +1305,13 @@ msgstr "*mode* パラメータを使うと、ライブラリがどうやって�
 
 #: ../../library/ctypes.rst:1361
 msgid ""
-"The *use_errno* parameter, when set to True, enables a ctypes mechanism that"
+"The *use_errno* parameter, when set to true, enables a ctypes mechanism that"
 " allows accessing the system :data:`errno` error number in a safe way. "
 ":mod:`ctypes` maintains a thread-local copy of the systems :data:`errno` "
 "variable; if you call foreign functions created with ``use_errno=True`` then"
 " the :data:`errno` value before the function call is swapped with the ctypes"
 " private copy, the same happens immediately after the function call."
-msgstr "*use_errno* 変数が True に設定されたとき、システムの :data:`errno` エラーナンバーに安全にアクセスする ctypes の仕組みが有効化されます。 :mod:`ctypes` はシステムの :data:`errno` 変数のスレッド限定のコピーを管理します。もし、 ``use_errno=True`` の状態で作られた外部関数を呼び出したなら、関数呼び出し前の :data:`errno` 変数は ctypes のプライベートコピーと置き換えられ、同じことが関数呼び出しの直後にも発生します。"
+msgstr ""
 
 #: ../../library/ctypes.rst:1368
 msgid ""
@@ -1322,12 +1322,12 @@ msgstr ":func:`ctypes.get_errno` 関数は ctypes のプライベートコピー
 
 #: ../../library/ctypes.rst:1372
 msgid ""
-"The *use_last_error* parameter, when set to True, enables the same mechanism"
+"The *use_last_error* parameter, when set to true, enables the same mechanism"
 " for the Windows error code which is managed by the :func:`GetLastError` and"
 " :func:`SetLastError` Windows API functions; :func:`ctypes.get_last_error` "
 "and :func:`ctypes.set_last_error` are used to request and change the ctypes "
 "private copy of the windows error code."
-msgstr "*use_last_error* パラメータは、 True に設定されたとき、 :func:`GetLastError` と :func:`SetLastError` Windows API によって管理される Windows エラーコードに対するのと同じ仕組みが有効化されます。 :func:`ctypes.get_last_error` と :func:`ctypes.set_last_error` は Windows エラーコードの ctypes プライベートコピーを変更したり要求したりするのに使われます。"
+msgstr ""
 
 #: ../../library/ctypes.rst:1381
 msgid ""
@@ -1557,11 +1557,11 @@ msgstr "外部関数は関数プロトタイプをインスタンス化するこ
 msgid ""
 "The returned function prototype creates functions that use the standard C "
 "calling convention.  The function will release the GIL during the call.  If "
-"*use_errno* is set to True, the ctypes private copy of the system "
+"*use_errno* is set to true, the ctypes private copy of the system "
 ":data:`errno` variable is exchanged with the real :data:`errno` value before"
 " and after the call; *use_last_error* does the same for the Windows error "
 "code."
-msgstr "返された関数プロトタイプは標準 C 呼び出し規約を使う関数を作成します。関数は呼び出されている間 GIL を解放します。 *use_errno* が True に設定された場合、呼び出しの前後で System 変数 :data:`errno` の ctypesプライベートコピーは本当の :data:`errno` の値と交換されます。 *use_last_error* も Windows エラーコードに対して同様に動作します。"
+msgstr ""
 
 #: ../../library/ctypes.rst:1590
 msgid ""
@@ -1827,9 +1827,9 @@ msgstr "Windows 用: この関数は ctypes をつかってインプロセス CO
 msgid ""
 "Try to find a library and return a pathname.  *name* is the library name "
 "without any prefix like ``lib``, suffix like ``.so``, ``.dylib`` or version "
-"number (this is the form used for the posix linker option :option:`-l`).  If"
-" no library can be found, returns ``None``."
-msgstr "ライブラリを検索し、パス名を返します。 *name* は ``lib`` のような接頭辞、 ``.so`` や ``.dylib`` のような接尾辞、そして、バージョンナンバーを除くライブラリ名です (これは posix のリンカーオプション :option:`-l` で使われる書式です) 。もしライブラリが見つからなければ、 ``None`` を返します。"
+"number (this is the form used for the posix linker option :option:`!-l`).  "
+"If no library can be found, returns ``None``."
+msgstr ""
 
 #: ../../library/ctypes.rst:1843
 msgid ""

@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:47+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,11 +31,11 @@ msgstr "**ソースコード:** :source:`Lib/typing.py`"
 #: ../../library/typing.rst:13
 msgid ""
 "This module supports type hints as specified by :pep:`484`.  The most "
-"fundamental support consists of the type :class:`Any`, :class:`Union`, "
-":class:`Tuple`, :class:`Callable`, :class:`TypeVar`, and :class:`Generic`.  "
+"fundamental support consists of the types :data:`Any`, :data:`Union`, "
+":data:`Tuple`, :data:`Callable`, :class:`TypeVar`, and :class:`Generic`.  "
 "For full specification please see :pep:`484`.  For a simplified introduction"
 " to type hints see :pep:`483`."
-msgstr "このモジュールは :pep:`484` によって規定された型ヒントをサポートします。最も基本的なサポートとして :class:`Any`、:class:`Union`、:class:`Tuple`、:class:`Callable`、:class:`TypeVar` および、 :class:`Generic` 型を含みます。完全な仕様は :pep:`484` を参照してください。型ヒントの簡単な導入は :pep:`483` を参照してください。"
+msgstr ""
 
 #: ../../library/typing.rst:20
 msgid ""
@@ -225,67 +225,72 @@ msgstr "この場合では ``MyDict`` は一つの仮引数 ``T`` をとりま�
 
 #: ../../library/typing.rst:269
 msgid ""
-"Subclassing a generic class without specifying type parameters assumes "
-":class:`Any` for each position. In the following example, ``MyIterable`` is "
-"not generic but implicitly inherits from ``Iterable[Any]``::"
-msgstr "型引数を指定せずにジェネリッククラスのサブクラスを作成する場合、それぞれの型引数を :class:`Any` と仮定します。次の例では、``MyIterable`` はジェネリックではありませんが ``Iterable[Any]`` を暗黙的に継承しています::"
+"Using a generic class without specifying type parameters assumes :data:`Any`"
+" for each position. In the following example, ``MyIterable`` is not generic "
+"but implicitly inherits from ``Iterable[Any]``::"
+msgstr ""
 
 #: ../../library/typing.rst:277
+msgid "User defined generic type aliases are also supported. Examples::"
+msgstr ""
+
+#: ../../library/typing.rst:293
 msgid ""
 "The metaclass used by :class:`Generic` is a subclass of "
 ":class:`abc.ABCMeta`. A generic class can be an ABC by including abstract "
 "methods or properties, and generic classes can also have ABCs as base "
-"classes without a metaclass conflict.  Generic metaclasses are not "
-"supported."
-msgstr ":class:`Generic` に用いられているメタクラスは :class:`abc.ABCMeta` のサブクラスです。ジェネリッククラスは抽象メソッドや抽象プロパティを含めることで抽象基底クラスになることが出来ます、またジェネリッククラスはメタクラスの衝突を起こすことなく基底クラスとして抽象基底クラスをとることが出来ます。ジェネリックメタクラスはサポートされません。"
+"classes without a metaclass conflict. Generic metaclasses are not supported."
+" The outcome of parameterizing generics is cached, and most types in the "
+"typing module are hashable and comparable for equality."
+msgstr ""
 
-#: ../../library/typing.rst:284
-msgid "The :class:`Any` type"
-msgstr ":class:`Any` 型"
+#: ../../library/typing.rst:302
+msgid "The :data:`Any` type"
+msgstr ""
 
-#: ../../library/typing.rst:286
+#: ../../library/typing.rst:304
 msgid ""
-"A special kind of type is :class:`Any`. A static type checker will treat "
-"every type as being compatible with :class:`Any` and :class:`Any` as being "
+"A special kind of type is :data:`Any`. A static type checker will treat "
+"every type as being compatible with :data:`Any` and :data:`Any` as being "
 "compatible with every type."
-msgstr " :class:`Any` は特別な種類の型です。静的型検査器はすべての型を :class:`Any` と互換として扱い、 :class:`Any` をすべての型と互換として扱います。"
-
-#: ../../library/typing.rst:290
-msgid ""
-"This means that it is possible to perform any operation or method call on a "
-"value of type on :class:`Any` and assign it to any variable::"
-msgstr "これはつまり、 :class:`Any` 型の値には任意の演算やメソッド呼び出しができ、任意の変数に代入できることを意味します。"
+msgstr ""
 
 #: ../../library/typing.rst:308
 msgid ""
+"This means that it is possible to perform any operation or method call on a "
+"value of type on :data:`Any` and assign it to any variable::"
+msgstr ""
+
+#: ../../library/typing.rst:326
+msgid ""
 "Notice that no typechecking is performed when assigning a value of type "
-":class:`Any` to a more precise type. For example, the static type checker "
-"did not report an error when assigning ``a`` to ``s`` even though ``s`` was "
+":data:`Any` to a more precise type. For example, the static type checker did"
+" not report an error when assigning ``a`` to ``s`` even though ``s`` was "
 "declared to be of type :class:`str` and receives an :class:`int` value at "
 "runtime!"
-msgstr ":class:`Any` 型の値をより詳細な型に代入する時に型検査が行われないことに注意してください。例えば、静的型検査器は ``a`` を ``s`` に代入する時、``s`` が :class:`str` 型として宣言されていて実行時に :class:`int` の値を受け取るとしても、エラーを報告しません。"
+msgstr ""
 
-#: ../../library/typing.rst:314
+#: ../../library/typing.rst:332
 msgid ""
 "Furthermore, all functions without a return type or parameter types will "
-"implicitly default to using :class:`Any`::"
-msgstr "さらに、返り値の型やパラメータの型のないすべての関数は暗黙的に :class:`Any` を使用します。"
+"implicitly default to using :data:`Any`::"
+msgstr ""
 
-#: ../../library/typing.rst:327
+#: ../../library/typing.rst:345
 msgid ""
-"This behavior allows :class:`Any` to be used as an *escape hatch* when you "
+"This behavior allows :data:`Any` to be used as an *escape hatch* when you "
 "need to mix dynamically and statically typed code."
-msgstr "この振る舞いが、動的に型つけられたコードと静的に型つけられたコードを混ぜなければならない時、 :class:`Any` を *非常口* として使用することを可能にします。"
+msgstr ""
 
-#: ../../library/typing.rst:330
+#: ../../library/typing.rst:348
 msgid ""
-"Contrast the behavior of :class:`Any` with the behavior of :class:`object`. "
-"Similar to :class:`Any`, every type is a subtype of :class:`object`. "
-"However, unlike :class:`Any`, the reverse is not true: :class:`object` is "
-"*not* a subtype of every other type."
-msgstr ":class:`Any` の振る舞いと :class:`object` の振る舞いを対比しましょう。 :class:`Any` と同様に、すべての型は :class:`object` のサブタイプです。しかしながら、 :class:`Any` と異なり、逆は成り立ちません: :class:`object` はすべての他の型のサブタイプでは *ありません*。"
+"Contrast the behavior of :data:`Any` with the behavior of :class:`object`. "
+"Similar to :data:`Any`, every type is a subtype of :class:`object`. However,"
+" unlike :data:`Any`, the reverse is not true: :class:`object` is *not* a "
+"subtype of every other type."
+msgstr ""
 
-#: ../../library/typing.rst:335
+#: ../../library/typing.rst:353
 msgid ""
 "That means when the type of a value is :class:`object`, a type checker will "
 "reject almost all operations on it, and assigning it to a variable (or using"
@@ -293,47 +298,29 @@ msgid ""
 "example::"
 msgstr "これは、ある値の型が :class:`object` のとき、型検査器はこれについてのほとんどすべての操作を拒否し、これをより特殊化された変数に代入する (または返り値として利用する) ことは型エラーになることを意味します。例えば::"
 
-#: ../../library/typing.rst:357
+#: ../../library/typing.rst:375
 msgid ""
 "Use :class:`object` to indicate that a value could be any type in a typesafe"
-" manner. Use :class:`Any` to indicate that a value is dynamically typed."
-msgstr ":class:`object` は、ある値が型安全な方法で任意の型として使えることを示すために使用します。 :class:`Any` はある値が動的に型付けられることを示すために使用します。"
+" manner. Use :data:`Any` to indicate that a value is dynamically typed."
+msgstr ""
 
-#: ../../library/typing.rst:361
+#: ../../library/typing.rst:379
 msgid "Classes, functions, and decorators"
 msgstr "クラス、関数、およびデコレータ"
 
-#: ../../library/typing.rst:363
+#: ../../library/typing.rst:381
 msgid "The module defines the following classes, functions and decorators:"
 msgstr "このモジュールでは以下のクラス、関数とデコレータを定義します:"
 
-#: ../../library/typing.rst:367
-msgid "Special type indicating an unconstrained type."
-msgstr "制約のない型であることを示す特別な型。"
-
-#: ../../library/typing.rst:369
-msgid "Any object is an instance of :class:`Any`."
-msgstr "任意のオブジェクトは :class:`Any` のインスタンスです。"
-
-#: ../../library/typing.rst:370
-msgid "Any class is a subclass of :class:`Any`."
-msgstr "任意のクラスは :class:`Any` のサブクラスです。"
-
-#: ../../library/typing.rst:371
-msgid ""
-"As a special case, :class:`Any` and :class:`object` are subclasses of each "
-"other."
-msgstr "特別の場合として、:class:`Any` と :class:`object` はお互いにサブクラスになっています。"
-
-#: ../../library/typing.rst:376
+#: ../../library/typing.rst:385
 msgid "Type variable."
 msgstr "型変数。"
 
-#: ../../library/typing.rst:378 ../../library/typing.rst:767
+#: ../../library/typing.rst:387 ../../library/typing.rst:705
 msgid "Usage::"
 msgstr "使い方::"
 
-#: ../../library/typing.rst:383
+#: ../../library/typing.rst:392
 msgid ""
 "Type variables exist primarily for the benefit of static type checkers.  "
 "They serve as the parameters for generic types as well as for generic "
@@ -341,7 +328,7 @@ msgid ""
 "types.  Generic functions work as follows::"
 msgstr "型変数は主として静的型検査器の利益のために存在します。型変数はジェネリック型やジェネリック関数の定義の引数として役に立ちます。ジェネリック型についての詳細は Generic クラスを参照してください。ジェネリック関数は以下のように動作します::"
 
-#: ../../library/typing.rst:396
+#: ../../library/typing.rst:405
 msgid ""
 "The latter example's signature is essentially the overloading of ``(str, "
 "str) -> str`` and ``(bytes, bytes) -> bytes``.  Also note that if the "
@@ -349,13 +336,13 @@ msgid ""
 " still plain :class:`str`."
 msgstr "後者の例のシグネチャは本質的に ``(str, str) -> str`` と ``(bytes, bytes) -> bytes`` のオーバーロードです。もし引数が :class:`str` のサブクラスのインスタンスの場合、返り値は普通の :class:`str` であることに注意して下さい。"
 
-#: ../../library/typing.rst:401
+#: ../../library/typing.rst:410
 msgid ""
 "At runtime, ``isinstance(x, T)`` will raise :exc:`TypeError`.  In general, "
 ":func:`isinstance` and :func:`issubclass` should not be used with types."
 msgstr "実行時に、``isinstance(x, T)`` は :exc:`TypeError` を送出するでしょう。一般的に、:func:`isinstance` と :func:`issubclass` は型に対して使用するべきではありません。"
 
-#: ../../library/typing.rst:404
+#: ../../library/typing.rst:413
 msgid ""
 "Type variables may be marked covariant or contravariant by passing "
 "``covariant=True`` or ``contravariant=True``.  See :pep:`484` for more "
@@ -365,122 +352,22 @@ msgid ""
 "must be a subclass of the boundary type, see :pep:`484`."
 msgstr "型変数は ``covariant=True`` または ``contravariant=True`` を渡すことによって共変または反変であることを示せます。詳細は :pep:`484` を参照して下さい。デフォルトの型変数は不変です。あるいは、型変数は ``bound=<type>`` を使うことで上界を指定することが出来ます。これは、型変数に (明示的または非明示的に) 代入された実際の型が境界の型のサブクラスでなければならないということを意味します、:pep:`484` も参照。"
 
-#: ../../library/typing.rst:414
-msgid "Union type; ``Union[X, Y]`` means either X or Y."
-msgstr "直和型; ``Union[X, Y]`` は X または Y を表します。"
-
-#: ../../library/typing.rst:416
-msgid "To define a union, use e.g. ``Union[int, str]``.  Details:"
-msgstr "直和型を定義します、例えば ``Union[int, str]`` のように使います。詳細:"
-
-#: ../../library/typing.rst:418
-msgid "The arguments must be types and there must be at least one."
-msgstr "実引数は型でなければならず、少なくとも一つ必要です。"
-
-#: ../../library/typing.rst:420
-msgid "Unions of unions are flattened, e.g.::"
-msgstr "直和型の直和型は flatten されます、例えば::"
-
-#: ../../library/typing.rst:424
-msgid "Unions of a single argument vanish, e.g.::"
-msgstr "単一の実引数の直和型は消滅します、例えば::"
-
-#: ../../library/typing.rst:428
-msgid "Redundant arguments are skipped, e.g.::"
-msgstr "冗長な実引数は飛ばされます、例えば::"
-
-#: ../../library/typing.rst:432
-msgid "When comparing unions, the argument order is ignored, e.g.::"
-msgstr "直和型を比較するとき、実引数の順序は無視されます、例えば::"
-
-#: ../../library/typing.rst:436
-msgid "If :class:`Any` is present it is the sole survivor, e.g.::"
-msgstr ":class:`Any` が存在するならばそれが唯一残ります、例えば::"
-
-#: ../../library/typing.rst:440
-msgid "You cannot subclass or instantiate a union."
-msgstr "直和型のサブクラスを作成したり、インスタンスを作成することは出来ません。"
-
-#: ../../library/typing.rst:442
-msgid "You cannot write ``Union[X][Y]``."
-msgstr "``Union[X][Y]`` と書くことは出来ません。"
-
-#: ../../library/typing.rst:444
-msgid "You can use ``Optional[X]`` as a shorthand for ``Union[X, None]``."
-msgstr "``Optional[X]`` を ``Union[X, None]`` の略記として利用することが出来ます。"
-
-#: ../../library/typing.rst:448
-msgid "Optional type."
-msgstr "オプショナル型。"
-
-#: ../../library/typing.rst:450
-msgid "``Optional[X]`` is equivalent to ``Union[X, None]``."
-msgstr "``Optional[X]`` は ``Union[X, None]`` と同値です。"
-
-#: ../../library/typing.rst:452
-msgid ""
-"Note that this is not the same concept as an optional argument, which is one"
-" that has a default.  An optional argument with a default needn't use the "
-"``Optional`` qualifier on its type annotation (although it is inferred if "
-"the default is ``None``). A mandatory argument may still have an "
-"``Optional`` type if an explicit value of ``None`` is allowed."
-msgstr "これがデフォルト値のある引数であるオプショナル引数と同じ概念ではないと言うことに注意してください。デフォルト値のあるオプショナル引数ではその型アノテーションで ``Optional`` を使う必要はありません (ただしデフォルトでは ``None`` と推論されます)。必須の引数は明示的な値として ``None`` が許されるのであれば ``Optional`` 型も持つことが出来ます。"
-
-#: ../../library/typing.rst:461
-msgid ""
-"Tuple type; ``Tuple[X, Y]`` is the type of a tuple of two items with the "
-"first item of type X and the second of type Y."
-msgstr "タプル型; ``Tuple[X, Y]`` は、最初の要素の型が X で、2つ目の要素の型が Y であるような、2つの要素を持つタプルの型です。"
-
-#: ../../library/typing.rst:464
-msgid ""
-"Example: ``Tuple[T1, T2]`` is a tuple of two elements corresponding to type "
-"variables T1 and T2.  ``Tuple[int, float, str]`` is a tuple of an int, a "
-"float and a string."
-msgstr "例: ``Tuple[T1, T2]``  は型変数 T1 と T2 に対応する2つの要素を持つタプルです。``Tuple[int, float, str]`` は int と float、 string のタプルです。"
-
-#: ../../library/typing.rst:468
-msgid ""
-"To specify a variable-length tuple of homogeneous type, use literal "
-"ellipsis, e.g. ``Tuple[int, ...]``."
-msgstr "同じ型の任意の長さのタプルを指定するには、ellipsis リテラルを用います。例:  ``Tuple[int, ...]``。"
-
-#: ../../library/typing.rst:473
-msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
-msgstr "呼び出し可能型; ``Callable[[int], str]`` は (int) -> str の関数です。"
-
-#: ../../library/typing.rst:475
-msgid ""
-"The subscription syntax must always be used with exactly two values: the "
-"argument list and the return type.  The argument list must be a list of "
-"types; the return type must be a single type."
-msgstr "添字表記は常に2つの値とともに使われなければなりません: 実引数のリストと返り値の型です。実引数のリストは型のリストでなければならず; 返り値の型は単一の型でなければなりません。"
-
-#: ../../library/typing.rst:479
-msgid ""
-"There is no syntax to indicate optional or keyword arguments, such function "
-"types are rarely used as callback types. ``Callable[..., ReturnType]`` could"
-" be used to type hint a callable taking any number of arguments and "
-"returning ``ReturnType``. A plain :class:`Callable` is equivalent to "
-"``Callable[..., Any]``."
-msgstr "オプショナル引数やキーワード引数を表すための文法はありません、そのような関数型はコールバックの型として滅多に使われません。 ``Callable[..., ReturnType]`` は任意の個数の引数をとり ``ReturnType`` を返す型ヒントを与えるために使えます。普通の :class:`Callable` は ``Callable[..., Any]`` と同等です。"
-
-#: ../../library/typing.rst:487
+#: ../../library/typing.rst:423
 msgid "Abstract base class for generic types."
 msgstr "ジェネリック型のための抽象基底クラスです。"
 
-#: ../../library/typing.rst:489
+#: ../../library/typing.rst:425
 msgid ""
 "A generic type is typically declared by inheriting from an instantiation of "
 "this class with one or more type variables. For example, a generic mapping "
 "type might be defined as::"
 msgstr "ジェネリック型は典型的にはこのクラスを1つ以上の型変数によってインスタンス化したものを継承することによって宣言されます。例えば、ジェネリックマップ型は次のように定義することが出来ます::"
 
-#: ../../library/typing.rst:498
+#: ../../library/typing.rst:434
 msgid "This class can then be used as follows::"
 msgstr "このクラスは次のように使用することが出来ます::"
 
-#: ../../library/typing.rst:511
+#: ../../library/typing.rst:447
 msgid ""
 "A variable annotated with ``C`` may accept a value of type ``C``. In "
 "contrast, a variable annotated with ``Type[C]`` may accept values that are "
@@ -488,11 +375,11 @@ msgid ""
 "``C``. For example::"
 msgstr "``C`` と注釈が付けされた変数は ``C`` 型の値を受理します。一方で ``Type[C]`` と注釈が付けられた変数は、そのクラス自身を受理します -- 具体的には、それは ``C`` の *クラスオブジェクト* を受理します。例::"
 
-#: ../../library/typing.rst:520
+#: ../../library/typing.rst:456
 msgid "Note that ``Type[C]`` is covariant::"
 msgstr "``Type[C]`` は共変であることに注意してください::"
 
-#: ../../library/typing.rst:532
+#: ../../library/typing.rst:468
 msgid ""
 "The fact that ``Type[C]`` is covariant implies that all subclasses of ``C`` "
 "should implement the same constructor signature and class method signatures "
@@ -502,220 +389,219 @@ msgid ""
 "particular case may change in future revisions of :pep:`484`."
 msgstr ""
 
-#: ../../library/typing.rst:540
+#: ../../library/typing.rst:476
 msgid ""
 "The only legal parameters for :class:`Type` are classes, unions of classes, "
-"and :class:`Any`. For example::"
-msgstr ":class:`Type` で許されているパラメータは、クラスかクラスの直和型か :class:`Any` です。\n例えば次のようになります::"
+"and :data:`Any`. For example::"
+msgstr ""
 
-#: ../../library/typing.rst:545
+#: ../../library/typing.rst:481
 msgid ""
 "``Type[Any]`` is equivalent to ``Type`` which in turn is equivalent to "
 "``type``, which is the root of Python's metaclass hierarchy."
 msgstr "``Type[Any]`` は ``Type`` と等しく、さらにこれは ``type`` と等しいもので、 Python のメタクラス階層のルートです。"
 
-#: ../../library/typing.rst:550
+#: ../../library/typing.rst:486
 msgid "A generic version of :class:`collections.abc.Iterable`."
 msgstr ":class:`collections.abc.Iterable` のジェネリック版です。"
 
-#: ../../library/typing.rst:554
+#: ../../library/typing.rst:490
 msgid "A generic version of :class:`collections.abc.Iterator`."
 msgstr ":class:`collections.abc.Iterator` のジェネリック版です。"
 
-#: ../../library/typing.rst:558
+#: ../../library/typing.rst:494
 msgid "A generic version of :class:`collections.abc.Reversible`."
 msgstr ":class:`collections.abc.Reversible` のジェネリック版です。"
 
-#: ../../library/typing.rst:562
+#: ../../library/typing.rst:498
 msgid "An ABC with one abstract method ``__int__``."
 msgstr "一つの抽象メソッド ``__int__`` を備えた ABC です。"
 
-#: ../../library/typing.rst:566
+#: ../../library/typing.rst:502
 msgid "An ABC with one abstract method ``__float__``."
 msgstr "一つの抽象メソッド ``__float__`` を備えた ABC です。"
 
-#: ../../library/typing.rst:570
+#: ../../library/typing.rst:506
 msgid ""
 "An ABC with one abstract method ``__abs__`` that is covariant in its return "
 "type."
 msgstr "返り値の型が共変である、一つの抽象メソッド ``__abs__`` を備えた ABC です。"
 
-#: ../../library/typing.rst:575
+#: ../../library/typing.rst:511
 msgid ""
 "An ABC with one abstract method ``__round__`` that is covariant in its "
 "return type."
 msgstr "返り値の型が共変である、一つの抽象メソッド ``__round__`` を備えた ABC です。"
 
-#: ../../library/typing.rst:580
+#: ../../library/typing.rst:516
 msgid "A generic version of :class:`collections.abc.Container`."
 msgstr ":class:`collections.abc.Container` のジェネリック版です。"
 
-#: ../../library/typing.rst:584
+#: ../../library/typing.rst:520
 msgid "An alias to :class:`collections.abc.Hashable`"
 msgstr ":class:`collections.abc.Hashable` へのエイリアス"
 
-#: ../../library/typing.rst:588
+#: ../../library/typing.rst:524
 msgid "An alias to :class:`collections.abc.Sized`"
 msgstr ":class:`collections.abc.Sized` へのエイリアス"
 
-#: ../../library/typing.rst:592
+#: ../../library/typing.rst:528
 msgid "A generic version of :class:`collections.abc.Set`."
 msgstr ":class:`collections.abc.Set` のジェネリック版です。"
 
-#: ../../library/typing.rst:596
+#: ../../library/typing.rst:532
 msgid "A generic version of :class:`collections.abc.MutableSet`."
 msgstr ":class:`collections.abc.MutableSet` のジェネリック版です。"
 
-#: ../../library/typing.rst:600
+#: ../../library/typing.rst:536
 msgid "A generic version of :class:`collections.abc.Mapping`."
 msgstr ":class:`collections.abc.Mapping` のジェネリック版です。"
 
-#: ../../library/typing.rst:604
+#: ../../library/typing.rst:540
 msgid "A generic version of :class:`collections.abc.MutableMapping`."
 msgstr ":class:`collections.abc.MutableMapping` のジェネリック版です。"
 
-#: ../../library/typing.rst:608
+#: ../../library/typing.rst:544
 msgid "A generic version of :class:`collections.abc.Sequence`."
 msgstr ":class:`collections.abc.Sequence` のジェネリック版です。"
 
-#: ../../library/typing.rst:612
+#: ../../library/typing.rst:548
 msgid "A generic version of :class:`collections.abc.MutableSequence`."
 msgstr ":class:`collections.abc.MutableSequence` のジェネリック版です。"
 
-#: ../../library/typing.rst:616
+#: ../../library/typing.rst:552
 msgid "A generic version of :class:`collections.abc.ByteString`."
 msgstr ":class:`collections.abc.ByteString` のジェネリック版です。"
 
-#: ../../library/typing.rst:618
+#: ../../library/typing.rst:554
 msgid ""
 "This type represents the types :class:`bytes`, :class:`bytearray`, and "
 ":class:`memoryview`."
 msgstr "この型は :class:`bytes` と :class:`bytearray` 、 :class:`memoryview` を表します。"
 
-#: ../../library/typing.rst:621
+#: ../../library/typing.rst:557
 msgid ""
 "As a shorthand for this type, :class:`bytes` can be used to annotate "
 "arguments of any of the types mentioned above."
 msgstr "この型の省略形として、 :class:`bytes` を上に挙げた任意の型の引数にアノテーションをつけることに使えます。"
 
-#: ../../library/typing.rst:626
+#: ../../library/typing.rst:562
 msgid ""
 "Generic version of :class:`list`. Useful for annotating return types. To "
 "annotate arguments it is preferred to use abstract collection types such as "
 ":class:`Mapping`, :class:`Sequence`, or :class:`AbstractSet`."
 msgstr ":class:`list` のジェネリック版です。返り値の型のアノテーションをつけることに便利です。引数にアノテーションをつけるためには、:class:`Mapping` や :class:`Sequence` 、 :class:`AbstractSet` のような抽象コレクション型を使うことが好ましいです。"
 
-#: ../../library/typing.rst:631
+#: ../../library/typing.rst:567
 msgid "This type may be used as follows::"
 msgstr "この型は以下のように使うことが出来ます::"
 
-#: ../../library/typing.rst:643
+#: ../../library/typing.rst:579
 msgid "A generic version of :class:`builtins.set <set>`."
 msgstr ":class:`builtins.set <set>` のジェネリック版です。"
 
-#: ../../library/typing.rst:647
+#: ../../library/typing.rst:583
+msgid "A generic version of :class:`builtins.frozenset <frozenset>`."
+msgstr ""
+
+#: ../../library/typing.rst:587
 msgid "A generic version of :class:`collections.abc.MappingView`."
 msgstr ":class:`collections.abc.MappingView` のジェネリック版です。"
 
-#: ../../library/typing.rst:651
+#: ../../library/typing.rst:591
 msgid "A generic version of :class:`collections.abc.KeysView`."
 msgstr ":class:`collections.abc.KeysView` のジェネリック版です。"
 
-#: ../../library/typing.rst:655
+#: ../../library/typing.rst:595
 msgid "A generic version of :class:`collections.abc.ItemsView`."
 msgstr ":class:`collections.abc.ItemsView` のジェネリック版です。"
 
-#: ../../library/typing.rst:659
+#: ../../library/typing.rst:599
 msgid "A generic version of :class:`collections.abc.ValuesView`."
 msgstr ":class:`collections.abc.ValuesView` のジェネリック版です。"
 
-#: ../../library/typing.rst:663
+#: ../../library/typing.rst:603
 msgid "A generic version of :class:`collections.abc.Awaitable`."
 msgstr ":class:`collections.abc.Awaitable` のジェネリック版です。"
 
-#: ../../library/typing.rst:667
+#: ../../library/typing.rst:607
+msgid ""
+"A generic version of :class:`collections.abc.Coroutine`. The variance and "
+"order of type variables correspond to those of :class:`Generator`, for "
+"example::"
+msgstr ""
+
+#: ../../library/typing.rst:620
 msgid "A generic version of :class:`collections.abc.AsyncIterable`."
 msgstr ":class:`collections.abc.AsyncIterable` のジェネリック版です。"
 
-#: ../../library/typing.rst:671
+#: ../../library/typing.rst:624
 msgid "A generic version of :class:`collections.abc.AsyncIterator`."
 msgstr ":class:`collections.abc.AsyncIterator` のジェネリック版です。"
 
-#: ../../library/typing.rst:675
+#: ../../library/typing.rst:628
 msgid ""
 "A generic version of :class:`dict`. The usage of this type is as follows::"
 msgstr ":class:`dict` のジェネリック版です。この型の使い方は以下の通りです::"
 
-#: ../../library/typing.rst:683
+#: ../../library/typing.rst:636
 msgid "A generic version of :class:`collections.defaultdict`"
 msgstr ":class:`collections.defaultdict` のジェネリック版です。"
 
-#: ../../library/typing.rst:687
+#: ../../library/typing.rst:640
 msgid ""
 "A generator can be annotated by the generic type ``Generator[YieldType, "
 "SendType, ReturnType]``. For example::"
 msgstr "ジェネレータはジェネリック型 ``Generator[YieldType, SendType, ReturnType]`` によってアノテーションを付けられます。例えば::"
 
-#: ../../library/typing.rst:696
+#: ../../library/typing.rst:649
 msgid ""
 "Note that unlike many other generics in the typing module, the ``SendType`` "
 "of :class:`Generator` behaves contravariantly, not covariantly or "
 "invariantly."
 msgstr "typing モジュールの多くの他のジェネリクスと違い :class:`Generator` の ``SendType`` は共変や不変ではなく、反変として扱われることに注意してください。"
 
-#: ../../library/typing.rst:700
+#: ../../library/typing.rst:653
 msgid ""
 "If your generator will only yield values, set the ``SendType`` and "
 "``ReturnType`` to ``None``::"
 msgstr "もしジェネレータが値を返すだけの場合は、 ``SendType`` と ``ReturnType`` に ``None`` を設定してください::"
 
-#: ../../library/typing.rst:708
+#: ../../library/typing.rst:661
 msgid ""
 "Alternatively, annotate your generator as having a return type of either "
 "``Iterable[YieldType]`` or ``Iterator[YieldType]``::"
 msgstr "代わりに、ジェネレータを ``Iterable[YieldType]`` や ``Iterator[YieldType]`` という返り値の型でアノテーションをつけることもできます::"
 
-#: ../../library/typing.rst:718
-msgid ""
-"``AnyStr`` is a type variable defined as ``AnyStr = TypeVar('AnyStr', str, "
-"bytes)``."
-msgstr "``AnyStr`` は ``AnyStr = TypeVar('AnyStr', str, bytes)`` として定義される型変数です。"
-
-#: ../../library/typing.rst:721
-msgid ""
-"It is meant to be used for functions that may accept any kind of string "
-"without allowing different kinds of strings to mix. For example::"
-msgstr "他の種類の文字列を混ぜることなく、任意の種類の文字列を許す関数によって使われることを意図しています。"
-
-#: ../../library/typing.rst:733
+#: ../../library/typing.rst:671
 msgid ""
 "``Text`` is an alias for ``str``. It is provided to supply a forward "
 "compatible path for Python 2 code: in Python 2, ``Text`` is an alias for "
 "``unicode``."
 msgstr "``Text`` は ``str`` のエイリアスです。これは Python 2 のコードの前方互換性を提供するために設けられています: Python 2 では ``Text`` は ``unicode`` のエイリアスです。"
 
-#: ../../library/typing.rst:737
+#: ../../library/typing.rst:675
 msgid ""
 "Use ``Text`` to indicate that a value must contain a unicode string in a "
 "manner that is compatible with both Python 2 and Python 3::"
 msgstr "``Text`` は Python 2 と Python 3 の両方と互換性のある方法で値が unicode 文字列を含んでいなければならない場合に使用してください。"
 
-#: ../../library/typing.rst:745
+#: ../../library/typing.rst:683
 msgid "Wrapper namespace for I/O stream types."
 msgstr "I/O ストリーム型のためのラッパー名前空間です。"
 
-#: ../../library/typing.rst:747
+#: ../../library/typing.rst:685
 msgid ""
 "This defines the generic type ``IO[AnyStr]`` and aliases ``TextIO`` and "
 "``BinaryIO`` for respectively ``IO[str]`` and ``IO[bytes]``. These "
 "representing the types of I/O streams such as returned by :func:`open`."
 msgstr "これはジェネリック型 ``IO[AnyStr]`` を定義し、 ``TextIO`` と ``BinaryIO`` をそれぞれ ``IO[str]`` と ``IO[bytes]`` のエイリアスとして定義します。これらは :func:`open` によって返されるような I/O ストリームの型を表します。"
 
-#: ../../library/typing.rst:754
+#: ../../library/typing.rst:692
 msgid "Wrapper namespace for regular expression matching types."
 msgstr "正規表現のマッチング型のための名前空間です。"
 
-#: ../../library/typing.rst:756
+#: ../../library/typing.rst:694
 msgid ""
 "This defines the type aliases ``Pattern`` and ``Match`` which correspond to "
 "the return types from :func:`re.compile` and :func:`re.match`.  These types "
@@ -724,51 +610,56 @@ msgid ""
 " ``Match[bytes]``."
 msgstr "これは :func:`re.compile` と :func:`re.match` の返り値の型に対応する型エイリアス ``Pattern`` と ``Match`` を定義します。これらの型 (と対応する関数) は ``AnyStr`` についてジェネリックで、``Pattern[str]`` や ``Pattern[bytes]`` 、 ``Match[str]`` 、 ``Match[bytes]`` のように書くことで具体的にすることが出来ます。"
 
-#: ../../library/typing.rst:765
+#: ../../library/typing.rst:703
 msgid "Typed version of namedtuple."
 msgstr "namedtuple の型付き版。"
 
-#: ../../library/typing.rst:771
+#: ../../library/typing.rst:709
 msgid "This is equivalent to::"
 msgstr "これは次と等価です::"
 
-#: ../../library/typing.rst:775
+#: ../../library/typing.rst:713
 msgid ""
 "The resulting class has one extra attribute: _field_types, giving a dict "
 "mapping field names to types.  (The field names are in the _fields "
 "attribute, which is part of the namedtuple API.)"
 msgstr "結果のクラスは一つの余分な属性 _field_types を持っており、フィールド名と型をマップする辞書になっています。(フィールド名は _fields 属性に入っています。これは namedtuple の API の一部です。)"
 
-#: ../../library/typing.rst:782
+#: ../../library/typing.rst:720
 msgid ""
 "A helper function to indicate a distinct types to a typechecker, see "
 ":ref:`distinct`. At runtime it returns a function that returns its argument."
 " Usage::"
 msgstr "異なる型であることを型チェッカーに教えるためのヘルパー関数です。\n:ref:`distinct` を参照してください。\n実行時には、その引数を返す関数を返します。\n使い方は次のようになります::"
 
-#: ../../library/typing.rst:791
+#: ../../library/typing.rst:729
 msgid "Cast a value to a type."
 msgstr "値をある型にキャストします。"
 
-#: ../../library/typing.rst:793
+#: ../../library/typing.rst:731
 msgid ""
 "This returns the value unchanged.  To the type checker this signals that the"
 " return value has the designated type, but at runtime we intentionally don't"
 " check anything (we want this to be as fast as possible)."
 msgstr "これは値を変更せずに返します。型検査器にこれは返り値の型が指定された型を持っていることを知らせますが、故意に実行時に何も検査しません。(これを出来る限り速く行いたかったのです。)"
 
-#: ../../library/typing.rst:800
-msgid "Return type hints for a function or method object."
-msgstr "関数またはメソッドのオブジェクトの型ヒントを返します。"
-
-#: ../../library/typing.rst:802
+#: ../../library/typing.rst:738
 msgid ""
-"This is often the same as ``obj.__annotations__``, but it handles forward "
-"references encoded as string literals, and if necessary adds ``Optional[t]``"
-" if a default value equal to None is set."
-msgstr "これは多くの場合 ``obj.__annotations__`` と同じですが、文字列リテラルとしてエンコードされた前方参照を処理し、もしデフォルト値に None と等しい値がセットされている場合必要ならば ``Optional[t]`` を追加します。"
+"Return a dictionary containing type hints for a function, method, module or "
+"class object."
+msgstr ""
 
-#: ../../library/typing.rst:808
+#: ../../library/typing.rst:741
+msgid ""
+"This is often the same as ``obj.__annotations__``. In addition, forward "
+"references encoded as string literals are handled by evaluating them in "
+"``globals`` and ``locals`` namespaces. If necessary, ``Optional[t]`` is "
+"added for function and method annotations if a default value equal to "
+"``None`` is set. For a class ``C``, return a dictionary constructed by "
+"merging all the ``__annotations__`` along ``C.__mro__`` in reverse order."
+msgstr ""
+
+#: ../../library/typing.rst:751
 msgid ""
 "The ``@overload`` decorator allows describing functions and methods that "
 "support multiple different combinations of argument types. A series of "
@@ -783,59 +674,186 @@ msgid ""
 "variable::"
 msgstr "``@overload`` デコレータを使うと、引数の型の複数の組み合わせをサポートする関数やメソッドを書けるようになります。\n``@overload`` 付きの定義を並べた後ろに、(同じ関数やメソッドの) ``@overload`` 無しの定義が来なければなりません。\n``@overload`` 付きの定義は型チェッカーのためでしかありません。\nというのも、 ``@overload`` 付きの定義は ``@overload`` 無しの定義で上書きされるからです。\n後者は実行時に使われますが、型チェッカーからは無視されるべきなのです。\n実行時には、 ``@overload`` 付きの関数を直接呼び出すと ``NotImplementedError`` を送出します。\n次のコードはオーバーロードを使うことで直和型や型変数を使うよりもより正確な型が表現できる例です::"
 
-#: ../../library/typing.rst:832
+#: ../../library/typing.rst:775
 msgid "See :pep:`484` for details and comparison with other typing semantics."
 msgstr "詳細と他の型付け意味論との比較は :pep:`484` を参照してください。"
 
-#: ../../library/typing.rst:836
+#: ../../library/typing.rst:779
 msgid "Decorator to indicate that annotations are not type hints."
 msgstr "アノテーションが型ヒントでないことを示すデコレータです。"
 
-#: ../../library/typing.rst:838
+#: ../../library/typing.rst:781
 msgid ""
 "The argument must be a class or function; if it is a class, it applies "
 "recursively to all methods defined in that class (but not to methods defined"
 " in its superclasses or subclasses)."
 msgstr "引数はクラスまたは関数でなければなりません。もし引数がクラスなら、そのクラスに定義されているすべてのメソッドについて再帰的に適用します。(ただし、スーパークラスやサブクラスに定義されているメソッドには適用されません。)"
 
-#: ../../library/typing.rst:842
+#: ../../library/typing.rst:785
 msgid "This mutates the function(s) in place."
 msgstr "これは関数を適切に変更します。"
 
-#: ../../library/typing.rst:846
+#: ../../library/typing.rst:789
 msgid "Decorator to give another decorator the :func:`no_type_check` effect."
 msgstr "別のデコレータに :func:`no_type_check` の効果を与えるデコレータです。"
 
-#: ../../library/typing.rst:848
+#: ../../library/typing.rst:791
 msgid ""
 "This wraps the decorator with something that wraps the decorated function in"
 " :func:`no_type_check`."
 msgstr "これは何かの関数をラップするデコレータを :func:`no_type_check` でラップします。"
 
+#: ../../library/typing.rst:796
+msgid "Special type indicating an unconstrained type."
+msgstr "制約のない型であることを示す特別な型。"
+
+#: ../../library/typing.rst:798
+msgid "Every type is compatible with :data:`Any`."
+msgstr ""
+
+#: ../../library/typing.rst:799
+msgid ":data:`Any` is compatible with every type."
+msgstr ""
+
+#: ../../library/typing.rst:803
+msgid "Union type; ``Union[X, Y]`` means either X or Y."
+msgstr "直和型; ``Union[X, Y]`` は X または Y を表します。"
+
+#: ../../library/typing.rst:805
+msgid "To define a union, use e.g. ``Union[int, str]``.  Details:"
+msgstr "直和型を定義します、例えば ``Union[int, str]`` のように使います。詳細:"
+
+#: ../../library/typing.rst:807
+msgid "The arguments must be types and there must be at least one."
+msgstr "実引数は型でなければならず、少なくとも一つ必要です。"
+
+#: ../../library/typing.rst:809
+msgid "Unions of unions are flattened, e.g.::"
+msgstr "直和型の直和型は flatten されます、例えば::"
+
+#: ../../library/typing.rst:813
+msgid "Unions of a single argument vanish, e.g.::"
+msgstr "単一の実引数の直和型は消滅します、例えば::"
+
+#: ../../library/typing.rst:817
+msgid "Redundant arguments are skipped, e.g.::"
+msgstr "冗長な実引数は飛ばされます、例えば::"
+
+#: ../../library/typing.rst:821
+msgid "When comparing unions, the argument order is ignored, e.g.::"
+msgstr "直和型を比較するとき、実引数の順序は無視されます、例えば::"
+
+#: ../../library/typing.rst:825
+msgid ""
+"When a class and its subclass are present, the former is skipped, e.g.::"
+msgstr ""
+
+#: ../../library/typing.rst:829
+msgid "You cannot subclass or instantiate a union."
+msgstr "直和型のサブクラスを作成したり、インスタンスを作成することは出来ません。"
+
+#: ../../library/typing.rst:831
+msgid "You cannot write ``Union[X][Y]``."
+msgstr "``Union[X][Y]`` と書くことは出来ません。"
+
+#: ../../library/typing.rst:833
+msgid "You can use ``Optional[X]`` as a shorthand for ``Union[X, None]``."
+msgstr "``Optional[X]`` を ``Union[X, None]`` の略記として利用することが出来ます。"
+
+#: ../../library/typing.rst:837
+msgid "Optional type."
+msgstr "オプショナル型。"
+
+#: ../../library/typing.rst:839
+msgid "``Optional[X]`` is equivalent to ``Union[X, None]``."
+msgstr "``Optional[X]`` は ``Union[X, None]`` と同値です。"
+
+#: ../../library/typing.rst:841
+msgid ""
+"Note that this is not the same concept as an optional argument, which is one"
+" that has a default.  An optional argument with a default needn't use the "
+"``Optional`` qualifier on its type annotation (although it is inferred if "
+"the default is ``None``). A mandatory argument may still have an "
+"``Optional`` type if an explicit value of ``None`` is allowed."
+msgstr "これがデフォルト値のある引数であるオプショナル引数と同じ概念ではないと言うことに注意してください。デフォルト値のあるオプショナル引数ではその型アノテーションで ``Optional`` を使う必要はありません (ただしデフォルトでは ``None`` と推論されます)。必須の引数は明示的な値として ``None`` が許されるのであれば ``Optional`` 型も持つことが出来ます。"
+
+#: ../../library/typing.rst:850
+msgid ""
+"Tuple type; ``Tuple[X, Y]`` is the type of a tuple of two items with the "
+"first item of type X and the second of type Y."
+msgstr "タプル型; ``Tuple[X, Y]`` は、最初の要素の型が X で、2つ目の要素の型が Y であるような、2つの要素を持つタプルの型です。"
+
 #: ../../library/typing.rst:853
+msgid ""
+"Example: ``Tuple[T1, T2]`` is a tuple of two elements corresponding to type "
+"variables T1 and T2.  ``Tuple[int, float, str]`` is a tuple of an int, a "
+"float and a string."
+msgstr "例: ``Tuple[T1, T2]``  は型変数 T1 と T2 に対応する2つの要素を持つタプルです。``Tuple[int, float, str]`` は int と float、 string のタプルです。"
+
+#: ../../library/typing.rst:857
+msgid ""
+"To specify a variable-length tuple of homogeneous type, use literal "
+"ellipsis, e.g. ``Tuple[int, ...]``. A plain :data:`Tuple` is equivalent to "
+"``Tuple[Any, ...]``, and in turn to :class:`tuple`."
+msgstr ""
+
+#: ../../library/typing.rst:863
+msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
+msgstr "呼び出し可能型; ``Callable[[int], str]`` は (int) -> str の関数です。"
+
+#: ../../library/typing.rst:865
+msgid ""
+"The subscription syntax must always be used with exactly two values: the "
+"argument list and the return type.  The argument list must be a list of "
+"types or an ellipsis; the return type must be a single type."
+msgstr ""
+
+#: ../../library/typing.rst:870
+msgid ""
+"There is no syntax to indicate optional or keyword arguments; such function "
+"types are rarely used as callback types. ``Callable[..., ReturnType]`` "
+"(literal ellipsis) can be used to type hint a callable taking any number of "
+"arguments and returning ``ReturnType``.  A plain :data:`Callable` is "
+"equivalent to ``Callable[..., Any]``, and in turn to "
+":class:`collections.abc.Callable`."
+msgstr ""
+
+#: ../../library/typing.rst:880
 msgid "Special type construct to mark class variables."
 msgstr "クラス変数であることを示す特別な型構築子。"
 
-#: ../../library/typing.rst:855
+#: ../../library/typing.rst:882
 msgid ""
 "As introduced in :pep:`526`, a variable annotation wrapped in ClassVar "
 "indicates that a given attribute is intended to be used as a class variable "
 "and should not be set on instances of that class. Usage::"
 msgstr ":pep:`526` で導入された通り、 ClassVar でラップされた変数アノテーションによって、ある属性はクラス変数として使うつもりであり、そのクラスのインスタンスから設定すべきではないということを示せます。使い方は次のようになります::"
 
-#: ../../library/typing.rst:863
-msgid "ClassVar accepts only types and cannot be further subscribed."
-msgstr "ClassVar は型のみを受け入れ、それ以外は受け付けられません。"
+#: ../../library/typing.rst:890
+msgid ":data:`ClassVar` accepts only types and cannot be further subscribed."
+msgstr ""
 
-#: ../../library/typing.rst:865
+#: ../../library/typing.rst:892
 msgid ""
-"ClassVar is not a class itself, and should not be used with isinstance() or "
-"issubclass(). Note that ClassVar does not change Python runtime behavior, it"
-" can be used by 3rd party type checkers, so that the following code will "
-"flagged as an error by those::"
-msgstr "ClassVar はクラスそのものではないので、 isinstance() や issubclass() で使うべきではありません。\n次のコードにサードパーティーの型チェッカーが印を付けられるように、 ClassVar は Python ランタイムの振る舞いを変更しないことに注意してください::"
+":data:`ClassVar` is not a class itself, and should not be used with "
+":func:`isinstance` or :func:`issubclass`. Note that :data:`ClassVar` does "
+"not change Python runtime behavior; it can be used by 3rd party type "
+"checkers, so that the following code might flagged as an error by those::"
+msgstr ""
 
-#: ../../library/typing.rst:879
+#: ../../library/typing.rst:906
+msgid ""
+"``AnyStr`` is a type variable defined as ``AnyStr = TypeVar('AnyStr', str, "
+"bytes)``."
+msgstr "``AnyStr`` は ``AnyStr = TypeVar('AnyStr', str, bytes)`` として定義される型変数です。"
+
+#: ../../library/typing.rst:909
+msgid ""
+"It is meant to be used for functions that may accept any kind of string "
+"without allowing different kinds of strings to mix. For example::"
+msgstr "他の種類の文字列を混ぜることなく、任意の種類の文字列を許す関数によって使われることを意図しています。"
+
+#: ../../library/typing.rst:921
 msgid ""
 "A special constant that is assumed to be ``True`` by 3rd party static type "
 "checkers. It is ``False`` at runtime. Usage::"

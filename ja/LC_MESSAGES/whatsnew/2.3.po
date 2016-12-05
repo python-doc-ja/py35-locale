@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:51+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -423,9 +423,9 @@ msgstr "universal newline サポートはモジュールのインポートと :f
 #: ../../whatsnew/2.3.rst:396
 msgid ""
 "This feature can be disabled when compiling Python by specifying the :option"
-":`--without-universal-newlines` switch when running Python's "
+":`!--without-universal-newlines` switch when running Python's "
 ":program:`configure` script."
-msgstr "この機能は Python をソースからビルドする際に :program:`configure` スクリプトに :option:`--without-universal-newlines` スイッチ を付けることで無効に出来ます。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:403
 msgid ":pep:`278` - Universal Newline Support"
@@ -1843,21 +1843,22 @@ msgstr "タイムスタンプとして使うのに相応しい日付と時刻の
 #: ../../whatsnew/2.3.rst:1685
 msgid ""
 "The three primary types are: :class:`date`, representing a day, month, and "
-"year; :class:`time`, consisting of hour, minute, and second; and "
-":class:`datetime`, which contains all the attributes of both :class:`date` "
-"and :class:`time`. There's also a :class:`timedelta` class representing "
-"differences between two points in time, and time zone logic is implemented "
-"by classes inheriting from the abstract :class:`tzinfo` class."
-msgstr "3 つの基礎となるクラスがあり、 :class:`date` は年・月・日を表現し、 :class:`time` は時・分・秒を、 :class:`datetime` が :class:`date` と :class:`time` の両方の属性すべてを持ちます。また、 :class:`timedelta` は 2 つの時刻の差を表現し、タイムゾーンのロジックは抽象クラス :class:`tzinfo` から派生したクラスにより実装されます。"
+"year; :class:`~datetime.time`, consisting of hour, minute, and second; and "
+":class:`~datetime.datetime`, which contains all the attributes of both "
+":class:`date` and :class:`~datetime.time`. There's also a :class:`timedelta`"
+" class representing differences between two points in time, and time zone "
+"logic is implemented by classes inheriting from the abstract :class:`tzinfo`"
+" class."
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1692
 msgid ""
-"You can create instances of :class:`date` and :class:`time` by either "
-"supplying keyword arguments to the appropriate constructor, e.g. "
+"You can create instances of :class:`date` and :class:`~datetime.time` by "
+"either supplying keyword arguments to the appropriate constructor, e.g. "
 "``datetime.date(year=1972, month=10, day=15)``, or by using one of a number "
 "of class methods.  For example, the :meth:`date.today` class method returns "
 "the current local date."
-msgstr ":class:`date` と :class:`time` のインスタンスはコンストラクタへのキーワード引数を使って ``datetime.date(year=1972, month=10, day=15)`` などとすることでも、あるいはクラスメソッドを使ってでも構築出来ます。例えばクラスメソッド :meth:`date.today` は現在時刻をローカル時刻で返します。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1698
 msgid ""
@@ -1868,18 +1869,19 @@ msgstr "構築後の日付時刻クラスのインスタンスは全て :term:`i
 #: ../../whatsnew/2.3.rst:1710
 msgid ""
 "The :meth:`replace` method allows modifying one or more fields  of a "
-":class:`date` or :class:`datetime` instance, returning a new instance::"
-msgstr ":meth:`replace` メソッドで :class:`date` または :class:`datetime` インスタンスの一つ以上のフィールドを修正出来ます。これは新しいインスタンスを返します::"
+":class:`date` or :class:`~datetime.datetime` instance, returning a new "
+"instance::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1720
 msgid ""
 "Instances can be compared, hashed, and converted to strings (the result is "
-"the same as that of :meth:`isoformat`).  :class:`date` and :class:`datetime`"
-" instances can be subtracted from each other, and added to "
-":class:`timedelta` instances.  The largest missing feature is that there's "
-"no standard library support for parsing strings and getting back a "
-":class:`date` or :class:`datetime`."
-msgstr "インスタンスは比較可能で、ハッシュ出来、文字列に変換出来ます (結果は :meth:`isoformat` メソッドのものと同じです)。 :class:`date` と :class:`datetime` はお互いに減算演算が可能で、 :class:`timedelta` インスタンスを加算することも出来ます。最も大きな不足機能としては、文字列を解析して :class:`date` や :class:`datetime` へ戻すための標準ライブラリサポートはありません。(---訳注: 2 点。「比較可能」の意味は 2.3 から 2.4 で意味が変わっています。2.4 で :class:`date` と :class:`datetime` の比較は出来なくなりました。2.3 では出来ていました。文字列からの :class:`datetime` 構築は 2.5 で :meth:`~datetime.strptime` が追加されています。---)"
+"the same as that of :meth:`isoformat`).  :class:`date` and "
+":class:`~datetime.datetime` instances can be subtracted from each other, and"
+" added to :class:`timedelta` instances.  The largest missing feature is that"
+" there's no standard library support for parsing strings and getting back a "
+":class:`date` or :class:`~datetime.datetime`."
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1727
 msgid ""
@@ -1956,10 +1958,10 @@ msgstr "Pymalloc は Vladimir Marangozov により書かれ Python 2.1 で追加
 msgid ""
 "In 2.1 and 2.2, pymalloc was an experimental feature and wasn't enabled by "
 "default; you had to explicitly enable it when compiling Python by providing "
-"the :option:`--with-pymalloc` option to the :program:`configure` script.  In"
-" 2.3, pymalloc has had further enhancements and is now enabled by default; "
-"you'll have to supply :option:`--without-pymalloc` to disable it."
-msgstr "2.1 と 2.2 ではこの機能は実験的な位置付けでありデフォルトでは有効ではありませんでした。これを有効にするには Python コンパイル時に :program:`configure` スクリプトに :option:`--with-pymalloc` オプションを明示的に与える必要がありました。2.3 では pymalloc はさらに拡張され、また、デフォルトで有効になりました。逆にこれを無効にするのに :option:`--without-pymalloc` を与える必要があります。"
+"the :option:`!--with-pymalloc` option to the :program:`configure` script.  "
+"In 2.3, pymalloc has had further enhancements and is now enabled by default;"
+" you'll have to supply :option:`!--without-pymalloc` to disable it."
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1819
 msgid ""
@@ -2021,8 +2023,8 @@ msgid ""
 "debugging features to catch memory overwrites and doubled frees in both "
 "extension modules and in the interpreter itself.  To enable this support, "
 "compile a debugging version of the Python interpreter by running "
-":program:`configure` with :option:`--with-pydebug`."
-msgstr "Tim Peters による多大な仕事のおかげで、 2.3 の pymalloc はデバッグ機能も提供しています。これはメモリの上書き、二重解放に関して、拡張モジュールとインタプリタ自身について検出出来ます。このサポートを有効にするには :program:`configure` スクリプトにオプション :option:`--with-pydebug` を与えて Python インタプリタをデバッグバージョンとしてコンパイルしてください。"
+":program:`configure` with :option:`!--with-pydebug`."
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1858
 msgid ""
@@ -2056,17 +2058,17 @@ msgstr "Python のビルド過程と C API の変更は以下の通りです:"
 msgid ""
 "The cycle detection implementation used by the garbage collection has proven"
 " to be stable, so it's now been made mandatory.  You can no longer compile "
-"Python without it, and the :option:`--with-cycle-gc` switch to "
+"Python without it, and the :option:`!--with-cycle-gc` switch to "
 ":program:`configure` has been removed."
-msgstr "ガーベージコレクションで使われている循環の検出実装が安定であることがわかったため、必須とすることになりました。Python をこれなしでコンパイルすることはもう出来ません。 :program:`configure` スクリプトの :option:`--with-cycle-gc` スイッチは削除されました。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1885
 msgid ""
 "Python can now optionally be built as a shared library "
-"(:file:`libpython2.3.so`) by supplying :option:`--enable-shared` when "
+"(:file:`libpython2.3.so`) by supplying :option:`!--enable-shared` when "
 "running Python's :program:`configure` script.  (Contributed by Ondrej "
 "Palkovsky.)"
-msgstr "Python がオプショナルでシェアドライブラリ (:file:`libpython2.3.so`) としてビルド可能になりました。Python の :program:`configure` スクリプトに :option:`--enable-shared` オプションを与えることで可能です。 (Contributed by Ondrej Palkovsky.)"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1889
 msgid ""
@@ -2080,11 +2082,11 @@ msgstr "マクロ :c:macro:`DL_EXPORT` と :c:macro:`DL_IMPORT` が非推奨と�
 #: ../../whatsnew/2.3.rst:1894
 msgid ""
 "The interpreter can be compiled without any docstrings for the built-in "
-"functions and modules by supplying :option:`--without-doc-strings` to the "
+"functions and modules by supplying :option:`!--without-doc-strings` to the "
 ":program:`configure` script. This makes the Python executable about 10% "
 "smaller, but will also mean that you can't get help for Python's built-ins."
 "  (Contributed by Gustavo Niemeyer.)"
-msgstr ":program:`configure` スクリプトに :option:`--without-doc-strings` オプションを与えることで、ビルトイン関数とモジュールが docstring を持たないインタプリタとしてコンパイル出来るようになりました。これは Python の実行形式ファイルを 10% 小さくしますが、もちろん Python ビルトインのヘルプが取得できないことにもなります。 (Contributed by Gustavo Niemeyer.)"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1900
 msgid ""

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:47+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,8 +134,8 @@ msgstr "billion laughs"
 #: ../../library/xml.rst:67 ../../library/xml.rst:67 ../../library/xml.rst:67
 #: ../../library/xml.rst:67 ../../library/xml.rst:68 ../../library/xml.rst:68
 #: ../../library/xml.rst:69 ../../library/xml.rst:69 ../../library/xml.rst:70
-msgid "**Yes**"
-msgstr "**Yes**"
+msgid "**Vulnerable**"
+msgstr ""
 
 #: ../../library/xml.rst:67
 msgid "quadratic blowup"
@@ -146,16 +146,16 @@ msgid "external entity expansion"
 msgstr "external entity expansion"
 
 #: ../../library/xml.rst:68
-msgid "No    (1)"
-msgstr "No    (1)"
+msgid "Safe    (1)"
+msgstr ""
 
 #: ../../library/xml.rst:68
-msgid "No    (2)"
-msgstr "No    (2)"
+msgid "Safe    (2)"
+msgstr ""
 
 #: ../../library/xml.rst:68
-msgid "No    (3)"
-msgstr "No    (3)"
+msgid "Safe    (3)"
+msgstr ""
 
 #: ../../library/xml.rst:69 ../../library/xml.rst:102
 msgid "`DTD`_ retrieval"
@@ -164,8 +164,8 @@ msgstr "`DTD`_ retrieval"
 #: ../../library/xml.rst:69 ../../library/xml.rst:69 ../../library/xml.rst:69
 #: ../../library/xml.rst:70 ../../library/xml.rst:70 ../../library/xml.rst:70
 #: ../../library/xml.rst:70
-msgid "No"
-msgstr "No"
+msgid "Safe"
+msgstr ""
 
 #: ../../library/xml.rst:70 ../../library/xml.rst:109
 msgid "decompression bomb"

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:50+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1299,11 +1299,11 @@ msgstr "Python 2.6 に移植します。Python 2.x を Python 2.(x+1) に移植�
 
 #: ../../whatsnew/3.0.rst:907
 msgid ""
-"(Still using 2.6:) Turn on the :option:`-3` command line switch. This "
+"(Still using 2.6:) Turn on the :option:`!-3` command line switch. This "
 "enables warnings about features that will be removed (or change) in 3.0.  "
 "Run your test suite again, and fix code that you get warnings about until "
 "there are no warnings left, and all your tests still pass."
-msgstr "(まだ 2.6 を使います:) コマンドラインに :option:`-3` オプションを渡します。これは 3.0 で削除された (または変更された) 機能についての警告発行を有効にします。再びテストスイートを実行して、そして警告が出たコードをそれがなくなるまで修正し、全てのテストをパスさせます。"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:913
 msgid ""

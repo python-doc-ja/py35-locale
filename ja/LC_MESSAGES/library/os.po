@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:21+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:39+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -338,8 +338,8 @@ msgid ""
 "Returns the list of directories that will be searched for a named "
 "executable, similar to a shell, when launching a process. *env*, when "
 "specified, should be an environment variable dictionary to lookup the PATH "
-"in. By default, when *env* is None, :data:`environ` is used."
-msgstr "プロセスの起動時に名前付き実行ファイルが検索されるディレクトリのリストを、シェルに似た方法で返します。*env* を指定する場合、環境変数の辞書にしてください。その辞書から PATH が検索されます。デフォルトでは *env* は None であり、:data:`environ` が使用されます。"
+"in. By default, when *env* is ``None``, :data:`environ` is used."
+msgstr ""
 
 #: ../../library/os.rst:230
 msgid ""
@@ -3775,8 +3775,9 @@ msgid ""
 msgstr ":func:`confstr` が受理する名前を、ホストオペレーティングシステムで定義されている整数値に対応付けている辞書です。この辞書はシステムでどの設定名が定義されているかを決定するために利用できます。"
 
 #: ../../library/os.rst:3624
-msgid "Return the number of CPUs in the system. Returns None if undetermined."
-msgstr "システムの CPU 数を返します。未定の場合は None を返します。"
+msgid ""
+"Return the number of CPUs in the system. Returns ``None`` if undetermined."
+msgstr ""
 
 #: ../../library/os.rst:3631
 msgid ""

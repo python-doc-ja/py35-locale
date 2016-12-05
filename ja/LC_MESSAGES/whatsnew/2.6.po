@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:51+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,9 +39,9 @@ msgid ""
 "with existing code by not removing older features or syntax.  When it's not "
 "possible to do that, Python 2.6 tries to do what it can, adding "
 "compatibility functions in a :mod:`future_builtins` module and a "
-":option:`-3` switch to warn about usages that will become unsupported in "
+":option:`!-3` switch to warn about usages that will become unsupported in "
 "3.0."
-msgstr "Python 2.6 の主要なテーマは、大幅な言語の再設計となる Python 3.0 移行への道筋を準備することです。可能な場合にはいつでも、Python 2.6 は、古い機能や文法を削除することなく既存のコードの互換性を保てるようにしながら、3.0 より新機能と新文法を組み込んでいます。そうすることが出来ない場合には、Python 2.6 は、出来ることを出来るだけ試みました。それには :mod:`future_builtins` モジュールに互換関数を、また、Python 3 でサポートされなくなる用法についての警告を出すための :option:`-3` スイッチ を追加しています。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:64
 msgid ""
@@ -117,13 +117,13 @@ msgstr "Python 3.0 はいくつかの新しい組み込み関数を追加し、�
 
 #: ../../whatsnew/2.6.rst:119
 msgid ""
-"A new command-line switch, :option:`-3`, enables warnings about features "
+"A new command-line switch, :option:`!-3`, enables warnings about features "
 "that will be removed in Python 3.0.  You can run code with this switch to "
 "see how much work will be necessary to port code to 3.0.  The value of this "
 "switch is available to Python code as the boolean variable "
 ":data:`sys.py3kwarning`, and to C extension code as "
 ":c:data:`Py_Py3kWarningFlag`."
-msgstr "新しいコマンドラインオプション :option:`-3` で、Python 3.0 で削除される機能についての警告を受け取ることが出来ます。このスイッチで、3.0 にコードを移植するためにはどの程度の仕事が必要になるのか知ることが出来るでしょう。この値は Python コードからもアクセス出来て、ブーリアン値 :data:`sys.py3kwarning` と、C 拡張 API では :c:data:`Py_Py3kWarningFlag` です。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:128
 msgid ""
@@ -674,13 +674,13 @@ msgstr "ここに、サブプロセスが階乗を計算する例を示します
 
 #: ../../whatsnew/2.6.rst:616
 msgid ""
-"A :class:`Queue` is used to communicate the result of the factorial. The "
-":class:`Queue` object is stored in a global variable. The child process will"
-" use the value of the variable when the child was created; because it's a "
-":class:`Queue`, parent and child can use the object to communicate.  (If the"
-" parent were to change the value of the global variable, the child's value "
-"would be unaffected, and vice versa.)"
-msgstr ":class:`Queue` が階乗の結果を通信して返すのに使われています。 :class:`Queue` オブジェクトはグローバル変数に格納されています。子プロセスは、子プロセスが作成された時点のその変数の値を使うことになります; :class:`Queue` なので、親子はそのオブジェクトを通信のために使うことが出来ます。(プロセス作成後に親がグローバル変数 queue を差し替えても、子の値は左右されませんし、逆もしかりです。)"
+"A :class:`~queue.Queue` is used to communicate the result of the factorial. "
+"The :class:`~queue.Queue` object is stored in a global variable. The child "
+"process will use the value of the variable when the child was created; "
+"because it's a :class:`~queue.Queue`, parent and child can use the object to"
+" communicate.  (If the parent were to change the value of the global "
+"variable, the child's value would be unaffected, and vice versa.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:624
 msgid ""
@@ -2362,11 +2362,11 @@ msgstr "(Contributed by Christian Heimes and Mark Dickinson.)"
 
 #: ../../whatsnew/2.6.rst:2134
 msgid ""
-":class:`mmap` objects now have a :meth:`rfind` method that searches for a "
-"substring beginning at the end of the string and searching backwards.  The "
-":meth:`find` method also gained an *end* parameter giving an index at which "
-"to stop searching. (Contributed by John Lenton.)"
-msgstr ":class:`mmap` オブジェクトに :meth:`rfind` メソッドが追加されています。部分文字列の検索を、末尾から後ろ向きに検索します。 :meth:`find` には新しい引数 *end* パラメータが追加されていて、検索対象の終了位置を指定することが出来ます。 (Contributed by John Lenton.)"
+":class:`~mmap.mmap` objects now have a :meth:`rfind` method that searches "
+"for a substring beginning at the end of the string and searching backwards."
+"  The :meth:`find` method also gained an *end* parameter giving an index at "
+"which to stop searching. (Contributed by John Lenton.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2140
 msgid ""
@@ -2999,11 +2999,11 @@ msgid ""
 ":class:`datetime.date` and :class:`datetime.time` to the "
 ":class:`xmlrpclib.DateTime` type; the conversion semantics were not "
 "necessarily correct for all applications.  Code using :mod:`xmlrpclib` "
-"should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)"
-"  The code can also handle dates before 1900 (contributed by Ralf Schmitt; "
-":issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC "
-"responses (contributed by Riku Lindblad; :issue:`2985`)."
-msgstr ":mod:`xmlrpclib` モジュールが自動的に :class:`datetime.date` と :class:`datetime.time` を :class:`xmlrpclib.DateTime` 型に変換することは、もう二度としません; 変換のセマンティクスは必ずしも全てのアプリケーションで正しいわけではなかったのです。 (:issue:`1330538`)  :mod:`xmlrpclib` を使うコードは自分で :class:`date` と :class:`time` インスタンスを変換すべきです。コードは 1900 年以前の日付を処理出来(contributed by Ralf Schmitt; :issue:`2014`) 、XML-RPC レスポンス内で ``<i8>`` を使った 64 ビット整数表現を処理出来ます (contributed by Riku Lindblad; :issue:`2985`)。"
+"should convert :class:`date` and :class:`~datetime.time` instances. "
+"(:issue:`1330538`)  The code can also handle dates before 1900 (contributed "
+"by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using "
+"``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2639
 msgid ""
@@ -3352,11 +3352,11 @@ msgstr "Python 2.6 は Microsoft Visual Studio 2008 (version 9.0) でビルド�
 #: ../../whatsnew/2.6.rst:2993
 msgid ""
 "On Mac OS X, Python 2.6 can be compiled as a 4-way universal build. The "
-":program:`configure` script can take a :option:`--with-universal-"
+":program:`configure` script can take a :option:`!--with-universal-"
 "archs=[32-bit|64-bit|all]` switch, controlling whether the binaries are "
 "built for 32-bit architectures (x86, PowerPC), 64-bit (x86-64 and PPC-64), "
 "or both. (Contributed by Ronald Oussoren.)"
-msgstr "Mac OS X では、Python 2.6 は 4 種類のユニバーサルビルドでコンパイル出来ます。 :program:`configure` スクリプトは :option:`--with-universal-archs=[32-bit|64-bit|all]` スイッチを取って、32-bit アーキテクチャ (x86, PowerPC), 64-bit (x86-64 and PPC-64), あるいは両方のバイナリをビルド出来ます。 (Contributed by Ronald Oussoren.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3000
 msgid ""
@@ -3554,9 +3554,9 @@ msgstr "ポート特有の変更: Mac OS X"
 #: ../../whatsnew/2.6.rst:3148
 msgid ""
 "When compiling a framework build of Python, you can now specify the "
-"framework name to be used by providing the :option:`--with-framework-name=` "
-"option to the :program:`configure` script."
-msgstr "Python をフレームワークビルドでコンパイルする際に、 :program:`configure` スクリプトに :option:`--with-framework-name=` オプションでフレームワーク名を指定出来るようになりました。"
+"framework name to be used by providing the :option:`!--with-framework-name=`"
+" option to the :program:`configure` script."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3153
 msgid ""
@@ -3671,8 +3671,9 @@ msgid ""
 ":class:`datetime.date` and :class:`datetime.time` to the "
 ":class:`xmlrpclib.DateTime` type; the conversion semantics were not "
 "necessarily correct for all applications.  Code using :mod:`xmlrpclib` "
-"should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)"
-msgstr ":mod:`xmlrpclib` モジュールが自動的に :class:`datetime.date` と :class:`datetime.time` を :class:`xmlrpclib.DateTime` 型に変換することは、もう二度としません; 変換のセマンティクスは必ずしも全てのアプリケーションで正しいわけではなかったのです。 :mod:`xmlrpclib` を使うコードは自分で :class:`date` と :class:`time` インスタンスを変換すべきです。(:issue:`1330538`)"
+"should convert :class:`date` and :class:`~datetime.time` instances. "
+"(:issue:`1330538`)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3289
 msgid ""

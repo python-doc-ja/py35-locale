@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:23+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:44+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -803,10 +803,10 @@ msgstr "以前はこのメソッドは常に ``None`` を返していました�
 
 #: ../../library/threading.rst:618
 msgid ""
-"Wait until a condition evaluates to True.  *predicate* should be a callable "
+"Wait until a condition evaluates to true.  *predicate* should be a callable "
 "which result will be interpreted as a boolean value. A *timeout* may be "
 "provided giving the maximum time to wait."
-msgstr "条件が True と判定されるまで待ちます。*predicate* は呼び出し可能オブジェクトでなければならず、その結果はブール値として解釈されます。最大の待ち時間を指定する *timeout* を与えることができます。"
+msgstr ""
 
 #: ../../library/threading.rst:622
 msgid ""
@@ -933,10 +933,10 @@ msgstr "*blocking* を false にして呼び出すとブロックしません。
 
 #: ../../library/threading.rst:717
 msgid ""
-"When invoked with a *timeout* other than None, it will block for at most "
-"*timeout* seconds.  If acquire does not complete successfully in that "
+"When invoked with a *timeout* other than ``None``, it will block for at most"
+" *timeout* seconds.  If acquire does not complete successfully in that "
 "interval, return false.  Return true otherwise."
-msgstr "None 以外の *timeout* で起動された場合、最大で *timeout* 秒ブロックします。acquire が その間隔の間で完了しなかった場合は false が返ります。そうでなければ true が返ります。"
+msgstr ""
 
 #: ../../library/threading.rst:726
 msgid ""
@@ -1072,10 +1072,10 @@ msgstr "例えば::"
 #: ../../library/threading.rst:855
 msgid ""
 "Create a timer that will run *function* with arguments *args* and  keyword "
-"arguments *kwargs*, after *interval* seconds have passed. If *args* is None "
-"(the default) then an empty list will be used. If *kwargs* is None (the "
-"default) then an empty dict will be used."
-msgstr "*interval* 秒後に引数 *args* キーワード引数 *kwargs* で *function* を実行するようなタイマを生成します。*args*が None (デフォルト) なら空のリストが使用されます。*kwargs* が None (デフォルト) なら空の辞書が使用されます。"
+"arguments *kwargs*, after *interval* seconds have passed. If *args* is "
+"``None`` (the default) then an empty list will be used. If *kwargs* is "
+"``None`` (the default) then an empty dict will be used."
+msgstr ""
 
 #: ../../library/threading.rst:865
 msgid ""

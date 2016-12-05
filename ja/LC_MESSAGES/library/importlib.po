@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:21+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:44+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/importlib.rst:2
-msgid ":mod:`importlib` -- The implementation of :keyword:`import`"
-msgstr ":mod:`importlib` -- :keyword:`import` の実装"
+msgid ":mod:`importlib` --- The implementation of :keyword:`import`"
+msgstr ""
 
 #: ../../library/importlib.rst:12
 msgid "**Source code:** :source:`Lib/importlib/__init__.py`"
@@ -1229,8 +1229,8 @@ msgstr "(``__loader__``)"
 #: ../../library/importlib.rst:1046
 msgid ""
 "The loader to use for loading.  For namespace packages this should be set to"
-" None."
-msgstr "ロードに使うローダーです。名前空間パッケージの場合 None に設定しなければなりません。"
+" ``None``."
+msgstr ""
 
 #: ../../library/importlib.rst:1051
 msgid "(``__file__``)"
@@ -1240,9 +1240,9 @@ msgstr "(``__file__``)"
 msgid ""
 "Name of the place from which the module is loaded, e.g. \"builtin\" for "
 "built-in modules and the filename for modules loaded from source. Normally "
-"\"origin\" should be set, but it may be None (the default) which indicates "
-"it is unspecified."
-msgstr "モジュールがロードされた場所の名前です。例えば組み込みのモジュールでは \"builtin\"、ソースからロードされたモジュールではファイル名です。通常 \"origin\" は設定されるべきですが、未指定を示す None (デフォルト) かもしれません。"
+"\"origin\" should be set, but it may be ``None`` (the default) which "
+"indicates it is unspecified."
+msgstr ""
 
 #: ../../library/importlib.rst:1060
 msgid "(``__path__``)"
@@ -1250,21 +1250,23 @@ msgstr "(``__path__``)"
 
 #: ../../library/importlib.rst:1062
 msgid ""
-"List of strings for where to find submodules, if a package (None otherwise)."
-msgstr "パッケージの場合サブモジュールを見付けるべき場所を表す文字列のリスト (そうでない場合は None) です。"
+"List of strings for where to find submodules, if a package (``None`` "
+"otherwise)."
+msgstr ""
 
 #: ../../library/importlib.rst:1067
 msgid ""
-"Container of extra module-specific data for use during loading (or None)."
-msgstr "ロード中に使う拡張モジュール指定のデータのコンテナ (または None) です。"
+"Container of extra module-specific data for use during loading (or "
+"``None``)."
+msgstr ""
 
 #: ../../library/importlib.rst:1072
 msgid "(``__cached__``)"
 msgstr "(``__cached__``)"
 
 #: ../../library/importlib.rst:1074
-msgid "String for where the compiled module should be stored (or None)."
-msgstr "コンパイルされたモジュールを保存すべき場所を表す文字列 (または None) です"
+msgid "String for where the compiled module should be stored (or ``None``)."
+msgstr ""
 
 #: ../../library/importlib.rst:1078
 msgid "(``__package__``)"
@@ -1273,8 +1275,8 @@ msgstr "(``__package__``)"
 #: ../../library/importlib.rst:1080
 msgid ""
 "(Read-only) Fully-qualified name of the package to which the module belongs "
-"as a submodule (or None)."
-msgstr "(読み込み専用) サブモジュールとしてモジュールが属するパッケージの完全修飾名 (または None) です。"
+"as a submodule (or ``None``)."
+msgstr ""
 
 #: ../../library/importlib.rst:1085
 msgid ""

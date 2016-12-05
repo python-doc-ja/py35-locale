@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:42+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1440,8 +1440,8 @@ msgid "Using datetime with tzinfo:"
 msgstr "datetime を tzinfo と組み合わせて使う:"
 
 #: ../../library/datetime.rst:1300
-msgid ":class:`time` Objects"
-msgstr ":class:`time` オブジェクト"
+msgid ":class:`.time` Objects"
+msgstr ""
 
 #: ../../library/datetime.rst:1302
 msgid ""
@@ -1512,9 +1512,9 @@ msgstr "比較対象が両方とも aware であり、同じ :attr:`~time.tzinfo
 
 #: ../../library/datetime.rst:1384
 msgid ""
-"Equality comparisons between naive and aware :class:`time` instances don't "
-"raise :exc:`TypeError`."
-msgstr "naive な :class:`time` インスタンスと aware な :class:`time` インスタンスの等価比較では、 :exc:`TypeError` は送出されません。"
+"Equality comparisons between naive and aware :class:`~datetime.time` "
+"instances don't raise :exc:`TypeError`."
+msgstr ""
 
 #: ../../library/datetime.rst:1388
 msgid "hash, use as dict key"

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:24+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:48+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -799,60 +799,16 @@ msgid ""
 msgstr "インスタンスメソッドオブジェクトにも属性があります。 ``m.__self__`` はメソッド :meth:`m` の属しているインスタンスオブジェクトで、 ``m.__func__`` はメソッドに対応する関数オブジェクトです。"
 
 #: ../../tutorial/classes.rst:750
-msgid "Exceptions Are Classes Too"
-msgstr "例外はクラスであってもよい"
-
-#: ../../tutorial/classes.rst:752
-msgid ""
-"User-defined exceptions are identified by classes as well.  Using this "
-"mechanism it is possible to create extensible hierarchies of exceptions."
-msgstr "ユーザ定義の例外をクラスとして識別することもできます。このメカニズムを使って、拡張可能な階層化された例外を作成することができます。"
-
-#: ../../tutorial/classes.rst:755
-msgid ""
-"There are two new valid (semantic) forms for the :keyword:`raise` "
-"statement::"
-msgstr "新しい二つの (意味付け的な) 形式の :keyword:`raise` 文があります::"
-
-#: ../../tutorial/classes.rst:761
-msgid ""
-"In the first form, ``Class`` must be an instance of :class:`type` or of a "
-"class derived from it.  The first form is a shorthand for::"
-msgstr "第一の形式では、 ``Class`` は :class:`type` またはその派生クラスのインスタンスでなければなりません。第一の形式は以下の表記の短縮された記法です::"
-
-#: ../../tutorial/classes.rst:766
-msgid ""
-"A class in an :keyword:`except` clause is compatible with an exception if it"
-" is the same class or a base class thereof (but not the other way around ---"
-" an except clause listing a derived class is not compatible with a base "
-"class).  For example, the following code will print B, C, D in that order::"
-msgstr ":keyword:`except` 節のクラスは、例外と同じクラスか基底クラスのときに互換 (compatible)となります。 (逆方向では成り立ちません --- 派生クラスの例外がリストされている except 節は基底クラスの例外と互換ではありません)。例えば、次のコードは、 B, C, D を順序通りに出力します::"
-
-#: ../../tutorial/classes.rst:788
-msgid ""
-"Note that if the except clauses were reversed (with ``except B`` first), it "
-"would have printed B, B, B --- the first matching except clause is "
-"triggered."
-msgstr "except 節が逆に並んでいた場合 (``except B`` が最初にくる場合)、 B, B, B と出力されるはずだったことに注意してください --- 最初に一致した except 節が駆動されるのです。"
-
-#: ../../tutorial/classes.rst:791
-msgid ""
-"When an error message is printed for an unhandled exception, the exception's"
-" class name is printed, then a colon and a space, and finally the instance "
-"converted to a string using the built-in function :func:`str`."
-msgstr "処理されないクラスの例外に対してエラーメッセージが出力されるとき、まずクラス名が出力され、続いてコロン、スペース、最後に組み込み関数 :func:`str` を使って文字列に変換したインスタンスが出力されます。"
-
-#: ../../tutorial/classes.rst:799
 msgid "Iterators"
 msgstr "イテレータ (iterator)"
 
-#: ../../tutorial/classes.rst:801
+#: ../../tutorial/classes.rst:752
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
 msgstr "すでに気づいているでしょうが、 :keyword:`for` 文を使うとほとんどのコンテナオブジェクトにわたってループを行うことができます::"
 
-#: ../../tutorial/classes.rst:815
+#: ../../tutorial/classes.rst:766
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the "
@@ -865,7 +821,7 @@ msgid ""
 ":func:`next` built-in function; this example shows how it all works::"
 msgstr "こういう要素へのアクセス方法は明確で簡潔で使い易いものです。イテレータの活用は Python へ広く行き渡り、統一感を持たせています。裏では :keyword:`for` 文はコンテナオブジェクトに対して :func:`iter` 関数を呼んでいます。関数は、コンテナの中の要素に1つずつアクセスする :meth:`~iterator.__next__` メソッドが定義されているイテレータオブジェクトを返します。これ以上要素が無い場合は、 :meth:`~iterator.__next__` メソッドは :exc:`StopIteration` 例外を送出し、その通知を受け :keyword:`for` ループは終了します。組み込みの :func:`next` 関数を使って :meth:`~iterator.__next__` メソッドを直接呼ぶこともできます; この例は関数がどう働くのかを示しています::"
 
-#: ../../tutorial/classes.rst:840
+#: ../../tutorial/classes.rst:791
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
 "iterator behavior to your classes.  Define an :meth:`__iter__` method which "
@@ -873,11 +829,11 @@ msgid ""
 "defines :meth:`__next__`, then :meth:`__iter__` can just return ``self``::"
 msgstr "イテレータプロトコルの裏にある仕組みを観察していれば、自作のクラスにイテレータとしての振舞いを追加するのは簡単です。 :meth:`~iterator.__next__` メソッドを持つオブジェクトを返す :meth:`__iter__` メソッドを定義するのです。クラスが :meth:`__next__` メソッドを定義している場合、 :meth:`__iter__` メソッドは単に ``self`` を返すことも可能です::"
 
-#: ../../tutorial/classes.rst:877
+#: ../../tutorial/classes.rst:828
 msgid "Generators"
 msgstr "ジェネレータ (generator)"
 
-#: ../../tutorial/classes.rst:879
+#: ../../tutorial/classes.rst:830
 msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators."
 "  They are written like regular functions but use the :keyword:`yield` "
@@ -887,7 +843,7 @@ msgid ""
 "generators can be trivially easy to create::"
 msgstr "ジェネレータ(:term:`generator`)は、イテレータを作成するための簡潔で強力なツールです。ジェネレータは通常の関数のように書かれますが、何らかのデータを返すときには :keyword:`yield` 文を使います。そのジェネレータに対して :func:`next` が呼び出されるたびに、ジェネレータは以前に中断した処理を再開します (ジェネレータは、全てのデータ値と最後にどの文が実行されたかを記憶しています)。以下の例を見れば、ジェネレータがとても簡単に作成できることがわかります::"
 
-#: ../../tutorial/classes.rst:900
+#: ../../tutorial/classes.rst:851
 msgid ""
 "Anything that can be done with generators can also be done with class-based "
 "iterators as described in the previous section.  What makes generators so "
@@ -895,7 +851,7 @@ msgid ""
 " are created automatically."
 msgstr "ジェネレータでできることは、前の節で解説したクラスを使ったイテレータでも実現できます。ジェネレータの定義がコンパクトになるのは :meth:`__iter__` メソッドと :meth:`~generator.__next__` メソッドが自動で作成されるからです。"
 
-#: ../../tutorial/classes.rst:905
+#: ../../tutorial/classes.rst:856
 msgid ""
 "Another key feature is that the local variables and execution state are "
 "automatically saved between calls.  This made the function easier to write "
@@ -903,7 +859,7 @@ msgid ""
 "``self.index`` and ``self.data``."
 msgstr "ジェネレータのもう一つの重要な機能は、呼び出しごとにローカル変数と実行状態が自動的に保存されるということです。これにより、 ``self.index`` や ``self.data`` といったインスタンス変数を使ったアプローチよりも簡単に関数を書くことができるようになります。"
 
-#: ../../tutorial/classes.rst:910
+#: ../../tutorial/classes.rst:861
 msgid ""
 "In addition to automatic method creation and saving program state, when "
 "generators terminate, they automatically raise :exc:`StopIteration`. In "
@@ -911,11 +867,11 @@ msgid ""
 "effort than writing a regular function."
 msgstr "メソッドを自動生成したりプログラムの実行状態を自動保存するほかに、ジェネレータは終了時に自動的に :exc:`StopIteration` を送出します。これらの機能を組み合わせると、通常の関数を書くのと同じ労力で、簡単にイテレータを生成できます。"
 
-#: ../../tutorial/classes.rst:919
+#: ../../tutorial/classes.rst:870
 msgid "Generator Expressions"
 msgstr "ジェネレータ式"
 
-#: ../../tutorial/classes.rst:921
+#: ../../tutorial/classes.rst:872
 msgid ""
 "Some simple generators can be coded succinctly as expressions using a syntax"
 " similar to list comprehensions but with parentheses instead of brackets.  "
@@ -925,15 +881,15 @@ msgid ""
 "memory friendly than equivalent list comprehensions."
 msgstr "単純なジェネレータなら、式を使って簡潔にコードする方法があります。リスト内包に似た構文の式ですが、角括弧ではなく丸括弧を使います。ジェネレータ式は、関数の中でジェネレータをすぐに使いたいような状況のために用意されています。ジェネレータ式はコンパクトですが、完全なジェネレータに比べてちょっと融通の効かないところがありますが、同じ内容を返すリスト内包よりはメモリに優しいことが多いという利点があります。"
 
-#: ../../tutorial/classes.rst:928
+#: ../../tutorial/classes.rst:879
 msgid "Examples::"
 msgstr "例::"
 
-#: ../../tutorial/classes.rst:952
+#: ../../tutorial/classes.rst:903
 msgid "Footnotes"
 msgstr "脚注"
 
-#: ../../tutorial/classes.rst:953
+#: ../../tutorial/classes.rst:904
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
 "called :attr:`~object.__dict__` which returns the dictionary used to "

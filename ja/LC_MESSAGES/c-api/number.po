@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:17+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:31+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -267,8 +267,8 @@ msgstr "*base* 進数に変換された整数 *n* を文字列として返しま
 #: ../../c-api/number.rst:268
 msgid ""
 "Returns *o* converted to a Py_ssize_t value if *o* can be interpreted as an "
-"integer.  If the call fails, an exception is raised and -1 is returned."
-msgstr "*o* を整数として解釈可能だった場合、Py_ssize_t型の値に変換して返します。呼び出しが失敗したら、例外が送出され、-1 が返されます。"
+"integer.  If the call fails, an exception is raised and ``-1`` is returned."
+msgstr ""
 
 #: ../../c-api/number.rst:271
 msgid ""
@@ -282,6 +282,6 @@ msgstr "もし *o* がPythonのintに変換できたのに、Py_ssize_tへの変
 
 #: ../../c-api/number.rst:281
 msgid ""
-"Returns True if *o* is an index integer (has the nb_index slot of  the "
-"tp_as_number structure filled in)."
-msgstr "*o* がインデックス整数であるときにTrueを返します (tp_as_number構造体のnb_indexスロットが埋まっている場合)。"
+"Returns ``1`` if *o* is an index integer (has the nb_index slot of  the "
+"tp_as_number structure filled in), and ``0`` otherwise."
+msgstr ""

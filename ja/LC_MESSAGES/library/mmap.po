@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:21+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:42+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,14 +34,14 @@ msgstr "メモリにマップされたファイルオブジェクトは、 :clas
 
 #: ../../library/mmap.rst:17
 msgid ""
-"A memory-mapped file is created by the :class:`mmap` constructor, which is "
-"different on Unix and on Windows.  In either case you must provide a file "
-"descriptor for a file opened for update. If you wish to map an existing "
-"Python file object, use its :meth:`fileno` method to obtain the correct "
-"value for the *fileno* parameter.  Otherwise, you can open the file using "
-"the :func:`os.open` function, which returns a file descriptor directly (the "
-"file still needs to be closed when done)."
-msgstr "メモリマップファイルは Unix 上と Windows 上とでは異なる :class:`mmap` コンストラクタによって作られます。いずれの場合も、開いたファイルのファイル記述子を、更新のために提供しなければなりません。すでに存在する Python ファイルオブジェクトをマップしたい場合は、 *fileno* パラメータに渡す値を手に入れるために、 :meth:`fileno` メソッドを使用して下さい。そうでなければ、ファイル記述子を直接返す :func:`os.open` 関数 (呼び出すときにはまだファイルが閉じている必要があります) を使って、ファイルを開くことができます。"
+"A memory-mapped file is created by the :class:`~mmap.mmap` constructor, "
+"which is different on Unix and on Windows.  In either case you must provide "
+"a file descriptor for a file opened for update. If you wish to map an "
+"existing Python file object, use its :meth:`fileno` method to obtain the "
+"correct value for the *fileno* parameter.  Otherwise, you can open the file "
+"using the :func:`os.open` function, which returns a file descriptor directly"
+" (the file still needs to be closed when done)."
+msgstr ""
 
 #: ../../library/mmap.rst:26
 msgid ""
@@ -105,8 +105,8 @@ msgid ""
 "**(Unix version)** Maps *length* bytes from the file specified by the file "
 "descriptor *fileno*, and returns a mmap object.  If *length* is ``0``, the "
 "maximum length of the map will be the current size of the file when "
-":class:`mmap` is called."
-msgstr "**(Unix バージョン)** ファイル記述子 *fileno* によって指定されたファイルから *length* バイトをマップし、 mmap オブジェクトを返します。 *length* が ``0`` の場合、マップの最大長は :class:`mmap` が呼び出された時点のファイルサイズになります。"
+":class:`~mmap.mmap` is called."
+msgstr ""
 
 #: ../../library/mmap.rst:75
 msgid ""
@@ -149,13 +149,13 @@ msgid ""
 msgstr "Mac OS X と OpenVMS において、作成された memory mapping の正当性を確実にするために *fileno* で指定されたファイルディスクリプタは内部で自動的に物理的なストレージ (physical backing store) と同期されます。"
 
 #: ../../library/mmap.rst:100
-msgid "This example shows a simple way of using :class:`mmap`::"
-msgstr "以下の例は :class:`mmap` の簡単な使い方です::"
+msgid "This example shows a simple way of using :class:`~mmap.mmap`::"
+msgstr ""
 
 #: ../../library/mmap.rst:125
 msgid ""
-":class:`mmap` can also be used as a context manager in a :keyword:`with` "
-"statement.::"
+":class:`~mmap.mmap` can also be used as a context manager in a "
+":keyword:`with` statement.::"
 msgstr ""
 
 #: ../../library/mmap.rst:133
@@ -226,13 +226,13 @@ msgstr "オフセット *src* から始まる *count* バイトをインデッ�
 #: ../../library/mmap.rst:206
 msgid ""
 "Return a :class:`bytes` containing up to *n* bytes starting from the current"
-" file position. If the argument is omitted, *None* or negative, return all "
-"bytes from the current file position to the end of the mapping. The file "
+" file position. If the argument is omitted, ``None`` or negative, return all"
+" bytes from the current file position to the end of the mapping. The file "
 "position is updated to point after the bytes that were returned."
 msgstr ""
 
 #: ../../library/mmap.rst:212
-msgid "Argument can be omitted or *None*."
+msgid "Argument can be omitted or ``None``."
 msgstr ""
 
 #: ../../library/mmap.rst:217

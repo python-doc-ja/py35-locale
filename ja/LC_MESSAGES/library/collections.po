@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:40+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -478,14 +478,14 @@ msgstr ":class:`list` オブジェクトでも同様の操作を実現できま�
 
 #: ../../library/collections.rst:415
 msgid ""
-"If *maxlen* is not specified or is *None*, deques may grow to an arbitrary "
-"length.  Otherwise, the deque is bounded to the specified maximum length.  "
+"If *maxlen* is not specified or is ``None``, deques may grow to an arbitrary"
+" length.  Otherwise, the deque is bounded to the specified maximum length.  "
 "Once a bounded length deque is full, when new items are added, a "
 "corresponding number of items are discarded from the opposite end.  Bounded "
 "length deques provide functionality similar to the ``tail`` filter in Unix. "
 "They are also useful for tracking transactions and other pools of data where"
 " only the most recent activity is of interest."
-msgstr "*maxlen* が指定され無かったり *None* だった場合、deque は不定のサイズまで大きくなります。それ以外の場合、deque は指定された最大長に制限されます。長さが制限された deque がいっぱいになると、新しい要素を追加するときに追加した要素数分だけ追加した逆側から要素が捨てられます。長さが制限された deque は Unix における ``tail`` フィルタと似た機能を提供します。トランザクションの tracking や最近使った要素だけを残したいデータプール (pool of data) などにも便利です。"
+msgstr ""
 
 #: ../../library/collections.rst:424
 msgid "Deque objects support the following methods:"
@@ -575,8 +575,8 @@ msgid "Deque objects also provide one read-only attribute:"
 msgstr "deque オブジェクトは読み取り専用属性も 1 つ提供しています:"
 
 #: ../../library/collections.rst:523
-msgid "Maximum size of a deque or *None* if unbounded."
-msgstr "deque の最大長で、制限されていなければ *None* です。"
+msgid "Maximum size of a deque or ``None`` if unbounded."
+msgstr ""
 
 #: ../../library/collections.rst:528
 msgid ""

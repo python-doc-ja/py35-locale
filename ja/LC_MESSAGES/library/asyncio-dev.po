@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:19+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:46+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -245,11 +245,19 @@ msgid ""
 " the logger ``'asyncio'``."
 msgstr ":mod:`asyncio` モジュールは :mod:`logging` モジュールとともにロガー ``'asyncio'`` の情報のログを記録します。"
 
-#: ../../library/asyncio-dev.rst:168
+#: ../../library/asyncio-dev.rst:164
+msgid ""
+"The default log level for the :mod:`asyncio` module is "
+":py:data:`logging.INFO`. For those not wanting such verbosity from "
+":mod:`asyncio` the log level can be changed.  For example, to change the "
+"level to :py:data:`logging.WARNING`:"
+msgstr ""
+
+#: ../../library/asyncio-dev.rst:176
 msgid "Detect coroutine objects never scheduled"
 msgstr "スケジュールされなかったコルーチンオブジェクトの検出"
 
-#: ../../library/asyncio-dev.rst:170
+#: ../../library/asyncio-dev.rst:178
 msgid ""
 "When a coroutine function is called and its result is not passed to "
 ":func:`ensure_future` or to the :meth:`AbstractEventLoop.create_task` "
@@ -258,29 +266,29 @@ msgid ""
 "mode>` to :ref:`log a warning <asyncio-logger>` to detect it."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:176
+#: ../../library/asyncio-dev.rst:184
 msgid "Example with the bug::"
 msgstr "バグの例::"
 
-#: ../../library/asyncio-dev.rst:186
+#: ../../library/asyncio-dev.rst:194
 msgid "Output in debug mode::"
 msgstr "デバッグモードの出力::"
 
-#: ../../library/asyncio-dev.rst:193
+#: ../../library/asyncio-dev.rst:201
 msgid ""
 "The fix is to call the :func:`ensure_future` function or the "
 ":meth:`AbstractEventLoop.create_task` method with the coroutine object."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:198
+#: ../../library/asyncio-dev.rst:206
 msgid ":ref:`Pending task destroyed <asyncio-pending-task-destroyed>`."
 msgstr ":ref:`未完のタスクの破棄 <asyncio-pending-task-destroyed>`。"
 
-#: ../../library/asyncio-dev.rst:202
+#: ../../library/asyncio-dev.rst:210
 msgid "Detect exceptions never consumed"
 msgstr "未処理の例外の検出"
 
-#: ../../library/asyncio-dev.rst:204
+#: ../../library/asyncio-dev.rst:212
 msgid ""
 "Python usually calls :func:`sys.displayhook` on unhandled exceptions. If "
 ":meth:`Future.set_exception` is called, but the exception is never consumed,"
@@ -289,114 +297,114 @@ msgid ""
 "the traceback where the exception was raised."
 msgstr "Python は通常未処理の例外には :func:`sys.displayhook` を呼び出します。\n:meth:`Future.set_exception` が呼び出されたものの処理されなかった場合、 :func:`sys.displayhook` が呼び出されません。\n代わりに、フューチャーがガベージコレクションで削除されたとき、例外発生場所のトレースバックとともに :ref:`ログが記録され <asyncio-logger>` ます。"
 
-#: ../../library/asyncio-dev.rst:210
+#: ../../library/asyncio-dev.rst:218
 msgid "Example of unhandled exception::"
 msgstr "未処理の例外の例::"
 
-#: ../../library/asyncio-dev.rst:223
+#: ../../library/asyncio-dev.rst:231
 msgid "Output::"
 msgstr "出力::"
 
-#: ../../library/asyncio-dev.rst:236
+#: ../../library/asyncio-dev.rst:244
 msgid ""
 ":ref:`Enable the debug mode of asyncio <asyncio-debug-mode>` to get the "
 "traceback where the task was created. Output in debug mode::"
 msgstr ":ref:`asyncio のデバッグモードの有効化 <asyncio-debug-mode>` によりタスクが生成したトレースバックを取得できます。デバッグモードの出力は以下のようになります::"
 
-#: ../../library/asyncio-dev.rst:255
+#: ../../library/asyncio-dev.rst:263
 msgid ""
 "There are different options to fix this issue. The first option is to chain "
 "the coroutine in another coroutine and use classic try/except::"
 msgstr "この問題を解決するには異なるオプションがあります。最初のオプションでは、別のコルーチン内でコルーチンをチェーンし、古典的な try/except を使用します::"
 
-#: ../../library/asyncio-dev.rst:270
+#: ../../library/asyncio-dev.rst:278
 msgid ""
 "Another option is to use the :meth:`AbstractEventLoop.run_until_complete` "
 "function::"
 msgstr ":meth:`AbstractEventLoop.run_until_complete` 関数を使う別のオプション::"
 
-#: ../../library/asyncio-dev.rst:281
+#: ../../library/asyncio-dev.rst:289
 msgid "The :meth:`Future.exception` method."
 msgstr ":meth:`Future.exception` メソッド。"
 
-#: ../../library/asyncio-dev.rst:285
+#: ../../library/asyncio-dev.rst:293
 msgid "Chain coroutines correctly"
 msgstr "コルーチンを正しくチェーンする"
 
-#: ../../library/asyncio-dev.rst:287
+#: ../../library/asyncio-dev.rst:295
 msgid ""
 "When a coroutine function calls other coroutine functions and tasks, they "
 "should be chained explicitly with ``yield from``. Otherwise, the execution "
 "is not guaranteed to be sequential."
 msgstr "コルーチン関数が別のコルーチン関数かタスクを呼び出すとき、それらは ``yield from`` で明示的にチェーンされなければなりません。そうされなかった場合、逐次的に実行されることは保証されません。"
 
-#: ../../library/asyncio-dev.rst:291
+#: ../../library/asyncio-dev.rst:299
 msgid ""
 "Example with different bugs using :func:`asyncio.sleep` to simulate slow "
 "operations::"
 msgstr ":func:`asyncio.sleep` を使って処理速度の低下をシミュレートする異なるバグの例::"
 
-#: ../../library/asyncio-dev.rst:324
+#: ../../library/asyncio-dev.rst:332
 msgid "Expected output:"
 msgstr "予想される出力:"
 
-#: ../../library/asyncio-dev.rst:333
+#: ../../library/asyncio-dev.rst:341
 msgid "Actual output:"
 msgstr "実際の出力:"
 
-#: ../../library/asyncio-dev.rst:343
+#: ../../library/asyncio-dev.rst:351
 msgid ""
 "The loop stopped before the ``create()`` finished, ``close()`` has been "
 "called before ``write()``, whereas coroutine functions were called in this "
 "order: ``create()``, ``write()``, ``close()``."
 msgstr "``create()`` が完了する前か、``write()`` を呼び出す前に ``close()`` が呼び出されたか、その一方でコルーチン関数が ``create()``、``write()``。``close()`` の順で呼び出された場合、ループは停止します。"
 
-#: ../../library/asyncio-dev.rst:347
+#: ../../library/asyncio-dev.rst:355
 msgid "To fix the example, tasks must be marked with ``yield from``::"
 msgstr "この問題を解決するには、タスクは ``yield from`` でマークされなければなりません::"
 
-#: ../../library/asyncio-dev.rst:357
+#: ../../library/asyncio-dev.rst:365
 msgid "Or without ``asyncio.ensure_future()``::"
 msgstr "あるいは、``asyncio.ensure_future()`` を使いません::"
 
-#: ../../library/asyncio-dev.rst:371
+#: ../../library/asyncio-dev.rst:379
 msgid "Pending task destroyed"
 msgstr "未完のタスクの破棄"
 
-#: ../../library/asyncio-dev.rst:373
+#: ../../library/asyncio-dev.rst:381
 msgid ""
 "If a pending task is destroyed, the execution of its wrapped :ref:`coroutine"
 " <coroutine>` did not complete. It is probably a bug and so a warning is "
 "logged."
 msgstr "未完のタスクが破棄された場合、それがラップした :ref:`コルーチン <coroutine>` は完了しません。これがおそらくバグであり、そのため警告がログに記録されます。"
 
-#: ../../library/asyncio-dev.rst:376
+#: ../../library/asyncio-dev.rst:384
 msgid "Example of log:"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:383
+#: ../../library/asyncio-dev.rst:391
 msgid ""
 ":ref:`Enable the debug mode of asyncio <asyncio-debug-mode>` to get the "
 "traceback where the task was created. Example of log in debug mode:"
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:397
+#: ../../library/asyncio-dev.rst:405
 msgid ""
 ":ref:`Detect coroutine objects never scheduled <asyncio-coroutine-not-"
 "scheduled>`."
 msgstr ":ref:`スケジュールされなかったコルーチンオブジェクトの検出 <asyncio-coroutine-not-scheduled>`。"
 
-#: ../../library/asyncio-dev.rst:402
+#: ../../library/asyncio-dev.rst:410
 msgid "Close transports and event loops"
 msgstr "トランスポートとイベントループを閉じる"
 
-#: ../../library/asyncio-dev.rst:404
+#: ../../library/asyncio-dev.rst:412
 msgid ""
 "When a transport is no more needed, call its ``close()`` method to release "
 "resources. Event loops must also be closed explicitly."
 msgstr ""
 
-#: ../../library/asyncio-dev.rst:407
+#: ../../library/asyncio-dev.rst:415
 msgid ""
 "If a transport or an event loop is not closed explicitly, a "
 ":exc:`ResourceWarning` warning will be emitted in its destructor. By "

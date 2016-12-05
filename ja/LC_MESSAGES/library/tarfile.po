@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-11-18 22:22+0000\n"
-"Last-Translator: Julien <github@mandark.fr>\n"
+"PO-Revision-Date: 2016-12-05 08:35+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -643,8 +643,8 @@ msgid ""
 msgstr "内容を信頼できない tar アーカイブを、事前の内部チェック前に展開してはいけません。ファイルが *path* の外側に作られる可能性があります。例えば、``\"/\"`` で始まる絶対パスのファイル名や、2 重ドット ``\"..\"`` で始まるパスのファイル名です。"
 
 #: ../../library/tarfile.rst:390 ../../library/tarfile.rst:418
-msgid "Added the *numeric_only* parameter."
-msgstr "*numeric_only* 引数が追加されました。"
+msgid "Added the *numeric_owner* parameter."
+msgstr ""
 
 #: ../../library/tarfile.rst:396
 msgid ""
@@ -885,113 +885,113 @@ msgid ""
 "Return :const:`True` if it is one of character device, block device or FIFO."
 msgstr "キャラクターデバイス、ブロックデバイスあるいは FIFO のいずれかの場合に :const:`True` を返します。"
 
-#: ../../library/tarfile.rst:649
-msgid "Command Line Interface"
+#: ../../library/tarfile.rst:650
+msgid "Command-Line Interface"
 msgstr "コマンドラインインターフェイス"
 
-#: ../../library/tarfile.rst:653
+#: ../../library/tarfile.rst:654
 msgid ""
-"The :mod:`tarfile` module provides a simple command line interface to "
+"The :mod:`tarfile` module provides a simple command-line interface to "
 "interact with tar archives."
-msgstr ":mod:`tarfile` モジュールは tar アーカイブと作用する簡単なコマンドラインインターフェイスを提供します。"
+msgstr ""
 
-#: ../../library/tarfile.rst:656
+#: ../../library/tarfile.rst:657
 msgid ""
 "If you want to create a new tar archive, specify its name after the "
 ":option:`-c` option and then list the filename(s) that should be included:"
 msgstr "tar アーカイブを新規に作成したい場合、:option:`-c` オプションの後にまとめたいファイル名のリストを指定してください:"
 
-#: ../../library/tarfile.rst:663
+#: ../../library/tarfile.rst:664
 msgid "Passing a directory is also acceptable:"
 msgstr "ディレクトリを渡すこともできます:"
 
-#: ../../library/tarfile.rst:669
+#: ../../library/tarfile.rst:670
 msgid ""
 "If you want to extract a tar archive into the current directory, use the "
 ":option:`-e` option:"
 msgstr "tar アーカイブをカレントディレクトリに取り出したい場合、:option:`-e` オプションを使用してください:"
 
-#: ../../library/tarfile.rst:676
+#: ../../library/tarfile.rst:677
 msgid ""
 "You can also extract a tar archive into a different directory by passing the"
 " directory's name:"
 msgstr "ディレクトリ名を渡すことで tar アーカイブを別のディレクトリに取り出すこともできます:"
 
-#: ../../library/tarfile.rst:683
+#: ../../library/tarfile.rst:684
 msgid "For a list of the files in a tar archive, use the :option:`-l` option:"
 msgstr "tar アーカイブ内のファイル一覧を表示するには :option:`-l` を使用してください:"
 
-#: ../../library/tarfile.rst:691
-msgid "Command line options"
+#: ../../library/tarfile.rst:692
+msgid "Command-line options"
 msgstr "コマンドラインオプション"
 
-#: ../../library/tarfile.rst:696
+#: ../../library/tarfile.rst:697
 msgid "List files in a tarfile."
 msgstr "tar ファイル内のファイル一覧を表示します。"
 
-#: ../../library/tarfile.rst:701
+#: ../../library/tarfile.rst:702
 msgid "Create tarfile from source files."
 msgstr "ソースファイルから tar ファイルを作成します。"
 
-#: ../../library/tarfile.rst:706
+#: ../../library/tarfile.rst:707
 msgid ""
 "Extract tarfile into the current directory if *output_dir* is not specified."
 msgstr "*output_dir* が指定されていない場合、カレントディレクトリに tar ファイルを取り出します。"
 
-#: ../../library/tarfile.rst:711
+#: ../../library/tarfile.rst:712
 msgid "Test whether the tarfile is valid or not."
 msgstr "tar ファイルが有効かどうか調べます。"
 
-#: ../../library/tarfile.rst:715
-msgid "Verbose output"
-msgstr "詳細な出力"
+#: ../../library/tarfile.rst:716
+msgid "Verbose output."
+msgstr ""
 
-#: ../../library/tarfile.rst:720
+#: ../../library/tarfile.rst:721
 msgid "Examples"
 msgstr "使用例"
 
-#: ../../library/tarfile.rst:722
+#: ../../library/tarfile.rst:723
 msgid ""
 "How to extract an entire tar archive to the current working directory::"
 msgstr "tar アーカイブから現在のディレクトリにすべて抽出する方法::"
 
-#: ../../library/tarfile.rst:729
+#: ../../library/tarfile.rst:730
 msgid ""
 "How to extract a subset of a tar archive with :meth:`TarFile.extractall` "
 "using a generator function instead of a list::"
 msgstr "tar アーカイブの一部を、リストの代わりにジェネレーター関数を利用して :meth:`TarFile.extractall` で展開する方法::"
 
-#: ../../library/tarfile.rst:744
+#: ../../library/tarfile.rst:745
 msgid "How to create an uncompressed tar archive from a list of filenames::"
 msgstr "非圧縮 tar アーカイブをファイル名のリストから作成する方法::"
 
-#: ../../library/tarfile.rst:752
+#: ../../library/tarfile.rst:753
 msgid "The same example using the :keyword:`with` statement::"
 msgstr ":keyword:`with` 文を利用した同じ例::"
 
-#: ../../library/tarfile.rst:759
+#: ../../library/tarfile.rst:760
 msgid ""
 "How to read a gzip compressed tar archive and display some member "
 "information::"
 msgstr "gzip 圧縮 tar アーカイブを作成してメンバー情報のいくつかを表示する方法::"
 
-#: ../../library/tarfile.rst:773
+#: ../../library/tarfile.rst:774
 msgid ""
 "How to create an archive and reset the user information using the *filter* "
 "parameter in :meth:`TarFile.add`::"
 msgstr ":meth:`TarFile.add` 関数の *filter* 引数を利用してユーザー情報をリセットしながらアーカイブを作成する方法::"
 
-#: ../../library/tarfile.rst:789
+#: ../../library/tarfile.rst:790
 msgid "Supported tar formats"
 msgstr "サポートしている tar フォーマット"
 
-#: ../../library/tarfile.rst:791
+#: ../../library/tarfile.rst:792
 msgid ""
 "There are three tar formats that can be created with the :mod:`tarfile` "
 "module:"
 msgstr ":mod:`tarfile` モジュールは 3 種類の tar フォーマットを作成することができます:"
 
-#: ../../library/tarfile.rst:793
+#: ../../library/tarfile.rst:794
 msgid ""
 "The POSIX.1-1988 ustar format (:const:`USTAR_FORMAT`). It supports filenames"
 " up to a length of at best 256 characters and linknames up to 100 "
@@ -999,7 +999,7 @@ msgid ""
 "widely supported format."
 msgstr "POSIX.1-1988 ustar format (:const:`USTAR_FORMAT`). ファイル名の長さは256文字までで、リンク名の長さは100文字までです。最大のファイルサイズは8GiBです。このフォーマットは古くて制限が多いですが、広くサポートされています。"
 
-#: ../../library/tarfile.rst:798
+#: ../../library/tarfile.rst:799
 msgid ""
 "The GNU tar format (:const:`GNU_FORMAT`). It supports long filenames and "
 "linknames, files bigger than 8 GiB and sparse files. It is the de facto "
@@ -1007,7 +1007,7 @@ msgid ""
 "extensions for long names, sparse file support is read-only."
 msgstr "GNU tar format (:const:`GNU_FORMAT`). 長いファイル名とリンク名、8GiBを超えるファイルやスパース(sparse)ファイルをサポートしています。これは GNU/Linux システムにおいてデファクト・スタンダードになっています。 :mod:`tarfile` モジュールは長いファイル名を完全にサポートしています。 スパースファイルは読み込みのみサポートしています。"
 
-#: ../../library/tarfile.rst:803
+#: ../../library/tarfile.rst:804
 msgid ""
 "The POSIX.1-2001 pax format (:const:`PAX_FORMAT`). It is the most flexible "
 "format with virtually no limits. It supports long filenames and linknames, "
@@ -1015,7 +1015,7 @@ msgid ""
 "implementations today are able to handle pax archives properly."
 msgstr "POSIX.1-2001 pax フォーマット (:const:`PAX_FORMAT`)。最も柔軟性があり、ほぼ制限が無いフォーマットです。長いファイル名やリンク名、大きいファイルをサポートし、パス名をポータブルな方法で保存します。しかし、現在のところ、すべての tar の実装が pax フォーマットを正しく扱えるわけではありません。"
 
-#: ../../library/tarfile.rst:808
+#: ../../library/tarfile.rst:809
 msgid ""
 "The *pax* format is an extension to the existing *ustar* format. It uses "
 "extra headers for information that cannot be stored otherwise. There are two"
@@ -1025,13 +1025,13 @@ msgid ""
 "portability reasons."
 msgstr "*pax* フォーマットは既存の *ustar* フォーマットの拡張です。*ustar* では保存できない情報を追加のヘッダーを利用して保存します。*pax* には 2 種類のヘッダーがあります。1 つ目は拡張ヘッダーで、その次のファイルヘッダーに影響します。2 つ目はグローバルヘッダーで、アーカイブ全体に対して有効で、それ以降のすべてのファイルに影響します。すべての pax ヘッダーの内容は、ポータブル性のために *UTF-8* で保存されます。"
 
-#: ../../library/tarfile.rst:814
+#: ../../library/tarfile.rst:815
 msgid ""
 "There are some more variants of the tar format which can be read, but not "
 "created:"
 msgstr "他にも、読み込みのみサポートしている tar フォーマットがいくつかあります:"
 
-#: ../../library/tarfile.rst:817
+#: ../../library/tarfile.rst:818
 msgid ""
 "The ancient V7 format. This is the first tar format from Unix Seventh "
 "Edition, storing only regular files and directories. Names must not be "
@@ -1040,17 +1040,17 @@ msgid ""
 "ASCII characters."
 msgstr "ancient V7 フォーマット。これは Unix 7th Edition から存在する、最初の tar フォーマットです。通常のファイルとディレクトリのみ保存します。名前は 100 文字を超えてはならず、ユーザー/グループ名に関する情報は保存されません。いくつかのアーカイブは、フィールドが ASCII でない文字を含む場合に、ヘッダーのチェックサムの計算を誤ります。"
 
-#: ../../library/tarfile.rst:822
+#: ../../library/tarfile.rst:823
 msgid ""
 "The SunOS tar extended format. This format is a variant of the POSIX.1-2001 "
 "pax format, but is not compatible."
 msgstr "SunOS tar 拡張フォーマット。POSIX.1-2001 pax フォーマットの亜流ですが、互換性がありません。"
 
-#: ../../library/tarfile.rst:828
+#: ../../library/tarfile.rst:829
 msgid "Unicode issues"
 msgstr "Unicode に関する問題"
 
-#: ../../library/tarfile.rst:830
+#: ../../library/tarfile.rst:831
 msgid ""
 "The tar format was originally conceived to make backups on tape drives with "
 "the main focus on preserving file system information. Nowadays tar archives "
@@ -1065,13 +1065,13 @@ msgid ""
 "It stores non-ASCII metadata using the universal character encoding *UTF-8*."
 msgstr "tar フォーマットは、もともとテープドライブにファイルシステムのバックアップをとる目的で設計されました。現在、tarアーカイブはファイルを配布する際に一般的に用いられ、ネットワーク上で交換されています。オリジナルフォーマットが抱える一つの問題は (他の多くのフォーマットでも同じですが)、様々な文字エンコーディングのサポートについて考慮していないことです。例えば、*UTF-8* システム上で作成された通常の tar アーカイブは、非 *ASCII* 文字を含んでいた場合、*Latin-1* システムでは正しく読み取ることができません。テキストのメタデータ (ファイル名、リンク名、ユーザー/グループ名など) は破壊されます。残念なことに、アーカイブのエンコーディングを自動検出する方法はありません。pax フォーマットはこの問題を解決するために設計されました。これは非 ASCII メタデータをユニバーサル文字エンコーディング *UTF-8* を使用して格納します。"
 
-#: ../../library/tarfile.rst:842
+#: ../../library/tarfile.rst:843
 msgid ""
 "The details of character conversion in :mod:`tarfile` are controlled by the "
 "*encoding* and *errors* keyword arguments of the :class:`TarFile` class."
 msgstr ":mod:`tarfile` における文字変換処理の詳細は :class:`TarFile` クラスのキーワード引数 *encoding* および *errors* によって制御されます。"
 
-#: ../../library/tarfile.rst:845
+#: ../../library/tarfile.rst:846
 msgid ""
 "*encoding* defines the character encoding to use for the metadata in the "
 "archive. The default value is :func:`sys.getfilesystemencoding` or "
@@ -1080,7 +1080,7 @@ msgid ""
 "not set appropriately, this conversion may fail."
 msgstr "*encoding* はアーカイブのメタデータに使用する文字エンコーディングを指定します。デフォルト値は :func:`sys.getfilesystemencoding` で、フォールバックとして ``'ascii'`` が使用されます。アーカイブの読み書き時に、メタデータはそれぞれデコードまたはエンコードしなければなりません。*encoding* に適切な値が設定されていない場合、その変換は失敗することがあります。"
 
-#: ../../library/tarfile.rst:851
+#: ../../library/tarfile.rst:852
 msgid ""
 "The *errors* argument defines how characters are treated that cannot be "
 "converted. Possible values are listed in section :ref:`error-handlers`. The "
@@ -1088,7 +1088,7 @@ msgid ""
 "system calls, see :ref:`os-filenames`."
 msgstr "引数 *errors* は文字を変換できない時の扱いを指定します。指定できる値は :ref:`error-handlers` 節を参照してください。デフォルトのスキームは ``'surrogateescape'`` で、Python はそのファイルシステムの呼び出しも使用します。:ref:`os-filenames` を参照してください。"
 
-#: ../../library/tarfile.rst:856
+#: ../../library/tarfile.rst:857
 msgid ""
 "In case of :const:`PAX_FORMAT` archives, *encoding* is generally not needed "
 "because all the metadata is stored using *UTF-8*. *encoding* is only used in"
