@@ -6,13 +6,14 @@
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-05 08:35+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-12-07 19:17+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -138,7 +139,7 @@ msgid ""
 " than the files the symbolic links refer to—reading the information from the"
 " *src* symbolic link, and writing the information to the *dst* symbolic "
 "link."
-msgstr ""
+msgstr "*follow_symlinks* が偽の場合、 *src* と *dst* の両方がシンボリックリンクであれば、 :func:`copystat` はリンク先ではなくてシンボリックリンク自体を操作します。 *src* からシンボリックリンクの情報を読み込み、 *dst* のシンボリックリンクにその情報を書き込みます。"
 
 #: ../../library/shutil.rst:116
 msgid ""
