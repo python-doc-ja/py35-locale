@@ -5,13 +5,14 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-05 08:49+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-12-08 16:51+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -237,7 +238,7 @@ msgid ""
 ":file:`build` under the distribution root; if you're excessively concerned "
 "with speed, or want to keep the source tree pristine, you can change the "
 "build directory with the :option:`!--build-base` option. For example::"
-msgstr ""
+msgstr "上で示唆したように、 :command:`build` コマンドは、インストールすべきファイルを *ビルドディレクトリ* に置く働きがあります。デフォルトでは、ビルドディレクトリは配布物ルート下の  :file:`build` になります; システムの処理速度に強いこだわりがあったり、ソースツリーに指一本触れたくないのなら、 :option:`!--build-base` オプションを使ってビルドディレクトリを変更できます。例えば::"
 
 #: ../../install/index.rst:208
 msgid ""

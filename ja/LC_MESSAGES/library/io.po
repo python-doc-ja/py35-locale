@@ -6,13 +6,14 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-05 08:38+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-12-08 16:17+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -759,7 +760,7 @@ msgid ""
 "a character string or :class:`bytes` object representing the path to the "
 "file which will be opened. In this case closefd must be ``True`` (the "
 "default) otherwise an error will be raised."
-msgstr ""
+msgstr "開くファイルへのパスを表す文字列または :class:`bytes` オブジェクト。\nこの場合、closefd は ``True`` (デフォルト) でなければなりません。\n``True`` でない場合、エラーが送出されます。"
 
 #: ../../library/io.rst:542
 msgid ""
