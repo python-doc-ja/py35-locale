@@ -5,13 +5,14 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-05 08:36+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-12-10 10:33+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -277,7 +278,7 @@ msgid ""
 "that wraps the corresponding attribute of the wrapped object (so attempting "
 "to access an attribute that doesn't exist will raise an "
 ":exc:`AttributeError`)."
-msgstr ""
+msgstr "*wraps*: ラップするモックオブジェクトを指定します。\nもし *wraps* に ``None`` 以外を指定した場合には、モックの呼び出し時に指定したオブジェクトを呼び出します (戻り値は実際の結果を返します)。\n属性へのアクセスは、ラップされたオブジェクトと対応するモックを返します (すなわち、存在しない属性にアクセスしようとした場合は :exc:`AttributeError` が発生します)。"
 
 #: ../../library/unittest.mock.rst:254
 msgid ""

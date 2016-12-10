@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Shun Sakurai, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-05 08:34+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
+"PO-Revision-Date: 2016-12-10 10:30+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../../library/winreg.rst:2
 msgid ":mod:`winreg` --- Windows registry access"
-msgstr ""
+msgstr ":mod:`winreg` --- Windows レジストリへのアクセス"
 
 #: ../../library/winreg.rst:12
 msgid ""
