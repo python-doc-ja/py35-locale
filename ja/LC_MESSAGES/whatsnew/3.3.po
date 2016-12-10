@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
+"PO-Revision-Date: 2016-12-10 14:43+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -271,7 +271,7 @@ msgstr "最大 :attr:`次元 <memoryview.ndim>` は公式に 64 に制限され�
 msgid ""
 "The representation of empty shape, strides and suboffsets is now an empty "
 "tuple instead of ``None``."
-msgstr ""
+msgstr "空の :attr:`~memoryview.shape`, 空の :attr:`~memoryview.strides`, 空の :attr:`~memoryview.suboffsets` を表現するのに以前は ``None`` を用いていましたが今ではこれは空のタプルです。"
 
 #: ../../whatsnew/3.3.rst:187
 msgid ""
@@ -2514,7 +2514,7 @@ msgid ""
 "soonest (if any) and then return immediately. This is useful in case you "
 "want to use the :class:`~sched.scheduler` in non-blocking applications.  "
 "(Contributed by Giampaolo Rodolà in :issue:`13449`.)"
-msgstr ""
+msgstr ":meth:`~sched.scheduler.run` が *blocking* パラメータを取るようになりました。\nこれを偽にセットすると、このメソッドは既に実行予定時間になっているイベント (もしあれば) を実行してすぐに戻ります。\nこれは :class:`~sched.scheduler` を非ブロッキングなアプリケーションで使いたい場合に有用です。\n(Contributed by Giampaolo Rodolà in :issue:`13449`.)\n(---訳注: 原文の表現がわかりにくいですが、これは ``blocking=False`` 時はスケジュールされた時間になっているタスクがあれば通常は *delayfunc* を呼び出すところをそうせずに、一番早く次の予定時間に達するタスクの予定時間までの時間差を返します。---)"
 
 #: ../../whatsnew/3.3.rst:1750
 msgid ""

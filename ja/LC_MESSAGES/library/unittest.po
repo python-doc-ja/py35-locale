@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
+"PO-Revision-Date: 2016-12-10 15:06+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1042,7 +1042,7 @@ msgstr "*first* と *second* が同じオブジェクトであること（そう
 
 #: ../../library/unittest.rst:871
 msgid "Test that *expr* is (or is not) ``None``."
-msgstr ""
+msgstr "*expr* が ``None`` であること (および、そうでないこと) をテストします。"
 
 #: ../../library/unittest.rst:879
 msgid "Test that *first* is (or is not) in *second*."
@@ -1568,18 +1568,18 @@ msgid ""
 "the default value. In this case, the custom message is appended to the end "
 "of the standard failure message. When set to ``False``, the custom message "
 "replaces the standard message."
-msgstr ""
+msgstr "このクラス属性は、失敗した assertXYY の呼び出しで独自の失敗時のメッセージが msg 引数として渡されていたときにどうするかを決定します。\n``True`` がデフォルト値です。\nこの場合、標準の失敗時のメッセージの後に独自のメッセージが追記されます。\n``False`` に設定したときは、標準のメッセージを独自のメッセージで置き換えます。"
 
 #: ../../library/unittest.rst:1325
 msgid ""
 "The class setting can be overridden in individual test methods by assigning "
 "an instance attribute, self.longMessage, to ``True`` or ``False`` before "
 "calling the assert methods."
-msgstr ""
+msgstr "アサートメソッドを呼び出す前に、個別のテストメソッドの中でインスタンス属性 self.longMessage を ``True`` または ``False`` に設定して、この設定を上書きできます。"
 
 #: ../../library/unittest.rst:1329
 msgid "The class setting gets reset before each test call."
-msgstr ""
+msgstr "このクラスの設定はそれぞれのテストを呼び出す前にリセットされます。"
 
 #: ../../library/unittest.rst:1336
 msgid ""
@@ -1594,7 +1594,7 @@ msgstr "この属性は、アサーションメソッドが失敗をレポート
 msgid ""
 "Setting ``maxDiff`` to ``None`` means that there is no maximum length of "
 "diffs."
-msgstr ""
+msgstr "``maxDiff`` を ``None`` に設定すると差分表示の上限がなくなります。"
 
 #: ../../library/unittest.rst:1349
 msgid ""
@@ -2426,7 +2426,7 @@ msgid ""
 " order to avoid too many warning messages.  This behavior can be overridden "
 "using Python's :option:`!-Wd` or :option:`!-Wa` options (see :ref:`Warning "
 "control <using-on-warnings>`) and leaving *warnings* to ``None``."
-msgstr ""
+msgstr ":ref:`デフォルトで無視 <warning-ignored>` に設定されているとしても、このランナーのデフォルトでは :exc:`DeprecationWarning`, :exc:`PendingDeprecationWarning`, :exc:`ResourceWarning`, :exc:`ImportWarning` を表示します。\n:ref:`unittest の非推奨メソッド <deprecated-aliases>` で起きた非推奨警告も特別な場合として扱われ、警告フィルタが ``'default'`` もしくは ``'always'`` だったとき、対象の警告メッセージが出ないようにモジュールごとに1回だけ表示されます。\nPython の :option:`!-Wd` オプションや :option:`!-Wa` オプション (:ref:`警告の制御 <using-on-warnings>` を参照してください) を使ったり、 *warnings* を ``None`` にしたりしておくと、この動作を上書きできます。"
 
 #: ../../library/unittest.rst:1979
 msgid "Added the ``warnings`` argument."
@@ -2527,7 +2527,7 @@ msgid ""
 "will remain ``None`` if a :option:`!-W` option is passed to "
 ":program:`python` (see :ref:`Warning control <using-on-warnings>`), "
 "otherwise it will be set to ``'default'``."
-msgstr ""
+msgstr "*warnings* 引数では、テストの実行中に使うべき :ref:`警告フィルタ <warning-filter>` を指定します。\nこの引数が指定されない場合には、 :option:`!-W` オプションが :program:`python` に渡されていなければ ``None`` のまま (:ref:`警告の制御 <using-on-warnings>` を参照してください) で、そうでなければ ``'default'`` が設定されます。"
 
 #: ../../library/unittest.rst:2061
 msgid ""

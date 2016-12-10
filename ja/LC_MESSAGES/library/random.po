@@ -6,11 +6,12 @@
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2016-12-10 14:45+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -355,7 +356,7 @@ msgid ""
 "M. Matsumoto and T. Nishimura, \"Mersenne Twister: A 623-dimensionally "
 "equidistributed uniform pseudorandom number generator\", ACM Transactions on"
 " Modeling and Computer Simulation Vol. 8, No. 1, January pp.3--30 1998."
-msgstr ""
+msgstr "M. Matsumoto and T. Nishimura, \"Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator\", ACM Transactions on Modeling and Computer Simulation Vol. 8, No. 1, January pp.3--30 1998."
 
 #: ../../library/random.rst:272
 msgid ""
