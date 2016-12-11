@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
+"PO-Revision-Date: 2016-12-11 14:21+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -347,7 +348,7 @@ msgstr "この入力ソースのバイトストリームを取得します。"
 msgid ""
 "The getEncoding method will return the character encoding for this byte "
 "stream, or ``None`` if unknown."
-msgstr ""
+msgstr "getEncoding メソッドは、このバイトストリームの文字エンコーディングを返します。不明なときは ``None`` を返します。"
 
 #: ../../library/xml.sax.reader.rst:316
 msgid "Set the character stream (a :term:`text file`) for this input source."

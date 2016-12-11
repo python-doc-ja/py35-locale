@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Shun Sakurai, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-11 15:10+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -243,7 +244,7 @@ msgid ""
 "files.  (Be sure to use appropriate extensions to distinguish C++ source "
 "files: :file:`.cc` and :file:`.cpp` seem to be recognized by both Unix and "
 "Windows compilers.)"
-msgstr ""
+msgstr ":class:`~distutils.core.Extension` コンストラクタの第 2 引数は、ソースファイルのリストです。 Distutils は現在 C 、 C++ 、 Objective-C 拡張モジュールしかサポートしていないため、それらは通常は C/C++/Objective-C ソースファイルです。 (C++ ソースファイルと判別できるように適切な拡張子を使用するようにしてください: :file:`.cc` と :file:`.cpp` が Unix と Windows のコンパイラの両方が認識できるようです。)"
 
 #: ../../distutils/setupscript.rst:207
 msgid ""
@@ -582,7 +583,7 @@ msgid ""
 "default, it is replaced with the current interpreter location.  The "
 ":option:`!--executable` (or :option:`!-e`) option will allow the interpreter"
 " path to be explicitly overridden."
-msgstr ""
+msgstr "スクリプトとは、Python ソースコードを含むファイルで、コマンドラインから実行できるよう作られているものです。スクリプトは Distutils に複雑なことを一切させません。唯一の気の利いた機能は、スクリプトの最初の行が ``#!`` で始まっていて、 \"python\" という単語が入っていた場合、Distutils は最初の行を現在使っているインタプリタを参照するよう置き換えます。デフォルトでは現在使っているインタプリタと置換しますが、オプション :option:`!--executable` (または :option:`!-e`) を指定することで、明示的にインタプリタのパスを指定して上書きすることができます。"
 
 #: ../../distutils/setupscript.rst:452
 msgid ""

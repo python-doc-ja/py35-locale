@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:44+0000\n"
+"PO-Revision-Date: 2016-12-11 14:45+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1019,7 +1019,7 @@ msgid ""
 "If *method* is ``None`` then the default context is returned. Otherwise "
 "*method* should be ``'fork'``, ``'spawn'``, ``'forkserver'``.  "
 ":exc:`ValueError` is raised if the specified start method is not available."
-msgstr ""
+msgstr "*method* が ``None`` の場合、デフォルトのコンテキストが返されます。その他の場合 *method* は ``'fork'``、``'spawn'`` あるいは ``'forkserver'`` でなければなりません。指定された開始方式が利用できない場合は :exc:`ValueError` が送出されます。"
 
 #: ../../library/multiprocessing.rst:954
 msgid "Return the name of start method used for starting processes."
@@ -1031,14 +1031,14 @@ msgid ""
 "start method is fixed to the default and the name is returned.  If the start"
 " method has not been fixed and *allow_none* is true then ``None`` is "
 "returned."
-msgstr ""
+msgstr "開始方式がまだ確定しておらず、*allow_none* の値が偽の場合、開始方式はデフォルトに確定され、その名前が返されます。開始方式が確定しておらず、*allow_none* の値が真の場合、 ``None`` が返されます。"
 
 #: ../../library/multiprocessing.rst:961
 msgid ""
 "The return value can be ``'fork'``, ``'spawn'``, ``'forkserver'`` or "
 "``None``.  ``'fork'`` is the default on Unix, while ``'spawn'`` is the "
 "default on Windows."
-msgstr ""
+msgstr "返り値は ``'fork'``、``'spawn'``、``'forkserver'`` あるいは ``None`` になります。Unix では ``'fork'`` が、Windows では ``'spawn'`` がデフォルトになります。"
 
 #: ../../library/multiprocessing.rst:969
 msgid ""
@@ -2215,7 +2215,7 @@ msgid ""
 "before it will exit and be replaced with a fresh worker process, to enable "
 "unused resources to be freed. The default *maxtasksperchild* is ``None``, "
 "which means worker processes will live as long as the pool."
-msgstr ""
+msgstr "*maxtasksperchild* は、ワーカープロセスが exit して新たなワーカープロセスと置き替えられるまでの間に、ワーカープロセスが完了することのできるタスクの数です。この設定により未利用のリソースが解放されるようなります。デフォルトの *maxtasksperchild* は ``None`` で、これはワーカープロセスがプールと同じ期間だけ生き続けるということを意味します。"
 
 #: ../../library/multiprocessing.rst:2034
 msgid ""
@@ -2523,7 +2523,7 @@ msgstr "*authenticate* が ``True`` (デフォルトでは ``False``) か *authk
 msgid ""
 "If *authkey* is a byte string then it will be used as the authentication "
 "key; otherwise it must be ``None``."
-msgstr ""
+msgstr "*authkey* がバイト文字列の場合、認証キーとして使用されます。そうでない場合は ``None`` でなければいけません。"
 
 #: ../../library/multiprocessing.rst:2303
 msgid ""

@@ -4,11 +4,12 @@
 # 
 # Translators:
 # E. Kawashima, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
+"PO-Revision-Date: 2016-12-11 15:05+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -75,7 +76,7 @@ msgid ""
 "iterator will return all days (as :class:`datetime.date` objects) for the "
 "month and all days before the start of the month or after the end of the "
 "month that are required to get a complete week."
-msgstr ""
+msgstr "*year* 年 *month* (1--12) 月に対するイテレータを返します。\nこのイテレータはその月の全ての日、およびその月が始まる前の日とその月が終わった後の日のうち、週の欠けを埋めるために必要な日を (:class:`datetime.date` オブジェクトとして) 返します。"
 
 #: ../../library/calendar.rst:58
 msgid ""

@@ -4,11 +4,12 @@
 # 
 # Translators:
 # E. Kawashima, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2016-12-11 14:59+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -274,7 +275,7 @@ msgid ""
 " 0.5--1.5, 2 is the midpoint of 1.5--2.5, 3 is the midpoint of 2.5--3.5, "
 "etc.  With the data given, the middle value falls somewhere in the class 3.5"
 "--4.5, and interpolation is used to estimate it:"
-msgstr ""
+msgstr "次の例ではデータは丸められているため、各値はデータの中間です。例えば 1 は 0.5 と 1.5 の中間、2 は 1.5 と 2.5 の中間、3 は 2.5 と 3.5 の中間です。例では中央の値は 3.5 から 4.5 で、補間により推定されます:"
 
 #: ../../library/statistics.rst:204
 msgid ""

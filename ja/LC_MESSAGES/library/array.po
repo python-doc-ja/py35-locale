@@ -6,11 +6,12 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-11 14:06+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -429,7 +430,7 @@ msgid ""
 "be converted back to an array with the same type and value using "
 ":func:`eval`, so long as the :class:`~array.array` class has been imported "
 "using ``from array import array``. Examples::"
-msgstr ""
+msgstr "アレイオブジェクトを表示したり文字列に変換したりすると、 ``array(typecode, initializer)`` という形式で表現されます。\nアレイが空の場合、 *initializer* の表示を省略します。\nアレイが空でなければ、 *typecode* が ``'u'`` の場合には文字列に、それ以外の場合には数値のリストになります。\n:class:`~array.array` クラスが ``from array import array`` というふうにインポートされている限り、変換後の文字列に :func:`eval` を用いると元のアレイオブジェクトと同じデータ型と値を持つアレイに逆変換できることが保証されています。文字列表現の例を以下に示します::"
 
 #: ../../library/array.rst:269
 msgid "Module :mod:`struct`"

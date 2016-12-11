@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
+"PO-Revision-Date: 2016-12-11 14:58+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1188,7 +1188,7 @@ msgid ""
 "without any prefix like *lib*, suffix like ``.so``, ``.dylib`` or version "
 "number (this is the form used for the posix linker option :option:`!-l`).  "
 "If no library can be found, returns ``None``."
-msgstr ""
+msgstr "ライブラリを見つけてパス名を返そうと試みます。 *name* は ``lib`` のような接頭辞、 ``.so``, ``.dylib`` のような接尾辞、あるいは、バージョン番号が何も付いていないライブラリの名前です (これは posix リンカのオプション :option:`!-l` に使われている形式です)。もしライブラリが見つからなければ、 ``None`` を返します。"
 
 #: ../../library/ctypes.rst:1259 ../../library/ctypes.rst:1837
 msgid "The exact functionality is system dependent."
@@ -1311,7 +1311,7 @@ msgid ""
 "variable; if you call foreign functions created with ``use_errno=True`` then"
 " the :data:`errno` value before the function call is swapped with the ctypes"
 " private copy, the same happens immediately after the function call."
-msgstr ""
+msgstr "*use_errno* 変数が真に設定されたとき、システムの :data:`errno` エラーナンバーに安全にアクセスする ctypes の仕組みが有効化されます。 :mod:`ctypes` はシステムの :data:`errno` 変数のスレッド限定のコピーを管理します。もし、 ``use_errno=True`` の状態で作られた外部関数を呼び出したなら、関数呼び出し前の :data:`errno` 変数は ctypes のプライベートコピーと置き換えられ、同じことが関数呼び出しの直後にも発生します。"
 
 #: ../../library/ctypes.rst:1368
 msgid ""
@@ -1327,7 +1327,7 @@ msgid ""
 " :func:`SetLastError` Windows API functions; :func:`ctypes.get_last_error` "
 "and :func:`ctypes.set_last_error` are used to request and change the ctypes "
 "private copy of the windows error code."
-msgstr ""
+msgstr "*use_last_error* パラメータは、真に設定されたとき、 :func:`GetLastError` と :func:`SetLastError` Windows API によって管理される Windows エラーコードに対するのと同じ仕組みが有効化されます。 :func:`ctypes.get_last_error` と :func:`ctypes.set_last_error` は Windows エラーコードの ctypes プライベートコピーを変更したり要求したりするのに使われます。"
 
 #: ../../library/ctypes.rst:1381
 msgid ""
@@ -1561,7 +1561,7 @@ msgid ""
 ":data:`errno` variable is exchanged with the real :data:`errno` value before"
 " and after the call; *use_last_error* does the same for the Windows error "
 "code."
-msgstr ""
+msgstr "返された関数プロトタイプは標準 C 呼び出し規約をつかう関数を作成します。関数は呼び出されている間 GIL を解放します。 *use_errno* が真に設定されれば、呼び出しの前後で System 変数 :data:`errno` の ctypesプライベートコピーは本当の :data:`errno` の値と交換されます。 *use_last_error* も Windows エラーコードに対するのと同様です。"
 
 #: ../../library/ctypes.rst:1590
 msgid ""
@@ -1829,7 +1829,7 @@ msgid ""
 "without any prefix like ``lib``, suffix like ``.so``, ``.dylib`` or version "
 "number (this is the form used for the posix linker option :option:`!-l`).  "
 "If no library can be found, returns ``None``."
-msgstr ""
+msgstr "ライブラリを検索し、パス名を返します。 *name* は ``lib`` のような接頭辞、 ``.so`` や ``.dylib`` のような接尾辞、そして、バージョンナンバーを除くライブラリ名です (これは posix のリンカーオプション :option:`!-l` で使われる書式です) 。もしライブラリが見つからなければ、 ``None`` を返します。"
 
 #: ../../library/ctypes.rst:1843
 msgid ""

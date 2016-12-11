@@ -6,12 +6,13 @@
 # E. Kawashima, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
+"PO-Revision-Date: 2016-12-11 15:31+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -268,7 +269,7 @@ msgid ""
 "Issue a warning when comparing :class:`bytes` or :class:`bytearray` with "
 ":class:`str` or :class:`bytes` with :class:`int`.  Issue an error when the "
 "option is given twice (:option:`!-bb`)."
-msgstr ""
+msgstr ":class:`bytes` または :class:`bytearray` を :class:`str` と比較した場合、または、 :class:`bytes` を :class:`int` と比較した場合に警告を発生させます。このオプションを2度指定した場合 (:option:`!-bb`) は、エラーを発生させます。"
 
 #: ../../using/cmdline.rst:197
 msgid "Affects comparisons of :class:`bytes` with :class:`int`."
@@ -395,7 +396,7 @@ msgid ""
 "(:option:`!-vv`), print a message for each file that is checked for when "
 "searching for a module.  Also provides information on module cleanup at "
 "exit. See also :envvar:`PYTHONVERBOSE`."
-msgstr ""
+msgstr "モジュールが初期化されるたびに、それがどこ(ファイル名やビルトインモジュール) からロードされたのかを示すメッセージを出力します。 二重に指定された場合(:option:`!-vv`)は、モジュールを検索するときにチェックされた各ファイルに対してメッセージを出力します。また、終了時のモジュールクリーンアップに関する情報も提供します。 :envvar:`PYTHONVERBOSE` も参照してください。"
 
 #: ../../using/cmdline.rst:319
 msgid ""
