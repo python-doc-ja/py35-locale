@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-11 08:21+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -651,7 +651,7 @@ msgid ""
 "libraries, binary executables, etc.)  If :option:`!--exec-prefix` is not "
 "supplied, it defaults to :option:`!--prefix`.  Files are installed as "
 "follows:"
-msgstr "どちらの場合も、 :option:`!--prefix` オプションでインストール先の基底ディレクトリが決まり、 :option:`!--exec-prefix` でプラットフォーム固有のファイルのための、プラットフォーム固有となるインストール先の基底ディレクトリが決まります。\n(プラットフォーム固有のファイルとは、現状では単に非 pure モジュール配布物のことを意味しますが、 C ライブラリやバイナリ実行可能形式などに拡張されるかもしれません。)\n:option:`!--exec-prefix`  が指定されていなければ、デフォルトの :option:`!--prefix` になります。\nファイルは以下のようにインストールされます:"
+msgstr "どちらの場合も、 :option:`!--prefix` オプションでインストール先のベースディレクトリが決まり、 :option:`!--exec-prefix` でプラットフォーム固有のファイルのための、プラットフォーム固有となるインストール先のベースディレクトリが決まります。\n(プラットフォーム固有のファイルとは、現状では単に非 pure モジュール配布物のことを意味しますが、 C ライブラリやバイナリ実行可能形式などに拡張されるかもしれません。)\n:option:`!--exec-prefix`  が指定されていなければ、デフォルトの :option:`!--prefix` になります。\nファイルは以下のようにインストールされます:"
 
 #: ../../install/index.rst:468 ../../install/index.rst:545
 msgid "Python modules"
@@ -678,7 +678,7 @@ msgid ""
 "There is no requirement that :option:`!--prefix` or :option:`!--exec-prefix`"
 " actually point to an alternate Python installation; if the directories "
 "listed above do not already exist, they are created at installation time."
-msgstr ""
+msgstr ":option:`!--prefix` や :option:`!--exec-prefix` が実際に他のインストール済み Python の場所を指している必要はありません; 上に挙げたディレクトリがまだ存在しなければ、インストール時に作成されます。"
 
 #: ../../install/index.rst:479
 msgid ""
@@ -688,7 +688,7 @@ msgid ""
 "``sys.prefix`` and ``sys.exec_prefix``.  Thus, you might think you'll never "
 "use the prefix scheme, but every time you run ``python setup.py install`` "
 "without any other options, you're using it."
-msgstr ""
+msgstr "ちなみに、prefix スキームが重要な本当の理由は、単に標準の Unix  インストールが prefix スキームを使っているからです。\nただし、そのときには、 :option:`!--prefix` や :option:`!--exec-prefix`  は Python 自体が ``sys.prefix`` や ``sys.exec_prefix`` を使って決めます。\nというわけで、読者は prefix スキームを決して使うことはあるまいと思っているかもしれませんが、 ``python setup.py install``  をオプションを何もつけずに実行していれば、常に prefix スキームを使っていることになるのです。"
 
 #: ../../install/index.rst:486
 msgid ""
@@ -703,7 +703,7 @@ msgid ""
 " same build).  (Of course, if your :option:`!--prefix` and :option:`!--exec-"
 "prefix` don't even point to an alternate Python installation, this is "
 "immaterial.)"
-msgstr ""
+msgstr "拡張モジュールを別のインストール済み Python にインストールしても、拡張モジュールのビルド方法による影響を受けることはありません: 特に、拡張モジュールをコンパイルする際には、 setup スクリプトを実行する際に使う Python インタプリタと一緒にインストールされている Python ヘッダファイル (:file:`Python.h`  とその仲間たち) を使います。上で述べてきたやり方でインストールされた拡張モジュールを実行するインタプリタと、インタプリタをビルドする際に用いた別のインタプリタとの互換性を保証するのはユーザの責任です。これを行うには、二つのインタプリタが同じバージョンの Python  (ビルドが違っていたり、同じビルドのコピーということもあり得ます) であるかどうかを確かめます。(もちろん、 :option:`!--prefix` や  :option:`!--exec-prefix` が別のインストール済み Python の場所すら指していなければどうにもなりません。)"
 
 #: ../../install/index.rst:501
 msgid "Alternate installation: Windows (the prefix scheme)"
@@ -715,7 +715,7 @@ msgid ""
 "Python installation under Windows is simpler than under Unix, the :option:`!"
 "--prefix` option has traditionally been used to install additional packages "
 "in separate locations on Windows. ::"
-msgstr ""
+msgstr "Windows はユーザのホームディレクトリという概念がなく、 Windows 環境下で標準的にインストールされた Python は Unixよりも単純な構成をしているので、 Windows で追加のパッケージを別の場所に入れる場合には、伝統的に :option:`!--prefix` が使われてきました。 ::"
 
 #: ../../install/index.rst:510
 msgid ""
@@ -729,7 +729,7 @@ msgid ""
 ":option:`!--exec-prefix` option is not supported under Windows, which means "
 "that pure Python modules and extension modules are installed into the same "
 "location. Files are installed as follows:"
-msgstr ""
+msgstr "インストールベースディレクトリは、 :option:`!--prefix` オプションだけで決まります; :option:`!--exec-prefix` オプションは、Windows ではサポートされていません。pure モジュールと拡張モジュールは同じ場所にインストールされます。ファイルは以下のような構成でインストールされます:"
 
 #: ../../install/index.rst:521
 msgid ":file:`{prefix}\\\\Scripts`"
@@ -812,7 +812,7 @@ msgid ""
 "makes most sense to supply a relative path, which will be interpreted "
 "relative to the installation base directory (your home directory, in this "
 "case)::"
-msgstr ""
+msgstr "例えば、 Unix環境でモジュール配布物をホームディレクトリにインストールしたい --- とはいえ、スクリプトは :file:`~/bin` ではなく :file:`~/scripts` に置きたい --- とします。ご想像の通り、スクリプトを置くディレクトリは、 :option:`!--install-scripts` オプションで上書きできます; この場合は相対パスで指定もでき、インストールベースディレクトリ (この場合にはホームディレクトリ) からの相対パスとして解釈されます::"
 
 #: ../../install/index.rst:571
 msgid ""
@@ -821,7 +821,7 @@ msgid ""
 "installation scripts will wind up in :file:`/usr/local/python/bin`.  If you "
 "want them in :file:`/usr/local/bin` instead, you would supply this absolute "
 "directory for the :option:`!--install-scripts` option::"
-msgstr ""
+msgstr "Unix 環境での例をもう一つ紹介します: インストール済みの Python が、 :file:`/usr/local/python` を prefix にしてビルドされ、インストールされていて、標準のインストールスクリプトは :file:`/usr/local/python/bin` に入るようになっているとします。 :file:`/usr/local/bin` に入るようにしたければ、絶対パスを :option:`!--install-scripts` オプションに与えて上書きすることになるでしょう::"
 
 #: ../../install/index.rst:579
 msgid ""
@@ -1265,13 +1265,13 @@ msgstr "*sourcefile* は、少なくともファイル名から何の言語で�
 msgid ""
 "*cpparg* is an argument for the C preprocessor,  and is anything starting "
 "with :option:`!-I`, :option:`!-D`, :option:`!-U` or :option:`!-C`."
-msgstr ""
+msgstr "*cpparg* は C プリプロセッサへの引数で、 :option:`!-I` 、 :option:`!-D` 、 :option:`!-U` または :option:`!-C` のいずれかから始まる文字列です。"
 
 #: ../../install/index.rst:937
 msgid ""
 "*library* is anything ending in :file:`.a` or beginning with :option:`!-l` "
 "or :option:`!-L`."
-msgstr ""
+msgstr "*library* は :file:`.a` で終わるか、 :option:`!-l` または :option:`!-L` のいずれかから始まる文字列です。"
 
 #: ../../install/index.rst:940
 msgid ""
@@ -1284,13 +1284,13 @@ msgstr "特定のプラットフォームにおいて、プラットフォーム
 msgid ""
 "must be linked with the math library :file:`libm.a` on your platform, simply"
 " add :option:`!-lm` to the line::"
-msgstr ""
+msgstr "で定義されたモジュールを、自分のプラットフォーム上の数学ライブラリ :file:`libm.a` とリンクしなければならない場合、 :file:`Setup` 内の行に :option:`!-lm` を追加するだけです::"
 
 #: ../../install/index.rst:951
 msgid ""
 "Arbitrary switches intended for the compiler or the linker can be supplied "
 "with the :option:`!-Xcompiler` *arg* and :option:`!-Xlinker` *arg* options::"
-msgstr ""
+msgstr "コンパイラやリンカ向けの任意のスイッチオプションは、 :option:`!-Xcompiler` *arg* や :option:`!-Xlinker` *arg* オプションで与えます::"
 
 #: ../../install/index.rst:956
 msgid ""
@@ -1301,7 +1301,7 @@ msgid ""
 "to supply multiple :option:`!-Xcompiler` options; for example, to pass ``-x "
 "c++`` the :file:`Setup` file would have to contain ``-Xcompiler -x "
 "-Xcompiler c++``."
-msgstr ""
+msgstr ":option:`!-Xcompiler` および :option:`!-Xlinker` の後にくるオプションは、それぞれ適切なコマンドラインに追加されます。従って、上の例では、コンパイラには :option:`!-o32` オプションが渡され、リンカには :option:`!-shared` が渡されます。コンパイラオプションに引数が必要な場合、複数の :option:`!-Xcompiler`  オプションを与えます; 例えば、 ``-x c++`` を渡すには、 :file:`Setup` ファイルには ``-Xcompiler -x -Xcompiler c++`` を渡さねばなりません。"
 
 #: ../../install/index.rst:963
 msgid ""
