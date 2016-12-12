@@ -5,11 +5,12 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-12 00:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -66,7 +67,7 @@ msgid ""
 " work than 20 lines of C.  This is not solely due to the lack of begin/end "
 "brackets -- the lack of declarations and the high-level data types are also "
 "responsible -- but the indentation-based syntax certainly helps."
-msgstr ""
+msgstr "多くのコーディングスタイルは begin/end の括弧にそれぞれ一行を使います。これではプログラムは冗長になって画面を浪費し、プログラムの見通しが悪くなります。一つの関数は一画面 (例えば 20 から 30 行) に収めるのが理想です。20 行の Python は 20 行の C よりもはるかに多くの作業ができます。これは begin/end の括弧がないからだけではありません -- 宣言が不要なことや高レベルなデータ型もその理由です -- が、インデントに基づく構文は確かに役に立っています。"
 
 #: ../../faq/design.rst:41
 msgid "Why am I getting strange results with simple arithmetic operations?"
@@ -123,7 +124,7 @@ msgstr "で、正確には次の値です::"
 msgid ""
 "The typical precision of 53 bits provides Python floats with 15--16 decimal "
 "digits of accuracy."
-msgstr ""
+msgstr "53bit の典型的な精度は、Python の float に 10 進数で 15〜16桁の精度を与えます。"
 
 #: ../../faq/design.rst:83
 msgid ""

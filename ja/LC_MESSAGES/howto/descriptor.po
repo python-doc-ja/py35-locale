@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-12 00:44+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -333,7 +334,7 @@ msgid ""
 " of :c:type:`PyMethod_Type` in :source:`Objects/classobject.c` is a single "
 "object with two different representations depending on whether the "
 ":attr:`im_self` field is set or is *NULL* (the C equivalent of ``None``)."
-msgstr ""
+msgstr "この出力は、束縛メソッドと非束縛メソッドは 2 つの異なる型であることを示しています。\nこれらは、異なる型として実装することも出来ますが、 :source:`Objects/classobject.c` における :c:type:`PyMethod_Type` の実際の C 実装は 1 つのオブジェクトで、 :attr:`im_self` が *NULL* (C での ``None`` と同等のもの) に設定されているかどうかで決まる 2 つの異なる表現を持ってるのです。"
 
 #: ../../howto/descriptor.rst:307
 msgid ""
