@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-12 10:36+0000\n"
+"PO-Revision-Date: 2016-12-13 00:29+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -425,7 +425,7 @@ msgid ""
 "searching up the hierarchy whenever a logger with the 'propagate' attribute "
 "set to false is found - that will be the last logger which is checked for "
 "the existence of handlers."
-msgstr ""
+msgstr "このロガーにハンドラが設定されているかどうかを調べます。\nそのために、このロガーとロガー階層におけるその祖先についてハンドラ探していきます。\nハンドラが見つかれば ``True`` 、そうでなければ ``False`` を返します。\nこのメソッドは、'propagate' 属性が偽に設定されたロガーを見つけると、さらに上位の探索をやめます - そのロガーが、ハンドラが存在するかどうかチェックされる最後のロガー、という意味です。"
 
 #: ../../library/logging.rst:330
 msgid "Logging Levels"
@@ -725,7 +725,7 @@ msgid ""
 "level when desired. The names of the attributes are ``default_time_format`` "
 "(for the strptime format string) and ``default_msec_format`` (for appending "
 "the millisecond value)."
-msgstr ""
+msgstr "以前は、デフォルトの ISO 8601 フォーマットがこの例のようにハードコーディングされていました: ``2010-09-06 22:38:15,292`` ここで、コンマの前の部分は strptime フォーマット文字列 (``'%Y-%m-%d %H:%M:%S'``) によって扱われる部分で、コンマの後の部分はミリ秒値です。strptime にミリ秒のフォーマットプレースホルダーがないので、ミリ秒値は別のフォーマット文字列 ``'%s,%03d'`` を使用して追加されます。そして、これらのフォーマット文字列は両方ともこのメソッドでハードコーディングされていました。変更後は、これらの文字列はクラスレベル属性として定義され、必要ならインスタンスレベルでオーバーライドすることができます。属性の名前は ``default_time_format`` (strptime 書式文字列用) と ``default_msec_format`` (ミリ秒値の追加用) です。"
 
 #: ../../library/logging.rst:573
 msgid ""
@@ -871,7 +871,7 @@ msgstr "*msg* 引数と組み合わせてイベント記述を得るための変
 msgid ""
 "An exception tuple with the current exception information, or ``None`` if no"
 " exception information is available."
-msgstr ""
+msgstr "現在の例外情報を含む例外タプルか、利用できる例外情報がない場合は ``None`` です。"
 
 #: ../../library/logging.rst:676
 msgid ""
@@ -1013,7 +1013,7 @@ msgstr "exc_info"
 msgid ""
 "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, "
 "``None``."
-msgstr ""
+msgstr "(``sys.exc_info`` 風の) 例外タプルか、例外が起こっていない場合は ``None``。"
 
 #: ../../library/logging.rst:759
 msgid "filename"
@@ -1692,7 +1692,7 @@ msgstr "ログメッセージに対する引数。"
 
 #: ../../library/logging.rst:1190
 msgid "An exception tuple, or ``None``."
-msgstr ""
+msgstr "例外タプルまたは ``None``。"
 
 #: ../../library/logging.rst:1191
 msgid "The name of the function or method which invoked the logging call."
