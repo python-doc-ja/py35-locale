@@ -5,11 +5,12 @@
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2016-12-13 16:05+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +66,7 @@ msgid ""
 "very slow since all accessed entries are written back (there is no way to "
 "determine which accessed entries are mutable, nor which ones were actually "
 "mutated)."
-msgstr ""
+msgstr "Python の意味論により、シェルフには永続的な辞書の可変エントリがいつ変更されたかを知る術がありません。\nデフォルトでは、変更されたオブジェクトはシェルフに代入されたとき *だけ* 書き込まれます (:ref:`shelve-example` 参照)。\nオプションの *writeback* パラメータが  ``True`` に設定されている場合は、アクセスされたすべてのエントリはメモリ上にキャッシュされ、 :meth:`~Shelf.sync` および :meth:`~Shelf.close` を呼び出した際に書き戻されます;\nこの機能は永続的な辞書上の可変の要素に対する変更を容易にしますが、多数のエントリがアクセスされた場合、膨大な量のメモリがキャッシュのために消費され、アクセスされた全てのエントリを書き戻す (アクセスされたエントリが可変であるか、あるいは実際に変更されたかを決定する方法は存在しないのです) ために、ファイルを閉じる操作が非常に低速になります。"
 
 #: ../../library/shelve.rst:45
 msgid ""

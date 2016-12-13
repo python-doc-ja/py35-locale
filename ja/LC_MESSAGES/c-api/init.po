@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-13 16:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgid ""
 "This function works like :c:func:`Py_Initialize` if *initsigs* is ``1``. If "
 "*initsigs* is ``0``, it skips initialization registration of signal "
 "handlers, which might be useful when Python is embedded."
-msgstr ""
+msgstr "*initsigs* に ``1`` を指定した場合、この関数は :c:func:`Py_Initialize` と同じように動作します。\n*initsigs* に ``0`` を指定した場合、初期化時のシグナルハンドラの登録をスキップすることができ、これは Python の埋め込みで便利でしょう。"
 
 #: ../../c-api/init.rst:54
 msgid ""
@@ -136,7 +136,7 @@ msgstr "もし :c:func:`Py_Finalize` が呼ばれたら、その後の :c:func:`
 msgid ""
 "Returns ``0`` if successful, a nonzero value on error (e.g. calling after "
 "the interpreter has already been initialized)."
-msgstr ""
+msgstr "成功したら ``0`` を、エラーの場合は ``0`` でない値を返します (例えば、インタプリタが初期化された後に、この関数が呼び出された場合)。"
 
 #: ../../c-api/init.rst:130
 msgid ""
@@ -363,7 +363,7 @@ msgid ""
 "Otherwise (that is, if *argc* is ``0`` or ``argv[0]`` doesn't point to an "
 "existing file name), an empty string is prepended to :data:`sys.path`, which"
 " is the same as prepending the current working directory (``\".\"``)."
-msgstr ""
+msgstr "それ以外の場合 (*argc* が ``0`` だったり、 ``argv[0]`` が存在するファイル名を指していない場合)、 :data:`sys.path` の先頭に空の文字列を追加します。\nこれは現在の作業ディレクトリ (``\".\"``) を先頭に追加するのと同じです。"
 
 #: ../../c-api/init.rst:361
 msgid ""

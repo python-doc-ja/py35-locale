@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-13 16:28+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -248,7 +248,7 @@ msgstr "*obj* が表す、C の :c:type:`unsigned long` 表現を返します。
 msgid ""
 "If the value of *obj* is out of range for an :c:type:`unsigned long`, return"
 " the reduction of that value modulo ``ULONG_MAX + 1``."
-msgstr ""
+msgstr "*obj* の値が :c:type:`unsigned long` の範囲から外れていた場合は、 ``ULONG_MAX + 1`` を法とした剰余を返します。"
 
 #: ../../c-api/long.rst:240
 msgid ""
@@ -261,7 +261,7 @@ msgstr "*obj* が表す、C の :c:type:`unsigned long long` 表現を返しま�
 msgid ""
 "If the value of *obj* is out of range for an :c:type:`unsigned long long`, "
 "return the reduction of that value modulo ``PY_ULLONG_MAX + 1``."
-msgstr ""
+msgstr "*obj* の値が :c:type:`unsigned long long` の範囲から外れていた場合は、 ``PY_ULLONG_MAX + 1`` を法とした剰余を返します。"
 
 #: ../../c-api/long.rst:250
 msgid ""

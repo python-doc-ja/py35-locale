@@ -4,12 +4,13 @@
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
+"PO-Revision-Date: 2016-12-13 15:55+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -882,7 +883,7 @@ msgid ""
 "by providing the :option:`!--with-pymalloc` option to the "
 ":program:`configure` script; see :file:`Objects/obmalloc.c` for the "
 "implementation details."
-msgstr ""
+msgstr "特殊化されたオブジェクトアロケータがオプショナルで利用可能になっています。これはシステムの :func:`malloc` よりも速くて省メモリであるはずです。このアロケータは C の :func:`malloc` 関数を大きなメモリプールを得るのに使い、それより小さなメモリ要求はこれらプールで実現しています。この機能は :program:`configure` スクリプトに :option:`!--with-pymalloc` オプションを与えることで有効化出来ます。実装の詳細については :file:`Objects/obmalloc.c` をみてください。"
 
 #: ../../whatsnew/2.1.rst:698
 msgid ""

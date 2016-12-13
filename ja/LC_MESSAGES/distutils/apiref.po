@@ -4,11 +4,12 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-13 15:54+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -403,7 +404,7 @@ msgstr "それぞれの簡単な説明を以下に記します。完全な説明
 msgid ""
 "The Extension class describes a single C or C++ extension module in a setup "
 "script. It accepts the following keyword arguments in its constructor:"
-msgstr ""
+msgstr "Extension クラスは、セットアップスクリプト中で C または C++ 拡張モジュールを表します。\nコンストラクタで以下のキーワード引数をとります:"
 
 #: ../../distutils/apiref.rst:177
 msgid ""
@@ -444,7 +445,7 @@ msgid ""
 "value)``, where *value* is either the string to define it to or ``None`` to "
 "define it without a particular value (equivalent of ``#define FOO`` in "
 "source or :option:`!-DFOO` on Unix C compiler command line)"
-msgstr ""
+msgstr "定義するマクロのリスト; それぞれのマクロは2要素のタプル ``(name, value)`` で定義されます。 *value* には定義しようとしている文字列、または内容なしで定義する場合は ``None`` (ソースコード中で ``#define FOO`` と書く、または Unix Cコンパイラのコマンドラインで :option:`!-DFOO` を指定するのと等価です) を指定します"
 
 #: ../../distutils/apiref.rst:200
 msgid "a list of tuples"
@@ -615,7 +616,7 @@ msgid ""
 "*include_dirs* is just a list of directory names to be added to the header "
 "file search path (:option:`!-I`). Returns a list of command-line options "
 "suitable for either Unix compilers or Visual C++."
-msgstr ""
+msgstr "Cプリプロセッサオプション(:option:`!-D`, :option:`!-U`, :option:`!-I`)を生成します。これらは少なくとも2つのコンパイラで利用可能です。典型的な Unix のコンパイラと、VisualC++です。 *macros* は1または2要素のタプルで ``(name,)`` は *name* マクロの削除 (:option:`!-U`)を意味し、 ``(name, value)`` は *name* マクロを *value* として定義(:option:`!-D`)します。 *include_dirs* はディレクトリ名のリストで、ヘッダファイルのサーチパスに追加されます(:option:`!-I`)。 Unix のコンパイラと、Visual C++で利用できるコマンドラインオプションのリストを返します。"
 
 #: ../../distutils/apiref.rst:334
 msgid "Determine the default compiler to use for the given platform."
@@ -651,7 +652,7 @@ msgstr "指定されたプラットフォーム/コンパイラの組み合わ�
 msgid ""
 "Print list of available compilers (used by the :option:`!--help-compiler` "
 "options to :command:`build`, :command:`build_ext`, :command:`build_clib`)."
-msgstr ""
+msgstr "利用可能なコンパイラのリストを表示します (:command:`build`, :command:`build_ext`, :command:`build_clib` の、 :option:`!--help-compiler` オプションで使われます)。"
 
 #: ../../distutils/apiref.rst:368
 msgid ""
@@ -1173,23 +1174,23 @@ msgstr "このモジュールは :class:`UnixCCompiler` クラスを提供しま
 
 #: ../../distutils/apiref.rst:792
 msgid "macros defined with :option:`!-Dname[=value]`"
-msgstr ""
+msgstr "マクロは :option:`!-Dname[=value]` で定義されます"
 
 #: ../../distutils/apiref.rst:794
 msgid "macros undefined with :option:`!-Uname`"
-msgstr ""
+msgstr "マクロは :option:`!-Uname` で削除されます"
 
 #: ../../distutils/apiref.rst:796
 msgid "include search directories specified with :option:`!-Idir`"
-msgstr ""
+msgstr "インクルードファイルの探索ディレクトリは :option:`!-Idir` で指定されます"
 
 #: ../../distutils/apiref.rst:798
 msgid "libraries specified with :option:`!-llib`"
-msgstr ""
+msgstr "ライブラリは :option:`!-llib` で指定されます"
 
 #: ../../distutils/apiref.rst:800
 msgid "library search directories specified with :option:`!-Ldir`"
-msgstr ""
+msgstr "ライブラリの探索ディレクトリは :option:`!-Ldir` で指定されます"
 
 #: ../../distutils/apiref.rst:802
 msgid ""
@@ -1205,7 +1206,7 @@ msgstr "静的ライブラリは :program:`ar` コマンドで処理されます
 
 #: ../../distutils/apiref.rst:808
 msgid "link shared library handled by :program:`cc` :option:`!-shared`"
-msgstr ""
+msgstr "共有ライブラリのリンクは :program:`cc` :option:`!-shared` で処理されます"
 
 #: ../../distutils/apiref.rst:812
 msgid ":mod:`distutils.msvccompiler` --- Microsoft Compiler"
@@ -1796,7 +1797,7 @@ msgid ""
 "boolean options can have \"negative aliases\" --- eg. if :option:`!--quiet` "
 "is the \"negative alias\" of :option:`!--verbose`, then :option:`!--quiet` "
 "on the command line sets *verbose* to false."
-msgstr ""
+msgstr "真偽値をとるオプションは \"負のエイリアス\" を持ちます。--- たとえば :option:`!--quiet` の \"負のエイリアス\" が :option:`!--verbose` の場合、コマンドラインで :option:`!--quiet` を指定すると *verbose* は偽になります。"
 
 #: ../../distutils/apiref.rst:1327
 msgid ""

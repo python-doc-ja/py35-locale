@@ -6,11 +6,12 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:43+0000\n"
+"PO-Revision-Date: 2016-12-13 15:58+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -85,14 +86,14 @@ msgid ""
 "If *maxsize* is set to ``None``, the LRU feature is disabled and the cache "
 "can grow without bound.  The LRU feature performs best when *maxsize* is a "
 "power-of-two."
-msgstr ""
+msgstr "*maxsize* が ``None`` に設定された場合は、LRU 機能は無効化され、キャッシュは際限無く大きくなります。\nLRU 機能は *maxsize* が 2 の累乗であるときが最も効率的に動作します。"
 
 #: ../../library/functools.rst:59
 msgid ""
 "If *typed* is set to true, function arguments of different types will be "
 "cached separately.  For example, ``f(3)`` and ``f(3.0)`` will be treated as "
 "distinct calls with distinct results."
-msgstr ""
+msgstr "*typed* が真に設定された場合は、関数の異なる型の引数が別々にキャッシュされます。例えば、``f(3)`` と ``f(3.0)`` は別の結果をもたらす別の呼び出しとして扱われます。"
 
 #: ../../library/functools.rst:63
 msgid ""
