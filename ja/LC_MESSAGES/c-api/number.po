@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-14 02:51+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -268,7 +268,7 @@ msgstr "*base* 進数に変換された整数 *n* を文字列として返しま
 msgid ""
 "Returns *o* converted to a Py_ssize_t value if *o* can be interpreted as an "
 "integer.  If the call fails, an exception is raised and ``-1`` is returned."
-msgstr ""
+msgstr "*o* を整数として解釈可能だった場合、Py_ssize_t型の値に変換して返します。呼び出しが失敗したら、例外が送出され、 ``-1`` が返されます。"
 
 #: ../../c-api/number.rst:271
 msgid ""
@@ -284,4 +284,4 @@ msgstr "もし *o* がPythonのintに変換できたのに、Py_ssize_tへの変
 msgid ""
 "Returns ``1`` if *o* is an index integer (has the nb_index slot of  the "
 "tp_as_number structure filled in), and ``0`` otherwise."
-msgstr ""
+msgstr "*o* がインデックス整数である場合 (tp_as_number構造体のnb_indexスロットが埋まっている場合) に ``1`` を返し、そうでない場合に ``0`` を返します。"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-14 02:52+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -214,11 +214,11 @@ msgid ""
 "Return the magic number for Python bytecode files (a.k.a. :file:`.pyc` "
 "file). The magic number should be present in the first four bytes of the "
 "bytecode file, in little-endian byte order. Returns ``-1`` on error."
-msgstr ""
+msgstr "Python バイトコードファイル (別名 :file:`.pyc` ファイル) のマジックナンバーを返します。マジックナンバーはバイトコードファイルの最初の4バイトに、リトルエンディアンバイトオーダーで現れるべきです。エラーの場合は ``-1`` を返します。"
 
 #: ../../c-api/import.rst:190
 msgid "Return value of ``-1`` upon failure."
-msgstr ""
+msgstr "失敗した場合は ``-1`` の値を返します。"
 
 #: ../../c-api/import.rst:196
 msgid ""

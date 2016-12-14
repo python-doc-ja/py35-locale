@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
+"PO-Revision-Date: 2016-12-14 02:58+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +39,7 @@ msgstr ":mod:`urllib.request` モジュールは基本的な認証、暗号化�
 msgid ""
 "The `Requests package <http://docs.python-requests.org/>`_ is recommended "
 "for a higher-level HTTP client interface."
-msgstr ""
+msgstr "より高水準の HTTP クライアントインターフェイスとしては `Requests パッケージ <http://docs.python-requests.org/>`_ がお奨めです。"
 
 #: ../../library/urllib.request.rst:25
 msgid "The :mod:`urllib.request` module defines the following functions:"
@@ -578,7 +579,7 @@ msgstr "URI パスです。:class:`Request` がプロキシを使用する場合
 
 #: ../../library/urllib.request.rst:479
 msgid "The entity body for the request, or ``None`` if not specified."
-msgstr ""
+msgstr "リクエストのエンティティボディか、指定されない場合は ``None`` になります。"
 
 #: ../../library/urllib.request.rst:481
 msgid ""

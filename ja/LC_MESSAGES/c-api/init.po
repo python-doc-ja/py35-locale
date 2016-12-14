@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-13 16:57+0000\n"
+"PO-Revision-Date: 2016-12-14 02:49+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -371,7 +371,7 @@ msgid ""
 "purposes other than executing a single script pass ``0`` as *updatepath*, "
 "and update :data:`sys.path` themselves if desired. See `CVE-2008-5983 "
 "<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_."
-msgstr ""
+msgstr "単一のスクリプトを実行する以外の目的でPython インタプリタを埋め込んでいるアプリケーションでは、 *updatepath* に ``0`` を渡して、必要な場合は自分で :data:`sys.path` を更新することをおすすめします。\n`CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_ を参照してください。"
 
 #: ../../c-api/init.rst:366
 msgid ""
@@ -385,7 +385,7 @@ msgid ""
 "This function works like :c:func:`PySys_SetArgvEx` with *updatepath* set to "
 "``1`` unless the :program:`python` interpreter was started with the "
 ":option:`-I`."
-msgstr ""
+msgstr "この関数は、 :program:`python` インタプリタが :option:`-I` オプション付きで実行されている場合を除き :c:func:`PySys_SetArgvEx` の *updatepath* に ``1`` を設定したのと同じように動作します。"
 
 #: ../../c-api/init.rst:387
 msgid "The *updatepath* value depends on :option:`-I`."
@@ -748,7 +748,7 @@ msgid ""
 "useful for example in callback contexts or memory allocation functions when "
 "knowing that the GIL is locked can allow the caller to perform sensitive "
 "actions or otherwise behave differently."
-msgstr ""
+msgstr "現在のスレッドが GILを保持しているならば ``1`` を、そうでなければ ``0`` を返します。この関数はいつでもどのスレッドからでも呼び出すことができます。 Python スレッドの状態が初期化されており、現在 GIL を保持している場合にのみ ``1`` を返します。これは主にヘルパー/診断用の関数です。この関数は、例えばコールバックのコンテキストやメモリ割り当て機能で有益でしょう。なぜなら、 GIL がロックされていると知っていれば、呼び出し元は sensitive な行動を実行することができ、そうでなければ異なるやりかたで振る舞うことができるからです。"
 
 #: ../../c-api/init.rst:733
 msgid ""
@@ -1028,7 +1028,7 @@ msgid ""
 "Schedule a function to be called from the main interpreter thread.  On "
 "success, ``0`` is returned and *func* is queued for being called in the main"
 " thread.  On failure, ``-1`` is returned without setting any exception."
-msgstr ""
+msgstr "インタプリタのメインスレッドから関数が呼び出される予定を組みます。成功すると ``0`` が返り、*func* はメインスレッドの呼び出しキューに詰められます。失敗すると、例外をセットせずに ``-1`` が返ります。"
 
 #: ../../c-api/init.rst:997
 msgid ""
@@ -1054,7 +1054,7 @@ msgid ""
 "set.  *func* won't be interrupted to perform another asynchronous "
 "notification recursively, but it can still be interrupted to switch threads "
 "if the global interpreter lock is released."
-msgstr ""
+msgstr "成功したら *func* は ``0`` を返さねばならず、失敗したら ``-1`` を返し例外をセットしなければいけません。*func* は、他の非同期通知を行うために、さらに割り込まれることはありませんが、グローバルインタプリタロックが解放された場合は、スレッドの切り替えによって割り込まれる可能性が残っています。"
 
 #: ../../c-api/init.rst:1011
 msgid ""
