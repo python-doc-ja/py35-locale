@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
+"PO-Revision-Date: 2016-12-15 02:19+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -664,13 +664,13 @@ msgstr "コマンドラインインターフェイス"
 msgid ""
 "The :mod:`zipfile` module provides a simple command-line interface to "
 "interact with ZIP archives."
-msgstr ""
+msgstr ":mod:`zipfile` モジュールは、 ZIP アーカイブを操作するための簡単なコマンドラインインターフェースを提供しています。"
 
 #: ../../library/zipfile.rst:587
 msgid ""
 "If you want to create a new ZIP archive, specify its name after the "
 ":option:`-c` option and then list the filename(s) that should be included:"
-msgstr ""
+msgstr "ZIP アーカイブを新規に作成したい場合、:option:`-c` オプションの後にまとめたいファイルを列挙してください:"
 
 #: ../../library/zipfile.rst:594
 msgid "Passing a directory is also acceptable:"
@@ -680,11 +680,11 @@ msgstr "ディレクトリを渡すこともできます:"
 msgid ""
 "If you want to extract a ZIP archive into the specified directory, use the "
 ":option:`-e` option:"
-msgstr ""
+msgstr "ZIP アーカイブを特定のディレクトリに展開したい場合、:option:`-e` オプションを使用してください:"
 
 #: ../../library/zipfile.rst:607
 msgid "For a list of the files in a ZIP archive, use the :option:`-l` option:"
-msgstr ""
+msgstr "ZIP アーカイブ内のファイル一覧を表示するには :option:`-l` を使用してください:"
 
 #: ../../library/zipfile.rst:615
 msgid "Command-line options"
@@ -692,16 +692,16 @@ msgstr "コマンドラインオプション"
 
 #: ../../library/zipfile.rst:619
 msgid "List files in a zipfile."
-msgstr ""
+msgstr "zipfile 内のファイル一覧を表示します。"
 
 #: ../../library/zipfile.rst:623
 msgid "Create zipfile from source files."
-msgstr ""
+msgstr "ソースファイルから zipfile を作成します。"
 
 #: ../../library/zipfile.rst:627
 msgid "Extract zipfile into target directory."
-msgstr ""
+msgstr "zipfile を対象となるディレクトリに展開します。"
 
 #: ../../library/zipfile.rst:631
 msgid "Test whether the zipfile is valid or not."
-msgstr ""
+msgstr "zipfile が有効かどうか調べます。"
