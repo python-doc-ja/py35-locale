@@ -4,12 +4,13 @@
 # 
 # Translators:
 # E. Kawashima, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
+"PO-Revision-Date: 2016-12-15 12:29+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -198,7 +199,7 @@ msgid ""
 "After Version 5.1 (Python 3.2), the email package no longer has a version "
 "that is separate from the Python version.  (See the :ref:`whatsnew-index` "
 "documents for the respective Python versions for details on changes.)"
-msgstr ""
+msgstr "バージョン 5.1 (Python 3.2) 以降は、 Python バージョンとは別の email パッケージのバージョンを持たなくなりました。\n(変更の詳細については、それぞれの Python バージョンの :ref:`whatsnew-index` ドキュメントを参照してください。)"
 
 #: ../../library/email.rst:111
 msgid ""
@@ -211,7 +212,7 @@ msgid ""
 "It is once again possible to parse messages containing non-ASCII bytes, and "
 "to reproduce such messages if the data containing the non-ASCII bytes is not"
 " modified."
-msgstr ""
+msgstr "ふたたび、非 ASCII のバイトを含んでるメッセージをパースできるようになり、非 ASCII のバイトを含んでるデータが変更されていなければメッセージを復元できるようになりました。"
 
 #: ../../library/email.rst:118
 msgid ""
@@ -220,7 +221,7 @@ msgid ""
 ":class:`~email.parser.BytesFeedParser` and "
 ":class:`~email.parser.BytesParser` allow binary message data to be parsed "
 "into model objects."
-msgstr ""
+msgstr "新しい関数 :func:`message_from_bytes`, :func:`message_from_binary_file` 、および新しいクラス :class:`~email.parser.BytesFeedParser`, :class:`~email.parser.BytesParser` で、バイナリメッセージデータをパースしてモデルオブジェクトに変換できるようになりました。"
 
 #: ../../library/email.rst:123
 msgid ""
@@ -228,14 +229,14 @@ msgid ""
 "will by default decode a message body that has a :mailheader:`Content-"
 "Transfer-Encoding` of ``8bit`` using the charset specified in the MIME "
 "headers and return the resulting string."
-msgstr ""
+msgstr "モデルへの入力として bytes が与えられると、 :meth:`~email.message.Message.get_payload` は、デフォルトでは ``8 ビット`` の :mailheader:`Content-Transfer-Encoding` MIME ヘッダを持つメッセージボディを、その MIME ヘッダで指定された文字セットを使ってデコードした結果の文字列を返します。"
 
 #: ../../library/email.rst:128
 msgid ""
 "Given bytes input to the model, :class:`~email.generator.Generator` will "
 "convert message bodies that have a :mailheader:`Content-Transfer-Encoding` "
 "of 8bit to instead have a 7bit Content-Transfer-Encoding."
-msgstr ""
+msgstr "モデルへの入力として bytes が与えられると、 :class:`~email.generator.Generator` は、 8 ビット の :mailheader:`Content-Transfer-Encoding` MIME ヘッダをもったメッセージボディを、 7 ビットの Content-Transfer-Encoding を持つものに変換します。"
 
 #: ../../library/email.rst:132
 msgid ""
@@ -243,7 +244,7 @@ msgid ""
 " preserving any unchanged non-ASCII data that was present in the input used "
 "to build the model, including message bodies with a :mailheader:`Content-"
 "Transfer-Encoding` of 8bit."
-msgstr ""
+msgstr "新しいクラス :class:`~email.generator.BytesGenerator` は出力としてバイト列を生成します。\nこれはモデルを構築するのに使った入力に含まれていた非 ASCII データに変更を加えずにし、メッセージボディに 8ビットの :mailheader:`Content-Transfer-Encoding` を持たせます。"
 
 #: ../../library/email.rst:137
 msgid ""
