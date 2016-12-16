@@ -4,11 +4,12 @@
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
+"PO-Revision-Date: 2016-12-16 11:02+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -406,7 +407,7 @@ msgid ""
 "function as the :mod:`io` module is consistent from Python 2 to 3 while the "
 "built-in :func:`open` function is not (in Python 3 it's actually "
 ":func:`io.open`)."
-msgstr ""
+msgstr "この二分法の一つとして、ファイルのオープンにも気をつける必要があります。\nWindows の経験がない限りは、あなたは必ずしもバイナリファイルを開く際にわざわざ ``b`` モードを追加 (例えばバイナリ読み込みの ``rb``) してこなかったこともありえるかもしれません。\nPython 3 では、バイナリファイルとテキストファイルは明確に区別されていて、相互に非互換です; :mod:`io` モジュールに詳細が説明されています。\nですから、あなたはファイルをバイナリとしてアクセスするために使う (バイナリデータの読み書きを許す) のか、テキストとして使う (テキストデータの読み書きを許す) のかを **決めなければなりません** 。\nまた、ファイルを開くのにはビルトインの :func:`open` ではなく :func:`io.open` を使うべきです。\nというのも、 :mod:`io` モジュールは Python 2 と 3 で一貫していますが、ビルトインの :func:`open` はそうではないからです (Python 3 では :func:`open` の実体は :func:`io.open` です)。"
 
 #: ../../howto/pyporting.rst:252
 msgid ""
@@ -472,7 +473,7 @@ msgstr "バイナリデータのインデクス(添え字)には注意をして�
 
 #: ../../howto/pyporting.rst:287
 msgid "Use feature detection instead of version detection"
-msgstr ""
+msgstr "バージョン検出ではなく機能検出を使う"
 
 #: ../../howto/pyporting.rst:288
 msgid ""
