@@ -5,11 +5,12 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
+"PO-Revision-Date: 2016-12-16 01:51+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -52,7 +53,7 @@ msgstr ":mod:`wsgiref` は WSGI 仕様のリファレンス実装で、これは
 msgid ""
 "See https://wsgi.readthedocs.org/ for more information about WSGI, and links"
 " to tutorials and other resources."
-msgstr ""
+msgstr "https://wsgi.readthedocs.org/ に、WSGIに関するさらなる情報と、チュートリアルやその他のリソースへのリンクがあります。"
 
 #: ../../library/wsgiref.rst:36
 msgid ":mod:`wsgiref.util` -- WSGI environment utilities"
@@ -290,7 +291,7 @@ msgstr "上記はこのようなヘッダを追加します::"
 
 #: ../../library/wsgiref.rst:257
 msgid "*headers* parameter is optional."
-msgstr ""
+msgstr "*headers* 引数が任意になりました。"
 
 #: ../../library/wsgiref.rst:262
 msgid ":mod:`wsgiref.simple_server` -- a simple WSGI HTTP server"
