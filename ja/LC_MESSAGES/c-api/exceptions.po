@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-16 15:13+0000\n"
+"PO-Revision-Date: 2016-12-16 16:06+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -189,21 +189,21 @@ msgid ""
 "if *filenameObject* is not *NULL*, it is passed to the constructor of *type*"
 " as a third parameter.  In the case of :exc:`OSError` exception, this is "
 "used to define the :attr:`filename` attribute of the exception instance."
-msgstr ""
+msgstr ":c:func:`PyErr_SetFromErrno` に似ていますが、 *filenameObject* が *NULL* でない場合に、 *type* のコンストラクタに第三引数として渡すというふるまいが追加されています。\n:exc:`OSError` 例外の場合では、 *filenameObject* が例外インスタンスの :attr:`filename` 属性を定義するのに使われます。"
 
 #: ../../c-api/exceptions.rst:166
 msgid ""
 "Similar to :c:func:`PyErr_SetFromErrnoWithFilenameObject`, but takes a "
 "second filename object, for raising errors when a function that takes two "
 "filenames fails."
-msgstr ""
+msgstr ":c:func:`PyErr_SetFromErrnoWithFilenameObject` に似てますが、ファイル名を2つ取る関数が失敗したときに例外を送出するために、2つ目のファイル名オブジェクトを受け取ります。"
 
 #: ../../c-api/exceptions.rst:175
 msgid ""
 "Similar to :c:func:`PyErr_SetFromErrnoWithFilenameObject`, but the filename "
 "is given as a C string.  *filename* is decoded from the filesystem encoding "
 "(:func:`os.fsdecode`)."
-msgstr ""
+msgstr ":c:func:`PyErr_SetFromErrnoWithFilenameObject` に似ていますが、ファイル名は C 文字列として与えられます。\n*filename* はファイルシステムのエンコーディング (:func:`os.fsdecode`) でデコードされます。"
 
 #: ../../c-api/exceptions.rst:182
 msgid ""
@@ -229,7 +229,7 @@ msgid ""
 "Similar to :c:func:`PyErr_SetFromWindowsErrWithFilenameObject`, but the "
 "filename is given as a C string.  *filename* is decoded from the filesystem "
 "encoding (:func:`os.fsdecode`).  Availability: Windows."
-msgstr ""
+msgstr ":c:func:`PyErr_SetFromWindowsErrWithFilenameObject` に似ていますが、ファイル名は C 文字列として与えられます。\n*filename* はファイルシステムのエンコーディング (:func:`os.fsdecode`) でデコードされます。\n利用可能範囲: Windows。"
 
 #: ../../c-api/exceptions.rst:207
 msgid ""
@@ -242,7 +242,7 @@ msgstr ":c:func:`PyErr_SetFromWindowsErrWithFilenameObject` に似ています�
 msgid ""
 "Similar to :c:func:`PyErr_SetExcFromWindowsErrWithFilenameObject`, but "
 "accepts a second filename object. Availability: Windows."
-msgstr ""
+msgstr ":c:func:`PyErr_SetExcFromWindowsErrWithFilenameObject` に似てますが、2つ目のファイル名オブジェクトを受け取ります。\n利用可能範囲: Windows。"
 
 #: ../../c-api/exceptions.rst:223
 msgid ""
@@ -265,7 +265,7 @@ msgid ""
 "current exception is not a :exc:`SyntaxError`, then it sets additional "
 "attributes, which make the exception printing subsystem think the exception "
 "is a :exc:`SyntaxError`."
-msgstr ""
+msgstr "現在の例外のファイル、行、オフセットの情報をセットします。\n現在の例外が :exc:`SyntaxError` でない場合は、例外を表示するサブシステムが、例外が :exc:`SyntaxError` であると思えるように属性を追加します。"
 
 #: ../../c-api/exceptions.rst:249
 msgid ""
@@ -305,7 +305,7 @@ msgid ""
 " is intentional.)  If an exception is raised, the caller should do its "
 "normal exception handling (for example, :c:func:`Py_DECREF` owned references"
 " and return an error value)."
-msgstr ""
+msgstr "以下の関数を使い、 C コードで起きた警告を報告します。\nPython の :mod:`warnings` モジュールで公開されている同様の関数とよく似てます。\nこれらの関数は通常警告メッセージを *sys.stderr* へ出力しますが、ユーザが警告をエラーへ変更するように指定することもでき、その場合は、関数は例外を送出します。\n警告機構がもつ問題のためにその関数が例外を送出するということも有り得ます。\n例外が送出されない場合は戻り値は ``0`` で、例外が送出された場合は ``-1`` です。\n(警告メッセージが実際に出力されるか、およびその例外の原因が何かについては判断できません; これは意図的なものです。)\n例外が送出された場合、呼び出し元は通常の例外処理を行います (例えば、保持していた参照に対し :c:func:`Py_DECREF` を行い、エラー値を返します)。"
 
 #: ../../c-api/exceptions.rst:287
 msgid ""
@@ -315,7 +315,7 @@ msgid ""
 "warning will be issued from the  currently executing line of code in that "
 "stack frame.  A *stack_level* of 1 is the function calling "
 ":c:func:`PyErr_WarnEx`, 2 is  the function above that, and so forth."
-msgstr ""
+msgstr "警告メッセージを発行します。 *category* 引数は警告カテゴリ(以下を参照) かまたは *NULL* で、 *message* 引数は UTF-8 エンコードされた文字列です。 *stacklevel* はスタックフレームの数を示す正の整数です; 警告はそのスタックフレームの中の実行している行から発行されます。 *stacklevel* が 1 だと :c:func:`PyErr_WarnEx` を呼び出している関数が、2 だとその上の関数が Warning の発行元になります。"
 
 #: ../../c-api/exceptions.rst:294
 msgid ""
@@ -353,7 +353,7 @@ msgid ""
 "Similar to :c:func:`PyErr_WarnExplicitObject` except that *message* and "
 "*module* are UTF-8 encoded strings, and *filename* is decoded from the "
 "filesystem encoding (:func:`os.fsdecode`)."
-msgstr ""
+msgstr ":c:func:`PyErr_WarnExplicitObject` に似ていますが、 *message* と *module* が UTF-8 エンコードされた文字列であるところが異なり、 *filename* はファイルシステムのエンコーディング (:func:`os.fsdecode`) でデコードされます。"
 
 #: ../../c-api/exceptions.rst:330
 msgid ""
@@ -397,7 +397,7 @@ msgid ""
 "If *exc* is a class object, this also returns true when *given* is an "
 "instance of a subclass.  If *exc* is a tuple, all exception types in the "
 "tuple (and recursively in subtuples) are searched for a match."
-msgstr ""
+msgstr "例外 *given* が *exc* の例外型と適合する場合に真を返します。\n*exc* がクラスオブジェクトである場合も、 *given* がサブクラスのインスタンスであるときに真を返します。\n*exc* がタプルの場合は、タプルにある (およびそのサブタプルに再帰的にある) すべての例外型が適合するか調べられます。"
 
 #: ../../c-api/exceptions.rst:373
 msgid ""
@@ -413,7 +413,7 @@ msgid ""
 "This function is normally only used by code that needs to catch exceptions "
 "or by code that needs to save and restore the error indicator temporarily, "
 "e.g.::"
-msgstr ""
+msgstr "通常、この関数は例外を捕捉する必要のあるコードや、エラーインジケータを一時的に保存して復元する必要のあるコードでのみ使います。"
 
 #: ../../c-api/exceptions.rst:395
 msgid ""
@@ -433,7 +433,7 @@ msgid ""
 "This function is normally only used by code that needs to save and restore "
 "the error indicator temporarily.  Use :c:func:`PyErr_Fetch` to save the "
 "current error indicator."
-msgstr ""
+msgstr "通常、この関数はエラーインジケータを一時的に保存し復元する必要のあるコードでのみ使います。\n現在のエラーインジケータを保存するためには :c:func:`PyErr_Fetch` を使ってください。"
 
 #: ../../c-api/exceptions.rst:414
 msgid ""
@@ -450,7 +450,7 @@ msgid ""
 "This function *does not* implicitly set the ``__traceback__`` attribute on "
 "the exception value. If setting the traceback appropriately is desired, the "
 "following additional snippet is needed::"
-msgstr ""
+msgstr "この関数は例外値に暗黙的に ``__traceback__`` 属性を設定 *しません* 。\nトレースバックを適切に設定する必要がある場合は、次の追加のコード片が必要です::"
 
 #: ../../c-api/exceptions.rst:433
 msgid ""
@@ -458,7 +458,7 @@ msgid ""
 "to an exception that was *already caught*, not to an exception that was "
 "freshly raised.  Returns new references for the three objects, any of which "
 "may be *NULL*.  Does not modify the exception info state."
-msgstr ""
+msgstr "``sys.exc_info()`` で得られる例外情報を取得します。\nこれは *既に捕まえた* 例外を参照するもので、新たに送出された例外への参照は持っていません。\n新しい3つのオブジェクトへの参照を返しますが、その中には *NULL* があるかもしれません。この関数は例外情報の状態を変更しません。"
 
 #: ../../c-api/exceptions.rst:440
 msgid ""
@@ -475,7 +475,7 @@ msgid ""
 "raised.  This function steals the references of the arguments. To clear the "
 "exception state, pass *NULL* for all three arguments. For general rules "
 "about the three arguments, see :c:func:`PyErr_Restore`."
-msgstr ""
+msgstr "``sys.exc_info()`` で得られる例外情報を設定します。\nこれは *既に捕まえた* 例外を参照するもので、新たに送出された例外への参照は持っていません。\nこの関数は引数への参照を盗みます。\n例外の状態をクリアしたい場合は、3 つ全ての引数に *NULL* を渡してください。\n3 つの引数についての一般的な規則は、 :c:func:`PyErr_Restore` を参照してください。"
 
 #: ../../c-api/exceptions.rst:458
 msgid ""
