@@ -6,11 +6,12 @@
 # E. Kawashima, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-16 15:13+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +36,7 @@ msgid ""
 "pointer, or ``-1`` if they return an integer (exception: the "
 ":c:func:`PyArg_\\*` functions return ``1`` for success and ``0`` for "
 "failure)."
-msgstr "この章で説明する関数を使うと、 Python の例外の処理や送出ができるようになります。 Python の例外処理の基本をいくらか理解することが大切です。例外は POSIX :c:data:`errno` 変数にやや似た機能を果たします: 発生した中で最も新しいエラーの (スレッド毎の) グローバルなインジケータがあります。実行に成功した場合にはほとんどの C API 関数がこれをクリアしませんが、失敗したときにはエラーの原因を示すために設定します。ほとんどの C API 関数はエラーインジケータも返し、通常は関数がポインタを返すことになっている場合は *NULL* であり、関数が整数を返す場合は ``-1`` です。(例外: :c:func:`PyArg_\\*` 関数は実行に成功したときに ``1`` を返し、失敗したときに ``0`` を返します)."
+msgstr "この章で説明する関数を使うと、 Python の例外の処理や例外の送出ができるようになります。 Python の例外処理の基本をいくらか理解することが大切です。例外は POSIX :c:data:`errno` 変数にやや似た機能を果たします: 発生した中で最も新しいエラーの (スレッド毎の) グローバルなインジケータがあります。実行に成功した場合にはほとんどの C API 関数がこれをクリアしませんが、失敗したときにはエラーの原因を示すために設定します。ほとんどの C API 関数はエラーインジケータも返し、通常は関数がポインタを返すことになっている場合は *NULL* であり、関数が整数を返す場合は ``-1`` です。(例外: :c:func:`PyArg_\\*` 関数は実行に成功したときに ``1`` を返し、失敗したときに ``0`` を返します)."
 
 #: ../../c-api/exceptions.rst:20
 msgid ""
@@ -44,7 +45,7 @@ msgid ""
 "those pointers can be NULL if non-set (although some combinations are "
 "forbidden, for example you can't have a non-NULL traceback if the exception "
 "type is NULL)."
-msgstr ""
+msgstr "具体的には、エラーインジケータは3つのオブジェクトポインタから構成されます:\n例外型、例外値、トレースバックオブジェクトです。\nこれらのポインタは設定されない場合は NULL でもかまいません (ただし、禁止されている組み合わせもあります。例えば、例外型が NULL の場合は、非 NULL なトレースバックはありません)。"
 
 #: ../../c-api/exceptions.rst:26
 msgid ""
@@ -108,7 +109,7 @@ msgid ""
 "The function is called with a single argument *obj* that identifies the "
 "context in which the unraisable exception occurred. If possible, the repr of"
 " *obj* will be printed in the warning message."
-msgstr ""
+msgstr "発生させられない例外が起きたコンテキストを指し示す単一の引数 *obj* で関数が呼び出されます。\n可能な場合は、 *obj* の repr 文字列が警告メッセージに出力されます。"
 
 #: ../../c-api/exceptions.rst:82
 msgid "Raising exceptions"
@@ -119,7 +120,7 @@ msgid ""
 "These functions help you set the current thread's error indicator. For "
 "convenience, some of these functions will always return a NULL pointer for "
 "use in a ``return`` statement."
-msgstr ""
+msgstr "以下の関数は、現在のスレッドのエラーインジケータを設定する助けになります。\n``return`` 文で使うのに都合が良いように、いくつかの関数は常に NULL ポインタを返します。"
 
 #: ../../c-api/exceptions.rst:91
 msgid ""
@@ -148,7 +149,7 @@ msgstr "この関数はエラーインジケータを設定し *NULL* を返し�
 msgid ""
 "Same as :c:func:`PyErr_Format`, but taking a :c:type:`va_list` argument "
 "rather than a variable number of arguments."
-msgstr ""
+msgstr ":c:func:`PyErr_Format` と同じですが、可変長引数の代わりに :c:type:`va_list` 引数を受け取ります。"
 
 #: ../../c-api/exceptions.rst:122
 msgid "This is a shorthand for ``PyErr_SetObject(type, Py_None)``."

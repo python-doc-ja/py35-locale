@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-16 11:02+0000\n"
+"PO-Revision-Date: 2016-12-16 14:49+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -483,7 +483,7 @@ msgid ""
 "what you need. If for some reason that doesn't work then you should make the"
 " version check is against Python 2 and not Python 3. To help explain this, "
 "let's look at an example."
-msgstr ""
+msgstr "どのバージョンの Python で実行されているかに基づいて何をするかを選択するコードを書かざるを得なこともあるでしょう。\n最も良い書き方は、必要としている機能を、今実行しているバージョンの Python がサポートしているかを判定する機能検出を使うことです。\nなんらかの理由で機能検出が上手く行かない場合には、 Python 2 に対してバージョン検出を行うべきで、 Python 3 に対しては行うべきではありません。\n説明しやすくするために、例を見ていきましょう。"
 
 #: ../../howto/pyporting.rst:295
 msgid ""
@@ -491,7 +491,7 @@ msgid ""
 "available in Python's standard library since Python 3.3 and available for "
 "Python 2 through importlib2_ on PyPI. You might be tempted to write code to "
 "access e.g. the ``importlib.abc`` module by doing the following::"
-msgstr ""
+msgstr "importlib_ の機能にアクセスする必要があるとしましょう。\nこれは Python 3.3 から使える Python の標準ライブラリで、その機能は Python 2 では PyPI にある importlib2_ から使えます。\n例えば ``importlib.abc`` モジュールにアクセスするコードを書くのに、次のように書きたくなることがあるでしょう::"
 
 #: ../../howto/pyporting.rst:307
 msgid ""
@@ -499,14 +499,14 @@ msgid ""
 " be better to treat Python 2 as the exceptional case instead of Python 3 and"
 " assume that future Python versions will be more compatible with Python 3 "
 "than Python 2::"
-msgstr ""
+msgstr "このコードの問題は、 Python 4 が出たときに起きます。\nPython 3 ではなく Python 2 を例外的なケースとして扱い、将来の Python のバージョンは Python 2 よりも Python 3 と互換性があると仮定する方が良さそうです::"
 
 #: ../../howto/pyporting.rst:319
 msgid ""
 "The best solution, though, is to do no version detection at all and instead "
 "rely on feature detection. That avoids any potential issues of getting the "
 "version detection wrong and helps keep you future-compatible::"
-msgstr ""
+msgstr "ところが、最適解はバージョン検出を一切せずに、代わりに機能検出に頼ることです。\n機能検出を使うことで、バージョン検出が上手く行かなくなる潜在的な問題を避けられ、機能の互換性を保つ助けになります::"
 
 #: ../../howto/pyporting.rst:330
 msgid "Prevent compatibility regressions"
@@ -603,7 +603,7 @@ msgid ""
 "wouldn't easily find the mistake. This flag will raise an exception when "
 "these kinds of comparisons occur, making the mistake much easier to track "
 "down."
-msgstr ""
+msgstr "Python 3 インタプリタで ``-bb`` フラグを使って、 bytes と string 、もしくは bytes と int を比較したときに例外を引き起こしたいと思うでしょう (後者は Python 3.5 から使えます)。\nデフォルトでは型の異なる比較は単純に ``False`` を返しますが、テキスト/バイナリデータ処理の分離を誤ったり、バイト列への添え字操作を誤ると、簡単には間違いを見つけられません。\nこのフラグはそれが起こった場合に例外を起こすことで、その種のケースを追跡する助けになります。"
 
 #: ../../howto/pyporting.rst:401
 msgid ""
