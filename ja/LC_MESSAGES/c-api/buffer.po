@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-18 11:04+0000\n"
+"PO-Revision-Date: 2016-12-18 11:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -260,7 +260,7 @@ msgstr "shape の値は ``shape[n] >= 0`` に制限されます。 ``shape[n] ==
 
 #: ../../c-api/buffer.rst:178
 msgid "The shape array is read-only for the consumer."
-msgstr "shepe (形状) 配列はコンシューマ(利用側) からは読み取り専用です。"
+msgstr "shepe (形状) 配列は利用者からは読み取り専用です。"
 
 #: ../../c-api/buffer.rst:182
 msgid ""
@@ -489,7 +489,7 @@ msgstr "有り得る全てのリクエストの値は、前の節でのフラグ
 msgid ""
 "In the following table *U* stands for undefined contiguity. The consumer "
 "would have to call :c:func:`PyBuffer_IsContiguous` to determine contiguity."
-msgstr ""
+msgstr "次のテーブルの *U* は連続性が未定義であることを表します。\n利用者は :c:func:`PyBuffer_IsContiguous` を呼び出して連続性を判定する必要があるでしょう。"
 
 #: ../../c-api/buffer.rst:321
 msgid "readonly"
@@ -521,14 +521,14 @@ msgstr "複雑な配列"
 
 #: ../../c-api/buffer.rst:345
 msgid "NumPy-style: shape and strides"
-msgstr ""
+msgstr "NumPy スタイル: shape, strides"
 
 #: ../../c-api/buffer.rst:347
 msgid ""
 "The logical structure of NumPy-style arrays is defined by "
 ":c:member:`~Py_buffer.itemsize`, :c:member:`~Py_buffer.ndim`, "
 ":c:member:`~Py_buffer.shape` and :c:member:`~Py_buffer.strides`."
-msgstr ""
+msgstr "NumPy スタイルの配列の論理的構造は :c:member:`~Py_buffer.itemsize`, :c:member:`~Py_buffer.ndim`, :c:member:`~Py_buffer.shape`, :c:member:`~Py_buffer.strides` で定義されます。"
 
 #: ../../c-api/buffer.rst:350
 msgid ""
@@ -536,20 +536,20 @@ msgid ""
 ":c:member:`~Py_buffer.buf` is interpreted as a scalar of size "
 ":c:member:`~Py_buffer.itemsize`. In that case, both "
 ":c:member:`~Py_buffer.shape` and :c:member:`~Py_buffer.strides` are *NULL*."
-msgstr ""
+msgstr "``ndim == 0`` の場合は、 :c:member:`~Py_buffer.buf` が指すメモリの場所は、サイズが :c:member:`~Py_buffer.itemsize` のスカラ値として解釈されます。\nこの場合、 :c:member:`~Py_buffer.shape` と :c:member:`~Py_buffer.strides` の両方とも *NULL* です。"
 
 #: ../../c-api/buffer.rst:354
 msgid ""
 "If :c:member:`~Py_buffer.strides` is *NULL*, the array is interpreted as a "
 "standard n-dimensional C-array. Otherwise, the consumer must access an "
 "n-dimensional array as follows:"
-msgstr ""
+msgstr ":c:member:`~Py_buffer.strides` が *NULL* の場合は、配列は標準の n 次元 C 配列として解釈されます。\nそうでない場合は、利用者は次のように n 次元配列にアクセスしなければなりません:"
 
 #: ../../c-api/buffer.rst:358
 msgid ""
 "``ptr = (char *)buf + indices[0] * strides[0] + ... + indices[n-1] * "
 "strides[n-1]`` ``item = *((typeof(item) *)ptr);``"
-msgstr ""
+msgstr "``ptr = (char *)buf + indices[0] * strides[0] + ... + indices[n-1] * strides[n-1]`` ``item = *((typeof(item) *)ptr);``"
 
 #: ../../c-api/buffer.rst:362
 msgid ""
@@ -560,7 +560,7 @@ msgstr "上記のように、 :c:member:`~Py_buffer.buf` はメモリブロッ�
 
 #: ../../c-api/buffer.rst:396
 msgid "PIL-style: shape, strides and suboffsets"
-msgstr ""
+msgstr "PIL スタイル: shape, strides, suboffsets"
 
 #: ../../c-api/buffer.rst:398
 msgid ""
