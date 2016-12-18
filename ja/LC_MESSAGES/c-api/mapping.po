@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-18 01:36+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -57,19 +58,19 @@ msgstr "マップ型オブジェクトがキー *key* を持つ場合に ``1`` �
 msgid ""
 "On success, return a list or tuple of the keys in object *o*.  On failure, "
 "return *NULL*."
-msgstr ""
+msgstr "成功するとオブジェクト *o* のキーからなるリストもしくはタプルを返します。\n失敗すると *NULL* を返します。"
 
 #: ../../c-api/mapping.rst:59
 msgid ""
 "On success, return a list or tuple of the values in object *o*.  On failure,"
 " return *NULL*."
-msgstr ""
+msgstr "成功するとオブジェクト *o* の値からなるリストもしくはタプルを返します。\n失敗すると *NULL* を返します。"
 
 #: ../../c-api/mapping.rst:65
 msgid ""
 "On success, return a list or tuple of the items in object *o*, where each "
 "item is a tuple containing a key-value pair.  On failure, return *NULL*."
-msgstr ""
+msgstr "成功するとオブジェクト *o* の要素からなるリストもしくはタプルを返し、各要素はキーと値のペアが入ったタプルになっています。\n失敗すると *NULL* を返します。"
 
 #: ../../c-api/mapping.rst:71
 msgid ""

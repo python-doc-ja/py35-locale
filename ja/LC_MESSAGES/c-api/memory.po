@@ -5,12 +5,13 @@
 # Translators:
 # E. Kawashima, 2016
 # INADA Naoki <songofacandy@gmail.com>, 2016
+# tomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-18 02:45+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +114,7 @@ msgid ""
 "The following function sets are wrappers to the system allocator. These "
 "functions are thread-safe, the :term:`GIL <global interpreter lock>` does "
 "not need to be held."
-msgstr "以下の関数群はシステムのアロケータをラップします。\nこれらの関数はスレッドセーフで、 :term:`GIL <global interpreter lock>` を取得していなくても呼び出すことができます。"
+msgstr "以下の関数群はシステムのアロケータをラップします。\nこれらの関数はスレッドセーフで、 :term:`GIL <global interpreter lock>` を保持していなくても呼び出すことができます。"
 
 #: ../../c-api/memory.rst:100
 msgid ""
@@ -133,21 +134,21 @@ msgid ""
 "Requesting zero bytes returns a distinct non-*NULL* pointer if possible, as "
 "if ``PyMem_RawMalloc(1)`` had been called instead. The memory will not have "
 "been initialized in any way."
-msgstr "0バイトを要求すると、 ``PyMem_RawMalloc(1)`` が呼ばれたときと同じように、可能なら *NULL* でないユニークなポインターを返します。確保されたメモリーにはいかなる初期化も行われません。"
+msgstr "0バイトを要求すると、 ``PyMem_RawMalloc(1)`` が呼ばれたときと同じように、可能なら *NULL* でないユニークなポインタを返します。確保されたメモリーにはいかなる初期化も行われません。"
 
 #: ../../c-api/memory.rst:118 ../../c-api/memory.rst:186
 msgid ""
 "Allocates *nelem* elements each whose size in bytes is *elsize* and returns "
 "a pointer of type :c:type:`void\\*` to the allocated memory, or *NULL* if "
 "the request fails. The memory is initialized to zeros."
-msgstr "各要素が *elsize* バイトの要素 *nelem* 個分のメモリーを確保し、そのメモリーを指す :c:type:`void\\*` 型のポインターを返します。アロケートに失敗した場合は *NULL* を返します。確保されたメモリー領域はゼロで初期化されます。"
+msgstr "各要素が *elsize* バイトの要素 *nelem* 個分のメモリーを確保し、そのメモリーを指す :c:type:`void\\*` 型のポインタを返します。アロケートに失敗した場合は *NULL* を返します。確保されたメモリー領域はゼロで初期化されます。"
 
 #: ../../c-api/memory.rst:122
 msgid ""
 "Requesting zero elements or elements of size zero bytes returns a distinct "
 "non-*NULL* pointer if possible, as if ``PyMem_RawCalloc(1, 1)`` had been "
 "called instead."
-msgstr "要素数か要素のサイズが0バイトの要求に対しては、可能なら ``PyMem_RawCalloc(1, 1)`` が呼ばれたのと同じように、ユニークな *NULL* でないポインターを返します。"
+msgstr "要素数か要素のサイズが0バイトの要求に対しては、可能なら ``PyMem_RawCalloc(1, 1)`` が呼ばれたのと同じように、ユニークな *NULL* でないポインタを返します。"
 
 #: ../../c-api/memory.rst:131 ../../c-api/memory.rst:199
 msgid ""
@@ -209,21 +210,21 @@ msgstr "デフォルトのメモリアロケータは以下の関数を使用し
 msgid ""
 "The :term:`GIL <global interpreter lock>` must be held when using these "
 "functions."
-msgstr "これらの関数を呼ぶときには、 :term:`GIL <global interpreter lock>` を取得しておく必要があります。"
+msgstr "これらの関数を呼ぶときには、 :term:`GIL <global interpreter lock>` を保持しておく必要があります。"
 
 #: ../../c-api/memory.rst:179
 msgid ""
 "Requesting zero bytes returns a distinct non-*NULL* pointer if possible, as "
 "if ``PyMem_Malloc(1)`` had been called instead. The memory will not have "
 "been initialized in any way."
-msgstr ""
+msgstr "0バイトを要求すると、 ``PyMem_Malloc(1)`` が呼ばれたときと同じように、可能なら *NULL* でないユニークなポインタを返します。\n確保されたメモリーにはいかなる初期化も行われません。"
 
 #: ../../c-api/memory.rst:190
 msgid ""
 "Requesting zero elements or elements of size zero bytes returns a distinct "
 "non-*NULL* pointer if possible, as if ``PyMem_Calloc(1, 1)`` had been called"
 " instead."
-msgstr ""
+msgstr "要素数か要素のサイズが0バイトの要求に対しては、可能なら ``PyMem_Calloc(1, 1)`` が呼ばれたのと同じように、ユニークな *NULL* でないポインタを返します。"
 
 #: ../../c-api/memory.rst:202
 msgid ""
@@ -271,7 +272,7 @@ msgid ""
 "sizeof(TYPE))`` bytes.  Returns a pointer cast to :c:type:`TYPE\\*`. On "
 "return, *p* will be a pointer to the new memory area, or *NULL* in the event"
 " of failure."
-msgstr ""
+msgstr ":c:func:`PyMem_Realloc` と同じですが、 ``(n * sizeof(TYPE))`` バイトにサイズ変更されたメモリを確保します。\n:c:type:`TYPE\\*` に型キャストされたポインタを返します。\n関数が終わったとき、 *p* は新しいメモリ領域のポインタか、失敗した場合は *NULL* になります。"
 
 #: ../../c-api/memory.rst:240
 msgid ""
@@ -388,20 +389,20 @@ msgid ""
 ":c:data:`PYMEM_DOMAIN_RAW`: functions :c:func:`PyMem_RawMalloc`, "
 ":c:func:`PyMem_RawRealloc`, :c:func:`PyMem_RawCalloc` and "
 ":c:func:`PyMem_RawFree`"
-msgstr ":c:data:`PYMEM_DOMAIN_RAW`: 関数 :c:func:`PyMem_RawMalloc`, :c:func:`PyMem_RawRealloc`, :c:func:`PyMem_RawCalloc` and :c:func:`PyMem_RawFree`"
+msgstr ":c:data:`PYMEM_DOMAIN_RAW`: 関数 :c:func:`PyMem_RawMalloc`, :c:func:`PyMem_RawRealloc`, :c:func:`PyMem_RawCalloc`, :c:func:`PyMem_RawFree`"
 
 #: ../../c-api/memory.rst:298
 msgid ""
 ":c:data:`PYMEM_DOMAIN_MEM`: functions :c:func:`PyMem_Malloc`, "
 ":c:func:`PyMem_Realloc`, :c:func:`PyMem_Calloc` and :c:func:`PyMem_Free`"
-msgstr ":c:data:`PYMEM_DOMAIN_MEM`: 関数 :c:func:`PyMem_Malloc`, :c:func:`PyMem_Realloc`, :c:func:`PyMem_Calloc` and :c:func:`PyMem_Free`"
+msgstr ":c:data:`PYMEM_DOMAIN_MEM`: 関数 :c:func:`PyMem_Malloc`, :c:func:`PyMem_Realloc`, :c:func:`PyMem_Calloc`, :c:func:`PyMem_Free`"
 
 #: ../../c-api/memory.rst:300
 msgid ""
 ":c:data:`PYMEM_DOMAIN_OBJ`: functions :c:func:`PyObject_Malloc`, "
 ":c:func:`PyObject_Realloc`, :c:func:`PyObject_Calloc` and "
 ":c:func:`PyObject_Free`"
-msgstr ":c:data:`PYMEM_DOMAIN_OBJ`: 関数 :c:func:`PyObject_Malloc`, :c:func:`PyObject_Realloc`, :c:func:`PyObject_Calloc` and :c:func:`PyObject_Free`"
+msgstr ":c:data:`PYMEM_DOMAIN_OBJ`: 関数 :c:func:`PyObject_Malloc`, :c:func:`PyObject_Realloc`, :c:func:`PyObject_Calloc`, :c:func:`PyObject_Free`"
 
 #: ../../c-api/memory.rst:307
 msgid "Get the memory block allocator of the specified domain."
@@ -415,21 +416,21 @@ msgstr "指定されたドメインのメモリブロックアロケータを設
 msgid ""
 "The new allocator must return a distinct non-NULL pointer when requesting "
 "zero bytes."
-msgstr ""
+msgstr "新しいアロケータは、0バイトを要求されたときユニークな NULL でないポインタを返さなければなりません。"
 
 #: ../../c-api/memory.rst:317
 msgid ""
 "For the :c:data:`PYMEM_DOMAIN_RAW` domain, the allocator must be thread-"
 "safe: the :term:`GIL <global interpreter lock>` is not held when the "
 "allocator is called."
-msgstr ""
+msgstr ":c:data:`PYMEM_DOMAIN_RAW` ドメインでは、アロケータはスレッドセーフでなければなりません: アロケータが呼び出されたとき :term:`GIL <global interpreter lock>` は保持されていません。"
 
 #: ../../c-api/memory.rst:321
 msgid ""
 "If the new allocator is not a hook (does not call the previous allocator), "
 "the :c:func:`PyMem_SetupDebugHooks` function must be called to reinstall the"
 " debug hooks on top on the new allocator."
-msgstr ""
+msgstr "新しいアロケータがフックでない (1つ前のアロケータを呼び出さない) 場合、 :c:func:`PyMem_SetupDebugHooks` 関数を呼び出して、新しいアロケータの上にデバッグフックを再度設置しなければなりません。"
 
 #: ../../c-api/memory.rst:328
 msgid ""
@@ -481,7 +482,7 @@ msgstr "Python がデバッグモードでコンパイルされていない場�
 
 #: ../../c-api/memory.rst:350
 msgid "Customize PyObject Arena Allocator"
-msgstr ""
+msgstr "PyObject アリーナアロケータのカスタマイズ"
 
 #: ../../c-api/memory.rst:352
 msgid ""
@@ -491,11 +492,11 @@ msgid ""
 "back to :c:func:`PyMem_RawMalloc` and :c:func:`PyMem_RawRealloc` for "
 "allocations larger than 512 bytes.  *pymalloc* is the default allocator used"
 " by :c:func:`PyObject_Malloc`."
-msgstr ""
+msgstr "Python には512バイト未満のメモリ確保のための *pymalloc* があります。\nこのアロケータは寿命の短い小さなサイズのオブジェクトに最適化されています。\n*pymalloc* は256 KBの固定サイズの \"アリーナ\" と呼ばれるメモリマッピングを使います。\n512バイト以上のサイズのメモリを確保するときは、 :c:func:`PyMem_RawMalloc` および :c:func:`PyMem_RawRealloc` へ処理を差し戻します。\n *pymalloc* は :c:func:`PyObject_Malloc` で使うデフォルトのアロケータです。"
 
 #: ../../c-api/memory.rst:359
 msgid "The default arena allocator uses the following functions:"
-msgstr ""
+msgstr "デフォルトのアリーナアロケータは次の関数を使います:"
 
 #: ../../c-api/memory.rst:361
 msgid ":c:func:`VirtualAlloc` and :c:func:`VirtualFree` on Windows,"

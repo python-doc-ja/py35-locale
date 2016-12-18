@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-17 15:19+0000\n"
+"PO-Revision-Date: 2016-12-18 01:29+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -602,7 +602,7 @@ msgid ""
 "Set the cause associated with the exception to *cause*.  Use *NULL* to clear"
 " it.  There is no type check to make sure that *cause* is either an "
 "exception instance or :const:`None`.  This steals a reference to *cause*."
-msgstr ""
+msgstr "例外に関係する原因に *cause* をセットします。\nクリアするには *NULL* を使用してください。\n*cause* が例外インスタンスかどうかを確かめる型チェックは行われません。\nこれは *cause* への参照を盗みます。"
 
 #: ../../c-api/exceptions.rst:587
 msgid ""
@@ -637,7 +637,7 @@ msgstr "*encoding*, *object*, *length*, *start*, *end*, *reason* 属性を持っ
 msgid ""
 "Create a :class:`UnicodeTranslateError` object with the attributes *object*,"
 " *length*, *start*, *end* and *reason*. *reason* is a UTF-8 encoded string."
-msgstr ""
+msgstr "*object*, *length*, *start*, *end*, *reason* 属性を持った :class:`UnicodeTranslateError` オブジェクトを作成します。\n*reason* は UTF-8 エンコードされた文字列です。"
 
 #: ../../c-api/exceptions.rst:617
 msgid "Return the *encoding* attribute of the given exception object."
@@ -711,14 +711,14 @@ msgid ""
 "The function then checks if the recursion limit is reached.  If this is the "
 "case, a :exc:`RecursionError` is set and a nonzero value is returned. "
 "Otherwise, zero is returned."
-msgstr ""
+msgstr "次にこの関数は再帰の上限に達していないかをチェックします。\n上限に達している場合、 :exc:`RecursionError` をセットしゼロでない値を返します。\nそうでない場合はゼロを返します。"
 
 #: ../../c-api/exceptions.rst:689
 msgid ""
 "*where* should be a string such as ``\" in instance check\"`` to be "
 "concatenated to the :exc:`RecursionError` message caused by the recursion "
 "depth limit."
-msgstr ""
+msgstr "*where* は ``\" in instance check\"`` のような文字列にして、再帰の深さの限界に達したことで送出される :exc:`RecursionError` のメッセージに連結できるようにすべきです。"
 
 #: ../../c-api/exceptions.rst:695
 msgid ""
