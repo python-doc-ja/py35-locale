@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-18 02:47+0000\n"
+"PO-Revision-Date: 2016-12-18 03:34+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +106,7 @@ msgstr "どちらのケースでも、bufferが必要なくなった時に :c:fu
 
 #: ../../c-api/buffer.rst:69
 msgid "Buffer structure"
-msgstr "Buffer 構造体"
+msgstr "buffer 構造体"
 
 #: ../../c-api/buffer.rst:71
 msgid ""
@@ -235,7 +235,7 @@ msgid ""
 "representing a scalar. In this case, :c:member:`~Py_buffer.shape`, "
 ":c:member:`~Py_buffer.strides` and :c:member:`~Py_buffer.suboffsets` MUST be"
 " *NULL*."
-msgstr ""
+msgstr "メモリがN次元配列を表している時の次元数。\n``0`` の場合、 :c:member:`~Py_buffer.buf` はスカラ値を表す1つの要素を指しています。\nこの場合、 :c:member:`~Py_buffer.shape`, :c:member:`~Py_buffer.strides`, :c:member:`~Py_buffer.suboffsets` は *NULL* でなければなりません。"
 
 #: ../../c-api/buffer.rst:163
 msgid ""
@@ -455,11 +455,11 @@ msgid ""
 "C or Fortran :term:`contiguity <contiguous>` can be explicitly requested, "
 "with and without stride information. Without stride information, the buffer "
 "must be C-contiguous."
-msgstr ""
+msgstr "ストライドの情報があってもなくても、C または Fortran の :term:`連続性 <contiguous>` がはっきりと要求される可能性があります。\nストライド情報なしに、バッファーは C と隣接している必要があります。"
 
 #: ../../c-api/buffer.rst:296 ../../c-api/buffer.rst:321
 msgid "contig"
-msgstr ""
+msgstr "contig"
 
 #: ../../c-api/buffer.rst:298 ../../c-api/buffer.rst:304
 #: ../../c-api/buffer.rst:335 ../../c-api/buffer.rst:337
