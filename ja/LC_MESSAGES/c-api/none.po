@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-18 17:16+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 
 #: ../../c-api/none.rst:6
 msgid "The ``None`` Object"
-msgstr ""
+msgstr "``None`` オブジェクト"
 
 #: ../../c-api/none.rst:10
 msgid ""
@@ -39,4 +40,4 @@ msgstr "Python における ``None`` オブジェクトで、値がないこと�
 msgid ""
 "Properly handle returning :c:data:`Py_None` from within a C function (that "
 "is, increment the reference count of ``None`` and return it.)"
-msgstr ""
+msgstr "C 関数からの :c:data:`Py_None` の返却を適切に扱います。\n(これは ``None`` の参照カウントをインクリメントして返します。)"

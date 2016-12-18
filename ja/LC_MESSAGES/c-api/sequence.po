@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-18 17:56+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -77,13 +78,13 @@ msgid ""
 "return ``-1`` on failure; return ``0`` on success.  This is the equivalent "
 "of the Python statement ``o[i] = v``.  This function *does not* steal a "
 "reference to *v*."
-msgstr ""
+msgstr "*o* の *i* 番目の要素に *v* を代入します。\n失敗すると、例外を送出し ``-1`` を返します;\n成功すると ``0`` を返します。\nこれは Python の文 ``o[i] = v`` と同じです。\nこの関数は *v* への参照を *盗み取りません* 。"
 
 #: ../../c-api/sequence.rst:70
 msgid ""
 "If *v* is *NULL*, the element is deleted, however this feature is deprecated"
 " in favour of using :c:func:`PySequence_DelItem`."
-msgstr ""
+msgstr "*v* が *NULL* の場合はその要素が削除されますが、この機能は非推奨であり、 :c:func:`PyObject_DelAttr` を使うのが望ましいです。"
 
 #: ../../c-api/sequence.rst:76
 msgid ""

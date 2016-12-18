@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-18 11:47+0000\n"
+"PO-Revision-Date: 2016-12-18 17:13+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -589,7 +589,7 @@ msgid ""
 "Return ``1`` if *obj* supports the buffer interface otherwise ``0``.  When "
 "``1`` is returned, it doesn't guarantee that :c:func:`PyObject_GetBuffer` "
 "will succeed."
-msgstr ""
+msgstr "*obj* がbuffer インタフェースをサポートしている場合は ``1`` を返し、さもなければ ``0`` を返します。\n``1`` を返したとしても、 :c:func:`PyObject_GetBuffer` が成功することは保証されません。"
 
 #: ../../c-api/buffer.rst:437
 msgid ""
@@ -597,7 +597,7 @@ msgid ""
 "the exporter cannot provide a buffer of the exact type, it MUST raise "
 ":c:data:`PyExc_BufferError`, set :c:member:`view->obj` to *NULL* and return "
 "``-1``."
-msgstr ""
+msgstr "*exporter* に *flags* で指定された方法で *view* を埋めるように要求します。\nもし exporter が指定されたとおりにバッファを提供できない場合、 :c:data:`PyExc_BufferError` を送出し、 :c:member:`view->obj` を *NULL* に設定した上で、 ``-1`` を返さなければなりません。"
 
 #: ../../c-api/buffer.rst:442
 msgid ""
@@ -633,21 +633,21 @@ msgstr ":c:func:`PyObject_GetBuffer` を通して取得していないバッフ�
 msgid ""
 "Return the implied :c:data:`~Py_buffer.itemsize` from "
 ":c:data:`~Py_buffer.format`. This function is not yet implemented."
-msgstr ""
+msgstr ":c:data:`~Py_buffer.itemsize` の値を :c:data:`~PyBuffer.format` から計算して返します。\nこの関数はまだ実装されていません。"
 
 #: ../../c-api/buffer.rst:471
 msgid ""
 "Return ``1`` if the memory defined by the *view* is C-style (*order* is "
 "``'C'``) or Fortran-style (*order* is ``'F'``) :term:`contiguous` or either "
 "one (*order* is ``'A'``).  Return ``0`` otherwise."
-msgstr ""
+msgstr "*view* で定義されているメモリが、 C スタイル (*order* == ``'C'``) のときか、 Fortran スタイル (*order* == ``'F'``) 連続 (:term:`contiguous`) のときか、そのいずれか (*order* == ``'A'``) であれば ``1`` を返します。\nそれ以外の場合は ``0`` を返します。"
 
 #: ../../c-api/buffer.rst:478
 msgid ""
 "Fill the *strides* array with byte-strides of a :term:`contiguous` (C-style "
 "if *order* is ``'C'`` or Fortran-style if *order* is ``'F'``) array of the "
 "given shape with the given number of bytes per element."
-msgstr ""
+msgstr "*strides* 配列を、 *itemsize* の大きさの要素がバイト単位の、 *shape* の形をした連続な (:term:`contiguous`) (*order* が ``'C'`` なら C-style 、 ``'F'`` なら Fortran-style の) 多次元配列として埋める。"
 
 #: ../../c-api/buffer.rst:485
 msgid ""
