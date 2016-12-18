@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-18 03:34+0000\n"
+"PO-Revision-Date: 2016-12-18 11:04+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -179,7 +179,7 @@ msgid ""
 "the buffer has been obtained by a request that guarantees contiguity. In "
 "most cases such a request will be :c:macro:`PyBUF_SIMPLE` or "
 ":c:macro:`PyBUF_WRITABLE`."
-msgstr "``((char *)buf)[0]`` から ``((char *)buf)[len-1]`` の範囲へのアクセスは、連続性(contiguity)を保証する要求によって取得されたバッファに対してのみ許されます。多くのケースではそのような要求は、 :c:macro:`PyBUF_SIMPLE` または :c:macro:`PyBUF_WRITABLE` です。"
+msgstr "``((char *)buf)[0]`` から ``((char *)buf)[len-1]`` の範囲へのアクセスは、連続性 (contiguity) を保証するリクエストによって取得されたバッファに対してのみ許されます。\n多くの場合に、そのようなリクエストは :c:macro:`PyBUF_SIMPLE` または :c:macro:`PyBUF_WRITABLE` です。"
 
 #: ../../c-api/buffer.rst:127
 msgid ""
@@ -200,7 +200,7 @@ msgid ""
 ":c:macro:`PyBUF_FORMAT` flag, :c:member:`~Py_buffer.format` will be set to  "
 "*NULL*,  but :c:member:`~Py_buffer.itemsize` still has the value for the "
 "original format."
-msgstr "重要な例外: 消費者が :c:macro:`PyBUF_FORMAT` フラグを設定することなくバッファを要求した場合、 :c:member:`~Py_Buffer.format` は *NULL* に設定されます。しかし :c:member:`~Py_buffer.itemsize` は元のフォーマットに従った値を保持します。"
+msgstr "重要な例外: 消費者が :c:macro:`PyBUF_FORMAT` フラグを設定することなくバッファを要求した場合、 :c:member:`~Py_Buffer.format` は *NULL* に設定されます。\nしかし :c:member:`~Py_buffer.itemsize` は元のフォーマットに従った値を保持します。"
 
 #: ../../c-api/buffer.rst:140
 msgid ""
@@ -287,7 +287,7 @@ msgid ""
 "pointers and the suboffset value dictates how many bytes to add to each "
 "pointer after de-referencing. A suboffset value that is negative indicates "
 "that no de-referencing should occur (striding in a contiguous memory block)."
-msgstr ""
+msgstr ":c:type:`Py_ssize_t` 型の要素を持つ長さ :c:member:`~Py_buffer.ndim` の配列。\n``suboffsets[n] >= 0`` の場合は、 n 番目の次元に沿って保存されている値はポインタで、 suboffset 値は各ポインタの参照を解決した後に何バイト加えればいいかを示しています。\nsuboffset の値が負の数の場合は、ポインタの参照解決は不要 (連続したメモリブロック内に直接配置されいる) ということになります。"
 
 #: ../../c-api/buffer.rst:201
 msgid ""
@@ -300,7 +300,7 @@ msgid ""
 "This type of array representation is used by the Python Imaging Library "
 "(PIL). See `complex arrays`_ for further information how to access elements "
 "of such an array."
-msgstr ""
+msgstr "この種の配列表現は Python Imaging Library (PIL) で使われています。\nこのような配列で要素にアクセスする方法についてさらに詳しことは `complex arrays`_ を参照してください。"
 
 #: ../../c-api/buffer.rst:208
 msgid "The suboffsets array is read-only for the consumer."
@@ -316,7 +316,7 @@ msgstr "バッファを提供する側のオブジェクトが内部的に利用
 
 #: ../../c-api/buffer.rst:221
 msgid "Buffer request types"
-msgstr "バッファ要求のタイプ"
+msgstr "バッファリクエストのタイプ"
 
 #: ../../c-api/buffer.rst:223
 msgid ""
@@ -324,17 +324,17 @@ msgid ""
 "object via :c:func:`PyObject_GetBuffer`. Since the complexity of the logical"
 " structure of the memory can vary drastically, the consumer uses the *flags*"
 " argument to specify the exact buffer type it can handle."
-msgstr "バッファは通常、 :c:func:`PyObject_GetBuffer` を使うことで、エクスポートするオブジェクトにバッファ要求を送ることで得られます。メモリの論理的な構造の複雑性は多岐にわたるため、消費者は *flags* 引数を使って、自身が扱えるバッファの種類を指定します。"
+msgstr "バッファは通常、 :c:func:`PyObject_GetBuffer` を使うことで、エクスポートするオブジェクトにバッファリクエストを送ることで得られます。メモリの論理的な構造の複雑性は多岐にわたるため、消費者は *flags* 引数を使って、自身が扱えるバッファの種類を指定します。"
 
 #: ../../c-api/buffer.rst:228
 msgid ""
 "All :c:data:`Py_buffer` fields are unambiguously defined by the request "
 "type."
-msgstr ":c:data:`Py_buffer` の全フィールドは、要求の種類によって曖昧さを残さずに定義されます。"
+msgstr ":c:data:`Py_buffer` の全フィールドは、リクエストの種類によって曖昧さを残さずに定義されます。"
 
 #: ../../c-api/buffer.rst:232
 msgid "request-independent fields"
-msgstr "要求に依存しないフィールド"
+msgstr "リクエストに依存しないフィールド"
 
 #: ../../c-api/buffer.rst:233
 msgid ""
@@ -368,14 +368,14 @@ msgid ""
 "section. Since :c:macro:`PyBUF_SIMPLE` is defined as 0, "
 ":c:macro:`PyBUF_WRITABLE` can be used as a stand-alone flag to request a "
 "simple writable buffer."
-msgstr ""
+msgstr ":c:macro:`PyBUF_WRITABLE` は、次の節に出てくるどのフラグとも \\| を取ってかまいません。\n:c:macro:`PyBUF_SIMPLE` は 0 と定義されているので、 :c:macro:`PyBUF_WRITABLE` は単純な書き込み可能なバッファを要求する単独のフラグとして使えます。"
 
 #: ../../c-api/buffer.rst:258
 msgid ""
 ":c:macro:`PyBUF_FORMAT` can be \\|'d to any of the flags except "
 ":c:macro:`PyBUF_SIMPLE`. The latter already implies format ``B`` (unsigned "
 "bytes)."
-msgstr ":c:macro:`PyBUF_FORMAT` は、:c:macro:`PyBUF_SIMPLE` 以外のフラグと一緒に設定できます。後者のフラグは ``B`` (符号なしバイト)フォーマットを非明示的に指定しています。"
+msgstr ":c:macro:`PyBUF_FORMAT` は、:c:macro:`PyBUF_SIMPLE` 以外のどのフラグとも \\| を取ってかまいません。\n後者のフラグは ``B`` (符号なしバイト) フォーマットを既に指示しています。"
 
 #: ../../c-api/buffer.rst:263
 msgid "shape, strides, suboffsets"
@@ -476,14 +476,14 @@ msgstr "C か F"
 
 #: ../../c-api/buffer.rst:309
 msgid "compound requests"
-msgstr ""
+msgstr "複合リクエスト"
 
 #: ../../c-api/buffer.rst:311
 msgid ""
 "All possible requests are fully defined by some combination of the flags in "
 "the previous section. For convenience, the buffer protocol provides "
 "frequently used combinations as single flags."
-msgstr "可能性のあるすべての要求は、完全にいくつか前のセクションでのフラグの組み合わせによって定義されます。便宜上、バッファー プロトコルは 1 つのフラグとして頻繁に使用される組み合わせを提供します。"
+msgstr "有り得る全てのリクエストの値は、前の節でのフラグの組み合わせで網羅的に定義されています。\n便利なように、バッファープロトコルでは頻繁に使用される組み合わせを単一のフラグとして提供してます。"
 
 #: ../../c-api/buffer.rst:315
 msgid ""
