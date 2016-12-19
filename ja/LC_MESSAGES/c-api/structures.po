@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-19 13:36+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +46,7 @@ msgid ""
 "declared to be a :c:type:`PyObject`, but every pointer to a Python object "
 "can be cast to a :c:type:`PyObject*`.  Access to the members must be done by"
 " using the macros :c:macro:`Py_REFCNT` and :c:macro:`Py_TYPE`."
-msgstr ""
+msgstr "全てのオブジェクト型はこの型を拡張したものです。\nこの型には、あるオブジェクトを指すポインタをオブジェクトとして Python から扱うのに必要な情報が入っています。\n通常の \"リリース\" ビルドでは、この構造体にはオブジェクトの参照カウントとオブジェクトに対応する型オブジェクトだけが入っています。\n実際には :c:type:`PyObject` であることは宣言されていませんが、全ての Python オブジェクトへのポインタは :c:type:`PyObject*` へキャストできます。\nメンバにアクセスするには :c:macro:`Py_REFCNT` マクロと :c:macro:`Py_TYPE` マクロを使わなければなりません。"
 
 #: ../../c-api/structures.rst:33
 msgid ""
@@ -54,7 +55,7 @@ msgid ""
 "This type does not often appear in the Python/C API. Access to the members "
 "must be done by using the macros :c:macro:`Py_REFCNT`, :c:macro:`Py_TYPE`, "
 "and :c:macro:`Py_SIZE`."
-msgstr ""
+msgstr ":c:type:`PyObject` を拡張して、 :attr:`ob_size` フィールドを追加したものです。\nこの構造体は、 *長さ (length)* の概念を持つオブジェクトだけに対して使います。\nこの型が Python/C API で使われることはほとんどありません。\nメンバにアクセスするには :c:macro:`Py_REFCNT` マクロ、 :c:macro:`Py_TYPE` マクロ、 :c:macro:`Py_SIZE` マクロを使わなければなりません。"
 
 #: ../../c-api/structures.rst:42
 msgid ""
