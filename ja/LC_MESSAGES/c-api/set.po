@@ -4,11 +4,12 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-19 03:10+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +137,7 @@ msgid ""
 "Raise a :exc:`TypeError` if the *key* is unhashable. Raise "
 ":exc:`PyExc_SystemError` if *anyset* is not a :class:`set`, "
 ":class:`frozenset`, or an instance of a subtype."
-msgstr ""
+msgstr "見つかったら ``1`` を、見つからなかったら ``0`` を、エラーが発生した場合は ``-1`` を返します。\nPython の :meth:`__contains__` メソッドと違って、この関数は非ハッシュ set を一時的な frozenset に自動で変換しません。\n*key* がハッシュ可能で無い場合、 :exc:`TypeError` を送出します。\n*anyset* が :class:`set`, :class:`frozenset` 及びそのサブタイプのオブジェクトで無い場合は :exc:`PyExc_SystemError` を送出します。"
 
 #: ../../c-api/set.rst:126
 msgid ""
@@ -147,7 +148,7 @@ msgid ""
 "the *key* is unhashable. Raise a :exc:`MemoryError` if there is no room to "
 "grow.  Raise a :exc:`SystemError` if *set* is not an instance of "
 ":class:`set` or its subtype."
-msgstr ""
+msgstr ":class:`set` のインスタンスに *key* を追加します。\n:class:`frozenset` に対しても動作します (:c:func:`PyTuple_SetItem` のように、他のコードに見える前の新しい frozenset の値を埋めるために使用できます)。\n成功したら ``0`` を、失敗したら ``-1`` を返します。\n*key* がハッシュ可能でない場合は、 :exc:`TypeError` を送出します。\n*set* を大きくする余裕がない場合は、 :exc:`MemoryError` を送出します。\n*set* が :class:`set` かそのサブタイプのインスタンスでない場合は、 :exc:`SystemError` を送出します。"
 
 #: ../../c-api/set.rst:135
 msgid ""
@@ -164,7 +165,7 @@ msgid ""
 " convert unhashable sets into temporary frozensets. Raise "
 ":exc:`PyExc_SystemError` if *set* is not an instance of :class:`set` or its "
 "subtype."
-msgstr ""
+msgstr "*key* が見つかって、値を削除したら ``1`` を返します。\n見つからなかったら (何もせずに) ``0`` を返します。\nエラーが発生した場合は ``-1`` を返します。\n*key* が無くても :exc:`KeyError` を送出しません。\n*key* がハッシュ可能でない場合は :exc:`TypeError` を送出します。\nPython の :meth:`~set.discard` メソッドと違って、この関数は非ハッシュ set を一時的な frozenset に変換しません。\n*set* が :class:`set` かそのサブタイプのインスタンスでないときは、 :exc:`PyExc_SystemError` を送出します。"
 
 #: ../../c-api/set.rst:151
 msgid ""
