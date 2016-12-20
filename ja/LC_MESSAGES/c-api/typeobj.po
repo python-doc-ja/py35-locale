@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-20 01:01+0000\n"
+"PO-Revision-Date: 2016-12-20 12:16+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -169,7 +169,7 @@ msgid ""
 "dictionary, as explained above).  This means your type will be impossible to"
 " pickle.  Additionally, it will not be listed in module documentations "
 "created with pydoc."
-msgstr ""
+msgstr "ドットが入っていない場合、 :c:member:`~PyTypeObject.tp_name` フィールドの内容全てが :attr:`~definition.__name__` 属性になり、 :attr:`__module__` 属性は (前述のように型の辞書内で明示的にセットしないかぎり) 未定義になります。\nこのため、その型は pickle 化できないことになります。\nさらに、 pydoc が作成するモジュールドキュメントのリストにも載らなくなります。"
 
 #: ../../c-api/typeobj.rst:128
 msgid ""
@@ -259,7 +259,7 @@ msgstr "デストラクタ関数は、参照カウントが新たにゼロにな
 
 #: ../../c-api/typeobj.rst:193
 msgid "Reserved slot, formerly used for print formatting in Python 2.x."
-msgstr ""
+msgstr "予約済みのスロットです。\n以前は Python 2.x でオブジェクトのフォーマット出力をするのに使われていました。"
 
 #: ../../c-api/typeobj.rst:198
 msgid "An optional pointer to the get-attribute-string function."
