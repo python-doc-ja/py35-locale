@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-20 12:16+0000\n"
+"PO-Revision-Date: 2016-12-20 17:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -263,7 +263,7 @@ msgstr "予約済みのスロットです。\n以前は Python 2.x でオブジ�
 
 #: ../../c-api/typeobj.rst:198
 msgid "An optional pointer to the get-attribute-string function."
-msgstr "オプションのフィールドです。ポインタで、get-attribute-string を行う関数を指します。"
+msgstr "オプションのポインタで、get-attribute-string を行う関数を指します。"
 
 #: ../../c-api/typeobj.rst:200
 msgid ""
@@ -272,7 +272,7 @@ msgid ""
 "but taking a C string instead of a Python string object to give the "
 "attribute name.  The signature is the same as for "
 ":c:func:`PyObject_GetAttrString`."
-msgstr "このフィールドは撤廃されています。このフィールドを定義する場合、 :c:member:`~PyTypeObject.tp_getattro` 関数と同じように動作し、属性名は Python 文字列 オブジェクトではなく C 文字列で指定するような関数を指すようにしなければなりません。シグネチャは :c:func:`PyObject_GetAttrString` と同じです。"
+msgstr "このフィールドは非推奨です。\nこのフィールドを定義するときは、 :c:member:`~PyTypeObject.tp_getattro` 関数と同じように動作し、属性名は Python 文字列 オブジェクトではなく C 文字列で指定するような関数を指すようにしなければなりません。\nシグネチャは :c:func:`PyObject_GetAttrString` と同じです。"
 
 #: ../../c-api/typeobj.rst:205
 msgid ""
@@ -287,7 +287,7 @@ msgstr "このフィールドは :c:member:`~PyTypeObject.tp_getattro` と共に
 #: ../../c-api/typeobj.rst:212 ../../c-api/typeobj.rst:356
 msgid ""
 "An optional pointer to the function for setting and deleting attributes."
-msgstr ""
+msgstr "オプションのポインタで、属性の設定と削除を行う関数を指します。"
 
 #: ../../c-api/typeobj.rst:214
 msgid ""
@@ -297,7 +297,7 @@ msgid ""
 "attribute name.  The signature is the same as for "
 ":c:func:`PyObject_SetAttrString`, but setting *v* to *NULL* to delete an "
 "attribute must be supported."
-msgstr ""
+msgstr "このフィールドは非推奨です。\nこのフィールドを定義するときは、 :c:member:`~PyTypeObject.tp_setattro` 関数と同じように動作し、属性名は Python 文字列 オブジェクトではなく C 文字列で指定するような関数を指すようにしなければなりません。\nシグネチャは :c:func:`PyObject_SetAttrString` と同じですが、 *v* に *NULL* を指定して属性を削除できるようにしなければなりません。"
 
 #: ../../c-api/typeobj.rst:220
 msgid ""
@@ -314,17 +314,17 @@ msgid ""
 "Pointer to an additional structure that contains fields relevant only to "
 "objects which implement :term:`awaitable` and :term:`asynchronous iterator` "
 "protocols at the C-level.  See :ref:`async-structs` for details."
-msgstr ""
+msgstr "追加の構造体を指すポインタです。\nこの構造体は、 C レベルで :term:`awaitable` プロトコルと :term:`asynchronous iterator` プロトコルを実装するオブジェクトだけに関係するフィールドを持ちます。\n詳しいことは :ref:`async-structs` を参照してください。"
 
 #: ../../c-api/typeobj.rst:231
 msgid "Formerly known as ``tp_compare`` and ``tp_reserved``."
-msgstr ""
+msgstr "以前は ``tp_compare`` や ``tp_reserved`` として知られていました。"
 
 #: ../../c-api/typeobj.rst:239
 msgid ""
 "An optional pointer to a function that implements the built-in function "
 ":func:`repr`."
-msgstr "オプションのフィールドです。ポインタで、組み込み関数 :func:`repr` を実装している関数を指します。"
+msgstr "オプションのポインタで、組み込み関数 :func:`repr` を実装している関数を指します。"
 
 #: ../../c-api/typeobj.rst:242
 msgid ""
@@ -386,7 +386,7 @@ msgstr ":c:member:`~PyTypeObject.tp_as_mapping` フィールドは継承され�
 msgid ""
 "An optional pointer to a function that implements the built-in function "
 ":func:`hash`."
-msgstr "オプションのフィールドです。ポインタで、組み込み関数 :func:`hash` を実装している関数を指します。"
+msgstr "オプションのポインタで、組み込み関数 :func:`hash` を実装している関数を指します。"
 
 #: ../../c-api/typeobj.rst:292
 msgid ""
@@ -428,7 +428,7 @@ msgid ""
 "An optional pointer to a function that implements calling the object.  This "
 "should be *NULL* if the object is not callable.  The signature is the same "
 "as for :c:func:`PyObject_Call`."
-msgstr "オプションのフィールドです。ポインタで、オブジェクトの呼び出しを実装している関数を指します。オブジェクトが呼び出し可能でない場合には *NULL* にしなければなりません。シグネチャは :c:func:`PyObject_Call` と同じです。"
+msgstr "オプションのポインタで、オブジェクトの呼び出しを実装している関数を指します。オブジェクトが呼び出し可能でない場合には *NULL* にしなければなりません。シグネチャは :c:func:`PyObject_Call` と同じです。"
 
 #: ../../c-api/typeobj.rst:325
 msgid ""
@@ -437,7 +437,7 @@ msgid ""
 "the constructor for that type.  This constructor calls "
 ":c:func:`PyObject_Str` to do the actual work, and :c:func:`PyObject_Str` "
 "will call this handler.)"
-msgstr "オプションのフィールドです。ポインタで、組み込みの演算 :func:`str` を実装している関数を指します。(:class:`str` が型の一つになったため、 :func:`str` は :class:`str` のコンストラクタを呼び出すことに注意してください。このコンストラクタは実際の処理を行う上で :c:func:`PyObject_Str` を呼び出し、さらに :c:func:`PyObject_Str` がこのハンドラを呼び出すことになります。)"
+msgstr "オプションのポインタで、組み込みの演算 :func:`str` を実装している関数を指します。(:class:`str` が型の一つになったため、 :func:`str` は :class:`str` のコンストラクタを呼び出すことに注意してください。このコンストラクタは実際の処理を行う上で :c:func:`PyObject_Str` を呼び出し、さらに :c:func:`PyObject_Str` がこのハンドラを呼び出すことになります。)"
 
 #: ../../c-api/typeobj.rst:330
 msgid ""
@@ -455,14 +455,14 @@ msgstr "このフィールドが設定されていない場合、文字列表現
 
 #: ../../c-api/typeobj.rst:343
 msgid "An optional pointer to the get-attribute function."
-msgstr "オプションのフィールドです。ポインタで、get-attribute を実装している関数を指します。"
+msgstr "オプションのポインタで、get-attribute を実装している関数を指します。"
 
 #: ../../c-api/typeobj.rst:345
 msgid ""
 "The signature is the same as for :c:func:`PyObject_GetAttr`.  It is usually "
 "convenient to set this field to :c:func:`PyObject_GenericGetAttr`, which "
 "implements the normal way of looking for object attributes."
-msgstr "シグネチャは :c:func:`PyObject_GetAttr` と同じです。対する通常の属性検索を実装している :c:func:`PyObject_GenericGetAttr`  をこのフィールドに設定しておくと往々にして便利です。"
+msgstr "シグネチャは :c:func:`PyObject_GetAttr` と同じです。\n通常の属性検索を実装している :c:func:`PyObject_GenericGetAttr`  をこのフィールドに設定しておくとたいていの場合は便利です。"
 
 #: ../../c-api/typeobj.rst:349
 msgid ""
@@ -480,7 +480,7 @@ msgid ""
 " to *NULL* to delete an attribute must be supported.  It is usually "
 "convenient to set this field to :c:func:`PyObject_GenericSetAttr`, which "
 "implements the normal way of setting object attributes."
-msgstr ""
+msgstr "シグネチャは :c:func:`PyObject_SetAttr` と同じですが、 *v* に *NULL* を指定して属性を削除できるようにしなければなりません。\n通常の属性設定を実装している :c:func:`PyObject_GenericSetAttr`  をこのフィールドに設定しておくとたいていの場合は便利です。"
 
 #: ../../c-api/typeobj.rst:363
 msgid ""
@@ -599,20 +599,20 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_flags` set appropriately, or the code that "
 "interacts with such types will behave differently depending on what kind of "
 "check is used."
-msgstr ""
+msgstr "これらのフラグは :c:func:`PyLong_Check` のような関数が、型がとある組み込み型のサブクラスかどうかを素早く判断するのに使われます;\nこの専用のチェックは :c:func:`PyObject_IsInstance` のような汎用的なチェックよりも高速です。\n組み込み型を継承した独自の型では :c:member:`~PyTypeObject.tp_flags` を適切に設定すべきで、そうしないとその型が関わるコードでは、どんなチェックの方法が使われるかによって振る舞いが異なってしまうでしょう。"
 
 #: ../../c-api/typeobj.rst:472
 msgid ""
 "This bit is set when the :c:member:`~PyTypeObject.tp_finalize` slot is "
 "present in the type structure."
-msgstr ""
+msgstr "型構造体に :c:member:`~PyTypeObject.tp_finalize` スロットが存在しているときにセットされるビットです。"
 
 #: ../../c-api/typeobj.rst:480
 msgid ""
 "An optional pointer to a NUL-terminated C string giving the docstring for "
 "this type object.  This is exposed as the :attr:`__doc__` attribute on the "
 "type and instances of the type."
-msgstr "オプションのフィールドです。ポインタで、この型オブジェクトの docstring を与える NUL 終端された C の文字列を指します。この値は型オブジェクトと型のインスタンスにおける :attr:`__doc__` 属性として公開されます。"
+msgstr "オプションのポインタで、この型オブジェクトの docstring を与える NUL 終端された C の文字列を指します。この値は型オブジェクトと型のインスタンスにおける :attr:`__doc__` 属性として公開されます。"
 
 #: ../../c-api/typeobj.rst:484
 msgid "This field is *not* inherited by subtypes."
@@ -624,7 +624,7 @@ msgid ""
 " is only used if the :const:`Py_TPFLAGS_HAVE_GC` flag bit is set.  More "
 "information about Python's garbage collection scheme can be found in section"
 " :ref:`supporting-cycle-detection`."
-msgstr "オプションのフィールドです。ポインタで、ガベージコレクタのためのトラバーサル関数 (traversal function) を指します。 :const:`Py_TPFLAGS_HAVE_GC` がセットされている場合にのみ使われます。Pythonのガベージコレクションの枠組みに関する詳細は :ref:`supporting-cycle-detection` にあります。"
+msgstr "オプションのポインタで、ガベージコレクタのためのトラバーサル関数 (traversal function) を指します。 :const:`Py_TPFLAGS_HAVE_GC` がセットされている場合にのみ使われます。Pythonのガベージコレクションの枠組みに関する詳細は :ref:`supporting-cycle-detection` にあります。"
 
 #: ../../c-api/typeobj.rst:494
 msgid ""
@@ -671,7 +671,7 @@ msgstr "このフィールドは :c:member:`~PyTypeObject.tp_clear` および :c
 msgid ""
 "An optional pointer to a clear function for the garbage collector. This is "
 "only used if the :const:`Py_TPFLAGS_HAVE_GC` flag bit is set."
-msgstr "オプションのフィールドです。ポインタで、ガベージコレクタにおける消去関数 (clear function) を指します。 :const:`Py_TPFLAGS_HAVE_GC` がセットされている場合にのみ使われます。"
+msgstr "オプションのポインタで、ガベージコレクタにおける消去関数 (clear function) を指します。 :const:`Py_TPFLAGS_HAVE_GC` がセットされている場合にのみ使われます。"
 
 #: ../../c-api/typeobj.rst:532
 msgid ""
@@ -743,7 +743,7 @@ msgid ""
 "``PyObject *tp_richcompare(PyObject *a, PyObject *b, int op)``. The first "
 "parameter is guaranteed to be an instance of the type that is defined by "
 ":c:type:`PyTypeObject`."
-msgstr ""
+msgstr "オプションのポインタで、  ``PyObject *tp_richcompare(PyObject *a, PyObject *b, int op)`` というシグネチャを持つ拡張比較関数を指します。\n1つ目の引数は、 :c:type:`PyTypeObject` で定義された型のインスタンスであることが保証されています。"
 
 #: ../../c-api/typeobj.rst:589
 msgid ""
@@ -900,7 +900,7 @@ msgid ""
 ":exc:`StopIteration` exception may or may not be set.  When another error "
 "occurs, it must return *NULL* too.  Its presence signals that the instances "
 "of this type are iterators."
-msgstr "オプションのフィールドで、イテレータにおいて次の要素を返す関数へのポインタです。イテレータの要素がなくなると、この関数は *NULL* を返さなければなりません。 :exc:`StopIteration` 例外は設定してもしなくても良いです。その他のエラーが発生したときも、 *NULL* を返さなければなりません。このフィールドがあると、この型のインスタンスがイテレータであることを示します。"
+msgstr "オプションのポインタで、イテレータにおいて次の要素を返す関数を指します。イテレータの要素がなくなると、この関数は *NULL* を返さなければなりません。 :exc:`StopIteration` 例外は設定してもしなくても良いです。その他のエラーが発生したときも、 *NULL* を返さなければなりません。このフィールドがあると、この型のインスタンスがイテレータであることを示します。"
 
 #: ../../c-api/typeobj.rst:675
 msgid ""
@@ -917,7 +917,7 @@ msgstr "この関数のシグネチャは :c:func:`PyIter_Next` と同じです�
 msgid ""
 "An optional pointer to a static *NULL*-terminated array of "
 ":c:type:`PyMethodDef` structures, declaring regular methods of this type."
-msgstr "オプションのフィールドです。ポインタで、この型の正規 (regular) のメソッドを宣言している :c:type:`PyMethodDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
+msgstr "オプションのポインタで、この型の正規 (regular) のメソッドを宣言している :c:type:`PyMethodDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
 
 #: ../../c-api/typeobj.rst:689
 msgid ""
@@ -936,7 +936,7 @@ msgid ""
 "An optional pointer to a static *NULL*-terminated array of "
 ":c:type:`PyMemberDef` structures, declaring regular data members (fields or "
 "slots) of instances of this type."
-msgstr "オプションのフィールドです。ポインタで、型の正規 (regular) のデータメンバ (フィールドおよびスロット) を宣言している :c:type:`PyMemberDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
+msgstr "オプションのポインタで、型の正規 (regular) のデータメンバ (フィールドおよびスロット) を宣言している :c:type:`PyMemberDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
 
 #: ../../c-api/typeobj.rst:702
 msgid ""
@@ -955,7 +955,7 @@ msgid ""
 "An optional pointer to a static *NULL*-terminated array of "
 ":c:type:`PyGetSetDef` structures, declaring computed attributes of instances"
 " of this type."
-msgstr "オプションのフィールドです。ポインタで、インスタンスの算出属性 (computed attribute) を宣言している :c:type:`PyGetSetDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
+msgstr "オプションのポインタで、インスタンスの算出属性 (computed attribute) を宣言している :c:type:`PyGetSetDef` 構造体からなる、 *NULL* で終端された静的な配列を指します。"
 
 #: ../../c-api/typeobj.rst:714
 msgid ""
@@ -978,7 +978,7 @@ msgid ""
 "An optional pointer to a base type from which type properties are inherited."
 "  At this level, only single inheritance is supported; multiple inheritance "
 "require dynamically creating a type object by calling the metatype."
-msgstr "オプションのフィールドです。ポインタで、型に関するプロパティを継承する基底タイプへのポインタです。このフィールドのレベルでは、単継承 (single inheritance) だけがサポートされています; 多重継承はメタタイプの呼び出しによる動的な型オブジェクトの生成を必要とします。"
+msgstr "オプションのポインタで、型に関するプロパティを継承する基底タイプを指します。このフィールドのレベルでは、単継承 (single inheritance) だけがサポートされています; 多重継承はメタタイプの呼び出しによる動的な型オブジェクトの生成を必要とします。"
 
 #: ../../c-api/typeobj.rst:742
 msgid ""
@@ -1014,7 +1014,7 @@ msgstr ":c:member:`~PyTypeObject.tp_dict` に :c:func:`PyDict_SetItem` を使っ
 
 #: ../../c-api/typeobj.rst:768
 msgid "An optional pointer to a \"descriptor get\" function."
-msgstr "オプションのフィールドです。ポインタで、\"デスクリプタ get\" 関数を指します。"
+msgstr "オプションのポインタで、デスクリプタの get 関数を指します。"
 
 #: ../../c-api/typeobj.rst:770 ../../c-api/typeobj.rst:784
 #: ../../c-api/typeobj.rst:856 ../../c-api/typeobj.rst:878
@@ -1115,7 +1115,7 @@ msgstr "(:attr:`~object.__dict__` という名前のスロットを :attr:`__slo
 
 #: ../../c-api/typeobj.rst:849
 msgid "An optional pointer to an instance initialization function."
-msgstr "オプションのフィールドです。ポインタで、インスタンス初期化関数を指します。"
+msgstr "オプションのポインタで、インスタンス初期化関数を指します。"
 
 #: ../../c-api/typeobj.rst:851
 msgid ""
@@ -1146,7 +1146,7 @@ msgstr ":c:member:`~PyTypeObject.tp_init` 関数のフィールドが *NULL* で
 
 #: ../../c-api/typeobj.rst:876
 msgid "An optional pointer to an instance allocation function."
-msgstr "オプションのフィールドです。ポインタで、インスタンスのメモリ確保関数を指します。"
+msgstr "オプションのポインタで、インスタンスのメモリ確保関数を指します。"
 
 #: ../../c-api/typeobj.rst:882
 msgid ""
@@ -1179,7 +1179,7 @@ msgstr "静的なサブタイプはこのフィールドを継承しますが、
 
 #: ../../c-api/typeobj.rst:903
 msgid "An optional pointer to an instance creation function."
-msgstr "オプションのフィールドです。ポインタで、インスタンス生成関数を指します。"
+msgstr "オプションのポインタで、インスタンス生成関数を指します。"
 
 #: ../../c-api/typeobj.rst:905
 msgid ""
@@ -1238,7 +1238,7 @@ msgstr "静的なサブタイプはこのフィールドを継承しますが、
 
 #: ../../c-api/typeobj.rst:948
 msgid "An optional pointer to a function called by the garbage collector."
-msgstr "オプションのフィールドです。ポインタで、ガベージコレクタから呼び出される関数を指します。"
+msgstr "オプションのポインタで、ガベージコレクタから呼び出される関数を指します。"
 
 #: ../../c-api/typeobj.rst:950
 msgid ""
