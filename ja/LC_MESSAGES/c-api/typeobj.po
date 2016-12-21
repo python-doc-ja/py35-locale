@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-20 17:47+0000\n"
+"PO-Revision-Date: 2016-12-21 03:15+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1026,13 +1026,13 @@ msgstr "関数のシグネチャは次のとおりです ::"
 msgid ""
 "An optional pointer to a function for setting and deleting a descriptor's "
 "value."
-msgstr ""
+msgstr "オプションのポインタで、デスクリプタの値の設定と削除を行う関数を指します。"
 
 #: ../../c-api/typeobj.rst:788
 msgid ""
 "The *value* argument is set to *NULL* to delete the value. This field is "
 "inherited by subtypes."
-msgstr ""
+msgstr "*value* 引数に *NULL* を設定して値を消します。\nこのフィールドはサブタイプに継承されます。"
 
 #: ../../c-api/typeobj.rst:796
 msgid ""
@@ -1289,7 +1289,7 @@ msgstr "このフィールドは継承されません; フィールドの値は 
 msgid ""
 "An optional pointer to an instance finalization function.  Its signature is "
 ":c:type:`destructor`::"
-msgstr ""
+msgstr "オプションのポインタで、インスタンスの終了処理関数を指します。\nシグネチャは :c:type:`destructor` です::"
 
 #: ../../c-api/typeobj.rst:992
 msgid ""
@@ -1299,24 +1299,24 @@ msgid ""
 "before the object is deallocated.  Either way, it is guaranteed to be called"
 " before attempting to break reference cycles, ensuring that it finds the "
 "object in a sane state."
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_finalize` が設定されている場合、インスタンスをファイナライズするときに、インタプリタがこの関数を1回呼び出します。\nガベージコレクタ (このインスタンスが孤立した循環参照の一部だった場合) やオブジェクトが破棄される直前にもこの関数は呼び出されます。\nどちらの場合でも、循環参照を破壊しようとする前に呼び出されることが保証されていて、確実にオブジェクトが正常な状態にあるようにします。"
 
 #: ../../c-api/typeobj.rst:999
 msgid ""
 ":c:member:`~PyTypeObject.tp_finalize` should not mutate the current "
 "exception status; therefore, a recommended way to write a non-trivial "
 "finalizer is::"
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_finalize` は現在の例外状態を変更すべきではありません; 従って、単純でないファイナライザを書くには次の方法が推奨されます::"
 
 #: ../../c-api/typeobj.rst:1016
 msgid ""
 "For this field to be taken into account (even through inheritance), you must"
 " also set the :const:`Py_TPFLAGS_HAVE_FINALIZE` flags bit."
-msgstr ""
+msgstr "このフィールドを (継承した場合も含めて) 考慮から漏らさないように、 :const:`Py_TPFLAGS_HAVE_FINALIZE` フラグビットも設定しなければなりません。"
 
 #: ../../c-api/typeobj.rst:1023
 msgid "\"Safe object finalization\" (:pep:`442`)"
-msgstr ""
+msgstr "\"オブジェクトの安全な終了処理\" (:pep:`442`)"
 
 #: ../../c-api/typeobj.rst:1028
 msgid "Unused.  Not inherited.  Internal use only."
@@ -1381,7 +1381,7 @@ msgid ""
 "This structure holds pointers to the functions which an object uses to "
 "implement the number protocol.  Each function is used by the function of "
 "similar name documented in the :ref:`number` section."
-msgstr "拡張型で数値型プロトコルを実装するために使われる関数群へのポインタを保持するために使われる構造体です。以下のそれぞれの関数は :ref:`number` で解説されている似た名前の関数から利用されます。"
+msgstr "この構造体は、拡張型で数値型プロトコルを実装するために使われる関数群へのポインタを保持します。\n以下のそれぞれの関数は :ref:`number` で解説されている似た名前の関数から利用されます。"
 
 #: ../../c-api/typeobj.rst:1091 ../../c-api/typeobj.rst:1364
 msgid "Here is the structure definition::"
@@ -1411,7 +1411,7 @@ msgstr "マップ型オブジェクト構造体"
 msgid ""
 "This structure holds pointers to the functions which an object uses to "
 "implement the mapping protocol.  It has three members:"
-msgstr "拡張型でマップ型プロトコルを実装するために使われる関数群へのポインタを保持するために使われる構造体です。以下の3つのメンバを持っています:"
+msgstr "この構造体は、拡張型でマップ型プロトコルを実装するために使われる関数群へのポインタを保持します。\n以下の3つのメンバを持っています:"
 
 #: ../../c-api/typeobj.rst:1167
 msgid ""
@@ -1434,7 +1434,7 @@ msgid ""
 ":c:func:`PyObject_SetItem`, but *v* can also be set to *NULL* to delete an "
 "item.  If this slot is *NULL*, the object does not support item assignment "
 "and deletion."
-msgstr ""
+msgstr "この関数は :c:func:`PyObject_SetItem` および :c:func:`PyObject_DelItem` から利用されます。\n:c:func:`PyObject_SetItem` と同じシグネチャを持ちますが、 *v* に *NULL* を設定して要素の削除もできます。このスロットが *NULL* の場合は、このオブジェクトはアイテムの代入と削除をサポートしません。"
 
 #: ../../c-api/typeobj.rst:1189
 msgid "Sequence Object Structures"
@@ -1487,7 +1487,7 @@ msgid ""
 "This function is used by :c:func:`PySequence_SetItem` and has the same "
 "signature.  This slot may be left to *NULL* if the object does not support "
 "item assignment and deletion."
-msgstr ""
+msgstr "この関数は :c:func:`PySequence_SetItem` から利用され、同じシグネチャを持っています。\nオブジェクトが要素の代入と削除をサポートしていない場合は、このスロットは *NULL* かもしれません。"
 
 #: ../../c-api/typeobj.rst:1236
 msgid ""
@@ -1537,7 +1537,7 @@ msgstr "*flags* で指定された方法で *view* を埋めてほしいとい�
 msgid ""
 "Check if the request can be met. If not, raise :c:data:`PyExc_BufferError`, "
 "set :c:data:`view->obj` to *NULL* and return ``-1``."
-msgstr ""
+msgstr "リクエストが合致するか確認します。\n合致しない場合は、 :c:data:`PyExc_BufferError` を送出し、 :c:data:`view->obj` に *NULL* を設定し ``-1`` を返します。"
 
 #: ../../c-api/typeobj.rst:1283
 msgid "Fill in the requested fields."
@@ -1554,7 +1554,7 @@ msgstr ":c:data:`view->obj` に *exporter* を設定し、 :c:data:`view->obj` �
 
 #: ../../c-api/typeobj.rst:1289
 msgid "Return ``0``."
-msgstr ""
+msgstr "``0`` を返します。"
 
 #: ../../c-api/typeobj.rst:1291
 msgid ""
@@ -1617,7 +1617,7 @@ msgstr "エクスポートした回数を保持する内部カウンタをデク
 
 #: ../../c-api/typeobj.rst:1332
 msgid "If the counter is ``0``, free all memory associated with *view*."
-msgstr ""
+msgstr "カウンタが ``0`` の場合は、*view* に関連付けられた全てのメモリを解放します。"
 
 #: ../../c-api/typeobj.rst:1334
 msgid ""
@@ -1642,13 +1642,13 @@ msgstr ":c:func:`PyBuffer_Release` は、この関数をラップするコンシ
 
 #: ../../c-api/typeobj.rst:1353
 msgid "Async Object Structures"
-msgstr ""
+msgstr "async オブジェクト構造体"
 
 #: ../../c-api/typeobj.rst:1361
 msgid ""
 "This structure holds pointers to the functions required to implement "
 ":term:`awaitable` and :term:`asynchronous iterator` objects."
-msgstr ""
+msgstr "この構造体は :term:`awaitable` オブジェクトと :term:`asynchronous iterator` オブジェクトを実装するのに必要な関数へのポインタを持ってます。"
 
 #: ../../c-api/typeobj.rst:1378
 msgid ""
