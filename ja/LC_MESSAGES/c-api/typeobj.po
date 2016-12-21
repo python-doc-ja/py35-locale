@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-21 03:15+0000\n"
+"PO-Revision-Date: 2016-12-21 03:29+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1381,7 +1381,7 @@ msgid ""
 "This structure holds pointers to the functions which an object uses to "
 "implement the number protocol.  Each function is used by the function of "
 "similar name documented in the :ref:`number` section."
-msgstr "この構造体は、拡張型で数値型プロトコルを実装するために使われる関数群へのポインタを保持します。\n以下のそれぞれの関数は :ref:`number` で解説されている似た名前の関数から利用されます。"
+msgstr "この構造体は数値型プロトコルを実装するために使われる関数群へのポインタを保持しています。\n以下のそれぞれの関数は :ref:`number` で解説されている似た名前の関数から利用されます。"
 
 #: ../../c-api/typeobj.rst:1091 ../../c-api/typeobj.rst:1364
 msgid "Here is the structure definition::"
@@ -1405,13 +1405,13 @@ msgstr ":c:data:`nb_reserved` フィールドは常に ``NULL`` でなければ�
 
 #: ../../c-api/typeobj.rst:1155
 msgid "Mapping Object Structures"
-msgstr "マップ型オブジェクト構造体"
+msgstr "マップオブジェクト構造体"
 
 #: ../../c-api/typeobj.rst:1162
 msgid ""
 "This structure holds pointers to the functions which an object uses to "
 "implement the mapping protocol.  It has three members:"
-msgstr "この構造体は、拡張型でマップ型プロトコルを実装するために使われる関数群へのポインタを保持します。\n以下の3つのメンバを持っています:"
+msgstr "この構造体はマップ型プロトコルを実装するために使われる関数群へのポインタを保持しています。\n以下の3つのメンバを持っています:"
 
 #: ../../c-api/typeobj.rst:1167
 msgid ""
@@ -1444,7 +1444,7 @@ msgstr "シーケンスオブジェクト構造体"
 msgid ""
 "This structure holds pointers to the functions which an object uses to "
 "implement the sequence protocol."
-msgstr "拡張型でシーケンス型プロトコルを実装するために使われる関数群へのポインタを保持するために使われる構造体です。"
+msgstr "この構造体はシーケンス型プロトコルを実装するために使われる関数群へのポインタを保持しています。"
 
 #: ../../c-api/typeobj.rst:1201
 msgid ""
@@ -1518,7 +1518,7 @@ msgid ""
 "This structure holds pointers to the functions required by the :ref:`Buffer "
 "protocol <bufferobjects>`. The protocol defines how an exporter object can "
 "expose its internal data to consumer objects."
-msgstr "この構造体は :ref:`Buffer プロトコル <bufferobjects>` が要求する関数群へのポインタを保持します。そのプロトコルは、エクスポーターオブジェクトが如何にして、その内部データをコンシューマオブジェクトに渡すかを定義します。"
+msgstr "この構造体は :ref:`buffer プロトコル <bufferobjects>` が要求する関数群へのポインタを保持しています。\nそのプロトコルは、エクスポーターオブジェクトが如何にして、その内部データをコンシューマオブジェクトに渡すかを定義します。"
 
 #: ../../c-api/typeobj.rst:1272 ../../c-api/typeobj.rst:1321
 #: ../../c-api/typeobj.rst:1374 ../../c-api/typeobj.rst:1385
@@ -1648,32 +1648,32 @@ msgstr "async オブジェクト構造体"
 msgid ""
 "This structure holds pointers to the functions required to implement "
 ":term:`awaitable` and :term:`asynchronous iterator` objects."
-msgstr "この構造体は :term:`awaitable` オブジェクトと :term:`asynchronous iterator` オブジェクトを実装するのに必要な関数へのポインタを持ってます。"
+msgstr "この構造体は :term:`awaitable` オブジェクトと :term:`asynchronous iterator` オブジェクトを実装するのに必要な関数へのポインタを保持しています。"
 
 #: ../../c-api/typeobj.rst:1378
 msgid ""
 "The returned object must be an iterator, i.e. :c:func:`PyIter_Check` must "
 "return ``1`` for it."
-msgstr ""
+msgstr "返されるオブジェクトはイテレータでなければなりません。\nつまりこのオブジェクトに対して :c:func:`PyIter_Check` が ``1`` を返さなければなりません。"
 
 #: ../../c-api/typeobj.rst:1381
 msgid ""
 "This slot may be set to *NULL* if an object is not an :term:`awaitable`."
-msgstr ""
+msgstr "オブジェクトが :term:`awaitable` でない場合、このスロットを *NULL* に設定します。"
 
 #: ../../c-api/typeobj.rst:1389
 msgid ""
 "Must return an :term:`awaitable` object.  See :meth:`__anext__` for details."
-msgstr ""
+msgstr ":term:`awaitable` オブジェクトを返さなければなりません。\n詳しいことは :meth:`__anext__` を参照してください。"
 
 #: ../../c-api/typeobj.rst:1391
 msgid ""
 "This slot may be set to *NULL* if an object does not implement asynchronous "
 "iteration protocol."
-msgstr ""
+msgstr "オブジェクトが非同期反復処理のプロトコルを実装していない場合、このスロットを *NULL* に設定します。"
 
 #: ../../c-api/typeobj.rst:1400
 msgid ""
 "Must return an :term:`awaitable` object.  See :meth:`__anext__` for details."
 " This slot may be set to *NULL*."
-msgstr ""
+msgstr ":term:`awaitable` オブジェクトを返さなければなりません。\n詳しいことは :meth:`__anext__` を参照してください。\nこのスロットは *NULL* に設定されていることもあります。"
