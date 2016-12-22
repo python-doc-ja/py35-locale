@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-22 01:50+0000\n"
+"PO-Revision-Date: 2016-12-22 16:13+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -204,14 +204,14 @@ msgstr "``char *func(FILE *stdin, FILE *stdout, char *prompt)`` というプロ�
 msgid ""
 "The result must be a string allocated by :c:func:`PyMem_RawMalloc` or "
 ":c:func:`PyMem_RawRealloc`, or *NULL* if an error occurred."
-msgstr ""
+msgstr "返り値は :c:func:`PyMem_RawMalloc` または :c:func:`PyMem_RawRealloc` でメモリ確保した文字列、あるいはエラーが起きた場合には *NULL* でなければなりません。"
 
 #: ../../c-api/veryhigh.rst:172
 msgid ""
 "The result must be allocated by :c:func:`PyMem_RawMalloc` or "
 ":c:func:`PyMem_RawRealloc`, instead of being allocated by "
 ":c:func:`PyMem_Malloc` or :c:func:`PyMem_Realloc`."
-msgstr ""
+msgstr "返り値は、 :c:func:`PyMem_Malloc` や :c:func:`PyMem_Realloc` ではなく、 :c:func:`PyMem_RawMalloc` または :c:func:`PyMem_RawRealloc` でメモリ確保したものでなければなりません。"
 
 #: ../../c-api/veryhigh.rst:180
 msgid ""
