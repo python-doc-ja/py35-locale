@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-23 15:14+0000\n"
+"PO-Revision-Date: 2016-12-23 16:38+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgid ""
 "APIs (typically :c:func:`PyUnicode_FromUnicode`) and only bear the "
 ":c:type:`Py_UNICODE*` representation; you will have to call "
 ":c:func:`PyUnicode_READY` on them before calling any other API."
-msgstr "\"古い\" unicode オブジェクトは、非推奨の API (たいていは :c:func:`PyUnicode_FromUnicode`) で作成されたオブジェクトで、 :c:type:`Py_UNICODE*` 表現しか持ってません;\n他の API を呼び出す前に、このオブジェクトに対し :c:func:`PyUnicode_READY` を呼び出す必要があるでしょう。"
+msgstr "\"古い\" unicode オブジェクトは、非推奨の API (たいていは :c:func:`PyUnicode_FromUnicode`) で作成されたオブジェクトで、 :c:type:`Py_UNICODE*` 表現形式しか持ってません;\n他の API を呼び出す前に、このオブジェクトに対し :c:func:`PyUnicode_READY` を呼び出す必要があるでしょう。"
 
 #: ../../c-api/unicode.rst:39
 msgid "Unicode Type"
@@ -131,7 +131,7 @@ msgstr "*o* が Unicode 文字列型で、かつ Unicode 文字列型のサブ�
 msgid ""
 "Ensure the string object *o* is in the \"canonical\" representation.  This "
 "is required before using any of the access macros described below."
-msgstr "文字列オブジェクト *o* が \"正統な\" 表現であることを保証します。\nこのマクロは、下で説明しているどのアクセスマクロを使うときも必要となります。"
+msgstr "文字列オブジェクト *o* が \"正統な\" 表現形式であることを保証します。\nこのマクロは、下で説明しているどのアクセスマクロを使うときも必要となります。"
 
 #: ../../c-api/unicode.rst:105
 msgid ""
@@ -143,7 +143,7 @@ msgstr "成功のときには ``0`` を返し、失敗のときには例外を�
 msgid ""
 "Return the length of the Unicode string, in code points.  *o* has to be a "
 "Unicode object in the \"canonical\" representation (not checked)."
-msgstr "Unicode 文字列のコードポイントでの長さを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
+msgstr "Unicode 文字列のコードポイントでの長さを返します。\n*o* は \"正統な\" 表現形式の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:123
 msgid ""
@@ -152,7 +152,7 @@ msgid ""
 "canonical representation has the correct character size; use "
 ":c:func:`PyUnicode_KIND` to select the right macro.  Make sure "
 ":c:func:`PyUnicode_READY` has been called before accessing this."
-msgstr "文字に直接アクセスするために、 UCS1, UCS2, UCS4 のいずれかの整数型にキャストされた正統な表現へのポインタを返します。\n正統な表現が適正な文字サイズになっているかどうかのチェックはしません;\n:c:func:`PyUnicode_KIND` を使って正しいマクロを選んでください。\nこのオブジェクトにアクセスする前に、忘れずに :c:func:`PyUnicode_READY` を呼び出してください。"
+msgstr "文字に直接アクセスするために、 UCS1, UCS2, UCS4 のいずれかの整数型にキャストされた正統な表現形式へのポインタを返します。\n正統な表現が適正な文字サイズになっているかどうかのチェックはしません;\n:c:func:`PyUnicode_KIND` を使って正しいマクロを選んでください。\nこのオブジェクトにアクセスする前に、忘れずに :c:func:`PyUnicode_READY` を呼び出してください。"
 
 #: ../../c-api/unicode.rst:137
 msgid "Return values of the :c:func:`PyUnicode_KIND` macro."
@@ -164,13 +164,13 @@ msgid ""
 "many bytes per character this Unicode object uses to store its data.  *o* "
 "has to be a Unicode object in the \"canonical\" representation (not "
 "checked)."
-msgstr "この Unicode がデータを保存するのに1文字あたり何バイト使っているかを示す PyUnicode 種別の定数 (上を読んでください) のうち1つを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
+msgstr "この Unicode がデータを保存するのに1文字あたり何バイト使っているかを示す PyUnicode 種別の定数 (上を読んでください) のうち1つを返します。\n*o* は \"正統な\" 表現形式の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:155
 msgid ""
 "Return a void pointer to the raw unicode buffer.  *o* has to be a Unicode "
 "object in the \"canonical\" representation (not checked)."
-msgstr "生の unicode バッファへの void ポインタを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
+msgstr "生の unicode バッファへの void ポインタを返します。\n*o* は \"正統な\" 表現形式の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:164
 msgid ""
@@ -180,27 +180,27 @@ msgid ""
 "*data* pointer as obtained from other macro calls.  *index* is the index in "
 "the string (starts at 0) and *value* is the new code point value which "
 "should be written to that location."
-msgstr "正統な表現となっている (:c:func:`PyUnicode_DATA` で取得した) *data* に書き込みます。\nこのマクロは正常性のチェックを一切行わない、ループで使われるためのものです。\n呼び出し側は、他のマクロを呼び出して取得した *kind* 値と *data* ポインタをキャッシュすべきです。\n*index* は文字列の (0始まりの) インデックスで、 *value* はその場所に書き込まれることになる新しいコードポイントの値です。"
+msgstr "正統な表現形式となっている (:c:func:`PyUnicode_DATA` で取得した) *data* に書き込みます。\nこのマクロは正常性のチェックを一切行わない、ループで使われるためのものです。\n呼び出し側は、他のマクロを呼び出して取得した *kind* 値と *data* ポインタをキャッシュすべきです。\n*index* は文字列の (0始まりの) インデックスで、 *value* はその場所に書き込まれることになる新しいコードポイントの値です。"
 
 #: ../../c-api/unicode.rst:176
 msgid ""
 "Read a code point from a canonical representation *data* (as obtained with "
 ":c:func:`PyUnicode_DATA`).  No checks or ready calls are performed."
-msgstr "正統な表現となっている (:c:func:`PyUnicode_DATA` で取得した) *data* からコードポイントを読み取ります。\nチェックや事前確認のマクロ呼び出しは一切行われません。"
+msgstr "正統な表現形式となっている (:c:func:`PyUnicode_DATA` で取得した) *data* からコードポイントを読み取ります。\nチェックや事前確認のマクロ呼び出しは一切行われません。"
 
 #: ../../c-api/unicode.rst:184
 msgid ""
 "Read a character from a Unicode object *o*, which must be in the "
 "\"canonical\" representation.  This is less efficient than "
 ":c:func:`PyUnicode_READ` if you do multiple consecutive reads."
-msgstr ""
+msgstr "Unicode オブジェクト *o* から文字を読み取ります。\nこの Unicode オブジェクトは \"正統な\" 表現形式でなければなりません。\n何度も連続して読み取る場合には、このマクロは :c:func:`PyUnicode_READ` よりも非効率的です。"
 
 #: ../../c-api/unicode.rst:193
 msgid ""
 "Return the maximum code point that is suitable for creating another string "
 "based on *o*, which must be in the \"canonical\" representation.  This is "
 "always an approximation but more efficient than iterating over the string."
-msgstr ""
+msgstr "*o* に基づいて他の文字列を作るのに適した最大のコードポイントを返します。\nこの Unicode オブジェクトは \"正統な\" 表現形式でなければなりません。\nこの値は常に概算値ですが、文字列全体を調べるよりも効率的です。"
 
 #: ../../c-api/unicode.rst:202
 msgid "Clear the free list. Return the total number of freed items."
@@ -211,25 +211,25 @@ msgid ""
 "Return the size of the deprecated :c:type:`Py_UNICODE` representation, in "
 "code units (this includes surrogate pairs as 2 units).  *o* has to be a "
 "Unicode object (not checked)."
-msgstr ""
+msgstr "非推奨の :c:type:`Py_UNICODE` 表現形式のサイズをコード単位で返します (サロゲートペアを2つとしています)。\n*o* は Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:213 ../../c-api/unicode.rst:223
 msgid ""
 "Deprecated since version 3.3, will be removed in version 4.0: Part of the "
 "old-style Unicode API, please migrate to using PyUnicode_GET_LENGTH()."
-msgstr ""
+msgstr "バージョン 3.3 で非推奨、バージョン 4.0 で削除予定: 古いスタイルの Unicode API の一部なので、 PyUnicode_GET_LENGTH() を使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:213 ../../c-api/unicode.rst:223
 msgid ""
 "Part of the old-style Unicode API, please migrate to using "
 ":c:func:`PyUnicode_GET_LENGTH`."
-msgstr ""
+msgstr "古いスタイルの Unicode APIの一部なので、 :c:func:`PyUnicode_GET_LENGTH` を使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:218
 msgid ""
 "Return the size of the deprecated :c:type:`Py_UNICODE` representation in "
 "bytes.  *o* has to be a Unicode object (not checked)."
-msgstr ""
+msgstr "非推奨の :c:type:`Py_UNICODE` 表現形式のサイズをバイト単位で返します。\n*o* は Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:229
 msgid ""
