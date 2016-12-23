@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-23 16:38+0000\n"
+"PO-Revision-Date: 2016-12-23 21:24+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -239,7 +239,7 @@ msgid ""
 "be truncated when used in most C functions.  The ``AS_DATA`` form casts the "
 "pointer to :c:type:`const char *`.  The *o* argument has to be a Unicode "
 "object (not checked)."
-msgstr ""
+msgstr "与えられたオブジェクトの :c:type:`Py_UNICODE` 表現形式へのポインタを返します。\n返されるバッファは常に終端に null コードポイントが1つ余分に付いています。\nそれとは別の null コードポイントがバッファに含まれることもあるかもしれませんが、たいていの C 関数ではそのような文字列は切り詰められてしまうでしょう。\n``AS_DATA`` の方はポインタを :c:type:`const char *` にキャストしています。\n引数 *o* は Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:236
 msgid ""
@@ -248,20 +248,20 @@ msgid ""
 "-- and can fail (return *NULL* with an exception set).  Try to port the code"
 " to use the new :c:func:`PyUnicode_nBYTE_DATA` macros or use "
 ":c:func:`PyUnicode_WRITE` or :c:func:`PyUnicode_READ`."
-msgstr ""
+msgstr "このマクロは今では非効率なものになりました。\nというのも、多くのケースで :c:type:`Py_UNICODE` 表現形式が登場せず、作成されず、そして失敗し得ます (例外を設定して *NULL* を返します)。\nコードを修正して、 :c:func:`PyUnicode_nBYTE_DATA` マクロを使うか :c:func:`PyUnicode_WRITE` や :c:func:`PyUnicode_READ` を使うようにしてください。"
 
 #: ../../c-api/unicode.rst:245
 msgid ""
 "Deprecated since version 3.3, will be removed in version 4.0: Part of the "
 "old-style Unicode API, please migrate to using the PyUnicode_nBYTE_DATA() "
 "family of macros."
-msgstr ""
+msgstr "バージョン 3.3 で非推奨、バージョン 4.0 で削除予定: 古いスタイルの Unicode API の一部なので、 PyUnicode_nBYTE_DATA() 系のマクロを使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:245
 msgid ""
 "Part of the old-style Unicode API, please migrate to using the "
 ":c:func:`PyUnicode_nBYTE_DATA` family of macros."
-msgstr ""
+msgstr "古いスタイルの Unicode APIの一部なので、 :c:func:`PyUnicode_nBYTE_DATA` 系のマクロを使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:249
 msgid "Unicode Character Properties"
@@ -277,32 +277,32 @@ msgstr "Unicode は数多くの異なる文字プロパティ (character propert
 #: ../../c-api/unicode.rst:258
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is a whitespace character."
-msgstr ""
+msgstr "*ch* が空白文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:263
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is a lowercase character."
-msgstr ""
+msgstr "*ch* が小文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:268
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is an uppercase character."
-msgstr ""
+msgstr "*ch* が大文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:273
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is a titlecase character."
-msgstr ""
+msgstr "*ch* がタイトルケース文字 (titlecase character) かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:278
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is a linebreak character."
-msgstr ""
+msgstr "*ch* が改行文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:283
 msgid ""
 "Return ``1`` or ``0`` depending on whether *ch* is a decimal character."
-msgstr ""
+msgstr "*ch* が 10 進数の文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:288
 msgid "Return ``1`` or ``0`` depending on whether *ch* is a digit character."
