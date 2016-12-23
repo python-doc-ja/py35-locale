@@ -5,11 +5,12 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Hiroki Kimura <ranpaku1012@yahoo.co.jp>, 2016
+# tomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2016-12-23 06:02+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +56,7 @@ msgid ""
 "\"canonical\" unicode objects are all objects created by a non-deprecated "
 "unicode API.  They use the most efficient representation allowed by the "
 "implementation."
-msgstr "\"正規化された\" unicode オブジェクトは、非推奨ではないunicode APIで作成されたすべてのオブジェクトです。これらのオブジェクトは実装が許すかぎり最も効率の良い表現を使用します。"
+msgstr "\"正統な\" unicode オブジェクトは、非推奨ではないunicode APIで作成されたすべてのオブジェクトです。これらのオブジェクトは実装が許すかぎり最も効率の良い表現を使用します。"
 
 #: ../../c-api/unicode.rst:32
 msgid ""
@@ -63,7 +64,7 @@ msgid ""
 "APIs (typically :c:func:`PyUnicode_FromUnicode`) and only bear the "
 ":c:type:`Py_UNICODE*` representation; you will have to call "
 ":c:func:`PyUnicode_READY` on them before calling any other API."
-msgstr ""
+msgstr "\"古い\" unicode オブジェクトは、非推奨の API (たいていは :c:func:`PyUnicode_FromUnicode`) で作成されたオブジェクトで、 :c:type:`Py_UNICODE*` 表現しか持ってません;\n他の API を呼び出す前に、このオブジェクトに対し :c:func:`PyUnicode_READY` を呼び出す必要があるでしょう。"
 
 #: ../../c-api/unicode.rst:39
 msgid "Unicode Type"
