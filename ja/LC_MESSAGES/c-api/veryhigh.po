@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-22 16:13+0000\n"
+"PO-Revision-Date: 2016-12-23 02:24+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -261,7 +261,7 @@ msgid ""
 "  *globals* must be a dictionary; *locals* can be any object that implements"
 " the mapping protocol.  The parameter *start* specifies the start token that"
 " should be used to parse the source code."
-msgstr ""
+msgstr "オブジェクトの *globals* と *locals* で指定されるコンテキストで、コンパイラフラグに *flags* を設定した状態で、 *str* にある Python ソースコードを実行します。\n*globals* は辞書でなければなりません; *locals* はマッピングプロトコルを実装したオブジェクトなら何でも構いません。\n引数 *start* はソースコードをパースするために使われるべき開始トークンを指定します。"
 
 #: ../../c-api/veryhigh.rst:227
 msgid ""
@@ -332,14 +332,14 @@ msgstr "整数 *optimize* は、コンパイラの最適化レベルを指定し
 msgid ""
 "Like :c:func:`Py_CompileStringObject`, but *filename* is a byte string "
 "decoded from the filesystem encoding (:func:`os.fsdecode`)."
-msgstr ""
+msgstr ":c:func:`Py_CompileStringObject` と似ていますが、 *filename* はファイルシステムのエンコーディングでデコード (:func:`os.fsdecode`) されたバイト文字列です。"
 
 #: ../../c-api/veryhigh.rst:298
 msgid ""
 "This is a simplified interface to :c:func:`PyEval_EvalCodeEx`, with just the"
 " code object, and global and local variables.  The other arguments are set "
 "to *NULL*."
-msgstr ""
+msgstr ":c:func:`PyEval_EvalCodeEx` のシンプルなインタフェースで、コードオブジェクトと、グローバル変数とローカル変数だけを受け取ります。\n他の引数には *NULL* が渡されます。"
 
 #: ../../c-api/veryhigh.rst:305
 msgid ""
