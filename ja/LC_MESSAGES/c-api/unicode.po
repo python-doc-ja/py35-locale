@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-23 06:02+0000\n"
+"PO-Revision-Date: 2016-12-23 11:10+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -101,7 +101,7 @@ msgid ""
 "These subtypes of :c:type:`PyObject` represent a Python Unicode object.  In "
 "almost all cases, they shouldn't be used directly, since all API functions "
 "that deal with Unicode objects take and return :c:type:`PyObject` pointers."
-msgstr ""
+msgstr "これらの :c:type:`PyObject` のサブタイプは Python Unicode オブジェクトを表現します。\nUnicode オブジェクトを扱う全ての API 関数は :c:type:`PyObject` へのポインタを受け取って :c:type:`PyObject` へのポインタを返すので、ほとんどの場合、これらの型を直接使うべきではありません。"
 
 #: ../../c-api/unicode.rst:79
 msgid ""
@@ -131,19 +131,19 @@ msgstr "*o* が Unicode 文字列型で、かつ Unicode 文字列型のサブ�
 msgid ""
 "Ensure the string object *o* is in the \"canonical\" representation.  This "
 "is required before using any of the access macros described below."
-msgstr ""
+msgstr "文字列オブジェクト *o* が \"正統な\" 表現であることを保証します。\nこのマクロは、下で説明しているどのアクセスマクロを使うときも必要となります。"
 
 #: ../../c-api/unicode.rst:105
 msgid ""
 "Returns ``0`` on success and ``-1`` with an exception set on failure, which "
 "in particular happens if memory allocation fails."
-msgstr ""
+msgstr "成功のときには ``0`` を返し、失敗のときには例外を設定し ``-1`` を返します。\n後者は、メモリ確保に失敗したときに特に起きやすいです。"
 
 #: ../../c-api/unicode.rst:113
 msgid ""
 "Return the length of the Unicode string, in code points.  *o* has to be a "
 "Unicode object in the \"canonical\" representation (not checked)."
-msgstr ""
+msgstr "Unicode 文字列のコードポイントでの長さを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:123
 msgid ""
@@ -152,11 +152,11 @@ msgid ""
 "canonical representation has the correct character size; use "
 ":c:func:`PyUnicode_KIND` to select the right macro.  Make sure "
 ":c:func:`PyUnicode_READY` has been called before accessing this."
-msgstr ""
+msgstr "文字に直接アクセスするために、 UCS1, UCS2, UCS4 のいずれかの整数型にキャストされた正統な表現へのポインタを返します。\n正統な表現が適正な文字サイズになっているかどうかのチェックはしません;\n:c:func:`PyUnicode_KIND` を使って正しいマクロを選んでください。\nこのオブジェクトにアクセスする前に、忘れずに :c:func:`PyUnicode_READY` を呼び出してください。"
 
 #: ../../c-api/unicode.rst:137
 msgid "Return values of the :c:func:`PyUnicode_KIND` macro."
-msgstr ""
+msgstr ":c:func:`PyUnicode_KIND` マクロの返り値です。"
 
 #: ../../c-api/unicode.rst:144
 msgid ""
@@ -164,13 +164,13 @@ msgid ""
 "many bytes per character this Unicode object uses to store its data.  *o* "
 "has to be a Unicode object in the \"canonical\" representation (not "
 "checked)."
-msgstr ""
+msgstr "この Unicode がデータを保存するのに1文字あたり何バイト使っているかを示す PyUnicode 種別の定数 (上を読んでください) のうち1つを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:155
 msgid ""
 "Return a void pointer to the raw unicode buffer.  *o* has to be a Unicode "
 "object in the \"canonical\" representation (not checked)."
-msgstr ""
+msgstr "生の unicode バッファへの void ポインタを返します。\n*o* は \"正統な\" 表現の Unicode オブジェクトでなければなりません (ただしチェックはしません)。"
 
 #: ../../c-api/unicode.rst:164
 msgid ""
@@ -180,13 +180,13 @@ msgid ""
 "*data* pointer as obtained from other macro calls.  *index* is the index in "
 "the string (starts at 0) and *value* is the new code point value which "
 "should be written to that location."
-msgstr ""
+msgstr "正統な表現となっている (:c:func:`PyUnicode_DATA` で取得した) *data* に書き込みます。\nこのマクロは正常性のチェックを一切行わない、ループで使われるためのものです。\n呼び出し側は、他のマクロを呼び出して取得した *kind* 値と *data* ポインタをキャッシュすべきです。\n*index* は文字列の (0始まりの) インデックスで、 *value* はその場所に書き込まれることになる新しいコードポイントの値です。"
 
 #: ../../c-api/unicode.rst:176
 msgid ""
 "Read a code point from a canonical representation *data* (as obtained with "
 ":c:func:`PyUnicode_DATA`).  No checks or ready calls are performed."
-msgstr ""
+msgstr "正統な表現となっている (:c:func:`PyUnicode_DATA` で取得した) *data* からコードポイントを読み取ります。\nチェックや事前確認のマクロ呼び出しは一切行われません。"
 
 #: ../../c-api/unicode.rst:184
 msgid ""
