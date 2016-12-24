@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-24 05:31+0000\n"
+"PO-Revision-Date: 2016-12-24 16:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -426,7 +426,7 @@ msgid ""
 ":c:macro:`PyUnicode_1BYTE_KIND` etc., as returned by "
 ":c:func:`PyUnicode_KIND`).  The *buffer* must point to an array of *size* "
 "units of 1, 2 or 4 bytes per character, as given by the kind."
-msgstr ""
+msgstr "与えられた *kind* (取り得る値は :c:macro:`PyUnicode_1BYTE_KIND` などの :c:func:`PyUnicode_KIND` が返す値です) の Unicode オブジェクトを生成します。\n*buffer* は、与えられた kind に従って1文字あたり 1, 2, 4 バイトのいずれかを単位として、長さ *size* の配列へのポインタでなければなりません。"
 
 #: ../../c-api/unicode.rst:414
 msgid ""
@@ -434,20 +434,20 @@ msgid ""
 "interpreted as being UTF-8 encoded.  The buffer is copied into the new "
 "object. If the buffer is not *NULL*, the return value might be a shared "
 "object, i.e. modification of the data is not allowed."
-msgstr ""
+msgstr "char 型バッファ *u* から Unicode オブジェクトを生成します。\n*u* の内容は UTF-8 でエンコードされているものとします。\nバッファの内容は新たなオブジェクトにコピーされます。\n\nバッファが *NULL* でない場合、帰り値は共有されたオブジェクトになることがあります。\nつまり、この関数が返す Unicode オブジェクトの変更は許されていません。"
 
 #: ../../c-api/unicode.rst:419
 msgid ""
 "If *u* is *NULL*, this function behaves like :c:func:`PyUnicode_FromUnicode`"
 " with the buffer set to *NULL*.  This usage is deprecated in favor of "
 ":c:func:`PyUnicode_New`."
-msgstr ""
+msgstr "*u* が *NULL* の場合は、この関数は :c:func:`PyUnicode_FromUnicode` でバッファ *u* を *NULL* にセットしたのと同じように振る舞います。\nこの関数は非推奨です。変わりに :c:func:`PyUnicode_New` を使ってください。"
 
 #: ../../c-api/unicode.rst:426
 msgid ""
 "Create a Unicode object from a UTF-8 encoded null-terminated char buffer "
 "*u*."
-msgstr ""
+msgstr "UTF-8 エンコードされたnull終端のchar 型バッファ *u* から Unicode オブジェクトを生成します。"
 
 #: ../../c-api/unicode.rst:432
 msgid ""
