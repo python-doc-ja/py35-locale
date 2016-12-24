@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-24 03:12+0000\n"
+"PO-Revision-Date: 2016-12-24 05:31+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -333,7 +333,7 @@ msgid ""
 "this context are those which should not be escaped when :func:`repr` is "
 "invoked on a string. It has no bearing on the handling of strings written to"
 " :data:`sys.stdout` or :data:`sys.stderr`.)"
-msgstr ""
+msgstr "*ch* が文字が印字可能な文字かどうかに基づいて ``1`` または ``0`` を返します。\n非印字可能文字は、 Unicode 文字データベースで \"Other\" または \"Separator\" と定義されている文字の、印字可能と見なされる ASCII space (0x20) 以外のものです。\n(なお、この文脈での印字可能文字は、文字列に :func:`repr` が呼び出されるときにエスケープすべきでない文字のことです。これは :data:`sys.stdout` や :data:`sys.stderr` に書き込まれる文字列の操作とは関係ありません。)"
 
 #: ../../c-api/unicode.rst:317
 msgid "These APIs can be used for fast direct character conversions:"
@@ -346,7 +346,7 @@ msgstr "*ch* を小文字に変換したものを返します。"
 #: ../../c-api/unicode.rst:324 ../../c-api/unicode.rst:332
 #: ../../c-api/unicode.rst:340
 msgid "This function uses simple case mappings."
-msgstr ""
+msgstr "この関数は単純な大文字小文字変換を使ってます。"
 
 #: ../../c-api/unicode.rst:330
 msgid "Return the character *ch* converted to upper case."
@@ -376,30 +376,30 @@ msgstr "*ch* を :c:type:`double` に変換したものを返します。不可�
 
 #: ../../c-api/unicode.rst:362
 msgid "These APIs can be used to work with surrogates:"
-msgstr ""
+msgstr "これらの API はサロゲートにも使えます:"
 
 #: ../../c-api/unicode.rst:366
 msgid "Check if *ch* is a surrogate (``0xD800 <= ch <= 0xDFFF``)."
-msgstr ""
+msgstr "*ch* がサロゲートかどうか (``0xD800 <= ch <= 0xDFFF``) をチェックします。"
 
 #: ../../c-api/unicode.rst:370
 msgid "Check if *ch* is a high surrogate (``0xD800 <= ch <= 0xDBFF``)."
-msgstr ""
+msgstr "*ch* が上位サロゲートかどうか (``0xD800 <= ch <= 0xDBFF``) をチェックします。"
 
 #: ../../c-api/unicode.rst:374
 msgid "Check if *ch* is a low surrogate (``0xDC00 <= ch <= 0xDFFF``)."
-msgstr ""
+msgstr "*ch* が下位サロゲートかどうか (``0xDC00 <= ch <= 0xDFFF``) をチェックします。"
 
 #: ../../c-api/unicode.rst:378
 msgid ""
 "Join two surrogate characters and return a single Py_UCS4 value. *high* and "
 "*low* are respectively the leading and trailing surrogates in a surrogate "
 "pair."
-msgstr ""
+msgstr "2つのサロゲート文字を組み合わせて単一の Py_UCS4 値を返します。\n*high* と *low* はそれぞれサロゲートペアの前半分と後半分です。"
 
 #: ../../c-api/unicode.rst:384
 msgid "Creating and accessing Unicode strings"
-msgstr ""
+msgstr "Unicode 文字列の生成とアクセス"
 
 #: ../../c-api/unicode.rst:386
 msgid ""
@@ -412,13 +412,13 @@ msgid ""
 "Create a new Unicode object.  *maxchar* should be the true maximum code "
 "point to be placed in the string.  As an approximation, it can be rounded up"
 " to the nearest value in the sequence 127, 255, 65535, 1114111."
-msgstr ""
+msgstr "新しい Unicode オブジェクトを生成します。\n *maxchar* は文字列に並べるコードポイントの正しい最大値にすべきです。\nその値は概算値として 127, 255, 65535, 1114111 の一番近い値に切り上げられます。"
 
 #: ../../c-api/unicode.rst:395
 msgid ""
 "This is the recommended way to allocate a new Unicode object.  Objects "
 "created using this function are not resizable."
-msgstr ""
+msgstr "これは新しい Unicode オブジェクトを生成する推奨された方法です。\nこの関数を使って生成されたオブジェクトはサイズ変更は不可能です。"
 
 #: ../../c-api/unicode.rst:404
 msgid ""
