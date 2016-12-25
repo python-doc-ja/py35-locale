@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-24 16:57+0000\n"
+"PO-Revision-Date: 2016-12-25 15:09+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -493,7 +493,7 @@ msgstr "int"
 
 #: ../../c-api/unicode.rst:452
 msgid "A single character, represented as a C int."
-msgstr ""
+msgstr "C の整数型で表現される単一の文字。"
 
 #: ../../c-api/unicode.rst:455
 msgid ":attr:`%d`"
@@ -501,7 +501,7 @@ msgstr ":attr:`%d`"
 
 #: ../../c-api/unicode.rst:455
 msgid "Exactly equivalent to ``printf(\"%d\")``."
-msgstr "C の ``printf(\"%d\")`` と全く同じ。"
+msgstr "C の ``printf(\"%d\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:458
 msgid ":attr:`%u`"
@@ -513,7 +513,7 @@ msgstr "unsigned int"
 
 #: ../../c-api/unicode.rst:458
 msgid "Exactly equivalent to ``printf(\"%u\")``."
-msgstr "C の ``printf(\"%u\")`` と全く同じ。"
+msgstr "C の ``printf(\"%u\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:461
 msgid ":attr:`%ld`"
@@ -525,7 +525,7 @@ msgstr "long型"
 
 #: ../../c-api/unicode.rst:461
 msgid "Exactly equivalent to ``printf(\"%ld\")``."
-msgstr "C の ``printf(\"%ld\")`` と全く同じ。"
+msgstr "C の ``printf(\"%ld\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:464
 msgid ":attr:`%li`"
@@ -533,7 +533,7 @@ msgstr ":attr:`%li`"
 
 #: ../../c-api/unicode.rst:464
 msgid "Exactly equivalent to ``printf(\"%li\")``."
-msgstr "C の ``printf(\"%li\")`` と全く同じ。"
+msgstr "C の ``printf(\"%li\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:467
 msgid ":attr:`%lu`"
@@ -545,7 +545,7 @@ msgstr "unsigned long"
 
 #: ../../c-api/unicode.rst:467
 msgid "Exactly equivalent to ``printf(\"%lu\")``."
-msgstr "C の ``printf(\"%lu\")`` と全く同じ。"
+msgstr "C の ``printf(\"%lu\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:470
 msgid ":attr:`%lld`"
@@ -557,7 +557,7 @@ msgstr "long long"
 
 #: ../../c-api/unicode.rst:470
 msgid "Exactly equivalent to ``printf(\"%lld\")``."
-msgstr "C の ``printf(\"%lld\")`` と全く同じ。"
+msgstr "C の ``printf(\"%lld\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:473
 msgid ":attr:`%lli`"
@@ -565,7 +565,7 @@ msgstr ":attr:`%lli`"
 
 #: ../../c-api/unicode.rst:473
 msgid "Exactly equivalent to ``printf(\"%lli\")``."
-msgstr "C の ``printf(\"%lli\")`` と全く同じ。"
+msgstr "C の ``printf(\"%lli\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:476
 msgid ":attr:`%llu`"
@@ -577,7 +577,7 @@ msgstr "unsigned long long"
 
 #: ../../c-api/unicode.rst:476
 msgid "Exactly equivalent to ``printf(\"%llu\")``."
-msgstr "C の ``printf(\"%llu\")`` と全く同じ。"
+msgstr "C の ``printf(\"%llu\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:479
 msgid ":attr:`%zd`"
@@ -589,7 +589,7 @@ msgstr "Py_ssize_t"
 
 #: ../../c-api/unicode.rst:479
 msgid "Exactly equivalent to ``printf(\"%zd\")``."
-msgstr "C の ``printf(\"%zd\")`` と全く同じ。"
+msgstr "C の ``printf(\"%zd\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:482
 msgid ":attr:`%zi`"
@@ -597,7 +597,7 @@ msgstr ":attr:`%zi`"
 
 #: ../../c-api/unicode.rst:482
 msgid "Exactly equivalent to ``printf(\"%zi\")``."
-msgstr "C の ``printf(\"%zi\")`` と全く同じ。"
+msgstr "C の ``printf(\"%zi\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:485
 msgid ":attr:`%zu`"
@@ -609,7 +609,7 @@ msgstr "size_t"
 
 #: ../../c-api/unicode.rst:485
 msgid "Exactly equivalent to ``printf(\"%zu\")``."
-msgstr "C の ``printf(\"%zu\")`` と全く同じ。"
+msgstr "C の ``printf(\"%zu\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:488
 msgid ":attr:`%i`"
@@ -617,7 +617,7 @@ msgstr ":attr:`%i`"
 
 #: ../../c-api/unicode.rst:488
 msgid "Exactly equivalent to ``printf(\"%i\")``."
-msgstr "C の ``printf(\"%i\")`` と全く同じ。"
+msgstr "C の ``printf(\"%i\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:491
 msgid ":attr:`%x`"
@@ -625,7 +625,7 @@ msgstr ":attr:`%x`"
 
 #: ../../c-api/unicode.rst:491
 msgid "Exactly equivalent to ``printf(\"%x\")``."
-msgstr "C の ``printf(\"%x\")`` と全く同じ。"
+msgstr "C の ``printf(\"%x\")`` と厳密に同じ。"
 
 #: ../../c-api/unicode.rst:494
 msgid ":attr:`%s`"
@@ -725,21 +725,21 @@ msgid ""
 "(if the ``PyObject*`` argument is NULL), and a number of characters for "
 "``\"%A\"``, ``\"%U\"``, ``\"%S\"``, ``\"%R\"`` and ``\"%V\"`` (if the "
 "``PyObject*`` argument is not NULL)."
-msgstr ""
+msgstr "幅フォーマッタの単位はバイト数ではなく文字数です。\n精度フォーマッタの単位は、 ``\"%s\"`` と (``PyObject*`` 引数が NULL の場合の) ``\"%V\"`` ではバイト数、 ``\"%A\"``, ``\"%U\"``, ``\"%S\"``, ``\"%R\"`` および (``PyObject*`` 引数が NULL でない場合の) ``\"%V\"`` では文字数です。"
 
 #: ../../c-api/unicode.rst:539
 msgid "Support for ``\"%lld\"`` and ``\"%llu\"`` added."
-msgstr ""
+msgstr "``\"%lld\"``, ``\"%llu\"`` のサポートが追加されました。"
 
 #: ../../c-api/unicode.rst:542
 msgid "Support for ``\"%li\"``, ``\"%lli\"`` and ``\"%zi\"`` added."
-msgstr ""
+msgstr "``\"%li\"``, ``\"%lli\"``, ``\"%zi\"`` のサポートが追加されました。"
 
 #: ../../c-api/unicode.rst:545
 msgid ""
 "Support width and precision formatter for ``\"%s\"``, ``\"%A\"``, "
 "``\"%U\"``, ``\"%V\"``, ``\"%S\"``, ``\"%R\"`` added."
-msgstr ""
+msgstr "``\"%s\"``, ``\"%A\"``, ``\"%U\"``, ``\"%V\"``, ``\"%S\"``, ``\"%R\"`` での幅フォーマッタおよび精度フォーマッタのサポートが追加されました。"
 
 #: ../../c-api/unicode.rst:552
 msgid ""
@@ -749,7 +749,7 @@ msgstr "ちょうど２つの引数を取ることを除いて、 :c:func:`PyUni
 
 #: ../../c-api/unicode.rst:559
 msgid "Decode an encoded object *obj* to a Unicode object."
-msgstr ""
+msgstr "エンコードされている *obj* を Unicode オブジェクトにデコードします。"
 
 #: ../../c-api/unicode.rst:561
 msgid ""
