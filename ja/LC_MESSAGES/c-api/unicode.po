@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-25 15:09+0000\n"
+"PO-Revision-Date: 2016-12-25 15:41+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -757,7 +757,7 @@ msgid ""
 "<bytes-like object>` are decoded according to the given *encoding* and using"
 " the error handling defined by *errors*. Both can be *NULL* to have the "
 "interface use the default values (see :ref:`builtincodecs` for details)."
-msgstr ""
+msgstr ":class:`bytes` や :class:`bytearray` や他の :term:`bytes-like objects <bytes-like object>` は、与えられた *encoding* に従ってデコードされ、 *errors* で定義されたエラーハンドリングが使われます。\nこれらの引数は両方とも *NULL* にでき、その場合この API はデフォルト値を使います (詳しことは :ref:`builtincodecs` を参照してください)。"
 
 #: ../../c-api/unicode.rst:567
 msgid ""
@@ -773,7 +773,7 @@ msgstr "この API は、エラーが生じたときには *NULL* を返しま�
 
 #: ../../c-api/unicode.rst:576
 msgid "Return the length of the Unicode object, in code points."
-msgstr ""
+msgstr "Unicode オブジェクトの長さをコードポイントで返します。"
 
 #: ../../c-api/unicode.rst:587
 msgid ""
@@ -781,7 +781,7 @@ msgid ""
 "performs character conversion when necessary and falls back to "
 ":c:func:`memcpy` if possible.  Returns ``-1`` and sets an exception on "
 "error, otherwise returns the number of copied characters."
-msgstr ""
+msgstr "ある Unicode オブジェクトから他へ文字をコピーします。\nこの関数は必要なときに文字変換を行い、可能な場合は :c:func:`memcpy` へ差し戻します。\n失敗のときには ``-1`` を返し、例外を設定します。そうでない場合は、コピーした文字数を返します。"
 
 #: ../../c-api/unicode.rst:598
 msgid ""
