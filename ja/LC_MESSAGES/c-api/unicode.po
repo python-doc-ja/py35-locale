@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-25 15:41+0000\n"
+"PO-Revision-Date: 2016-12-26 02:19+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -787,19 +787,19 @@ msgstr "ある Unicode オブジェクトから他へ文字をコピーします
 msgid ""
 "Fill a string with a character: write *fill_char* into "
 "``unicode[start:start+length]``."
-msgstr ""
+msgstr "文字列を文字で埋めます: ``unicode[start:start+length]`` で *fill_char* を埋めることになります。"
 
 #: ../../c-api/unicode.rst:601
 msgid ""
 "Fail if *fill_char* is bigger than the string maximum character, or if the "
 "string has more than 1 reference."
-msgstr ""
+msgstr "*fill_char* が文字列の最大文字よりも大きい場合や、文字列2つ以上の参照を持ってた場合は失敗します。"
 
 #: ../../c-api/unicode.rst:604
 msgid ""
 "Return the number of written character, or return ``-1`` and raise an "
 "exception on error."
-msgstr ""
+msgstr "書き込んだ文字数を返すか、失敗のときには ``-1`` を返し例外を送出します。"
 
 #: ../../c-api/unicode.rst:613
 msgid ""
