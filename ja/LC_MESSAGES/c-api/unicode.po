@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-27 01:04+0000\n"
+"PO-Revision-Date: 2016-12-27 13:53+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -826,7 +826,7 @@ msgstr "文字列から文字を読み取ります。\nマクロ版の :c:func:`
 msgid ""
 "Return a substring of *str*, from character index *start* (included) to "
 "character index *end* (excluded).  Negative indices are not supported."
-msgstr ""
+msgstr "*str* の文字インデックス *start* (端点を含む) から文字インデックス *end* (端点を含まず) までの部分文字列を返します。\n負のインデックスはサポートされていません。"
 
 #: ../../c-api/unicode.rst:645
 msgid ""
