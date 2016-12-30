@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-30 08:44+0000\n"
+"PO-Revision-Date: 2016-12-30 14:55+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +113,7 @@ msgstr "この :c:type:`PyTypeObject` のインスタンスは、Python Unicode�
 msgid ""
 "The following APIs are really C macros and can be used to do fast checks and"
 " to access internal read-only data of Unicode objects:"
-msgstr "以下の API は実際には C マクロで、Unicode オブジェクト内部の読み出し専用データに対するチェックやアクセスを高速に行います:"
+msgstr "以下の API は実際には C マクロで、Unicode オブジェクト内部の読み取り専用データに対するチェックやアクセスを高速に行います:"
 
 #: ../../c-api/unicode.rst:88
 msgid ""
@@ -866,27 +866,27 @@ msgid ""
 "*u* may be *NULL* which causes the contents to be undefined. It is the "
 "user's responsibility to fill in the needed data.  The buffer is copied into"
 " the new object."
-msgstr ""
+msgstr "*size* で指定された長さを持つ Py_UNICODE 型バッファ *u* から Unicode オブジェクトを生成します。\n*u* を *NULL* にしてもよく、その場合オブジェクトの内容は未定義です。\nバッファに必要な情報を埋めるのはユーザの責任です。\nバッファの内容は新たなオブジェクトにコピーされます。"
 
 #: ../../c-api/unicode.rst:680
 msgid ""
 "If the buffer is not *NULL*, the return value might be a shared object. "
 "Therefore, modification of the resulting Unicode object is only allowed when"
 " *u* is *NULL*."
-msgstr ""
+msgstr "バッファが *NULL* でない場合、戻り値は共有されたオブジェクトになることがあります。\n従って、この関数が返す Unicode オブジェクトを変更してよいのは *u* が *NULL* のときだけです。"
 
 #: ../../c-api/unicode.rst:684
 msgid ""
 "If the buffer is *NULL*, :c:func:`PyUnicode_READY` must be called once the "
 "string content has been filled before using any of the access macros such as"
 " :c:func:`PyUnicode_KIND`."
-msgstr ""
+msgstr "バッファが *NULL* の場合、文字列の内容が埋められたなら :c:func:`PyUnicode_KIND` のようなアクセスマクロを使う前に :c:func:`PyUnicode_READY` を呼び出さなければなりません。"
 
 #: ../../c-api/unicode.rst:688
 msgid ""
 "Please migrate to using :c:func:`PyUnicode_FromKindAndData`, "
 ":c:func:`PyUnicode_FromWideChar` or :c:func:`PyUnicode_New`."
-msgstr ""
+msgstr ":c:func:`PyUnicode_FromKindAndData`, :c:func:`PyUnicode_New`, :c:func:`PyUnicode_FromWideChar` のいずれかを使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:694
 msgid ""
@@ -897,21 +897,21 @@ msgid ""
 "Note that the resulting :c:type:`Py_UNICODE` string may also contain "
 "embedded null code points, which would cause the string to be truncated when"
 " used in most C functions."
-msgstr ""
+msgstr "Unicode オブジェクトの :c:type:`Py_UNICODE` 型の内部バッファへの読み取り専用のポインタを返すか、失敗のときには *NULL* を返します。\nオブジェクトの :c:type:`Py_UNICODE*` 表現形式が無い場合には作成します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:702
 msgid ""
 "Please migrate to using :c:func:`PyUnicode_AsUCS4`, "
 ":c:func:`PyUnicode_AsWideChar`, :c:func:`PyUnicode_ReadChar` or similar new "
 "APIs."
-msgstr ""
+msgstr ":c:func:`PyUnicode_AsUCS4`, :c:func:`PyUnicode_AsWideChar`, :c:func:`PyUnicode_ReadChar` や類似の新しい API を使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:709
 msgid ""
 "Create a Unicode object by replacing all decimal digits in "
 ":c:type:`Py_UNICODE` buffer of the given *size* by ASCII digits 0--9 "
 "according to their decimal value.  Return *NULL* if an exception occurs."
-msgstr ""
+msgstr "与えられた長さ *size* を持つ :c:type:`Py_UNICODE` 型のバッファにある全ての decimal digit を、それらの10進の値に対応する 0 から 9 までの ASCII 数字に置き換えた Unicode オブジェクトを生成します。\n例外が起きた場合は *NULL* を返します。"
 
 #: ../../c-api/unicode.rst:716
 msgid ""
@@ -920,7 +920,7 @@ msgid ""
 "resulting :c:type:`Py_UNICODE*` string may contain embedded null code "
 "points, which would cause the string to be truncated when used in most C "
 "functions."
-msgstr ""
+msgstr ":c:func:`PyUnicode_AsUnicode` に似てますが、さらに (追加の null 終端子を除いた) :c:func:`Py_UNICODE` 配列の長さを *size* に保存します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:727
 msgid ""
