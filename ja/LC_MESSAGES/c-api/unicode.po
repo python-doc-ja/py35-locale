@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-30 14:55+0000\n"
+"PO-Revision-Date: 2016-12-30 15:25+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -930,18 +930,18 @@ msgid ""
 "to free the buffer). Note that the resulting :c:type:`Py_UNICODE*` string "
 "may contain embedded null code points, which would cause the string to be "
 "truncated when used in most C functions."
-msgstr ""
+msgstr "終端に null コードポイントが付加された Unicode 文字列のコピーを作成します。\nメモリ確保に失敗したときは *NULL* を返し :exc:`MemoryError` 例外を送出します。\nそうでないときは新しくメモリ確保されたバッファを返します (このバッファを解放するときには :c:func:`PyMem_Free` を使ってください)。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:736
 msgid ""
 "Please migrate to using :c:func:`PyUnicode_AsUCS4Copy` or similar new APIs."
-msgstr ""
+msgstr ":c:func:`PyUnicode_AsUCS4Copy` や類似の新しい API を使用するように移行してください。"
 
 #: ../../c-api/unicode.rst:741
 msgid ""
 "Return the size of the deprecated :c:type:`Py_UNICODE` representation, in "
 "code units (this includes surrogate pairs as 2 units)."
-msgstr ""
+msgstr "非推奨の :c:type:`Py_UNICODE` 表現形式のサイズをコード単位で返します (サロゲートペアを2つとしています)。"
 
 #: ../../c-api/unicode.rst:744
 msgid "Please migrate to using :c:func:`PyUnicode_GetLength`."
@@ -952,12 +952,12 @@ msgid ""
 "Copy an instance of a Unicode subtype to a new true Unicode object if "
 "necessary. If *obj* is already a true Unicode object (not a subtype), return"
 " the reference with incremented refcount."
-msgstr ""
+msgstr "Unicode のサブタイプのインスタンスを、必要な場合は本物の Unicode オブジェクトにコピーします。\n*obj* が (サブタイプではない) 既に本物の Unicode オブジェクトだった場合は、参照カウントを1つ増やした参照を返します。"
 
 #: ../../c-api/unicode.rst:753
 msgid ""
 "Objects other than Unicode or its subtypes will cause a :exc:`TypeError`."
-msgstr ""
+msgstr "Unicode やそのサブタイプ以外のオブジェクトでは :exc:`TypeError` が引き起こされます。"
 
 #: ../../c-api/unicode.rst:757
 msgid "Locale Encoding"
