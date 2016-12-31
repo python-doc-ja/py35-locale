@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
+"PO-Revision-Date: 2016-12-31 09:32+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -133,11 +133,13 @@ msgstr "バイナリを hexbin4 エンコードして ASCII 文字列に変換�
 
 #: ../../library/binascii.rst:118
 msgid ""
-"Compute the binhex4 crc value of *data*, starting with *value* as the "
-"initial crc, and return the result."
-msgstr "*data* の binhex4 CRC 値を計算します。 crc の初期値を *value* で開始して、計算結果を返します。"
+"Compute a 16-bit CRC value of *data*, starting with *value* as the initial "
+"CRC, and return the result.  This uses the CRC-CCITT polynomial *x*:sup:`16`"
+" + *x*:sup:`12` + *x*:sup:`5` + 1, often represented as 0x1021.  This CRC is"
+" used in the binhex4 format."
+msgstr ""
 
-#: ../../library/binascii.rst:124
+#: ../../library/binascii.rst:126
 msgid ""
 "Compute CRC-32, the 32-bit checksum of *data*, starting with an initial CRC "
 "of *value*.  The default initial CRC is zero.  The algorithm is consistent "
@@ -146,20 +148,20 @@ msgid ""
 "  Use as follows::"
 msgstr "32 ビットチェックサムである CRC-32 を *data* に対して計算します。 crc の初期値は *value* です。デフォルトの CRC の初期値はゼロです。このアルゴリズムは ZIP ファイルのチェックサムと同じです。このアルゴリズムはチェックサムアルゴリズムとして設計されたもので、一般的なハッシュアルゴリズムには向きません。以下のようにして使います::"
 
-#: ../../library/binascii.rst:136
+#: ../../library/binascii.rst:138
 msgid ""
 "The result is always unsigned. To generate the same numeric value across all"
 " Python versions and platforms, use ``crc32(data) & 0xffffffff``."
 msgstr "結果は常に unsigned です。すべてのバージョンとプラットフォームの Python に渡って同一の数値を生成するには、``crc32(data) & 0xffffffff`` を使用します。"
 
-#: ../../library/binascii.rst:145
+#: ../../library/binascii.rst:147
 msgid ""
 "Return the hexadecimal representation of the binary *data*.  Every byte of "
 "*data* is converted into the corresponding 2-digit hex representation.  The "
 "returned bytes object is therefore twice as long as the length of *data*."
 msgstr "バイナリ *data* の16進表現を返します。*data* の各バイトは、対応する2桁の16進表現に変換されます。したがって、返されるバイトオブジェクトは *data* の2倍の長さになります。"
 
-#: ../../library/binascii.rst:153
+#: ../../library/binascii.rst:155
 msgid ""
 "Return the binary data represented by the hexadecimal string *hexstr*.  This"
 " function is the inverse of :func:`b2a_hex`. *hexstr* must contain an even "
@@ -167,45 +169,45 @@ msgid ""
 "an :exc:`Error` exception is raised."
 msgstr "16進数表記の文字列 *hexstr* の表すバイナリデータを返します。この関数は :func:`b2a_hex` の逆です。 *hexstr* は 16進数字 (大文字でも小文字でも構いません) を偶数個含んでいなければなりません。そうでない場合、例外 :exc:`Error` が送出されます。"
 
-#: ../../library/binascii.rst:161
+#: ../../library/binascii.rst:163
 msgid "Exception raised on errors. These are usually programming errors."
 msgstr "エラーが発生した際に送出される例外です。通常はプログラムのエラーです。"
 
-#: ../../library/binascii.rst:166
+#: ../../library/binascii.rst:168
 msgid ""
 "Exception raised on incomplete data. These are usually not programming "
 "errors, but may be handled by reading a little more data and trying again."
 msgstr "変換するデータが不完全な場合に送出される例外です。通常はプログラムのエラーではなく、多少追加読み込みを行って再度変換を試みることで対処できます。"
 
-#: ../../library/binascii.rst:174
+#: ../../library/binascii.rst:176
 msgid "Module :mod:`base64`"
 msgstr ":mod:`base64` モジュール"
 
-#: ../../library/binascii.rst:173
+#: ../../library/binascii.rst:175
 msgid ""
 "Support for RFC compliant base64-style encoding in base 16, 32, 64, and 85."
 msgstr "RFC 準拠の base64 形式の、底が 16、32、64、85 のエンコーディング。"
 
-#: ../../library/binascii.rst:177
+#: ../../library/binascii.rst:179
 msgid "Module :mod:`binhex`"
 msgstr ":mod:`binhex` モジュール"
 
-#: ../../library/binascii.rst:177
+#: ../../library/binascii.rst:179
 msgid "Support for the binhex format used on the Macintosh."
 msgstr "Macintosh で使われる binhex フォーマットのサポート。"
 
-#: ../../library/binascii.rst:180
+#: ../../library/binascii.rst:182
 msgid "Module :mod:`uu`"
 msgstr ":mod:`uu` モジュール"
 
-#: ../../library/binascii.rst:180
+#: ../../library/binascii.rst:182
 msgid "Support for UU encoding used on Unix."
 msgstr "Unix で使われる UU エンコードのサポート。"
 
-#: ../../library/binascii.rst:182
+#: ../../library/binascii.rst:184
 msgid "Module :mod:`quopri`"
 msgstr ":mod:`quopri` モジュール"
 
-#: ../../library/binascii.rst:183
+#: ../../library/binascii.rst:185
 msgid "Support for quoted-printable encoding used in MIME email messages."
 msgstr "MIME 電子メールメッセージで使われる quoted-printable エンコードのサポート。"

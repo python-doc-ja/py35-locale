@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2016-12-31 09:38+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -81,10 +81,10 @@ msgstr "Python テストスイートの出力例です::"
 
 #: ../../library/tracemalloc.rst:69
 msgid ""
-"We can see that Python loaded ``4.8 MiB`` data (bytecode and constants) from"
-" modules and that the :mod:`collections` module allocated ``244 KiB`` to "
-"build :class:`~collections.namedtuple` types."
-msgstr "Python がモジュールから ``4.8 MiB`` のデータ (バイトコードと定数) を読み込んでいることと、:mod:`collections` モジュールが :class:`~collections.namedtuple` 型をビルドするのに ``244 KiB`` を割り当てていることが分かります。"
+"We can see that Python loaded ``4855 KiB`` data (bytecode and constants) "
+"from modules and that the :mod:`collections` module allocated ``244 KiB`` to"
+" build :class:`~collections.namedtuple` types."
+msgstr ""
 
 #: ../../library/tracemalloc.rst:73 ../../library/tracemalloc.rst:252
 msgid "See :meth:`Snapshot.statistics` for more options."
@@ -105,12 +105,12 @@ msgstr "Python テストスイートのテストを実行する前後の出力�
 
 #: ../../library/tracemalloc.rst:109
 msgid ""
-"We can see that Python has loaded ``8.2 MiB`` of module data (bytecode and "
-"constants), and that this is ``4.4 MiB`` more than had been loaded before "
+"We can see that Python has loaded ``8173 KiB`` of module data (bytecode and "
+"constants), and that this is ``4428 KiB`` more than had been loaded before "
 "the tests, when the previous snapshot was taken. Similarly, the "
 ":mod:`linecache` module has cached ``940 KiB`` of Python source code to "
 "format tracebacks, all of it since the previous snapshot."
-msgstr "Python がモジュールデータ ``8.2 MiB`` (バイトコードと定数) を読み込み、\n前回スナップショットを取ったとき、すなわちテストの前に読み込んだ量より ``4.4 MiB`` 多いということが分かります。\n同様に、 :mod:`linecache` モジュールはトレースバックの書式化に Python ソースコード ``940 KiB`` をキャッシュし、その全ては前回のスナップショットの後に行われたことが分かります。"
+msgstr ""
 
 #: ../../library/tracemalloc.rst:115
 msgid ""
@@ -136,7 +136,7 @@ msgstr "Python テストスイートの出力例です (トレースバックは
 #: ../../library/tracemalloc.rst:178
 msgid ""
 "We can see that the most memory was allocated in the :mod:`importlib` module"
-" to load data (bytecode and constants) from modules: ``870 KiB``. The "
+" to load data (bytecode and constants) from modules: ``870.1 KiB``. The "
 "traceback is where the :mod:`importlib` loaded data most recently: on the "
 "``import pdb`` line of the :mod:`doctest` module. The traceback may change "
 "if a new module is loaded."
@@ -410,14 +410,14 @@ msgstr ":func:`take_snapshot` 関数はスナップショットのインスタ�
 #: ../../library/tracemalloc.rst:443
 msgid ""
 "Compute the differences with an old snapshot. Get statistics as a sorted "
-"list of :class:`StatisticDiff` instances grouped by *group_by*."
-msgstr "古いスナップショットとの差を計算します。\n*group_by* でグループ化された :class:`StatisticDiff` インスタンスのソート済みリストとして統計を取得します。"
+"list of :class:`StatisticDiff` instances grouped by *key_type*."
+msgstr ""
 
 #: ../../library/tracemalloc.rst:446
 msgid ""
-"See the :meth:`Snapshot.statistics` method for *group_by* and *cumulative* "
+"See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* "
 "parameters."
-msgstr "*group_by* および *cumulative* 引数については :meth:`Snapshot.statistics` メソッドを参照してください。"
+msgstr ""
 
 #: ../../library/tracemalloc.rst:449
 msgid ""
@@ -461,12 +461,12 @@ msgstr ":meth:`dump` を参照してください。"
 #: ../../library/tracemalloc.rst:483
 msgid ""
 "Get statistics as a sorted list of :class:`Statistic` instances grouped by "
-"*group_by*:"
-msgstr "*group_by* でグループ化された :class:`Statistic` インスタンスのソート済みリストとして統計を取得します:"
+"*key_type*:"
+msgstr ""
 
 #: ../../library/tracemalloc.rst:487
-msgid "group_by"
-msgstr "group_by"
+msgid "key_type"
+msgstr ""
 
 #: ../../library/tracemalloc.rst:487
 msgid "description"
@@ -500,9 +500,9 @@ msgstr "トレースバック"
 msgid ""
 "If *cumulative* is ``True``, cumulate size and count of memory blocks of all"
 " frames of the traceback of a trace, not only the most recent frame. The "
-"cumulative mode can only be used with *group_by* equals to ``'filename'`` "
+"cumulative mode can only be used with *key_type* equals to ``'filename'`` "
 "and ``'lineno'``."
-msgstr "*cumulative* が ``True`` の場合、最新のフレームだけでなく、トレースのトレースバックの全フレームのメモリーブロックについてサイズと数を累積します。\n累積モードは *group_by* が ``'filename'`` および ``'lineno'`` と等しい場合にのみ使用することが出来ます。"
+msgstr ""
 
 #: ../../library/tracemalloc.rst:499
 msgid ""

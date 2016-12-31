@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2016-12-31 09:30+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -510,106 +510,107 @@ msgid "Archiving operations"
 msgstr "アーカイブ化操作"
 
 #: ../../library/shutil.rst:461
+msgid "Added support for the *xztar* format."
+msgstr "*xztar* 形式のサポートが追加されました。"
+
+#: ../../library/shutil.rst:465
 msgid ""
 "High-level utilities to create and read compressed and archived files are "
 "also provided.  They rely on the :mod:`zipfile` and :mod:`tarfile` modules."
 msgstr "圧縮・アーカイブされたファイルに対する読み書きをする高水準のユーティリティーも提供されています。これらは :mod:`zipfile` モジュールと :mod:`tarfile` モジュールに依存しています。"
 
-#: ../../library/shutil.rst:466
+#: ../../library/shutil.rst:470
 msgid "Create an archive file (such as zip or tar) and return its name."
 msgstr "アーカイブファイル (zip や tar) を作成してその名前を返します。"
 
-#: ../../library/shutil.rst:468
+#: ../../library/shutil.rst:472
 msgid ""
 "*base_name* is the name of the file to create, including the path, minus any"
-" format-specific extension. *format* is the archive format: one of \"zip\", "
-"\"tar\", \"bztar\" (if the :mod:`bz2` module is available), \"xztar\" (if "
-"the :mod:`lzma` module is available) or \"gztar\"."
-msgstr "*base_name* は、作成するファイルの、パスを含み、フォーマットごとの拡張子を抜いた名前です。 *format* はアーカイブフォーマットで \"zip\", \"tar\", \"bztar\" (:mod:`bz2` モジュールが利用可能な場合), \"xztar\" (:mod:`lzma` モジュールが利用可能な場合), \"gztar\" のいずれかです。"
+" format-specific extension. *format* is the archive format: one of \"zip\" "
+"(if the :mod:`zlib` module is available), \"tar\", \"gztar\" (if the "
+":mod:`zlib` module is available), \"bztar\" (if the :mod:`bz2` module is "
+"available), or \"xztar\" (if the :mod:`lzma` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:473
+#: ../../library/shutil.rst:478
 msgid ""
 "*root_dir* is a directory that will be the root directory of the archive; "
 "for example, we typically chdir into *root_dir* before creating the archive."
 msgstr "*root_dir* は、アーカイブのルートディレクトリとなるディレクトリです。例えば、一般的には、アーカイブを作成する前に *root_dir* をカレントディレクトリにします。"
 
-#: ../../library/shutil.rst:477
+#: ../../library/shutil.rst:482
 msgid ""
 "*base_dir* is the directory where we start archiving from; i.e. *base_dir* "
 "will be the common prefix of all files and directories in the archive."
 msgstr "*base_dir* は、アーカイブを開始するディレクトリです。すなわち、 *base_dir* は、アーカイブのすべてのファイルとディレクトリに共通する接頭辞になります。"
 
-#: ../../library/shutil.rst:481
+#: ../../library/shutil.rst:486
 msgid "*root_dir* and *base_dir* both default to the current directory."
 msgstr "*root_dir* と *base_dir* のどちらも、デフォルトはカレントディレクトリです。"
 
-#: ../../library/shutil.rst:483
+#: ../../library/shutil.rst:488
 msgid ""
 "If *dry_run* is true, no archive is created, but the operations that would "
 "be executed are logged to *logger*."
 msgstr "*dry_run* が真の場合、アーカイブは作成されませんが実行される操作は *logger* に記録されます。"
 
-#: ../../library/shutil.rst:486
+#: ../../library/shutil.rst:491
 msgid ""
 "*owner* and *group* are used when creating a tar archive. By default, uses "
 "the current owner and group."
 msgstr "*owner* と *group* は、tar アーカイブを作成するときに使われます。デフォルトでは、カレントのオーナーとグループを使います。"
 
-#: ../../library/shutil.rst:489
+#: ../../library/shutil.rst:494
 msgid ""
 "*logger* must be an object compatible with :pep:`282`, usually an instance "
 "of :class:`logging.Logger`."
 msgstr "*logger* は :pep:`282` に準拠したオブジェクトで、通常は :class:`logging.Logger` のインスタンスです。"
 
-#: ../../library/shutil.rst:492
+#: ../../library/shutil.rst:497
 msgid "The *verbose* argument is unused and deprecated."
 msgstr "*verbose* 引数は使用されず、非推奨です。"
 
-#: ../../library/shutil.rst:494
-msgid "Added support for the *xztar* format."
-msgstr "*xztar* 形式のサポートが追加されました。"
-
-#: ../../library/shutil.rst:500
+#: ../../library/shutil.rst:502
 msgid ""
 "Return a list of supported formats for archiving. Each element of the "
 "returned sequence is a tuple ``(name, description)``."
 msgstr "アーカイブ化をサポートしているフォーマットのリストを返します。返されるシーケンスのそれぞれの要素は、タプル ``(name, description)`` です。"
 
-#: ../../library/shutil.rst:503 ../../library/shutil.rst:579
+#: ../../library/shutil.rst:505 ../../library/shutil.rst:582
 msgid "By default :mod:`shutil` provides these formats:"
 msgstr "デフォルトでは、 :mod:`shutil` は次のフォーマットを提供しています。"
 
-#: ../../library/shutil.rst:505 ../../library/shutil.rst:581
-msgid "*gztar*: gzip'ed tar-file"
-msgstr "*gztar*: gzip で圧縮された tar ファイル"
+#: ../../library/shutil.rst:507
+msgid "*zip*: ZIP file (if the :mod:`zlib` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:506 ../../library/shutil.rst:582
-msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available.)"
-msgstr "*bztar*: bzip2 で圧縮された tar ファイル (:mod:`bz2` モジュールが利用可能な場合)"
+#: ../../library/shutil.rst:508 ../../library/shutil.rst:586
+msgid "*tar*: uncompressed tar file."
+msgstr ""
 
-#: ../../library/shutil.rst:507 ../../library/shutil.rst:583
-msgid "*xztar*: xz'ed tar-file (if the :mod:`lzma` module is available.)"
-msgstr "*xztar*: xz で圧縮された tar ファイル (:mod:`lzma` モジュールが利用可能な場合)"
+#: ../../library/shutil.rst:509 ../../library/shutil.rst:587
+msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:508 ../../library/shutil.rst:584
-msgid "*tar*: uncompressed tar file"
-msgstr "*tar*: 圧縮されていない tar ファイル"
+#: ../../library/shutil.rst:510 ../../library/shutil.rst:588
+msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:509 ../../library/shutil.rst:585
-msgid "*zip*: ZIP file"
-msgstr "*zip*: ZIP ファイル"
+#: ../../library/shutil.rst:511 ../../library/shutil.rst:589
+msgid "*xztar*: xz'ed tar-file (if the :mod:`lzma` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:511
+#: ../../library/shutil.rst:513
 msgid ""
 "You can register new formats or provide your own archiver for any existing "
 "formats, by using :func:`register_archive_format`."
 msgstr ":func:`register_archive_format` を使って、新しいフォーマットを登録したり、既存のフォーマットに独自のアーカイバを提供したりできます。"
 
-#: ../../library/shutil.rst:517
+#: ../../library/shutil.rst:519
 msgid "Register an archiver for the format *name*."
 msgstr "アーカイバをフォーマット *name* に登録します。"
 
-#: ../../library/shutil.rst:519
+#: ../../library/shutil.rst:521
 msgid ""
 "*function* is the callable that will be used to unpack archives. The "
 "callable will receive the *base_name* of the file to create, followed by the"
@@ -618,120 +619,127 @@ msgid ""
 "*dry_run* and *logger* (as passed in :func:`make_archive`)."
 msgstr "*function* はアーカイブのアンパックに使用される呼び出し可能オブジェクトです。*funciton* は作成するファイルの *base_name*、続いてアーカイブを開始する元の *base_dir* (デフォルトは :data:`os.curdir`) を受け取ります。さらなる引数は、次のキーワード引数として渡されます: *owner*, *group*, *dry_run* ならびに *logger* (:func:`make_archive` に渡されます)。"
 
-#: ../../library/shutil.rst:525
+#: ../../library/shutil.rst:527
 msgid ""
 "If given, *extra_args* is a sequence of ``(name, value)`` pairs that will be"
 " used as extra keywords arguments when the archiver callable is used."
 msgstr "*extra_args* は、与えられた場合、 ``(name, value)`` の対のシーケンスで、アーカイバ呼び出し可能オブジェクトが使われるときに追加のキーワード引数として使われます。"
 
-#: ../../library/shutil.rst:528
+#: ../../library/shutil.rst:530
 msgid ""
 "*description* is used by :func:`get_archive_formats` which returns the list "
 "of archivers.  Defaults to an empty string."
 msgstr "*description* は、アーカイバのリストを返す :func:`get_archive_formats` で使われます。デフォルトでは空の文字列です。"
 
-#: ../../library/shutil.rst:534
+#: ../../library/shutil.rst:536
 msgid "Remove the archive format *name* from the list of supported formats."
 msgstr "アーカイブフォーマット *name* を、サポートされているフォーマットのリストから取り除きます。"
 
-#: ../../library/shutil.rst:539
+#: ../../library/shutil.rst:541
 msgid "Unpack an archive. *filename* is the full path of the archive."
 msgstr "アーカイブをアンパックします。 *filename* はアーカイブのフルパスです。"
 
-#: ../../library/shutil.rst:541
+#: ../../library/shutil.rst:543
 msgid ""
 "*extract_dir* is the name of the target directory where the archive is "
 "unpacked. If not provided, the current working directory is used."
 msgstr "*extract_dir* はアーカイブをアンパックする先のディレクトリ名です。指定されなかった場合は現在の作業ディレクトリを利用します。"
 
-#: ../../library/shutil.rst:544
+#: ../../library/shutil.rst:546
 msgid ""
-"*format* is the archive format: one of \"zip\", \"tar\", or \"gztar\". Or "
-"any other format registered with :func:`register_unpack_format`. If not "
-"provided, :func:`unpack_archive` will use the archive file name extension "
-"and see if an unpacker was registered for that extension. In case none is "
-"found, a :exc:`ValueError` is raised."
-msgstr "*format* はアーカイブフォーマットで、 \"zip\", \"tar\", \"gztar\" あるいは :func:`register_unpack_format` で登録したその他のフォーマットのどれかです。指定されなかった場合、 :func:`unpack_archive` はアーカイブファイル名の拡張子に対して登録されたアンパッカーを利用します。アンパッカーが見つからなかった場合、 :exc:`ValueError` を発生させます。"
+"*format* is the archive format: one of \"zip\", \"tar\", \"gztar\", "
+"\"bztar\", or \"xztar\".  Or any other format registered with "
+":func:`register_unpack_format`.  If not provided, :func:`unpack_archive` "
+"will use the archive file name extension and see if an unpacker was "
+"registered for that extension.  In case none is found, a :exc:`ValueError` "
+"is raised."
+msgstr ""
 
-#: ../../library/shutil.rst:553
+#: ../../library/shutil.rst:556
 msgid ""
 "Registers an unpack format. *name* is the name of the format and "
 "*extensions* is a list of extensions corresponding to the format, like "
 "``.zip`` for Zip files."
 msgstr "アンパック用のフォーマットを登録します。 *name* はフォーマット名で、 *extensions* はそのフォーマットに対応する拡張子 (例えば Zip ファイルに対して ``.zip``) のリストです。"
 
-#: ../../library/shutil.rst:557
+#: ../../library/shutil.rst:560
 msgid ""
 "*function* is the callable that will be used to unpack archives. The "
 "callable will receive the path of the archive, followed by the directory the"
 " archive must be extracted to."
 msgstr "*function* はアーカイブをアンパックするための呼び出し可能オブジェクトです。このオブジェクトはアーカイブのパスと、アーカイブを展開するディレクトリのパスを引数に受け取ります。"
 
-#: ../../library/shutil.rst:561
+#: ../../library/shutil.rst:564
 msgid ""
 "When provided, *extra_args* is a sequence of ``(name, value)`` tuples that "
 "will be passed as keywords arguments to the callable."
 msgstr "*extra_args* は省略可能な引数で、呼び出し可能オブジェクトに渡すキーワード引数を ``(name, value)`` というタプルのシーケンスにしたものです。"
 
-#: ../../library/shutil.rst:564
+#: ../../library/shutil.rst:567
 msgid ""
 "*description* can be provided to describe the format, and will be returned "
 "by the :func:`get_unpack_formats` function."
 msgstr "フォーマットの説明として *description* を指定することができます。これは :func:`get_unpack_formats` 関数によって返されます。"
 
-#: ../../library/shutil.rst:570
+#: ../../library/shutil.rst:573
 msgid "Unregister an unpack format. *name* is the name of the format."
 msgstr "アンパックフォーマットを登録解除します。 *name* はフォーマットの名前です。"
 
-#: ../../library/shutil.rst:575
+#: ../../library/shutil.rst:578
 msgid ""
 "Return a list of all registered formats for unpacking. Each element of the "
 "returned sequence is a tuple ``(name, extensions, description)``."
 msgstr "登録されているすべてのアンパックフォーマットをリストで返します。戻り値のリストの各要素は ``(name, extensions, description)`` の形のタプルです。"
 
-#: ../../library/shutil.rst:587
+#: ../../library/shutil.rst:584
+msgid ""
+"*zip*: ZIP file (unpacking compressed files works only if the corresponding "
+"module is available)."
+msgstr ""
+
+#: ../../library/shutil.rst:591
 msgid ""
 "You can register new formats or provide your own unpacker for any existing "
 "formats, by using :func:`register_unpack_format`."
 msgstr ":func:`register_unpack_format` を使って新しいフォーマットや既存のフォーマットに対する別のアンパッカーを登録することができます。"
 
-#: ../../library/shutil.rst:594
+#: ../../library/shutil.rst:598
 msgid "Archiving example"
 msgstr "アーカイブ化の例"
 
-#: ../../library/shutil.rst:596
+#: ../../library/shutil.rst:600
 msgid ""
 "In this example, we create a gzip'ed tar-file archive containing all files "
 "found in the :file:`.ssh` directory of the user::"
 msgstr "この例では、ユーザの :file:`.ssh` ディレクトリにあるすべてのファイルを含む、 gzip された tar ファイルアーカイブを作成します::"
 
-#: ../../library/shutil.rst:606
+#: ../../library/shutil.rst:610
 msgid "The resulting archive contains:"
 msgstr "結果のアーカイブは、以下のものを含みます:"
 
-#: ../../library/shutil.rst:622
+#: ../../library/shutil.rst:626
 msgid "Querying the size of the output terminal"
 msgstr "出力ターミナルのサイズの取得"
 
-#: ../../library/shutil.rst:628
+#: ../../library/shutil.rst:630
 msgid "Get the size of the terminal window."
 msgstr "ターミナルウィンドウのサイズを取得します。"
 
-#: ../../library/shutil.rst:630
+#: ../../library/shutil.rst:632
 msgid ""
 "For each of the two dimensions, the environment variable, ``COLUMNS`` and "
 "``LINES`` respectively, is checked. If the variable is defined and the value"
 " is a positive integer, it is used."
 msgstr "幅と高さについて、それぞれ ``COLUMNS`` と ``LINES`` という環境変数をチェックします。その変数が定義されていて値が正の整数であればそれを利用します。"
 
-#: ../../library/shutil.rst:634
+#: ../../library/shutil.rst:636
 msgid ""
 "When ``COLUMNS`` or ``LINES`` is not defined, which is the common case, the "
 "terminal connected to :data:`sys.__stdout__` is queried by invoking "
 ":func:`os.get_terminal_size`."
 msgstr "典型的な ``COLUMNS`` や ``LINES`` が定義されていない場合には、 :data:`sys.__stdout__` に接続されているターミナルに :func:`os.get_terminal_size` を呼び出して問い合わせます。"
 
-#: ../../library/shutil.rst:638
+#: ../../library/shutil.rst:640
 msgid ""
 "If the terminal size cannot be successfully queried, either because the "
 "system doesn't support querying, or because we are not connected to a "
@@ -740,11 +748,11 @@ msgid ""
 "emulators."
 msgstr "システムが対応していない場合やターミナルに接続していないなどの理由でターミナルサイズの問い合わせに失敗した場合、 ``fallback`` 引数に与えられた値を利用します。 ``fallback`` のデフォルト値は ``(80, 24)`` で、これは多くのターミナルエミュレーターが利用しているデフォルトサイズです。"
 
-#: ../../library/shutil.rst:644
+#: ../../library/shutil.rst:646
 msgid "The value returned is a named tuple of type :class:`os.terminal_size`."
 msgstr "戻り値は :class:`os.terminal_size` 型の名前付きタプルです。"
 
-#: ../../library/shutil.rst:646
+#: ../../library/shutil.rst:648
 msgid ""
 "See also: The Single UNIX Specification, Version 2, `Other Environment "
 "Variables`_."
