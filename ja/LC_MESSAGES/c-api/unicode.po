@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 09:25+0000\n"
+"PO-Revision-Date: 2016-12-31 14:13+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -961,13 +961,13 @@ msgstr "Unicode やそのサブタイプ以外のオブジェクトでは :exc:`
 
 #: ../../c-api/unicode.rst:757
 msgid "Locale Encoding"
-msgstr ""
+msgstr "ロケールエンコーディング"
 
 #: ../../c-api/unicode.rst:759
 msgid ""
 "The current locale encoding can be used to decode text from the operating "
 "system."
-msgstr ""
+msgstr "現在のロケールエンコーディングはオペレーティングシステムのテキストをデコードするのに使えます。"
 
 #: ../../c-api/unicode.rst:766
 msgid ""
@@ -975,24 +975,24 @@ msgid ""
 "handlers are ``\"strict\"`` and ``\"surrogateescape\"`` (:pep:`383`). The "
 "decoder uses ``\"strict\"`` error handler if *errors* is ``NULL``.  *str* "
 "must end with a null character but cannot contain embedded null characters."
-msgstr ""
+msgstr "現在のロケールエンコーディングの文字列をデコードします。\nサポートされているエラーハンドラは ``\"strict\"`` および ``\"surrogateescape\"`` (:pep:`383`) です。\n*errors* が ``NULL`` の場合は、デコーダは ``\"strict\"`` エラーハンドラを使用します。\n*str* は終端が null 文字でなければならず、 null 文字を含めることはできません。"
 
 #: ../../c-api/unicode.rst:772
 msgid ""
 "Use :c:func:`PyUnicode_DecodeFSDefaultAndSize` to decode a string from "
 ":c:data:`Py_FileSystemDefaultEncoding` (the locale encoding read at Python "
 "startup)."
-msgstr ""
+msgstr ":c:func:`PyUnicode_DecodeFSDefaultAndSize` を使って (Python の起動時に読み込まれるロケールエンコーディングの) :c:data:`Py_FileSystemDefaultEncoding` の文字列をデコードします。"
 
 #: ../../c-api/unicode.rst:778 ../../c-api/unicode.rst:857
 msgid "The :c:func:`Py_DecodeLocale` function."
-msgstr ""
+msgstr ":c:func:`Py_DecodeLocale` 関数。"
 
 #: ../../c-api/unicode.rst:785
 msgid ""
 "Similar to :c:func:`PyUnicode_DecodeLocaleAndSize`, but compute the string "
 "length using :c:func:`strlen`."
-msgstr ""
+msgstr ":c:func:`PyUnicode_DecodeLocaleAndSize` と似てますが、 :c:func:`strlen` を使って文字列の長さを計算します。"
 
 #: ../../c-api/unicode.rst:793
 msgid ""
@@ -1000,22 +1000,22 @@ msgid ""
 "handlers are ``\"strict\"`` and ``\"surrogateescape\"`` (:pep:`383`). The "
 "encoder uses ``\"strict\"`` error handler if *errors* is ``NULL``. Return a "
 ":class:`bytes` object. *unicode* cannot contain embedded null characters."
-msgstr ""
+msgstr "Unicode オブジェクトを現在のロケールエンコーディングでエンコードします。\nサポートされているエラーハンドラは ``\"strict\"`` および ``\"surrogateescape\"`` (:pep:`383`) です。\n *errors* が ``NULL`` の場合は、エンコーダは ``\"strict\"`` エラーハンドラを使用します。\n:class:`bytes` オブジェクトを返します。\n*unicode* には null 文字を含められません。"
 
 #: ../../c-api/unicode.rst:799
 msgid ""
 "Use :c:func:`PyUnicode_EncodeFSDefault` to encode a string to "
 ":c:data:`Py_FileSystemDefaultEncoding` (the locale encoding read at Python "
 "startup)."
-msgstr ""
+msgstr ":c:func:`PyUnicode_EncodeFSDefault` を使って (Python の起動時に読み込まれるロケールエンコーディングの) :c:data:`Py_FileSystemDefaultEncoding` の文字列へエンコードします。"
 
 #: ../../c-api/unicode.rst:805 ../../c-api/unicode.rst:893
 msgid "The :c:func:`Py_EncodeLocale` function."
-msgstr ""
+msgstr ":c:func:`Py_EncodeLocale` 関数。"
 
 #: ../../c-api/unicode.rst:811
 msgid "File System Encoding"
-msgstr ""
+msgstr "ファイルシステムエンコーディング"
 
 #: ../../c-api/unicode.rst:813
 msgid ""
