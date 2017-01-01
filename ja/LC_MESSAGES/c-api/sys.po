@@ -4,11 +4,12 @@
 # 
 # Translators:
 # E. Kawashima, 2016
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2017-01-01 10:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -72,21 +73,21 @@ msgid ""
 "characters in range U+DC80..U+DCFF. If a byte sequence can be decoded as a "
 "surrogate character, escape the bytes using the surrogateescape error "
 "handler instead of decoding them."
-msgstr ""
+msgstr ":ref:`surrogateescape エラーハンドラ <surrogateescape>` を使って、ロケールエンコーディングのバイト文字列をデコードします:\nデコードできないバイトは U+DC80 から U+DCFF までの範囲の文字としてデコードされます。\nバイト列がサロゲート文字としてデコードされる場合は、そのままデコードするのではなく surrogateescape エラーハンドラを使ってバイト列をエスケープします。"
 
 #: ../../c-api/sys.rst:58
 msgid ""
 "Return a pointer to a newly allocated wide character string, use "
 ":c:func:`PyMem_RawFree` to free the memory. If size is not ``NULL``, write "
 "the number of wide characters excluding the null character into ``*size``"
-msgstr ""
+msgstr "新しくメモリ確保されたワイドキャラクター文字列へのポインタを返します。\nこのメモリを解放するのには :c:func:`PyMem_RawFree` を使ってください。\n引数 size が ``NULL`` でない場合は、 null 文字以外のワイドキャラクターの数を ``*size`` へ書き込みます。"
 
 #: ../../c-api/sys.rst:62
 msgid ""
 "Return ``NULL`` on decoding error or memory allocation error. If *size* is "
 "not ``NULL``, ``*size`` is set to ``(size_t)-1`` on memory error or set to "
 "``(size_t)-2`` on decoding error."
-msgstr ""
+msgstr "デコードもしくはメモリ確保でエラーが起きると ``NULL`` を返します。\n*size* が ``NULL`` でない場合は、メモリエラーのときは ``(size_t)-1`` を、デコードでのエラーのときは ``(size_t)-2`` を ``*size`` に設定します。"
 
 #: ../../c-api/sys.rst:66
 msgid ""
