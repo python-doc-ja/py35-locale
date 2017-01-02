@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:40+0000\n"
+"PO-Revision-Date: 2017-01-02 16:47+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +26,7 @@ msgid ""
 "A :class:`memoryview` object exposes the C level :ref:`buffer interface "
 "<bufferobjects>` as a Python object which can then be passed around like any"
 " other object."
-msgstr ""
+msgstr ":class:`memoryview` オブジェクトは、他のオブジェクトと同じように扱える Python オブジェクトの形をした C 言語レベルの :ref:`バッファのインターフェース <bufferobjects>` です。"
 
 #: ../../c-api/memoryview.rst:18
 msgid ""
@@ -33,7 +34,7 @@ msgid ""
 "interface. If *obj* supports writable buffer exports, the memoryview object "
 "will be read/write, otherwise it may be either read-only or read/write at "
 "the discretion of the exporter."
-msgstr "バッファインタフェースを提供するオブジェクトからmemoryview オブジェクトを生成します。もし *obj* が書き込み可能なバッファのエクスポートをサポートするなら、その memoryview オブジェクトは読み書き可能です。さもなければ読出しみのみか、エクスポーターの分別にもとづいて読み書きが可能となります。"
+msgstr "バッファインタフェースを提供するオブジェクトからmemoryview オブジェクトを生成します。もし *obj* が書き込み可能なバッファのエクスポートをサポートするなら、その memoryview オブジェクトは読み書き可能です。そうでなければ読出しのみになるか、エクスポーターの分別にもとづいて読み書きが可能となります。"
 
 #: ../../c-api/memoryview.rst:25
 msgid ""
@@ -55,7 +56,7 @@ msgid ""
 "interface. If memory is contiguous, the memoryview object points to the "
 "original memory. Otherwise, a copy is made and the memoryview points to a "
 "new bytes object."
-msgstr ""
+msgstr "buffer インタフェースを定義しているオブジェクトから ('C' か 'F'ortran の *order* で) 連続した (:term:`contiguous`) メモリチャンクへの memoryview オブジェクトを作ります。メモリが連続している場合、 memoryview オブジェクトは元のメモリを参照します。それ以外の場合、メモリはコピーされて、 memoryview オブジェクトは新しい bytes オブジェクトを参照します。"
 
 #: ../../c-api/memoryview.rst:47
 msgid ""
@@ -68,7 +69,7 @@ msgid ""
 "Return a pointer to the memoryview's private copy of the exporter's buffer. "
 "*mview* **must** be a memoryview instance; this macro doesn't check its "
 "type, you must do it yourself or you will risk crashes."
-msgstr "書きだされたバッファーの memoryview のプライベート コピーに、ポインターを返して下さい。*mview* は  memoryview インスタンスに該当する物です。このマクロは、その型を検出しませんので、クラッシュのリスクは自分で背負う必要があります。"
+msgstr "書きだされたバッファーの memoryview のプライベート コピーに、ポインターを返します。\n*mview* は  memoryview インスタンスでなければなりません;\nこのマクロは型をチェックしないので自前で型チェックしなければならず、それを怠るとクラッシュする恐れがあります。"
 
 #: ../../c-api/memoryview.rst:59
 msgid ""
@@ -76,4 +77,4 @@ msgid ""
 " on or *NULL* if the memoryview has been created by one of the functions "
 ":c:func:`PyMemoryView_FromMemory` or :c:func:`PyMemoryView_FromBuffer`. "
 "*mview* **must** be a memoryview instance."
-msgstr ""
+msgstr "memoryview をエクスポートしているオブジェクトへのポインタを返します。\nmemoryview が :c:func:`PyMemoryView_FromMemory` か :c:func:`PyMemoryView_FromBuffer` のどちらかで作成されていた場合、 *NULL* を返します。"

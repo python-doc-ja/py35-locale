@@ -4,12 +4,12 @@
 # 
 # Translators:
 # E. Kawashima, 2016
-# tomo, 2016
+# tomo, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 09:26+0000\n"
+"PO-Revision-Date: 2017-01-02 16:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -271,7 +271,7 @@ msgid ""
 " that acts the same as the :c:member:`~PyTypeObject.tp_getattro` function, "
 "but taking a C string instead of a Python string object to give the "
 "attribute name.  The signature is ::"
-msgstr ""
+msgstr "このフィールドは非推奨です。\nこのフィールドを定義するときは、 :c:member:`~PyTypeObject.tp_getattro` 関数と同じように動作し、属性名は Python 文字列 オブジェクトではなく C 文字列で指定するような関数を指すようにしなければなりません。\nシグネチャは次の通りです::"
 
 #: ../../c-api/typeobj.rst:206
 msgid ""
@@ -294,7 +294,7 @@ msgid ""
 " that acts the same as the :c:member:`~PyTypeObject.tp_setattro` function, "
 "but taking a C string instead of a Python string object to give the "
 "attribute name.  The signature is ::"
-msgstr ""
+msgstr "このフィールドは非推奨です。\nこのフィールドを定義するときは、 :c:member:`~PyTypeObject.tp_setattro` 関数と同じように動作し、属性名は Python 文字列 オブジェクトではなく C 文字列で指定するような関数を指すようにしなければなりません。\nシグネチャは次の通りです::"
 
 #: ../../c-api/typeobj.rst:221
 msgid ""
@@ -304,7 +304,7 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_setattro` from its base type when the subtype's "
 ":c:member:`~PyTypeObject.tp_setattr` and "
 ":c:member:`~PyTypeObject.tp_setattro` are both *NULL*."
-msgstr ""
+msgstr "引数 *v* に *NULL* を設定すると属性を削除します。\nこのフィールドは :c:member:`~PyTypeObject.tp_setattro` と共にサブタイプに継承されます: すなわち、サブタイプの :c:member:`~PyTypeObject.tp_setattr` および :c:member:`~PyTypeObject.tp_setattro` が両方とも *NULL* のとき、サブタイプは基底タイプから :c:member:`~PyTypeObject.tp_setattr` と :c:member:`~PyTypeObject.tp_setattro` を両方とも継承します。"
 
 #: ../../c-api/typeobj.rst:229
 msgid ""
