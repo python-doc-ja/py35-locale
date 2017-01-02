@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-01 14:29+0000\n"
+"PO-Revision-Date: 2017-01-02 15:09+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -415,14 +415,14 @@ msgid ""
 "initialization. They can be used directly, for example when creating module "
 "objects dynamically. Note that both ``PyModule_FromDefAndSpec`` and "
 "``PyModule_ExecDef`` must be called to fully initialize a module."
-msgstr ""
+msgstr "以下の関数は、多段階初期化を使うときに裏側で呼び出されます。\n例えばモジュールオブジェクトを動的に生成するときに、これらの関数を直接使えます。\n``PyModule_FromDefAndSpec`` および ``PyModule_ExecDef`` のどちらも、呼び出した後にはモジュールが完全に初期化されていなければなりません。"
 
 #: ../../c-api/module.rst:354
 msgid ""
 "Create a new module object, given the definition in *module* and the "
 "ModuleSpec *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` "
 "with *module_api_version* set to :const:`PYTHON_API_VERSION`."
-msgstr ""
+msgstr "*module* と ModuleSpec オブジェクトの *spec* で定義されたとおりに新しいモジュールオブジェクトを生成します。\nこの関数は、 :c:func:`PyModule_FromDefAndSpec2` 関数の *module_api_version* に :const:`PYTHON_API_VERSION` を指定した時とおなじようにふるまいます。"
 
 #: ../../c-api/module.rst:362
 msgid ""
@@ -430,7 +430,7 @@ msgid ""
 "ModuleSpec *spec*, assuming the API version *module_api_version*. If that "
 "version does not match the version of the running interpreter, a "
 ":exc:`RuntimeWarning` is emitted."
-msgstr "APIバージョンを *module_api_version* として *module* と ModuleSpec *spec* で定義されたとおりに新しいモジュールオブジェクトを生成します。\nもし指定されたバージョンが実行しているインタープリターのバージョンと異なる場合は、 :exc:`RuntimeWarning` を発生させます。"
+msgstr "APIバージョンを *module_api_version* として、 *module* と ModuleSpec オブジェクトの *spec* で定義されたとおりに新しいモジュールオブジェクトを生成します。\nもし指定されたバージョンが実行しているインタープリターのバージョンと異なる場合は、 :exc:`RuntimeWarning` を発生させます。"
 
 #: ../../c-api/module.rst:369
 msgid ""
@@ -440,14 +440,14 @@ msgstr "ほとんどの場合、この関数ではなく :c:func:`PyModule_FromD
 
 #: ../../c-api/module.rst:376
 msgid "Process any execution slots (:c:data:`Py_mod_exec`) given in *def*."
-msgstr ""
+msgstr "*def* で与えられた任意の実行スロット (:c:data:`Py_mod_exec`) を実行します。"
 
 #: ../../c-api/module.rst:382
 msgid ""
 "Set the docstring for *module* to *docstring*. This function is called "
 "automatically when creating a module from ``PyModuleDef``, using either "
 "``PyModule_Create`` or ``PyModule_FromDefAndSpec``."
-msgstr ""
+msgstr "*module* の docstring を *docstring* に設定します。\nこの関数は、 ``PyModuleDef`` から ``PyModule_Create`` もしくは ``PyModule_FromDefAndSpec`` を使ってモジュールを生成するときに自動的に呼び出されます。"
 
 #: ../../c-api/module.rst:391
 msgid ""
