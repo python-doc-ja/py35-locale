@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 11:05+0000\n"
+"PO-Revision-Date: 2017-01-03 04:54+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -553,7 +553,7 @@ msgid ""
 "Browser sniffing is a very bad practice for website design - building sites "
 "using web standards is much more sensible. Unfortunately a lot of sites "
 "still send different versions to different browsers."
-msgstr ""
+msgstr "ブラウザを検知すること (browser sniffing) は web サイトのデザインにおけるとても悪い習慣です - web 標準を利用する方が賢明でしょう。\n不幸なことに未だに多くの web サイトが異なるブラウザに対して異なるバージョンを返しています。"
 
 #: ../../howto/urllib2.rst:584
 msgid ""

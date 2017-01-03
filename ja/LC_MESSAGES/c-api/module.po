@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-02 16:08+0000\n"
+"PO-Revision-Date: 2017-01-03 04:14+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -471,14 +471,14 @@ msgid ""
 " a function called from a module execution slot (if using multi-phase "
 "initialization), can use the following functions to help initialize the "
 "module state:"
-msgstr ""
+msgstr "モジュールの初期化関数 (一段階初期化を使う場合) 、あるいはモジュールの実行スロットから呼び出される関数 (多段階初期化を使う場合) は次の関数を使うと、モジュールの state の初期化を簡単にできます:"
 
 #: ../../c-api/module.rst:412
 msgid ""
 "Add an object to *module* as *name*.  This is a convenience function which "
 "can be used from the module's initialization function.  This steals a "
 "reference to *value*.  Return ``-1`` on error, ``0`` on success."
-msgstr "*module* にオブジェクトを *name* として追加します。この関数はモジュールの初期化関数から利用される便宜関数です。これは *value* への参照を盗みます。エラーのときには ``-1`` を、成功したときには ``0`` を返します。"
+msgstr "*module* にオブジェクトを *name* として追加します。\nこの関数はモジュールの初期化関数から利用される便利関数です。\nこれは *value* への参照を盗みます。\nエラーのときには ``-1`` を、成功したときには ``0`` を返します。"
 
 #: ../../c-api/module.rst:418
 msgid ""
@@ -492,7 +492,7 @@ msgid ""
 "Add a string constant to *module* as *name*.  This convenience function can "
 "be used from the module's initialization function.  The string *value* must "
 "be *NULL*-terminated.  Return ``-1`` on error, ``0`` on success."
-msgstr ""
+msgstr "*module* に文字列定数を *name* として追加します。\nこの便利関数はモジュールの初期化関数から利用されています。\n文字列 *value* は *NULL* 終端されていなければなりません。\nエラーのときには ``-1`` を、成功したときには ``0`` を返します。"
 
 #: ../../c-api/module.rst:432
 msgid ""
@@ -515,14 +515,14 @@ msgid ""
 "Single-phase initialization creates singleton modules that can be looked up "
 "in the context of the current interpreter. This allows the module object to "
 "be retrieved later with only a reference to the module definition."
-msgstr ""
+msgstr "一段階初期化は、現在のインタプリタのコンテキストから探せるシングルトンのモジュールを生成します。\nこれによって、後からモジュール定義への参照だけでモジュールオブジェクトが取得できます。"
 
 #: ../../c-api/module.rst:450
 msgid ""
 "These functions will not work on modules created using multi-phase "
 "initialization, since multiple such modules can be created from a single "
 "definition."
-msgstr ""
+msgstr "多段階初期化を使うと単一の定義から複数のモジュールが作成できるので、これらの関数は多段階初期化を使って作成されたモジュールには使えません。"
 
 #: ../../c-api/module.rst:455
 msgid ""
@@ -531,7 +531,7 @@ msgid ""
 "to the interpreter state with :c:func:`PyState_AddModule` beforehand. In "
 "case the corresponding module object is not found or has not been attached "
 "to the interpreter state yet, it returns *NULL*."
-msgstr ""
+msgstr "現在のインタプリタの *def* から作られたモジュールオブジェクトを返します。このメソッドの前提条件として、前もって :c:func:`PyState_AddModule` でインタプリタの state にモジュールオブジェクトを連結しておくことを要求します。対応するモジュールオブジェクトが見付からない、もしくは事前にインタプリタの state に連結されていない場合は、 *NULL* を返します。"
 
 #: ../../c-api/module.rst:462
 msgid ""
@@ -542,7 +542,7 @@ msgstr "関数に渡されたモジュールオブジェクトを、インタプ
 
 #: ../../c-api/module.rst:465
 msgid "Only effective on modules created using single-phase initialization."
-msgstr ""
+msgstr "一段階初期化を使って作成されたモジュールにのみ有効です。"
 
 #: ../../c-api/module.rst:471
 msgid ""

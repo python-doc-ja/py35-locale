@@ -5,12 +5,12 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 09:44+0000\n"
+"PO-Revision-Date: 2017-01-03 04:33+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1514,7 +1514,7 @@ msgid ""
 "is advised to mix together the hash values of the components of the object "
 "that also play a part in comparison of objects by packing them into a tuple "
 "and hashing the tuple. Example::"
-msgstr ""
+msgstr "組み込みの :func:`hash` 関数や、 :class:`set`, :class:`frozenset`, :class:`dict` のようなハッシュを使ったコレクション型の要素に対する操作から呼び出されます。\n:meth:`__hash__` は整数を返さなければなりません。\nこのメソッドに必要な性質は、比較結果が等しいオブジェクトは同じハッシュ値を持つということです;\nオブジェクトを比較するときでも利用される要素をタプルに詰めてハッシュ値を計算することで、それぞれの要素のハッシュ値を混合することをおすすめします。"
 
 #: ../../reference/datamodel.rst:1319
 msgid ""

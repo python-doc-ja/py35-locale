@@ -6,13 +6,13 @@
 # E. Kawashima, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # INADA Naoki <songofacandy@gmail.com>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-18 17:13+0000\n"
+"PO-Revision-Date: 2017-01-03 06:05+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -571,7 +571,7 @@ msgid ""
 "(*v[2])[2][3]``. In suboffsets representation, those two pointers can be "
 "embedded at the start of :c:member:`~Py_buffer.buf`, pointing to two ``char "
 "x[2][3]`` arrays that can be located anywhere in memory."
-msgstr ""
+msgstr "PIL スタイルの配列では通常の要素の他に、ある次元の上で次の要素を取得するために辿るポインタを持てます。\n例えば、通常の3次元 C 配列 ``char v[2][2][3]`` は、2次元配列への 2 つのポインタからなる配列 ``char (*v[2])[2][3]`` と見ることもできます。\nsuboffset 表現では、これらの 2 つのポインタは :c:member:`~Py_buffer.buf` の先頭に埋め込め、メモリのどこにでも配置できる 2 つの ``char x[2][3]`` 配列を指します。"
 
 #: ../../c-api/buffer.rst:407
 msgid ""
@@ -614,14 +614,14 @@ msgid ""
 "to :c:func:`PyBuffer_Release`, similar to :c:func:`malloc` and "
 ":c:func:`free`. Thus, after the consumer is done with the buffer, "
 ":c:func:`PyBuffer_Release` must be called exactly once."
-msgstr ""
+msgstr ":c:func:`malloc` と :c:func:`free` のように、呼び出しに成功した :c:func:`PyObject_GetBuffer` と対になる :c:func:`PyBuffer_Release` の呼び出しがなけれなればなりません。\n従って、バッファの利用が済んだら :c:func:`PyBuffer_Release` が厳密に1回だけ呼び出されなければなりません。"
 
 #: ../../c-api/buffer.rst:455
 msgid ""
 "Release the buffer *view* and decrement the reference count for "
 ":c:member:`view->obj`. This function MUST be called when the buffer is no "
 "longer being used, otherwise reference leaks may occur."
-msgstr ""
+msgstr "バッファ *view* を解放し、 :c:member:`view->obj` の参照カウントを1つ減らします。\nこの関数はバッファが使われることがなくなったときに呼び出さなければならず、そうしないと参照のリークが起こり得ます。"
 
 #: ../../c-api/buffer.rst:459
 msgid ""
@@ -654,25 +654,25 @@ msgid ""
 "Handle buffer requests for an exporter that wants to expose *buf* of size "
 "*len* with writability set according to *readonly*. *buf* is interpreted as "
 "a sequence of unsigned bytes."
-msgstr ""
+msgstr "サイズが *len* の *buf* を *readonly* に従った書き込み可/不可の設定で公開するバッファリクエストを処理します。\n*buf* は符号無しバイトの列として解釈されます。"
 
 #: ../../c-api/buffer.rst:489
 msgid ""
 "The *flags* argument indicates the request type. This function always fills "
 "in *view* as specified by flags, unless *buf* has been designated as read-"
 "only and :c:macro:`PyBUF_WRITABLE` is set in *flags*."
-msgstr ""
+msgstr "*flags* 引数はリクエストのタイプを示します。\nこの関数は、 *buf* が読み取り専用と指定されていて、 *flags* に :c:macro:`PyBUF_WRITABLE` が設定されていない限り、常にフラグに指定された通りに *view* を埋めます。"
 
 #: ../../c-api/buffer.rst:493
 msgid ""
 "On success, set :c:member:`view->obj` to a new reference to *exporter* and "
 "return 0. Otherwise, raise :c:data:`PyExc_BufferError`, set "
 ":c:member:`view->obj` to *NULL* and return ``-1``;"
-msgstr ""
+msgstr "成功したときは、 :c:member:`view->obj` に *exporter* への新しい参照を設定し、 0 を返します。\n失敗したときは、 :c:data:`PyExc_BufferError` を送出し、 :c:member:`view->obj` に *NULL* を設定し、 ``-1`` を返します;"
 
 #: ../../c-api/buffer.rst:497
 msgid ""
 "If this function is used as part of a :ref:`getbufferproc <buffer-structs>`,"
 " *exporter* MUST be set to the exporting object and *flags* must be passed "
 "unmodified. Otherwise, *exporter* MUST be NULL."
-msgstr ""
+msgstr "この関数を :ref:`getbufferproc <buffer-structs>` の一部として使う場合には、 *exporter* はエクスポートするオブジェクトに設定しなければならず、さらに *flags* は変更せずに渡さなければなりません。\nそうでない場合は、 *exporter* は NULL でなければなりません。"
