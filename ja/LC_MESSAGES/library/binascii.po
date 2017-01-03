@@ -5,11 +5,12 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 09:32+0000\n"
+"PO-Revision-Date: 2017-01-03 14:08+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +138,7 @@ msgid ""
 "CRC, and return the result.  This uses the CRC-CCITT polynomial *x*:sup:`16`"
 " + *x*:sup:`12` + *x*:sup:`5` + 1, often represented as 0x1021.  This CRC is"
 " used in the binhex4 format."
-msgstr ""
+msgstr "*value* を CRC の初期値として *data* の 16 ビット CRC 値を計算し、その結果を返します。\nこの関数は、よく 0x1021 と表現される CRC-CCITT 多項式 *x*:sup:`16` + *x*:sup:`12` + *x*:sup:`5` + 1 を使います。\nこの CRC は binhex4 形式で使われています。"
 
 #: ../../library/binascii.rst:126
 msgid ""
