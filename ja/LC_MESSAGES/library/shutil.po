@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-03 14:23+0000\n"
+"PO-Revision-Date: 2017-01-04 11:16+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -582,23 +582,23 @@ msgstr "デフォルトでは、 :mod:`shutil` は次のフォーマットを提
 
 #: ../../library/shutil.rst:507
 msgid "*zip*: ZIP file (if the :mod:`zlib` module is available)."
-msgstr ""
+msgstr "*zip*: ZIP ファイル (:mod:`zlib` モジュールが利用可能な場合)。"
 
 #: ../../library/shutil.rst:508 ../../library/shutil.rst:586
 msgid "*tar*: uncompressed tar file."
-msgstr ""
+msgstr "*tar*: 圧縮されていない tar ファイル。"
 
 #: ../../library/shutil.rst:509 ../../library/shutil.rst:587
 msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
-msgstr ""
+msgstr "*gztar*: gzip で圧縮された tar ファイル (:mod:`zlib` モジュールが利用可能な場合)。"
 
 #: ../../library/shutil.rst:510 ../../library/shutil.rst:588
 msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
-msgstr ""
+msgstr "*bztar*: bzip2 で圧縮された tar ファイル (:mod:`bz2` モジュールが利用可能な場合)。"
 
 #: ../../library/shutil.rst:511 ../../library/shutil.rst:589
 msgid "*xztar*: xz'ed tar-file (if the :mod:`lzma` module is available)."
-msgstr ""
+msgstr "*xztar*: xz で圧縮された tar ファイル (:mod:`lzma` モジュールが利用可能な場合)。"
 
 #: ../../library/shutil.rst:513
 msgid ""
@@ -653,7 +653,7 @@ msgid ""
 "will use the archive file name extension and see if an unpacker was "
 "registered for that extension.  In case none is found, a :exc:`ValueError` "
 "is raised."
-msgstr ""
+msgstr "*format* はアーカイブフォーマットで、 \"zip\", \"tar\", \"gztar\", \"bztar\", \"xztar\" あるいは :func:`register_unpack_format` で登録したその他のフォーマットのどれかです。\n指定されなかった場合、 :func:`unpack_archive` はアーカイブファイル名の拡張子に対して登録されたアンパッカーを利用します。\nアンパッカーが見つからなかった場合、 :exc:`ValueError` を発生させます。"
 
 #: ../../library/shutil.rst:556
 msgid ""
@@ -695,7 +695,7 @@ msgstr "登録されているすべてのアンパックフォーマットをリ
 msgid ""
 "*zip*: ZIP file (unpacking compressed files works only if the corresponding "
 "module is available)."
-msgstr ""
+msgstr "*zip*: ZIP ファイル (対応するモジュールが利用可能な場合にのみ圧縮ファイルはアンパックされます)。"
 
 #: ../../library/shutil.rst:591
 msgid ""

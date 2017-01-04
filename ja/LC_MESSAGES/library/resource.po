@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2017-01-04 11:29+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -85,7 +86,7 @@ msgid ""
 "a tuple ``(soft, hard)`` of two integers describing the new limits. A value "
 "of :data:`~resource.RLIM_INFINITY` can be used to request a limit that is "
 "unlimited."
-msgstr "*resouce* の新たな消費制限を設定します。 *limits* 引数には、タプル ``(soft, hard)`` による二つの整数で、新たな制限を記述しなければなりません。 :data:`~resource.RLIM_INFINITY` を指定することで、無制限を要求することが出来ます。"
+msgstr "*resource* の新たな消費制限を設定します。 *limits* 引数には、タプル ``(soft, hard)`` による二つの整数で、新たな制限を記述しなければなりません。 :data:`~resource.RLIM_INFINITY` を指定することで、無制限を要求することが出来ます。"
 
 #: ../../library/resource.rst:67
 msgid ""
@@ -112,7 +113,7 @@ msgid ""
 "*pid* is 0, then the call applies to the current process. *resource* and "
 "*limits* have the same meaning as in :func:`setrlimit`, except that *limits*"
 " is optional."
-msgstr ""
+msgstr "1つの関数の中で :func:`setrlimit` と :func:`getrlimit` を組み合わせ、任意のプロセスのリソースの制限を取得したり設定したりします。\n*pid* が 0 の場合は、現在のプロセスに適用されます。\n*resource* および *limits* は、 *limits* がオプションであることを除けば、 :func:`setrlimit` と同じ意味です。"
 
 #: ../../library/resource.rst:87
 msgid ""
