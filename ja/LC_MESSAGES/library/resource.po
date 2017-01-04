@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-04 11:29+0000\n"
+"PO-Revision-Date: 2017-01-04 11:51+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -113,21 +113,21 @@ msgid ""
 "*pid* is 0, then the call applies to the current process. *resource* and "
 "*limits* have the same meaning as in :func:`setrlimit`, except that *limits*"
 " is optional."
-msgstr "1つの関数の中で :func:`setrlimit` と :func:`getrlimit` を組み合わせ、任意のプロセスのリソースの制限を取得したり設定したりします。\n*pid* が 0 の場合は、現在のプロセスに適用されます。\n*resource* および *limits* は、 *limits* がオプションであることを除けば、 :func:`setrlimit` と同じ意味です。"
+msgstr "1つの関数の中で :func:`setrlimit` と :func:`getrlimit` を組み合わせ、任意のプロセスのリソースの制限値を取得したり設定したりします。\n*pid* が 0 の場合は、現在のプロセスに適用されます。\n*resource* および *limits* は、 *limits* がオプションであることを除けば、 :func:`setrlimit` と同じ意味です。"
 
 #: ../../library/resource.rst:87
 msgid ""
 "When *limits* is not given the function returns the *resource* limit of the "
 "process *pid*. When *limits* is given the *resource* limit of the process is"
 " set and the former resource limit is returned."
-msgstr ""
+msgstr "*limits* が与えられないときは、関数はプロセス *pid* の *resource* の制限値を返します。\n*limits* が与えられたときは、プロセスの *resource* の制限値が設定され、設定が変更される前のリソースの制限値が返されます。"
 
 #: ../../library/resource.rst:91
 msgid ""
 "Raises :exc:`ProcessLookupError` when *pid* can't be found and "
 ":exc:`PermissionError` when the user doesn't have ``CAP_SYS_RESOURCE`` for "
 "the process."
-msgstr ""
+msgstr "*pid* が見付からないときは :exc:`ProcessLookupError` を、ユーザがプロセスの ``CAP_SYS_RESOURCE`` を持ってないときは :exc:`PermissionError` を送出します。"
 
 #: ../../library/resource.rst:95
 msgid "Availability: Linux 2.6.36 or later with glibc 2.13 or later"
@@ -166,7 +166,7 @@ msgstr "プロセッサが利用することができる最大プロセッサ時
 
 #: ../../library/resource.rst:128
 msgid "The maximum size of a file which the process may create."
-msgstr ""
+msgstr "プロセスが作成するファイルの最大サイズです。"
 
 #: ../../library/resource.rst:133
 msgid "The maximum size (in bytes) of the process's heap."
@@ -176,7 +176,7 @@ msgstr "プロセスのヒープの最大 (バイト) サイズです。"
 msgid ""
 "The maximum size (in bytes) of the call stack for the current process.  This"
 " only affects the stack of the main thread in a multi-threaded process."
-msgstr ""
+msgstr "現在のプロセスのコールスタックの最大サイズ (バイト単位) です。\nこれはマルチスレッドプロセスのメインスレッドのスタックのみに影響します。"
 
 #: ../../library/resource.rst:144
 msgid ""
@@ -207,7 +207,7 @@ msgstr "プロセスが占有できるマップメモリの最大領域です。
 msgid ""
 "The maximum area (in bytes) of address space which may be taken by the "
 "process."
-msgstr "アドレス空間でプロセスが占有できる最大領域 (バイト) です。"
+msgstr "アドレス空間でプロセスが占有できる最大領域 (バイト単位) です。"
 
 #: ../../library/resource.rst:179
 msgid "The number of bytes that can be allocated for POSIX message queues."
