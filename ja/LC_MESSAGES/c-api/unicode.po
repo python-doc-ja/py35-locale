@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-05 02:08+0000\n"
+"PO-Revision-Date: 2017-01-05 15:12+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1024,7 +1024,7 @@ msgid ""
 "``\"surrogateescape\"`` should be used as the error handler (:pep:`383`). To"
 " encode file names during argument parsing, the ``\"O&\"`` converter should "
 "be used, passing :c:func:`PyUnicode_FSConverter` as the conversion function:"
-msgstr "ファイル名や他の環境文字列のエンコードやデコードを行うには、 :c:data:`Py_FileSystemEncoding` をエンコーディングとして使い、 ``\"surrogateescape\"`` をエラーハンドラとして使うべきです (:pep:`383`)。\n引数の構文解析中にファイル名をエンコードするには、 ``\"O&\"`` コンバーターを使い、 :c:func:`PyUnicode_FSConverter` を変換関数として渡すべきです:"
+msgstr "ファイル名や他の環境文字列のエンコードやデコードを行うには、 :c:data:`Py_FileSystemEncoding` をエンコーディングとして使い、 ``\"surrogateescape\"`` をエラーハンドラとして使うべきです (:pep:`383`)。\n引数の構文解析中にファイル名をエンコードするには、 ``\"O&\"`` コンバーターを使い、 :c:func:`PyUnicode_FSConverter` を変換関数として渡すのがよいです:"
 
 #: ../../c-api/unicode.rst:821
 msgid ""
@@ -1032,14 +1032,14 @@ msgid ""
 ":c:func:`PyUnicode_EncodeFSDefault`; :class:`bytes` objects are output as-"
 "is. *result* must be a :c:type:`PyBytesObject*` which must be released when "
 "it is no longer used."
-msgstr ""
+msgstr "ParseTuple コンバーター: :c:func:`PyUnicode_EncodeFSDefault` を使い :class:`str` オブジェクトを :class:`bytes` へエンコードします;\n:class:`bytes` オブジェクトはそのまま出力されます。\n*result* は :c:type:`PyBytesObject*` でなければならず、使われなくなったときには解放されなければなりません。"
 
 #: ../../c-api/unicode.rst:829
 msgid ""
 "To decode file names during argument parsing, the ``\"O&\"`` converter "
 "should be used, passing :c:func:`PyUnicode_FSDecoder` as the conversion "
 "function:"
-msgstr ""
+msgstr "引数の構文解析中にファイル名をデコードするには、 ``\"O&\"`` コンバーターを使い、 :c:func:`PyUnicode_FSDecoder` を変換関数として渡すのがよいです:"
 
 #: ../../c-api/unicode.rst:834
 msgid ""
@@ -1047,20 +1047,20 @@ msgid ""
 ":c:func:`PyUnicode_DecodeFSDefaultAndSize`; :class:`str` objects are output "
 "as-is. *result* must be a :c:type:`PyUnicodeObject*` which must be released "
 "when it is no longer used."
-msgstr ""
+msgstr "ParseTuple コンバーター: :c:func:`PyUnicode_DecodeFSDefaultAndSize` を使い :class:`bytes` オブジェクトを :class:`str` へデコードします;\n:class:`str` オブジェクトはそのまま出力されます。\n*result* は :c:type:`PyUnicodeObject*` でなければならず、使われなくなったときには解放されなければなりません。"
 
 #: ../../c-api/unicode.rst:844
 msgid ""
 "Decode a string using :c:data:`Py_FileSystemDefaultEncoding` and the "
 "``\"surrogateescape\"`` error handler, or ``\"strict\"`` on Windows."
-msgstr ""
+msgstr ":c:data:`Py_FileSystemDefaultEncoding` と ``\"surrogateescape\"`` エラーハンドラ (Windows では ``\"strict\"``) を使い、文字列をデコードします。"
 
 #: ../../c-api/unicode.rst:847 ../../c-api/unicode.rst:868
 #: ../../c-api/unicode.rst:884
 msgid ""
 "If :c:data:`Py_FileSystemDefaultEncoding` is not set, fall back to the "
 "locale encoding."
-msgstr ""
+msgstr ":c:data:`Py_FileSystemDefaultEncoding` が設定されていない場合は、ロケールエンコーディングに差し戻されます。"
 
 #: ../../c-api/unicode.rst:850
 msgid ""
@@ -1068,24 +1068,24 @@ msgid ""
 "locale encoding and cannot be modified later. If you need to decode a string"
 " from the current locale encoding, use "
 ":c:func:`PyUnicode_DecodeLocaleAndSize`."
-msgstr ""
+msgstr ":c:data:`Py_FileSystemDefaultEncoding` は起動時にロケールエンコーディングで初期化され、それ以降は変更できません。\n現在のロケールエンコーディングで文字列をデコードする必要がある場合は、 :c:func:`PyUnicode_DecodeLocaleAndSize` を使ってください。"
 
 #: ../../c-api/unicode.rst:859 ../../c-api/unicode.rst:873
 msgid "Use ``\"strict\"`` error handler on Windows."
-msgstr ""
+msgstr "Windows では ``\"strict\"`` エラーハンドラを使います。"
 
 #: ../../c-api/unicode.rst:865
 msgid ""
 "Decode a null-terminated string using :c:data:`Py_FileSystemDefaultEncoding`"
 " and the ``\"surrogateescape\"`` error handler, or ``\"strict\"`` on "
 "Windows."
-msgstr ""
+msgstr ":c:data:`Py_FileSystemDefaultEncoding` と ``\"surrogateescape\"`` エラーハンドラ (Windows では ``\"strict\"``) を使い、 null 終端された文字列をデコードします。"
 
 #: ../../c-api/unicode.rst:871
 msgid ""
 "Use :c:func:`PyUnicode_DecodeFSDefaultAndSize` if you know the string "
 "length."
-msgstr ""
+msgstr "文字列の長さが分かっている場合は、 :c:func:`PyUnicode_DecodeFSDefaultAndSize` を使ってください。"
 
 #: ../../c-api/unicode.rst:879
 msgid ""
@@ -1093,14 +1093,14 @@ msgid ""
 "``\"surrogateescape\"`` error handler, or ``\"strict\"`` on Windows, and "
 "return :class:`bytes`. Note that the resulting :class:`bytes` object may "
 "contain null bytes."
-msgstr ""
+msgstr "``\"surrogateescape\"`` エラーハンドラ (Windows では ``\"strict\"``) を使い Unicode オブジェクトを :c:data:`Py_FileSystemDefaultEncoding` にエンコードし、 :class:`bytes` を返します。\n返される :class:`bytes` オブジェクトは null バイトを含んでいるかもしれないことに注意してください。"
 
 #: ../../c-api/unicode.rst:887
 msgid ""
 ":c:data:`Py_FileSystemDefaultEncoding` is initialized at startup from the "
 "locale encoding and cannot be modified later. If you need to encode a string"
 " to the current locale encoding, use :c:func:`PyUnicode_EncodeLocale`."
-msgstr ""
+msgstr ":c:data:`Py_FileSystemDefaultEncoding` は起動時にロケールエンコーディングで初期化され、それ以降は変更できません。\n現在のロケールエンコーディングで文字列をエンコードする必要がある場合は、 :c:func:`PyUnicode_EncodeLocale` を使ってください。"
 
 #: ../../c-api/unicode.rst:899
 msgid "wchar_t Support"
@@ -1115,7 +1115,7 @@ msgid ""
 "Create a Unicode object from the :c:type:`wchar_t` buffer *w* of the given "
 "*size*. Passing ``-1`` as the *size* indicates that the function must itself"
 " compute the length, using wcslen. Return *NULL* on failure."
-msgstr ""
+msgstr "*size* の :c:type:`wchar_t` バッファ *w* から Unicode オブジェクトを生成します。\n*size* として ``-1`` を渡すことで、 wcslen を使い自身で長さを計算しなければならないことを関数に指示します。\n失敗すると *NULL* を返します。"
 
 #: ../../c-api/unicode.rst:913
 msgid ""
