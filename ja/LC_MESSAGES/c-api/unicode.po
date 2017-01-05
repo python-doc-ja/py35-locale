@@ -5,12 +5,12 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Hiroki Kimura <ranpaku1012@yahoo.co.jp>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-31 14:13+0000\n"
+"PO-Revision-Date: 2017-01-05 02:08+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1024,7 +1024,7 @@ msgid ""
 "``\"surrogateescape\"`` should be used as the error handler (:pep:`383`). To"
 " encode file names during argument parsing, the ``\"O&\"`` converter should "
 "be used, passing :c:func:`PyUnicode_FSConverter` as the conversion function:"
-msgstr ""
+msgstr "ファイル名や他の環境文字列のエンコードやデコードを行うには、 :c:data:`Py_FileSystemEncoding` をエンコーディングとして使い、 ``\"surrogateescape\"`` をエラーハンドラとして使うべきです (:pep:`383`)。\n引数の構文解析中にファイル名をエンコードするには、 ``\"O&\"`` コンバーターを使い、 :c:func:`PyUnicode_FSConverter` を変換関数として渡すべきです:"
 
 #: ../../c-api/unicode.rst:821
 msgid ""
