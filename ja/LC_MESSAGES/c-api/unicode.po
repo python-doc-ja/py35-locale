@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-05 15:43+0000\n"
+"PO-Revision-Date: 2017-01-06 17:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -897,7 +897,7 @@ msgid ""
 "Note that the resulting :c:type:`Py_UNICODE` string may also contain "
 "embedded null code points, which would cause the string to be truncated when"
 " used in most C functions."
-msgstr "Unicode オブジェクトの :c:type:`Py_UNICODE` 型の内部バッファへの読み取り専用のポインタを返すか、失敗のときには *NULL* を返します。\nオブジェクトの :c:type:`Py_UNICODE*` 表現形式が無い場合には作成します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
+msgstr "Unicode オブジェクトの :c:type:`Py_UNICODE` 型の内部バッファへの読み取り専用のポインタを返すか、失敗のときには *NULL* を返します。\nオブジェクトの :c:type:`Py_UNICODE*` 表現形式が無い場合には作成します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数では、そのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:702
 msgid ""
@@ -920,7 +920,7 @@ msgid ""
 "resulting :c:type:`Py_UNICODE*` string may contain embedded null code "
 "points, which would cause the string to be truncated when used in most C "
 "functions."
-msgstr ":c:func:`PyUnicode_AsUnicode` に似てますが、さらに (追加の null 終端子を除いた) :c:func:`Py_UNICODE` 配列の長さを *size* に保存します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
+msgstr ":c:func:`PyUnicode_AsUnicode` に似てますが、さらに (追加の null 終端子を除いた) :c:func:`Py_UNICODE` 配列の長さを *size* に保存します。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数では、そのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:727
 msgid ""
@@ -930,7 +930,7 @@ msgid ""
 "to free the buffer). Note that the resulting :c:type:`Py_UNICODE*` string "
 "may contain embedded null code points, which would cause the string to be "
 "truncated when used in most C functions."
-msgstr "終端に null コードポイントが付加された Unicode 文字列のコピーを作成します。\nメモリ確保に失敗したときは *NULL* を返し :exc:`MemoryError` 例外を送出します。\nそうでないときは新しくメモリ確保されたバッファを返します (このバッファを解放するときには :c:func:`PyMem_Free` を使ってください)。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数ではそのような文字列は切り詰められてしまうことに注意してください。"
+msgstr "終端に null コードポイントが付加された Unicode 文字列のコピーを作成します。\nメモリ確保に失敗したときは *NULL* を返し :exc:`MemoryError` 例外を送出します。\nそうでないときは新しくメモリ確保されたバッファを返します (このバッファを解放するときには :c:func:`PyMem_Free` を使ってください)。\n結果の :c:type:`Py_UNICODE` 文字列には null コードポイントが含まれていることがあり、たいていの C 関数では、そのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:736
 msgid ""
@@ -1129,7 +1129,7 @@ msgid ""
 " application. Also, note that the :c:type:`wchar_t*` string might contain "
 "null characters, which would cause the string to be truncated when used with"
 " most C functions."
-msgstr "Unicode オブジェクトの内容を :c:type:`wchar_t` バッファ *w* にコピーします。最大で *size* 個の :c:type:`wchar_t` 文字を (末尾の null 終端文字を除いて) コピーします。コピーした :c:type:`wchar_t` 文字の個数を返します。エラーの時には -1 を返します。 :c:type:`wchar_t` 文字列は null 終端されている場合も、されていない場合もあります。関数の呼び出し側の責任で、アプリケーションの必要に応じて :c:type:`wchar_t` 文字列を null 終端してください。また、結果の :c:type:`wchar_t*` 文字列には文字列の途中にも null 文字が含まれうることにも注意してください。これはほとんどの C 関数で文字列を切り捨ててしまう結果になります。"
+msgstr "Unicode オブジェクトの内容を :c:type:`wchar_t` バッファ *w* にコピーします。\n最大で *size* 個の :c:type:`wchar_t` 文字を (末尾の null 終端文字を除いて) コピーします。\nコピーした :c:type:`wchar_t` 文字の個数を返します。エラーの時には -1 を返します。 :c:type:`wchar_t` 文字列は null 終端されている場合も、されていない場合もあります。\n関数の呼び出し側の責任で、アプリケーションの必要に応じて :c:type:`wchar_t` 文字列を null 終端してください。\nまた、結果の :c:type:`wchar_t*` 文字列には文字列の途中にも null 文字が含まれていることがあり、たいていの C 関数では、そのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:926
 msgid ""
@@ -1146,7 +1146,7 @@ msgid ""
 "*\\*size* is undefined and raises a :exc:`MemoryError`. Note that the "
 "resulting :c:type:`wchar_t` string might contain null characters, which "
 "would cause the string to be truncated when used with most C functions."
-msgstr ""
+msgstr "成功のときは :c:func:`PyMem_Alloc` でメモリ確保されたバッファ (解放するには :c:func:`PyMem_Free` を使います) を返します。\n失敗のときは *NULL* を返し、 *\\*size* は未定義となり、 :exc:`MemoryError` を送出します。\n結果の :c:type:`wchar_t` 文字列には null 文字が含まれていることがあり、たいていの C 関数では、そのような文字列は切り詰められてしまうことに注意してください。"
 
 #: ../../c-api/unicode.rst:943
 msgid "Built-in Codecs"
@@ -1174,7 +1174,7 @@ msgid ""
 "treated as read-only: on some systems, it will be a pointer to a static "
 "string, on others, it will change at run-time (such as when the application "
 "invokes setlocale)."
-msgstr ""
+msgstr "*encoding* を *NULL* にすると、デフォルトエンコーディングである ASCII を使います。\nファイルシステムに関する関数の呼び出しでは、ファイル名に対するエンコーディングとして :c:func:`PyUnicode_FSConverter` を使わねばなりません。\nこれは内部で変数 :c:data:`Py_FileSystemDefaultEncoding` を使用しています。\nこの変数は読み出し専用の変数として扱わねばなりません: この変数は、あるシステムによっては静的な文字列に対するポインタであったり、また別のシステムでは、(アプリケーションが setlocale を呼んだときなどに) 変わったりもします。"
 
 #: ../../c-api/unicode.rst:960
 msgid ""
@@ -1204,7 +1204,7 @@ msgid ""
 "name in the :func:`str` built-in function.  The codec to be used is looked "
 "up using the Python codec registry.  Return *NULL* if an exception was "
 "raised by the codec."
-msgstr ""
+msgstr "*size* バイトのエンコードされた文字列 *s* をデコードして Unicode オブジェクトを生成します。\n*encoding* と *errors* は、組み込み関数 :func:`str` の同名のパラメータと同じ意味を持ちます。\n使用する codec の検索は、 Python の codec レジストリを使って行います。\ncodec が例外を送出した場合には *NULL* を返します。"
 
 #: ../../c-api/unicode.rst:987
 msgid ""
