@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-07 04:23+0000\n"
+"PO-Revision-Date: 2017-01-08 01:57+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1222,7 +1222,7 @@ msgid ""
 "parameters of the same name in the Unicode :meth:`~str.encode` method.  The "
 "codec to be used is looked up using the Python codec registry.  Return "
 "*NULL* if an exception was raised by the codec."
-msgstr ""
+msgstr "*size* で指定されたサイズの :c:type:`Py_UNICODE` バッファ *s* をエンコードした Python の bytes オブジェクトを返します。\n*encoding* および *errors* は Unicode 型の :meth:`~str.encode` メソッドに与える同名のパラメータと同じ意味を持ちます。\n使用する codec の検索は、 Python の codec レジストリを使って行います。\ncodec が例外を送出した場合には *NULL* を返します。"
 
 #: ../../c-api/unicode.rst:1005 ../../c-api/unicode.rst:1256
 msgid ""
@@ -1273,24 +1273,24 @@ msgid ""
 "argument can be *NULL*; in this case no size will be stored.  The returned "
 "buffer always has an extra null byte appended (not included in *size*), "
 "regardless of whether there are any other null code points."
-msgstr ""
+msgstr "Unicode オブジェクトを UTF-8 でエンコードしたものへのポインタを返し、エンコードされた表現形式でのサイズ (バイト単位) を *size* に格納します。\n*size* 引数は *NULL* でも構いません; その場合はサイズは格納されません。\n返されるバッファには、 null コードポイントがあるかどうかに関わらず、常に null バイトが終端に付加されています (これは *size* には勘定されません)。"
 
 #: ../../c-api/unicode.rst:1044
 msgid ""
 "In the case of an error, *NULL* is returned with an exception set and no "
 "*size* is stored."
-msgstr ""
+msgstr "エラーが起きた場合は、 *NULL* を返し、例外を設定し、 *size* には何も格納しません。"
 
 #: ../../c-api/unicode.rst:1047
 msgid ""
 "This caches the UTF-8 representation of the string in the Unicode object, "
 "and subsequent calls will return a pointer to the same buffer.  The caller "
 "is not responsible for deallocating the buffer."
-msgstr ""
+msgstr "この関数は、 Unicode オブジェクトの文字列の UTF-8 表現形式をキャッシュし、それ以降の呼び出しでは同じバッファへのポインタを返します。\n呼び出し側にバッファを解放する責任はありません。"
 
 #: ../../c-api/unicode.rst:1056
 msgid "As :c:func:`PyUnicode_AsUTF8AndSize`, but does not store the size."
-msgstr ""
+msgstr ":c:func:`PyUnicode_AsUTF8AndSize` とほぼ同じですが、サイズを格納しません。"
 
 #: ../../c-api/unicode.rst:1063
 msgid ""
