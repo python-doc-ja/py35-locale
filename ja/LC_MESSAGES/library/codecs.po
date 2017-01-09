@@ -4,6 +4,7 @@
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
+# INADA Naoki <songofacandy@gmail.com>, 2017
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
 # tomo, 2016
@@ -12,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 11:28+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-01-09 04:42+0000\n"
+"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -116,7 +117,7 @@ msgid ""
 "provide the interface defined by the base classes "
 ":class:`IncrementalEncoder` and :class:`IncrementalDecoder`, respectively. "
 "Incremental codecs can maintain state."
-msgstr "漸増的エンコーダとデコーダのクラスまたはファクトリ関数です。これらは、基底クラスの :class:`IncrementalEncoder` と :class:`IncrementalDecoder` が定義するインターフェースをそれぞれ提供する必要があります。漸増的 codecs は、ステート (内部状態) を保持することができます。"
+msgstr "インクリメンタル・エンコーダとデコーダのクラスまたはファクトリ関数です。これらは、基底クラスの :class:`IncrementalEncoder` と :class:`IncrementalDecoder` が定義するインターフェースをそれぞれ提供する必要があります。インクリメンタルな codec は、ステート (内部状態) を保持することができます。"
 
 #: ../../library/codecs.rst:101
 msgid ""
@@ -150,25 +151,25 @@ msgstr "与えられたエンコーディングに対する codec を検索し�
 msgid ""
 "Look up the codec for the given encoding and return its incremental encoder "
 "class or factory function."
-msgstr "与えられたエンコーディングに対する codec を検索し、漸増的エンコーダクラスまたはファクトリ関数を返します。"
+msgstr "与えられたエンコーディングに対する codec を検索し、インクリメンタル・エンコーダクラスまたはファクトリ関数を返します。"
 
 #: ../../library/codecs.rst:128
 msgid ""
 "Raises a :exc:`LookupError` in case the encoding cannot be found or the "
 "codec doesn't support an incremental encoder."
-msgstr "エンコーディングが見つからないか、 codec が漸増的エンコーダをサポートしなければ :exc:`LookupError` を送出します。"
+msgstr "エンコーディングが見つからないか、 codec がインクリメンタル・エンコーダをサポートしなければ :exc:`LookupError` を送出します。"
 
 #: ../../library/codecs.rst:134
 msgid ""
 "Look up the codec for the given encoding and return its incremental decoder "
 "class or factory function."
-msgstr "与えられたエンコーディングに対する codec を検索し、漸増的デコーダクラスまたはファクトリ関数を返します。"
+msgstr "与えられたエンコーディングに対する codec を検索し、インクリメンタル・デコーダクラスまたはファクトリ関数を返します。"
 
 #: ../../library/codecs.rst:137
 msgid ""
 "Raises a :exc:`LookupError` in case the encoding cannot be found or the "
 "codec doesn't support an incremental decoder."
-msgstr "エンコーディングが見つからないか、 codec が漸増的デコーダをサポートしなければ :exc:`LookupError` を送出します。"
+msgstr "エンコーディングが見つからないか、 codec がインクリメンタル・デコーダをサポートしなければ :exc:`LookupError` を送出します。"
 
 #: ../../library/codecs.rst:143
 msgid ""
@@ -277,7 +278,7 @@ msgid ""
 "*iterator*. This function is a :term:`generator`. The *errors* argument (as "
 "well as any other keyword argument) is passed through to the incremental "
 "encoder."
-msgstr "漸増的エンコーダを使って、 *iterator* から供給される入力を反復的にエンコードします。この関数は :term:`generator` です。 *errors* 引数は (他のあらゆるキーワード引数と同様に) 漸増的エンコーダにそのまま引き渡されます。"
+msgstr "インクリメンタル・エンコーダを使って、 *iterator* から供給される入力を反復的にエンコードします。この関数は :term:`generator` です。 *errors* 引数は (他のあらゆるキーワード引数と同様に) インクリメンタル・エンコーダにそのまま引き渡されます。"
 
 #: ../../library/codecs.rst:227
 msgid ""
@@ -292,7 +293,7 @@ msgid ""
 "*iterator*. This function is a :term:`generator`. The *errors* argument (as "
 "well as any other keyword argument) is passed through to the incremental "
 "decoder."
-msgstr "漸増的デコーダを使って、 *iterator* から供給される入力を反復的にデコードします。この関数は :term:`generator` です。 *errors* 引数は (他のあらゆるキーワード引数と同様に) 漸増的デコーダにそのまま引き渡されます。"
+msgstr "インクリメンタル・デコーダを使って、 *iterator* から供給される入力を反復的にデコードします。この関数は :term:`generator` です。 *errors* 引数は (他のあらゆるキーワード引数と同様に) インクリメンタル・デコーダにそのまま引き渡されます。"
 
 #: ../../library/codecs.rst:239
 msgid ""
@@ -648,7 +649,7 @@ msgstr "デコーダは長さが 0 の入力を処理できなければなりま
 
 #: ../../library/codecs.rst:499
 msgid "Incremental Encoding and Decoding"
-msgstr "漸増的なエンコードとデコード"
+msgstr "インクリメンタルなエンコードとデコード"
 
 #: ../../library/codecs.rst:501
 msgid ""
@@ -659,7 +660,7 @@ msgid ""
 ":meth:`~IncrementalEncoder.encode`/:meth:`~IncrementalDecoder.decode` method"
 " of the incremental encoder/decoder. The incremental encoder/decoder keeps "
 "track of the encoding/decoding process during method calls."
-msgstr ":class:`IncrementalEncoder` クラスおよび :class:`IncrementalDecoder` クラスはそれぞれ漸増的エンコーディングおよびデコーディングのための基本的なインタフェースを提供します。エンコーディング／デコーディングは内部状態を持たないエンコーダ／デコーダを一度呼び出すことで行なわれるのではなく、漸増的エンコーダ／デコーダの :meth:`~IncrementalEncoder.encode`/:meth:`~IncrementalDecoder.decode` メソッドを複数回呼び出すことで行なわれます。漸増的エンコーダ／デコーダはメソッド呼び出しの間エンコーディング／デコーディング処理の進行を管理します。"
+msgstr ":class:`IncrementalEncoder` クラスおよび :class:`IncrementalDecoder` クラスはそれぞれインクリメンタル・エンコードおよびデコードのための基本的なインタフェースを提供します。エンコード／デコードは内部状態を持たないエンコーダ／デコーダを一度呼び出すことで行なわれるのではなく、インクリメンタル・エンコーダ／デコーダの :meth:`~IncrementalEncoder.encode`/:meth:`~IncrementalDecoder.decode` メソッドを複数回呼び出すことで行なわれます。インクリメンタル・エンコーダ／デコーダはメソッド呼び出しの間エンコード／デコード処理の進行を管理します。"
 
 #: ../../library/codecs.rst:509
 msgid ""
@@ -679,7 +680,7 @@ msgid ""
 "multiple steps. It defines the following methods which every incremental "
 "encoder must define in order to be compatible with the Python codec "
 "registry."
-msgstr ":class:`IncrementalEncoder` クラスは入力を複数ステップでエンコードするのに使われます。全ての漸増的エンコーダが Python codec レジストリと互換性を持つために定義すべきメソッドとして、このクラスには以下のメソッドが定義されています。"
+msgstr ":class:`IncrementalEncoder` クラスは入力を複数ステップでエンコードするのに使われます。全てのインクリメンタル・エンコーダが Python codec レジストリと互換性を持つために定義すべきメソッドとして、このクラスには以下のメソッドが定義されています。"
 
 #: ../../library/codecs.rst:527
 msgid "Constructor for an :class:`IncrementalEncoder` instance."
@@ -690,7 +691,7 @@ msgid ""
 "All incremental encoders must provide this constructor interface. They are "
 "free to add additional keyword arguments, but only the ones defined here are"
 " used by the Python codec registry."
-msgstr "全ての漸増的エンコーダはこのコンストラクタインタフェースを提供しなければなりません。さらにキーワード引数を付け加えるのは構いませんが、Python codec レジストリで利用されるのはここで定義されているものだけです。"
+msgstr "全てのインクリメンタル・エンコーダはこのコンストラクタインタフェースを提供しなければなりません。さらにキーワード引数を付け加えるのは構いませんが、Python codec レジストリで利用されるのはここで定義されているものだけです。"
 
 #: ../../library/codecs.rst:533
 msgid ""
@@ -746,7 +747,7 @@ msgid ""
 "multiple steps. It defines the following methods which every incremental "
 "decoder must define in order to be compatible with the Python codec "
 "registry."
-msgstr ":class:`IncrementalDecoder` クラスは入力を複数ステップでデコードするのに使われます。全ての漸増的デコーダが Python codec レジストリと互換性を持つために定義すべきメソッドとして、このクラスには以下のメソッドが定義されています。"
+msgstr ":class:`IncrementalDecoder` クラスは入力を複数ステップでデコードするのに使われます。全てのインクリメンタル・デコーダが Python codec レジストリと互換性を持つために定義すべきメソッドとして、このクラスには以下のメソッドが定義されています。"
 
 #: ../../library/codecs.rst:584
 msgid "Constructor for an :class:`IncrementalDecoder` instance."
@@ -757,7 +758,7 @@ msgid ""
 "All incremental decoders must provide this constructor interface. They are "
 "free to add additional keyword arguments, but only the ones defined here are"
 " used by the Python codec registry."
-msgstr "全ての漸増的デコーダはこのコンストラクタインタフェースを提供しなければなりません。さらにキーワード引数を付け加えるのは構いませんが、Python codec レジストリで利用されるのはここで定義されているものだけです。"
+msgstr "全てのインクリメンタル・デコーダはこのコンストラクタインタフェースを提供しなければなりません。さらにキーワード引数を付け加えるのは構いませんが、Python codec レジストリで利用されるのはここで定義されているものだけです。"
 
 #: ../../library/codecs.rst:590
 msgid ""
