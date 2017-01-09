@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-09 01:34+0000\n"
+"PO-Revision-Date: 2017-01-09 10:46+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -711,7 +711,7 @@ msgstr "PEP written by Christopher Barker; implemented by Chris Barker and Tal E
 
 #: ../../whatsnew/3.5.rst:645
 msgid "PEP 486: Make the Python Launcher aware of virtual environments"
-msgstr "PEP 486: Python Launcher が仮想環境を分かるようになる"
+msgstr "PEP 486: Python ランチャーが仮想環境を認識する"
 
 #: ../../whatsnew/3.5.rst:647
 msgid ""
@@ -719,11 +719,11 @@ msgid ""
 "virtual environment. When the default interpreter would be used and the "
 "``VIRTUAL_ENV`` environment variable is set, the interpreter in the virtual "
 "environment will be used."
-msgstr ""
+msgstr ":pep:`486` により、 Windows ランチャー (:pep:`397` を参照してください) が有効になっている仮想環境を認識するようになりました。\nデフォルトのインタプリタを使っていて、 ``VIRTUAL_ENV`` 環境変数が設定されているときは、仮想環境のインタプリタが使われます。"
 
 #: ../../whatsnew/3.5.rst:654
 msgid ":pep:`486` -- Make the Python Launcher aware of virtual environments"
-msgstr ""
+msgstr ":pep:`486` -- Python ランチャーが仮想環境を認識する"
 
 #: ../../whatsnew/3.5.rst:655
 msgid "PEP written and implemented by Paul Moore."
@@ -949,7 +949,7 @@ msgid ""
 " methods to customize the task factory that :meth:`loop.create_task() "
 "<asyncio.BaseEventLoop.create_task>` method uses.  (Contributed by Yury "
 "Selivanov.)"
-msgstr ""
+msgstr ":meth:`loop.create_task() <asyncio.BaseEventLoop.create_task>` メソッドが使うタスクファクトリーをカスタマイズするための新たな :meth:`loop.set_task_factory() <asyncio.AbstractEventLoop.set_task_factory>` メソッドと :meth:`loop.get_task_factory() <asyncio.AbstractEventLoop.get_task_factory>` メソッド。\n (Contributed by Yury Selivanov.)"
 
 #: ../../whatsnew/3.5.rst:813
 msgid ""
@@ -979,7 +979,7 @@ msgstr ":func:`~asyncio.ensure_future` 関数と、 :meth:`loop.run_until_comple
 msgid ""
 "New :func:`~asyncio.run_coroutine_threadsafe` function to submit coroutines "
 "to event loops from other threads. (Contributed by Vincent Michel.)"
-msgstr ""
+msgstr "他のスレッドからコルーチンをイベントループに送信するための新たな :func:`~asyncio.run_coroutine_threadsafe` 関数。\n(Contributed by Vincent Michel.)"
 
 #: ../../whatsnew/3.5.rst:832
 msgid ""
