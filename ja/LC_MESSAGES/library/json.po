@@ -5,12 +5,13 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:44+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-01-21 03:00+0000\n"
+"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +69,7 @@ msgstr ":class:`JSONEncoder` の拡張::"
 
 #: ../../library/json.rst:105
 msgid "Using :mod:`json.tool` from the shell to validate and pretty-print::"
-msgstr ""
+msgstr "シェルから  :mod:`json.tool` を使って妥当性チェックをして見やすく表示::"
 
 #: ../../library/json.rst:114
 msgid "See :ref:`json-commandline` for detailed documentation."
@@ -98,7 +99,7 @@ msgid ""
 "If *skipkeys* is true (default: ``False``), then dict keys that are not of a"
 " basic type (:class:`str`, :class:`int`, :class:`float`, :class:`bool`, "
 "``None``) will be skipped instead of raising a :exc:`TypeError`."
-msgstr ""
+msgstr "*skipkeys* が true (デフォルトは ``False``) ならば、基本型 (:class:`str`, :class:`int`, :class:`float`, :class:`bool`, ``None``) 以外の辞書のキーは :exc:`TypeError` を送出せずに読み飛ばされます。"
 
 #: ../../library/json.rst:142
 msgid ""
@@ -112,14 +113,14 @@ msgid ""
 "If *ensure_ascii* is true (the default), the output is guaranteed to have "
 "all incoming non-ASCII characters escaped.  If *ensure_ascii* is false, "
 "these characters will be output as-is."
-msgstr ""
+msgstr "*ensure_ascii* が (デフォルト値の) true の場合、出力では入力された全ての非 ASCII 文字はエスケープされていることが保証されています。*ensure_ascii* が false の場合、これらの文字はそのまま出力されます。"
 
 #: ../../library/json.rst:150
 msgid ""
 "If *check_circular* is false (default: ``True``), then the circular "
 "reference check for container types will be skipped and a circular reference"
 " will result in an :exc:`OverflowError` (or worse)."
-msgstr ""
+msgstr "*check_circular* が false (デフォルトは ``True``) ならば、コンテナ型の循環参照チェックが省かれ、循環参照があれば :exc:`OverflowError` (またはもっと悪い結果) に終わります。"
 
 #: ../../library/json.rst:154
 msgid ""
@@ -168,7 +169,7 @@ msgstr ""
 msgid ""
 "If *sort_keys* is true (default: ``False``), then the output of dictionaries"
 " will be sorted by key."
-msgstr ""
+msgstr "*sort_keys* が true (デフォルトでは ``False`` です)であれば、辞書の出力がキーでソートされます。"
 
 #: ../../library/json.rst:186
 msgid ""
@@ -400,7 +401,7 @@ msgid ""
 " be allowed inside strings.  Control characters in this context are those "
 "with character codes in the 0--31 range, including ``'\\t'`` (tab), "
 "``'\\n'``, ``'\\r'`` and ``'\\0'``."
-msgstr ""
+msgstr "*strict* が false (デフォルトは ``True``) の場合、制御文字を文字列に含めることができます。ここで言う制御文字とは、``'\\t'`` (タブ)、``'\\n'``、``'\\r'``、``'\\0'`` を含む 0-31 の範囲のコードを持つ文字のことです。"
 
 #: ../../library/json.rst:349
 msgid ""
@@ -465,7 +466,7 @@ msgid ""
 "attempt encoding of keys that are not :class:`str`, :class:`int`, "
 ":class:`float` or ``None``.  If *skipkeys* is true, such items are simply "
 "skipped."
-msgstr ""
+msgstr "*skipkeys* が false (デフォルト) ならば、:class:`str`, :class:`int`, :class:`float`, ``None`` 以外のキーをエンコードする試みは :exc:`TypeError` に終わります。 *skipkeys* が true の場合は、それらのアイテムは単に読み飛ばされます。"
 
 #: ../../library/json.rst:408
 msgid ""
@@ -473,7 +474,7 @@ msgid ""
 "encoded objects will be checked for circular references during encoding to "
 "prevent an infinite recursion (which would cause an :exc:`OverflowError`). "
 "Otherwise, no such check takes place."
-msgstr ""
+msgstr "*check_circular* が true (デフォルト) ならば、リスト、辞書および自作でエンコードしたオブジェクトは循環参照がないかエンコード中にチェックされ、無限再帰 (これは :exc:`OverflowError` を引き起こします) を防止します。 ``True`` でない場合は、そういったチェックは施されません。"
 
 #: ../../library/json.rst:413
 msgid ""
@@ -482,14 +483,14 @@ msgid ""
 "specification compliant, but is consistent with most JavaScript based "
 "encoders and decoders.  Otherwise, it will be a :exc:`ValueError` to encode "
 "such floats."
-msgstr ""
+msgstr "*allow_nan* が true (デフォルト) ならば、 ``NaN``, ``Infinity``, ``-Infinity`` はそのままエンコードされます。この振る舞いは JSON 仕様に従っていませんが、大半の JavaScript ベースのエンコーダ、デコーダと矛盾しません。 ``True`` でない場合は、そのような浮動小数点数をエンコードすると :exc:`ValueError` が送出されます。"
 
 #: ../../library/json.rst:419
 msgid ""
 "If *sort_keys* is true (default: ``False``), then the output of dictionaries"
 " will be sorted by key; this is useful for regression tests to ensure that "
 "JSON serializations can be compared on a day-to-day basis."
-msgstr ""
+msgstr "*sort_keys* が true (デフォルトは ``False``) ならば、辞書の出力がキーでソートされます。これは JSON の直列化がいつでも比較できるようになるので回帰試験の際に便利です。"
 
 #: ../../library/json.rst:449
 msgid ""
