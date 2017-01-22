@@ -5,13 +5,13 @@
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-14 02:58+0000\n"
+"PO-Revision-Date: 2017-01-22 13:51+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -602,13 +602,13 @@ msgid ""
 "value by setting it at the class level in a :class:`Request` subclass, or by"
 " passing a value in to the :class:`Request` constructor via the *method* "
 "argument."
-msgstr ""
+msgstr "HTTP リクエストで使うメソッドです。\nデフォルト値は :const:`None` で、このときは使うメソッドを :meth:`~Request.get_method` が通常の方法で決定するということになります。\nこの値を設定する (従って :meth:`~Request.get_method` のデフォルトの決定を上書きする) 方法は、 :class:`Request` サブクラスでのクラスレベルの設定処理でデフォルト値を提供するか、 :class:`Request` のコンストラクタの *method* 引数へ値を渡すかです。"
 
 #: ../../library/urllib.request.rst:502
 msgid ""
 "A default value can now be set in subclasses; previously it could only be "
 "set via the constructor argument."
-msgstr ""
+msgstr "サブクラスでデフォルト値が設定できるようになりました; 以前はコンストラクタ引数からしか設定できませんでした。"
 
 #: ../../library/urllib.request.rst:509
 msgid ""
@@ -631,23 +631,23 @@ msgid ""
 "collides. Currently, this is no loss of HTTP functionality, since all "
 "headers which have meaning when used more than once have a (header-specific)"
 " way of gaining the same functionality using only one header."
-msgstr "リクエストに新たなヘッダを追加します。ヘッダは HTTP ハンドラ以外のハンドラでは無視されます。HTTP ハンドラでは、引数はサーバに送信される ヘッダのリストに追加されます。同じ名前を持つヘッダを 2 つ以上持つことはできず、 *key* の衝突が生じた場合、後で追加したヘッダが前に 追加したヘッダを上書きします。現時点では、この機能は HTTP の機能を損ねることはありません。というのは、複数回呼び出したときに意味を 持つようなヘッダには、どれもただ一つのヘッダを使って同じ機能を果たすための (ヘッダ特有の) 方法があるからです。"
+msgstr "リクエストに新たなヘッダーを追加します。ヘッダーは HTTP ハンドラ以外のハンドラでは無視されます。HTTP ハンドラでは、引数はサーバに送信される ヘッダーのリストに追加されます。同じ名前を持つヘッダを 2 つ以上持つことはできず、 *key* の衝突が生じた場合、後で追加したヘッダーが前に 追加したヘッダーを上書きします。現時点では、この機能は HTTP の機能を損ねることはありません。というのは、複数回呼び出したときに意味を 持つようなヘッダーには、どれもただ一つのヘッダーを使って同じ機能を果たすための (ヘッダー特有の) 方法があるからです。"
 
 #: ../../library/urllib.request.rst:531
 msgid "Add a header that will not be added to a redirected request."
-msgstr "リダイレクトされたリクエストには追加されないヘッダを追加します。"
+msgstr "リダイレクトされたリクエストには追加されないヘッダーを追加します。"
 
 #: ../../library/urllib.request.rst:536
 msgid ""
 "Return whether the instance has the named header (checks both regular and "
 "unredirected)."
-msgstr "インスタンスが名前つきヘッダであるかどうかを (通常のヘッダと非リダイレクトヘッダの両方を調べて) 返します。"
+msgstr "インスタンスが名前つきヘッダーであるかどうかを (通常のヘッダーと非リダイレクトヘッダの両方を調べて) 返します。"
 
 #: ../../library/urllib.request.rst:542
 msgid ""
 "Remove named header from the request instance (both from regular and "
 "unredirected headers)."
-msgstr ""
+msgstr "リクエストインスタンス (の通常のヘッダーと非リダイレクトヘッダーの両方) から名前つきヘッダーを除去します。"
 
 #: ../../library/urllib.request.rst:550
 msgid "Return the URL given in the constructor."
@@ -668,12 +668,12 @@ msgstr "リクエストがプロキシサーバを経由するように準備し
 msgid ""
 "Return the value of the given header. If the header is not present, return "
 "the default value."
-msgstr "指定されたヘッダの値を返します。ヘッダがない場合は、 *default* の値を返します。"
+msgstr "指定されたヘッダーの値を返します。ヘッダーがない場合は、 *default* の値を返します。"
 
 #: ../../library/urllib.request.rst:572
 msgid ""
 "Return a list of tuples (header_name, header_value) of the Request headers."
-msgstr "リクエストヘッダの値を、タプル (header_name, header_value) のリストで返します。"
+msgstr "リクエストヘッダーの値を、タプル (header_name, header_value) のリストで返します。"
 
 #: ../../library/urllib.request.rst:574
 msgid ""
@@ -900,7 +900,7 @@ msgid ""
 "with the HTTP error body, *code* will be the three-digit code of the error, "
 "*msg* will be the user-visible explanation of the code and *hdrs* will be a "
 "mapping object with the headers of the error."
-msgstr "*req* は :class:`Request` オブジェクトで、 *fp* は HTTP エラー本体を読み出せるようなファイル類似のオブジェクトに なります。 *code* は 3 桁の 10 進数からなるエラーコードで、 *msg* ユーザ向けのエラーコード解説です。 *hdrs* は エラー応答のヘッダをマップしたオブジェクトです。"
+msgstr "*req* は :class:`Request` オブジェクトで、 *fp* は HTTP エラー本体を読み出せるようなファイル類似のオブジェクトに なります。 *code* は 3 桁の 10 進数からなるエラーコードで、 *msg* ユーザ向けのエラーコード解説です。 *hdrs* は エラー応答のヘッダーをマップしたオブジェクトです。"
 
 #: ../../library/urllib.request.rst:742
 msgid ""
@@ -1115,7 +1115,7 @@ msgid ""
 "information about the realm is included in the request, *host* specifies the"
 " URL and path to authenticate for, *req* should be the (failed) "
 ":class:`Request` object, and *headers* should be the error headers."
-msgstr "ユーザ名／パスワードを取得し、再度サーバへのリクエストを試みることで、サーバからの認証リクエストを処理します。 *authreq* はリクエストにおいて レルムに関する情報が含まれているヘッダの名前、 *host* は認証を行う対象の URL とパスを指定します、 *req* は (失敗した) :class:`Request` オブジェクト、そして *headers* はエラーヘッダでなくてはなりません。"
+msgstr "ユーザ名／パスワードを取得し、再度サーバへのリクエストを試みることで、サーバからの認証リクエストを処理します。 *authreq* はリクエストにおいて レルムに関する情報が含まれているヘッダーの名前、 *host* は認証を行う対象の URL とパスを指定します、 *req* は (失敗した) :class:`Request` オブジェクト、そして *headers* はエラーヘッダーでなくてはなりません。"
 
 #: ../../library/urllib.request.rst:943
 msgid ""
@@ -1148,7 +1148,7 @@ msgid ""
 "realm is included in the request, *host* should be the host to authenticate "
 "to, *req* should be the (failed) :class:`Request` object, and *headers* "
 "should be the error headers."
-msgstr "*authreq* はリクエストにおいてレルムに関する情報が含まれているヘッダの名前、 *host* は認証を行う対象のホスト名、 *req* は  (失敗した) :class:`Request` オブジェクト、そして *headers* はエラーヘッダでなくてはなりません。"
+msgstr "*authreq* はリクエストにおいてレルムに関する情報が含まれているヘッダーの名前、 *host* は認証を行う対象のホスト名、 *req* は  (失敗した) :class:`Request` オブジェクト、そして *headers* はエラーヘッダーでなくてはなりません。"
 
 #: ../../library/urllib.request.rst:988
 msgid "HTTPDigestAuthHandler Objects"
@@ -1350,7 +1350,7 @@ msgstr "この例では、デフォルトの :class:`ProxyHandler` を置き換�
 
 #: ../../library/urllib.request.rst:1238
 msgid "Adding HTTP headers:"
-msgstr "以下は HTTP ヘッダを追加する例です:"
+msgstr "以下は HTTP ヘッダーを追加する例です:"
 
 #: ../../library/urllib.request.rst:1240
 msgid "Use the *headers* argument to the :class:`Request` constructor, or::"
@@ -1360,7 +1360,7 @@ msgstr "*headers* 引数を使って :class:`Request` コンストラクタを�
 msgid ""
 ":class:`OpenerDirector` automatically adds a :mailheader:`User-Agent` header"
 " to every :class:`Request`.  To change this::"
-msgstr ":class:`OpenerDirector` は全ての :class:`Request` に :mailheader:`User-Agent` ヘッダを自動的に追加します。これを変更するには以下のようにします::"
+msgstr ":class:`OpenerDirector` は全ての :class:`Request` に :mailheader:`User-Agent` ヘッダーを自動的に追加します。これを変更するには以下のようにします::"
 
 #: ../../library/urllib.request.rst:1257
 msgid ""
@@ -1368,7 +1368,7 @@ msgid ""
 ":mailheader:`Content-Type` and :mailheader:`Host`) are added when the "
 ":class:`Request` is passed to :func:`urlopen` (or "
 ":meth:`OpenerDirector.open`)."
-msgstr "また、 :class:`Request` が :func:`urlopen` (や :meth:`OpenerDirector.open`)に渡される際には、いくつかの標準ヘッダ (:mailheader:`Content-Length`, :mailheader:`Content-Type` および :mailheader:`Host`) も追加されることを忘れないでください。"
+msgstr "また、 :class:`Request` が :func:`urlopen` (や :meth:`OpenerDirector.open`)に渡される際には、いくつかの標準ヘッダー (:mailheader:`Content-Length`, :mailheader:`Content-Type` および :mailheader:`Host`) も追加されることを忘れないでください。"
 
 #: ../../library/urllib.request.rst:1264
 msgid ""
@@ -1447,7 +1447,7 @@ msgid ""
 "that the amount of data available  was less than the expected amount (which "
 "is the size reported by a  *Content-Length* header). This can occur, for "
 "example, when the  download is interrupted."
-msgstr ":func:`urlretrieve` は、予想 (これは *Content-Length* ヘッダにより通知されるサイズです) よりも取得できるデータ量が少ないことを検知した場合、 :exc:`ContentTooShortError` を発生します。これは、例えば、ダウンロードが中断された場合などに発生します。"
+msgstr ":func:`urlretrieve` は、予想 (これは *Content-Length* ヘッダーにより通知されるサイズです) よりも取得できるデータ量が少ないことを検知した場合、 :exc:`ContentTooShortError` を発生します。これは、例えば、ダウンロードが中断された場合などに発生します。"
 
 #: ../../library/urllib.request.rst:1348
 msgid ""
@@ -1490,7 +1490,7 @@ msgid ""
 "subclassing :class:`URLopener` or :class:`FancyURLopener` and setting the "
 "class attribute :attr:`version` to an appropriate string value in the "
 "subclass definition."
-msgstr "デフォルトでは、 :class:`URLopener` クラスは :mailheader:`User-Agent` ヘッダとして ``urllib/VVV`` を送信します。ここで *VVV* は :mod:`urllib` のバージョン番号です。アプリケーションで独自の :mailheader:`User-Agent` ヘッダを送信したい場合は、 :class:`URLopener` かまたは :class:`FancyURLopener` のサブクラスを作成し、サブクラス定義においてクラス属性 :attr:`version` を適切な文字列値に設定することで行うことができます。"
+msgstr "デフォルトでは、 :class:`URLopener` クラスは :mailheader:`User-Agent` ヘッダーとして ``urllib/VVV`` を送信します。ここで *VVV* は :mod:`urllib` のバージョン番号です。アプリケーションで独自の :mailheader:`User-Agent` ヘッダーを送信したい場合は、 :class:`URLopener` かまたは :class:`FancyURLopener` のサブクラスを作成し、サブクラス定義においてクラス属性 :attr:`version` を適切な文字列値に設定することで行うことができます。"
 
 #: ../../library/urllib.request.rst:1378
 msgid ""
@@ -1571,7 +1571,7 @@ msgid ""
 "required), basic HTTP authentication is performed.  For the 30x response "
 "codes, recursion is bounded by the value of the *maxtries* attribute, which "
 "defaults to 10."
-msgstr ":class:`FancyURLopener` は :class:`URLopener` のサブクラスで、以下の HTTP レスポンスコード: 301、302、303、 307、および 401 を取り扱う機能を提供します。レスポンスコード 30x に対しては、 :mailheader:`Location` ヘッダを使って実際の URL を取得します。レスポンスコード 401 (認証が要求されていることを示す) に対しては、BASIC認証 (basic HTTP authintication) が行われます。レスポンスコード 30x に対しては、最大で *maxtries* 属性に指定された数だけ再帰呼び出しを行うようになっています。この値はデフォルトで 10 です。"
+msgstr ":class:`FancyURLopener` は :class:`URLopener` のサブクラスで、以下の HTTP レスポンスコード: 301、302、303、 307、および 401 を取り扱う機能を提供します。レスポンスコード 30x に対しては、 :mailheader:`Location` ヘッダーを使って実際の URL を取得します。レスポンスコード 401 (認証が要求されていることを示す) に対しては、BASIC認証 (basic HTTP authintication) が行われます。レスポンスコード 30x に対しては、最大で *maxtries* 属性に指定された数だけ再帰呼び出しを行うようになっています。この値はデフォルトで 10 です。"
 
 #: ../../library/urllib.request.rst:1446
 msgid ""
