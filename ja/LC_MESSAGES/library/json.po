@@ -6,12 +6,13 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Osamu NAKAMURA <osamu0329nakamura@gmail.com>, 2017
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-21 03:00+0000\n"
-"Last-Translator: Osamu NAKAMURA <osamu0329nakamura@gmail.com>\n"
+"PO-Revision-Date: 2017-01-22 11:23+0000\n"
+"Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -129,7 +130,7 @@ msgid ""
 "``inf``, ``-inf``) in strict compliance of the JSON specification. If "
 "*allow_nan* is true, their JavaScript equivalents (``NaN``, ``Infinity``, "
 "``-Infinity``) will be used."
-msgstr ""
+msgstr "*allow_nan* が偽 (デフォルトは ``True``) の場合、許容範囲外の :class:`float` 値 (``nan``, ``inf``, ``-inf``) を JSON 仕様を厳格に守って 直列化すると、:exc:`ValueError` になります。\n*allow_non* が真の場合は、 JavaScript での等価なもの (``NaN``, ``Infinity``, ``-Infinity``) が使われます。"
 
 #: ../../library/json.rst:160 ../../library/json.rst:423
 msgid ""
@@ -163,7 +164,7 @@ msgid ""
 "that can't otherwise be serialized.  It should return a JSON encodable "
 "version of the object or raise a :exc:`TypeError`.  If not specified, "
 ":exc:`TypeError` is raised."
-msgstr ""
+msgstr "*default* を指定する場合は関数を指定して、この関数はそれ以外では直列化できないオブジェクトに対して呼び出されます。\nその関数は、オブジェクトを JSON でエンコードできるバージョンにして返すか、さもなければ :exc:`TypeError` を送出しなければなりません。\n指定しない場合は、 :exc:`TypeError` が送出されます。"
 
 #: ../../library/json.rst:183
 msgid ""
@@ -785,4 +786,4 @@ msgid ""
 "editor.org/errata_search.php?rfc=7159>`_, JSON permits literal U+2028 (LINE "
 "SEPARATOR) and U+2029 (PARAGRAPH SEPARATOR) characters in strings, whereas "
 "JavaScript (as of ECMAScript Edition 5.1) does not."
-msgstr ""
+msgstr "`RFC 7159 正誤表 <https://www.rfc-editor.org/errata_search.php?rfc=7159>`_ で述べられている通り、JSON は (ECMAScript Edition 5.1 の) JavaScript とは逆に、 U+2028 (LINE SEPARATOR) と U+2029 (PARAGRAPH SEPARATOR) が文字列内に含まれることを許容しています。"
