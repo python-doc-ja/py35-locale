@@ -5,11 +5,12 @@
 # Translators:
 # E. Kawashima, 2016
 # Shun Sakurai, 2016
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
+"PO-Revision-Date: 2017-01-26 16:49+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +57,7 @@ msgid ""
 " GNU Readline manual for information about the format and allowable "
 "constructs of that file, and the capabilities of the Readline library in "
 "general."
-msgstr ""
+msgstr "readline のキーバインディングは初期化ファイルで設定できます。\nこのファイルは、たいていはホームディレクトリに ``.inputrc`` という名前で置いてあります。\nGNU Readline マニュアルの  `Readline Init File <https://cnswww.cns.cwru.edu/php/chet/readline/rluserman.html#SEC9>`_ を参照して、そのファイルの形式や可能な構成、 Readline ライブラリ全体の機能を知ってください。"
 
 #: ../../library/readline.rst:41
 msgid "Init file"
