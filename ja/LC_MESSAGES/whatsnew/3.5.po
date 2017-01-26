@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-09 10:46+0000\n"
+"PO-Revision-Date: 2017-01-26 15:35+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1005,21 +1005,21 @@ msgid ""
 "implementations, such as `uvloop <https://github.com/MagicStack/uvloop>`_, "
 "to provide a faster :class:`asyncio.Future` implementation. (Contributed by "
 "Yury Selivanov.)"
-msgstr ""
+msgstr "新しい :meth:`loop.create_future() <asyncio.BaseEventLoop.create_future>` メソッドで Future オブジェクトが作成できるようになりました。\nこれにより `uvloop <https://github.com/MagicStack/uvloop>`_ のような、別のイベントループが実装できるようになり、より高速な :class:`asyncio.Future` 実装が提供できます。\n(Contributed by Yury Selivanov.)"
 
 #: ../../whatsnew/3.5.rst:849
 msgid ""
 "New :meth:`loop.get_exception_handler() "
 "<asyncio.BaseEventLoop.get_exception_handler>` method to get the current "
 "exception handler. (Contributed by Yury Selivanov.)"
-msgstr ""
+msgstr "新しい :meth:`loop.get_exception_handler() <asyncio.BaseEventLoop.get_exception_handler>` メソッドで、現在の例外ハンドラが取得できるようになりました。\n(Contributed by Yury Selivanov.)"
 
 #: ../../whatsnew/3.5.rst:853
 msgid ""
 "New :meth:`StreamReader.readuntil() <asyncio.StreamReader.readuntil>` method"
 " to read data from the stream until a separator bytes sequence appears. "
 "(Contributed by Mark Korenberg.)"
-msgstr ""
+msgstr "新しい :meth:`StreamReader.readuntil() <asyncio.StreamReader.readuntil>` メソッドで、区切りとなるバイトの並びが出てくるまでストリームからデータを読み取れるようになりました。\n(Contributed by Mark Korenberg.)"
 
 #: ../../whatsnew/3.5.rst:858
 msgid ""
