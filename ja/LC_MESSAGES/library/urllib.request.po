@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-23 00:20+0000\n"
+"PO-Revision-Date: 2017-01-26 00:30+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1079,7 +1079,7 @@ msgid ""
 "This password manager extends :class:`HTTPPasswordMgrWithDefaultRealm` to "
 "support tracking URIs for which authentication credentials should always be "
 "sent."
-msgstr ""
+msgstr "このパスワードマネージャは :class:`HTTPPasswordMgrWithDefaultRealm` を継承して、認証の証明書を常に送らないといけない URI を追跡する機能をサポートしています。"
 
 #: ../../library/urllib.request.rst:905
 msgid ""
@@ -1087,7 +1087,7 @@ msgid ""
 ":meth:`HTTPPasswordMgr.add_password`.  *is_authenticated* sets the initial "
 "value of the ``is_authenticated`` flag for the given URI or list of URIs. If"
 " *is_authenticated* is specified as ``True``, *realm* is ignored."
-msgstr ""
+msgstr "*realm*, *uri*, *user*, *passwd* は :meth:`HTTPPasswordMgr.add_password` のものと同じです。\n*is_authenticated* は、与えられた URI や URI のリストの ``is_authenticated`` フラグの初期値に設定されます。\n*is_authenticated* に ``True`` を指定した場合は、 *realm* は無視されます。"
 
 #: ../../library/urllib.request.rst:913
 msgid "Same as for :class:`HTTPPasswordMgrWithDefaultRealm` objects"
@@ -1096,13 +1096,13 @@ msgstr ":class:`HTTPPasswordMgrWithDefaultRealm` オブジェクトに対する�
 #: ../../library/urllib.request.rst:919
 msgid ""
 "Update the ``is_authenticated`` flag for the given *uri* or list of URIs."
-msgstr ""
+msgstr "与えられた *url* や URI のリストの ``is_authenticated`` フラグを更新します。"
 
 #: ../../library/urllib.request.rst:925
 msgid ""
 "Returns the current state of the ``is_authenticated`` flag for the given "
 "URI."
-msgstr ""
+msgstr "与えられた URI の ``is_authenticated`` フラグの現在の状態を返します。"
 
 #: ../../library/urllib.request.rst:932
 msgid "AbstractBasicAuthHandler Objects"
@@ -1277,7 +1277,7 @@ msgstr "使用例"
 msgid ""
 "In addition to the examples below, more examples are given in :ref:`urllib-"
 "howto`."
-msgstr ""
+msgstr "以下の例の他に :ref:`urllib-howto` に多くの例があります。"
 
 #: ../../library/urllib.request.rst:1136
 msgid ""
