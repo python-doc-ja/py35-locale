@@ -1,34 +1,28 @@
 dist: trusty
 sudo: false
 language: python
-python: "3.6"
-
-env:
-  global:
-    # GH_TOKEN
-    - secure: "bFB9oCKoDCeel6Uc+q+WXXzGPJ3Ftg4XkbU+zCuz4KXvzNoL5CKhG9oQ2ly0kJK4e0e1e9J53QlckkbyeS68s305J7zGRip5jAl/AJ6oAKSWv/3mnxnQqJyOaTcPRCyvBwvhOOpADEvhDBzDVdPYnMShoMHUZhCcf2FNvyunX7RZbsl/4ZKF2MHPSvErT5wkrsS7b9ZQ89yMB0WpJ0LraCVz+fgNtTfZYbBA0fRg2R3QU7A50yzS/0RwUhzvrPZavK4+yHiJoQ/bgDNVWbalcdCw/sFQWGDfhQfLlAUkNEVT9zGKMW279kOtiPDeC6Yg3+2WCH04ILZc4KvTYuNsU95BMycRwpoZ+3DCXCaK2jGCD4o5LtfoeCzCsKFIdBdux7IVgTfZyVd9+kAlZwkRaVdkkk8vLZvoolwEtxoWQmD7lsE9oEj2C5Tu406iVqxLXeV5/z3poCPGP4xeKcb8O8QOTgnPRdWupLaluKCl4hKvnk8iO0H9gbQXnFdBxu0RysgZEwUYps9D+Glm16asusOeCJc51gzL6AKn7tcJxlUq5GAF3hN0MGNb7YiD76RGvVNjVjIj44Q7KfpxmntLLqw8Lcb5NCzHUkwk4mREmjyFg54vUrnah0Z0GaRDPWOlmxIUENPSDUOHdbzihtoz7bhEp3RmVcy6fZCfwfXdLTg="
-
-
+python: '3.6'
 install:
-  - pip install sphinx
-  - cd ..
-  - pwd
-  - ls -la
-  - git clone https://github.com/python-doc-ja/py35.git py35
-  - git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
-  - cd cpython/Doc
-  - ln -s ../../py35-locale locale
-  - ls -lF locale
-
+- pip install sphinx
+- cd ..
+- pwd
+- ls -la
+- git clone https://github.com/python-doc-ja/py35.git py35
+- git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git
+  cpython
+- cd cpython/Doc
+- ln -s ../../py35-locale locale
+- ls -lF locale
+- sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1
+  -E -d build/doctrees . ../../py35
 script:
-  - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
-  - cd ../../py35
-  - git config user.email "travis-build-bot@example.com"
-  - git config user.name "Autobuild bot on Travis-CI"
-  - git pull origin master
-  - git add .
-  - git commit -a -m "update html"
-  - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master > /dev/null 2>&1
+- cd ../../py35
+- git config user.email "travis-build-bot@example.com"
+- git config user.name "Autobuild bot on Travis-CI"
+- git pull origin master
+- git add .
+- git commit -a -m "update html"
+- git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
 
-
-# vim: set sw=2 :
+GH_TOKEN:
+  secure: Y3ZVFY9JBG9a92/TuD+BGnyz6ygdmR/NTXoXXhw5i6oMlkMeev7Ja11Fqc4rQo8gY7g9ghoYiQwN7gaAimnW+RWx01XBQOMc56gCLfKlr8wTqsM+9R3OErALq7NFbOpC8ZCOiVGJV2JXFxJ3zaBvVxjoNZFQSVbhEmx7CSDJJu9R9um/d363rZsdQbcEYrVHdiHUvSjRNRbSZud/XFlYY7AwEw2hoehX2T31Etzw2A3k+CPNKBYkoX1rRHijUfzlx+rxYaqeiHUYhF9frta00/9xEXi1A8hox5Co+HG3eUTMIaOqCH0kvD+jg+ss8Ms/MvJ1vvKZIrRtpvGhE5xH8TxgOj+nO0Ox8dE8TaUtXifDDttlYavWkI0iIlyJ4VIt1lldTCc5DV0V27nvZUyMbSUE8Bxxe2nn61u10HokCSuaZ/eHMUJv5zpCisrl01mzIj9QQ1tQlAzlM2lBeXh5D0u6IBLZBViAV7uKWludMDx+cQRy7cTUNsuSfCWHqG/XQHZlpq5Y6L15Xfl/c9E4b85ooJRLXyOiAD53Km2v8SKzRF4uyHBLnPsev5cwvC1ib1l44aW2G/IaF7fi4rlJf6csGkvT5YJTI7UYH8j3JeF4c8GeAXMFMalsQ/kvolY9EgoO1bTxFiSzEZjCccBlMDFBA46SMFmq52d8Mv6z1e0=
