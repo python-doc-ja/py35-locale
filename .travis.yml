@@ -5,12 +5,13 @@ python: "3.6"
 
 install:
   - pip install sphinx
-
-script:
   - git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
   - cd cpython/Doc
   - ln -s ../.. locale
-  - ls locale
-  - make html
+  - ls -lF locale
+
+script:
+  - sphinx-build -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . build/html | cat
+
 
 # vim: set sw=2 :
