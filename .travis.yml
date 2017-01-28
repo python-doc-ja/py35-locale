@@ -11,7 +11,7 @@ install:
   - ls -lF locale
 
 script:
-  - sphinx-build -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . build/html | cat
+  - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . build/html | cat
 
 
 # vim: set sw=2 :
