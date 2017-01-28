@@ -5,9 +5,12 @@ python: "3.6"
 
 install:
   - pip install sphinx
+  - cd ..
+  - pwd
+  - ls -la
   - git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
   - cd cpython/Doc
-  - ln -s ../.. locale
+  - ln -s ../../py35-locale locale
   - ls -lF locale
 
 script:
