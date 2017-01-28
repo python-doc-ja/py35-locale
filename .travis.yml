@@ -1,0 +1,14 @@
+dist: trusty
+sudo: false
+language: python
+python: "3.6"
+
+install:
+  - pip install sphinx
+
+script:
+  - git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
+  - cd cpython/Doc
+  - make html
+
+# vim: set sw=2 :
