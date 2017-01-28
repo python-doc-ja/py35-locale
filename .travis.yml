@@ -3,11 +3,18 @@ sudo: false
 language: python
 python: "3.6"
 
+env:
+  global:
+    # GH_TOKEN
+    - secure: "bFB9oCKoDCeel6Uc+q+WXXzGPJ3Ftg4XkbU+zCuz4KXvzNoL5CKhG9oQ2ly0kJK4e0e1e9J53QlckkbyeS68s305J7zGRip5jAl/AJ6oAKSWv/3mnxnQqJyOaTcPRCyvBwvhOOpADEvhDBzDVdPYnMShoMHUZhCcf2FNvyunX7RZbsl/4ZKF2MHPSvErT5wkrsS7b9ZQ89yMB0WpJ0LraCVz+fgNtTfZYbBA0fRg2R3QU7A50yzS/0RwUhzvrPZavK4+yHiJoQ/bgDNVWbalcdCw/sFQWGDfhQfLlAUkNEVT9zGKMW279kOtiPDeC6Yg3+2WCH04ILZc4KvTYuNsU95BMycRwpoZ+3DCXCaK2jGCD4o5LtfoeCzCsKFIdBdux7IVgTfZyVd9+kAlZwkRaVdkkk8vLZvoolwEtxoWQmD7lsE9oEj2C5Tu406iVqxLXeV5/z3poCPGP4xeKcb8O8QOTgnPRdWupLaluKCl4hKvnk8iO0H9gbQXnFdBxu0RysgZEwUYps9D+Glm16asusOeCJc51gzL6AKn7tcJxlUq5GAF3hN0MGNb7YiD76RGvVNjVjIj44Q7KfpxmntLLqw8Lcb5NCzHUkwk4mREmjyFg54vUrnah0Z0GaRDPWOlmxIUENPSDUOHdbzihtoz7bhEp3RmVcy6fZCfwfXdLTg="
+
+
 install:
   - pip install sphinx
   - cd ..
   - pwd
   - ls -la
+  - git clone https://github.com/python-doc-ja/py35.git py35
   - git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
   - cd cpython/Doc
   - ln -s ../../py35-locale locale
@@ -15,6 +22,10 @@ install:
 
 script:
   - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . build/html | cat
+
+after_success:
+  - pwd
+  - ls
 
 
 # vim: set sw=2 :
