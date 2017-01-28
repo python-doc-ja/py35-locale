@@ -21,11 +21,14 @@ install:
   - ls -lF locale
 
 script:
-  - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . build/html | cat
-
-after_success:
-  - pwd
-  - ls
+  - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
+  - cd ../../py35
+  - git config user.email "travis-build-bot@example.com"
+  - git config user.name "Autobuild bot on Travis-CI"
+  - git pull origin master
+  - git add .
+  - git commit -a -m "update html"
+  - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master > /dev/null 2>&1
 
 
 # vim: set sw=2 :
