@@ -3,18 +3,16 @@ sudo: false
 language: python
 python: '3.6'
 install:
-- pip install sphinx
+- pip install sphinx==1.4.9
 - cd ..
 - pwd
 - ls -la
 - git clone https://github.com/python-doc-ja/py35.git py35
-- git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git
-  cpython
+- git clone --depth=5 -b intl-3.5 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
 - cd cpython/Doc
 - ln -s ../../py35-locale locale
 - ls -lF locale
-- sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1
-  -E -d build/doctrees . ../../py35
+- sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
 script:
 - cd ../../py35
 - git config user.email "travis-build-bot@example.com"
