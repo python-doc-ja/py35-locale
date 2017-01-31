@@ -4,12 +4,12 @@
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# tomo, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-16 01:50+0000\n"
+"PO-Revision-Date: 2017-01-29 08:51+0000\n"
 "Last-Translator: tomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgid ""
 "code using coroutines, multiplexing I/O access over sockets and other "
 "resources, running network clients and servers, and other related "
 "primitives. Here is a more detailed list of the package contents:"
-msgstr "このモジュールは、コルーチン、ソケットあるいはその他リソースを使用した多重 I/O、ネットワーククライアントあるいはサーバーの実行、およびその他関連するプリミティブを使用した、シングルスレッド処理を並列で実行するコードを作成するためのインフラストラクチャを提供します。ここではパッケージ内容の詳細ページの一覧を示しています:"
+msgstr "このモジュールは、コルーチン、ソケットあるいはその他リソースを使用した多重 I/O、ネットワーククライアントあるいはサーバーの実行、およびその他関連するプリミティブを使用した、シングルスレッド処理を並行で実行するコードを作成するためのインフラストラクチャを提供します。ここではパッケージ内容の詳細ページの一覧を示しています:"
 
 #: ../../library/asyncio.rst:25
 msgid ""
@@ -71,7 +71,7 @@ msgstr ":mod:`concurrent.futures` モジュールの一つに類似するが、�
 msgid ""
 "coroutines and tasks based on ``yield from`` (:PEP:`380`), to help write "
 "concurrent code in a sequential fashion;"
-msgstr "逐次処理の並列コードの作成を支援する、``yield from`` (:PEP:`380`) に基づいたコルーチンおよびタスク;"
+msgstr "逐次処理の並行コードの作成を支援する、``yield from`` (:PEP:`380`) に基づいたコルーチンおよびタスク;"
 
 #: ../../library/asyncio.rst:40
 msgid "cancellation support for :class:`Future`\\s and coroutines;"

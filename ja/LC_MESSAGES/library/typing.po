@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# E. Kawashima, 2016
+# E. Kawashima, 2016-2017
 # tomo, 2016
 # Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-13 18:22+0000\n"
-"Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>\n"
+"PO-Revision-Date: 2017-01-29 02:18+0000\n"
+"Last-Translator: E. Kawashima\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgid ""
 ":data:`Tuple`, :data:`Callable`, :class:`TypeVar`, and :class:`Generic`.  "
 "For full specification please see :pep:`484`.  For a simplified introduction"
 " to type hints see :pep:`483`."
-msgstr "このモジュールは :pep:`484` によって規定された型ヒントをサポートします。最も基本的なサポートとして :data:`Any`、: data:`Union`、: data:`Tuple`、: data:`Callable`、:class:`TypeVar` および、 :class:`Generic` 型を含みます。完全な仕様は :pep:`484` を参照してください。型ヒントの簡単な導入は :pep:`483` を参照してください。"
+msgstr "このモジュールは :pep:`484` によって規定された型ヒントをサポートします。最も基本的なサポートとして :data:`Any`、 :data:`Union`、 :data:`Tuple`、 :data:`Callable`、 :class:`TypeVar` および :class:`Generic` 型を含みます。完全な仕様は :pep:`484` を参照してください。型ヒントの簡単な導入は :pep:`483` を参照してください。"
 
 #: ../../library/typing.rst:20
 msgid ""
@@ -158,7 +158,7 @@ msgid ""
 "It is possible to declare the return type of a callable without specifying "
 "the call signature by substituting a literal ellipsis for the list of "
 "arguments in the type hint: ``Callable[..., ReturnType]``."
-msgstr "callable の返り値の型を型ヒントの実引数のリストを ellipsis で置換することでシグネチャを指定することなく宣言することが出来ます: ``Callable[..., ReturnType]``。"
+msgstr "型ヒントの実引数の型を ellipsis で置き換えることで呼び出しシグニチャを指定せずに callable の戻り値の型を宣言することができます: ``Callable[..., ReturnType]``。"
 
 #: ../../library/typing.rst:158
 msgid "Generics"
@@ -232,7 +232,7 @@ msgstr ""
 
 #: ../../library/typing.rst:277
 msgid "User defined generic type aliases are also supported. Examples::"
-msgstr ""
+msgstr "ユーザ定義のジェネリック型エイリアスもサポートされています。例::"
 
 #: ../../library/typing.rst:293
 msgid ""
@@ -253,13 +253,13 @@ msgid ""
 "A special kind of type is :data:`Any`. A static type checker will treat "
 "every type as being compatible with :data:`Any` and :data:`Any` as being "
 "compatible with every type."
-msgstr ""
+msgstr ":data:`Any` は特別な種類の型です。静的型検査器はすべての型を :class:`Any` と互換として扱い、 :class:`Any` をすべての型と互換として扱います。"
 
 #: ../../library/typing.rst:308
 msgid ""
 "This means that it is possible to perform any operation or method call on a "
 "value of type on :data:`Any` and assign it to any variable::"
-msgstr ""
+msgstr "つまり、 :data:`Any` 型の値に対し任意の演算やメソッド呼び出しができ、任意の変数に代入できということです。"
 
 #: ../../library/typing.rst:326
 msgid ""
@@ -268,19 +268,19 @@ msgid ""
 " not report an error when assigning ``a`` to ``s`` even though ``s`` was "
 "declared to be of type :class:`str` and receives an :class:`int` value at "
 "runtime!"
-msgstr ""
+msgstr ":data:`Any` 型の値をより詳細な型に代入する時に型検査が行われないことに注意してください。例えば、静的型検査器は ``a`` を ``s`` に代入する時、``s`` が :class:`str` 型として宣言されていて実行時に :class:`int` の値を受け取るとしても、エラーを報告しません。"
 
 #: ../../library/typing.rst:332
 msgid ""
 "Furthermore, all functions without a return type or parameter types will "
 "implicitly default to using :data:`Any`::"
-msgstr ""
+msgstr "さらに、返り値や引数の型のないすべての関数は暗黙的に :data:`Any` を使用します。"
 
 #: ../../library/typing.rst:345
 msgid ""
 "This behavior allows :data:`Any` to be used as an *escape hatch* when you "
 "need to mix dynamically and statically typed code."
-msgstr ""
+msgstr "この挙動により、動的型付けと静的型付けが混在したコードを書かなければならない時に :dataAny` を *非常口* として使用することができます。"
 
 #: ../../library/typing.rst:348
 msgid ""
@@ -288,7 +288,7 @@ msgid ""
 "Similar to :data:`Any`, every type is a subtype of :class:`object`. However,"
 " unlike :data:`Any`, the reverse is not true: :class:`object` is *not* a "
 "subtype of every other type."
-msgstr ""
+msgstr ":data:`Any` の挙動と :class:`object` の挙動を対比しましょう。 :data:`Any` と同様に、すべての型は :class:`object` のサブタイプです。しかしながら、 :data:`Any` と異なり、逆は成り立ちません: :class:`object` はすべての他の型のサブタイプでは *ありません*。"
 
 #: ../../library/typing.rst:353
 msgid ""
@@ -302,7 +302,7 @@ msgstr "これは、ある値の型が :class:`object` のとき、型検査器�
 msgid ""
 "Use :class:`object` to indicate that a value could be any type in a typesafe"
 " manner. Use :data:`Any` to indicate that a value is dynamically typed."
-msgstr ""
+msgstr ":class:`object` は、ある値が型安全な方法で任意の型として使えることを示すために使用します。 :data:`Any` はある値が動的に型付けられることを示すために使用します。"
 
 #: ../../library/typing.rst:379
 msgid "Classes, functions, and decorators"
@@ -314,7 +314,7 @@ msgstr "このモジュールでは以下のクラス、関数とデコレータ
 
 #: ../../library/typing.rst:385
 msgid "Type variable."
-msgstr "型変数。"
+msgstr "型変数です。"
 
 #: ../../library/typing.rst:387 ../../library/typing.rst:705
 msgid "Usage::"
@@ -326,7 +326,7 @@ msgid ""
 "They serve as the parameters for generic types as well as for generic "
 "function definitions.  See class Generic for more information on generic "
 "types.  Generic functions work as follows::"
-msgstr "型変数は主として静的型検査器の利益のために存在します。型変数はジェネリック型やジェネリック関数の定義の引数として役に立ちます。ジェネリック型についての詳細は Generic クラスを参照してください。ジェネリック関数は以下のように動作します::"
+msgstr "型変数は主として静的型検査器のために存在します。型変数はジェネリック型やジェネリック関数の定義の引数として役に立ちます。ジェネリック型についての詳細は Generic クラスを参照してください。ジェネリック関数は以下のように動作します::"
 
 #: ../../library/typing.rst:405
 msgid ""

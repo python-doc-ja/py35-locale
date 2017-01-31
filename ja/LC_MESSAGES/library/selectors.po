@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# E. Kawashima, 2016
+# E. Kawashima, 2016-2017
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:45+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-01-29 01:46+0000\n"
+"Last-Translator: E. Kawashima\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../library/selectors.rst:2
 msgid ":mod:`selectors` --- High-level I/O multiplexing"
-msgstr ""
+msgstr ":mod:`selectors` --- 高水準の I/O 多重化"
 
 #: ../../library/selectors.rst:9
 msgid "**Source code:** :source:`Lib/selectors.py`"
@@ -36,7 +36,7 @@ msgid ""
 "This module allows high-level and efficient I/O multiplexing, built upon the"
 " :mod:`select` module primitives. Users are encouraged to use this module "
 "instead, unless they want precise control over the OS-level primitives used."
-msgstr "このモジュールにより、:mod:`select` モジュールプリミティブに基づく高水準かつ効率的な I/O の多重化が行えます。OS レベルプリミティブを使用した正確な制御を求めない限り、このモジュールの使用が推奨されます。"
+msgstr "このモジュールにより、:mod:`select` モジュールプリミティブに基づく高水準かつ効率的な I/O の多重化が行えます。OS 水準のプリミティブを使用した正確な制御を求めない限り、このモジュールの使用が推奨されます。"
 
 #: ../../library/selectors.rst:20
 msgid ""
@@ -46,7 +46,7 @@ msgid ""
 "notification on multiple file objects. In the following, \"file object\" "
 "refers to any object with a :meth:`fileno()` method, or a raw file "
 "descriptor. See :term:`file object`."
-msgstr "これは :class:`BaseSelector` 抽象基底クラスと、いくつかの具象実装 (:class:`KqueueSelector`, :class:`EpollSelector`...) を定義しており、これらは複数のファイルオブジェクトの I/O の準備状態の通知の待機に使用できます。以下では、\"ファイルオブジェクト\" は、:meth:`fileno()` メソッドを持つあらゆるオブジェクトか、あるいは Raw ファイル記述子を意味します。:term:`ファイルオブジェクト <file object>` を参照してください。"
+msgstr "このモジュールは :class:`BaseSelector` 抽象基底クラスと、いくつかの具象実装 (:class:`KqueueSelector`, :class:`EpollSelector`...) を定義しており、これらは複数のファイルオブジェクトの I/O の準備状況の通知の待機に使用できます。以下では、 \"ファイルオブジェクト\" は、:meth:`fileno()` メソッドを持つあらゆるオブジェクトか、あるいは Raw ファイル記述子を意味します。:term:`ファイルオブジェクト <file object>` を参照してください。"
 
 #: ../../library/selectors.rst:26
 msgid ""
@@ -170,11 +170,11 @@ msgstr "これは新しい :class:`SelectorKey` インスタンスを返しま�
 msgid ""
 "Unregister a file object from selection, removing it from monitoring. A file"
 " object shall be unregistered prior to being closed."
-msgstr "ファイルオブジェクトのセレクションへの登録を解除し、監視対象から外します。ファイルオブジェクトの登録解除はそのクローズより前に行われます。"
+msgstr "ファイルオブジェクトのセレクション登録を解除し、監視対象から外します。ファイルオブジェクトの登録解除はそのクローズより前に行われます。"
 
 #: ../../library/selectors.rst:123
 msgid "*fileobj* must be a file object previously registered."
-msgstr "*fileobj* はすでに登録済みのファイルオブジェクトでなければなりません。"
+msgstr "*fileobj* は登録済みのファイルオブジェクトでなければなりません。"
 
 #: ../../library/selectors.rst:125
 msgid ""
@@ -206,7 +206,7 @@ msgstr "新たな :class:`SelectorKey` インスタンスを返します。\nイ
 msgid ""
 "Wait until some registered file objects become ready, or the timeout "
 "expires."
-msgstr ""
+msgstr "登録されたいくつかのファイルオブジェクトが準備できたか、タイムアウトするまで待機します。"
 
 #: ../../library/selectors.rst:147
 msgid ""
@@ -214,19 +214,19 @@ msgid ""
 "``timeout <= 0``, the call won't block, and will report the currently ready "
 "file objects. If *timeout* is ``None``, the call will block until a "
 "monitored file object becomes ready."
-msgstr ""
+msgstr "``timeout > 0`` の場合、最大待機時間を秒で指定します。 ``timeout <= 0`` の場合、この関数の呼び出しはブロックせず、 現在準備できているファイルオブジェクトを報告します。 *timeout* が ``None`` の場合、監視しているファイルオブジェクトの一つが準備できるまでブロックします。"
 
 #: ../../library/selectors.rst:153
 msgid ""
 "This returns a list of ``(key, events)`` tuples, one for each ready file "
 "object."
-msgstr ""
+msgstr "この関数は ``(key, events)`` タプルのリストを返します。準備できたファイルオブジェクトにつき1タプルです。"
 
 #: ../../library/selectors.rst:156
 msgid ""
 "*key* is the :class:`SelectorKey` instance corresponding to a ready file "
 "object. *events* is a bitmask of events ready on this file object."
-msgstr ""
+msgstr "*key* は準備状態のファイルオブジェクトに対応する :class:`SelectorKey` インスタンスです。 *events* そのファイルオブジェクトで準備できたイベントのビットマスクです。"
 
 #: ../../library/selectors.rst:161
 msgid ""
@@ -261,7 +261,7 @@ msgstr "登録されたファイルオブジェクトに関連付けられたキ
 msgid ""
 "This returns the :class:`SelectorKey` instance associated to this file "
 "object, or raises :exc:`KeyError` if the file object is not registered."
-msgstr ""
+msgstr "そのファイルオブジェクトに関連付けられた :class:`SelectorKey` インスタンスを返します。そのファイルオブジェクトが登録されていない場合 :exc:`KeyError` を送出します。"
 
 #: ../../library/selectors.rst:187
 msgid "Return a mapping of file objects to selector keys."
@@ -278,7 +278,7 @@ msgid ""
 "The default selector class, using the most efficient implementation "
 "available on the current platform. This should be the default choice for "
 "most users."
-msgstr ""
+msgstr "デフォルトの selector クラスで、現在のプラットフォームで利用できる最も効率的な実装を使用しています。大半のユーザはこれをデフォルトにすべきです。"
 
 #: ../../library/selectors.rst:203
 msgid ":func:`select.select`-based selector."

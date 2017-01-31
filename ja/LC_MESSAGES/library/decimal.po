@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# E. Kawashima, 2016
+# E. Kawashima, 2016-2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2015
@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-01-29 01:57+0000\n"
+"Last-Translator: E. Kawashima\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../library/decimal.rst:2
 msgid ":mod:`decimal` --- Decimal fixed point and floating point arithmetic"
-msgstr ":mod:`decimal` --- 10進固定及び浮動小数点数の算術演算"
+msgstr ":mod:`decimal` --- 十進固定及び浮動小数点数の算術演算"
 
 #: ../../library/decimal.rst:15
 msgid "**Source code:** :source:`Lib/decimal.py`"
@@ -35,7 +35,7 @@ msgid ""
 "The :mod:`decimal` module provides support for fast correctly-rounded "
 "decimal floating point arithmetic. It offers several advantages over the "
 ":class:`float` datatype:"
-msgstr ":mod:`decimal` モジュールは正確に丸められた10進浮動小数点算術をサポートします。 :mod:`decimal` には、 :class:`float` データ型に比べて、以下のような利点があります:"
+msgstr ":mod:`decimal` モジュールは正確に丸められた十進浮動小数点算術をサポートします。 :mod:`decimal` には、 :class:`float` データ型に比べて、以下のような利点があります:"
 
 #: ../../library/decimal.rst:32
 msgid ""
@@ -44,7 +44,7 @@ msgid ""
 " provide an arithmetic that works in the same way as the arithmetic that "
 "people learn at school.\" -- excerpt from the decimal arithmetic "
 "specification."
-msgstr "「(Decimal は) 人々を念頭にデザインされた浮動小数点モデルを元にしており、必然的に最も重要な指針があります -- コンピュータは人々が学校で習った算術と同じように動作する算術を提供しなければならない」 -- 10進数演算仕様より。"
+msgstr "「(Decimal は) 人々を念頭にデザインされた浮動小数点モデルを元にしており、必然的に最も重要な指針があります -- コンピュータは人々が学校で習った算術と同じように動作する算術を提供しなければならない」 -- 十進数演算仕様より。"
 
 #: ../../library/decimal.rst:37
 msgid ""
@@ -53,7 +53,7 @@ msgid ""
 "floating point. End users typically would not expect ``1.1 + 2.2`` to "
 "display as :const:`3.3000000000000003` as it does with binary floating "
 "point."
-msgstr "10進数を正確に表現できます。 :const:`1.1` や :const:`2.2` のような数は、2 進数の浮動小数点型では正しく表現できません。エンドユーザは普通、 2 進数における ``1.1 + 2.2`` の近似値が :const:`3.3000000000000003` だからといって、そのように表示してほしいとは考えないものです。"
+msgstr "十進数を正確に表現できます。 :const:`1.1` や :const:`2.2` のような数は、二進数の浮動小数点型では正しく表現できません。エンドユーザは普通、 二進数における ``1.1 + 2.2`` の近似値が :const:`3.3000000000000003` だからといって、そのように表示してほしいとは考えないものです。"
 
 #: ../../library/decimal.rst:42
 msgid ""
@@ -63,7 +63,7 @@ msgid ""
 "the differences prevent reliable equality testing and differences can "
 "accumulate. For this reason, decimal is preferred in accounting applications"
 " which have strict equality invariants."
-msgstr "値の正確さは算術にも及びます。10進の浮動小数点による計算では、 ``0.1 + 0.1 + 0.1 - 0.3`` は厳密にゼロに等しくなります。 2 進浮動小数点では :const:`5.5511151231257827e-017` になってしまいます。ゼロに近い値とはいえ、この誤差は数値間の等価性テストの信頼性を阻害します。また、誤差が蓄積されることもあります。こうした理由から、数値間の等価性を厳しく保たなければならないようなアプリケーションを考えるなら、10進数による数値表現が望ましいということになります。"
+msgstr "値の正確さは算術にも及びます。十進の浮動小数点による計算では、 ``0.1 + 0.1 + 0.1 - 0.3`` は厳密にゼロに等しくなります。 二進浮動小数点では :const:`5.5511151231257827e-017` になってしまいます。ゼロに近い値とはいえ、この誤差は数値間の等価性テストの信頼性を阻害します。また、誤差が蓄積されることもあります。こうした理由から、数値間の等価性を厳しく保たなければならないようなアプリケーションを考えるなら、十進数による数値表現が望ましいということになります。"
 
 #: ../../library/decimal.rst:49
 msgid ""
@@ -90,7 +90,7 @@ msgid ""
 "standard. When needed, the programmer has full control over rounding and "
 "signal handling. This includes an option to enforce exact arithmetic by "
 "using exceptions to block any inexact operations."
-msgstr "2進と10進の浮動小数点は、いずれも広く公開されている標準仕様のもとに実装されています。組み込みの浮動小数点型では、標準仕様で提唱されている機能のほんのささやかな部分を利用できるにすぎませんが、:mod:`decimal` では標準仕様が要求している全ての機能を利用できます。必要に応じて、プログラマは値の丸めやシグナル処理を完全に制御できます。この中には全ての不正確な操作を例外でブロックして正確な算術を遵守させるオプションもあります。"
+msgstr "二進と十進の浮動小数点は、いずれも広く公開されている標準仕様のもとに実装されています。組み込みの浮動小数点型では、標準仕様で提唱されている機能のほんのささやかな部分を利用できるにすぎませんが、:mod:`decimal` では標準仕様が要求している全ての機能を利用できます。必要に応じて、プログラマは値の丸めやシグナル処理を完全に制御できます。この中には全ての不正確な操作を例外でブロックして正確な算術を遵守させるオプションもあります。"
 
 #: ../../library/decimal.rst:75
 msgid ""
@@ -98,13 +98,13 @@ msgid ""
 "unrounded decimal arithmetic (sometimes called fixed-point arithmetic) and "
 "rounded floating-point arithmetic.\"  -- excerpt from the decimal arithmetic"
 " specification."
-msgstr "decimal モジュールは「偏見なく、正確な丸めなしの十進算術(固定小数点算術と呼ばれることもある)と丸めありの浮動小数点数算術」(10進数演算仕様より引用)をサポートするようにデザインされました。"
+msgstr "decimal モジュールは「偏見なく、正確な丸めなしの十進算術(固定小数点算術と呼ばれることもある)と丸めありの浮動小数点数算術」(十進数演算仕様より引用)をサポートするようにデザインされました。"
 
 #: ../../library/decimal.rst:80
 msgid ""
 "The module design is centered around three concepts:  the decimal number, "
 "the context for arithmetic, and signals."
-msgstr "このモジュールは、10進数型、算術コンテキスト (context for arithmetic)、そしてシグナル (signal) という三つの概念を中心に設計されています。"
+msgstr "このモジュールは、十進数型、算術コンテキスト (context for arithmetic)、そしてシグナル (signal) という三つの概念を中心に設計されています。"
 
 #: ../../library/decimal.rst:83
 msgid ""
@@ -113,7 +113,7 @@ msgid ""
 "trailing zeros.  Decimals also include special values such as "
 ":const:`Infinity`, :const:`-Infinity`, and :const:`NaN`.  The standard also "
 "differentiates :const:`-0` from :const:`+0`."
-msgstr "10進数型は変更不可能な型です。これは符号、係数部、そして指数を持ちます。有効桁数を残すために、仮数部の末尾にあるゼロは切り詰められません。 :mod:`decimal` では、 :const:`Infinity`, :const:`-Infinity`, および :const:`NaN` といった特殊な値も定義されています。標準仕様では :const:`-0` と :const:`+0` も区別します。"
+msgstr "十進数型は変更不能です。これは符号、係数部、そして指数を持ちます。有効桁数を残すために、仮数部の末尾にあるゼロは切り詰められません。 :mod:`decimal` では、 :const:`Infinity`, :const:`-Infinity`, および :const:`NaN` といった特殊な値も定義されています。標準仕様では :const:`-0` と :const:`+0` も区別します。"
 
 #: ../../library/decimal.rst:89
 msgid ""
@@ -148,7 +148,7 @@ msgstr "各シグナルには、フラグとトラップイネーブラがあり
 msgid ""
 "IBM's General Decimal Arithmetic Specification, `The General Decimal "
 "Arithmetic Specification <http://speleotrove.com/decimal/decarith.html>`_."
-msgstr "IBM による汎用10進演算仕様、`The General Decimal Arithmetic Specification <http://speleotrove.com/decimal/decarith.html>`_。"
+msgstr "IBM による汎用十進演算仕様、`The General Decimal Arithmetic Specification <http://speleotrove.com/decimal/decarith.html>`_。"
 
 #: ../../library/decimal.rst:120
 msgid "Quick-start Tutorial"
@@ -194,7 +194,7 @@ msgstr "C バージョンの内部制限を超えた場合、decimal の構成�
 msgid ""
 "Decimals interact well with much of the rest of Python.  Here is a small "
 "decimal floating point flying circus:"
-msgstr "decimal はほとんどの場面で Python の他の機能とうまくやりとりできます。decimal 浮動小数点小劇場 (flying circus) をお見せしましょう:"
+msgstr "decimal はほとんどの場面で Python の他の機能とうまくやりとりできます。decimal 浮動小数点の空飛ぶサーカス (flying circus) をお見せしましょう:"
 
 #: ../../library/decimal.rst:236
 msgid "And some mathematical functions are also available to Decimal:"
@@ -273,7 +273,7 @@ msgid ""
 ":class:`Decimal` object. If no *value* is given, returns ``Decimal('0')``.  "
 "If *value* is a string, it should conform to the decimal numeric string "
 "syntax after leading and trailing whitespace characters are removed::"
-msgstr "*value* は整数、文字列、タプル、 :class:`float` および他の :class:`Decimal` オブジェクトにできます。 *value* を指定しない場合、 ``Decimal('0')`` を返します。 *value* が文字列の場合、先頭と末尾の空白を取り除いた後には以下の 10進数文字列の文法に従わなければなりません::"
+msgstr "*value* は整数、文字列、タプル、 :class:`float` および他の :class:`Decimal` オブジェクトにできます。 *value* を指定しない場合、 ``Decimal('0')`` を返します。 *value* が文字列の場合、先頭と末尾の空白を取り除いた後には以下の十進数文字列の文法に従わなければなりません::"
 
 #: ../../library/decimal.rst:361
 msgid ""
@@ -298,7 +298,7 @@ msgid ""
 "often require 53 or more digits of precision.  For example, "
 "``Decimal(float('1.1'))`` converts to "
 "``Decimal('1.100000000000000088817841970012523233890533447265625')``."
-msgstr "*value* を :class:`float` にする場合、2進浮動小数点数値が損失なく正確に等価な Decimal に変換されます。この変換はしばしば 53 桁以上の精度を要求します。例えば、 ``Decimal(float('1.1'))`` は ``Decimal('1.100000000000000088817841970012523233890533447265625')`` に変換されます。"
+msgstr "*value* を :class:`float` にする場合、二進浮動小数点数値が損失なく正確に等価な Decimal に変換されます。この変換はしばしば 53 桁以上の精度を要求します。例えば、 ``Decimal(float('1.1'))`` は ``Decimal('1.100000000000000088817841970012523233890533447265625')`` に変換されます。"
 
 #: ../../library/decimal.rst:377
 msgid ""
@@ -340,7 +340,7 @@ msgid ""
 " copied, pickled, printed, used as dictionary keys, used as set elements, "
 "compared, sorted, and coerced to another type (such as :class:`float` or "
 ":class:`int`)."
-msgstr "10進浮動小数点オブジェクトは、 :class:`float` や :class:`int` のような他の組み込み型と多くの点で似ています。通常の数学演算や特殊メソッドを適用できます。また、 :class:`Decimal` オブジェクトはコピーでき、pickle 化でき、print で出力でき、辞書のキーにでき、集合の要素にでき、比較、保存、他の型 (:class:`float` や :class:`int`) への型強制を行えます。"
+msgstr "十進浮動小数点オブジェクトは、 :class:`float` や :class:`int` のような他の組み込み型と多くの点で似ています。通常の数学演算や特殊メソッドを適用できます。また、 :class:`Decimal` オブジェクトはコピーでき、pickle 化でき、print で出力でき、辞書のキーにでき、集合の要素にでき、比較、保存、他の型 (:class:`float` や :class:`int`) への型強制を行えます。"
 
 #: ../../library/decimal.rst:404
 msgid ""
@@ -348,7 +348,7 @@ msgid ""
 "arithmetic on integers and floats.  When the remainder operator ``%`` is "
 "applied to Decimal objects, the sign of the result is the sign of the "
 "*dividend* rather than the sign of the divisor::"
-msgstr "10進オブジェクトの算術演算と整数や浮動小数点数の算術演算には少々違いがあります。10進オブジェクトに対して剰余演算を適用すると、計算結果の符号は除数の符号ではなく *被除数* の符号と一致します::"
+msgstr "十進オブジェクトの算術演算と整数や浮動小数点数の算術演算には少々違いがあります。十進オブジェクトに対して剰余演算を適用すると、計算結果の符号は除数の符号ではなく *被除数* の符号と一致します::"
 
 #: ../../library/decimal.rst:414
 msgid ""
@@ -384,7 +384,7 @@ msgstr ":class:`Decimal` インスタンスと他の数値型が混在する比�
 msgid ""
 "In addition to the standard numeric properties, decimal floating point "
 "objects also have a number of specialized methods:"
-msgstr "こうした標準的な数値型の特性の他に、10進浮動小数点オブジェクトには様々な特殊メソッドがあります:"
+msgstr "こうした標準的な数値型の特性の他に、十進浮動小数点オブジェクトには様々な特殊メソッドがあります:"
 
 #: ../../library/decimal.rst:445
 msgid ""
@@ -929,7 +929,7 @@ msgid ""
 ":const:`ROUND_HALF_UP`.  All flags are cleared.  All traps are enabled "
 "(treated as exceptions) except :const:`Inexact`, :const:`Rounded`, and "
 ":const:`Subnormal`."
-msgstr "汎用10進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定されています。丸め規則は :const:`ROUND_HALF_UP` です。すべての演算結果フラグはクリアされています。 :const:`Inexact`, :const:`Rounded`, :const:`Subnormal` を除く全ての演算エラートラップが有効 (例外として扱う) になっています。"
+msgstr "汎用十進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定されています。丸め規則は :const:`ROUND_HALF_UP` です。すべての演算結果フラグはクリアされています。 :const:`Inexact`, :const:`Rounded`, :const:`Subnormal` を除く全ての演算エラートラップが有効 (例外として扱う) になっています。"
 
 #: ../../library/decimal.rst:935
 msgid ""
@@ -942,7 +942,7 @@ msgid ""
 "Specification.  Precision is set to nine.  Rounding is set to "
 ":const:`ROUND_HALF_EVEN`.  All flags are cleared.  No traps are enabled (so "
 "that exceptions are not raised during computations)."
-msgstr "汎用10進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定されています。丸め規則は :const:`ROUND_HALF_EVEN` です。すべての演算結果フラグはクリアされています。トラップは全て無効(演算中に一切例外を送出しない) になっています。"
+msgstr "汎用十進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定されています。丸め規則は :const:`ROUND_HALF_EVEN` です。すべての演算結果フラグはクリアされています。トラップは全て無効(演算中に一切例外を送出しない) になっています。"
 
 #: ../../library/decimal.rst:945
 msgid ""
@@ -1660,7 +1660,7 @@ msgid ""
 "(making it possible to represent :const:`0.1` exactly); however, some "
 "operations can still incur round-off error when non-zero digits exceed the "
 "fixed precision."
-msgstr "10進浮動小数点数を使うと、10進数表現による誤差を抑制できます (:const:`0.1` を正確に表現できるようになります); しかし、ゼロでない桁が一定の精度を越えている場合には、演算によっては依然として値丸めによる誤差を引き起こします。"
+msgstr "十進浮動小数点数を使うと、十進数表現による誤差を抑制できます (:const:`0.1` を正確に表現できるようになります); しかし、ゼロでない桁が一定の精度を越えている場合には、演算によっては依然として値丸めによる誤差を引き起こします。"
 
 #: ../../library/decimal.rst:1650
 msgid ""
@@ -1738,7 +1738,7 @@ msgid ""
 " from the IEEE 854 standard (see Table 3 in section 5.7).  To ensure strict "
 "standards-compliance, use the :meth:`compare` and :meth:`compare-signal` "
 "methods instead."
-msgstr "Python の比較演算は :const:`NaN` が関わってくると少し驚くようなことがあります。等価性のテストの一方の対象が無言または発信 :const:`NaN` である場合いつでも :const:`False` を返し(たとえ ``Decimal('NaN')==Decimal('NaN')`` でも)、一方で不等価をテストするといつでも :const:`True` を返します。二つの Decimal を ``<``, ``<=``, ``>`` または ``>=`` を使って比較する試みは一方が :const:`NaN` である場合には :exc:`InvalidOperation` シグナルを送出し、このシグナルをトラップしなければ結果は :const:`False` に終わります。汎用10進演算仕様は直接の比較の振る舞いについて定めていないことに注意しておきましょう。ここでの :const:`NaN` が関係する比較ルールは IEEE 854 標準から持ってきました (section 5.7 の Table 3 を見て下さい)。厳格に標準遵守を貫くなら、 :meth:`compare` および :meth:`compare-signal` メソッドを代わりに使いましょう。"
+msgstr "Python の比較演算は :const:`NaN` が関わってくると少し驚くようなことがあります。等価性のテストの一方の対象が無言または発信 :const:`NaN` である場合いつでも :const:`False` を返し(たとえ ``Decimal('NaN')==Decimal('NaN')`` でも)、一方で不等価をテストするといつでも :const:`True` を返します。二つの Decimal を ``<``, ``<=``, ``>`` または ``>=`` を使って比較する試みは一方が :const:`NaN` である場合には :exc:`InvalidOperation` シグナルを送出し、このシグナルをトラップしなければ結果は :const:`False` に終わります。汎用十進演算仕様は直接の比較の振る舞いについて定めていないことに注意しておきましょう。ここでの :const:`NaN` が関係する比較ルールは IEEE 854 標準から持ってきました (section 5.7 の Table 3 を見て下さい)。厳格に標準遵守を貫くなら、 :meth:`compare` および :meth:`compare-signal` メソッドを代わりに使いましょう。"
 
 #: ../../library/decimal.rst:1734
 msgid ""
@@ -1866,7 +1866,7 @@ msgstr "A. :meth:`normalize` メソッドは全ての等しい値をただ一つ
 msgid ""
 "Q. Some decimal values always print with exponential notation.  Is there a "
 "way to get a non-exponential representation?"
-msgstr "Q. ある種の10進数値はいつも指数表記で表示されます。指数表記以外の表示にする方法はありますか?"
+msgstr "Q. ある種の十進数値はいつも指数表記で表示されます。指数表記以外の表示にする方法はありますか?"
 
 #: ../../library/decimal.rst:2031
 msgid ""
