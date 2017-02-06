@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-05 13:55+0000\n"
+"PO-Revision-Date: 2017-02-06 14:39+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3197,7 +3197,7 @@ msgid ""
 "Some bytes and bytearray operations assume the use of ASCII compatible "
 "binary formats, and hence should be avoided when working with arbitrary "
 "binary data. These restrictions are covered below."
-msgstr ""
+msgstr "いくつかの bytes と bytearray の操作は ASCII と互換性のあるバイナリフォーマットが使われていると仮定していますので、フォーマットの不明なバイナリデータに対して使うことは避けるべきです。こうした制約については以下で説明します。"
 
 #: ../../library/stdtypes.rst:2443
 msgid ""
@@ -3209,7 +3209,7 @@ msgstr "これらの ASCII ベースの演算を使って ASCII ベースでは�
 msgid ""
 "The following methods on bytes and bytearray objects can be used with "
 "arbitrary binary data."
-msgstr ""
+msgstr "以下の bytes および bytearray オブジェクトのメソッドは、任意のバイナリデータに対して使用できます。"
 
 #: ../../library/stdtypes.rst:2452
 msgid ""
@@ -3248,7 +3248,7 @@ msgid ""
 "Passing the *encoding* argument to :class:`str` allows decoding any :term"
 ":`bytes-like object` directly, without needing to make a temporary bytes or "
 "bytearray object."
-msgstr ""
+msgstr "引数 *encoding* を :class:`str` に渡すと :term:`bytes-like object` を直接デコードすることができます。つまり、一時的な bytes や bytearray オブジェクトを作成する必要はありません。"
 
 #: ../../library/stdtypes.rst:2480
 msgid "Added support for keyword arguments."
@@ -3295,7 +3295,7 @@ msgid ""
 "like objects <bytes-like object>`, including :class:`str` objects.  The "
 "separator between elements is the contents of the bytes or bytearray object "
 "providing this method."
-msgstr ""
+msgstr ":term:`イテラブル <iterable>` *iterable* 中のバイナリデータを結合した bytes または bytearray オブジェクトを返します。 *iterable* に :class:`str` オブジェクトなど :term:`bytes-like objects <bytes-like object>` ではない値が含まれている場合、 :exc:`TypeError` が送出されます。なお要素間のセパレータは、このメソッドを提供する bytes または bytearray オブジェクトとなります。"
 
 #: ../../library/stdtypes.rst:2546
 msgid ""
