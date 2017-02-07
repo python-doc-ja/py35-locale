@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-06 14:39+0000\n"
+"PO-Revision-Date: 2017-02-07 14:23+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2141,7 +2141,7 @@ msgid ""
 "digits. This covers digits which cannot be used to form numbers in base 10, "
 "like the Kharosthi numbers.  Formally, a digit is a character that has the "
 "property value Numeric_Type=Digit or Numeric_Type=Decimal."
-msgstr ""
+msgstr "文字列中の全ての文字が数字で、かつ 1 文字以上あるなら真を、そうでなければ偽を返します。ここでの数字とは、十進数字に加えて、互換上付き数字のような特殊操作を必要とする数字を含みます。また 10 を基数とした表現ができないカローシュティー数字のような体系の文字も含みます。正式には、数字とは、プロパティ値 Numeric_Type=Digit または Numeric_Type=Decimal を持つ文字です。"
 
 #: ../../library/stdtypes.rst:1662
 msgid ""
@@ -2253,7 +2253,7 @@ msgid ""
 "ordinals (integers) or characters (strings of length 1) to Unicode ordinals,"
 " strings (of arbitrary lengths) or ``None``.  Character keys will then be "
 "converted to ordinals."
-msgstr ""
+msgstr "引数を 1 つだけ与える場合、それは Unicode 序数 (整数) または文字  (長さ 1 の文字列) を、Unicode 序数、(任意長の) 文字列、または ``None`` に対応づける辞書でなければなりません。このとき、文字で指定したキーは序数に変換されます。"
 
 #: ../../library/stdtypes.rst:1761
 msgid ""
@@ -2261,7 +2261,7 @@ msgid ""
 " resulting dictionary, each character in x will be mapped to the character "
 "at the same position in y.  If there is a third argument, it must be a "
 "string, whose characters will be mapped to ``None`` in the result."
-msgstr ""
+msgstr "引数を 2 つ指定する場合、それらは同じ長さの文字列である必要があり、結果の辞書では、x のそれぞれの文字が y の同じ位置の文字に対応付けられます。第 3 引数を指定する場合、文字列を指定する必要があり、それに含まれる文字が ``None`` に対応付けられます。"
 
 #: ../../library/stdtypes.rst:1769
 msgid ""
@@ -3260,7 +3260,7 @@ msgid ""
 "otherwise return ``False``.  *suffix* can also be a tuple of suffixes to "
 "look for.  With optional *start*, test beginning at that position.  With "
 "optional *end*, stop comparing at that position."
-msgstr "バイナリデータが指定された *suffix* で終わる場合は ``True`` を、そうでなければ ``False`` を返します。 *suffix* は検索対象の複数の接尾語のタプルでも構いません。オプションの *start* が指定されている場合、その位置から判定を開始します。オプションの *end* が指定されている場合、その位置で比較を終了します。"
+msgstr "バイナリデータが指定された *suffix* で終わる場合は ``True`` を、そうでなければ ``False`` を返します。 *suffix* は見つけたい複数の接尾語のタプルでも構いません。オプションの *start* が指定されている場合、その位置から判定を開始します。オプションの *end* が指定されている場合、その位置で比較を終了します。"
 
 #: ../../library/stdtypes.rst:2492
 msgid "The suffix(es) to search for may be any :term:`bytes-like object`."
@@ -3312,24 +3312,24 @@ msgid ""
 "the separator.  If the separator is not found, return a 3-tuple containing a"
 " copy of the original sequence, followed by two empty bytes or bytearray "
 "objects."
-msgstr ""
+msgstr "区切り *sep* が最初に出現する位置でシーケンスを分割し、 3 要素のタプルを返します。タプルの内容は、区切りの前の部分、区切り、そして区切りの後ろの部分です。もし区切れなければ、タプルには元のシーケンスのコピーと、その後ろに二つの空の bytes または bytearray オブジェクトが入ります。"
 
 #: ../../library/stdtypes.rst:2563 ../../library/stdtypes.rst:2619
 msgid "The separator to search for may be any :term:`bytes-like object`."
-msgstr ""
+msgstr "検索する区切りとしては、任意の :term:`bytes-like object` を指定できます。"
 
 #: ../../library/stdtypes.rst:2569
 msgid ""
 "Return a copy of the sequence with all occurrences of subsequence *old* "
 "replaced by *new*.  If the optional argument *count* is given, only the "
 "first *count* occurrences are replaced."
-msgstr ""
+msgstr "部分シーケンス *old* を全て *new* に置換したシーケンスを返します。オプション引数 *count* が与えられている場合、先頭から *count* 個の *old* だけを置換します。"
 
 #: ../../library/stdtypes.rst:2573
 msgid ""
 "The subsequence to search for and its replacement may be any :term:`bytes-"
 "like object`."
-msgstr ""
+msgstr "検索する部分シーケンスおよび置換後の部分シーケンスとしては、任意の :term:`bytes-like object` を指定できます。"
 
 #: ../../library/stdtypes.rst:2578 ../../library/stdtypes.rst:2667
 #: ../../library/stdtypes.rst:2681 ../../library/stdtypes.rst:2705
@@ -3342,7 +3342,7 @@ msgstr ""
 msgid ""
 "The bytearray version of this method does *not* operate in place - it always"
 " produces a new object, even if no changes were made."
-msgstr ""
+msgstr "bytearray のこのメソッドはインプレースでは動作 *しません* -- 一切変化が無い場合でも、常に新しいオブジェクトを生成します。"
 
 #: ../../library/stdtypes.rst:2585
 msgid ""
@@ -3350,13 +3350,13 @@ msgid ""
 "found, such that *sub* is contained within ``s[start:end]``.  Optional "
 "arguments *start* and *end* are interpreted as in slice notation. Return "
 "``-1`` on failure."
-msgstr ""
+msgstr "シーケンス中の領域 ``s[start:end]`` に *sub* が含まれる場合、その最大のインデクスを返します。オプション引数 *start* および *end* はスライス表記と同様に解釈されます。 *sub* が見つからなかった場合 ``-1``  を返します。"
 
 #: ../../library/stdtypes.rst:2600
 msgid ""
 "Like :meth:`~bytes.rfind` but raises :exc:`ValueError` when the subsequence "
 "*sub* is not found."
-msgstr ""
+msgstr ":meth:`~bytes.rfind` と同様ですが、部分シーケンス *sub* が見つからなかった場合 :exc:`ValueError` を送出します。"
 
 #: ../../library/stdtypes.rst:2613
 msgid ""
@@ -3365,7 +3365,7 @@ msgid ""
 "the separator.  If the separator is not found, return a 3-tuple containing a"
 " copy of the original sequence, followed by two empty bytes or bytearray "
 "objects."
-msgstr ""
+msgstr "区切り *sep* が最後に出現する位置でシーケンスを分割し、 3 要素のタプルを返します。タプルの内容は、区切りの前の部分、区切り、そして区切りの後ろの部分です。もし区切れなければ、タプルには元のシーケンスのコピーと、その後ろに二つの空の bytes または bytearray オブジェクトが入ります。"
 
 #: ../../library/stdtypes.rst:2625
 msgid ""
@@ -3373,11 +3373,11 @@ msgid ""
 "otherwise return ``False``.  *prefix* can also be a tuple of prefixes to "
 "look for.  With optional *start*, test beginning at that position.  With "
 "optional *end*, stop comparing at that position."
-msgstr ""
+msgstr "バイナリデータが指定された *prefix* で始まる場合は ``True`` を、そうでなければ ``False`` を返します。 *prefix* は見つけたい複数の接頭語のタプルでも構いません。オプションの *start* が指定されている場合、その位置から判定を開始します。オプションの *end* が指定されている場合、その位置で比較を終了します。"
 
 #: ../../library/stdtypes.rst:2630
 msgid "The prefix(es) to search for may be any :term:`bytes-like object`."
-msgstr ""
+msgstr "検索対象の接頭語 (複数も可) は、任意の :term:`bytes-like object` にできます。"
 
 #: ../../library/stdtypes.rst:2636
 msgid ""
@@ -3406,7 +3406,7 @@ msgid ""
 "used with arbitrary binary data by passing appropriate arguments. Note that "
 "all of the bytearray methods in this section do *not* operate in place, and "
 "instead produce new objects."
-msgstr ""
+msgstr "以下の bytes および bytearray オブジェクトのメソッドは、 ASCII と互換性のあるバイナリフォーマットが使われていると仮定していますが、適切な引数を指定すれば任意のバイナリデータに使用できます。なお、このセクションで紹介する bytearray のメソッドはすべてインプレースで動作 *せず* 、新しいオブジェクトを生成します。"
 
 #: ../../library/stdtypes.rst:2660
 msgid ""
@@ -3753,7 +3753,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:3335
 msgid ":pep:`461`."
-msgstr ""
+msgstr ":pep:`461`."
 
 #: ../../library/stdtypes.rst:3341
 msgid "Memory Views"
@@ -4698,7 +4698,7 @@ msgid ""
 "``m.__dict__['a'] = 1``, which defines ``m.a`` to be ``1``, but you can't "
 "write ``m.__dict__ = {}``).  Modifying :attr:`~object.__dict__` directly is "
 "not recommended."
-msgstr ""
+msgstr "全てのモジュールにある特殊属性が :attr:`~object.__dict__` です。これはモジュールのシンボルテーブルを含む辞書です。この辞書を書き換えると実際にモジュールのシンボルテーブルを変更することができますが、:attr:`~object.__dict__` 属性を直接代入することはできません (``m.__dict__['a'] = 1`` と書いて ``m.a`` を ``1`` に定義することはできますが、``m.__dict__ = {}`` と書くことはできません)。 :attr:`~object.__dict__` を直接書き換えることは推奨されません。"
 
 #: ../../library/stdtypes.rst:4365
 msgid ""
