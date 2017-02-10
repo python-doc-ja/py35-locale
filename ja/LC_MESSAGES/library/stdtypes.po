@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-07 14:23+0000\n"
+"PO-Revision-Date: 2017-02-10 07:57+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2886,14 +2886,14 @@ msgstr "引数を変換せず、返される文字列中では文字 ``'%'`` に
 msgid ""
 "The alternate form causes a leading octal specifier (``'0o'``) to be "
 "inserted before the first digit."
-msgstr ""
+msgstr "別の形式を指定（訳注: 変換フラグ ``#`` を使用）すると 8 進数を表す接頭辞 (``'0o'``) が最初の数字の前に挿入されます。"
 
 #: ../../library/stdtypes.rst:2204 ../../library/stdtypes.rst:3301
 msgid ""
 "The alternate form causes a leading ``'0x'`` or ``'0X'`` (depending on "
 "whether the ``'x'`` or ``'X'`` format was used) to be inserted before the "
 "first digit."
-msgstr ""
+msgstr "別の形式を指定（訳注: 変換フラグ ``#`` を使用）すると 16 進数を表す接頭辞 ``'0x'`` または ``'0X'`` (使用するフォーマット文字が ``'x'`` か ``'X'`` に依存します) が最初の数字の前に挿入されます。"
 
 #: ../../library/stdtypes.rst:2208 ../../library/stdtypes.rst:3305
 msgid ""
@@ -3414,7 +3414,7 @@ msgid ""
 "Padding is done using the specified *fillbyte* (default is an ASCII space). "
 "For :class:`bytes` objects, the original sequence is returned if *width* is "
 "less than or equal to ``len(s)``."
-msgstr ""
+msgstr "長さ *width* の中央寄せされたシーケンスのコピーを返します。パディングには *fillbyte* で指定された値 (デフォルトでは ASCII スペース) が使われます。 :class:`bytes` オブジェクトの場合、 *width* が ``len(s)`` 以下なら元のシーケンスが返されます。"
 
 #: ../../library/stdtypes.rst:2674
 msgid ""
@@ -3422,7 +3422,7 @@ msgid ""
 "Padding is done using the specified *fillbyte* (default is an ASCII space). "
 "For :class:`bytes` objects, the original sequence is returned if *width* is "
 "less than or equal to ``len(s)``."
-msgstr ""
+msgstr "長さ *width* の左寄せされたシーケンスのコピーを返します。パディングには *fillbyte* で指定された値 (デフォルトでは ASCII スペース) が使われます。 :class:`bytes` オブジェクトの場合、 *width* が ``len(s)`` 以下なら元のシーケンスが返されます。"
 
 #: ../../library/stdtypes.rst:2688
 msgid ""
@@ -3432,14 +3432,14 @@ msgid ""
 "ASCII characters.  If omitted or ``None``, the *chars* argument defaults to "
 "removing ASCII whitespace.  The *chars* argument is not a prefix; rather, "
 "all combinations of its values are stripped::"
-msgstr ""
+msgstr "先頭から特定のバイト値を除去したコピーを返します。引数 *chars* は除去されるバイト値の集合を指定するバイナリシーケンスです － この名前は、このメソッドが通常は ASCII 文字列に対して使われることに由来しています。 *chars* が省略されるか ``None`` の場合、 ASCII の空白文字（訳注: 半角スペース）が除去されます。なお *chars* 引数と一致する接頭辞が除去されるのではなく、それに含まれるバイトの組み合わせ全てが除去されます::"
 
 #: ../../library/stdtypes.rst:2700 ../../library/stdtypes.rst:2749
 #: ../../library/stdtypes.rst:2819
 msgid ""
 "The binary sequence of byte values to remove may be any :term:`bytes-like "
 "object`."
-msgstr ""
+msgstr "除去対象のバイト値を含むバイナリシーケンスには、任意の :term:`bytes-like object` を指定できます。"
 
 #: ../../library/stdtypes.rst:2712
 msgid ""
@@ -3447,7 +3447,7 @@ msgid ""
 " Padding is done using the specified *fillbyte* (default is an ASCII space)."
 " For :class:`bytes` objects, the original sequence is returned if *width* is"
 " less than or equal to ``len(s)``."
-msgstr ""
+msgstr "長さ *width* の右寄せされたシーケンスのコピーを返します。パディングには *fillbyte* で指定された値 (デフォルトでは ASCII スペース) が使われます。 :class:`bytes` オブジェクトの場合、 *width* が ``len(s)`` 以下なら元のシーケンスが返されます。"
 
 #: ../../library/stdtypes.rst:2726
 msgid ""
@@ -3467,7 +3467,7 @@ msgid ""
 "ASCII characters.  If omitted or ``None``, the *chars* argument defaults to "
 "removing ASCII whitespace.  The *chars* argument is not a suffix; rather, "
 "all combinations of its values are stripped::"
-msgstr ""
+msgstr "末尾から特定のバイト値を除去したコピーを返します。引数 *chars* は除去されるバイト値の集合を指定するバイナリシーケンスです － この名前は、このメソッドが通常は ASCII 文字列に対して使われることに由来しています。 *chars* が省略されるか ``None`` の場合、 ASCII の空白文字（訳注: 半角スペース）が除去されます。なお *chars* 引数と一致する接尾辞が除去されるのではなく、それに含まれるバイトの組み合わせ全てが除去されます::"
 
 #: ../../library/stdtypes.rst:2761
 msgid ""
@@ -3508,7 +3508,7 @@ msgid ""
 "usually used with ASCII characters.  If omitted or ``None``, the *chars* "
 "argument defaults to removing ASCII whitespace. The *chars* argument is not "
 "a prefix or suffix; rather, all combinations of its values are stripped::"
-msgstr ""
+msgstr "先頭および末尾から特定のバイト値を除去したコピーを返します。引数 *chars* は除去されるバイト値の集合を指定するバイナリシーケンスです － この名前は、このメソッドが通常は ASCII 文字列に対して使われることに由来しています。 *chars* が省略されるか ``None`` の場合、 ASCII の空白文字（訳注: 半角スペース）が除去されます。なお *chars* 引数と一致する接頭辞および接尾辞が除去されるのではなく、それに含まれるバイトの組み合わせ全てが除去されます::"
 
 #: ../../library/stdtypes.rst:2828
 msgid ""
