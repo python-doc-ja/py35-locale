@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-10 07:57+0000\n"
+"PO-Revision-Date: 2017-02-10 08:43+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3457,7 +3457,7 @@ msgid ""
 "subsequence consisting solely of ASCII whitespace is a separator. Except for"
 " splitting from the right, :meth:`rsplit` behaves like :meth:`split` which "
 "is described in detail below."
-msgstr ""
+msgstr "*sep* を区切りとして、同じ型の部分シーケンスに分割します。 *maxsplit* が与えられた場合、シーケンスの *右端* から最大 *maxsplit* 回だけ分割を行います。 *sep* が指定されていないか ``None`` のとき、 ASCII 空白文字の組み合わせで作られる部分シーケンスすべてが区切りとなります。右から分割していくことを除けば、 :meth:`rsplit` は後ほど詳しく述べる :meth:`split` と同様に振る舞います。"
 
 #: ../../library/stdtypes.rst:2737
 msgid ""
@@ -3476,7 +3476,7 @@ msgid ""
 "*maxsplit* splits are done (thus, the list will have at most ``maxsplit+1`` "
 "elements).  If *maxsplit* is not specified or is ``-1``, then there is no "
 "limit on the number of splits (all possible splits are made)."
-msgstr ""
+msgstr "*sep* を区切りとして、同じ型の部分シーケンスに分割します。 *maxsplit* が与えられ、かつ負の数でない場合、シーケンスの *左端* から最大 *maxsplit* 回だけ分割を行います (したがって結果のリストの要素数は最大で ``maxsplit+1`` になります)。 *maxsplit* が指定されていないか ``-1`` のとき、分割の回数に制限はありません (可能なだけ分割されます)。"
 
 #: ../../library/stdtypes.rst:2767
 msgid ""
@@ -3488,7 +3488,7 @@ msgid ""
 "separator returns ``[b'']`` or ``[bytearray(b'')]`` depending on the type of"
 " object being split.  The *sep* argument may be any :term:`bytes-like "
 "object`."
-msgstr ""
+msgstr "*sep* が与えられた場合、連続した区切り用バイト値はまとめられず、空の部分シーケンスを区切っていると判断されます(例えば ``b'1,,2'.split(b',')`` は ``[b'1', b'', b'2']`` を返します)。引数 *sep* は複数バイトのシーケンスにもできます (例えば ``b'1<>2<>3'.split(b'<>')`` は ``[b'1', b'2', b'3']`` を返します)。空のシーケンスを分割すると、分割するオブジェクトの型によって ``[b'']`` または ``[bytearray(b'')]`` が返ります。引数 *sep* には、あらゆる :term:`bytes-like object` を指定できます。"
 
 #: ../../library/stdtypes.rst:2785
 msgid ""
@@ -3498,7 +3498,7 @@ msgid ""
 "if the sequence has leading or trailing whitespace.  Consequently, splitting"
 " an empty sequence or a sequence consisting solely of ASCII whitespace "
 "without a specified separator returns ``[]``."
-msgstr ""
+msgstr "*sep* が指定されていないか ``None`` の場合、異なる分割アルゴリズムが適用されます。連続する ASCII 空白文字はひとつの区切りとみなされ、またシーケンスの先頭や末尾に空白があっても、結果の最初や最後に空のシーケンスは含まれません。したがって区切りを指定せずに空のシーケンスや ASCII 空白文字だけのシーケンスを分割すると、 ``[]`` が返されます。"
 
 #: ../../library/stdtypes.rst:2806
 msgid ""
@@ -3516,7 +3516,7 @@ msgid ""
 " compatible binary formats and should not be applied to arbitrary binary "
 "data. Note that all of the bytearray methods in this section do *not* "
 "operate in place, and instead produce new objects."
-msgstr ""
+msgstr "以下の bytes および bytearray オブジェクトのメソッドは、 ASCII と互換性のあるバイナリフォーマットが使われていると仮定しており、任意のバイナリデータに対して使用すべきではありません。なお、このセクションで紹介する bytearray のメソッドはすべてインプレースで動作 *せず* 、新しいオブジェクトを生成します。"
 
 #: ../../library/stdtypes.rst:2836
 msgid ""
