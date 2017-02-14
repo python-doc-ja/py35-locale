@@ -5,14 +5,14 @@
 # Translators:
 # E. Kawashima, 2016-2017
 # tomo, 2016
-# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2016
+# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2016-2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-29 02:18+0000\n"
-"Last-Translator: E. Kawashima\n"
+"PO-Revision-Date: 2017-02-14 07:26+0000\n"
+"Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -647,7 +647,7 @@ msgstr "これは値を変更せずに返します。型検査器にこれは返
 msgid ""
 "Return a dictionary containing type hints for a function, method, module or "
 "class object."
-msgstr ""
+msgstr "関数、メソッド、モジュールまたはクラスのオブジェクトの型ヒントを含む辞書を返します。"
 
 #: ../../library/typing.rst:741
 msgid ""
@@ -709,11 +709,11 @@ msgstr "制約のない型であることを示す特別な型。"
 
 #: ../../library/typing.rst:798
 msgid "Every type is compatible with :data:`Any`."
-msgstr ""
+msgstr "任意の型は :data:`Any` と互換です。"
 
 #: ../../library/typing.rst:799
 msgid ":data:`Any` is compatible with every type."
-msgstr ""
+msgstr ":data:`Any` は任意の型と互換です。"
 
 #: ../../library/typing.rst:803
 msgid "Union type; ``Union[X, Y]`` means either X or Y."
@@ -746,7 +746,7 @@ msgstr "直和型を比較するとき、実引数の順序は無視されます
 #: ../../library/typing.rst:825
 msgid ""
 "When a class and its subclass are present, the former is skipped, e.g.::"
-msgstr ""
+msgstr "あるクラスとそのサブクラスが存在するとき、前者は飛ばされます、例えば::"
 
 #: ../../library/typing.rst:829
 msgid "You cannot subclass or instantiate a union."
@@ -831,7 +831,7 @@ msgstr ":pep:`526` で導入された通り、 ClassVar でラップされた変
 
 #: ../../library/typing.rst:890
 msgid ":data:`ClassVar` accepts only types and cannot be further subscribed."
-msgstr ""
+msgstr ":data:`ClassVar` は型のみを受け入れ、それ以外は受け付けられません。"
 
 #: ../../library/typing.rst:892
 msgid ""
