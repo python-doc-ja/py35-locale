@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-12 15:11+0000\n"
+"PO-Revision-Date: 2017-02-18 08:08+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3548,7 +3548,7 @@ msgid ""
 "Alphabetic ASCII characters are those byte values in the sequence "
 "``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'``. ASCII decimal "
 "digits are those byte values in the sequence ``b'0123456789'``."
-msgstr ""
+msgstr "シーケンスが空でなく、かつ全てのバイト値が ASCII 文字のアルファベットまたは数字である場合は true を、そうでなければ false を返します。ここでの ASCII 文字のアルファベットとはシーケンス ``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。 ASCII 文字の数字とは ``b'0123456789'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2894
 msgid ""
@@ -3556,20 +3556,20 @@ msgid ""
 " the sequence is not empty, false otherwise.  Alphabetic ASCII characters "
 "are those byte values in the sequence "
 "``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'``."
-msgstr ""
+msgstr "シーケンスが空でなく、かつ全てのバイト値が ASCII 文字のアルファベットである場合は true を、そうでなければ false を返します。ここでの ASCII 文字のアルファベットとはシーケンス ``b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2910
 msgid ""
 "Return true if all bytes in the sequence are ASCII decimal digits and the "
 "sequence is not empty, false otherwise. ASCII decimal digits are those byte "
 "values in the sequence ``b'0123456789'``."
-msgstr ""
+msgstr "シーケンスが空でなく、かつ全てのバイト値が ASCII 文字の数字である場合は true を、そうでなければ false を返します。ここでの ASCII 文字の数字とは ``b'0123456789'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2925
 msgid ""
 "Return true if there is at least one lowercase ASCII character in the "
 "sequence and no uppercase ASCII characters, false otherwise."
-msgstr ""
+msgstr "シーケンス中に小文字アルファベットの ASCII 文字が一つ以上あり、かつ大文字アルファベットの ASCII 文字が一つも無い場合に true を返します。そうでなければ false を返します。"
 
 #: ../../library/stdtypes.rst:2935 ../../library/stdtypes.rst:2977
 #: ../../library/stdtypes.rst:2993 ../../library/stdtypes.rst:3043
@@ -3578,7 +3578,7 @@ msgid ""
 "Lowercase ASCII characters are those byte values in the sequence "
 "``b'abcdefghijklmnopqrstuvwxyz'``. Uppercase ASCII characters are those byte"
 " values in the sequence ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``."
-msgstr ""
+msgstr "ここでの小文字の ASCII 文字とは ``b'abcdefghijklmnopqrstuvwxyz'`` に含まれるバイト値です。また大文字の ASCII 文字とは ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。"
 
 #: ../../library/stdtypes.rst:2943
 msgid ""
@@ -3586,26 +3586,26 @@ msgid ""
 "sequence is not empty, false otherwise.  ASCII whitespace characters are "
 "those byte values in the sequence ``b' \\t\\n\\r\\x0b\\f'`` (space, tab, "
 "newline, carriage return, vertical tab, form feed)."
-msgstr ""
+msgstr "シーケンスが空でなく、かつ全てのバイト値が ASCII 空白文字である場合は true を、そうでなければ false を返します。ここでの ASCII 空白文字とはシーケンス ``b' \\t\\n\\r\\x0b\\f'`` に含まれるバイト値です (半角スペース、タブ、ラインフィード、キャリッジリターン、垂直タブ、フォームフィード) 。"
 
 #: ../../library/stdtypes.rst:2952
 msgid ""
 "Return true if the sequence is ASCII titlecase and the sequence is not "
 "empty, false otherwise. See :meth:`bytes.title` for more details on the "
 "definition of \"titlecase\"."
-msgstr ""
+msgstr "シーケンスが空でなく、かつ ASCII のタイトルケース文字列になっている場合は true を、そうでなければ false を返します。「タイトルケース文字列」の定義については :meth:`bytes.title` を参照してください。"
 
 #: ../../library/stdtypes.rst:2967
 msgid ""
 "Return true if there is at least one uppercase alphabetic ASCII character in"
 " the sequence and no lowercase ASCII characters, false otherwise."
-msgstr ""
+msgstr "シーケンス中に大文字アルファベットの ASCII 文字が一つ以上あり、かつ小文字アルファベットの ASCII 文字が一つも無い場合に true を返します。そうでなければ false を返します。"
 
 #: ../../library/stdtypes.rst:2985
 msgid ""
 "Return a copy of the sequence with all the uppercase ASCII characters "
 "converted to their corresponding lowercase counterpart."
-msgstr ""
+msgstr "シーケンスに含まれる大文字アルファベットの ASCII 文字を全て小文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3010
 msgid ""
@@ -3613,20 +3613,20 @@ msgid ""
 "boundaries. This method uses the :term:`universal newlines` approach to "
 "splitting lines. Line breaks are not included in the resulting list unless "
 "*keepends* is given and true."
-msgstr ""
+msgstr "バイナリシーケンスを ASCII の改行コードで分割し、各行をリストにして返します。このメソッドは :term:`universal newlines` アプローチで行を分割します。 *keepends* 引数に真を与えた場合を除き、改行コードは結果のリストに含まれません。"
 
 #: ../../library/stdtypes.rst:3022
 msgid ""
 "Unlike :meth:`~bytes.split` when a delimiter string *sep* is given, this "
 "method returns an empty list for the empty string, and a terminal line break"
 " does not result in an extra line::"
-msgstr ""
+msgstr ":meth:`~bytes.split` とは違って、空シーケンスに対して区切り *sep* を与えて呼び出すと空のリストを返します。またシーケンス末尾に改行コードがある場合、（訳註: その後ろに空行があるとは判断せず）余分な行を生成することはありません::"
 
 #: ../../library/stdtypes.rst:3035
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart and vice-versa."
-msgstr ""
+msgstr "シーケンスに含まれる小文字アルファベットの ASCII 文字を全て大文字アルファベットに変換し、さらに大文字アルファベットを同様に小文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3047
 msgid ""
@@ -3634,14 +3634,14 @@ msgid ""
 "``bin.swapcase().swapcase() == bin`` for the binary versions. Case "
 "conversions are symmetrical in ASCII, even though that is not generally true"
 " for arbitrary Unicode code points."
-msgstr ""
+msgstr ":func:`str.swapcase()` とは違い、バイナリバージョンのこちらでは ``bin.swapcase().swapcase() == bin`` が常に成り立ちます。一般的に Unicode 文字の大文字小文字変換は対称的ではありませんが、 ASCII 文字の場合は対称的です。"
 
 #: ../../library/stdtypes.rst:3061
 msgid ""
 "Return a titlecased version of the binary sequence where words start with an"
 " uppercase ASCII character and the remaining characters are lowercase. "
 "Uncased byte values are left unmodified."
-msgstr ""
+msgstr "タイトルケース化したバイナリシーケンスを返します。具体的には、各単語が大文字アルファベットの ASCII 文字で始まり、かつ残りの文字が小文字アルファベットになっているシーケンスが返ります。大文字小文字の区別が無いバイト値については変更されずそのままになります。"
 
 #: ../../library/stdtypes.rst:3070
 msgid ""
@@ -3649,13 +3649,13 @@ msgid ""
 "``b'abcdefghijklmnopqrstuvwxyz'``. Uppercase ASCII characters are those byte"
 " values in the sequence ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``. All other byte "
 "values are uncased."
-msgstr ""
+msgstr "ここでの小文字の ASCII 文字とは ``b'abcdefghijklmnopqrstuvwxyz'`` に含まれるバイト値です。また大文字の ASCII 文字とは ``b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`` に含まれるバイト値です。その他のバイト値については、大文字小文字の区別はありません。"
 
 #: ../../library/stdtypes.rst:3104
 msgid ""
 "Return a copy of the sequence with all the lowercase ASCII characters "
 "converted to their corresponding uppercase counterpart."
-msgstr ""
+msgstr "シーケンスに含まれる小文字アルファベットの ASCII 文字を全て大文字アルファベットに変換したシーケンスのコピーを返します。"
 
 #: ../../library/stdtypes.rst:3125
 msgid ""
