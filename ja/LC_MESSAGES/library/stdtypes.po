@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-18 08:08+0000\n"
+"PO-Revision-Date: 2017-02-18 09:23+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3664,11 +3664,11 @@ msgid ""
 "handled by inserting the padding *after* the sign character rather than "
 "before. For :class:`bytes` objects, the original sequence is returned if "
 "*width* is less than or equal to ``len(seq)``."
-msgstr ""
+msgstr "長さが *width* になるよう ASCII ``b'0'`` で左詰めしたシーケンスのコピーを返します。先頭が符号接頭辞 (``b'+'``/``b'-'``) だった場合、 ``b'0'`` は符号の前ではなく *後* に挿入されます。 :class:`bytes` オブジェクトの場合、 *width* が ``len(seq)`` 以下であれば元のシーケンスが返ります。"
 
 #: ../../library/stdtypes.rst:3147
 msgid "``printf``-style Bytes Formatting"
-msgstr ""
+msgstr "``printf`` 形式での bytes の書式化"
 
 #: ../../library/stdtypes.rst:3165
 msgid ""
@@ -3676,7 +3676,7 @@ msgid ""
 "lead to a number of common errors (such as failing to display tuples and "
 "dictionaries correctly).  If the value being printed may be a tuple or "
 "dictionary, wrap it in a tuple."
-msgstr ""
+msgstr "ここで述べる書式化演算には様々な癖があり、よく間違いの元になっています (タプルや辞書を正しく表示できないなど)。もし表示する値がタプルや辞書かもしれない場合、それをタプルに包むようにしてください。"
 
 #: ../../library/stdtypes.rst:3170
 msgid ""
@@ -3686,7 +3686,7 @@ msgid ""
 "bytes object), ``%`` conversion specifications in *format* are replaced with"
 " zero or more elements of *values*. The effect is similar to using the "
 ":c:func:`sprintf` in the C language."
-msgstr ""
+msgstr "bytes オブジェクト (``bytes``/``bytearray``) には固有の操作: ``%`` 演算子 (モジュロ) があります。この演算子は bytes の *書式化* または *補間* 演算子とも呼ばれます。``format % values`` (*format* は bytes オブジェクト) とすると、*format* 中の ``%`` 変換指定は *values* 中のゼロ個またはそれ以上の要素で置換されます。この動作は C 言語における :c:func:`sprintf` に似ています。"
 
 #: ../../library/stdtypes.rst:3177
 msgid ""
@@ -3694,7 +3694,7 @@ msgid ""
 "object. [5]_  Otherwise, *values* must be a tuple with exactly the number of"
 " items specified by the format bytes object, or a single mapping object (for"
 " example, a dictionary)."
-msgstr ""
+msgstr "*format* が単一の引数しか要求しない場合、 *values* はタプルではない単一のオブジェクトで問題ありません。 [5]_ それ以外の場合、 *values* は書式シーケンス（訳註: 先の例での *format* ）中で指定された項目と正確に同じ数の要素を含むタプルか、単一のマッピング型のオブジェクト (たとえば辞書) でなければなりません。"
 
 #: ../../library/stdtypes.rst:3206
 msgid ""
@@ -3703,11 +3703,11 @@ msgid ""
 "that dictionary inserted immediately after the ``'%'`` character. The "
 "mapping key selects the value to be formatted from the mapping.  For "
 "example:"
-msgstr ""
+msgstr "``%`` 演算子の右側の引数が辞書の場合 (またはその他のマッピング型の場合) 、 bytes オブジェクト中のフォーマットには、辞書のキーを丸括弧で囲って文字 ``'%'`` の直後に書いたものが含まれていなければ *なりません* 。マップキーは書式化したい値をマッピングから選び出します。例えば:"
 
 #: ../../library/stdtypes.rst:3274
 msgid "Single byte (accepts integer or single byte objects)."
-msgstr ""
+msgstr "1 バイト (整数または要素 1 つの ``bytes``/``bytearray`` オブジェクトを受理します)"
 
 #: ../../library/stdtypes.rst:3277
 msgid "``'b'``"
@@ -3717,25 +3717,25 @@ msgstr "``'b'``"
 msgid ""
 "Bytes (any object that follows the :ref:`buffer protocol <bufferobjects>` or"
 " has :meth:`__bytes__`)."
-msgstr ""
+msgstr "バイナリシーケンス (:ref:`buffer protocol <bufferobjects>` をサポートするか、 :meth:`__bytes__` メソッドがあるオブジェクト)"
 
 #: ../../library/stdtypes.rst:3281
 msgid ""
 "``'s'`` is an alias for ``'b'`` and should only be used for Python2/3 code "
 "bases."
-msgstr ""
+msgstr "``'s'`` は ``'b'`` の別名です。Python 2/3 の両方を対象としたコードでのみ使用すべきです。"
 
 #: ../../library/stdtypes.rst:3284
 msgid ""
 "Bytes (converts any Python object using "
 "``repr(obj).encode('ascii','backslashreplace)``)."
-msgstr ""
+msgstr "バイナリシーケンス (Python オブジェクトを ``repr(obj).encode('ascii','backslashreplace)`` で変換します)。"
 
 #: ../../library/stdtypes.rst:3287
 msgid ""
 "``'r'`` is an alias for ``'a'`` and should only be used for Python2/3 code "
 "bases."
-msgstr ""
+msgstr "``'r'`` は ``'a'`` の別名です。Python 2/3 の両方を対象としたコードでのみ使用すべきです。"
 
 #: ../../library/stdtypes.rst:3287
 msgid "\\(7)"
@@ -3744,12 +3744,12 @@ msgstr "\\(7)"
 #: ../../library/stdtypes.rst:3322
 msgid ""
 "``b'%s'`` is deprecated, but will not be removed during the 3.x series."
-msgstr ""
+msgstr "``b'%s'`` は非推奨ですが、3.x 系では削除されません。"
 
 #: ../../library/stdtypes.rst:3325
 msgid ""
 "``b'%r'`` is deprecated, but will not be removed during the 3.x series."
-msgstr ""
+msgstr "``b'%r'`` は非推奨ですが、3.x 系では削除されません。"
 
 #: ../../library/stdtypes.rst:3335
 msgid ":pep:`461`."
