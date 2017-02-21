@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -1344,7 +1344,7 @@ msgid "Grouping tests"
 msgstr ""
 
 #: ../../library/unittest.rst:1468
-msgid "This class represents an aggregation of individual tests cases and test suites. The class presents the interface needed by the test runner to allow it to be run as any other test case.  Running a :class:`TestSuite` instance is the same as iterating over the suite, running each test individually."
+msgid "This class represents an aggregation of individual test cases and test suites. The class presents the interface needed by the test runner to allow it to be run as any other test case.  Running a :class:`TestSuite` instance is the same as iterating over the suite, running each test individually."
 msgstr ""
 
 #: ../../library/unittest.rst:1473
@@ -1420,7 +1420,7 @@ msgid ":class:`TestLoader` objects have the following methods:"
 msgstr ""
 
 #: ../../library/unittest.rst:1576
-msgid "Return a suite of all tests cases contained in the :class:`TestCase`\\ -derived :class:`testCaseClass`."
+msgid "Return a suite of all test cases contained in the :class:`TestCase`\\ -derived :class:`testCaseClass`."
 msgstr ""
 
 #: ../../library/unittest.rst:1579
@@ -1428,7 +1428,7 @@ msgid "A test case instance is created for each method named by :meth:`getTestCa
 msgstr ""
 
 #: ../../library/unittest.rst:1588
-msgid "Return a suite of all tests cases contained in the given module. This method searches *module* for classes derived from :class:`TestCase` and creates an instance of the class for each test method defined for the class."
+msgid "Return a suite of all test cases contained in the given module. This method searches *module* for classes derived from :class:`TestCase` and creates an instance of the class for each test method defined for the class."
 msgstr ""
 
 #: ../../library/unittest.rst:1595
@@ -1448,7 +1448,7 @@ msgid "The undocumented and unofficial *use_load_tests* default argument is depr
 msgstr ""
 
 #: ../../library/unittest.rst:1618
-msgid "Return a suite of all tests cases given a string specifier."
+msgid "Return a suite of all test cases given a string specifier."
 msgstr ""
 
 #: ../../library/unittest.rst:1620

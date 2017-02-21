@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -1578,7 +1578,7 @@ msgid "Note that there is a nice correspondence between several attributes and m
 msgstr ""
 
 #: ../../library/os.rst:2069
-msgid "Get the status of a file or a file descriptor. Perform the equivalent of a :c:func:`stat` system call on the given path. *path* may be specified as either a string or as an open file descriptor. Return a :class:`stat_result` object."
+msgid "Get the status of a file or a file descriptor. Perform the equivalent of a :c:func:`stat` system call on the given path. *path* may be specified as either a string, a bytes or as an open file descriptor. Return a :class:`stat_result` object."
 msgstr ""
 
 #: ../../library/os.rst:2074

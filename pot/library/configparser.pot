@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -573,7 +573,7 @@ msgid "Use :meth:`read_file` instead."
 msgstr ""
 
 #: ../../library/configparser.rst:1163
-msgid ":meth:`readfp` now iterates on *f* instead of calling ``f.readline()``."
+msgid ":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
 msgstr ""
 
 #: ../../library/configparser.rst:1166
@@ -581,7 +581,7 @@ msgid "For existing code calling :meth:`readfp` with arguments which don't suppo
 msgstr ""
 
 #: ../../library/configparser.rst:1176
-msgid "Instead of ``parser.readfp(f)`` use ``parser.read_file(readline_generator(f))``."
+msgid "Instead of ``parser.readfp(fp)`` use ``parser.read_file(readline_generator(fp))``."
 msgstr ""
 
 #: ../../library/configparser.rst:1182

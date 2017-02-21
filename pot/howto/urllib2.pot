@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -333,7 +333,7 @@ msgid "Google for example."
 msgstr ""
 
 #: ../../howto/urllib2.rst:581
-msgid "Browser sniffing is a very bad practise for website design - building sites using web standards is much more sensible. Unfortunately a lot of sites still send different versions to different browsers."
+msgid "Browser sniffing is a very bad practice for website design - building sites using web standards is much more sensible. Unfortunately a lot of sites still send different versions to different browsers."
 msgstr ""
 
 #: ../../howto/urllib2.rst:584

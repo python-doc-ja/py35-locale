@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -178,6 +178,6 @@ msgid "For packages located in the filesystem, which have already been imported,
 msgstr ""
 
 #: ../../library/pkgutil.rst:220
-msgid "If the package cannot be located or loaded, or it uses a :term:`loader` which does not support :meth:`get_data <importlib.abc.ResourceLoader.get_data>`, then ``None`` is returned."
+msgid "If the package cannot be located or loaded, or it uses a :term:`loader` which does not support :meth:`get_data <importlib.abc.ResourceLoader.get_data>`, then ``None`` is returned.  In particular, the :term:`loader` for :term:`namespace packages <namespace package>` does not support :meth:`get_data <importlib.abc.ResourceLoader.get_data>`."
 msgstr ""
 

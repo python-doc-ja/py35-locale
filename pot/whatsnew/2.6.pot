@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -220,7 +220,7 @@ msgid "Some standard Python objects now support the context management protocol 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:292
-msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part- way through the block."
+msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part-way through the block."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:298

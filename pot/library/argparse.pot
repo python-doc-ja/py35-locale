@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -144,7 +144,7 @@ msgid "conflict_handler_ - The strategy for resolving conflicting optionals (usu
 msgstr ""
 
 #: ../../library/argparse.rst:177
-msgid "add_help_ - Add a -h/--help option to the parser (default: ``True``)"
+msgid "add_help_ - Add a ``-h/--help`` option to the parser (default: ``True``)"
 msgstr ""
 
 #: ../../library/argparse.rst:179

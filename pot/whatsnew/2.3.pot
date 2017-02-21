@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -56,7 +56,7 @@ msgid "The union and intersection of sets can be computed with the :meth:`union`
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:86
-msgid "It's also possible to take the symmetric difference of two sets.  This is the set of all elements in the union that aren't in the intersection.  Another way of putting it is that the symmetric difference contains all elements that are in exactly one set.  Again, there's an alternative notation (``^``), and an in- place version with the ungainly name :meth:`symmetric_difference_update`. ::"
+msgid "It's also possible to take the symmetric difference of two sets.  This is the set of all elements in the union that aren't in the intersection.  Another way of putting it is that the symmetric difference contains all elements that are in exactly one set.  Again, there's an alternative notation (``^``), and an in-place version with the ungainly name :meth:`symmetric_difference_update`. ::"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:100
@@ -164,7 +164,7 @@ msgid "PEP 273: Importing Modules from ZIP Archives"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:291
-msgid "The new :mod:`zipimport` module adds support for importing modules from a ZIP- format archive.  You don't need to import the module explicitly; it will be automatically imported if a ZIP archive's filename is added to ``sys.path``. For example:"
+msgid "The new :mod:`zipimport` module adds support for importing modules from a ZIP-format archive.  You don't need to import the module explicitly; it will be automatically imported if a ZIP archive's filename is added to ``sys.path``. For example:"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:314
@@ -220,7 +220,7 @@ msgid "PEP 278: Universal Newline Support"
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:377
-msgid "The three major operating systems used today are Microsoft Windows, Apple's Macintosh OS, and the various Unix derivatives.  A minor irritation of cross- platform work  is that these three platforms all use different characters to mark the ends of lines in text files.  Unix uses the linefeed (ASCII character 10), MacOS uses the carriage return (ASCII character 13), and Windows uses a two-character sequence of a carriage return plus a newline."
+msgid "The three major operating systems used today are Microsoft Windows, Apple's Macintosh OS, and the various Unix derivatives.  A minor irritation of cross-platform work  is that these three platforms all use different characters to mark the ends of lines in text files.  Unix uses the linefeed (ASCII character 10), MacOS uses the carriage return (ASCII character 13), and Windows uses a two-character sequence of a carriage return plus a newline."
 msgstr ""
 
 #: ../../whatsnew/2.3.rst:384

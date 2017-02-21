@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -116,11 +116,11 @@ msgid "Here's a small but realistic example::"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:160
-msgid "Here's another example, from a program that uses PyGTK.  Here a context- sensitive pop-up menu is being constructed dynamically.  The callback provided for the menu option is a partially applied version of the :meth:`open_item` method, where the first argument has been provided. ::"
+msgid "Here's another example, from a program that uses PyGTK.  Here a context-sensitive pop-up menu is being constructed dynamically.  The callback provided for the menu option is a partially applied version of the :meth:`open_item` method, where the first argument has been provided. ::"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:173
-msgid "Another function in the :mod:`functools` module is the ``update_wrapper(wrapper, wrapped)`` function that helps you write well- behaved decorators.  :func:`update_wrapper` copies the name, module, and docstring attribute to a wrapper function so that tracebacks inside the wrapped function are easier to understand.  For example, you might write::"
+msgid "Another function in the :mod:`functools` module is the ``update_wrapper(wrapper, wrapped)`` function that helps you write well-behaved decorators.  :func:`update_wrapper` copies the name, module, and docstring attribute to a wrapper function so that tracebacks inside the wrapped function are easier to understand.  For example, you might write::"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:186
@@ -200,7 +200,7 @@ msgid "Reading code which relies on relative imports is also less clear, because
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:299
-msgid "In Python 2.5, you can switch :keyword:`import`'s behaviour to  absolute imports using a ``from __future__ import absolute_import`` directive.  This absolute- import behaviour will become the default in a future version (probably Python 2.7).  Once absolute imports  are the default, ``import string`` will always find the standard library's version. It's suggested that users should begin using absolute imports as much as possible, so it's preferable to begin writing ``from pkg import string`` in your code."
+msgid "In Python 2.5, you can switch :keyword:`import`'s behaviour to  absolute imports using a ``from __future__ import absolute_import`` directive.  This absolute-import behaviour will become the default in a future version (probably Python 2.7).  Once absolute imports  are the default, ``import string`` will always find the standard library's version. It's suggested that users should begin using absolute imports as much as possible, so it's preferable to begin writing ``from pkg import string`` in your code."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:307
@@ -420,7 +420,7 @@ msgid "Some standard Python objects now support the context management protocol 
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:604
-msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part- way through the block."
+msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part-way through the block."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:610
@@ -1013,7 +1013,7 @@ msgid "The :mod:`struct` is now faster because it  compiles format strings into 
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1559
-msgid "You can also pack and unpack data to and from buffer objects directly using the ``pack_into(buffer, offset, v1, v2, ...)`` and ``unpack_from(buffer, offset)`` methods.  This lets you store data directly into an array or a memory- mapped file."
+msgid "You can also pack and unpack data to and from buffer objects directly using the ``pack_into(buffer, offset, v1, v2, ...)`` and ``unpack_from(buffer, offset)`` methods.  This lets you store data directly into an array or a memory-mapped file."
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1564
@@ -1553,6 +1553,6 @@ msgid "Acknowledgements"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:2282
-msgid "The author would like to thank the following people for offering suggestions, corrections and assistance with various drafts of this article: Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond Hettinger, Ralf W. Grosse- Kunstleve, Kent Johnson, Iain Lowe, Martin von Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas Wouters."
+msgid "The author would like to thank the following people for offering suggestions, corrections and assistance with various drafts of this article: Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond Hettinger, Ralf W. Grosse-Kunstleve, Kent Johnson, Iain Lowe, Martin von Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas Wouters."
 msgstr ""
 

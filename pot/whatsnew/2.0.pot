@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -92,7 +92,7 @@ msgid "The largest new feature in Python 2.0 is a new fundamental data type: Uni
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:148
-msgid "The final interface for Unicode support was arrived at through countless often- stormy discussions on the python-dev mailing list, and mostly implemented by Marc-André Lemburg, based on a Unicode string type implementation by Fredrik Lundh.  A detailed explanation of the interface was written up as :pep:`100`, \"Python Unicode Integration\". This article will simply cover the most significant points about the Unicode interfaces."
+msgid "The final interface for Unicode support was arrived at through countless often-stormy discussions on the python-dev mailing list, and mostly implemented by Marc-André Lemburg, based on a Unicode string type implementation by Fredrik Lundh.  A detailed explanation of the interface was written up as :pep:`100`, \"Python Unicode Integration\". This article will simply cover the most significant points about the Unicode interfaces."
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:155
@@ -504,7 +504,7 @@ msgid "XML Modules"
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:882
-msgid "Python 1.5.2 included a simple XML parser in the form of the :mod:`xmllib` module, contributed by Sjoerd Mullender.  Since 1.5.2's release, two different interfaces for processing XML have become common: SAX2 (version 2 of the Simple API for XML) provides an event-driven interface with some similarities to :mod:`xmllib`, and the DOM (Document Object Model) provides a tree-based interface, transforming an XML document into a tree of nodes that can be traversed and modified.  Python 2.0 includes a SAX2 interface and a stripped- down DOM interface as part of the :mod:`xml` package. Here we will give a brief overview of these new interfaces; consult the Python documentation or the source code for complete details. The Python XML SIG is also working on improved documentation."
+msgid "Python 1.5.2 included a simple XML parser in the form of the :mod:`xmllib` module, contributed by Sjoerd Mullender.  Since 1.5.2's release, two different interfaces for processing XML have become common: SAX2 (version 2 of the Simple API for XML) provides an event-driven interface with some similarities to :mod:`xmllib`, and the DOM (Document Object Model) provides a tree-based interface, transforming an XML document into a tree of nodes that can be traversed and modified.  Python 2.0 includes a SAX2 interface and a stripped-down DOM interface as part of the :mod:`xml` package. Here we will give a brief overview of these new interfaces; consult the Python documentation or the source code for complete details. The Python XML SIG is also working on improved documentation."
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:896

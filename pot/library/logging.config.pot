@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -112,7 +112,7 @@ msgid "Defaults to be passed to the ConfigParser can be specified in this argume
 msgstr ""
 
 #: ../../library/logging.config.rst:105
-msgid "If specified as ``False``, loggers which exist when this call is made are left enabled. The default is ``True`` because this enables old behaviour in a backward- compatible way. This behaviour is to disable any existing loggers unless they or their ancestors are explicitly named in the logging configuration."
+msgid "If specified as ``False``, loggers which exist when this call is made are left enabled. The default is ``True`` because this enables old behaviour in a backward-compatible way. This behaviour is to disable any existing loggers unless they or their ancestors are explicitly named in the logging configuration."
 msgstr ""
 
 #: ../../library/logging.config.rst:114

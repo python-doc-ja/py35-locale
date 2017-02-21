@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -65,7 +65,7 @@ msgid "Example of output of the Python test suite::"
 msgstr ""
 
 #: ../../library/tracemalloc.rst:69
-msgid "We can see that Python loaded ``4.8 MiB`` data (bytecode and constants) from modules and that the :mod:`collections` module allocated ``244 KiB`` to build :class:`~collections.namedtuple` types."
+msgid "We can see that Python loaded ``4855 KiB`` data (bytecode and constants) from modules and that the :mod:`collections` module allocated ``244 KiB`` to build :class:`~collections.namedtuple` types."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:73
@@ -86,7 +86,7 @@ msgid "Example of output before/after running some tests of the Python test suit
 msgstr ""
 
 #: ../../library/tracemalloc.rst:109
-msgid "We can see that Python has loaded ``8.2 MiB`` of module data (bytecode and constants), and that this is ``4.4 MiB`` more than had been loaded before the tests, when the previous snapshot was taken. Similarly, the :mod:`linecache` module has cached ``940 KiB`` of Python source code to format tracebacks, all of it since the previous snapshot."
+msgid "We can see that Python has loaded ``8173 KiB`` of module data (bytecode and constants), and that this is ``4428 KiB`` more than had been loaded before the tests, when the previous snapshot was taken. Similarly, the :mod:`linecache` module has cached ``940 KiB`` of Python source code to format tracebacks, all of it since the previous snapshot."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:115
@@ -106,7 +106,7 @@ msgid "Example of output of the Python test suite (traceback limited to 25 frame
 msgstr ""
 
 #: ../../library/tracemalloc.rst:178
-msgid "We can see that the most memory was allocated in the :mod:`importlib` module to load data (bytecode and constants) from modules: ``870 KiB``. The traceback is where the :mod:`importlib` loaded data most recently: on the ``import pdb`` line of the :mod:`doctest` module. The traceback may change if a new module is loaded."
+msgid "We can see that the most memory was allocated in the :mod:`importlib` module to load data (bytecode and constants) from modules: ``870.1 KiB``. The traceback is where the :mod:`importlib` loaded data most recently: on the ``import pdb`` line of the :mod:`doctest` module. The traceback may change if a new module is loaded."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:186
@@ -310,11 +310,11 @@ msgid "The :func:`take_snapshot` function creates a snapshot instance."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:443
-msgid "Compute the differences with an old snapshot. Get statistics as a sorted list of :class:`StatisticDiff` instances grouped by *group_by*."
+msgid "Compute the differences with an old snapshot. Get statistics as a sorted list of :class:`StatisticDiff` instances grouped by *key_type*."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:446
-msgid "See the :meth:`Snapshot.statistics` method for *group_by* and *cumulative* parameters."
+msgid "See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* parameters."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:449
@@ -346,11 +346,11 @@ msgid "See also :meth:`dump`."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:483
-msgid "Get statistics as a sorted list of :class:`Statistic` instances grouped by *group_by*:"
+msgid "Get statistics as a sorted list of :class:`Statistic` instances grouped by *key_type*:"
 msgstr ""
 
 #: ../../library/tracemalloc.rst:487
-msgid "group_by"
+msgid "key_type"
 msgstr ""
 
 #: ../../library/tracemalloc.rst:487
@@ -382,7 +382,7 @@ msgid "traceback"
 msgstr ""
 
 #: ../../library/tracemalloc.rst:494
-msgid "If *cumulative* is ``True``, cumulate size and count of memory blocks of all frames of the traceback of a trace, not only the most recent frame. The cumulative mode can only be used with *group_by* equals to ``'filename'`` and ``'lineno'``."
+msgid "If *cumulative* is ``True``, cumulate size and count of memory blocks of all frames of the traceback of a trace, not only the most recent frame. The cumulative mode can only be used with *key_type* equals to ``'filename'`` and ``'lineno'``."
 msgstr ""
 
 #: ../../library/tracemalloc.rst:499

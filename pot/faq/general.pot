@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -17,10 +17,6 @@ msgstr ""
 
 #: ../../faq/general.rst:5
 msgid "General Python FAQ"
-msgstr ""
-
-#: ../../faq/general.rst:0
-msgid "Contents"
 msgstr ""
 
 #: ../../faq/general.rst:13
@@ -140,7 +136,7 @@ msgid "How do I obtain a copy of the Python source?"
 msgstr ""
 
 #: ../../faq/general.rst:160
-msgid "The latest Python source distribution is always available from python.org, at https://www.python.org/downloads/.  The latest development sources can be obtained via anonymous Mercurial access at https://hg.python.org/cpython."
+msgid "The latest Python source distribution is always available from python.org, at https://www.python.org/downloads/.  The latest development sources can be obtained at https://github.com/python/cpython/."
 msgstr ""
 
 #: ../../faq/general.rst:164
@@ -200,7 +196,7 @@ msgid "Alpha and beta releases are available from https://www.python.org/downloa
 msgstr ""
 
 #: ../../faq/general.rst:225
-msgid "You can also access the development version of Python through Mercurial.  See https://docs.python.org/devguide/faq.html for details."
+msgid "You can also access the development version of Python through Git.  See `The Python Developer's Guide <https://docs.python.org/devguide/>`_ for details."
 msgstr ""
 
 #: ../../faq/general.rst:230

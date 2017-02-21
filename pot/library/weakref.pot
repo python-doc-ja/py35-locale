@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -128,7 +128,7 @@ msgid "Caution: Because a :class:`WeakKeyDictionary` is built on top of a Python
 msgstr ""
 
 #: ../../library/weakref.rst:169
-msgid ":class:`WeakKeyDictionary` objects have the following additional methods.  These expose the internal references directly.  The references are not guaranteed to be \"live\" at the time they are used, so the result of calling the references needs to be checked before being used.  This can be used to avoid creating references that will cause the garbage collector to keep the keys around longer than needed."
+msgid ":class:`WeakKeyDictionary` objects have an additional method that exposes the internal references directly.  The references are not guaranteed to be \"live\" at the time they are used, so the result of calling the references needs to be checked before being used.  This can be used to avoid creating references that will cause the garbage collector to keep the keys around longer than needed."
 msgstr ""
 
 #: ../../library/weakref.rst:179
@@ -144,7 +144,7 @@ msgid "Caution:  Because a :class:`WeakValueDictionary` is built on top of a Pyt
 msgstr ""
 
 #: ../../library/weakref.rst:195
-msgid ":class:`WeakValueDictionary` objects have the following additional methods. These method have the same issues as the and :meth:`keyrefs` method of :class:`WeakKeyDictionary` objects."
+msgid ":class:`WeakValueDictionary` objects have an additional method that has the same issues as the :meth:`keyrefs` method of :class:`WeakKeyDictionary` objects."
 msgstr ""
 
 #: ../../library/weakref.rst:202

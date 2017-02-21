@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -284,7 +284,7 @@ msgid "In this example, the :mod:`echo` and :mod:`surround` modules are imported
 msgstr ""
 
 #: ../../tutorial/modules.rst:503
-msgid "Although certain modules are designed to export only names that follow certain patterns when you use ``import *``, it is still considered bad practise in production code."
+msgid "Although certain modules are designed to export only names that follow certain patterns when you use ``import *``, it is still considered bad practice in production code."
 msgstr ""
 
 #: ../../tutorial/modules.rst:507

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -556,7 +556,7 @@ msgid "The new :mod:`hmac` module implements the HMAC algorithm described by :rf
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:965
-msgid "Several functions that originally returned lengthy tuples now return pseudo- sequences that still behave like tuples but also have mnemonic attributes such as memberst_mtime or :attr:`tm_year`. The enhanced functions include :func:`stat`, :func:`fstat`, :func:`statvfs`, and :func:`fstatvfs` in the :mod:`os` module, and :func:`localtime`, :func:`gmtime`, and :func:`strptime` in the :mod:`time` module."
+msgid "Several functions that originally returned lengthy tuples now return pseudo-sequences that still behave like tuples but also have mnemonic attributes such as memberst_mtime or :attr:`tm_year`. The enhanced functions include :func:`stat`, :func:`fstat`, :func:`statvfs`, and :func:`fstatvfs` in the :mod:`os` module, and :func:`localtime`, :func:`gmtime`, and :func:`strptime` in the :mod:`time` module."
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:972
@@ -704,7 +704,7 @@ msgid "The code for the MacOS port for Python, maintained by Jack Jansen, is now
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1142
-msgid "The most significant change is the ability to build Python as a framework, enabled by supplying the :option:`!--enable-framework` option to the configure script when compiling Python.  According to Jack Jansen, \"This installs a self- contained Python installation plus the OS X framework \"glue\" into :file:`/Library/Frameworks/Python.framework` (or another location of choice). For now there is little immediate added benefit to this (actually, there is the disadvantage that you have to change your PATH to be able to find Python), but it is the basis for creating a full-blown Python application, porting the MacPython IDE, possibly using Python as a standard OSA scripting language and much more.\""
+msgid "The most significant change is the ability to build Python as a framework, enabled by supplying the :option:`!--enable-framework` option to the configure script when compiling Python.  According to Jack Jansen, \"This installs a self-contained Python installation plus the OS X framework \"glue\" into :file:`/Library/Frameworks/Python.framework` (or another location of choice). For now there is little immediate added benefit to this (actually, there is the disadvantage that you have to change your PATH to be able to find Python), but it is the basis for creating a full-blown Python application, porting the MacPython IDE, possibly using Python as a standard OSA scripting language and much more.\""
 msgstr ""
 
 #: ../../whatsnew/2.2.rst:1153

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -80,62 +80,62 @@ msgid "Perform hexbin4 binary-to-ASCII translation and return the resulting stri
 msgstr ""
 
 #: ../../library/binascii.rst:118
-msgid "Compute the binhex4 crc value of *data*, starting with *value* as the initial crc, and return the result."
+msgid "Compute a 16-bit CRC value of *data*, starting with *value* as the initial CRC, and return the result.  This uses the CRC-CCITT polynomial *x*:sup:`16` + *x*:sup:`12` + *x*:sup:`5` + 1, often represented as 0x1021.  This CRC is used in the binhex4 format."
 msgstr ""
 
-#: ../../library/binascii.rst:124
+#: ../../library/binascii.rst:126
 msgid "Compute CRC-32, the 32-bit checksum of *data*, starting with an initial CRC of *value*.  The default initial CRC is zero.  The algorithm is consistent with the ZIP file checksum.  Since the algorithm is designed for use as a checksum algorithm, it is not suitable for use as a general hash algorithm.  Use as follows::"
 msgstr ""
 
-#: ../../library/binascii.rst:136
+#: ../../library/binascii.rst:138
 msgid "The result is always unsigned. To generate the same numeric value across all Python versions and platforms, use ``crc32(data) & 0xffffffff``."
 msgstr ""
 
-#: ../../library/binascii.rst:145
+#: ../../library/binascii.rst:147
 msgid "Return the hexadecimal representation of the binary *data*.  Every byte of *data* is converted into the corresponding 2-digit hex representation.  The returned bytes object is therefore twice as long as the length of *data*."
 msgstr ""
 
-#: ../../library/binascii.rst:153
+#: ../../library/binascii.rst:155
 msgid "Return the binary data represented by the hexadecimal string *hexstr*.  This function is the inverse of :func:`b2a_hex`. *hexstr* must contain an even number of hexadecimal digits (which can be upper or lower case), otherwise an :exc:`Error` exception is raised."
 msgstr ""
 
-#: ../../library/binascii.rst:161
+#: ../../library/binascii.rst:163
 msgid "Exception raised on errors. These are usually programming errors."
 msgstr ""
 
-#: ../../library/binascii.rst:166
+#: ../../library/binascii.rst:168
 msgid "Exception raised on incomplete data. These are usually not programming errors, but may be handled by reading a little more data and trying again."
 msgstr ""
 
-#: ../../library/binascii.rst:174
+#: ../../library/binascii.rst:176
 msgid "Module :mod:`base64`"
 msgstr ""
 
-#: ../../library/binascii.rst:173
+#: ../../library/binascii.rst:175
 msgid "Support for RFC compliant base64-style encoding in base 16, 32, 64, and 85."
 msgstr ""
 
-#: ../../library/binascii.rst:177
+#: ../../library/binascii.rst:179
 msgid "Module :mod:`binhex`"
 msgstr ""
 
-#: ../../library/binascii.rst:177
+#: ../../library/binascii.rst:179
 msgid "Support for the binhex format used on the Macintosh."
 msgstr ""
 
-#: ../../library/binascii.rst:180
+#: ../../library/binascii.rst:182
 msgid "Module :mod:`uu`"
 msgstr ""
 
-#: ../../library/binascii.rst:180
+#: ../../library/binascii.rst:182
 msgid "Support for UU encoding used on Unix."
 msgstr ""
 
-#: ../../library/binascii.rst:182
+#: ../../library/binascii.rst:184
 msgid "Module :mod:`quopri`"
 msgstr ""
 
-#: ../../library/binascii.rst:183
+#: ../../library/binascii.rst:185
 msgid "Support for quoted-printable encoding used in MIME email messages."
 msgstr ""
 

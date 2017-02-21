@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -17,10 +17,6 @@ msgstr ""
 
 #: ../../faq/library.rst:5
 msgid "Library and Extension FAQ"
-msgstr ""
-
-#: ../../faq/library.rst:0
-msgid "Contents"
 msgstr ""
 
 #: ../../faq/library.rst:12

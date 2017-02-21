@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -1076,258 +1076,262 @@ msgid "Attributes are created on demand when you access them by name. Accessing 
 msgstr ""
 
 #: ../../library/unittest.mock.rst:1798
+msgid "The ``sentinel`` attributes don't preserve their identity when they are :mod:`copied <copy>` or :mod:`pickled <pickle>`."
+msgstr ""
+
+#: ../../library/unittest.mock.rst:1801
 msgid "Sometimes when testing you need to test that a specific object is passed as an argument to another method, or returned. It can be common to create named sentinel objects to test this. :data:`sentinel` provides a convenient way of creating and testing the identity of objects like this."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1803
+#: ../../library/unittest.mock.rst:1806
 msgid "In this example we monkey patch ``method`` to return ``sentinel.some_object``:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1815
+#: ../../library/unittest.mock.rst:1818
 msgid "DEFAULT"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1820
+#: ../../library/unittest.mock.rst:1823
 msgid "The :data:`DEFAULT` object is a pre-created sentinel (actually ``sentinel.DEFAULT``). It can be used by :attr:`~Mock.side_effect` functions to indicate that the normal return value should be used."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1826
+#: ../../library/unittest.mock.rst:1829
 msgid "call"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1830
+#: ../../library/unittest.mock.rst:1833
 msgid ":func:`call` is a helper object for making simpler assertions, for comparing with :attr:`~Mock.call_args`, :attr:`~Mock.call_args_list`, :attr:`~Mock.mock_calls` and :attr:`~Mock.method_calls`. :func:`call` can also be used with :meth:`~Mock.assert_has_calls`."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1843
+#: ../../library/unittest.mock.rst:1846
 msgid "For a call object that represents multiple calls, :meth:`call_list` returns a list of all the intermediate calls as well as the final call."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1847
+#: ../../library/unittest.mock.rst:1850
 msgid "``call_list`` is particularly useful for making assertions on \"chained calls\". A chained call is multiple calls on a single line of code. This results in multiple entries in :attr:`~Mock.mock_calls` on a mock. Manually constructing the sequence of calls can be tedious."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1852
+#: ../../library/unittest.mock.rst:1855
 msgid ":meth:`~call.call_list` can construct the sequence of calls from the same chained call:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1869
+#: ../../library/unittest.mock.rst:1872
 msgid "A ``call`` object is either a tuple of (positional args, keyword args) or (name, positional args, keyword args) depending on how it was constructed. When you construct them yourself this isn't particularly interesting, but the ``call`` objects that are in the :attr:`Mock.call_args`, :attr:`Mock.call_args_list` and :attr:`Mock.mock_calls` attributes can be introspected to get at the individual arguments they contain."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1876
+#: ../../library/unittest.mock.rst:1879
 msgid "The ``call`` objects in :attr:`Mock.call_args` and :attr:`Mock.call_args_list` are two-tuples of (positional args, keyword args) whereas the ``call`` objects in :attr:`Mock.mock_calls`, along with ones you construct yourself, are three-tuples of (name, positional args, keyword args)."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1881
+#: ../../library/unittest.mock.rst:1884
 msgid "You can use their \"tupleness\" to pull out the individual arguments for more complex introspection and assertions. The positional arguments are a tuple (an empty tuple if there are no positional arguments) and the keyword arguments are a dictionary:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1915
+#: ../../library/unittest.mock.rst:1918
 msgid "create_autospec"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1919
+#: ../../library/unittest.mock.rst:1922
 msgid "Create a mock object using another object as a spec. Attributes on the mock will use the corresponding attribute on the *spec* object as their spec."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1923
+#: ../../library/unittest.mock.rst:1926
 msgid "Functions or methods being mocked will have their arguments checked to ensure that they are called with the correct signature."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1926
+#: ../../library/unittest.mock.rst:1929
 msgid "If *spec_set* is ``True`` then attempting to set attributes that don't exist on the spec object will raise an :exc:`AttributeError`."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1929
+#: ../../library/unittest.mock.rst:1932
 msgid "If a class is used as a spec then the return value of the mock (the instance of the class) will have the same spec. You can use a class as the spec for an instance object by passing ``instance=True``. The returned mock will only be callable if instances of the mock are callable."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1934
+#: ../../library/unittest.mock.rst:1937
 msgid ":func:`create_autospec` also takes arbitrary keyword arguments that are passed to the constructor of the created mock."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1937
+#: ../../library/unittest.mock.rst:1940
 msgid "See :ref:`auto-speccing` for examples of how to use auto-speccing with :func:`create_autospec` and the *autospec* argument to :func:`patch`."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1942
+#: ../../library/unittest.mock.rst:1945
 msgid "ANY"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1946
+#: ../../library/unittest.mock.rst:1949
 msgid "Sometimes you may need to make assertions about *some* of the arguments in a call to mock, but either not care about some of the arguments or want to pull them individually out of :attr:`~Mock.call_args` and make more complex assertions on them."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1951
+#: ../../library/unittest.mock.rst:1954
 msgid "To ignore certain arguments you can pass in objects that compare equal to *everything*. Calls to :meth:`~Mock.assert_called_with` and :meth:`~Mock.assert_called_once_with` will then succeed no matter what was passed in."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1960
+#: ../../library/unittest.mock.rst:1963
 msgid ":data:`ANY` can also be used in comparisons with call lists like :attr:`~Mock.mock_calls`:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1973
+#: ../../library/unittest.mock.rst:1976
 msgid "FILTER_DIR"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1977
+#: ../../library/unittest.mock.rst:1980
 msgid ":data:`FILTER_DIR` is a module level variable that controls the way mock objects respond to :func:`dir` (only for Python 2.6 or more recent). The default is ``True``, which uses the filtering described below, to only show useful members. If you dislike this filtering, or need to switch it off for diagnostic purposes, then set ``mock.FILTER_DIR = False``."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:1983
+#: ../../library/unittest.mock.rst:1986
 msgid "With filtering on, ``dir(some_mock)`` shows only useful attributes and will include any dynamically created attributes that wouldn't normally be shown. If the mock was created with a *spec* (or *autospec* of course) then all the attributes from the original are shown, even if they haven't been accessed yet:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2004
+#: ../../library/unittest.mock.rst:2007
 msgid "Many of the not-very-useful (private to :class:`Mock` rather than the thing being mocked) underscore and double underscore prefixed attributes have been filtered from the result of calling :func:`dir` on a :class:`Mock`. If you dislike this behaviour you can switch it off by setting the module level switch :data:`FILTER_DIR`:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2022
+#: ../../library/unittest.mock.rst:2025
 msgid "Alternatively you can just use ``vars(my_mock)`` (instance members) and ``dir(type(my_mock))`` (type members) to bypass the filtering irrespective of :data:`mock.FILTER_DIR`."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2028
+#: ../../library/unittest.mock.rst:2031
 msgid "mock_open"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2032
+#: ../../library/unittest.mock.rst:2035
 msgid "A helper function to create a mock to replace the use of :func:`open`. It works for :func:`open` called directly or used as a context manager."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2035
+#: ../../library/unittest.mock.rst:2038
 msgid "The *mock* argument is the mock object to configure. If ``None`` (the default) then a :class:`MagicMock` will be created for you, with the API limited to methods or attributes available on standard file handles."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2039
+#: ../../library/unittest.mock.rst:2042
 msgid "*read_data* is a string for the :meth:`~io.IOBase.read`, :meth:`~io.IOBase.readline`, and :meth:`~io.IOBase.readlines` methods of the file handle to return.  Calls to those methods will take data from *read_data* until it is depleted.  The mock of these methods is pretty simplistic: every time the *mock* is called, the *read_data* is rewound to the start.  If you need more control over the data that you are feeding to the tested code you will need to customize this mock for yourself.  When that is insufficient, one of the in-memory filesystem packages on `PyPI <https://pypi.python.org/pypi>`_ can offer a realistic filesystem for testing."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2049
+#: ../../library/unittest.mock.rst:2052
 msgid "Added :meth:`~io.IOBase.readline` and :meth:`~io.IOBase.readlines` support. The mock of :meth:`~io.IOBase.read` changed to consume *read_data* rather than returning it on each call."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2054
+#: ../../library/unittest.mock.rst:2057
 msgid "*read_data* is now reset on each call to the *mock*."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2057
+#: ../../library/unittest.mock.rst:2060
 msgid "Using :func:`open` as a context manager is a great way to ensure your file handles are closed properly and is becoming common::"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2063
+#: ../../library/unittest.mock.rst:2066
 msgid "The issue is that even if you mock out the call to :func:`open` it is the *returned object* that is used as a context manager (and has :meth:`__enter__` and :meth:`__exit__` called)."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2067
+#: ../../library/unittest.mock.rst:2070
 msgid "Mocking context managers with a :class:`MagicMock` is common enough and fiddly enough that a helper function is useful."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2084
+#: ../../library/unittest.mock.rst:2087
 msgid "And for reading files:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2097
+#: ../../library/unittest.mock.rst:2100
 msgid "Autospeccing"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2099
+#: ../../library/unittest.mock.rst:2102
 msgid "Autospeccing is based on the existing :attr:`spec` feature of mock. It limits the api of mocks to the api of an original object (the spec), but it is recursive (implemented lazily) so that attributes of mocks only have the same api as the attributes of the spec. In addition mocked functions / methods have the same call signature as the original so they raise a :exc:`TypeError` if they are called incorrectly."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2106
+#: ../../library/unittest.mock.rst:2109
 msgid "Before I explain how auto-speccing works, here's why it is needed."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2108
+#: ../../library/unittest.mock.rst:2111
 msgid ":class:`Mock` is a very powerful and flexible object, but it suffers from two flaws when used to mock out objects from a system under test. One of these flaws is specific to the :class:`Mock` api and the other is a more general problem with using mock objects."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2113
+#: ../../library/unittest.mock.rst:2116
 msgid "First the problem specific to :class:`Mock`. :class:`Mock` has two assert methods that are extremely handy: :meth:`~Mock.assert_called_with` and :meth:`~Mock.assert_called_once_with`."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2126
+#: ../../library/unittest.mock.rst:2129
 msgid "Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these assert methods then your assertion is gone:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2136
+#: ../../library/unittest.mock.rst:2139
 msgid "Your tests can pass silently and incorrectly because of the typo."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2138
+#: ../../library/unittest.mock.rst:2141
 msgid "The second issue is more general to mocking. If you refactor some of your code, rename members and so on, any tests for code that is still using the *old api* but uses mocks instead of the real objects will still pass. This means your tests can all pass even though your code is broken."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2143
+#: ../../library/unittest.mock.rst:2146
 msgid "Note that this is another reason why you need integration tests as well as unit tests. Testing everything in isolation is all fine and dandy, but if you don't test how your units are \"wired together\" there is still lots of room for bugs that tests might have caught."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2148
+#: ../../library/unittest.mock.rst:2151
 msgid ":mod:`mock` already provides a feature to help with this, called speccing. If you use a class or instance as the :attr:`spec` for a mock then you can only access attributes on the mock that exist on the real class:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2159
+#: ../../library/unittest.mock.rst:2162
 msgid "The spec only applies to the mock itself, so we still have the same issue with any methods on the mock:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2168
+#: ../../library/unittest.mock.rst:2171
 msgid "Auto-speccing solves this problem. You can either pass ``autospec=True`` to :func:`patch` / :func:`patch.object` or use the :func:`create_autospec` function to create a mock with a spec. If you use the ``autospec=True`` argument to :func:`patch` then the object that is being replaced will be used as the spec object. Because the speccing is done \"lazily\" (the spec is created as attributes on the mock are accessed) you can use it with very complex or deeply nested objects (like modules that import modules that import modules) without a big performance hit."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2177
+#: ../../library/unittest.mock.rst:2180
 msgid "Here's an example of it in use:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2187
+#: ../../library/unittest.mock.rst:2190
 msgid "You can see that :class:`request.Request` has a spec. :class:`request.Request` takes two arguments in the constructor (one of which is *self*). Here's what happens if we try to call it incorrectly:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2196
+#: ../../library/unittest.mock.rst:2199
 msgid "The spec also applies to instantiated classes (i.e. the return value of specced mocks):"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2203
+#: ../../library/unittest.mock.rst:2206
 msgid ":class:`Request` objects are not callable, so the return value of instantiating our mocked out :class:`request.Request` is a non-callable mock. With the spec in place any typos in our asserts will raise the correct error:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2215
+#: ../../library/unittest.mock.rst:2218
 msgid "In many cases you will just be able to add ``autospec=True`` to your existing :func:`patch` calls and then be protected against bugs due to typos and api changes."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2219
+#: ../../library/unittest.mock.rst:2222
 msgid "As well as using *autospec* through :func:`patch` there is a :func:`create_autospec` for creating autospecced mocks directly:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2227
+#: ../../library/unittest.mock.rst:2230
 msgid "This isn't without caveats and limitations however, which is why it is not the default behaviour. In order to know what attributes are available on the spec object, autospec has to introspect (access attributes) the spec. As you traverse attributes on the mock a corresponding traversal of the original object is happening under the hood. If any of your specced objects have properties or descriptors that can trigger code execution then you may not be able to use autospec. On the other hand it is much better to design your objects so that introspection is safe [#]_."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2236
+#: ../../library/unittest.mock.rst:2239
 msgid "A more serious problem is that it is common for instance attributes to be created in the :meth:`__init__` method and not to exist on the class at all. *autospec* can't know about any dynamically created attributes and restricts the api to visible attributes."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2253
+#: ../../library/unittest.mock.rst:2256
 msgid "There are a few different ways of resolving this problem. The easiest, but not necessarily the least annoying, way is to simply set the required attributes on the mock after creation. Just because *autospec* doesn't allow you to fetch attributes that don't exist on the spec it doesn't prevent you setting them:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2264
+#: ../../library/unittest.mock.rst:2267
 msgid "There is a more aggressive version of both *spec* and *autospec* that *does* prevent you setting non-existent attributes. This is useful if you want to ensure your code only *sets* valid attributes too, but obviously it prevents this particular scenario:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2277
+#: ../../library/unittest.mock.rst:2280
 msgid "Probably the best way of solving the problem is to add class attributes as default values for instance members initialised in :meth:`__init__`. Note that if you are only setting default attributes in :meth:`__init__` then providing them via class attributes (shared between instances of course) is faster too. e.g."
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2287
+#: ../../library/unittest.mock.rst:2290
 msgid "This brings up another issue. It is relatively common to provide a default value of ``None`` for members that will later be an object of a different type. ``None`` would be useless as a spec because it wouldn't let you access *any* attributes or methods on it. As ``None`` is *never* going to be useful as a spec, and probably indicates a member that will normally of some other type, autospec doesn't use a spec for members that are set to ``None``. These will just be ordinary mocks (well - MagicMocks):"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2302
+#: ../../library/unittest.mock.rst:2305
 msgid "If modifying your production classes to add defaults isn't to your liking then there are more options. One of these is simply to use an instance as the spec rather than the class. The other is to create a subclass of the production class and add the defaults to the subclass without affecting the production class. Both of these require you to use an alternative object as the spec. Thankfully :func:`patch` supports this - you can simply pass the alternative object as the *autospec* argument:"
 msgstr ""
 
-#: ../../library/unittest.mock.rst:2323
+#: ../../library/unittest.mock.rst:2326
 msgid "This only applies to classes or already instantiated objects. Calling a mocked class to create a mock instance *does not* create a real instance. It is only attribute lookups - along with calls to :func:`dir` - that are done."
 msgstr ""
 

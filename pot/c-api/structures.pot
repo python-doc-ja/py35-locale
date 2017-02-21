@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -163,7 +163,7 @@ msgid "This is the typical calling convention, where the methods have the type :
 msgstr ""
 
 #: ../../c-api/structures.rst:169
-msgid "Methods with these flags must be of type :c:type:`PyCFunctionWithKeywords`. The function expects three parameters: *self*, *args*, and a dictionary of all the keyword arguments.  The flag is typically combined with :const:`METH_VARARGS`, and the parameters are typically processed using :c:func:`PyArg_ParseTupleAndKeywords`."
+msgid "Methods with these flags must be of type :c:type:`PyCFunctionWithKeywords`. The function expects three parameters: *self*, *args*, and a dictionary of all the keyword arguments.  The flag must be combined with :const:`METH_VARARGS`, and the parameters are typically processed using :c:func:`PyArg_ParseTupleAndKeywords`."
 msgstr ""
 
 #: ../../c-api/structures.rst:178

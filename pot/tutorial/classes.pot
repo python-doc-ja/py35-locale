@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -244,7 +244,7 @@ msgid "What exactly happens when a method is called?  You may have noticed that 
 msgstr ""
 
 #: ../../tutorial/classes.rst:376
-msgid "Actually, you may have guessed the answer: the special thing about methods is that the object is passed as the first argument of the function.  In our example, the call ``x.f()`` is exactly equivalent to ``MyClass.f(x)``.  In general, calling a method with a list of *n* arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method's object before the first argument."
+msgid "Actually, you may have guessed the answer: the special thing about methods is that the instance object is passed as the first argument of the function.  In our example, the call ``x.f()`` is exactly equivalent to ``MyClass.f(x)``.  In general, calling a method with a list of *n* arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method's instance object before the first argument."
 msgstr ""
 
 #: ../../tutorial/classes.rst:383

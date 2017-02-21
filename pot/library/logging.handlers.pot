@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -881,7 +881,7 @@ msgid "Along with the :class:`QueueListener` class, :class:`QueueHandler` can be
 msgstr ""
 
 #: ../../library/logging.handlers.rst:902
-msgid "Returns a new instance of the :class:`QueueHandler` class. The instance is initialized with the queue to send messages to. The queue can be any queue- like object; it's used as-is by the :meth:`enqueue` method, which needs to know how to send messages to it."
+msgid "Returns a new instance of the :class:`QueueHandler` class. The instance is initialized with the queue to send messages to. The queue can be any queue-like object; it's used as-is by the :meth:`enqueue` method, which needs to know how to send messages to it."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:910
@@ -917,7 +917,7 @@ msgid "Along with the :class:`QueueHandler` class, :class:`QueueListener` can be
 msgstr ""
 
 #: ../../library/logging.handlers.rst:957
-msgid "Returns a new instance of the :class:`QueueListener` class. The instance is initialized with the queue to send messages to and a list of handlers which will handle entries placed on the queue. The queue can be any queue- like object; it's passed as-is to the :meth:`dequeue` method, which needs to know how to get messages from it. If ``respect_handler_level`` is ``True``, a handler's level is respected (compared with the level for the message) when deciding whether to pass messages to that handler; otherwise, the behaviour is as in previous Python versions - to always pass each message to each handler."
+msgid "Returns a new instance of the :class:`QueueListener` class. The instance is initialized with the queue to send messages to and a list of handlers which will handle entries placed on the queue. The queue can be any queue-like object; it's passed as-is to the :meth:`dequeue` method, which needs to know how to get messages from it. If ``respect_handler_level`` is ``True``, a handler's level is respected (compared with the level for the message) when deciding whether to pass messages to that handler; otherwise, the behaviour is as in previous Python versions - to always pass each message to each handler."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:967

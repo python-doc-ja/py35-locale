@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -360,7 +360,7 @@ msgid "Sometimes you can see this inaccuracy when the number is printed::"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:520
-msgid "The inaccuracy isn't always visible when you print the number because the FP-to- decimal-string conversion is provided by the C library, and most C libraries try to produce sensible output.  Even if it's not displayed, however, the inaccuracy is still there and subsequent operations can magnify the error."
+msgid "The inaccuracy isn't always visible when you print the number because the FP-to-decimal-string conversion is provided by the C library, and most C libraries try to produce sensible output.  Even if it's not displayed, however, the inaccuracy is still there and subsequent operations can magnify the error."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:525
@@ -400,7 +400,7 @@ msgid "Once you have :class:`Decimal` instances, you can perform the usual mathe
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:598
-msgid "You can combine :class:`Decimal` instances with integers, but not with floating- point numbers::"
+msgid "You can combine :class:`Decimal` instances with integers, but not with floating-point numbers::"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:609
@@ -460,7 +460,7 @@ msgid "http://www.lahey.com/float.htm"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:687
-msgid "The article uses Fortran code to illustrate many of the problems that floating- point inaccuracy can cause."
+msgid "The article uses Fortran code to illustrate many of the problems that floating-point inaccuracy can cause."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:692
@@ -504,7 +504,7 @@ msgid "The :mod:`locale` modules lets Python software select various conversions
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:744
-msgid "Not setting the numeric locale caused trouble for extensions that used third- party C libraries, however, because they wouldn't have the correct locale set. The motivating example was GTK+, whose user interface widgets weren't displaying numbers in the current locale."
+msgid "Not setting the numeric locale caused trouble for extensions that used third-party C libraries, however, because they wouldn't have the correct locale set. The motivating example was GTK+, whose user interface widgets weren't displaying numbers in the current locale."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:749
@@ -643,7 +643,7 @@ msgid "The :func:`zip` built-in function and :func:`itertools.izip` now return a
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:921
-msgid "Encountering a failure while importing a module no longer leaves a partially- initialized module object in ``sys.modules``.  The incomplete module object left behind would fool further imports of the same module into succeeding, leading to confusing errors.   (Fixed by Tim Peters.)"
+msgid "Encountering a failure while importing a module no longer leaves a partially-initialized module object in ``sys.modules``.  The incomplete module object left behind would fool further imports of the same module into succeeding, leading to confusing errors.   (Fixed by Tim Peters.)"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:926
@@ -739,7 +739,7 @@ msgid "The UTF-8 and UTF-16 codecs now cope better with receiving partial input.
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1030
-msgid "There is a new :mod:`collections` module for  various specialized collection datatypes.   Currently it contains just one type, :class:`deque`,  a double- ended queue that supports efficiently adding and removing elements from either end::"
+msgid "There is a new :mod:`collections` module for  various specialized collection datatypes.  Currently it contains just one type, :class:`deque`, a double-ended queue that supports efficiently adding and removing elements from either end::"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1050
@@ -1007,7 +1007,7 @@ msgid "A new method flag, :const:`METH_COEXISTS`, allows a function defined in s
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1484
-msgid "Python can now be built with additional profiling for the interpreter itself, intended as an aid to people developing the Python core.  Providing :option:`!--enable-profiling` to the :program:`configure` script will let you profile the interpreter with :program:`gprof`, and providing the :option:`!--with-tsc` switch enables profiling using the Pentium's Time-Stamp- Counter register.  Note that the :option:`!--with-tsc` switch is slightly misnamed, because the profiling feature also works on the PowerPC platform, though that processor architecture doesn't call that register \"the TSC register\".  (Contributed by Jeremy Hylton.)"
+msgid "Python can now be built with additional profiling for the interpreter itself, intended as an aid to people developing the Python core.  Providing :option:`!--enable-profiling` to the :program:`configure` script will let you profile the interpreter with :program:`gprof`, and providing the :option:`!--with-tsc` switch enables profiling using the Pentium's Time-Stamp-Counter register.  Note that the :option:`!--with-tsc` switch is slightly misnamed, because the profiling feature also works on the PowerPC platform, though that processor architecture doesn't call that register \"the TSC register\".  (Contributed by Jeremy Hylton.)"
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1494
@@ -1059,7 +1059,7 @@ msgid "The :mod:`tarfile` module now generates GNU-format tar files by default."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1543
-msgid "Encountering a failure while importing a module no longer leaves a partially- initialized module object in ``sys.modules``."
+msgid "Encountering a failure while importing a module no longer leaves a partially-initialized module object in ``sys.modules``."
 msgstr ""
 
 #: ../../whatsnew/2.4.rst:1546

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -156,7 +156,7 @@ msgid "*repository*, that defines the url of the PyPI server. Defaults to"
 msgstr ""
 
 #: ../../distutils/packageindex.rst:176
-msgid "``https://www.python.org/pypi``."
+msgid "``https://upload.pypi.org/legacy/``."
 msgstr ""
 
 #: ../../distutils/packageindex.rst:177
