@@ -1,7 +1,6 @@
 #!/bin/bash
 set -Ceux
 
-cd ../../py35
 git config user.email "travis-build-bot@example.com"
 git config user.name "Autobuild bot on Travis-CI"
 git config --local core.quotepath false
@@ -19,4 +18,3 @@ else
     git add .
 fi
 git commit -m "update html"
-git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
