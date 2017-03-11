@@ -14,15 +14,7 @@ install:
 - ls -lF locale
 - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
 script:
-- cd ../../py35
-- git config user.email "travis-build-bot@example.com"
-- git config user.name "Autobuild bot on Travis-CI"
-- git config --local core.quotepath false
-- git pull origin master
-- diff_in_last_update=$(git --no-pager diff -G'最終更新日時: ' | wc -l)
-- if [ $(diff_in_last_update) -ge 1 ]; then git --no-pager diff --numstat | awk '$1 != 1 || $2 != 1 || $3 !~ /.html$/ { print $3 }' | xargs git add; else git add .; fi
-- git commit -a -m "update html"
-- git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
+- ./update_github_pages.sh
 
 env:
   global:
