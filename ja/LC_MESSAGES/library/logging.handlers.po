@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Osamu NAKAMURA, 2016
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2016
@@ -12,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-21 16:08+0000\n"
+"PO-Revision-Date: 2017-03-11 15:25+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1265,7 +1266,7 @@ msgid ""
 "initialized with the queue to send messages to. The queue can be any queue-"
 "like object; it's used as-is by the :meth:`enqueue` method, which needs to "
 "know how to send messages to it."
-msgstr ""
+msgstr ":class:`QueueHandler` クラスの新しいインスタンスを返します。インスタンスは、キューにメッセージを送るように初期化されます。キューは任意のキューのようなオブジェクトが可能です; それはそのまま :meth:`enqueue` メソッドによって使用されます。そのメソッドはメッセージを送る方法を知っている必要があります。"
 
 #: ../../library/logging.handlers.rst:910
 msgid "Enqueues the result of preparing the LogRecord."
@@ -1333,7 +1334,7 @@ msgid ""
 "deciding whether to pass messages to that handler; otherwise, the behaviour "
 "is as in previous Python versions - to always pass each message to each "
 "handler."
-msgstr ""
+msgstr ":class:`QueueListener` クラスの新しいインスタンスを返します。インスタンスは、メッセージの送信先キューと、キュー上に配置されたエントリーを扱うハンドラのリストとともに初期化されます。キューには、任意のキューのようなオブジェクトを使用できます。キューのようなオブジェクトは、そのまま :meth:`dequeue` メソッドに渡されます。そのメソッドはメッセージをキューから取得する方法を知っている必要があります。 ``respect_handler_level`` が ``True`` の場合、メッセージをそのハンドラーに渡すかどうかを判断する際、(メッセージに対するレベルと比較して)ハンドラのレベルは尊重されます。そうでない場合、以前の Python のバージョンと同様に動作し、各メッセージを各ハンドラに常に渡します。"
 
 #: ../../library/logging.handlers.rst:967
 msgid "The ``respect_handler_levels`` argument was added."
