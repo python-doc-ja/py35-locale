@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# cocoatomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 10:33+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-27 12:50+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1668,34 +1668,40 @@ msgstr "属性はアクセス時にオンデマンドで生成されます。同
 
 #: ../../library/unittest.mock.rst:1798
 msgid ""
+"The ``sentinel`` attributes don't preserve their identity when they are "
+":mod:`copied <copy>` or :mod:`pickled <pickle>`."
+msgstr ""
+
+#: ../../library/unittest.mock.rst:1801
+msgid ""
 "Sometimes when testing you need to test that a specific object is passed as "
 "an argument to another method, or returned. It can be common to create named"
 " sentinel objects to test this. :data:`sentinel` provides a convenient way "
 "of creating and testing the identity of objects like this."
 msgstr "特定のオブジェクトが他のメソッドに引数として渡されることをテストしたり、返されることをテストしたい場合があります。このテストのために名前がついた sentinel オブジェクトを作るのが一般的です。 :data:`sentinel` はこのようなオブジェクトを生成し、同一性をテストするのに便利な方法を提供します。"
 
-#: ../../library/unittest.mock.rst:1803
+#: ../../library/unittest.mock.rst:1806
 msgid ""
 "In this example we monkey patch ``method`` to return "
 "``sentinel.some_object``:"
 msgstr "次の例では、 ``method`` が ``sentinel.some_object`` を返すようにモンキーパッチしています:"
 
-#: ../../library/unittest.mock.rst:1815
+#: ../../library/unittest.mock.rst:1818
 msgid "DEFAULT"
 msgstr "DEFAULT"
 
-#: ../../library/unittest.mock.rst:1820
+#: ../../library/unittest.mock.rst:1823
 msgid ""
 "The :data:`DEFAULT` object is a pre-created sentinel (actually "
 "``sentinel.DEFAULT``). It can be used by :attr:`~Mock.side_effect` functions"
 " to indicate that the normal return value should be used."
 msgstr ":data:`DEFAULT` オブジェクトは事前に生成された sentinel (実際には ``sentinel.DEFAULT``) オブジェクトです。 :attr:`~Mock.side_effect` 関数が、通常の戻り値を使うことを示すために使います。"
 
-#: ../../library/unittest.mock.rst:1826
+#: ../../library/unittest.mock.rst:1829
 msgid "call"
 msgstr "call"
 
-#: ../../library/unittest.mock.rst:1830
+#: ../../library/unittest.mock.rst:1833
 msgid ""
 ":func:`call` is a helper object for making simpler assertions, for comparing"
 " with :attr:`~Mock.call_args`, :attr:`~Mock.call_args_list`, "
@@ -1703,13 +1709,13 @@ msgid ""
 "also be used with :meth:`~Mock.assert_has_calls`."
 msgstr ":func:`call` は :attr:`~Mock.call_args`, :attr:`~Mock.call_args_list`, :attr:`~Mock.mock_calls`, :attr:`~Mock.method_calls` と比較してより下端に assert できるようにするためのヘルパーオブジェクトです。 :func:`call` は :meth:`~Mock.assert_has_calls` と組み合わせて使うこともできます。"
 
-#: ../../library/unittest.mock.rst:1843
+#: ../../library/unittest.mock.rst:1846
 msgid ""
 "For a call object that represents multiple calls, :meth:`call_list` returns "
 "a list of all the intermediate calls as well as the final call."
 msgstr "複数回の呼び出しを表す call オブジェクトに対して、 :meth:`call_list` はすべての途中の呼び出しと最終の呼び出しを含むリストを返します。"
 
-#: ../../library/unittest.mock.rst:1847
+#: ../../library/unittest.mock.rst:1850
 msgid ""
 "``call_list`` is particularly useful for making assertions on \"chained "
 "calls\". A chained call is multiple calls on a single line of code. This "
@@ -1717,13 +1723,13 @@ msgid ""
 "constructing the sequence of calls can be tedious."
 msgstr "``call_list`` は特に \"chained call\" に対して assert するのに便利です。 \"chained call\" は1行のコードにおける複数の呼び出しです。この結果は mock の :attr:`~Mock.mock_calls` に複数の call エントリとして格納されます。この call のシーケンスを手動で構築するのは退屈な作業になります。"
 
-#: ../../library/unittest.mock.rst:1852
+#: ../../library/unittest.mock.rst:1855
 msgid ""
 ":meth:`~call.call_list` can construct the sequence of calls from the same "
 "chained call:"
 msgstr ":meth:`~call.call_list` は同じ chained call からその call のシーケンスを構築することができます:"
 
-#: ../../library/unittest.mock.rst:1869
+#: ../../library/unittest.mock.rst:1872
 msgid ""
 "A ``call`` object is either a tuple of (positional args, keyword args) or "
 "(name, positional args, keyword args) depending on how it was constructed. "
@@ -1733,7 +1739,7 @@ msgid ""
 "introspected to get at the individual arguments they contain."
 msgstr "``call`` オブジェクトは、どう構築されたかによって、 (位置引数、キーワード引数) のタプルか、 (名前、位置引数、キーワード引数) のタプルになります。自分で call オブジェクトを構築するときはこれを意識する必要はありませんが、 :attr:`Mock.call_args`, :attr:`Mock.call_args_list`, :attr:`Mock.mock_calls` 属性の中の ``call`` オブジェクトを解析して個々の引数を解析することができます。"
 
-#: ../../library/unittest.mock.rst:1876
+#: ../../library/unittest.mock.rst:1879
 msgid ""
 "The ``call`` objects in :attr:`Mock.call_args` and "
 ":attr:`Mock.call_args_list` are two-tuples of (positional args, keyword "
@@ -1742,7 +1748,7 @@ msgid ""
 "keyword args)."
 msgstr ":attr:`Mock.call_args` と :attr:`Mock.call_args_list` の中の ``call`` オブジェクトは (位置引数, キーワード引数) のタプルで、 :attr:`Mock.mock_calls` の中の ``call`` オブジェクトや自分で構築したオブジェクトは (名前, 位置引数, キーワード引数) のタプルになります。"
 
-#: ../../library/unittest.mock.rst:1881
+#: ../../library/unittest.mock.rst:1884
 msgid ""
 "You can use their \"tupleness\" to pull out the individual arguments for "
 "more complex introspection and assertions. The positional arguments are a "
@@ -1750,29 +1756,29 @@ msgid ""
 "arguments are a dictionary:"
 msgstr "call オブジェクトの \"タプル性\" を使って、より複雑な内省とアサートを行うために各引数を取り出しすことができます。位置引数はタプル (位置引数が存在しない場合は空のタプル) で、キーワード引数は辞書になります:"
 
-#: ../../library/unittest.mock.rst:1915
+#: ../../library/unittest.mock.rst:1918
 msgid "create_autospec"
 msgstr "create_autospec"
 
-#: ../../library/unittest.mock.rst:1919
+#: ../../library/unittest.mock.rst:1922
 msgid ""
 "Create a mock object using another object as a spec. Attributes on the mock "
 "will use the corresponding attribute on the *spec* object as their spec."
 msgstr "他のオブジェクトを spec として利用して mock オブジェクトを作ります。 mock の属性も、 *spec* オブジェクトの該当する属性を spec として利用します。"
 
-#: ../../library/unittest.mock.rst:1923
+#: ../../library/unittest.mock.rst:1926
 msgid ""
 "Functions or methods being mocked will have their arguments checked to "
 "ensure that they are called with the correct signature."
 msgstr "mock された関数やメソッドは、正しいシグネチャで呼び出されたことを確認するために引数をチェックします。"
 
-#: ../../library/unittest.mock.rst:1926
+#: ../../library/unittest.mock.rst:1929
 msgid ""
 "If *spec_set* is ``True`` then attempting to set attributes that don't exist"
 " on the spec object will raise an :exc:`AttributeError`."
 msgstr "*spec_set* が ``True`` のとき、 spec オブジェクトにない属性をセットしようとすると :exc:`AttributeError` を発生させます。"
 
-#: ../../library/unittest.mock.rst:1929
+#: ../../library/unittest.mock.rst:1932
 msgid ""
 "If a class is used as a spec then the return value of the mock (the instance"
 " of the class) will have the same spec. You can use a class as the spec for "
@@ -1780,23 +1786,23 @@ msgid ""
 " be callable if instances of the mock are callable."
 msgstr "spec にクラスが指定された場合、 mock の戻り値 (そのクラスのインスタンス) は同じ spec を持ちます。 ``instance=True`` を指定すると、インスタンスオブジェクトの spec としてクラスを利用できます。返される mock は、モックのインスタンスが callable な場合にだけ callable となります。"
 
-#: ../../library/unittest.mock.rst:1934
+#: ../../library/unittest.mock.rst:1937
 msgid ""
 ":func:`create_autospec` also takes arbitrary keyword arguments that are "
 "passed to the constructor of the created mock."
 msgstr ":func:`create_autospec` は任意のキーワード引数を受け取り、生成する mock のコンストラクタに渡します。"
 
-#: ../../library/unittest.mock.rst:1937
+#: ../../library/unittest.mock.rst:1940
 msgid ""
 "See :ref:`auto-speccing` for examples of how to use auto-speccing with "
 ":func:`create_autospec` and the *autospec* argument to :func:`patch`."
 msgstr ":func:`create_autospec` や、 :func:`patch` の *autospec* 引数で autospec を使うサンプルは :ref:`auto-speccing` を参照してください。"
 
-#: ../../library/unittest.mock.rst:1942
+#: ../../library/unittest.mock.rst:1945
 msgid "ANY"
 msgstr "ANY"
 
-#: ../../library/unittest.mock.rst:1946
+#: ../../library/unittest.mock.rst:1949
 msgid ""
 "Sometimes you may need to make assertions about *some* of the arguments in a"
 " call to mock, but either not care about some of the arguments or want to "
@@ -1804,7 +1810,7 @@ msgid ""
 "assertions on them."
 msgstr "mock の呼び出しのうち *幾つか* の引数に対して assert したいけれども、それ以外の引数は気にしない、あるいは :attr:`~Mock.call_args` から個別に取り出してより高度な assert を行いたい場合があります。"
 
-#: ../../library/unittest.mock.rst:1951
+#: ../../library/unittest.mock.rst:1954
 msgid ""
 "To ignore certain arguments you can pass in objects that compare equal to "
 "*everything*. Calls to :meth:`~Mock.assert_called_with` and "
@@ -1812,17 +1818,17 @@ msgid ""
 "passed in."
 msgstr "特定の引数を無視するために、 *すべて* と等しくなるオブジェクトを使うことができます。そうすると、 :meth:`~Mock.assert_called_with` と :meth:`~Mock.assert_called_once_with` は、実際の引数が何であったかに関わらず成功します。"
 
-#: ../../library/unittest.mock.rst:1960
+#: ../../library/unittest.mock.rst:1963
 msgid ""
 ":data:`ANY` can also be used in comparisons with call lists like "
 ":attr:`~Mock.mock_calls`:"
 msgstr ":attr:`~Mock.mock_calls` などの call list との比較に :attr:`ANY` を使うこともできます:"
 
-#: ../../library/unittest.mock.rst:1973
+#: ../../library/unittest.mock.rst:1976
 msgid "FILTER_DIR"
 msgstr "FILTER_DIR"
 
-#: ../../library/unittest.mock.rst:1977
+#: ../../library/unittest.mock.rst:1980
 msgid ""
 ":data:`FILTER_DIR` is a module level variable that controls the way mock "
 "objects respond to :func:`dir` (only for Python 2.6 or more recent). The "
@@ -1831,7 +1837,7 @@ msgid ""
 "diagnostic purposes, then set ``mock.FILTER_DIR = False``."
 msgstr ":data:`FILTER_DIR` は mock オブジェクトが :func:`dir` に何を返すかを制御するためのモジュールレベル変数です。 (Python 2.6 以上でのみ有効) デフォルトは ``True`` で、以下に示すフィルタリングを行い、有用なメンバーだけを表示します。このフィルタリングが嫌な場合や、何かの診断のためにフィルタリングを切りたい場合は、 ``mock.FILTER_DIR = False`` と設定してください。"
 
-#: ../../library/unittest.mock.rst:1983
+#: ../../library/unittest.mock.rst:1986
 msgid ""
 "With filtering on, ``dir(some_mock)`` shows only useful attributes and will "
 "include any dynamically created attributes that wouldn't normally be shown. "
@@ -1840,7 +1846,7 @@ msgid ""
 "yet:"
 msgstr "フィルタリングが有効な場合、 ``dir(some_mock)`` は有用な属性だけを表示し、また通常は表示されない動的に生成される属性も表示します。 mock が *spec* を使って(もちろん *autospec* でも)生成された場合、元のオブジェクトのすべての属性が、まだアクセスされていなかったとしても、表示されます。"
 
-#: ../../library/unittest.mock.rst:2004
+#: ../../library/unittest.mock.rst:2007
 msgid ""
 "Many of the not-very-useful (private to :class:`Mock` rather than the thing "
 "being mocked) underscore and double underscore prefixed attributes have been"
@@ -1849,31 +1855,31 @@ msgid ""
 "switch :data:`FILTER_DIR`:"
 msgstr "多くのあまり有用ではない (mock 対象のものではなく、 :class:`Mock` 自身のプライベートな) 属性は、アンダースコアと2つのアンダースコアで prefix された属性は :class:`Mock` に対して :func:`dir` した結果からフィルタリングされます。この動作が嫌な場合は、モジュールレベルの :data:`FILTER_DIR` スイッチを設定することでフィルターを切ることができます。"
 
-#: ../../library/unittest.mock.rst:2022
+#: ../../library/unittest.mock.rst:2025
 msgid ""
 "Alternatively you can just use ``vars(my_mock)`` (instance members) and "
 "``dir(type(my_mock))`` (type members) to bypass the filtering irrespective "
 "of :data:`mock.FILTER_DIR`."
 msgstr "``mock.FILTER_DIR`` によるフィルタリングをバイパスしたい場合、 ``var(my_mock)`` (インスタンスメンバー)、 :data:`dir(type(my_mock))` (型メンバー) を代わりに使うことができます。"
 
-#: ../../library/unittest.mock.rst:2028
+#: ../../library/unittest.mock.rst:2031
 msgid "mock_open"
 msgstr "mock_open"
 
-#: ../../library/unittest.mock.rst:2032
+#: ../../library/unittest.mock.rst:2035
 msgid ""
 "A helper function to create a mock to replace the use of :func:`open`. It "
 "works for :func:`open` called directly or used as a context manager."
 msgstr ":func:`open` の利用を置き換えるための mock を作るヘルパー関数。 :func:`open` を直接呼んだりコンテキストマネージャーとして利用する場合に使うことができます。"
 
-#: ../../library/unittest.mock.rst:2035
+#: ../../library/unittest.mock.rst:2038
 msgid ""
 "The *mock* argument is the mock object to configure. If ``None`` (the "
 "default) then a :class:`MagicMock` will be created for you, with the API "
 "limited to methods or attributes available on standard file handles."
 msgstr "*mock* 引数は構成する mock オブジェクトです。 ``None`` (デフォルト) なら、通常のファイルハンドルと同じ属性やメソッドにAPIが制限された :class:`MagicMock` が生成されます。"
 
-#: ../../library/unittest.mock.rst:2039
+#: ../../library/unittest.mock.rst:2042
 msgid ""
 "*read_data* is a string for the :meth:`~io.IOBase.read`, "
 ":meth:`~io.IOBase.readline`, and :meth:`~io.IOBase.readlines` methods of the"
@@ -1887,45 +1893,45 @@ msgid ""
 "testing."
 msgstr "*read_data* は、ファイルハンドルの :meth:`~io.IOBase.read`, :meth:`~io.IOBase.readline`, そして :meth:`~io.IOBase.readlines` のメソッドが返す文字列です。これらのメソッドを呼び出すと、読み出し終わるまで *read_data* からデータが読み出されます。これらモックのメソッドはとても単純化されています: *mock* が呼ばれるたびに *read_data* は先頭に巻き戻されます。テストコードに与えるデータをさらにコントロールするには自分自身でモックをカスタマイズする必要があります。それでも不十分な場合は、 `PyPI <https://pypi.python.org/pypi>`_ にあるインメモリファイルシステムパッケージのうちのどれかを使えば、テストのための本物のファイルシステムが得られるでしょう。"
 
-#: ../../library/unittest.mock.rst:2049
+#: ../../library/unittest.mock.rst:2052
 msgid ""
 "Added :meth:`~io.IOBase.readline` and :meth:`~io.IOBase.readlines` support. "
 "The mock of :meth:`~io.IOBase.read` changed to consume *read_data* rather "
 "than returning it on each call."
 msgstr ":meth:`~io.IOBase.readline` および :meth:`~io.IOBase.readlines` のサポートが追加されました。 :meth:`~io.IOBase.read` のモックは、個々の呼び出しで *read_data* を返すのではなく、それを消費するように変わりました。"
 
-#: ../../library/unittest.mock.rst:2054
+#: ../../library/unittest.mock.rst:2057
 msgid "*read_data* is now reset on each call to the *mock*."
 msgstr "*read_data* は *mock* を呼び出す度に毎回リセットされるようになりました。"
 
-#: ../../library/unittest.mock.rst:2057
+#: ../../library/unittest.mock.rst:2060
 msgid ""
 "Using :func:`open` as a context manager is a great way to ensure your file "
 "handles are closed properly and is becoming common::"
 msgstr ":func:`open` をコンテキストマネージャーとして使う方法は、ファイルが必ず適切に閉じられるようにする素晴らしい方法で、今では一般的になっています::"
 
-#: ../../library/unittest.mock.rst:2063
+#: ../../library/unittest.mock.rst:2066
 msgid ""
 "The issue is that even if you mock out the call to :func:`open` it is the "
 "*returned object* that is used as a context manager (and has "
 ":meth:`__enter__` and :meth:`__exit__` called)."
 msgstr "問題は、 :func:`open` をモックアウトしたところで、コンテキストマネージャーが使われる (:meth:`__enter__` と :meth:`__exit__` が呼ばれる) のはその *戻り値* だということです。"
 
-#: ../../library/unittest.mock.rst:2067
+#: ../../library/unittest.mock.rst:2070
 msgid ""
 "Mocking context managers with a :class:`MagicMock` is common enough and "
 "fiddly enough that a helper function is useful."
 msgstr "コンテキストマネージャーを :class:`MagicMock` でモックするのは一般的かつ面倒なので、ヘルパー関数を用意しています。"
 
-#: ../../library/unittest.mock.rst:2084
+#: ../../library/unittest.mock.rst:2087
 msgid "And for reading files:"
 msgstr "ファイルの読み込みをモックする例:"
 
-#: ../../library/unittest.mock.rst:2097
+#: ../../library/unittest.mock.rst:2100
 msgid "Autospeccing"
 msgstr "autospec を使う"
 
-#: ../../library/unittest.mock.rst:2099
+#: ../../library/unittest.mock.rst:2102
 msgid ""
 "Autospeccing is based on the existing :attr:`spec` feature of mock. It "
 "limits the api of mocks to the api of an original object (the spec), but it "
@@ -1935,11 +1941,11 @@ msgid ""
 ":exc:`TypeError` if they are called incorrectly."
 msgstr "autospec は mock の :attr:`spec` 機能を基盤にしています。 autospec は mock の API を元のオブジェクト (spec) に制限しますが、再帰的に適用される (lazy に実装されている) ので、 mock の属性も spec の属性と同じ API だけを持つようになります。さらに、 mock された関数/メソッドは元と同じシグネチャを持ち、正しくない引数で呼び出されると :exc:`TypeError` を発生させます。"
 
-#: ../../library/unittest.mock.rst:2106
+#: ../../library/unittest.mock.rst:2109
 msgid "Before I explain how auto-speccing works, here's why it is needed."
 msgstr "autospec の動作について説明する前に、それが必要となる背景から説明していきます。"
 
-#: ../../library/unittest.mock.rst:2108
+#: ../../library/unittest.mock.rst:2111
 msgid ""
 ":class:`Mock` is a very powerful and flexible object, but it suffers from "
 "two flaws when used to mock out objects from a system under test. One of "
@@ -1947,25 +1953,25 @@ msgid ""
 "general problem with using mock objects."
 msgstr ":class:`Mock` は非常に強力で柔軟なオブジェクトですが、テスト対象のシステムをモックアウトするときに2つの欠点があります。 1つ目の欠点は :class:`Mock` の API に関したもので、もう一つは mock オブジェクトを使う場合のもっと一般的な問題です。"
 
-#: ../../library/unittest.mock.rst:2113
+#: ../../library/unittest.mock.rst:2116
 msgid ""
 "First the problem specific to :class:`Mock`. :class:`Mock` has two assert "
 "methods that are extremely handy: :meth:`~Mock.assert_called_with` and "
 ":meth:`~Mock.assert_called_once_with`."
 msgstr "まず :class:`Mock` 独自の問題から解説します。 :class:`Mock` は便利な2つのメソッド、 :meth:`~Mock.assert_called_with` と :meth:`~Mock.assert_called_once_with` を持っています。"
 
-#: ../../library/unittest.mock.rst:2126
+#: ../../library/unittest.mock.rst:2129
 msgid ""
 "Because mocks auto-create attributes on demand, and allow you to call them "
 "with arbitrary arguments, if you misspell one of these assert methods then "
 "your assertion is gone:"
 msgstr "mock が属性をオンデマンドに自動生成し、それを任意の引数で呼び出せるため、それらの assert メソッドのいずれかをミススペルするとその assert の効果が消えてしまいます:"
 
-#: ../../library/unittest.mock.rst:2136
+#: ../../library/unittest.mock.rst:2139
 msgid "Your tests can pass silently and incorrectly because of the typo."
 msgstr "typo のために、テストは不正確に、かつ暗黙に成功してしまいます。"
 
-#: ../../library/unittest.mock.rst:2138
+#: ../../library/unittest.mock.rst:2141
 msgid ""
 "The second issue is more general to mocking. If you refactor some of your "
 "code, rename members and so on, any tests for code that is still using the "
@@ -1973,7 +1979,7 @@ msgid ""
 "means your tests can all pass even though your code is broken."
 msgstr "2つ目の問題はもっと一般的なものです。なにかのコードをリファクタし、メンバの名前を変更したとします。*古いAPI* を利用したコードに対するテストが、mock を利用しているとするとテストは通り続けます。このため、コードが壊れていてもテストがすべて通ってしまう可能性があります。"
 
-#: ../../library/unittest.mock.rst:2143
+#: ../../library/unittest.mock.rst:2146
 msgid ""
 "Note that this is another reason why you need integration tests as well as "
 "unit tests. Testing everything in isolation is all fine and dandy, but if "
@@ -1981,20 +1987,20 @@ msgid ""
 "room for bugs that tests might have caught."
 msgstr "各ユニットが互いにどのように接続されるかをテストしない場合、依然としてテストで見つけることができるバグの余地が多く残っています。"
 
-#: ../../library/unittest.mock.rst:2148
+#: ../../library/unittest.mock.rst:2151
 msgid ""
 ":mod:`mock` already provides a feature to help with this, called speccing. "
 "If you use a class or instance as the :attr:`spec` for a mock then you can "
 "only access attributes on the mock that exist on the real class:"
 msgstr ":mod:`mock` はこの問題に対処するために spec と呼ばれる機能を提供しています。何かクラスかインスタンスを :attr:`spec` として mock に渡すと、実際のクラスに存在する属性にしか、 mock に対してもアクセスできなくなります:"
 
-#: ../../library/unittest.mock.rst:2159
+#: ../../library/unittest.mock.rst:2162
 msgid ""
 "The spec only applies to the mock itself, so we still have the same issue "
 "with any methods on the mock:"
 msgstr "spec はその mock 自体にしか適用されません。なので、同じ問題がその mock のすべてのメソッドに対して発生します:"
 
-#: ../../library/unittest.mock.rst:2168
+#: ../../library/unittest.mock.rst:2171
 msgid ""
 "Auto-speccing solves this problem. You can either pass ``autospec=True`` to "
 ":func:`patch` / :func:`patch.object` or use the :func:`create_autospec` "
@@ -2006,24 +2012,24 @@ msgid ""
 "import modules) without a big performance hit."
 msgstr "autospec はこの問題を解決します。 :func:`patch` か :func:`patch.object` に ``autospec=True`` を渡すか、 :func:`create_autospec` 関数を使って spec をもとに mock を作ることができます。 :func:`patch` の引数に ``autospec=True`` を渡した場合、置換対象のオブジェクトが spec オブジェクトとして利用されます。 spec は遅延処理される (mock の属性にアクセスされた時に spec が生成される) ので、非常に複雑だったり深くネストしたオブジェクト (例えばモジュールをインポートするモジュールをインポートするモジュール) に対しても大きなパフォーマンスの問題なしに autospec を使うことができます。"
 
-#: ../../library/unittest.mock.rst:2177
+#: ../../library/unittest.mock.rst:2180
 msgid "Here's an example of it in use:"
 msgstr "autospec の利用例:"
 
-#: ../../library/unittest.mock.rst:2187
+#: ../../library/unittest.mock.rst:2190
 msgid ""
 "You can see that :class:`request.Request` has a spec. "
 ":class:`request.Request` takes two arguments in the constructor (one of "
 "which is *self*). Here's what happens if we try to call it incorrectly:"
 msgstr ":class:`request.Request` が spec を持っているのが分かります。 :class:`request.Request` のコンストラクタは2つの引数を持っています (片方は *self* です)。コンストラクタを間違って呼び出した時に何が起こるでしょうか:"
 
-#: ../../library/unittest.mock.rst:2196
+#: ../../library/unittest.mock.rst:2199
 msgid ""
 "The spec also applies to instantiated classes (i.e. the return value of "
 "specced mocks):"
 msgstr "spec はクラスがインスタンス化されたとき (つまり spec が適用された mock の戻り値) にも適用されます:"
 
-#: ../../library/unittest.mock.rst:2203
+#: ../../library/unittest.mock.rst:2206
 msgid ""
 ":class:`Request` objects are not callable, so the return value of "
 "instantiating our mocked out :class:`request.Request` is a non-callable "
@@ -2031,20 +2037,20 @@ msgid ""
 " error:"
 msgstr ":class:`Request` オブジェクトは callable ではないので、 :class:`request.Request` の mock から返されたインスタンスの mock は callable ではなくなります。 spec があれば、 assert のミススペルは正しいエラーを発生させます:"
 
-#: ../../library/unittest.mock.rst:2215
+#: ../../library/unittest.mock.rst:2218
 msgid ""
 "In many cases you will just be able to add ``autospec=True`` to your "
 "existing :func:`patch` calls and then be protected against bugs due to typos"
 " and api changes."
 msgstr "多くの場合、単に既存の :func:`patch` 呼び出しに ``autospec=True`` を加えるだけで、ミススペルやAPI変更に伴うバグから守られます。"
 
-#: ../../library/unittest.mock.rst:2219
+#: ../../library/unittest.mock.rst:2222
 msgid ""
 "As well as using *autospec* through :func:`patch` there is a "
 ":func:`create_autospec` for creating autospecced mocks directly:"
 msgstr ":func:`patch` を経由する以外にも、 :func:`create_autospec` を使って *autospec* が適用された mock を直接作る方法もあります:"
 
-#: ../../library/unittest.mock.rst:2227
+#: ../../library/unittest.mock.rst:2230
 msgid ""
 "This isn't without caveats and limitations however, which is why it is not "
 "the default behaviour. In order to know what attributes are available on the"
@@ -2056,7 +2062,7 @@ msgid ""
 "your objects so that introspection is safe [#]_."
 msgstr "とはいえ、autospec には注意しなければならない点や制限があり、そのためデフォルトでは無効になっています。spec オブジェクトでどんな属性が使えるかどうかを調べるために、autospec は spec オブジェクトをイントロスペクト (実際に属性にアクセスする) 必要があります。mock の属性を利用するとき、水面下で元のオブジェクトに対しても同じ属性の探索が行われます。spec したオブジェクトのどれかがコードを実行するプロパティやデスクリプタを持っている場合、autospec は正しく動きません。もしくは、イントロスペクションしても安全なようにオブジェクトを設計するのがよいでしょう [#]_。"
 
-#: ../../library/unittest.mock.rst:2236
+#: ../../library/unittest.mock.rst:2239
 msgid ""
 "A more serious problem is that it is common for instance attributes to be "
 "created in the :meth:`__init__` method and not to exist on the class at all."
@@ -2064,7 +2070,7 @@ msgid ""
 "restricts the api to visible attributes."
 msgstr "より重大な問題は、インスタンス属性が :meth:`__init__` で生成され、クラスには全く存在しない場合です。 *autospec* は動的に生成される属性については知ることができず、 API を検出できる属性だけに制限してしまいます。"
 
-#: ../../library/unittest.mock.rst:2253
+#: ../../library/unittest.mock.rst:2256
 msgid ""
 "There are a few different ways of resolving this problem. The easiest, but "
 "not necessarily the least annoying, way is to simply set the required "
@@ -2073,7 +2079,7 @@ msgid ""
 " setting them:"
 msgstr "この問題を解決するためにいくつかの方法があります。一番簡単な、ただし一番面倒でないとは限らない方法は、必要とされる属性を mock が生成された後に設定することです。 *autospec* は属性を参照することを禁止しますが、設定することは禁止していません:"
 
-#: ../../library/unittest.mock.rst:2264
+#: ../../library/unittest.mock.rst:2267
 msgid ""
 "There is a more aggressive version of both *spec* and *autospec* that *does*"
 " prevent you setting non-existent attributes. This is useful if you want to "
@@ -2081,7 +2087,7 @@ msgid ""
 " this particular scenario:"
 msgstr "*spec* と *autospec* にはよりアグレッシブなバージョンがあり、存在しない属性への設定も禁止します。これはコードが正しい属性にのみ代入することを保証したいときに便利ですが、もちろん先ほどの方法も制限されてしまいます:"
 
-#: ../../library/unittest.mock.rst:2277
+#: ../../library/unittest.mock.rst:2280
 msgid ""
 "Probably the best way of solving the problem is to add class attributes as "
 "default values for instance members initialised in :meth:`__init__`. Note "
@@ -2090,7 +2096,7 @@ msgid ""
 "faster too. e.g."
 msgstr "この問題を解決するベストな方法は、 :meth:`__init__` で初期化されるインスタンスメンバに対する初期値をクラス属性として追加することかもしれません。 :meth:`__init__` メソッドの中でデフォルトの属性を代入しているだけなら、それをクラス属性にする (この属性はもちろんインスタンス間で共有されます) 方が速くなるのもメリットです。例:"
 
-#: ../../library/unittest.mock.rst:2287
+#: ../../library/unittest.mock.rst:2290
 msgid ""
 "This brings up another issue. It is relatively common to provide a default "
 "value of ``None`` for members that will later be an object of a different "
@@ -2101,7 +2107,7 @@ msgid ""
 "``None``. These will just be ordinary mocks (well - MagicMocks):"
 msgstr "クラス属性を使ってもまた別の問題があります。メンバーのデフォルト値に ``None`` を利用し、後から別の型のオブジェクトを代入するのは比較的よくあるパターンです。 spec として ``None`` を使うと *すべての* 属性やメソッドへのアクセスも許されなくなるので使い物になりません。 ``None``を spec にすることが有用な場面は *決して* なく、おそらくそのメンバーは他の何かの型のメンバーになることを示すので、 autospec は ``None`` に設定されているメンバーには spec を使いません。その属性は通常の mock (MagicMocks) になります。"
 
-#: ../../library/unittest.mock.rst:2302
+#: ../../library/unittest.mock.rst:2305
 msgid ""
 "If modifying your production classes to add defaults isn't to your liking "
 "then there are more options. One of these is simply to use an instance as "
@@ -2112,7 +2118,7 @@ msgid ""
 "alternative object as the *autospec* argument:"
 msgstr "すでに利用されているクラスにデフォルト値属性を追加するのが嫌な場合は、他の選択肢もあります。選択肢の1つは、クラスではなくインスタンスを spec に使うことです。別の選択肢は、実際のクラスのサブクラスを作り、実際に利用されている方に影響を与えずにデフォルト値属性を追加することです。どちらの方法も spec として代替オブジェクトを利用することが必要です。 :func:`patch` はこれをサポートしていて、 *autospec* 引数に代替オブジェクトを渡すことができます。"
 
-#: ../../library/unittest.mock.rst:2323
+#: ../../library/unittest.mock.rst:2326
 msgid ""
 "This only applies to classes or already instantiated objects. Calling a "
 "mocked class to create a mock instance *does not* create a real instance. It"

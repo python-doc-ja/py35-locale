@@ -1,17 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
-# tomo, 2016
+# cocoatomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-13 15:55+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-21 16:58+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -208,7 +208,7 @@ msgstr "PEP 207: 拡張比較"
 
 #: ../../whatsnew/2.1.rst:162
 msgid ""
-"In earlier versions, Python's support for implementing comparisons on user- "
+"In earlier versions, Python's support for implementing comparisons on user-"
 "defined classes and extension types was quite simple. Classes could "
 "implement a :meth:`__cmp__` method that was given two instances of a class, "
 "and could only return 0 if they were equal or +1 or -1 if they weren't; the "
@@ -220,7 +220,7 @@ msgid ""
 "given comparison for each element.  If the two matrices are of different "
 "sizes, then the compare has to be able to raise an exception to signal the "
 "error."
-msgstr "以前のバージョンでは、ユーザ定義クラスや拡張型の比較を実装するための Python のサポートはとても単純なものでした。クラスは 2 つのインスタンスを与えられる :meth:`__cmp__` メソッドを実装でき、実際の値がどうあれ、同値の場合には 0 、そうでないなら +1 か -1 を返せるだけでした; メソッドは例外を上げることも、ブール値以外のものを返すこともできませんでした。Numeric Python が使われるような複雑な計算プログラムでは、要素ごとに与えられた比較結果を含む行列を返し、2 つの行列を要素単位で比較できることがより便利なので、Numeric Python のユーザはこのモデルがとても脆弱で限定的であることにしばしば気付きました。もし 2 つの行列サイズが異なる場合、この比較はエラー通知の例外を上げられなければなりません。"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:174
 msgid ""
@@ -610,14 +610,14 @@ msgstr "いくつかのオペレーティングシステムは、大小文字区
 
 #: ../../whatsnew/2.1.rst:468
 msgid ""
-"In Python 2.1, the :keyword:`import` statement will work to simulate case- "
+"In Python 2.1, the :keyword:`import` statement will work to simulate case-"
 "sensitivity on case-insensitive platforms.  Python will now search for the "
 "first case-sensitive match by default, raising an :exc:`ImportError` if no "
 "such file is found, so ``import file`` will not import a module named "
-"``FILE.PY``.  Case- insensitive matching can be requested by setting the "
+"``FILE.PY``. Case-insensitive matching can be requested by setting the "
 ":envvar:`PYTHONCASEOK` environment variable before starting the Python "
 "interpreter."
-msgstr "Python 2.1 では :keyword:`import` 文が、case-insensitive (大小文字に無関心)なプラットフォームで case-sensitivity (大小文字への繊細さ)をシミュレートして動作します。Python は今や、まずはデフォルトで case-sensitive なマッチによる検索をし、それで見つからなければ :exc:`ImportError` を投げます。ですから ``import file`` は ``FILE.PY`` をインポートしません。case-insensitive マッチングは Python インタプリタ開始前に環境変数 :envvar:`PYTHONCASEOK` をセットすることで要求出来ます。"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:479
 msgid "PEP 217: Interactive Display Hook"
@@ -629,8 +629,8 @@ msgid ""
 "displayed using the built-in :func:`repr` function. In Python 2.1, the "
 "variable :func:`sys.displayhook` can be set to a callable object which will "
 "be called instead of :func:`repr`. For example, you can set it to a special "
-"pretty- printing function::"
-msgstr "Python インタプリタを対話的に使う際には、コマンドの出力結果表示にはビルトインの :func:`repr` 関数が使われます。Python 2.1 ではこの :func:`repr` の代わりに呼び出される呼び出し可能オブジェクトを、 :func:`sys.displayhook` 変数にセット出来ます。たとえば特別な pretty- printing 関数をセット出来ます::"
+"pretty-printing function::"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:502
 msgid ":pep:`217` - Display Hook for Interactive Use"

@@ -1,17 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # E. Kawashima, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016-2017
+# Osamu NAKAMURA, 2017
+# cocoatomo, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-01-03 04:33+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-24 14:52+0000\n"
+"Last-Translator: Osamu NAKAMURA\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -959,11 +960,10 @@ msgid ""
 "Special attributes: :attr:`~definition.__name__` is the class name; "
 ":attr:`__module__` is the module name in which the class was defined; "
 ":attr:`~object.__dict__` is the dictionary containing the class's namespace;"
-" :attr:`~class.__bases__` is a tuple (possibly empty or a singleton) "
-"containing the base classes, in the order of their occurrence in the base "
-"class list; :attr:`__doc__` is the class's documentation string, or ``None``"
-" if undefined."
-msgstr "特殊属性: :attr:`~definition.__name__` はクラス名です;\n:attr:`__module__` はクラスが定義されたモジュール名です;\n:attr:`~object.__dict__` はクラスが持つ名前空間が入った辞書です;\n:attr:`~class.__bases__` は基底クラスからなるタプル (空もしくは要素が 1 つしかないこともあります) で、基底クラスのリストに表れる順序で並んでいます;\n:attr:`__doc__` はクラスのドキュメント文字列で、未定義の場合は None です。"
+" :attr:`~class.__bases__` is a tuple containing the base classes, in the "
+"order of their occurrence in the base class list; :attr:`__doc__` is the "
+"class's documentation string, or ``None`` if undefined."
+msgstr "特殊属性: :attr:`~definition.__name__` はクラス名です;\n:attr:`__module__` はクラスが定義されたモジュール名です;\n:attr:`~object.__dict__` はクラスが持つ名前空間が入った辞書です;\n:attr:`~class.__bases__` は基底クラスからなるタプルで、基底クラスのリストに表れる順序で並んでいます;\n:attr:`__doc__` はクラスのドキュメント文字列で、未定義の場合は None です。"
 
 #: ../../reference/datamodel.rst:813
 msgid "Class instances"

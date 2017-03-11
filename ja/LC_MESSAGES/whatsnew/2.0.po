@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-21 16:58+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -200,12 +200,12 @@ msgstr "Python 2.0 での最大の新機能は新しい基礎データ型、Unic
 #: ../../whatsnew/2.0.rst:148
 msgid ""
 "The final interface for Unicode support was arrived at through countless "
-"often- stormy discussions on the python-dev mailing list, and mostly "
+"often-stormy discussions on the python-dev mailing list, and mostly "
 "implemented by Marc-André Lemburg, based on a Unicode string type "
 "implementation by Fredrik Lundh.  A detailed explanation of the interface "
 "was written up as :pep:`100`, \"Python Unicode Integration\". This article "
 "will simply cover the most significant points about the Unicode interfaces."
-msgstr "最終的な Unicode サポートに関するインターフェイスは、python-dev メーリングリストにおける数え切れない、時として嵐のような議論を経て、Fredrik Lundh によって実装された Unicode 文字列型に基づいて、ほとんどが Marc-André Lemburg によって実装されました。インターフェイスについての詳細な説明は :pep:`100` 「Python Unicode の統合」に記述されました。今ここでは、Unicode インターフェイスについて、一番重要な点を単純にカバーするだけにしましょう。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:155
 msgid ""
@@ -1091,11 +1091,11 @@ msgid ""
 "similarities to :mod:`xmllib`, and the DOM (Document Object Model) provides "
 "a tree-based interface, transforming an XML document into a tree of nodes "
 "that can be traversed and modified.  Python 2.0 includes a SAX2 interface "
-"and a stripped- down DOM interface as part of the :mod:`xml` package. Here "
-"we will give a brief overview of these new interfaces; consult the Python "
+"and a stripped-down DOM interface as part of the :mod:`xml` package. Here we"
+" will give a brief overview of these new interfaces; consult the Python "
 "documentation or the source code for complete details. The Python XML SIG is"
 " also working on improved documentation."
-msgstr "Python 1.5.2 では、 Sjoerd Mullender の手による単純な XML パーサが、 :mod:`xmllib` モジュールの形で追加されました。1.5.2 でのリリース以降で、2 つの異なった XML 処理のインターフェイスが一般的になりました。SAX2 (「Simple API for XML」のバージョン 2) はいくらか :mod:`xmllib` に似た、イベントドリブンのインターフェイスを提供し、DOM (「Document Object Model］) は XML ドキュメントを、横断したり修正できるノードのツリーに変換する、木構造ベースのインターフェイスを提供します。Python 2.0 では SAX2 インターフェイスと必要最小限の DOM インターフェイスが、 :mod:`xml` パッケージの一部として追加されました。ここではそれら新規インターフェイスについての簡単な概要について書きます。完全な詳細については Python ドキュメントかソースコードを参照してください。Python XML SIG ではドキュメントの改善についても作業中です。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:896
 msgid "SAX2 Support"

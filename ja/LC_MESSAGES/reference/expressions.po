@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:46+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-21 16:24+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -846,7 +846,7 @@ msgid ""
 " as if that method was called."
 msgstr "クラスで :meth:`__call__` メソッドが定義されていなければなりません; :meth:`__call__` メソッドが呼び出された場合と同じ効果をもたらします。"
 
-#: ../../reference/expressions.rst:836 ../../reference/expressions.rst:1537
+#: ../../reference/expressions.rst:836 ../../reference/expressions.rst:1541
 msgid "Await expression"
 msgstr "Await 式"
 
@@ -1375,15 +1375,21 @@ msgstr "最後の2式は全順序の集まりに適用されます (たとえば
 
 #: ../../reference/expressions.rst:1258
 msgid ""
+"The :func:`hash` result should be consistent with equality. Objects that are"
+" equal should either have the same hash value, or be marked as unhashable."
+msgstr ""
+
+#: ../../reference/expressions.rst:1262
+msgid ""
 "Python does not enforce these consistency rules. In fact, the not-a-number "
 "values are an example for not following these rules."
 msgstr ""
 
-#: ../../reference/expressions.rst:1267
+#: ../../reference/expressions.rst:1271
 msgid "Membership test operations"
 msgstr "帰属検査演算"
 
-#: ../../reference/expressions.rst:1269
+#: ../../reference/expressions.rst:1273
 msgid ""
 "The operators :keyword:`in` and :keyword:`not in` test for membership.  ``x "
 "in s`` evaluates to true if *x* is a member of *s*, and false otherwise.  "
@@ -1394,7 +1400,7 @@ msgid ""
 "in y`` is equivalent to ``any(x is e or x == e for e in y)``."
 msgstr "演算子 :keyword:`in` および :keyword:`not in` は、帰属 (membership) を調べます。 ``x in s`` の評価は、 *x* が *s* の要素であれば真となり、そうでなければ偽となります。 ``x not in s`` は ``x in s`` の否定 (negation) を返します。すべての組み込みのシーケンスと集合型に加えて、辞書も、 :keyword:`in` を辞書が与えられたキーを持っているかを調べるものとしてサポートしています。リスト、タプル、集合、凍結集合、辞書、あるいは collection.deque のようなコンテナ型について、式 ``x in y`` は ``any(x is e or x == e for e in y)`` と等価です。"
 
-#: ../../reference/expressions.rst:1277
+#: ../../reference/expressions.rst:1281
 msgid ""
 "For the string and bytes types, ``x in y`` is true if and only if *x* is a "
 "substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Empty strings"
@@ -1402,13 +1408,13 @@ msgid ""
 "\"abc\"`` will return ``True``."
 msgstr "文字列やバイト列型については、``x in y`` は *x* が *y* の部分文字列であるとき、かつそのときに限り真になります。これは ``y.find(x) != -1`` と等価です。空文字列は、他の任意の文字列の部分文字列とみなされます。従って ``\"\" in \"abc\"`` は ``True`` を返すことになります。"
 
-#: ../../reference/expressions.rst:1282
+#: ../../reference/expressions.rst:1286
 msgid ""
 "For user-defined classes which define the :meth:`__contains__` method, ``x "
 "in y`` is true if and only if ``y.__contains__(x)`` is true."
 msgstr ":meth:`__contains__` メソッドの定義されたユーザ定義クラスでは、 ``x in y`` が真となるのは ``y.__contains__(x)`` が真となるとき、かつそのときに限ります。"
 
-#: ../../reference/expressions.rst:1285
+#: ../../reference/expressions.rst:1289
 msgid ""
 "For user-defined classes which do not define :meth:`__contains__` but do "
 "define :meth:`__iter__`, ``x in y`` is true if some value ``z`` with ``x == "
@@ -1416,7 +1422,7 @@ msgid ""
 "during the iteration, it is as if :keyword:`in` raised that exception."
 msgstr ":meth:`__contains__` を定義していないが :meth:`__iter__` は定義しているユーザ定義クラスでは、 ``x in y`` は ``x == z`` となるようなある値 ``z`` が ``y`` 内にわたる反復で生成された場合、 true となります。もし、反復の間に例外が発生すれば、 :keyword:`in` が例外を発生させたようにみえます。"
 
-#: ../../reference/expressions.rst:1290
+#: ../../reference/expressions.rst:1294
 msgid ""
 "Lastly, the old-style iteration protocol is tried: if a class defines "
 ":meth:`__getitem__`, ``x in y`` is true if and only if there is a non-"
@@ -1425,17 +1431,17 @@ msgid ""
 "is raised, it is as if :keyword:`in` raised that exception)."
 msgstr "最終的には、旧式の反復プロトコルの実行が試みられます。クラスが :meth:`__getitem__` を定義していれば、 ``x in y`` は ``x == y[i]`` となるような非負の整数インデックス *i* が存在し、それより小さなインデックスが :exc:`IndexError` を送出しないとき、かつそのときにかぎり真です。 (別の何らかの例外が送出された場合、例外は :keyword:`in` から送出されたかのようになります)。"
 
-#: ../../reference/expressions.rst:1302
+#: ../../reference/expressions.rst:1306
 msgid ""
 "The operator :keyword:`not in` is defined to have the inverse true value of "
 ":keyword:`in`."
 msgstr "演算子 :keyword:`not in` は :keyword:`in` の真値を反転した値として定義されています。"
 
-#: ../../reference/expressions.rst:1315
+#: ../../reference/expressions.rst:1319
 msgid "Identity comparisons"
 msgstr "同一性の比較"
 
-#: ../../reference/expressions.rst:1317
+#: ../../reference/expressions.rst:1321
 msgid ""
 "The operators :keyword:`is` and :keyword:`is not` test for object identity: "
 "``x is y`` is true if and only if *x* and *y* are the same object.  Object "
@@ -1443,11 +1449,11 @@ msgid ""
 " the inverse truth value. [#]_"
 msgstr ""
 
-#: ../../reference/expressions.rst:1329
+#: ../../reference/expressions.rst:1333
 msgid "Boolean operations"
 msgstr "ブール演算 (boolean operation)"
 
-#: ../../reference/expressions.rst:1340
+#: ../../reference/expressions.rst:1344
 msgid ""
 "In the context of Boolean operations, and also when expressions are used by "
 "control flow statements, the following values are interpreted as false: "
@@ -1458,26 +1464,26 @@ msgid ""
 "method."
 msgstr "ブール演算のコンテキストや、式が制御フロー文中で使われる際には、以下の値: ``False`` 、 ``None`` すべての型における数値の 0、空の文字列、空のコンテナ (文字列、タプル、リスト、辞書、集合、凍結集合など) は偽 (false) であると解釈されます。それ以外の値は真 (true) であると解釈されます。ユーザ定義のメソッドは、 :meth:`__bool__` メソッドを与えることで、真理値をカスタマイズできます。"
 
-#: ../../reference/expressions.rst:1349
+#: ../../reference/expressions.rst:1353
 msgid ""
 "The operator :keyword:`not` yields ``True`` if its argument is false, "
 "``False`` otherwise."
 msgstr "演算子 :keyword:`not` は、引数が偽である場合には ``True`` を、それ以外の場合には ``False`` になります。"
 
-#: ../../reference/expressions.rst:1354
+#: ../../reference/expressions.rst:1358
 msgid ""
 "The expression ``x and y`` first evaluates *x*; if *x* is false, its value "
 "is returned; otherwise, *y* is evaluated and the resulting value is "
 "returned."
 msgstr "式 ``x and y`` は、まず *x* を評価します; *x* が偽なら *x* の値を返します; それ以外の場合には、 *y* の値を評価し、その結果を返します。"
 
-#: ../../reference/expressions.rst:1359
+#: ../../reference/expressions.rst:1363
 msgid ""
 "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is "
 "returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr "式 ``x or y`` は、まず *x* を評価します; *x* が真なら *x* の値を返します; それ以外の場合には、 *y* の値を評価し、その結果を返します。"
 
-#: ../../reference/expressions.rst:1362
+#: ../../reference/expressions.rst:1366
 msgid ""
 "(Note that neither :keyword:`and` nor :keyword:`or` restrict the value and "
 "type they return to ``False`` and ``True``, but rather return the last "
@@ -1489,32 +1495,32 @@ msgid ""
 "``''``.)"
 msgstr "(なお、 :keyword:`and` も :keyword:`or` も、返す値を ``True`` や ``False`` に制限せず、最後に評価した引数を返します。この仕様が便利なこともあり、例えば ``s`` が文字列で、空文字列ならデフォルトの値に置き換えたいとき、式 ``s or 'foo'`` は望んだ値を与えます。 :keyword:`not` は引数の型に関係なく、必ずブール値を返すからです。例えば、 ``not 'foo'`` は、 ``''`` ではなく ``False`` を与えます。)"
 
-#: ../../reference/expressions.rst:1372
+#: ../../reference/expressions.rst:1376
 msgid "Conditional expressions"
 msgstr "条件式 (Conditional Expressions)"
 
-#: ../../reference/expressions.rst:1383
+#: ../../reference/expressions.rst:1387
 msgid ""
 "Conditional expressions (sometimes called a \"ternary operator\") have the "
 "lowest priority of all Python operations."
 msgstr "条件式 (しばしば \"三項演算子\" と呼ばれます) は最も優先度が低いPython の演算です。"
 
-#: ../../reference/expressions.rst:1386
+#: ../../reference/expressions.rst:1390
 msgid ""
 "The expression ``x if C else y`` first evaluates the condition, *C* rather "
 "than *x*. If *C* is true, *x* is evaluated and its value is returned; "
 "otherwise, *y* is evaluated and its value is returned."
 msgstr "``x if C else y`` という式は最初に条件 *x* ではなく *C* を評価します; *C* が true の場合 *x* が評価され値が返されます; それ以外の場合には *y* が評価され返されます。"
 
-#: ../../reference/expressions.rst:1390
+#: ../../reference/expressions.rst:1394
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr "条件演算に関してより詳しくは :pep:`308` を参照してください。"
 
-#: ../../reference/expressions.rst:1397
+#: ../../reference/expressions.rst:1401
 msgid "Lambdas"
 msgstr "ラムダ (lambda)"
 
-#: ../../reference/expressions.rst:1408
+#: ../../reference/expressions.rst:1412
 msgid ""
 "Lambda expressions (sometimes called lambda forms) are used to create "
 "anonymous functions. The expression ``lambda arguments: expression`` yields "
@@ -1522,37 +1528,37 @@ msgid ""
 "defined with:"
 msgstr ""
 
-#: ../../reference/expressions.rst:1417
+#: ../../reference/expressions.rst:1421
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
 "functions created with lambda expressions cannot contain statements or "
 "annotations."
 msgstr "引数の一覧の構文は :ref:`関数定義 <function>` を参照してください。ラムダ式で作成された関数は文やアノテーションを含むことができない点に注意してください。"
 
-#: ../../reference/expressions.rst:1425
+#: ../../reference/expressions.rst:1429
 msgid "Expression lists"
 msgstr "式のリスト"
 
-#: ../../reference/expressions.rst:1437
+#: ../../reference/expressions.rst:1441
 msgid ""
 "Except when part of a list or set display, an expression list containing at "
 "least one comma yields a tuple.  The length of the tuple is the number of "
 "expressions in the list.  The expressions are evaluated from left to right."
 msgstr ""
 
-#: ../../reference/expressions.rst:1446
+#: ../../reference/expressions.rst:1450
 msgid ""
 "An asterisk ``*`` denotes :dfn:`iterable unpacking`.  Its operand must be an"
 " :term:`iterable`.  The iterable is expanded into a sequence of items, which"
 " are included in the new tuple, list, or set, at the site of the unpacking."
 msgstr ""
 
-#: ../../reference/expressions.rst:1451
+#: ../../reference/expressions.rst:1455
 msgid ""
 "Iterable unpacking in expression lists, originally proposed by :pep:`448`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1456
+#: ../../reference/expressions.rst:1460
 msgid ""
 "The trailing comma is required only to create a single tuple (a.k.a. a "
 "*singleton*); it is optional in all other cases.  A single expression "
@@ -1561,28 +1567,28 @@ msgid ""
 "parentheses: ``()``.)"
 msgstr "単一要素のタプル (別名 *単集合 (singleton)* ) を作りたければ、末尾にカンマが必要です。単一の式だけで、末尾にカンマをつけない場合には、タプルではなくその式の値になります (空のタプルを作りたいなら、中身が空の丸括弧ペア: ``()`` を使います。)"
 
-#: ../../reference/expressions.rst:1466
+#: ../../reference/expressions.rst:1470
 msgid "Evaluation order"
 msgstr "評価順序"
 
-#: ../../reference/expressions.rst:1470
+#: ../../reference/expressions.rst:1474
 msgid ""
 "Python evaluates expressions from left to right.  Notice that while "
 "evaluating an assignment, the right-hand side is evaluated before the left-"
 "hand side."
 msgstr "Python は、式を左から右へと順に評価します。ただし、代入式を評価するときは、代入演算子の右側項が左側項よりも先に評価されます。"
 
-#: ../../reference/expressions.rst:1473
+#: ../../reference/expressions.rst:1477
 msgid ""
 "In the following lines, expressions will be evaluated in the arithmetic "
 "order of their suffixes::"
 msgstr "以下に示す実行文の各行での評価順序は、添え字の数字順序と同じになります::"
 
-#: ../../reference/expressions.rst:1487
+#: ../../reference/expressions.rst:1491
 msgid "Operator precedence"
 msgstr "演算子の優先順位"
 
-#: ../../reference/expressions.rst:1491
+#: ../../reference/expressions.rst:1495
 msgid ""
 "The following table summarizes the operator precedence in Python, from "
 "lowest precedence (least binding) to highest precedence (most binding).  "
@@ -1591,163 +1597,163 @@ msgid ""
 "left to right (except for exponentiation, which groups from right to left)."
 msgstr "以下の表は Python における演算子の優先順位を要約したものです。優先順位の最も低い (結合が最も弱い) ものから最も高い (結合が最も強い) ものに並べてあります。同じボックス内の演算子の優先順位は同じです。構文が明示的に示されていないものは二項演算子です。同じボックス内の演算子は、左から右へとグループ化されます (例外として、べき乗は右から左にグループ化されます)。"
 
-#: ../../reference/expressions.rst:1497
+#: ../../reference/expressions.rst:1501
 msgid ""
 "Note that comparisons, membership tests, and identity tests, all have the "
 "same precedence and have a left-to-right chaining feature as described in "
 "the :ref:`comparisons` section."
 msgstr ":ref:`comparisons` で述べられているように、比較、帰属、同一性のテストは全てが同じ優先順位を持っていて、左から右に連鎖する特徴を持っていることに注意してください。"
 
-#: ../../reference/expressions.rst:1503
+#: ../../reference/expressions.rst:1507
 msgid "Operator"
 msgstr "演算子"
 
-#: ../../reference/expressions.rst:1503
+#: ../../reference/expressions.rst:1507
 msgid "Description"
 msgstr "説明"
 
-#: ../../reference/expressions.rst:1505
+#: ../../reference/expressions.rst:1509
 msgid ":keyword:`lambda`"
 msgstr ":keyword:`lambda`"
 
-#: ../../reference/expressions.rst:1505
+#: ../../reference/expressions.rst:1509
 msgid "Lambda expression"
 msgstr "ラムダ式"
 
-#: ../../reference/expressions.rst:1507
+#: ../../reference/expressions.rst:1511
 msgid ":keyword:`if` -- :keyword:`else`"
 msgstr ":keyword:`if` -- :keyword:`else`"
 
-#: ../../reference/expressions.rst:1507
+#: ../../reference/expressions.rst:1511
 msgid "Conditional expression"
 msgstr "条件式"
 
-#: ../../reference/expressions.rst:1509
+#: ../../reference/expressions.rst:1513
 msgid ":keyword:`or`"
 msgstr ":keyword:`or`"
 
-#: ../../reference/expressions.rst:1509
+#: ../../reference/expressions.rst:1513
 msgid "Boolean OR"
 msgstr "ブール演算 OR"
 
-#: ../../reference/expressions.rst:1511
+#: ../../reference/expressions.rst:1515
 msgid ":keyword:`and`"
 msgstr ":keyword:`and`"
 
-#: ../../reference/expressions.rst:1511
+#: ../../reference/expressions.rst:1515
 msgid "Boolean AND"
 msgstr "ブール演算 AND"
 
-#: ../../reference/expressions.rst:1513
+#: ../../reference/expressions.rst:1517
 msgid ":keyword:`not` ``x``"
 msgstr ":keyword:`not` ``x``"
 
-#: ../../reference/expressions.rst:1513
+#: ../../reference/expressions.rst:1517
 msgid "Boolean NOT"
 msgstr "ブール演算 NOT"
 
-#: ../../reference/expressions.rst:1515
+#: ../../reference/expressions.rst:1519
 msgid ""
 ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
 "``<=``, ``>``, ``>=``, ``!=``, ``==``"
 msgstr ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, ``<=``, ``>``, ``>=``, ``!=``, ``==``"
 
-#: ../../reference/expressions.rst:1515
+#: ../../reference/expressions.rst:1519
 msgid "Comparisons, including membership tests and identity tests"
 msgstr "帰属や同一性のテストを含む比較"
 
-#: ../../reference/expressions.rst:1519
+#: ../../reference/expressions.rst:1523
 msgid "``|``"
 msgstr "``|``"
 
-#: ../../reference/expressions.rst:1519
+#: ../../reference/expressions.rst:1523
 msgid "Bitwise OR"
 msgstr "ビット単位 OR"
 
-#: ../../reference/expressions.rst:1521
+#: ../../reference/expressions.rst:1525
 msgid "``^``"
 msgstr "``^``"
 
-#: ../../reference/expressions.rst:1521
+#: ../../reference/expressions.rst:1525
 msgid "Bitwise XOR"
 msgstr "ビット単位 XOR"
 
-#: ../../reference/expressions.rst:1523
+#: ../../reference/expressions.rst:1527
 msgid "``&``"
 msgstr "``&``"
 
-#: ../../reference/expressions.rst:1523
+#: ../../reference/expressions.rst:1527
 msgid "Bitwise AND"
 msgstr "ビット単位 AND"
 
-#: ../../reference/expressions.rst:1525
+#: ../../reference/expressions.rst:1529
 msgid "``<<``, ``>>``"
 msgstr "``<<``, ``>>``"
 
-#: ../../reference/expressions.rst:1525
+#: ../../reference/expressions.rst:1529
 msgid "Shifts"
 msgstr "シフト演算"
 
-#: ../../reference/expressions.rst:1527
+#: ../../reference/expressions.rst:1531
 msgid "``+``, ``-``"
 msgstr "``+``, ``-``"
 
-#: ../../reference/expressions.rst:1527
+#: ../../reference/expressions.rst:1531
 msgid "Addition and subtraction"
 msgstr "加算および減算"
 
-#: ../../reference/expressions.rst:1529
+#: ../../reference/expressions.rst:1533
 msgid "``*``, ``@``, ``/``, ``//``, ``%``"
 msgstr "``*``, ``@``, ``/``, ``//``, ``%``"
 
-#: ../../reference/expressions.rst:1529
+#: ../../reference/expressions.rst:1533
 msgid "Multiplication, matrix multiplication division, remainder [#]_"
 msgstr "乗算、行列の乗算、除算、剰余 [#]_"
 
-#: ../../reference/expressions.rst:1533
+#: ../../reference/expressions.rst:1537
 msgid "``+x``, ``-x``, ``~x``"
 msgstr "``+x``, ``-x``, ``~x``"
 
-#: ../../reference/expressions.rst:1533
+#: ../../reference/expressions.rst:1537
 msgid "Positive, negative, bitwise NOT"
 msgstr "正数、負数、ビット単位 NOT"
 
-#: ../../reference/expressions.rst:1535
+#: ../../reference/expressions.rst:1539
 msgid "``**``"
 msgstr "``**``"
 
-#: ../../reference/expressions.rst:1535
+#: ../../reference/expressions.rst:1539
 msgid "Exponentiation [#]_"
 msgstr "べき乗 [#]_"
 
-#: ../../reference/expressions.rst:1537
+#: ../../reference/expressions.rst:1541
 msgid "``await`` ``x``"
 msgstr "``await`` ``x``"
 
-#: ../../reference/expressions.rst:1539
+#: ../../reference/expressions.rst:1543
 msgid "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 msgstr "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 
-#: ../../reference/expressions.rst:1539
+#: ../../reference/expressions.rst:1543
 msgid "Subscription, slicing, call, attribute reference"
 msgstr "添字指定、スライス操作、呼び出し、属性参照"
 
-#: ../../reference/expressions.rst:1542
+#: ../../reference/expressions.rst:1546
 msgid ""
 "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, "
 "``{expressions...}``"
 msgstr "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, ``{expressions...}``"
 
-#: ../../reference/expressions.rst:1542
+#: ../../reference/expressions.rst:1546
 msgid ""
 "Binding or tuple display, list display, dictionary display, set display"
 msgstr "式結合またはタプル表示、リスト表示、辞書表示、集合表示"
 
-#: ../../reference/expressions.rst:1550
+#: ../../reference/expressions.rst:1554
 msgid "Footnotes"
 msgstr "脚注"
 
-#: ../../reference/expressions.rst:1551
+#: ../../reference/expressions.rst:1555
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be"
 " true numerically due to roundoff.  For example, and assuming a platform on "
@@ -1759,7 +1765,7 @@ msgid ""
 "approach is more appropriate depends on the application."
 msgstr "``abs(x%y) < abs(y)`` は数学的には真となりますが、浮動小数点に対する演算の場合には、値丸め (roundoff) のために数値計算的に真にならない場合があります。例えば、Python の浮動小数点型が IEEE754 倍精度数型になっているプラットフォームを仮定すると、 ``-1e-100 % 1e100`` は ``1e100`` と同じ符号になるはずなのに、計算結果は ``-1e-100 + 1e100`` となります。これは数値計算的には厳密に ``1e100`` と等価です。関数 :func:`math.fmod` は、最初の引数と符号が一致するような値を返すので、上記の場合には ``-1e-100`` を返します。どちらのアプローチが適切かは、アプリケーションに依存します。"
 
-#: ../../reference/expressions.rst:1560
+#: ../../reference/expressions.rst:1564
 msgid ""
 "If x is very close to an exact integer multiple of y, it's possible for "
 "``x//y`` to be one larger than ``(x-x%y)//y`` due to rounding.  In such "
@@ -1767,7 +1773,7 @@ msgid ""
 "``divmod(x,y)[0] * y + x % y`` be very close to ``x``."
 msgstr "x が y の正確な整数倍に非常に近いと、丸めのために ``x//y`` が ``(x-x%y)//y`` よりも 1 だけ大きくなる可能性があります。そのような場合、Python は ``divmod(x,y)[0] * y + x % y`` が ``x`` に非常に近くなるという関係を保つために、後者の値を返します。"
 
-#: ../../reference/expressions.rst:1565
+#: ../../reference/expressions.rst:1569
 msgid ""
 "The Unicode standard distinguishes between :dfn:`code points` (e.g. U+0041) "
 "and :dfn:`abstract characters` (e.g. \"LATIN CAPITAL LETTER A\"). While most"
@@ -1781,7 +1787,7 @@ msgid ""
 "(COMBINING CEDILLA)."
 msgstr ""
 
-#: ../../reference/expressions.rst:1576
+#: ../../reference/expressions.rst:1580
 msgid ""
 "The comparison operators on strings compare at the level of Unicode code "
 "points. This may be counter-intuitive to humans.  For example, ``\"\\u00C7\""
@@ -1789,13 +1795,13 @@ msgid ""
 "the same abstract character \"LATIN CAPITAL LETTER C WITH CEDILLA\"."
 msgstr ""
 
-#: ../../reference/expressions.rst:1581
+#: ../../reference/expressions.rst:1585
 msgid ""
 "To compare strings at the level of abstract characters (that is, in a way "
 "intuitive to humans), use :func:`unicodedata.normalize`."
 msgstr ""
 
-#: ../../reference/expressions.rst:1584
+#: ../../reference/expressions.rst:1588
 msgid ""
 "Due to automatic garbage-collection, free lists, and the dynamic nature of "
 "descriptors, you may notice seemingly unusual behaviour in certain uses of "
@@ -1803,13 +1809,13 @@ msgid ""
 "instance methods, or constants.  Check their documentation for more info."
 msgstr "自動的なガベージコレクション、フリーリスト、ディスクリプタの動的特性のために、インスタンスメソッドや定数の比較を行うようなときに :keyword:`is` 演算子の利用は、一見すると普通ではない振る舞いだと気付くかもしれません。詳細はそれぞれのドキュメントを確認してください。"
 
-#: ../../reference/expressions.rst:1589
+#: ../../reference/expressions.rst:1593
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
 "applies."
 msgstr "``%`` 演算子は文字列フォーマットにも使われ、同じ優先順位が当てはまります。"
 
-#: ../../reference/expressions.rst:1592
+#: ../../reference/expressions.rst:1596
 msgid ""
 "The power operator ``**`` binds less tightly than an arithmetic or bitwise "
 "unary operator on its right, that is, ``2**-1`` is ``0.5``."

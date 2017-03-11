@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:44+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-03-04 17:50+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,10 +161,10 @@ msgstr "ConfigParser に渡されるデフォルト値をこの引数で指定�
 msgid ""
 "If specified as ``False``, loggers which exist when this call is made are "
 "left enabled. The default is ``True`` because this enables old behaviour in "
-"a backward- compatible way. This behaviour is to disable any existing "
-"loggers unless they or their ancestors are explicitly named in the logging "
+"a backward-compatible way. This behaviour is to disable any existing loggers"
+" unless they or their ancestors are explicitly named in the logging "
 "configuration."
-msgstr "``False`` が指定された場合は、この呼び出しが行われたときに存在するロガーは有効のまま残されます。後方互換性のあるやり方で古い振る舞いを保つので、デフォルト値は ``True`` になっています。そのような振る舞いでは、既存のロガーまたはそれらのロガーの先祖がロギング設定の中で明示的に名付けられていない限り、既存のロガーを無効にします。"
+msgstr ""
 
 #: ../../library/logging.config.rst:114
 msgid ""

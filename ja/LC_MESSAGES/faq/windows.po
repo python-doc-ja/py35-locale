@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:41+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-26 16:03+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,10 +21,6 @@ msgstr ""
 #: ../../faq/windows.rst:7
 msgid "Python on Windows FAQ"
 msgstr "Windows 上の Python FAQ"
-
-#: ../../faq/windows.rst:0
-msgid "Contents"
-msgstr "内容"
 
 #: ../../faq/windows.rst:18
 msgid "How do I run a Python program under Windows?"
@@ -402,33 +398,33 @@ msgstr "いかなるエディタでも、タブとスペースを混ぜるのは
 
 #: ../../faq/windows.rst:303
 msgid ""
-"If you suspect mixed tabs and spaces are causing problems in leading "
-"whitespace, run Python with the :option:`-t` switch or run "
-"``Tools/Scripts/tabnanny.py`` to check a directory tree in batch mode."
-msgstr "タブとスペースが混ざっていることで先頭の空白に問題が出ている可能性があるなら、 Python を :option:`-t` スイッチをつけて起動するか、 ``Tools/Scripts/tabnanny.py`` を起動してディレクトリツリーをバッチモードで確認してください。"
+"Python raises :exc:`IndentationError` or :exc:`TabError` if mixed tabs and "
+"spaces are causing problems in leading whitespace. You may also run the "
+":mod:`tabnanny` module to check a directory tree in batch mode."
+msgstr "Python は、もしタブとスペースが混在していることで先頭の空白に問題がある場合、:exc:`IndentationError` または :exc:`TabError` を送出します。\n:mod:`tabnanny` モジュールを実行することで、ディレクトリーツリーをバッチモードでチェックすることができます。"
 
-#: ../../faq/windows.rst:309
+#: ../../faq/windows.rst:310
 msgid "How do I check for a keypress without blocking?"
 msgstr "ブロックすることなく押鍵を検出するにはどうしますか？"
 
-#: ../../faq/windows.rst:311
+#: ../../faq/windows.rst:312
 msgid ""
 "Use the msvcrt module.  This is a standard Windows-specific extension "
 "module. It defines a function ``kbhit()`` which checks whether a keyboard "
 "hit is present, and ``getch()`` which gets one character without echoing it."
 msgstr "msvcrt モジュールを使ってください。これは標準の Windows 専用拡張モジュールです。これはキーボードが打たれているかを調べる関数 ``kbhit()`` と、反響することなく一文字を得る ``getch()`` を定義します。"
 
-#: ../../faq/windows.rst:317
+#: ../../faq/windows.rst:318
 msgid "How do I emulate os.kill() in Windows?"
 msgstr "os.kill() を Windows で模倣するにはどうしますか？"
 
-#: ../../faq/windows.rst:319
+#: ../../faq/windows.rst:320
 msgid ""
 "Prior to Python 2.7 and 3.2, to terminate a process, you can use "
 ":mod:`ctypes`::"
 msgstr "Python 2.7 および 3.2 以前では、プロセスを終了するために、 :mod:`ctypes` が使えます::"
 
-#: ../../faq/windows.rst:329
+#: ../../faq/windows.rst:330
 msgid ""
 "In 2.7 and 3.2, :func:`os.kill` is implemented similar to the above "
 "function, with the additional feature of being able to send :kbd:`Ctrl+C` "
@@ -436,18 +432,18 @@ msgid ""
 "those signals. See :func:`os.kill` for further details."
 msgstr "2.7 および 3.2 では、上の関数と同様な :func:`os.kill` が実装されていて、追加の機能として、 :kbd:`Ctrl+C` や :kbd:`Ctrl+Break` をそれらのシグナルを扱うように設計されたコンソールのサブプロセスに送ることができます。"
 
-#: ../../faq/windows.rst:335
+#: ../../faq/windows.rst:336
 msgid "How do I extract the downloaded documentation on Windows?"
 msgstr "ダウンロードされたドキュメントを Windows 上で展開するにはどうしますか？"
 
-#: ../../faq/windows.rst:337
+#: ../../faq/windows.rst:338
 msgid ""
 "Sometimes, when you download the documentation package to a Windows machine "
 "using a web browser, the file extension of the saved file ends up being "
 ".EXE. This is a mistake; the extension should be .TGZ."
 msgstr "たまに、web ブラウザで Windows マシンにドキュメントパッケージをダウンロードするとき、その保存されたファイルの拡張子が .EXE になっていることがあります。これは間違いです。本来の拡張子は .TGZ です。"
 
-#: ../../faq/windows.rst:341
+#: ../../faq/windows.rst:342
 msgid ""
 "Simply rename the downloaded file to have the .TGZ extension, and WinZip "
 "will be able to handle it.  (If your copy of WinZip doesn't, get a newer one"

@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # E. Kawashima, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
-# tomo, 2016
+# cocoatomo, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-23 05:29+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-26 15:47+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -346,22 +346,23 @@ msgid ""
 "Evaluate a precompiled code object, given a particular environment for its "
 "evaluation.  This environment consists of a dictionary of global variables, "
 "a mapping object of local variables, arrays of arguments, keywords and "
-"defaults, and a closure tuple of cells."
-msgstr "与えられた特定の環境で、コンパイル済みのコードオブジェクトを評価します。\n環境はグローバル変数の辞書、ローカル変数のマッピングオブジェクト、引数の配列、キーワードとデフォルト値、セルのクロージャタプルで構成されています。"
+"defaults, a dictionary of default values for :ref:`keyword-only\\ <keyword-"
+"only_parameter>` arguments and a closure tuple of cells."
+msgstr "与えられた特定の環境で、コンパイル済みのコードオブジェクトを評価します。この環境はグローバル変数の辞書と、ローカル変数のマッピングオブジェクト、引数の配列、キーワードとデフォルト値、:ref:`keyword-only\\ <keyword-only_parameter>` 引数のデフォルト値の辞書と、セルのクロージャタプルで構成されます。"
 
-#: ../../c-api/veryhigh.rst:313
+#: ../../c-api/veryhigh.rst:314
 msgid ""
 "The C structure of the objects used to describe frame objects. The fields of"
 " this type are subject to change at any time."
 msgstr "フレームオブジェクトを表現するために使われるオブジェクトのC構造体。\nこの型のフィールドはいつでも変更され得ます。"
 
-#: ../../c-api/veryhigh.rst:319
+#: ../../c-api/veryhigh.rst:320
 msgid ""
 "Evaluate an execution frame.  This is a simplified interface to "
 ":c:func:`PyEval_EvalFrameEx`, for backward compatibility."
 msgstr "実行フレームを評価します。これは :c:func:`PyEval_EvalFrameEx` に対するシンプルなインタフェースで、後方互換性のためのものです。"
 
-#: ../../c-api/veryhigh.rst:325
+#: ../../c-api/veryhigh.rst:326
 msgid ""
 "This is the main, unvarnished function of Python interpretation.  It is "
 "literally 2000 lines long.  The code object associated with the execution "
@@ -371,39 +372,39 @@ msgid ""
 ":meth:`~generator.throw` methods of generator objects."
 msgstr "Python のインタープリタの主要な、直接的な関数です。 この関数には 2000 行ほどあります。 実行フレーム *f* に関連付けられたコードオブジェクトを実行します。 バイトコードを解釈して、必要に応じて呼び出しを実行します。 追加の *throwflag* 引数はほとんど無視できます。 - もし true なら、 すぐに例外を発生させます。これはジェネレータオブジェクトの :meth:`~generator.throw` メソッドで利用されます。"
 
-#: ../../c-api/veryhigh.rst:332
+#: ../../c-api/veryhigh.rst:333
 msgid ""
 "This function now includes a debug assertion to help ensure that it does not"
 " silently discard an active exception."
 msgstr "アクティブな例外を黙って捨てないことを保証するのに便利なように、この関数はデバッグアサーションを含むようになりました。"
 
-#: ../../c-api/veryhigh.rst:339
+#: ../../c-api/veryhigh.rst:340
 msgid ""
 "This function changes the flags of the current evaluation frame, and returns"
 " true on success, false on failure."
 msgstr "現在の評価フレームのフラグを変更します。成功したら true を、失敗したら false を返します。"
 
-#: ../../c-api/veryhigh.rst:347
+#: ../../c-api/veryhigh.rst:348
 msgid ""
 "The start symbol from the Python grammar for isolated expressions; for use "
 "with :c:func:`Py_CompileString`."
 msgstr "単独の式に対するPython文法の開始記号で、 :c:func:`Py_CompileString` と一緒に使います。"
 
-#: ../../c-api/veryhigh.rst:355
+#: ../../c-api/veryhigh.rst:356
 msgid ""
 "The start symbol from the Python grammar for sequences of statements as read"
 " from a file or other source; for use with :c:func:`Py_CompileString`.  This"
 " is the symbol to use when compiling arbitrarily long Python source code."
 msgstr "ファイルあるいは他のソースから読み込まれた文の並びに対するPython文法の開始記号で、 :c:func:`Py_CompileString` と一緒に使います。これは任意の長さのPythonソースコードをコンパイルするときに使う記号です。"
 
-#: ../../c-api/veryhigh.rst:364
+#: ../../c-api/veryhigh.rst:365
 msgid ""
 "The start symbol from the Python grammar for a single statement; for use "
 "with :c:func:`Py_CompileString`. This is the symbol used for the interactive"
 " interpreter loop."
 msgstr "単一の文に対するPython文法の開始記号で、 :c:func:`Py_CompileString` と一緒に使います。これは対話式のインタプリタループのための記号です。"
 
-#: ../../c-api/veryhigh.rst:371
+#: ../../c-api/veryhigh.rst:372
 msgid ""
 "This is the structure used to hold compiler flags.  In cases where code is "
 "only being compiled, it is passed as ``int flags``, and in cases where code "
@@ -411,14 +412,14 @@ msgid ""
 "case, ``from __future__ import`` can modify *flags*."
 msgstr "コンパイラフラグを収めておくための構造体です。コードをコンパイルするだけの場合、この構造体が ``int flags`` として渡されます。コードを実行する場合には ``PyCompilerFlags *flags`` として渡されます。この場合、``from __future__ import`` は *flags* の内容を変更できます。"
 
-#: ../../c-api/veryhigh.rst:376
+#: ../../c-api/veryhigh.rst:377
 msgid ""
 "Whenever ``PyCompilerFlags *flags`` is *NULL*, :attr:`cf_flags` is treated "
 "as equal to ``0``, and any modification due to ``from __future__ import`` is"
 " discarded.  ::"
 msgstr "``PyCompilerFlags *flags`` が *NULL* の場合、 :attr:`cf_flags` は ``0`` として扱われ、 ``from __future__ import`` による変更は無視されます。 ::"
 
-#: ../../c-api/veryhigh.rst:387
+#: ../../c-api/veryhigh.rst:388
 msgid ""
 "This bit can be set in *flags* to cause division operator ``/`` to be "
 "interpreted as \"true division\" according to :pep:`238`."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-03-04 17:56+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,9 +96,9 @@ msgid ""
 "the set of all elements in the union that aren't in the intersection.  "
 "Another way of putting it is that the symmetric difference contains all "
 "elements that are in exactly one set.  Again, there's an alternative "
-"notation (``^``), and an in- place version with the ungainly name "
+"notation (``^``), and an in-place version with the ungainly name "
 ":meth:`symmetric_difference_update`. ::"
-msgstr "2 つの集合の対称差 (symmetric difference) を取ることも出来ます。これは、union から intersection を除いた全要素を取ります。別の言い方をすれば、対称差とは、正確に一つの集合だけに含まれる全要素、ということです。ほかと同じくビット演算子の記法 (``^``) が使え、インプレイス版は見苦しい名前の :meth:`symmetric_difference_update` です::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:100
 msgid ""
@@ -302,8 +302,8 @@ msgstr "PEP 273: Zip アーカイブからモジュールをインポートす�
 #: ../../whatsnew/2.3.rst:291
 msgid ""
 "The new :mod:`zipimport` module adds support for importing modules from a "
-"ZIP- format archive.  You don't need to import the module explicitly; it "
-"will be automatically imported if a ZIP archive's filename is added to "
+"ZIP-format archive.  You don't need to import the module explicitly; it will"
+" be automatically imported if a ZIP archive's filename is added to "
 "``sys.path``. For example:"
 msgstr ""
 
@@ -395,12 +395,12 @@ msgstr "PEP 278: Universal Newline サポート"
 msgid ""
 "The three major operating systems used today are Microsoft Windows, Apple's "
 "Macintosh OS, and the various Unix derivatives.  A minor irritation of "
-"cross- platform work  is that these three platforms all use different "
+"cross-platform work  is that these three platforms all use different "
 "characters to mark the ends of lines in text files.  Unix uses the linefeed "
 "(ASCII character 10), MacOS uses the carriage return (ASCII character 13), "
 "and Windows uses a two-character sequence of a carriage return plus a "
 "newline."
-msgstr "今日では 3 つの主要なオペレーティングシステムが使われています。 Microsoft Windows, Apple の Macintosh OS, さまざまな Unix 派生系です。テキストファイルの行終端マークに使う文字がこれら 3 つ全てでそれぞれ違っていることが、クロスプラットフォームのための仕事における小さな苛立ちです。  Unix が使うのはラインフィード (ASCII 文字 10), MacOS が使うのはキャリッジリターン (ASCII 文字 13),  Windows に至ってはキャリッジリターンとラインフィード 2 文字のシーケンスを使います。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:384
 msgid ""

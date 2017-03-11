@@ -1,18 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
+# Osamu NAKAMURA, 2017
 # Shun Sakurai, 2016
-# tomo, 2016
+# cocoatomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-15 02:19+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-24 14:57+0000\n"
+"Last-Translator: Osamu NAKAMURA\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -173,7 +174,7 @@ msgid ""
 "module (:mod:`zlib`, :mod:`bz2` or :mod:`lzma`) is not available, "
 ":exc:`RuntimeError` is also raised. The default is :const:`ZIP_STORED`.  If "
 "*allowZip64* is ``True`` (the default) zipfile will create ZIP files that "
-"use the ZIP64 extensions when the zipfile is larger than 2 GiB. If it is  "
+"use the ZIP64 extensions when the zipfile is larger than 4 GiB. If it is  "
 "false :mod:`zipfile` will raise an exception when the ZIP file would require"
 " ZIP64 extensions."
 msgstr "ZIP ファイルを開きます。 *file* はファイルへのパス (文字列) またはファイルライクオブジェクトのどちらでも構いません。\nパラメータ *mode* は、既存のファイルからの読み込む ``'r'`` 、ファイルを上書きまたは新規に作成する ``'w'`` 、既存のファイルに追記する ``'a'`` 、あるいは排他的に開く ``'x'`` でなければなりません。\n*mode* が ``'x'`` で *file* が既存のファイルを参照している場合、 :exc:`FileExistsError` が送出されます。\n*mode* が ``'a'`` で *file* が既存の ZIP ファイルを参照している場合、追加するファイルはその ZIP ファイルに追加されます。\n*file* が ZIP ファイルを参照していない場合、新しく作成したアーカイブがそのファイルに追加されます。\nこれは、ZIP ファイルを他のファイル (例えば :file:`python.exe`) に追加することを意味します。\n*mode* が ``'a'`` でファイルが存在しない場合、ファイルが新規に作成されます。\n*mode* が ``'r'`` または ``'a'`` の場合、ファイルは seek 可能のはずです。\n*compression* はアーカイブに書き込む時の ZIP 圧縮方式で、 :const:`ZIP_STORED`, :const:`ZIP_DEFLATED`, :const:`ZIP_BZIP2`, :const:`ZIP_LZMA` のいずれかでなければなりません; 不正な値を指定すると :exc:`RuntimeError` が送出されます。\n:const:`ZIP_DEFLATED`, :const:`ZIP_BZIP2`, :const:`ZIP_LZMA` のいずれかが指定された場合、対応するモジュール (:mod:`zlib`, :mod:`bz2` もしくは :mod:`lzma`) が利用できないと :exc:`RuntimeError` が送出されます。\nデフォルトは :const:`ZIP_STORED` です。\n*allowZip64* に (デフォルトの) ``True`` を指定すると、zipfile は ZIP ファイルの大きさが 2 GiB を超える場合に ZIP64 拡張を使用して ZIP ファイルを作成します。\nFalse の場合、:mod:`zipfile` は ZIP ファイルが ZIP64 拡張を要求した時点で例外を送出します。"

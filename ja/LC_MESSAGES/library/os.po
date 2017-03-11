@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,14 +7,14 @@
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # Nozomu Kaneko <nozom.kaneko@gmail.com>, 2016
 # Shun Sakurai, 2016
-# tomo, 2016
+# cocoatomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:44+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-21 16:13+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2228,9 +2228,9 @@ msgstr "``DirEntry`` と :class:`pathlib.Path` では、いくつかの属性や
 msgid ""
 "Get the status of a file or a file descriptor. Perform the equivalent of a "
 ":c:func:`stat` system call on the given path. *path* may be specified as "
-"either a string or as an open file descriptor. Return a :class:`stat_result`"
-" object."
-msgstr "ファイルまたはファイル記述子についての状態を取得します。与えられた *path* に対して :c:func:`stat` システムコール相当の処理を実行します。 *path* は文字列または、開かれたファイルのファイル記述子です。 :class:`stat_result` を返します。"
+"either a string, a bytes or as an open file descriptor. Return a "
+":class:`stat_result` object."
+msgstr ""
 
 #: ../../library/os.rst:2074
 msgid ""

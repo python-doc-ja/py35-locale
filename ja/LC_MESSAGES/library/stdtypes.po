@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-18 09:23+0000\n"
+"PO-Revision-Date: 2017-03-08 01:27+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1260,7 +1260,7 @@ msgid ""
 "If *i* or *j* is negative, the index is relative to the end of sequence *s*:"
 " ``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
-msgstr ""
+msgstr "*i* または *j* が負の数の場合、インデクスはシーケンスの末端からの相対インデクスになります: ``len(s) + i`` または ``len(s) + j`` が代わりに使われます。\nただし ``-0`` はやはり ``0`` であることに注意してください。"
 
 #: ../../library/stdtypes.rst:935
 msgid ""
@@ -3895,7 +3895,7 @@ msgstr "連続でない配列については、結果はすべての要素がバ
 msgid ""
 "Return a string object containing two hexadecimal digits for each byte in "
 "the buffer. ::"
-msgstr ""
+msgstr "バッファ中の各バイトを 2 つの 16 進数で表した文字列を返します::"
 
 #: ../../library/stdtypes.rst:3523
 msgid "Return the data in the buffer as a list of elements. ::"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:47+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-03-06 02:39+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -205,20 +205,20 @@ msgstr "以下にあるのは、小さいけれども現実的な一つの例で
 
 #: ../../whatsnew/2.5.rst:160
 msgid ""
-"Here's another example, from a program that uses PyGTK.  Here a context- "
+"Here's another example, from a program that uses PyGTK.  Here a context-"
 "sensitive pop-up menu is being constructed dynamically.  The callback "
 "provided for the menu option is a partially applied version of the "
 ":meth:`open_item` method, where the first argument has been provided. ::"
-msgstr "もうひとつ、PyGTK を使うプログラムからの例をみてみましょう。いま、「コンテキスト依存」のポップアップメニューを動的に構築しようとしています。そのメニューオプションから提供されるコールバックは、 :meth:`open_item` メソッドの部分適用版で、その最初の引数が適用済みです::"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:173
 msgid ""
 "Another function in the :mod:`functools` module is the "
-"``update_wrapper(wrapper, wrapped)`` function that helps you write well- "
+"``update_wrapper(wrapper, wrapped)`` function that helps you write well-"
 "behaved decorators.  :func:`update_wrapper` copies the name, module, and "
 "docstring attribute to a wrapper function so that tracebacks inside the "
 "wrapped function are easier to understand.  For example, you might write::"
-msgstr ":mod:`functools` のもう一つの関数は ``update_wrapper(wrapper, wrapped)`` で、より良く振舞うデコレータを書くのに役立ちます。 :func:`update_wrapper` は包まれるほうの名前、モジュール、ドキュメンテーション文字列属性をラッパー関数にコピーすることで、トレースバックを理解しやすくします。たとえばこう書けます::"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:186
 msgid ""
@@ -354,12 +354,12 @@ msgstr "相対インポートに頼ったコードを読むことは、より不
 msgid ""
 "In Python 2.5, you can switch :keyword:`import`'s behaviour to  absolute "
 "imports using a ``from __future__ import absolute_import`` directive.  This "
-"absolute- import behaviour will become the default in a future version "
+"absolute-import behaviour will become the default in a future version "
 "(probably Python 2.7).  Once absolute imports  are the default, ``import "
 "string`` will always find the standard library's version. It's suggested "
 "that users should begin using absolute imports as much as possible, so it's "
 "preferable to begin writing ``from pkg import string`` in your code."
-msgstr "Python 2.5 では :keyword:`import` の振る舞いを、 ``from __future__ import absolute_import`` ディレクティブを使うことによって絶対インポートに切り替えられます。この絶対インポートの振る舞いは将来バージョンの Python でデフォルトになります(おそらく Python 2.7 で)。(訳注: ご承知のとおり Python 2.7 でもこれはデフォルトとはなっていません。Python 3.x への移行のためにも 2.5 - 2.7 では ``from __future__ import absolute_import`` を使うべきです。) 絶対インポートをデフォルトにしてしまえば、 ``import string`` はいつでも標準ライブラリ版を見つけます。ユーザは可能な限り絶対インポートを使い始めるべきで、あなたのコードでは ``from pkg import string`` と書き始めることが望まれます。"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:307
 msgid ""
@@ -725,8 +725,8 @@ msgstr "いくつかの Python 標準オブジェクトが既にコンテキス�
 msgid ""
 "After this statement has executed, the file object in *f* will have been "
 "automatically closed, even if the :keyword:`for` loop raised an exception "
-"part- way through the block."
-msgstr "このステートメントが実行し終わったあかつきには、 *f* のファイルオブジェクトは、たとえ :keyword:`for` ループが道半ばにして例外と成り果てても、自動的にクローズされます。"
+"part-way through the block."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:610
 msgid ""
@@ -1845,8 +1845,8 @@ msgid ""
 "You can also pack and unpack data to and from buffer objects directly using "
 "the ``pack_into(buffer, offset, v1, v2, ...)`` and ``unpack_from(buffer, "
 "offset)`` methods.  This lets you store data directly into an array or a "
-"memory- mapped file."
-msgstr "直接的にバッファオブジェクトを介した pack と unpack も可能で、 ``pack_into(buffer, offset, v1, v2, ...)`` と ``unpack_from(buffer, offset)`` メソッドを使います。これにより array やメモリマップドファイルにデータを直接格納出来ます。"
+"memory-mapped file."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1564
 msgid ""
@@ -2728,8 +2728,8 @@ msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article:"
 " Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond "
-"Hettinger, Ralf W. Grosse- Kunstleve, Kent Johnson, Iain Lowe, Martin von "
+"Hettinger, Ralf W. Grosse-Kunstleve, Kent Johnson, Iain Lowe, Martin von "
 "Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, "
 "Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas "
 "Wouters."
-msgstr "著者は提案の申し出や修正、様々なこの記事の草稿の助けをしてくれた以下の人々に感謝します:  Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond Hettinger, Ralf W. Grosse- Kunstleve, Kent Johnson, Iain Lowe, Martin von Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas Wouters."
+msgstr ""

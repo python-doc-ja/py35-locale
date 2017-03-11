@@ -1,17 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# Osamu NAKAMURA, 2017
 # Ryuichi Takano <ryuichi.takano@sinewave.onmicrosoft.com>, 2016
-# tomo, 2016
+# cocoatomo, 2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-12 00:39+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-03-04 17:55+0000\n"
+"Last-Translator: Osamu NAKAMURA\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1207,7 +1208,7 @@ msgstr "ロギングメッセージを喋る"
 msgid ""
 "There might be situations when it is desirable to have logging messages "
 "rendered in an audible rather than a visible format. This is easy to do if "
-"you have text- to-speech (TTS) functionality available in your system, even "
+"you have text-to-speech (TTS) functionality available in your system, even "
 "if it doesn't have a Python binding. Most TTS systems have a command line "
 "program you can run, and this can be invoked from a handler using "
 ":mod:`subprocess`. It's assumed here that TTS command line programs won't "

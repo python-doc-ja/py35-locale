@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:44+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-03-02 00:51+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +29,7 @@ msgstr "**ソースコード:** :source:`Lib/netrc.py`"
 msgid ""
 "The :class:`~netrc.netrc` class parses and encapsulates the netrc file "
 "format used by the Unix :program:`ftp` program and other FTP clients."
-msgstr ""
+msgstr ":class:`~netrc.netrc` クラスは、Unix :program:`ftp` プログラムや他の FTP クライアントで用いられる netrc ファイル形式を解析し、カプセル化 (encapsulate) します。"
 
 #: ../../library/netrc.rst:21
 msgid ""
@@ -44,7 +44,7 @@ msgid ""
 "(owned by a user other than the user running the process, or accessible for "
 "read or write by any other user). This implements security behavior "
 "equivalent to that of ftp and other programs that use :file:`.netrc`."
-msgstr ""
+msgstr ":class:`~netrc.netrc` のインスタンスやサブクラスのインスタンスは netrc ファイルのデータをカプセル化します。\n初期化の際の引数が存在する場合、解析対象となるファイルの指定になります。\n引数がない場合、ユーザのホームディレクトリ下にある :file:`.netrc` が読み出されます。\n解析エラーが発生した場合、ファイル名、行番号、解析を中断したトークンに関する情報の入った :exc:`NetrcParseError` を送出します。\nPOSIX システムにおいて引数を指定しない場合、ファイルのオーナシップやパーミッションが安全でない (プロセスを実行しているユーザ以外が所有者であるか、誰にでも読み書き出来てしまう) のに :file:`.netrc` ファイル内にパスワードが含まれていると、 :exc:`NetrcParseError` を送出します。\nこのセキュリティ的な振る舞いは、 ftp などの :file:`.netrc` を使うプログラムと同じものです。"
 
 #: ../../library/netrc.rst:33
 msgid "Added the POSIX permission check."
@@ -57,7 +57,7 @@ msgid ""
 "interesting attributes:  :attr:`msg` is a textual explanation of the error, "
 ":attr:`filename` is the name of the source file, and :attr:`lineno` gives "
 "the line number on which the error was found."
-msgstr ""
+msgstr "ソースファイルのテキスト中で文法エラーに遭遇した場合に :class:`~netrc.netrc` クラスによって送出される例外です。\nこの例外のインスタンスは 3 つのインスタンス変数を持っています: :attr:`msg` はテキストによるエラーの説明、 :attr:`filename` はソースファイルの名前、そして :attr:`lineno` はエラーが発見された行番号です。"
 
 #: ../../library/netrc.rst:48
 msgid "netrc Objects"
@@ -65,7 +65,7 @@ msgstr "netrc オブジェクト"
 
 #: ../../library/netrc.rst:50
 msgid "A :class:`~netrc.netrc` instance has the following methods:"
-msgstr ""
+msgstr ":class:`~netrc.netrc` インスタンスは以下のメソッドを持っています:"
 
 #: ../../library/netrc.rst:55
 msgid ""
@@ -83,7 +83,7 @@ msgstr "クラスの持っているデータを netrc ファイルの書式に�
 
 #: ../../library/netrc.rst:66
 msgid "Instances of :class:`~netrc.netrc` have public instance variables:"
-msgstr ""
+msgstr ":class:`~netrc.netrc` のインスタンスは以下の public なインスタンス変数を持っています:"
 
 #: ../../library/netrc.rst:71
 msgid ""

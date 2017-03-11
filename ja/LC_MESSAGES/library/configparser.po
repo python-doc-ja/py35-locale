@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2016, Python Software Foundation
+# Copyright (C) 2001-2017, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-12-10 07:42+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-26 16:15+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -962,8 +962,8 @@ msgstr "代わりに :meth:`read_file` を使ってください。"
 
 #: ../../library/configparser.rst:1163
 msgid ""
-":meth:`readfp` now iterates on *f* instead of calling ``f.readline()``."
-msgstr ":meth:`readfp` は ``f.readline()`` を呼び出す代わりに *f* をイテレートするようになりました。"
+":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
+msgstr ":meth:`readfp` は ``fp.readline()`` を呼び出す代わりに *fp* をイテレートするようになりました。"
 
 #: ../../library/configparser.rst:1166
 msgid ""
@@ -974,9 +974,9 @@ msgstr ":meth:`readfp` をイテレーションをサポートしない引数で
 
 #: ../../library/configparser.rst:1176
 msgid ""
-"Instead of ``parser.readfp(f)`` use "
-"``parser.read_file(readline_generator(f))``."
-msgstr "``parser.readfp(f)`` の代わりに ``parser.read_file(readline_generator(f))`` を使ってください。"
+"Instead of ``parser.readfp(fp)`` use "
+"``parser.read_file(readline_generator(fp))``."
+msgstr "``parser.readfp(fp)`` の代わりに ``parser.read_file(readline_generator(fp))`` を使ってください。"
 
 #: ../../library/configparser.rst:1182
 msgid ""
