@@ -18,5 +18,5 @@ elif [ $(git --no-pager diff -G'最終更新日時: ' | wc -l) -ge 1 ]; then
 else
     git add .
 fi
-git commit -a -m "update html"
+git commit -m "update html"
 git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
