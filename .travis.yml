@@ -14,7 +14,7 @@ install:
 - ls -lF locale
 - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
 script:
-- ./update_github_pages.sh
+- ./locale/update_github_pages.sh
 
 env:
   global:
