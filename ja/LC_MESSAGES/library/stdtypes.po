@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-08 01:27+0000\n"
+"PO-Revision-Date: 2017-03-12 01:59+0000\n"
 "Last-Translator: Suguru YAMAMOTO <sgryjp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-35/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -3795,7 +3795,7 @@ msgstr "``len(view)`` は、:class:`~memoryview.tolist` の長さと等しいで
 msgid ""
 "A :class:`memoryview` supports slicing and indexing to expose its data. One-"
 "dimensional slicing will result in a subview::"
-msgstr ""
+msgstr ":class:`memoryview` はスライスおよびインデックス指定で内容を取得できます。一次元のスライスは部分ビューになります::"
 
 #: ../../library/stdtypes.rst:3379
 msgid ""
