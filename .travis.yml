@@ -2,6 +2,8 @@ dist: trusty
 sudo: false
 language: python
 python: '3.6'
+before_install:
+- export TZ=Asia/Tokyo
 install:
 - pip install sphinx==1.4.9
 - cd ..
@@ -14,6 +16,7 @@ install:
 - ls -lF locale
 - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
 script:
+- date
 - cd ../../py35
 - ../py35-locale/update_github_pages.sh
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
