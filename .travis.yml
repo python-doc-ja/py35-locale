@@ -17,7 +17,11 @@ install:
 - sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py35
 script:
 - cd ../../py35
-- ../py35-locale/update_github_pages.sh
+- git config user.email "travis-build-bot@example.com"
+- git config user.name "Autobuild bot on Travis-CI"
+- git pull origin master
+- git add .
+- git commit -a -m "update html"
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py35.git" master:master
 
 env:
