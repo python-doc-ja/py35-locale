@@ -618,210 +618,234 @@ msgid "Works as :opcode:`BUILD_TUPLE`, but creates a set."
 msgstr ""
 
 #: ../../library/dis.rst:768
-msgid "Pushes a new dictionary object onto the stack.  The dictionary is pre-sized to hold *count* entries."
+msgid "Pushes a new dictionary object onto the stack.  Pops ``2 * count`` items so that the dictionary holds *count* entries: ``{..., TOS3: TOS2, TOS1: TOS}``."
 msgstr ""
 
-#: ../../library/dis.rst:774
-msgid "Replaces TOS with ``getattr(TOS, co_names[namei])``."
+#: ../../library/dis.rst:772
+msgid "The dictionary is created from stack items instead of creating an empty dictionary pre-sized to hold *count* items."
 msgstr ""
 
 #: ../../library/dis.rst:779
-msgid "Performs a Boolean operation.  The operation name can be found in ``cmp_op[opname]``."
+msgid "Pops *count* iterables from the stack, joins them in a single tuple, and pushes the result.  Implements iterable unpacking in tuple displays ``(*x, *y, *z)``."
 msgstr ""
 
-#: ../../library/dis.rst:785
-msgid "Imports the module ``co_names[namei]``.  TOS and TOS1 are popped and provide the *fromlist* and *level* arguments of :func:`__import__`.  The module object is pushed onto the stack.  The current namespace is not affected: for a proper import statement, a subsequent :opcode:`STORE_FAST` instruction modifies the namespace."
+#: ../../library/dis.rst:788
+msgid "This is similar to :opcode:`BUILD_TUPLE_UNPACK`, but pushes a list instead of tuple.  Implements iterable unpacking in list displays ``[*x, *y, *z]``."
 msgstr ""
 
-#: ../../library/dis.rst:794
-msgid "Loads the attribute ``co_names[namei]`` from the module found in TOS. The resulting object is pushed onto the stack, to be subsequently stored by a :opcode:`STORE_FAST` instruction."
-msgstr ""
-
-#: ../../library/dis.rst:801
-msgid "Increments bytecode counter by *delta*."
+#: ../../library/dis.rst:797
+msgid "This is similar to :opcode:`BUILD_TUPLE_UNPACK`, but pushes a set instead of tuple.  Implements iterable unpacking in set displays ``{*x, *y, *z}``."
 msgstr ""
 
 #: ../../library/dis.rst:806
-msgid "If TOS is true, sets the bytecode counter to *target*.  TOS is popped."
+msgid "Pops *count* mappings from the stack, merges them into a single dictionary, and pushes the result.  Implements dictionary unpacking in dictionary displays ``{**x, **y, **z}``."
 msgstr ""
 
-#: ../../library/dis.rst:811
-msgid "If TOS is false, sets the bytecode counter to *target*.  TOS is popped."
+#: ../../library/dis.rst:815
+msgid "This is similar to :opcode:`BUILD_MAP_UNPACK`, but is used for ``f(**x, **y, **z)`` call syntax.  The lowest byte of *oparg* is the count of mappings, the relative position of the corresponding callable ``f`` is encoded in the second byte of *oparg*."
 msgstr ""
 
-#: ../../library/dis.rst:816
-msgid "If TOS is true, sets the bytecode counter to *target* and leaves TOS on the stack.  Otherwise (TOS is false), TOS is popped."
+#: ../../library/dis.rst:825
+msgid "Replaces TOS with ``getattr(TOS, co_names[namei])``."
 msgstr ""
 
-#: ../../library/dis.rst:822
-msgid "If TOS is false, sets the bytecode counter to *target* and leaves TOS on the stack.  Otherwise (TOS is true), TOS is popped."
+#: ../../library/dis.rst:830
+msgid "Performs a Boolean operation.  The operation name can be found in ``cmp_op[opname]``."
 msgstr ""
 
-#: ../../library/dis.rst:828
-msgid "Set bytecode counter to *target*."
+#: ../../library/dis.rst:836
+msgid "Imports the module ``co_names[namei]``.  TOS and TOS1 are popped and provide the *fromlist* and *level* arguments of :func:`__import__`.  The module object is pushed onto the stack.  The current namespace is not affected: for a proper import statement, a subsequent :opcode:`STORE_FAST` instruction modifies the namespace."
 msgstr ""
 
-#: ../../library/dis.rst:833
-msgid "TOS is an :term:`iterator`.  Call its :meth:`~iterator.__next__` method.  If this yields a new value, push it on the stack (leaving the iterator below it).  If the iterator indicates it is exhausted TOS is popped, and the byte code counter is incremented by *delta*."
-msgstr ""
-
-#: ../../library/dis.rst:841
-msgid "Loads the global named ``co_names[namei]`` onto the stack."
-msgstr ""
-
-#: ../../library/dis.rst:846
-msgid "Pushes a block for a loop onto the block stack.  The block spans from the current instruction with a size of *delta* bytes."
+#: ../../library/dis.rst:845
+msgid "Loads the attribute ``co_names[namei]`` from the module found in TOS. The resulting object is pushed onto the stack, to be subsequently stored by a :opcode:`STORE_FAST` instruction."
 msgstr ""
 
 #: ../../library/dis.rst:852
-msgid "Pushes a try block from a try-except clause onto the block stack. *delta* points to the first except block."
+msgid "Increments bytecode counter by *delta*."
 msgstr ""
 
-#: ../../library/dis.rst:858
-msgid "Pushes a try block from a try-except clause onto the block stack. *delta* points to the finally block."
+#: ../../library/dis.rst:857
+msgid "If TOS is true, sets the bytecode counter to *target*.  TOS is popped."
 msgstr ""
 
-#: ../../library/dis.rst:864
-msgid "Pushes a reference to the local ``co_varnames[var_num]`` onto the stack."
+#: ../../library/dis.rst:862
+msgid "If TOS is false, sets the bytecode counter to *target*.  TOS is popped."
 msgstr ""
 
-#: ../../library/dis.rst:869
-msgid "Stores TOS into the local ``co_varnames[var_num]``."
+#: ../../library/dis.rst:867
+msgid "If TOS is true, sets the bytecode counter to *target* and leaves TOS on the stack.  Otherwise (TOS is false), TOS is popped."
 msgstr ""
 
-#: ../../library/dis.rst:874
-msgid "Deletes local ``co_varnames[var_num]``."
+#: ../../library/dis.rst:873
+msgid "If TOS is false, sets the bytecode counter to *target* and leaves TOS on the stack.  Otherwise (TOS is true), TOS is popped."
 msgstr ""
 
 #: ../../library/dis.rst:879
+msgid "Set bytecode counter to *target*."
+msgstr ""
+
+#: ../../library/dis.rst:884
+msgid "TOS is an :term:`iterator`.  Call its :meth:`~iterator.__next__` method.  If this yields a new value, push it on the stack (leaving the iterator below it).  If the iterator indicates it is exhausted TOS is popped, and the byte code counter is incremented by *delta*."
+msgstr ""
+
+#: ../../library/dis.rst:892
+msgid "Loads the global named ``co_names[namei]`` onto the stack."
+msgstr ""
+
+#: ../../library/dis.rst:897
+msgid "Pushes a block for a loop onto the block stack.  The block spans from the current instruction with a size of *delta* bytes."
+msgstr ""
+
+#: ../../library/dis.rst:903
+msgid "Pushes a try block from a try-except clause onto the block stack. *delta* points to the first except block."
+msgstr ""
+
+#: ../../library/dis.rst:909
+msgid "Pushes a try block from a try-except clause onto the block stack. *delta* points to the finally block."
+msgstr ""
+
+#: ../../library/dis.rst:915
+msgid "Pushes a reference to the local ``co_varnames[var_num]`` onto the stack."
+msgstr ""
+
+#: ../../library/dis.rst:920
+msgid "Stores TOS into the local ``co_varnames[var_num]``."
+msgstr ""
+
+#: ../../library/dis.rst:925
+msgid "Deletes local ``co_varnames[var_num]``."
+msgstr ""
+
+#: ../../library/dis.rst:930
 msgid "Pushes a reference to the cell contained in slot *i* of the cell and free variable storage.  The name of the variable is ``co_cellvars[i]`` if *i* is less than the length of *co_cellvars*.  Otherwise it is ``co_freevars[i - len(co_cellvars)]``."
 msgstr ""
 
-#: ../../library/dis.rst:887
+#: ../../library/dis.rst:938
 msgid "Loads the cell contained in slot *i* of the cell and free variable storage. Pushes a reference to the object the cell contains on the stack."
 msgstr ""
 
-#: ../../library/dis.rst:893
+#: ../../library/dis.rst:944
 msgid "Much like :opcode:`LOAD_DEREF` but first checks the locals dictionary before consulting the cell.  This is used for loading free variables in class bodies."
 msgstr ""
 
-#: ../../library/dis.rst:900
+#: ../../library/dis.rst:951
 msgid "Stores TOS into the cell contained in slot *i* of the cell and free variable storage."
 msgstr ""
 
-#: ../../library/dis.rst:906
+#: ../../library/dis.rst:957
 msgid "Empties the cell contained in slot *i* of the cell and free variable storage. Used by the :keyword:`del` statement."
 msgstr ""
 
-#: ../../library/dis.rst:912
+#: ../../library/dis.rst:963
 msgid "Raises an exception. *argc* indicates the number of parameters to the raise statement, ranging from 0 to 3.  The handler will find the traceback as TOS2, the parameter as TOS1, and the exception as TOS."
 msgstr ""
 
-#: ../../library/dis.rst:919
+#: ../../library/dis.rst:970
 msgid "Calls a function.  The low byte of *argc* indicates the number of positional parameters, the high byte the number of keyword parameters. On the stack, the opcode finds the keyword parameters first.  For each keyword argument, the value is on top of the key.  Below the keyword parameters, the positional parameters are on the stack, with the right-most parameter on top.  Below the parameters, the function object to call is on the stack.  Pops all function arguments, and the function itself off the stack, and pushes the return value."
 msgstr ""
 
-#: ../../library/dis.rst:931
+#: ../../library/dis.rst:982
 msgid "Pushes a new function object on the stack.  From bottom to top, the consumed stack must consist of"
 msgstr ""
 
-#: ../../library/dis.rst:934
+#: ../../library/dis.rst:985
 msgid "``argc & 0xFF`` default argument objects in positional order"
 msgstr ""
 
-#: ../../library/dis.rst:935
+#: ../../library/dis.rst:986
 msgid "``(argc >> 8) & 0xFF`` pairs of name and default argument, with the name just below the object on the stack, for keyword-only parameters"
 msgstr ""
 
-#: ../../library/dis.rst:937
+#: ../../library/dis.rst:988
 msgid "``(argc >> 16) & 0x7FFF`` parameter annotation objects"
 msgstr ""
 
-#: ../../library/dis.rst:938
+#: ../../library/dis.rst:989
 msgid "a tuple listing the parameter names for the annotations (only if there are ony annotation objects)"
 msgstr ""
 
-#: ../../library/dis.rst:940
+#: ../../library/dis.rst:991
 msgid "the code associated with the function (at TOS1)"
 msgstr ""
 
-#: ../../library/dis.rst:941
+#: ../../library/dis.rst:992
 msgid "the :term:`qualified name` of the function (at TOS)"
 msgstr ""
 
-#: ../../library/dis.rst:946
+#: ../../library/dis.rst:997
 msgid "Creates a new function object, sets its *__closure__* slot, and pushes it on the stack.  TOS is the :term:`qualified name` of the function, TOS1 is the code associated with the function, and TOS2 is the tuple containing cells for the closure's free variables.  *argc* is interpreted as in ``MAKE_FUNCTION``; the annotations and defaults are also in the same order below TOS2."
 msgstr ""
 
-#: ../../library/dis.rst:957
+#: ../../library/dis.rst:1008
 msgid "Pushes a slice object on the stack.  *argc* must be 2 or 3.  If it is 2, ``slice(TOS1, TOS)`` is pushed; if it is 3, ``slice(TOS2, TOS1, TOS)`` is pushed. See the :func:`slice` built-in function for more information."
 msgstr ""
 
-#: ../../library/dis.rst:964
+#: ../../library/dis.rst:1015
 msgid "Prefixes any opcode which has an argument too big to fit into the default two bytes.  *ext* holds two additional bytes which, taken together with the subsequent opcode's argument, comprise a four-byte argument, *ext* being the two most-significant bytes."
 msgstr ""
 
-#: ../../library/dis.rst:972
+#: ../../library/dis.rst:1023
 msgid "Calls a function. *argc* is interpreted as in :opcode:`CALL_FUNCTION`. The top element on the stack contains the variable argument list, followed by keyword and positional arguments."
 msgstr ""
 
-#: ../../library/dis.rst:979
+#: ../../library/dis.rst:1030
 msgid "Calls a function. *argc* is interpreted as in :opcode:`CALL_FUNCTION`. The top element on the stack contains the keyword arguments dictionary, followed by explicit keyword and positional arguments."
 msgstr ""
 
-#: ../../library/dis.rst:986
+#: ../../library/dis.rst:1037
 msgid "Calls a function. *argc* is interpreted as in :opcode:`CALL_FUNCTION`.  The top element on the stack contains the keyword arguments dictionary, followed by the variable-arguments tuple, followed by explicit keyword and positional arguments."
 msgstr ""
 
-#: ../../library/dis.rst:994
+#: ../../library/dis.rst:1045
 msgid "This is not really an opcode.  It identifies the dividing line between opcodes which don't take arguments ``< HAVE_ARGUMENT`` and those which do ``>= HAVE_ARGUMENT``."
 msgstr ""
 
-#: ../../library/dis.rst:1001
+#: ../../library/dis.rst:1052
 msgid "Opcode collections"
 msgstr ""
 
-#: ../../library/dis.rst:1003
+#: ../../library/dis.rst:1054
 msgid "These collections are provided for automatic introspection of bytecode instructions:"
 msgstr ""
 
-#: ../../library/dis.rst:1008
+#: ../../library/dis.rst:1059
 msgid "Sequence of operation names, indexable using the bytecode."
 msgstr ""
 
-#: ../../library/dis.rst:1013
+#: ../../library/dis.rst:1064
 msgid "Dictionary mapping operation names to bytecodes."
 msgstr ""
 
-#: ../../library/dis.rst:1018
+#: ../../library/dis.rst:1069
 msgid "Sequence of all compare operation names."
 msgstr ""
 
-#: ../../library/dis.rst:1023
+#: ../../library/dis.rst:1074
 msgid "Sequence of bytecodes that have a constant parameter."
 msgstr ""
 
-#: ../../library/dis.rst:1028
+#: ../../library/dis.rst:1079
 msgid "Sequence of bytecodes that access a free variable (note that 'free' in this context refers to names in the current scope that are referenced by inner scopes or names in outer scopes that are referenced from this scope.  It does *not* include references to global or builtin scopes)."
 msgstr ""
 
-#: ../../library/dis.rst:1036
+#: ../../library/dis.rst:1087
 msgid "Sequence of bytecodes that access an attribute by name."
 msgstr ""
 
-#: ../../library/dis.rst:1041
+#: ../../library/dis.rst:1092
 msgid "Sequence of bytecodes that have a relative jump target."
 msgstr ""
 
-#: ../../library/dis.rst:1046
+#: ../../library/dis.rst:1097
 msgid "Sequence of bytecodes that have an absolute jump target."
 msgstr ""
 
-#: ../../library/dis.rst:1051
+#: ../../library/dis.rst:1102
 msgid "Sequence of bytecodes that access a local variable."
 msgstr ""
 
-#: ../../library/dis.rst:1056
+#: ../../library/dis.rst:1107
 msgid "Sequence of bytecodes of Boolean operations."
 msgstr ""
 

@@ -284,7 +284,7 @@ msgid "Module loaders may opt in to creating the module object during loading by
 msgstr ""
 
 #: ../../reference/import.rst:433
-msgid "The create_module() method of loaders."
+msgid "The :meth:`~importlib.abc.Loader.create_module` method of loaders."
 msgstr ""
 
 #: ../../reference/import.rst:436
